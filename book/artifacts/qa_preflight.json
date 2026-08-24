@@ -1,0 +1,299 @@
+{
+ "pdf_version": "PDF 1.4",
+ "page_count": 161,
+ "encryption": false,
+ "metadata": {
+  "format": "PDF 1.4",
+  "title": "Master Speaking",
+  "author": "Abdul Raziq Nazari",
+  "subject": "(unspecified)",
+  "creator": "(unspecified)",
+  "producer": "ReportLab PDF Library - (opensource)",
+  "creationDate": "D:20260824002922+00'00'",
+  "modDate": "D:20260824002922+00'00'"
+ },
+ "page_sizes_pt": [
+  [
+   504.0,
+   720.0
+  ]
+ ],
+ "fonts": {
+  "AAAAAA+SourceSans3ExtraLight-Regular": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSerif4-Bold": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSans3ExtraLight-SemiBold": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSerif4-Regular": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSans3ExtraLight-Italic": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSerif4-Italic": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSans3ExtraLight-Bold": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+DejaVuSans": {
+   "type": "TrueType",
+   "ext": "ttf"
+  }
+ },
+ "images": [
+  {
+   "xref": 96,
+   "page": 11,
+   "px": [
+    1000,
+    562
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 228.9
+  },
+  {
+   "xref": 100,
+   "page": 13,
+   "px": [
+    1920,
+    1080
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 502.4
+  },
+  {
+   "xref": 108,
+   "page": 19,
+   "px": [
+    640,
+    480
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 150.0
+  },
+  {
+   "xref": 119,
+   "page": 29,
+   "px": [
+    600,
+    400
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 150.0
+  },
+  {
+   "xref": 122,
+   "page": 31,
+   "px": [
+    600,
+    420
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 157.0
+  },
+  {
+   "xref": 129,
+   "page": 37,
+   "px": [
+    1280,
+    720
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 272.6
+  },
+  {
+   "xref": 138,
+   "page": 45,
+   "px": [
+    2560,
+    1440
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 586.1
+  },
+  {
+   "xref": 141,
+   "page": 47,
+   "px": [
+    836,
+    557
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 178.0
+  },
+  {
+   "xref": 148,
+   "page": 53,
+   "px": [
+    1280,
+    720
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 272.6
+  },
+  {
+   "xref": 159,
+   "page": 63,
+   "px": [
+    1024,
+    576
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 234.4
+  },
+  {
+   "xref": 162,
+   "page": 65,
+   "px": [
+    959,
+    639
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 250.9
+  },
+  {
+   "xref": 169,
+   "page": 71,
+   "px": [
+    640,
+    480
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 150.0
+  },
+  {
+   "xref": 180,
+   "page": 81,
+   "px": [
+    1260,
+    720
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 288.5
+  },
+  {
+   "xref": 183,
+   "page": 83,
+   "px": [
+    973,
+    715
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 254.6
+  },
+  {
+   "xref": 189,
+   "page": 88,
+   "px": [
+    640,
+    480
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 150.0
+  },
+  {
+   "xref": 203,
+   "page": 101,
+   "px": [
+    2880,
+    1920
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 659.3
+  },
+  {
+   "xref": 206,
+   "page": 103,
+   "px": [
+    1028,
+    578
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 269.0
+  },
+  {
+   "xref": 213,
+   "page": 109,
+   "px": [
+    1135,
+    835
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 241.7
+  },
+  {
+   "xref": 226,
+   "page": 121,
+   "px": [
+    1000,
+    600
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 228.9
+  },
+  {
+   "xref": 229,
+   "page": 123,
+   "px": [
+    869,
+    587
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 227.4
+  },
+  {
+   "xref": 236,
+   "page": 129,
+   "px": [
+    800,
+    550
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 170.4
+  },
+  {
+   "xref": 249,
+   "page": 141,
+   "px": [
+    1000,
+    667
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 228.9
+  },
+  {
+   "xref": 252,
+   "page": 143,
+   "px": [
+    640,
+    448
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 167.5
+  },
+  {
+   "xref": 260,
+   "page": 150,
+   "px": [
+    640,
+    427
+   ],
+   "cs": "DeviceRGB",
+   "dpi": 150.0
+  }
+ ],
+ "issues": [],
+ "ok": true
+}

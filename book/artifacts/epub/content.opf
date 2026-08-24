@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" version="3.0" unique-identifier="pub-id">
+  <metadata>
+    <dc:identifier id="pub-id">urn:uuid:c5e64b7d-b933-5c1b-902f-22c646b66a32</dc:identifier>
+    <dc:title>Master Speaking</dc:title>
+    <dc:creator>Abdul Raziq Nazari</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:date>2026-08-24</dc:date>
+    <dc:description>A speaking course for advanced English learners: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.</dc:description>
+    <meta property="dcterms:modified">2026-08-24T00:26:56Z</meta>
+  </metadata>
+  <manifest>
+    <item id="title" href="title.xhtml" media-type="application/xhtml+xml"/>
+    <item id="copyright" href="copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="foreword" href="foreword.xhtml" media-type="application/xhtml+xml"/>
+    <item id="how-to-use" href="how-to-use.xhtml" media-type="application/xhtml+xml"/>
+    <item id="epigraph" href="epigraph.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-ch1" href="unit1-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-ch2" href="unit1-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-ch3" href="unit1-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1-ch4" href="unit1-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit1" href="unit1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit2-ch1" href="unit2-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit2-ch2" href="unit2-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit2-ch3" href="unit2-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit2-ch4" href="unit2-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit2" href="unit2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit3-ch1" href="unit3-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit3-ch2" href="unit3-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit3-ch3" href="unit3-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit3-ch4" href="unit3-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit3" href="unit3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit4-ch1" href="unit4-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit4-ch2" href="unit4-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit4-ch3" href="unit4-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit4-ch4" href="unit4-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit4" href="unit4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit5-ch1" href="unit5-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit5-ch2" href="unit5-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit5-ch3" href="unit5-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit5-ch4" href="unit5-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit5" href="unit5.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit6-ch1" href="unit6-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit6-ch2" href="unit6-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit6-ch3" href="unit6-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit6-ch4" href="unit6-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit6" href="unit6.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit7-ch1" href="unit7-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit7-ch2" href="unit7-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit7-ch3" href="unit7-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit7-ch4" href="unit7-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit7" href="unit7.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit8-ch1" href="unit8-ch1.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit8-ch2" href="unit8-ch2.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit8-ch3" href="unit8-ch3.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit8-ch4" href="unit8-ch4.xhtml" media-type="application/xhtml+xml"/>
+    <item id="unit8" href="unit8.xhtml" media-type="application/xhtml+xml"/>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="css" href="style.css" media-type="text/css"/>
+    <item id="img-image1" href="images/image1.png" media-type="image/png"/>
+    <item id="img-image10" href="images/image10.jpeg" media-type="image/jpeg"/>
+    <item id="img-image11" href="images/image11.jpeg" media-type="image/jpeg"/>
+    <item id="img-image12" href="images/image12.jpeg" media-type="image/jpeg"/>
+    <item id="img-image13" href="images/image13.png" media-type="image/png"/>
+    <item id="img-image14" href="images/image14.jpeg" media-type="image/jpeg"/>
+    <item id="img-image15" href="images/image15.jpeg" media-type="image/jpeg"/>
+    <item id="img-image16" href="images/image16.png" media-type="image/png"/>
+    <item id="img-image17" href="images/image17.jpeg" media-type="image/jpeg"/>
+    <item id="img-image18" href="images/image18.jpeg" media-type="image/jpeg"/>
+    <item id="img-image19" href="images/image19.png" media-type="image/png"/>
+    <item id="img-image2" href="images/image2.png" media-type="image/png"/>
+    <item id="img-image20" href="images/image20.jpeg" media-type="image/jpeg"/>
+    <item id="img-image21" href="images/image21.jpeg" media-type="image/jpeg"/>
+    <item id="img-image22" href="images/image22.jpeg" media-type="image/jpeg"/>
+    <item id="img-image23" href="images/image23.jpeg" media-type="image/jpeg"/>
+    <item id="img-image24" href="images/image24.jpeg" media-type="image/jpeg"/>
+    <item id="img-image3" href="images/image3.jpeg" media-type="image/jpeg"/>
+    <item id="img-image4" href="images/image4.png" media-type="image/png"/>
+    <item id="img-image5" href="images/image5.jpeg" media-type="image/jpeg"/>
+    <item id="img-image6" href="images/image6.jpeg" media-type="image/jpeg"/>
+    <item id="img-image7" href="images/image7.jpeg" media-type="image/jpeg"/>
+    <item id="img-image8" href="images/image8.jpeg" media-type="image/jpeg"/>
+    <item id="img-image9" href="images/image9.jpeg" media-type="image/jpeg"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="title" linear="yes"/>
+    <itemref idref="copyright" linear="yes"/>
+    <itemref idref="foreword" linear="yes"/>
+    <itemref idref="how-to-use" linear="yes"/>
+    <itemref idref="epigraph" linear="yes"/>
+    <itemref idref="unit1-ch1" linear="yes"/>
+    <itemref idref="unit1-ch2" linear="yes"/>
+    <itemref idref="unit1-ch3" linear="yes"/>
+    <itemref idref="unit1-ch4" linear="yes"/>
+    <itemref idref="unit1" linear="yes"/>
+    <itemref idref="unit2-ch1" linear="yes"/>
+    <itemref idref="unit2-ch2" linear="yes"/>
+    <itemref idref="unit2-ch3" linear="yes"/>
+    <itemref idref="unit2-ch4" linear="yes"/>
+    <itemref idref="unit2" linear="yes"/>
+    <itemref idref="unit3-ch1" linear="yes"/>
+    <itemref idref="unit3-ch2" linear="yes"/>
+    <itemref idref="unit3-ch3" linear="yes"/>
+    <itemref idref="unit3-ch4" linear="yes"/>
+    <itemref idref="unit3" linear="yes"/>
+    <itemref idref="unit4-ch1" linear="yes"/>
+    <itemref idref="unit4-ch2" linear="yes"/>
+    <itemref idref="unit4-ch3" linear="yes"/>
+    <itemref idref="unit4-ch4" linear="yes"/>
+    <itemref idref="unit4" linear="yes"/>
+    <itemref idref="unit5-ch1" linear="yes"/>
+    <itemref idref="unit5-ch2" linear="yes"/>
+    <itemref idref="unit5-ch3" linear="yes"/>
+    <itemref idref="unit5-ch4" linear="yes"/>
+    <itemref idref="unit5" linear="yes"/>
+    <itemref idref="unit6-ch1" linear="yes"/>
+    <itemref idref="unit6-ch2" linear="yes"/>
+    <itemref idref="unit6-ch3" linear="yes"/>
+    <itemref idref="unit6-ch4" linear="yes"/>
+    <itemref idref="unit6" linear="yes"/>
+    <itemref idref="unit7-ch1" linear="yes"/>
+    <itemref idref="unit7-ch2" linear="yes"/>
+    <itemref idref="unit7-ch3" linear="yes"/>
+    <itemref idref="unit7-ch4" linear="yes"/>
+    <itemref idref="unit7" linear="yes"/>
+    <itemref idref="unit8-ch1" linear="yes"/>
+    <itemref idref="unit8-ch2" linear="yes"/>
+    <itemref idref="unit8-ch3" linear="yes"/>
+    <itemref idref="unit8-ch4" linear="yes"/>
+    <itemref idref="unit8" linear="yes"/>
+  </spine>
+  <guide>
+    <reference type="toc" title="Contents" href="nav.xhtml#toc"/>
+    <reference type="text" title="Begin Reading" href="foreword.xhtml"/>
+  </guide>
+</package>

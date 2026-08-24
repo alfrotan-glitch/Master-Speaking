@@ -1,0 +1,108 @@
+{
+ "checked": 3181,
+ "covered": 3161,
+ "classified_transforms": [
+  [
+   "Forward -> Foreword (locked decision)",
+   13,
+   "forward"
+  ],
+  [
+   "dedup-by-design",
+   166,
+   "the power of communication the power of communicat"
+  ],
+  [
+   "dedup-by-design",
+   446,
+   "unit 2unit 2the art of goal settingthe art of goal"
+  ],
+  [
+   "dedup-by-design",
+   770,
+   "emotional intelligenceemotional intelligenceunit 3"
+  ],
+  [
+   "activity-fold (changelog)",
+   848,
+   "activity 1: discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   853,
+   "activity 1: critical thinking"
+  ],
+  [
+   "dedup-by-design",
+   1087,
+   "money and happinessmoney and happinessunit 4unit 4"
+  ],
+  [
+   "activity-fold (changelog)",
+   1169,
+   "activity 1: discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   1175,
+   "activity 2: critical thinking"
+  ],
+  [
+   "logged-correction",
+   1404,
+   "living with ai (artificial intelligence)living wit"
+  ],
+  [
+   "logged-correction",
+   1496,
+   "share your ideas about the quad:"
+  ],
+  [
+   "dedup-by-design",
+   1804,
+   "is love enough? is love enough? unit 6unit 6"
+  ],
+  [
+   "activity-fold (changelog)",
+   1872,
+   "activity 1: discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   1878,
+   "activity 2: critical thinking"
+  ],
+  [
+   "dedup-by-design",
+   2177,
+   "unit 7unit 7globalizationglobalization"
+  ],
+  [
+   "activity-fold (changelog)",
+   2246,
+   "activity 1: discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   2252,
+   "activity 2: critical thinking"
+  ],
+  [
+   "dedup-by-design",
+   2542,
+   "unit 8unit 8lingua francalingua franca"
+  ],
+  [
+   "activity-fold (changelog)",
+   2619,
+   "activity 1: discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   2625,
+   "activity 2: critical thinking"
+  ]
+ ],
+ "missing": [],
+ "ok": true
+}

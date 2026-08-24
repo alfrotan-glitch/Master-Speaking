@@ -1,0 +1,2100 @@
+{
+ "pages": 161,
+ "rows": [
+  {
+   "page": 1,
+   "type": "front",
+   "words": 1,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "page": 2,
+   "type": "front",
+   "words": 3,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    158.2,
+    338.6,
+    314.6,
+    344.7
+   ]
+  },
+  {
+   "page": 3,
+   "type": "front",
+   "words": 6,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    116.2,
+    395.0,
+    270.9,
+    356.4
+   ]
+  },
+  {
+   "page": 4,
+   "type": "front",
+   "words": 45,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    51.8,
+    429.0,
+    552.1,
+    611.3
+   ]
+  },
+  {
+   "page": 5,
+   "type": "front",
+   "words": 284,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    59.0,
+    452.2,
+    55.5,
+    624.6
+   ]
+  },
+  {
+   "page": 6,
+   "type": "front",
+   "words": 201,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    51.8,
+    445.0,
+    55.5,
+    646.3
+   ]
+  },
+  {
+   "page": 7,
+   "type": "front",
+   "words": 107,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    365.8
+   ]
+  },
+  {
+   "page": 8,
+   "type": "front",
+   "words": 93,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    91.8,
+    405.0,
+    271.7,
+    478.8
+   ]
+  },
+  {
+   "page": 9,
+   "type": "front",
+   "words": 717,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    59.0,
+    452.2,
+    55.5,
+    647.0
+   ]
+  },
+  {
+   "page": 10,
+   "type": "front",
+   "words": 228,
+   "images": 0,
+   "folio": null,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    213.0
+   ]
+  },
+  {
+   "page": 11,
+   "type": "unit-opener",
+   "words": 34,
+   "images": 1,
+   "folio": 1,
+   "bounds": [
+    59.0,
+    277.2,
+    55.9,
+    467.9
+   ]
+  },
+  {
+   "page": 12,
+   "type": "body",
+   "words": 170,
+   "images": 0,
+   "folio": 2,
+   "bounds": [
+    51.8,
+    439.2,
+    55.9,
+    655.2
+   ]
+  },
+  {
+   "page": 13,
+   "type": "body",
+   "words": 188,
+   "images": 1,
+   "folio": 3,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    608.6
+   ]
+  },
+  {
+   "page": 14,
+   "type": "body",
+   "words": 266,
+   "images": 0,
+   "folio": 4,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    585.2
+   ]
+  },
+  {
+   "page": 15,
+   "type": "body",
+   "words": 223,
+   "images": 0,
+   "folio": 5,
+   "bounds": [
+    59.0,
+    451.8,
+    55.8,
+    652.2
+   ]
+  },
+  {
+   "page": 16,
+   "type": "body",
+   "words": 153,
+   "images": 0,
+   "folio": 6,
+   "bounds": [
+    51.8,
+    439.7,
+    60.3,
+    653.7
+   ]
+  },
+  {
+   "page": 17,
+   "type": "body",
+   "words": 15,
+   "images": 0,
+   "folio": 7,
+   "bounds": [
+    59.0,
+    403.1,
+    55.8,
+    85.1
+   ]
+  },
+  {
+   "page": 18,
+   "type": "body",
+   "words": 212,
+   "images": 0,
+   "folio": 8,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    621.0
+   ]
+  },
+  {
+   "page": 19,
+   "type": "body",
+   "words": 143,
+   "images": 1,
+   "folio": 9,
+   "bounds": [
+    59.0,
+    442.8,
+    59.9,
+    653.8
+   ]
+  },
+  {
+   "page": 20,
+   "type": "body",
+   "words": 212,
+   "images": 0,
+   "folio": 10,
+   "bounds": [
+    51.8,
+    435.5,
+    62.9,
+    659.5
+   ]
+  },
+  {
+   "page": 21,
+   "type": "body",
+   "words": 141,
+   "images": 0,
+   "folio": 11,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    400.6
+   ]
+  },
+  {
+   "page": 22,
+   "type": "body",
+   "words": 248,
+   "images": 0,
+   "folio": 12,
+   "bounds": [
+    51.8,
+    436.8,
+    55.9,
+    652.9
+   ]
+  },
+  {
+   "page": 23,
+   "type": "body",
+   "words": 182,
+   "images": 0,
+   "folio": 13,
+   "bounds": [
+    59.0,
+    438.3,
+    59.9,
+    654.9
+   ]
+  },
+  {
+   "page": 24,
+   "type": "body",
+   "words": 34,
+   "images": 0,
+   "folio": 14,
+   "bounds": [
+    51.8,
+    355.9,
+    55.8,
+    143.1
+   ]
+  },
+  {
+   "page": 25,
+   "type": "body",
+   "words": 152,
+   "images": 0,
+   "folio": 15,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    642.1
+   ]
+  },
+  {
+   "page": 26,
+   "type": "body",
+   "words": 131,
+   "images": 0,
+   "folio": 16,
+   "bounds": [
+    51.8,
+    445.0,
+    59.9,
+    644.7
+   ]
+  },
+  {
+   "page": 27,
+   "type": "body",
+   "words": 81,
+   "images": 0,
+   "folio": 17,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    365.8
+   ]
+  },
+  {
+   "page": 28,
+   "type": "body",
+   "words": 8,
+   "images": 0,
+   "folio": 18,
+   "bounds": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "page": 29,
+   "type": "unit-opener",
+   "words": 39,
+   "images": 1,
+   "folio": 19,
+   "bounds": [
+    59.0,
+    357.3,
+    55.9,
+    452.1
+   ]
+  },
+  {
+   "page": 30,
+   "type": "body",
+   "words": 182,
+   "images": 0,
+   "folio": 20,
+   "bounds": [
+    51.8,
+    437.4,
+    55.9,
+    647.7
+   ]
+  },
+  {
+   "page": 31,
+   "type": "body",
+   "words": 203,
+   "images": 1,
+   "folio": 21,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    571.6
+   ]
+  },
+  {
+   "page": 32,
+   "type": "body",
+   "words": 291,
+   "images": 0,
+   "folio": 22,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    597.5
+   ]
+  },
+  {
+   "page": 33,
+   "type": "body",
+   "words": 291,
+   "images": 0,
+   "folio": 23,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    655.9
+   ]
+  },
+  {
+   "page": 34,
+   "type": "body",
+   "words": 156,
+   "images": 0,
+   "folio": 24,
+   "bounds": [
+    51.8,
+    393.5,
+    55.8,
+    631.2
+   ]
+  },
+  {
+   "page": 35,
+   "type": "body",
+   "words": 142,
+   "images": 0,
+   "folio": 25,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    509.1
+   ]
+  },
+  {
+   "page": 36,
+   "type": "body",
+   "words": 256,
+   "images": 0,
+   "folio": 26,
+   "bounds": [
+    51.8,
+    438.5,
+    55.9,
+    654.4
+   ]
+  },
+  {
+   "page": 37,
+   "type": "body",
+   "words": 120,
+   "images": 1,
+   "folio": 27,
+   "bounds": [
+    59.0,
+    446.1,
+    59.9,
+    600.6
+   ]
+  },
+  {
+   "page": 38,
+   "type": "body",
+   "words": 268,
+   "images": 0,
+   "folio": 28,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    656.4
+   ]
+  },
+  {
+   "page": 39,
+   "type": "body",
+   "words": 246,
+   "images": 0,
+   "folio": 29,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    546.2
+   ]
+  },
+  {
+   "page": 40,
+   "type": "body",
+   "words": 271,
+   "images": 0,
+   "folio": 30,
+   "bounds": [
+    51.8,
+    440.0,
+    55.9,
+    618.6
+   ]
+  },
+  {
+   "page": 41,
+   "type": "body",
+   "words": 172,
+   "images": 0,
+   "folio": 31,
+   "bounds": [
+    59.0,
+    438.3,
+    55.8,
+    633.1
+   ]
+  },
+  {
+   "page": 42,
+   "type": "body",
+   "words": 179,
+   "images": 0,
+   "folio": 32,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    641.9
+   ]
+  },
+  {
+   "page": 43,
+   "type": "body",
+   "words": 178,
+   "images": 0,
+   "folio": 33,
+   "bounds": [
+    59.0,
+    445.8,
+    59.9,
+    647.9
+   ]
+  },
+  {
+   "page": 44,
+   "type": "body",
+   "words": 25,
+   "images": 0,
+   "folio": 34,
+   "bounds": [
+    51.8,
+    263.8,
+    55.8,
+    135.3
+   ]
+  },
+  {
+   "page": 45,
+   "type": "unit-opener",
+   "words": 55,
+   "images": 1,
+   "folio": 35,
+   "bounds": [
+    59.0,
+    362.2,
+    55.9,
+    507.0
+   ]
+  },
+  {
+   "page": 46,
+   "type": "body",
+   "words": 228,
+   "images": 0,
+   "folio": 36,
+   "bounds": [
+    51.8,
+    436.7,
+    55.9,
+    660.9
+   ]
+  },
+  {
+   "page": 47,
+   "type": "body",
+   "words": 99,
+   "images": 1,
+   "folio": 37,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    574.1
+   ]
+  },
+  {
+   "page": 48,
+   "type": "body",
+   "words": 310,
+   "images": 0,
+   "folio": 38,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    647.9
+   ]
+  },
+  {
+   "page": 49,
+   "type": "body",
+   "words": 238,
+   "images": 0,
+   "folio": 39,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    653.0
+   ]
+  },
+  {
+   "page": 50,
+   "type": "body",
+   "words": 168,
+   "images": 0,
+   "folio": 40,
+   "bounds": [
+    51.8,
+    418.9,
+    55.8,
+    641.7
+   ]
+  },
+  {
+   "page": 51,
+   "type": "body",
+   "words": 84,
+   "images": 0,
+   "folio": 41,
+   "bounds": [
+    59.0,
+    449.7,
+    55.8,
+    366.9
+   ]
+  },
+  {
+   "page": 52,
+   "type": "body",
+   "words": 240,
+   "images": 0,
+   "folio": 42,
+   "bounds": [
+    51.8,
+    442.1,
+    55.9,
+    650.9
+   ]
+  },
+  {
+   "page": 53,
+   "type": "body",
+   "words": 164,
+   "images": 1,
+   "folio": 43,
+   "bounds": [
+    59.0,
+    444.8,
+    59.9,
+    648.9
+   ]
+  },
+  {
+   "page": 54,
+   "type": "body",
+   "words": 211,
+   "images": 0,
+   "folio": 44,
+   "bounds": [
+    51.8,
+    443.8,
+    55.9,
+    597.8
+   ]
+  },
+  {
+   "page": 55,
+   "type": "body",
+   "words": 280,
+   "images": 0,
+   "folio": 45,
+   "bounds": [
+    59.0,
+    451.9,
+    55.8,
+    649.0
+   ]
+  },
+  {
+   "page": 56,
+   "type": "body",
+   "words": 43,
+   "images": 0,
+   "folio": 46,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    136.6
+   ]
+  },
+  {
+   "page": 57,
+   "type": "body",
+   "words": 244,
+   "images": 0,
+   "folio": 47,
+   "bounds": [
+    59.0,
+    450.3,
+    55.9,
+    649.7
+   ]
+  },
+  {
+   "page": 58,
+   "type": "body",
+   "words": 202,
+   "images": 0,
+   "folio": 48,
+   "bounds": [
+    51.8,
+    441.3,
+    55.8,
+    658.6
+   ]
+  },
+  {
+   "page": 59,
+   "type": "body",
+   "words": 86,
+   "images": 0,
+   "folio": 49,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    263.9
+   ]
+  },
+  {
+   "page": 60,
+   "type": "body",
+   "words": 146,
+   "images": 0,
+   "folio": 50,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    652.4
+   ]
+  },
+  {
+   "page": 61,
+   "type": "body",
+   "words": 131,
+   "images": 0,
+   "folio": 51,
+   "bounds": [
+    59.0,
+    439.5,
+    55.8,
+    523.8
+   ]
+  },
+  {
+   "page": 62,
+   "type": "body",
+   "words": 91,
+   "images": 0,
+   "folio": 52,
+   "bounds": [
+    51.8,
+    357.4,
+    55.9,
+    439.2
+   ]
+  },
+  {
+   "page": 63,
+   "type": "unit-opener",
+   "words": 58,
+   "images": 1,
+   "folio": 53,
+   "bounds": [
+    59.0,
+    351.3,
+    55.9,
+    473.6
+   ]
+  },
+  {
+   "page": 64,
+   "type": "body",
+   "words": 253,
+   "images": 0,
+   "folio": 54,
+   "bounds": [
+    51.8,
+    439.7,
+    55.9,
+    648.7
+   ]
+  },
+  {
+   "page": 65,
+   "type": "body",
+   "words": 177,
+   "images": 1,
+   "folio": 55,
+   "bounds": [
+    59.0,
+    450.5,
+    55.8,
+    610.8
+   ]
+  },
+  {
+   "page": 66,
+   "type": "body",
+   "words": 335,
+   "images": 0,
+   "folio": 56,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    641.4
+   ]
+  },
+  {
+   "page": 67,
+   "type": "body",
+   "words": 263,
+   "images": 0,
+   "folio": 57,
+   "bounds": [
+    59.0,
+    452.0,
+    55.8,
+    620.5
+   ]
+  },
+  {
+   "page": 68,
+   "type": "body",
+   "words": 214,
+   "images": 0,
+   "folio": 58,
+   "bounds": [
+    51.8,
+    442.0,
+    55.8,
+    655.0
+   ]
+  },
+  {
+   "page": 69,
+   "type": "body",
+   "words": 89,
+   "images": 0,
+   "folio": 59,
+   "bounds": [
+    59.0,
+    446.0,
+    55.8,
+    291.2
+   ]
+  },
+  {
+   "page": 70,
+   "type": "body",
+   "words": 248,
+   "images": 0,
+   "folio": 60,
+   "bounds": [
+    51.8,
+    444.9,
+    55.9,
+    648.2
+   ]
+  },
+  {
+   "page": 71,
+   "type": "body",
+   "words": 146,
+   "images": 1,
+   "folio": 61,
+   "bounds": [
+    59.0,
+    444.8,
+    59.9,
+    644.9
+   ]
+  },
+  {
+   "page": 72,
+   "type": "body",
+   "words": 214,
+   "images": 0,
+   "folio": 62,
+   "bounds": [
+    51.8,
+    440.0,
+    55.9,
+    561.6
+   ]
+  },
+  {
+   "page": 73,
+   "type": "body",
+   "words": 259,
+   "images": 0,
+   "folio": 63,
+   "bounds": [
+    59.0,
+    451.3,
+    55.8,
+    626.8
+   ]
+  },
+  {
+   "page": 74,
+   "type": "body",
+   "words": 281,
+   "images": 0,
+   "folio": 64,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    582.7
+   ]
+  },
+  {
+   "page": 75,
+   "type": "body",
+   "words": 247,
+   "images": 0,
+   "folio": 65,
+   "bounds": [
+    59.0,
+    447.0,
+    55.9,
+    630.8
+   ]
+  },
+  {
+   "page": 76,
+   "type": "body",
+   "words": 261,
+   "images": 0,
+   "folio": 66,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    629.8
+   ]
+  },
+  {
+   "page": 77,
+   "type": "body",
+   "words": 104,
+   "images": 0,
+   "folio": 67,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    480.1
+   ]
+  },
+  {
+   "page": 78,
+   "type": "body",
+   "words": 137,
+   "images": 0,
+   "folio": 68,
+   "bounds": [
+    51.8,
+    404.9,
+    55.9,
+    658.2
+   ]
+  },
+  {
+   "page": 79,
+   "type": "body",
+   "words": 172,
+   "images": 0,
+   "folio": 69,
+   "bounds": [
+    59.0,
+    439.5,
+    59.9,
+    653.3
+   ]
+  },
+  {
+   "page": 80,
+   "type": "body",
+   "words": 83,
+   "images": 0,
+   "folio": 70,
+   "bounds": [
+    51.8,
+    282.8,
+    55.8,
+    565.1
+   ]
+  },
+  {
+   "page": 81,
+   "type": "unit-opener",
+   "words": 69,
+   "images": 1,
+   "folio": 71,
+   "bounds": [
+    59.0,
+    303.3,
+    55.9,
+    500.9
+   ]
+  },
+  {
+   "page": 82,
+   "type": "body",
+   "words": 201,
+   "images": 0,
+   "folio": 72,
+   "bounds": [
+    51.8,
+    434.6,
+    55.9,
+    629.4
+   ]
+  },
+  {
+   "page": 83,
+   "type": "body",
+   "words": 157,
+   "images": 1,
+   "folio": 73,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    659.0
+   ]
+  },
+  {
+   "page": 84,
+   "type": "body",
+   "words": 302,
+   "images": 0,
+   "folio": 74,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    579.8
+   ]
+  },
+  {
+   "page": 85,
+   "type": "body",
+   "words": 272,
+   "images": 0,
+   "folio": 75,
+   "bounds": [
+    59.0,
+    447.0,
+    55.8,
+    657.5
+   ]
+  },
+  {
+   "page": 86,
+   "type": "body",
+   "words": 205,
+   "images": 0,
+   "folio": 76,
+   "bounds": [
+    51.8,
+    445.0,
+    60.3,
+    630.2
+   ]
+  },
+  {
+   "page": 87,
+   "type": "body",
+   "words": 258,
+   "images": 0,
+   "folio": 77,
+   "bounds": [
+    59.0,
+    443.5,
+    55.9,
+    642.0
+   ]
+  },
+  {
+   "page": 88,
+   "type": "body",
+   "words": 149,
+   "images": 1,
+   "folio": 78,
+   "bounds": [
+    51.8,
+    439.4,
+    59.9,
+    639.5
+   ]
+  },
+  {
+   "page": 89,
+   "type": "body",
+   "words": 208,
+   "images": 0,
+   "folio": 79,
+   "bounds": [
+    59.0,
+    444.9,
+    55.8,
+    550.5
+   ]
+  },
+  {
+   "page": 90,
+   "type": "body",
+   "words": 284,
+   "images": 0,
+   "folio": 80,
+   "bounds": [
+    51.8,
+    440.9,
+    55.8,
+    653.6
+   ]
+  },
+  {
+   "page": 91,
+   "type": "body",
+   "words": 261,
+   "images": 0,
+   "folio": 81,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    592.5
+   ]
+  },
+  {
+   "page": 92,
+   "type": "body",
+   "words": 239,
+   "images": 0,
+   "folio": 82,
+   "bounds": [
+    51.8,
+    438.6,
+    55.9,
+    630.8
+   ]
+  },
+  {
+   "page": 93,
+   "type": "body",
+   "words": 168,
+   "images": 0,
+   "folio": 83,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    657.5
+   ]
+  },
+  {
+   "page": 94,
+   "type": "body",
+   "words": 74,
+   "images": 0,
+   "folio": 84,
+   "bounds": [
+    51.8,
+    299.4,
+    55.9,
+    346.8
+   ]
+  },
+  {
+   "page": 95,
+   "type": "body",
+   "words": 137,
+   "images": 0,
+   "folio": 85,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    654.6
+   ]
+  },
+  {
+   "page": 96,
+   "type": "body",
+   "words": 177,
+   "images": 0,
+   "folio": 86,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    610.3
+   ]
+  },
+  {
+   "page": 97,
+   "type": "body",
+   "words": 248,
+   "images": 0,
+   "folio": 87,
+   "bounds": [
+    59.0,
+    409.3,
+    55.8,
+    642.2
+   ]
+  },
+  {
+   "page": 98,
+   "type": "body",
+   "words": 122,
+   "images": 0,
+   "folio": 88,
+   "bounds": [
+    51.8,
+    301.3,
+    55.8,
+    636.8
+   ]
+  },
+  {
+   "page": 99,
+   "type": "body",
+   "words": 34,
+   "images": 0,
+   "folio": 89,
+   "bounds": [
+    59.0,
+    228.8,
+    55.9,
+    270.7
+   ]
+  },
+  {
+   "page": 100,
+   "type": "body",
+   "words": 7,
+   "images": 0,
+   "folio": 90,
+   "bounds": [
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "page": 101,
+   "type": "unit-opener",
+   "words": 35,
+   "images": 1,
+   "folio": 91,
+   "bounds": [
+    59.0,
+    308.0,
+    55.9,
+    482.0
+   ]
+  },
+  {
+   "page": 102,
+   "type": "body",
+   "words": 234,
+   "images": 0,
+   "folio": 92,
+   "bounds": [
+    51.8,
+    440.0,
+    55.9,
+    645.7
+   ]
+  },
+  {
+   "page": 103,
+   "type": "body",
+   "words": 225,
+   "images": 1,
+   "folio": 93,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    659.7
+   ]
+  },
+  {
+   "page": 104,
+   "type": "body",
+   "words": 316,
+   "images": 0,
+   "folio": 94,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    647.9
+   ]
+  },
+  {
+   "page": 105,
+   "type": "body",
+   "words": 283,
+   "images": 0,
+   "folio": 95,
+   "bounds": [
+    59.0,
+    451.9,
+    55.8,
+    652.9
+   ]
+  },
+  {
+   "page": 106,
+   "type": "body",
+   "words": 187,
+   "images": 0,
+   "folio": 96,
+   "bounds": [
+    51.8,
+    439.3,
+    55.8,
+    633.9
+   ]
+  },
+  {
+   "page": 107,
+   "type": "body",
+   "words": 133,
+   "images": 0,
+   "folio": 97,
+   "bounds": [
+    59.0,
+    451.7,
+    55.8,
+    484.8
+   ]
+  },
+  {
+   "page": 108,
+   "type": "body",
+   "words": 253,
+   "images": 0,
+   "folio": 98,
+   "bounds": [
+    51.8,
+    438.7,
+    55.9,
+    642.7
+   ]
+  },
+  {
+   "page": 109,
+   "type": "body",
+   "words": 137,
+   "images": 1,
+   "folio": 99,
+   "bounds": [
+    59.0,
+    440.3,
+    59.9,
+    658.3
+   ]
+  },
+  {
+   "page": 110,
+   "type": "body",
+   "words": 251,
+   "images": 0,
+   "folio": 100,
+   "bounds": [
+    51.8,
+    442.2,
+    62.9,
+    624.0
+   ]
+  },
+  {
+   "page": 111,
+   "type": "body",
+   "words": 260,
+   "images": 0,
+   "folio": 101,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    652.0
+   ]
+  },
+  {
+   "page": 112,
+   "type": "body",
+   "words": 87,
+   "images": 0,
+   "folio": 102,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    231.3
+   ]
+  },
+  {
+   "page": 113,
+   "type": "body",
+   "words": 259,
+   "images": 0,
+   "folio": 103,
+   "bounds": [
+    59.0,
+    442.9,
+    55.9,
+    624.6
+   ]
+  },
+  {
+   "page": 114,
+   "type": "body",
+   "words": 212,
+   "images": 0,
+   "folio": 104,
+   "bounds": [
+    51.8,
+    439.7,
+    55.8,
+    651.7
+   ]
+  },
+  {
+   "page": 115,
+   "type": "body",
+   "words": 74,
+   "images": 0,
+   "folio": 105,
+   "bounds": [
+    59.0,
+    429.3,
+    55.8,
+    210.9
+   ]
+  },
+  {
+   "page": 116,
+   "type": "body",
+   "words": 134,
+   "images": 0,
+   "folio": 106,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    648.8
+   ]
+  },
+  {
+   "page": 117,
+   "type": "body",
+   "words": 169,
+   "images": 0,
+   "folio": 107,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    646.6
+   ]
+  },
+  {
+   "page": 118,
+   "type": "body",
+   "words": 199,
+   "images": 0,
+   "folio": 108,
+   "bounds": [
+    51.8,
+    423.7,
+    55.8,
+    624.9
+   ]
+  },
+  {
+   "page": 119,
+   "type": "body",
+   "words": 97,
+   "images": 0,
+   "folio": 109,
+   "bounds": [
+    59.0,
+    290.0,
+    55.9,
+    622.6
+   ]
+  },
+  {
+   "page": 120,
+   "type": "body",
+   "words": 23,
+   "images": 0,
+   "folio": 110,
+   "bounds": [
+    51.8,
+    155.7,
+    55.9,
+    174.8
+   ]
+  },
+  {
+   "page": 121,
+   "type": "unit-opener",
+   "words": 57,
+   "images": 1,
+   "folio": 111,
+   "bounds": [
+    59.0,
+    301.3,
+    55.9,
+    497.6
+   ]
+  },
+  {
+   "page": 122,
+   "type": "body",
+   "words": 240,
+   "images": 0,
+   "folio": 112,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    650.2
+   ]
+  },
+  {
+   "page": 123,
+   "type": "body",
+   "words": 172,
+   "images": 1,
+   "folio": 113,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    648.3
+   ]
+  },
+  {
+   "page": 124,
+   "type": "body",
+   "words": 360,
+   "images": 0,
+   "folio": 114,
+   "bounds": [
+    51.8,
+    443.0,
+    55.8,
+    663.3
+   ]
+  },
+  {
+   "page": 125,
+   "type": "body",
+   "words": 283,
+   "images": 0,
+   "folio": 115,
+   "bounds": [
+    59.0,
+    450.6,
+    55.8,
+    639.9
+   ]
+  },
+  {
+   "page": 126,
+   "type": "body",
+   "words": 171,
+   "images": 0,
+   "folio": 116,
+   "bounds": [
+    51.8,
+    438.5,
+    55.9,
+    645.9
+   ]
+  },
+  {
+   "page": 127,
+   "type": "body",
+   "words": 140,
+   "images": 0,
+   "folio": 117,
+   "bounds": [
+    59.0,
+    448.2,
+    55.8,
+    456.1
+   ]
+  },
+  {
+   "page": 128,
+   "type": "body",
+   "words": 242,
+   "images": 0,
+   "folio": 118,
+   "bounds": [
+    51.8,
+    445.0,
+    55.9,
+    641.0
+   ]
+  },
+  {
+   "page": 129,
+   "type": "body",
+   "words": 125,
+   "images": 1,
+   "folio": 119,
+   "bounds": [
+    59.0,
+    447.2,
+    59.9,
+    654.9
+   ]
+  },
+  {
+   "page": 130,
+   "type": "body",
+   "words": 203,
+   "images": 0,
+   "folio": 120,
+   "bounds": [
+    51.8,
+    444.7,
+    62.9,
+    579.2
+   ]
+  },
+  {
+   "page": 131,
+   "type": "body",
+   "words": 268,
+   "images": 0,
+   "folio": 121,
+   "bounds": [
+    59.0,
+    444.3,
+    55.8,
+    655.9
+   ]
+  },
+  {
+   "page": 132,
+   "type": "body",
+   "words": 216,
+   "images": 0,
+   "folio": 122,
+   "bounds": [
+    51.8,
+    441.7,
+    55.8,
+    519.0
+   ]
+  },
+  {
+   "page": 133,
+   "type": "body",
+   "words": 247,
+   "images": 0,
+   "folio": 123,
+   "bounds": [
+    59.0,
+    446.9,
+    55.9,
+    628.3
+   ]
+  },
+  {
+   "page": 134,
+   "type": "body",
+   "words": 159,
+   "images": 0,
+   "folio": 124,
+   "bounds": [
+    51.8,
+    444.1,
+    55.8,
+    649.3
+   ]
+  },
+  {
+   "page": 135,
+   "type": "body",
+   "words": 65,
+   "images": 0,
+   "folio": 125,
+   "bounds": [
+    59.0,
+    452.2,
+    55.8,
+    176.9
+   ]
+  },
+  {
+   "page": 136,
+   "type": "body",
+   "words": 101,
+   "images": 0,
+   "folio": 126,
+   "bounds": [
+    51.8,
+    404.9,
+    55.9,
+    626.8
+   ]
+  },
+  {
+   "page": 137,
+   "type": "body",
+   "words": 124,
+   "images": 0,
+   "folio": 127,
+   "bounds": [
+    59.0,
+    381.1,
+    55.9,
+    645.5
+   ]
+  },
+  {
+   "page": 138,
+   "type": "body",
+   "words": 189,
+   "images": 0,
+   "folio": 128,
+   "bounds": [
+    51.8,
+    439.7,
+    59.9,
+    659.9
+   ]
+  },
+  {
+   "page": 139,
+   "type": "body",
+   "words": 98,
+   "images": 0,
+   "folio": 129,
+   "bounds": [
+    59.0,
+    290.0,
+    55.8,
+    646.3
+   ]
+  },
+  {
+   "page": 140,
+   "type": "body",
+   "words": 12,
+   "images": 0,
+   "folio": 130,
+   "bounds": [
+    51.8,
+    155.7,
+    55.9,
+    115.0
+   ]
+  },
+  {
+   "page": 141,
+   "type": "unit-opener",
+   "words": 34,
+   "images": 1,
+   "folio": 131,
+   "bounds": [
+    59.0,
+    308.8,
+    55.9,
+    482.1
+   ]
+  },
+  {
+   "page": 142,
+   "type": "body",
+   "words": 235,
+   "images": 0,
+   "folio": 132,
+   "bounds": [
+    51.8,
+    440.0,
+    55.9,
+    654.5
+   ]
+  },
+  {
+   "page": 143,
+   "type": "body",
+   "words": 221,
+   "images": 1,
+   "folio": 133,
+   "bounds": [
+    59.0,
+    450.2,
+    55.8,
+    640.1
+   ]
+  },
+  {
+   "page": 144,
+   "type": "body",
+   "words": 352,
+   "images": 0,
+   "folio": 134,
+   "bounds": [
+    63.8,
+    443.0,
+    55.8,
+    639.7
+   ]
+  },
+  {
+   "page": 145,
+   "type": "body",
+   "words": 232,
+   "images": 0,
+   "folio": 135,
+   "bounds": [
+    59.0,
+    451.7,
+    55.8,
+    605.5
+   ]
+  },
+  {
+   "page": 146,
+   "type": "body",
+   "words": 254,
+   "images": 0,
+   "folio": 136,
+   "bounds": [
+    51.8,
+    439.0,
+    55.8,
+    627.5
+   ]
+  },
+  {
+   "page": 147,
+   "type": "body",
+   "words": 216,
+   "images": 0,
+   "folio": 137,
+   "bounds": [
+    59.0,
+    451.1,
+    60.3,
+    645.9
+   ]
+  },
+  {
+   "page": 148,
+   "type": "body",
+   "words": 48,
+   "images": 0,
+   "folio": 138,
+   "bounds": [
+    51.8,
+    441.7,
+    55.8,
+    160.1
+   ]
+  },
+  {
+   "page": 149,
+   "type": "body",
+   "words": 211,
+   "images": 0,
+   "folio": 139,
+   "bounds": [
+    59.0,
+    446.2,
+    55.9,
+    643.0
+   ]
+  },
+  {
+   "page": 150,
+   "type": "body",
+   "words": 127,
+   "images": 1,
+   "folio": 140,
+   "bounds": [
+    51.8,
+    439.9,
+    59.9,
+    651.2
+   ]
+  },
+  {
+   "page": 151,
+   "type": "body",
+   "words": 230,
+   "images": 0,
+   "folio": 141,
+   "bounds": [
+    59.0,
+    442.2,
+    79.8,
+    650.5
+   ]
+  },
+  {
+   "page": 152,
+   "type": "body",
+   "words": 284,
+   "images": 0,
+   "folio": 142,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    608.2
+   ]
+  },
+  {
+   "page": 153,
+   "type": "body",
+   "words": 259,
+   "images": 0,
+   "folio": 143,
+   "bounds": [
+    59.0,
+    446.1,
+    55.8,
+    636.9
+   ]
+  },
+  {
+   "page": 154,
+   "type": "body",
+   "words": 37,
+   "images": 0,
+   "folio": 144,
+   "bounds": [
+    51.8,
+    367.7,
+    55.9,
+    211.4
+   ]
+  },
+  {
+   "page": 155,
+   "type": "body",
+   "words": 272,
+   "images": 0,
+   "folio": 145,
+   "bounds": [
+    59.0,
+    444.9,
+    55.9,
+    636.8
+   ]
+  },
+  {
+   "page": 156,
+   "type": "body",
+   "words": 250,
+   "images": 0,
+   "folio": 146,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    636.7
+   ]
+  },
+  {
+   "page": 157,
+   "type": "body",
+   "words": 153,
+   "images": 0,
+   "folio": 147,
+   "bounds": [
+    59.0,
+    452.2,
+    55.9,
+    649.2
+   ]
+  },
+  {
+   "page": 158,
+   "type": "body",
+   "words": 132,
+   "images": 0,
+   "folio": 148,
+   "bounds": [
+    51.8,
+    445.0,
+    55.8,
+    619.2
+   ]
+  },
+  {
+   "page": 159,
+   "type": "body",
+   "words": 198,
+   "images": 0,
+   "folio": 149,
+   "bounds": [
+    59.0,
+    451.9,
+    55.8,
+    644.9
+   ]
+  },
+  {
+   "page": 160,
+   "type": "body",
+   "words": 178,
+   "images": 0,
+   "folio": 150,
+   "bounds": [
+    51.8,
+    441.6,
+    55.9,
+    650.2
+   ]
+  },
+  {
+   "page": 161,
+   "type": "body",
+   "words": 72,
+   "images": 0,
+   "folio": 151,
+   "bounds": [
+    59.0,
+    290.0,
+    55.8,
+    494.1
+   ]
+  }
+ ],
+ "issues": [],
+ "ok": true
+}

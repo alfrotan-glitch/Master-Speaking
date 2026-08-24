@@ -1,0 +1,352 @@
+[
+ {
+  "area": "U5 opener title",
+  "original": "Living with AI (Artificial Intelligence)Living with AI (Artificial Intelligence)Unit 5Unit 5",
+  "correction": "Unit 5 · Living with AI",
+  "reason": "doubled unit-title artifact removed; canonical short title used (parenthetical gloss dropped from opener, series pattern)",
+  "confidence": "high"
+ },
+ {
+  "area": "spelling",
+  "original": "on-going",
+  "correction": "ongoing",
+  "reason": "source used both forms; normalized to modern standard spelling used elsewhere in the same readings",
+  "confidence": "high"
+ },
+ {
+  "area": "Front matter · How to Use This Book",
+  "original": "CHAPTER 4 — Speaking through Research & Present (truncated in source)",
+  "correction": "CHAPTER 4 — Speaking through Research Presentation",
+  "reason": "front-matter label aligned with the actual chapter title used throughout the book",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U1 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U1 item 238",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U1 Ch2",
+  "original": "heading-styled instruction “Discuss the following questions in groups.”",
+  "correction": "section heading “Group Discussion” + instruction line below",
+  "reason": "defect B (content misclassified as heading); parallel structure with Units 2–8; original words preserved as instruction",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U1 Ch2",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U2 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U2 item 534",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U2 Ch1",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U2 item 691",
+  "original": "Team AAgree",
+  "correction": "Team A: Agree",
+  "reason": "jammed words; restored as debate team labels",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U2 item 692",
+  "original": "Team BDisagree",
+  "correction": "Team B: Disagree",
+  "reason": "jammed words; restored as debate team labels",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U3 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U3 Ch1 Vocabulary Check",
+  "original": "sentence merged into the Before You Read paragraph: “Learning another language allows you to ____________________________ from different backgrounds.”",
+  "correction": "sentence re-attached to the Vocabulary Check exercise",
+  "reason": "copy-paste contamination; sentence is a fill-in item continuing the Vocabulary Check list",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U3 Ch1 Speaking through Reading",
+  "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 1: Critical Thinking",
+  "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+  "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U3 Ch1",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U4 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U4 Ch1 Speaking through Reading",
+  "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+  "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+  "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U4 Ch1",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U4 Ch3 Mini Debate",
+  "original": "first debate statement had no speaker label (second was labeled “Student B”)",
+  "correction": "“Student A” label added before the first statement",
+  "reason": "structural repair of an obviously missing label; statements unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U5 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U5 text",
+  "original": "Share your ideas about the quad:",
+  "correction": "Share your ideas about the quote:",
+  "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+  "confidence": "high"
+ },
+ {
+  "area": "U5 Ch1",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U5 text",
+  "original": "ducation, employment, healthcare, communication, entertainment",
+  "correction": "Education, employment, healthcare, communication, entertainment",
+  "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+  "confidence": "high"
+ },
+ {
+  "area": "U5 text",
+  "original": "magine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
+  "correction": "Imagine that scientists develop an AI system that can solve major problems such as climate change.",
+  "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+  "confidence": "high"
+ },
+ {
+  "area": "U5 item 1676",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U5 item 1692",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 item 1842",
+  "original": "multiple-choice question and options merged into one paragraph",
+  "correction": "split into question + option lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 item 1843",
+  "original": "multiple-choice question and options merged into one paragraph",
+  "correction": "split into question + option lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 item 1844",
+  "original": "multiple-choice question and options merged into one paragraph",
+  "correction": "split into question + option lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 item 1845",
+  "original": "multiple-choice question and options merged into one paragraph",
+  "correction": "split into question + option lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 item 1846",
+  "original": "multiple-choice question and options merged into one paragraph",
+  "correction": "split into question + option lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 Ch1 Speaking through Reading",
+  "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+  "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+  "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 Ch1",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U6 Ch2 Before Listening",
+  "original": "Can Money Buy Happiness?",
+  "correction": "The Science of a Lasting Relationship",
+  "reason": "wrong video title pasted from Unit 4; correct title stated at chapter opening and matches all comprehension questions",
+  "confidence": "high"
+ },
+ {
+  "area": "U6 Ch3 Guided Discussion",
+  "original": "The Future of Marriage",
+  "correction": "(heading removed; questions retained)",
+  "reason": "locked decision: heading copied from Marriage unit; surrounding questions concern English as a lingua franca",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 Ch3",
+  "original": "Speaking Challenge",
+  "correction": "Speaking Challenge 1",
+  "reason": "locked decision: distinguish Unit 6’s two distinct Speaking Challenge activities",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U6 Ch4 Pronunciation Clinic",
+  "original": "unlabelled \"Speaking Challenge\" paragraph",
+  "correction": "Speaking Challenge 2 (subsection heading)",
+  "reason": "locked decision: Unit 6 contains two distinct Speaking Challenge activities; numbered for clarity, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U7 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U7 Ch1 Vocabulary Check",
+  "original": "sentence merged into the Before You Read paragraph: “Studying abroad can create __________ for young people.”",
+  "correction": "sentence re-attached to the Vocabulary Check exercise",
+  "reason": "copy-paste contamination; sentence is a fill-in item continuing the Vocabulary Check list",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U7 Ch1 Speaking through Reading",
+  "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+  "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+  "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U7 Ch2",
+  "original": "“True or False”",
+  "correction": "“A. True or False”",
+  "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+  "confidence": "high"
+ },
+ {
+  "area": "U7 item 2451",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U7 item 2459",
+  "original": "words/items merged into one line by copy-paste",
+  "correction": "split into separate lines",
+  "reason": "copy-paste contamination; structural repair",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U8 text",
+  "original": "Use this idea to discuss about the title above. Use as many vocabulary expressions as you can.",
+  "correction": "Use this idea to discuss the title above. Use as many vocabulary expressions as you can.",
+  "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+  "confidence": "high"
+ },
+ {
+  "area": "U8 Ch1",
+  "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+  "correction": "single Before You Read block retained",
+  "reason": "confirmed duplicate content removed (defect D)",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "U8 Ch1 Reading Comprehension",
+  "original": "Write T or F. Correct the false statements.",
+  "correction": "(instruction removed; questions retained)",
+  "reason": "instruction deleted; the eight questions that follow are open comprehension questions, not true/false statements — the instruction cannot apply to them (see unresolved-issues report)",
+  "confidence": "medium — flagged"
+ },
+ {
+  "area": "U8 Ch1 Speaking through Reading",
+  "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+  "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+  "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+  "confidence": "high (verified)"
+ },
+ {
+  "area": "typography",
+  "original": "Do you think people's expectations of marriage have changed over time?",
+  "correction": "Do you think people’s expectations of marriage have changed over time?",
+  "reason": "final-pass apostrophe smartening: block reached tree without clean()",
+  "confidence": "high"
+ }
+]

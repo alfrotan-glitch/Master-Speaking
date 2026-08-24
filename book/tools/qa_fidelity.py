@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """qa_fidelity.py — rendering fidelity: every master text block must be
-traceable in BOTH final outputs (print PDF text layer and EPUB XHTML).
+traceable in ALL THREE final outputs (print PDF text layer, EPUB XHTML,
+and the editable Word master).
 
 Closes the last link of the chain:
-  docx -> dump -> book.json -> master -> {PDF, EPUB}
-Pass 1 (qa_content) proved docx->master; this proves master->PDF/EPUB,
+  docx -> dump -> book.json -> master -> {PDF, EPUB, DOCX}
+Pass 1 (qa_content) proved docx->master; this proves master->outputs,
 catching dropped flowables, missing EPUB sections or copy bugs (it caught
 the missing unit-opener warmup blocks).
 
@@ -107,6 +108,22 @@ pdf_text = norm(' '.join(page_texts))
 pdf_loose = loose(pdf_text)
 pdf_leaf_set.discard('')
 
+# ---- DOCX target ----------------------------------------------------------
+from docx import Document as _Docx
+_w = _Docx(os.path.join(ROOT, 'Master-Speaking-7x10.docx'))
+docx_texts = [p.text for p in _w.paragraphs if p.text.strip()]
+for _t in _w.tables:
+    for _r in _t.rows:
+        for _c in _r.cells:
+            if _c.text.strip():
+                docx_texts.append(_c.text)
+docx_text = norm(' '.join(docx_texts))
+docx_loose = loose(docx_text)
+docx_leaf = set()
+for _t in docx_texts:
+    docx_leaf.update(loose(norm(_l)) for _l in _t.split('\n') if _l.strip())
+docx_leaf.discard('')
+
 # ---- EPUB target ----------------------------------------------------------
 z = zipfile.ZipFile(EPUB)
 epub_parts = []
@@ -151,7 +168,7 @@ def hit(t, target_loose, target_leaf, target_norm_text):
     return False
 
 
-miss_pdf, miss_epub = [], []
+miss_pdf, miss_epub, miss_docx = [], [], []
 n = 0
 for t, kind in texts:
     if len(norm(t)) < 4:
@@ -161,11 +178,14 @@ for t, kind in texts:
         miss_pdf.append(t[:90])
     if not hit(t, epub_loose, epub_leaf_set, epub_text):
         miss_epub.append(t[:90])
+    if not hit(t, docx_loose, docx_leaf, docx_text):
+        miss_docx.append(t[:90])
 
 report = {'master_blocks': n,
           'pdf': {'covered': n - len(miss_pdf), 'missing': miss_pdf},
           'epub': {'covered': n - len(miss_epub), 'missing': miss_epub},
-          'ok': not miss_pdf and not miss_epub}
+          'docx': {'covered': n - len(miss_docx), 'missing': miss_docx},
+          'ok': not miss_pdf and not miss_epub and not miss_docx}
 open(os.path.join(ROOT, 'book/artifacts/qa_fidelity.json'), 'w').write(
     json.dumps(report, indent=1, ensure_ascii=False))
 print(f'master blocks checked: {n}')
@@ -175,5 +195,8 @@ for t in miss_pdf[:30]:
 print(f'  EPUB: covered {n - len(miss_epub)}, missing {len(miss_epub)}')
 for t in miss_epub[:30]:
     print('   MISS-EPUB:', t)
+print(f'  DOCX: covered {n - len(miss_docx)}, missing {len(miss_docx)}')
+for t in miss_docx[:30]:
+    print('   MISS-DOCX:', t)
 print('OK' if report['ok'] else 'ISSUES PRESENT')
 sys.exit(0 if report['ok'] else 1)

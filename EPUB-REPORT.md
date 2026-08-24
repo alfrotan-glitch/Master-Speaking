@@ -1,6 +1,6 @@
 # EPUB Report — *Master Speaking* (reflowable EPUB 3)
 
-Build date: 2026-08-24 · `Master-Speaking.epub` (5,777,334 bytes)
+Build date: 2026-08-24 · `Master-Speaking.epub` (5,777,451 bytes)
 
 ## Structure
 

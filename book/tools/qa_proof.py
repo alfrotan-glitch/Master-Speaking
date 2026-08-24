@@ -24,23 +24,24 @@ d = pymupdf.open(PDF)
 issues = []
 rows = []
 
+_qp = json.load(open(os.path.join(ROOT, 'book/artifacts/qa_print.json')))
+_raw_units = (_qp.get('units') or _qp.get('unit_pages') or {}) if _qp else {}
+_unit_pages = {}
+for k, v in _raw_units.items():
+    try:
+        _unit_pages[v] = int(str(k).split('-')[-1])
+    except ValueError:
+        pass
+main_start = (_qp or {}).get('main_start', 11)
+
 for pno in range(len(d)):
     pg = d[pno]
     page = pno + 1
-    _qp = json.load(open(os.path.join(ROOT, 'book/artifacts/qa_print.json')))
-    _raw_units = (_qp.get('units') or _qp.get('unit_pages') or {}) if _qp else {}
-    _unit_pages = {}
-    for k, v in _raw_units.items():
-        try:
-            _unit_pages[v] = int(str(k).split('-')[-1])
-        except ValueError:
-            pass
-    main_start = (_qp or {}).get('main_start', 11)
     ptype = 'front' if page < main_start else (
         'unit-opener' if page in _unit_pages else 'body')
     words = pg.get_text('words')
     nwords = len(words)
-    nimg = len(pg.get_images(full=True))
+    nimg = len(pg.get_image_info())        # actually drawn, not inherited res
     rect = pg.rect
     if abs(rect.width - PAGE_W) > .5 or abs(rect.height - PAGE_H) > .5:
         issues.append(f'p{page}: page size {rect.width}x{rect.height}')
@@ -94,9 +95,13 @@ for pno in range(len(d)):
         if folio is not None and ptype == 'front' and page not in (9, 10):
             issues.append(f'p{page}: unexpected folio {folio} in front matter')
 
-    # blank page?
+    # blank page? (a completely empty verso directly before a recto unit
+    # opener is the standard print convention and is intentional)
     if nwords == 0 and nimg == 0:
-        issues.append(f'p{page}: BLANK page')
+        next_is_opener = (page + 1) in _unit_pages
+        if not next_is_opener:
+            issues.append(f'p{page}: BLANK page (not an intentional verso '
+                          f'before a recto unit opener)')
 
     # text-line overlap detection (visual defect proxy): lines that overlap
     # vertically >40% AND horizontally >2pt while not sharing a baseline

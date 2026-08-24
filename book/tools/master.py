@@ -115,17 +115,20 @@ def render_blocks(blocks, ctx):
         elif kind == 'sub':
             h.append(f'<h4 class="sub">{esc(payload["text"])}</h4>')
             if payload.get('img'):
-                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt=""/></figure>')
+                alt = f'Illustration for {payload["text"].lower()}'
+                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{esc(alt)}"/></figure>')
         elif kind == 'subsub':
             h.append(f'<h5 class="runin">{esc(payload["text"])}</h5>')
             if payload.get('img'):
-                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt=""/></figure>')
+                alt = f'Illustration for {payload["text"].lower()}'
+                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{esc(alt)}"/></figure>')
         elif kind == 'instr':
             h.append(f'<p class="instr">{esc(payload["text"])}</p>')
         elif kind == 'label':
             h.append(f'<p class="label">{esc(payload["text"])}</p>')
         elif kind == 'p':
-            img = f'<img class="inline-img" src="assets/images/{payload["img"]}" alt=""/>' if payload.get('img') else ''
+            img = (f'<img class="inline-img" src="assets/images/{payload["img"]}" '
+                   f'alt="Illustration accompanying the text"/>') if payload.get('img') else ''
             h.append(f'<p>{img}{esc(payload["text"])}</p>')
         elif kind == 'topic':
             h.append(f'<p class="topic">{esc(payload["text"])}</p>')

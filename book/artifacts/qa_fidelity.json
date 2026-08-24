@@ -8,5 +8,9 @@
   "covered": 3396,
   "missing": []
  },
+ "docx": {
+  "covered": 3396,
+  "missing": []
+ },
  "ok": true
 }

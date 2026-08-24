@@ -14,12 +14,22 @@ As of build 2026-08-24. None of these block the deliverables; each is a consciou
 5. **Cover files**: the source document contains no cover art (all 25 media files are interior content images). A designed cover would be new artwork — outside the locked no-invention scope — so none is included. The title page (PDF p. 3 / EPUB title.xhtml) serves as the opening display page.
 6. **No bleed**: interior text-and-figure book on white ground; all content sits inside margins. Print-ready as a borderless 7×10 PDF or with standard grip (locked decision).
 
+## Deliberate typographic conventions
+
+5. **Two blank verso pages (physical 28 and 100)** immediately before recto unit openers — the standard print convention when sections are locked to recto starts; intentional and verified by QA.
+
+## Word master notes
+
+6. **DOCX TOC field** computes page numbers on refresh: open the file, right-click the TOC, choose “Update Field” (no rendering engine exists in this sandbox to pre-bake field results).
+7. **Fonts**: the DOCX references Source Serif 4 / Source Sans 3 by name; without them installed, Word falls back gracefully and the style system (sizes, spacing, colours) is unaffected. The print PDF embeds the fonts and is authoritative for final appearance.
+
 ## Environment limitations
 
-7. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-REPORT.md).
-8. **Google Fonts offline**: text faces are the locally installed Source Serif 4 / Source Sans 3 / DejaVu Sans files, all embedded and subset in the PDF.
+8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-REPORT.md).
+9. **Google Fonts offline**: text faces are the locally installed Source Serif 4 / Source Sans 3 / DejaVu Sans files, all embedded and subset in the PDF.
 
 ## Verification aids
 
-- Page renders for a human visual pass: `book/artifacts/proof_png/`
+- Page renders for the human visual pass: `book/artifacts/proof_png/`
 - Machine-readable QA artifacts: `book/artifacts/qa_*.json`
+- Change log: `CHANGELOG.md` (machine copy `book/artifacts/changelog.json`)

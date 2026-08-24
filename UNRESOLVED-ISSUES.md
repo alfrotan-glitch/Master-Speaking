@@ -9,6 +9,8 @@ As of build 2026-08-24. None of these block the deliverables; each is a consciou
 3. **Unit 8 “The Future of Marriage” heading** removed (wrong heading in source); its questions retained under the preceding section, with no invented replacement heading (locked decision).
 4. **Foreword sign-off “September, 2026”** carried exactly as written in source (comma included).
 
+5. **Video Scripts section — absent from the original manuscript.** A complete audit of `Master Speaking.docx` (all 166,777 body characters reconciled to dump paragraphs and tables; footnotes and endnotes empty; all 50 textbox stories inventoried = front epigraph + 8 unit-opener panels) found **no Video Scripts section anywhere in the source**. Under the locked no-invention rule the fidelity count is therefore **0 = 0 = 0 = 0** across ORIGINAL / DOCX / PDF / EPUB. If scripts exist elsewhere, supply them and the section will be rebuilt to the original visual identity.
+
 ## Scope notes
 
 5. **Cover files**: the source document contains no cover art (all 25 media files are interior content images). A designed cover would be new artwork — outside the locked no-invention scope — so none is included. The title page (PDF p. 3 / EPUB title.xhtml) serves as the opening display page.
@@ -16,7 +18,7 @@ As of build 2026-08-24. None of these block the deliverables; each is a consciou
 
 ## Deliberate typographic conventions
 
-5. **Two blank verso pages (physical 28 and 100)** immediately before recto unit openers — the standard print convention when sections are locked to recto starts; intentional and verified by QA.
+11. **Four blank verso pages (physical 28, 106, 128, 150)** immediately before recto unit openers — the standard print convention when sections are locked to recto starts; intentional and verified by QA.
 
 ## Word master notes
 
@@ -25,7 +27,9 @@ As of build 2026-08-24. None of these block the deliverables; each is a consciou
 
 ## Environment limitations
 
-8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-QA-REPORT.md).
+10. **DOCX→PDF conversion**: no LibreOffice/MS Word exists in the build sandbox and the system package mirror is unreachable (PyPI only). The print PDF is therefore produced by `book/tools/docxpdf.py`, a dedicated renderer that reads **Master-Speaking-7x10.docx itself** (its styles, shading fills, table cell fills, images, column widths and page-break structure) — never the semantic master — so every PDF fix still starts as a DOCX fix. For a Word/LibreOffice-native render, open the DOCX in Word and export; the DOCX is the production master either way.
+
+8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-REPORT.md).
 9. **Google Fonts offline**: text faces are the locally installed Source Serif 4 / Source Sans 3 / DejaVu Sans files, all embedded and subset in the PDF.
 
 ## Verification aids

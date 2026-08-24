@@ -1,6 +1,6 @@
 {
  "pdf_version": "PDF 1.4",
- "page_count": 161,
+ "page_count": 172,
  "encryption": false,
  "metadata": {
   "format": "PDF 1.4",
@@ -9,8 +9,8 @@
   "subject": "(unspecified)",
   "creator": "(unspecified)",
   "producer": "ReportLab PDF Library - (opensource)",
-  "creationDate": "D:20260824011042+00'00'",
-  "modDate": "D:20260824011042+00'00'"
+  "creationDate": "D:20260824020250+00'00'",
+  "modDate": "D:20260824020250+00'00'"
  },
  "page_sizes_pt": [
   [
@@ -43,6 +43,10 @@
    "type": "TrueType",
    "ext": "ttf"
   },
+  "Helvetica": {
+   "type": "Type1",
+   "ext": "n/a"
+  },
   "AAAAAA+SourceSans3ExtraLight-Bold": {
    "type": "TrueType",
    "ext": "ttf"
@@ -52,247 +56,261 @@
    "ext": "ttf"
   }
  },
+ "fonts_used": [
+  "DejaVuSans",
+  "SourceSans3ExtraLight-Bo",
+  "SourceSans3ExtraLight-It",
+  "SourceSans3ExtraLight-Re",
+  "SourceSans3ExtraLight-Se",
+  "SourceSerif4-Bold",
+  "SourceSerif4-Italic",
+  "SourceSerif4-Regular"
+ ],
  "images": [
   {
-   "xref": 96,
+   "xref": 92,
    "page": 11,
    "px": [
     1000,
     562
    ],
    "cs": "DeviceRGB",
-   "dpi": 228.9
+   "dpi": 204.1
   },
   {
-   "xref": 100,
-   "page": 13,
+   "xref": 98,
+   "page": 14,
    "px": [
     1920,
     1080
    ],
    "cs": "DeviceRGB",
-   "dpi": 502.4
+   "dpi": 457.1
   },
   {
-   "xref": 108,
-   "page": 19,
+   "xref": 106,
+   "page": 20,
    "px": [
     640,
     480
    ],
    "cs": "DeviceRGB",
-   "dpi": 150.0
+   "dpi": 177.8
   },
   {
-   "xref": 119,
+   "xref": 116,
    "page": 29,
    "px": [
     600,
     400
    ],
    "cs": "DeviceRGB",
-   "dpi": 150.0
+   "dpi": 122.4
   },
   {
-   "xref": 122,
+   "xref": 119,
    "page": 31,
    "px": [
     600,
     420
    ],
    "cs": "DeviceRGB",
-   "dpi": 157.0
+   "dpi": 142.9
   },
   {
-   "xref": 129,
-   "page": 37,
+   "xref": 127,
+   "page": 38,
    "px": [
     1280,
     720
    ],
    "cs": "DeviceRGB",
-   "dpi": 272.6
+   "dpi": 355.6
   },
   {
-   "xref": 138,
-   "page": 45,
+   "xref": 137,
+   "page": 47,
    "px": [
     2560,
     1440
    ],
    "cs": "DeviceRGB",
-   "dpi": 586.1
+   "dpi": 522.4
   },
   {
    "xref": 141,
-   "page": 47,
+   "page": 50,
    "px": [
     836,
     557
    ],
    "cs": "DeviceRGB",
-   "dpi": 178.0
+   "dpi": 181.7
   },
   {
    "xref": 148,
-   "page": 53,
+   "page": 56,
    "px": [
     1280,
     720
    ],
    "cs": "DeviceRGB",
-   "dpi": 272.6
+   "dpi": 355.6
   },
   {
-   "xref": 159,
-   "page": 63,
+   "xref": 158,
+   "page": 65,
    "px": [
     1024,
     576
    ],
    "cs": "DeviceRGB",
-   "dpi": 234.4
+   "dpi": 209.0
   },
   {
    "xref": 162,
-   "page": 65,
+   "page": 68,
    "px": [
     959,
     639
    ],
    "cs": "DeviceRGB",
-   "dpi": 250.9
+   "dpi": 228.3
   },
   {
    "xref": 169,
-   "page": 71,
+   "page": 74,
    "px": [
     640,
     480
    ],
    "cs": "DeviceRGB",
-   "dpi": 150.0
+   "dpi": 177.8
   },
   {
-   "xref": 180,
-   "page": 81,
+   "xref": 181,
+   "page": 85,
    "px": [
     1260,
     720
    ],
    "cs": "DeviceRGB",
-   "dpi": 288.5
+   "dpi": 257.1
   },
   {
-   "xref": 183,
-   "page": 83,
+   "xref": 185,
+   "page": 88,
    "px": [
     973,
     715
    ],
    "cs": "DeviceRGB",
-   "dpi": 254.6
+   "dpi": 231.7
   },
   {
-   "xref": 189,
-   "page": 88,
+   "xref": 192,
+   "page": 94,
    "px": [
     640,
     480
    ],
    "cs": "DeviceRGB",
-   "dpi": 150.0
+   "dpi": 177.8
   },
   {
-   "xref": 203,
-   "page": 101,
+   "xref": 206,
+   "page": 107,
    "px": [
     2880,
     1920
    ],
    "cs": "DeviceRGB",
-   "dpi": 659.3
+   "dpi": 587.8
   },
   {
-   "xref": 206,
-   "page": 103,
+   "xref": 210,
+   "page": 110,
    "px": [
     1028,
     578
    ],
    "cs": "DeviceRGB",
-   "dpi": 269.0
+   "dpi": 244.8
   },
   {
-   "xref": 213,
-   "page": 109,
+   "xref": 218,
+   "page": 117,
    "px": [
     1135,
     835
    ],
    "cs": "DeviceRGB",
-   "dpi": 241.7
+   "dpi": 315.3
   },
   {
-   "xref": 226,
-   "page": 121,
+   "xref": 231,
+   "page": 129,
    "px": [
     1000,
     600
    ],
    "cs": "DeviceRGB",
-   "dpi": 228.9
+   "dpi": 204.1
   },
   {
-   "xref": 229,
-   "page": 123,
+   "xref": 235,
+   "page": 132,
    "px": [
     869,
     587
    ],
    "cs": "DeviceRGB",
-   "dpi": 227.4
+   "dpi": 206.9
   },
   {
-   "xref": 236,
-   "page": 129,
+   "xref": 243,
+   "page": 139,
    "px": [
     800,
     550
    ],
    "cs": "DeviceRGB",
-   "dpi": 170.4
+   "dpi": 222.2
   },
   {
-   "xref": 249,
-   "page": 141,
+   "xref": 256,
+   "page": 151,
    "px": [
     1000,
     667
    ],
    "cs": "DeviceRGB",
-   "dpi": 228.9
+   "dpi": 204.1
   },
   {
-   "xref": 252,
-   "page": 143,
+   "xref": 260,
+   "page": 154,
    "px": [
     640,
     448
    ],
    "cs": "DeviceRGB",
-   "dpi": 167.5
+   "dpi": 152.4
   },
   {
-   "xref": 260,
-   "page": 150,
+   "xref": 268,
+   "page": 161,
    "px": [
     640,
     427
    ],
    "cs": "DeviceRGB",
-   "dpi": 150.0
+   "dpi": 177.8
   }
+ ],
+ "source_limited_images": [
+  "image xref 116 on p29: 122.4 dpi (source-limited, original composition size kept)",
+  "image xref 119 on p31: 142.9 dpi (source-limited, original composition size kept)"
  ],
  "issues": [],
  "ok": true

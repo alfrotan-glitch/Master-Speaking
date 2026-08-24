@@ -21,12 +21,14 @@ d = pymupdf.open(PDF)
 issues = []
 
 unit_pages = {}      # physical page of each unit opener
-# --- locate unit openers by "UNIT n" kicker text
+# --- locate unit openers: "Unit n · <title>" heading with the THINK panel
 for i in range(d.page_count):
     txt = d[i].get_text('text')
-    m = re.search(r'^UNIT (\d)$', txt, re.M)
-    if m:
+    if 'THINK' not in txt:
+        continue
+    for m in re.finditer(r'^Unit ([1-8]) \u00b7 ', txt, re.M):
         unit_pages[int(m.group(1))] = i + 1
+        break
 
 main_start = unit_pages.get(1)
 
@@ -67,10 +69,15 @@ for i in range(d.page_count):
     head_spans = [s for s in spans if s['bbox'][3] < M_TOP - 10]
     htxt = ''.join(s['text'] for s in head_spans).strip()
     if main_start and page > main_start and not is_opener:
-        if not htxt.startswith('Master Speaking'):
-            issues.append(f'p{page}: running head missing/wrong: {htxt!r}')
-        if page > main_start and not is_opener and page not in (main_start+1,) and htxt.count('·') != 1:
-            issues.append(f'p{page}: running head lacks unit title: {htxt!r}')
+        if page % 2 == 1:
+            if not htxt.startswith('MASTER SPEAKING'):
+                issues.append(f'p{page}: recto running head missing/wrong: {htxt!r}')
+        else:
+            body_spans = [s2 for s2 in spans
+                          if s2['bbox'][1] > M_TOP
+                          and s2['bbox'][3] < PAGE_H - M_BOT + 10]
+            if body_spans and not re.match(r'^Unit [1-8] · ', htxt):
+                issues.append(f'p{page}: verso running head missing/wrong: {htxt!r}')
     # text inside margins
     for s in spans:
         x0, y0, x1, y1 = s['bbox']
@@ -111,7 +118,10 @@ for i in range(d.page_count):
 # --- TOC accuracy: printed TOC folios vs actual unit pages
 # merge lines sharing the same y (folio prints beside the entry text)
 toc_lines = []
-for i in range(8, 12):
+toc_start = next((i for i in range(min(12, d.page_count))
+                  if d[i].get_text('text').strip().startswith(
+                      ('v', 'i', 'x')) and 'Contents' in d[i].get_text('text')), 6)
+for i in range(toc_start, toc_start + 4):
     if i >= d.page_count:
         continue
     rows = {}

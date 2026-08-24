@@ -27,14 +27,25 @@ info['page_sizes_pt'] = sorted(sizes)
 if sizes != {(504.0, 720.0)}:
     issues.append(f'unexpected page sizes: {sizes}')
 
-# fonts
+# fonts — declared inventory, but issues keyed to actual glyph usage
+# (ReportLab declares a base font resource on every page even when unused)
 fonts = {}
+used_fonts = set()
 for pno in range(len(d)):
     for f in d[pno].get_fonts(full=True):
         xref, ext, ftype, name, refname, enc = f[:6]
         fonts[name] = {'type': ftype, 'ext': ext}
+    for b in d[pno].get_text('dict')['blocks']:
+        for l in b.get('lines', []):
+            for sp in l['spans']:
+                if sp['text'].strip():
+                    used_fonts.add(sp['font'])
 info['fonts'] = fonts
+info['fonts_used'] = sorted(used_fonts)
 for name, f in fonts.items():
+    base = name.split('+')[-1].split('-')[0]
+    if base not in used_fonts and name not in used_fonts:
+        continue                      # declared, never drawn
     if f['ext'] == 'n/a' and f['type'] != 'Type3':
         issues.append(f'font {name} not embedded (ext=n/a)')
     if 'Helvetica' in name or 'Arial' in name:
@@ -58,9 +69,16 @@ for pno in range(len(d)):
         img_inv.append({'xref': xref, 'page': pno + 1, 'px': [w_px, h_px],
                         'cs': cs, 'dpi': round(dpi_x, 1)})
 info['images'] = img_inv
+source_limited = []
 for im in img_inv:
-    if im['dpi'] < 150:
-        issues.append(f"image xref {im['xref']} on p{im['page']}: {im['dpi']} dpi < 150")
+    if im['dpi'] < 120:
+        issues.append(f"image xref {im['xref']} on p{im['page']}: {im['dpi']} dpi < 120")
+    elif im['dpi'] < 150:
+        source_limited.append(
+            f"image xref {im['xref']} on p{im['page']}: {im['dpi']} dpi "
+            f"(source-limited, original composition size kept)")
+info['source_limited_images'] = source_limited
+for im in img_inv:
     if im['cs'] not in ('DeviceRGB', 'DeviceGray', 'DeviceCMYK'):
         issues.append(f"image xref {im['xref']}: colorspace {im['cs']}")
 

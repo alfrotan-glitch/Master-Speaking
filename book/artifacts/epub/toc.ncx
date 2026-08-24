@@ -192,7 +192,7 @@
     </navPoint>
     <navPoint id="np31" playOrder="31">
       <navLabel>
-        <text>Unit 6 · Marriage</text>
+        <text>Unit 6 · Is Love Enough?</text>
       </navLabel>
       <content src="unit6.xhtml"/>
       <navPoint id="np32" playOrder="32">

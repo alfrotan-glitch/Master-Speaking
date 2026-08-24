@@ -1,5 +1,12 @@
 [
  {
+  "area": "copyright page",
+  "original": "(no copyright page in source)",
+  "correction": "Copyright © 2026 Abdul Raziq Nazari. Published by The TOEFL House.",
+  "reason": "client-directed publisher attribution (official TOEFL House publication); year and author from source signature",
+  "confidence": "high"
+ },
+ {
   "area": "U5 opener title",
   "original": "Living with AI (Artificial Intelligence)Living with AI (Artificial Intelligence)Unit 5Unit 5",
   "correction": "Unit 5 · Living with AI",

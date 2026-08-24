@@ -168,14 +168,33 @@ def hit(t, target_loose, target_leaf, target_norm_text):
     return False
 
 
+import re as _re
+
+def split_retry(t):
+    """PDF-only retry: narrow table cells wrap long words without hyphens
+    (ReportLab splitLongWords), so extraction shows e.g. 'misunderstan ding'.
+    Re-search allowing whitespace between every character."""
+    l = loose(norm(t))
+    for w in windows(l):
+        if len(w) < 8:
+            continue
+        pat = _re.compile(r'\s*'.join(_re.escape(ch) for ch in w if not ch.isspace()))
+        if pat.search(pdf_loose):
+            return True
+    return False
+
 miss_pdf, miss_epub, miss_docx = [], [], []
 n = 0
+split_tolerant = 0
 for t, kind in texts:
     if len(norm(t)) < 4:
         continue
     n += 1
     if not hit(t, pdf_loose, pdf_leaf_set, pdf_text):
-        miss_pdf.append(t[:90])
+        if split_retry(t):
+            split_tolerant += 1
+        else:
+            miss_pdf.append(t[:90])
     if not hit(t, epub_loose, epub_leaf_set, epub_text):
         miss_epub.append(t[:90])
     if not hit(t, docx_loose, docx_leaf, docx_text):
@@ -185,6 +204,7 @@ report = {'master_blocks': n,
           'pdf': {'covered': n - len(miss_pdf), 'missing': miss_pdf},
           'epub': {'covered': n - len(miss_epub), 'missing': miss_epub},
           'docx': {'covered': n - len(miss_docx), 'missing': miss_docx},
+          'pdf_word_split_matches': split_tolerant,
           'ok': not miss_pdf and not miss_epub and not miss_docx}
 open(os.path.join(ROOT, 'book/artifacts/qa_fidelity.json'), 'w').write(
     json.dumps(report, indent=1, ensure_ascii=False))

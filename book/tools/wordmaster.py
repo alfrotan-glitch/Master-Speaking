@@ -37,9 +37,15 @@ XH = 'http://www.w3.org/1999/xhtml'
 
 SERIF = 'Source Serif 4'
 SANS = 'Source Sans 3'
-ACCENT = RGBColor(0x0E, 0x6E, 0x5C)
+# ---- original manuscript visual identity (audited from Master Speaking.docx)
+BAND = '7BE1D0'      # mint band: section heads, unit titles
+BANNER = '92D050'    # bright green: FM banners, chapter titles
+ACCENT = RGBColor(0x00, 0xB0, 0x50)   # deep green: kickers, labels, run-ins
 INK = RGBColor(0x14, 0x18, 0x1A)
 GRAY = RGBColor(0x5A, 0x6B, 0x66)
+WHITE = RGBColor(0xFF, 0xFF, 0xFF)
+BOX_GREEN = 'B9E9B5'  # light-green box fill
+BOX_OLIVE = 'BFDDAB'  # pale-olive box fill (U6-8)
 
 TEXT_W_IN = 7 - 0.85 - 0.6      # usable text width 5.55"
 
@@ -133,20 +139,22 @@ fmt(pstyle('MS Author'), SANS, 15, color=GRAY,
     align=WD_ALIGN_PARAGRAPH.CENTER, before=6, after=6)
 fmt(pstyle('MS Copyright Line'), SERIF, 9.5, color=INK,
     align=WD_ALIGN_PARAGRAPH.CENTER, after=5, line=1.25)
-fmt(pstyle('MS FM Head', base='Heading 1'), SANS, 19, bold=True, color=INK,
-    before=18, after=10, page_break=False, keep_next=True)
+fmt(pstyle('MS FM Head', base='Heading 1'), SANS, 19, bold=True, color=WHITE,
+    before=18, after=10, page_break=True, keep_next=True)
 fmt(pstyle('MS FM Sub', base='Heading 2'), SANS, 12.5, bold=True, color=ACCENT,
     before=12, after=5, page_break=False, keep_next=True)
 fmt(pstyle('MS Epigraph'), SERIF, 12.5, italic=True, color=INK,
-    align=WD_ALIGN_PARAGRAPH.CENTER, before=90, after=6, line=1.3)
-fmt(pstyle('MS TOC Heading'), SANS, 19, bold=True, color=INK, after=12)
+    align=WD_ALIGN_PARAGRAPH.CENTER, before=90, after=6, line=1.3,
+    page_break=True)
+fmt(pstyle('MS TOC Heading'), SANS, 19, bold=True, color=WHITE, after=12)
 
 # unit + chapter (structural H1 / H2)
 fmt(pstyle('MS Unit Title', base='Heading 1'), SANS, 25, bold=True, color=INK,
     before=36, after=10, page_break=True, keep_next=True, line=1.05)
 fmt(pstyle('MS Chapter Title', base='Heading 2'), SANS, 16, bold=True,
-    color=INK, before=6, after=10, page_break=True, keep_next=True)
-fmt(pstyle('MS Section', base='Heading 3'), SANS, 12, bold=True, color=ACCENT,
+    color=RGBColor(0x92, 0xD0, 0x50), before=6, after=10, page_break=True,
+    keep_next=True)
+fmt(pstyle('MS Section', base='Heading 3'), SANS, 12, bold=True, color=INK,
     before=15, after=4, keep_next=True)
 fmt(pstyle('MS Subsection', base='Heading 4'), SANS, 10.5, bold=True,
     color=INK, before=11, after=3, keep_next=True)
@@ -159,7 +167,7 @@ fmt(pstyle('MS Body'), SERIF, 10.5, align=WD_ALIGN_PARAGRAPH.JUSTIFY,
 fmt(pstyle('MS Instruction'), SANS, 10, italic=True, color=GRAY,
     after=5, line=1.15)
 fmt(pstyle('MS Label'), SANS, 10.5, bold=True, color=INK, after=4, keep_next=True)
-fmt(pstyle('MS Topic'), SANS, 10.5, bold=True, color=ACCENT, after=5)
+fmt(pstyle('MS Topic'), SANS, 10.5, bold=True, color=INK, after=5)
 fmt(pstyle('MS Title Line'), SERIF, 10.5, italic=True, after=4)
 fmt(pstyle('MS Media Title'), SANS, 11, bold=True, color=INK, after=4,
     keep_next=True)
@@ -177,6 +185,14 @@ fmt(pstyle('MS Figure'), SERIF, 10.5, align=WD_ALIGN_PARAGRAPH.CENTER,
     before=8, after=10)
 
 # left accent border for reading + note styles (style-level pBdr)
+def style_shading(name, fill):
+    st = S[name]
+    ppr = st.element.get_or_add_pPr()
+    shd = OxmlElement('w:shd')
+    shd.set(qn('w:val'), 'clear')
+    shd.set(qn('w:fill'), fill)
+    ppr.append(shd)
+
 def style_left_border(name, color='0E6E5C', sz=16):
     st = S[name]
     ppr = st.element.get_or_add_pPr()
@@ -189,8 +205,14 @@ def style_left_border(name, color='0E6E5C', sz=16):
     pbdr.append(left)
     ppr.append(pbdr)
 
-style_left_border('MS Reading')
-style_left_border('MS Note')
+style_left_border('MS Reading', color='B9E9B5')
+style_left_border('MS Note', color='B9E9B5')
+# original green identity: banner + band shading
+style_shading('MS FM Head', BANNER)
+style_shading('MS Topic', BAND)
+style_shading('MS TOC Heading', BANNER)
+style_shading('MS Section', BAND)
+style_shading('MS Unit Title', BAND)
 
 # bullets: restyle the built-in List Bullet
 lb = S['List Bullet']
@@ -212,7 +234,7 @@ for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
     b = OxmlElement(f'w:{edge}')
     b.set(qn('w:val'), 'single')
     b.set(qn('w:sz'), '4')
-    b.set(qn('w:color'), 'C7D4D0')
+    b.set(qn('w:color'), 'A9D8A0')
     borders.append(b)
 tblpr.append(borders)
 cellmar = OxmlElement('w:tblCellMar')
@@ -229,7 +251,7 @@ rpr = OxmlElement('w:rPr')
 rb = OxmlElement('w:b')
 rpr.append(rb)
 rc = OxmlElement('w:color')
-rc.set(qn('w:val'), 'FFFFFF')
+rc.set(qn('w:val'), '0F1115')
 rpr.append(rc)
 rf = OxmlElement('w:rFonts')
 for a in ('w:ascii', 'w:hAnsi'):
@@ -241,13 +263,31 @@ csp.append(cpr)
 tcpr = OxmlElement('w:tcPr')
 shd = OxmlElement('w:shd')
 shd.set(qn('w:val'), 'clear')
-shd.set(qn('w:fill'), '0E6E5C')
+shd.set(qn('w:fill'), '7BE1D0')
 tcpr.append(shd)
 csp.append(tcpr)
 tstyle.element.append(csp)
 
 # ---------------------------------------------------------------------------
 # helpers
+def set_cell_fill(cell, fill):
+    tcpr = cell._tc.get_or_add_tcPr()
+    shd = OxmlElement('w:shd')
+    shd.set(qn('w:val'), 'clear')
+    shd.set(qn('w:fill'), fill)
+    tcpr.append(shd)
+
+def set_table_white_borders(t):
+    tblpr = t._tbl.tblPr
+    borders = OxmlElement('w:tblBorders')
+    for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
+        b = OxmlElement(f'w:{edge}')
+        b.set(qn('w:val'), 'single')
+        b.set(qn('w:sz'), '8')
+        b.set(qn('w:color'), 'FFFFFF')
+        borders.append(b)
+    tblpr.append(borders)
+
 def add_par(text='', style=None):
     p = doc.add_paragraph(style=style)
     if text:
@@ -332,6 +372,7 @@ def render_table(tbl_el):
     ncols = max([len(h) for h, _ in header] + [len(r) for r, _ in body_rows] or [1])
     t = doc.add_table(rows=0, cols=ncols, style='MS Table')
     t.autofit = False
+    tbl_fill = tbl_el.get('data-fill') or ''
     # column widths: weighted by content with a floor (twips of 5.55" text)
     total_tw = int(TEXT_W_IN * 1440)
     weights = []
@@ -363,6 +404,16 @@ def render_table(tbl_el):
             par.paragraph_format.space_after = Pt(2)
             par.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
             par.add_run(txt)
+            if tbl_fill in (BOX_GREEN, BOX_OLIVE):
+                # original identity: solid pastel box, white separators,
+                # dark bold header row (direct shading overrides the band)
+                set_cell_fill(cell, tbl_fill)
+                if header and row is t.rows[0]:
+                    for r in par.runs:
+                        r.font.bold = True
+                        r.font.name = SANS
+    if tbl_fill in (BOX_GREEN, BOX_OLIVE):
+        set_table_white_borders(t)
     add_par('', 'MS Body').paragraph_format.space_after = Pt(2)
 
 def render_blocks(el, ctx=None):
@@ -485,8 +536,11 @@ for part in body.findall('x:section', NS):
             elif ln2 == 'p':
                 add_par(text_of(el), 'MS Author')
     elif kind == 'copyright':
-        for el in part.findall('x:p', NS):
-            add_par(text_of(el), 'MS Copyright Line')
+        cps = part.findall('x:p', NS)
+        for ci, el in enumerate(cps):
+            cp = add_par(text_of(el), 'MS Copyright Line')
+            if ci == 0:
+                cp.paragraph_format.page_break_before = True
     elif kind == 'foreword':
         add_pagebreak = None
         head = part.find('x:h1', NS)
@@ -559,8 +613,34 @@ for unit in body.findall('x:section[@class="unit"]', NS):
             add_image(im, 4.9)
     warm = unit.find('x:div[@class="warmup"]', NS)
     if warm is not None:
-        add_par('THINK', 'MS Label')
-        render_blocks(warm)
+        wt = doc.add_table(rows=1, cols=1, style='MS Table')
+        wt.autofit = False
+        wcell = wt.cell(0, 0)
+        wcell.width = Inches(TEXT_W_IN)
+        set_cell_fill(wcell, BOX_GREEN)
+        set_table_white_borders(wt)
+        first = wcell.paragraphs[0]
+        first.style = S['MS Topic']
+        first.add_run('THINK')
+        for c in warm:
+            if not isinstance(c.tag, str):
+                continue
+            lnw = etree.QName(c).localname
+            if lnw == 'p' and 'instr' in cls_of(c):
+                wp = wcell.add_paragraph()
+                wp.style = S['MS Instruction']
+                wp.add_run(text_of(c))
+            elif lnw == 'table':
+                for tr in c.findall('.//x:tr', NS):
+                    for td in tr.findall('x:td', NS):
+                        q = text_of(td)
+                        if not q:
+                            continue
+                        wp = wcell.add_paragraph()
+                        wp.style = S['MS Question']
+                        wp.add_run(q)
+        sp = add_par('', 'MS Body')
+        sp.paragraph_format.space_after = Pt(2)
     for ch in unit.findall('x:section[@class="chapter"]', NS):
         cnum = ch.get('data-chapter')
         cname = text_of(ch.find('.//x:span[@class="chapter-name"]', NS))

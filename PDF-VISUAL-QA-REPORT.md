@@ -1,15 +1,15 @@
-# PDF Visual QA Report — *Master Speaking* (7×10 in, 161 pages)
+# PDF Visual QA Report — *Master Speaking* (7×10 in, 172 pages)
 
 ## Method
 
 - Every page measured: word count, used text depth (fraction of the type area filled), image presence.
 - Two-page spreads evaluated for density balance (verso+recto word ratio).
 - Chapter-end whitespace measured and graded against the next chapter start.
-- Full-page renders for the human eye pass: `book/artifacts/proof_png/` (p001.png … p161.png).
+- Full-page renders for the human eye pass: `book/artifacts/proof_png/` (p001.png … p172.png).
 
 ## Spread balance
 
-- 75 body spreads measured; median words/spread 356.
+- 81 body spreads measured; median words/spread 297.
 - Imbalance tolerance: ratio > 3.2 is flagged **unless** the spread contains a chapter or unit opening (intentional white space by design — §22).
 - Flags: **0**
 
@@ -17,7 +17,7 @@
 
 ## Chapter endings (§22)
 
-- 32 chapter-end pages; median fill depth 68% of the type area.
+- 32 chapter-end pages; median fill depth 62% of the type area.
 - Natural white space at chapter end is acceptable by specification; all endings checked for accidental-looking half pages (see flags above — none).
 
 ## Page-by-page findings (§28 checklist)

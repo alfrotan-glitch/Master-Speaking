@@ -91,6 +91,7 @@ def table_html(b, ctx=''):
     role = b['role']
     rows = b['rows']
     cls = f'tbl {role}'
+    fillattr = f' data-fill="{b["fill"]}"' if b.get('fill') else ''
     head = ''
     body_rows = rows
     hdr_first = role in ('vocab', 'preslang', 'notes', 'grid', 'ranking')
@@ -104,7 +105,7 @@ def table_html(b, ctx=''):
         for ci, c in enumerate(r):
             tds.append(f'<td>{esc(c)}</td>')
         trs.append('<tr>' + ''.join(tds) + '</tr>')
-    return (f'<table class="{cls}">{head}<tbody>' + ''.join(trs) + '</tbody></table>')
+    return (f'<table class="{cls}"{fillattr}>{head}<tbody>' + ''.join(trs) + '</tbody></table>')
 
 def render_blocks(blocks, ctx):
     """Render grouped blocks to HTML lines."""
@@ -216,6 +217,7 @@ parts.append('<section class="fm" data-part="title-page" id="title-page">\n'
 # copyright
 parts.append('<section class="fm" data-part="copyright" id="copyright">\n'
              f'<p class="copyright-line">Copyright © {meta["year"]} {esc(meta["author"])}</p>\n'
+             '<p class="copyright-line">Published by The TOEFL House</p>\n'
              '<p class="copyright-line">All rights reserved. No part of this publication may be reproduced, '
              'distributed, or transmitted in any form or by any means, without the prior written permission '
              'of the author, except for brief quotations in reviews and academic use.</p>\n'

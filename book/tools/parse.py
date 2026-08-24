@@ -83,7 +83,7 @@ UNIT_TITLES = {
     3: 'Emotional Intelligence',
     4: 'Money and Happiness',
     5: 'Living with AI',
-    6: 'Marriage',
+    6: 'Is Love Enough?',   # original opener textbox title (TOC banner read 'MARRIAGE')
     7: 'Globalization',
     8: 'Lingua Franca',
 }
@@ -429,15 +429,23 @@ def classify_table(t):
 
 def table_block(t):
     rows = []
+    fills = []
     for r in t['rows']:
         row = []
         for c in r:
             row.append(clean(c['text'].replace('\n', ' ')))
+            if c.get('shd'):
+                fills.append(c['shd'])
         while len(row) < t['grid_cols']:
             row.append('')
         rows.append(row)
     role = classify_table(t)
-    return {'k': 'table', 'role': role, 'rows': rows, 'src': t['i']}
+    blk = {'k': 'table', 'role': role, 'rows': rows, 'src': t['i']}
+    if fills:
+        # majority cell fill = the table's original box colour
+        from collections import Counter
+        blk['fill'] = Counter(fills).most_common(1)[0][0]
+    return blk
 
 # ----------------------------------------------------------------------------
 # 7. BLOCK SPLITTERS (jammed paragraphs)
@@ -943,6 +951,10 @@ def resmarten(obj):
             resmarten(v)
 
 def build():
+    log('copyright page', '(no copyright page in source)',
+        'Copyright © 2026 Abdul Raziq Nazari. Published by The TOEFL House.',
+        'client-directed publisher attribution (official TOEFL House '
+        'publication); year and author from source signature', 'high')
     log('U5 opener title',
         'Living with AI (Artificial Intelligence)Living with AI '
         '(Artificial Intelligence)Unit 5Unit 5',

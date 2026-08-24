@@ -30,19 +30,33 @@ items, idx = [], 0
 for child in doc.element.body:
     tag = etree.QName(child).localname
     if tag == 'p':
-        items.append({'i': idx, 'type': 'para', 'style': para_style(child),
-                      'pagebreak': has_page_break(child), 'images': para_rids(child),
-                      'text': para_text(child)})
+        it = {'i': idx, 'type': 'para', 'style': para_style(child),
+              'pagebreak': has_page_break(child), 'images': para_rids(child),
+              'text': para_text(child)}
+        # visual identity: paragraph shading band + first accent run color
+        shd = child.find(f'{W}pPr/{W}shd')
+        if shd is not None and shd.get(f'{W}fill') not in (None, 'auto'):
+            it['shd'] = shd.get(f'{W}fill')
+        for rc in child.findall(f'.//{W}rPr/{W}color'):
+            v = rc.get(f'{W}val')
+            if v and v not in ('auto', '0F1115', '181818', '333333'):
+                it['run_color'] = v
+                break
+        items.append(it)
         idx += 1
     elif tag == 'tbl':
         rows = []
         for tr in child.findall(f'{W}tr'):
             cells = []
             for tc in tr.findall(f'{W}tc'):
-                cells.append({'text': '\n'.join(
+                cell = {'text': '\n'.join(
                     ''.join(t.text or '' for t in p.findall(f'.//{W}t'))
                     for p in tc.findall(f'.//{W}p')),
-                    'images': [b.get(f'{R}embed') for b in tc.findall(f'.//{A}blip')]})
+                    'images': [b.get(f'{R}embed') for b in tc.findall(f'.//{A}blip')]}
+                cshd = tc.find(f'{W}tcPr/{W}shd')
+                if cshd is not None and cshd.get(f'{W}fill') not in (None, 'auto'):
+                    cell['shd'] = cshd.get(f'{W}fill')
+                cells.append(cell)
             rows.append(cells)
         grid = len(child.findall(f'{W}tblGrid/{W}gridCol'))
         items.append({'i': idx, 'type': 'table', 'grid_cols': grid, 'rows': rows})

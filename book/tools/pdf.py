@@ -46,10 +46,16 @@ TEXT_W = PAGE_W - M_IN - M_OUT
 GUTTER_SHIFT = M_IN - M_OUT          # mirrored-margin offset applied to verso pages
 
 INK = colors.HexColor('#14181A')
-ACCENT = colors.HexColor('#0E6E5C')
-ACCENT_HEX = '#0E6E5C'
-RULE = colors.HexColor('#C7D4D0')
-ZEBRA = colors.HexColor('#F1F6F4')
+# ---- original manuscript visual identity (audited from Master Speaking.docx)
+BAND = colors.HexColor('#7BE1D0')      # mint band behind section headings
+BANNER = colors.HexColor('#92D050')    # bright green: FM banners, chapter titles
+ACCENT = colors.HexColor('#00B050')    # deep green: kickers, labels, bullets
+ACCENT_HEX = '#00B050'
+BOX_GREEN = colors.HexColor('#B9E9B5')  # light-green box fill (U1-5 vocab, warm-ups)
+BOX_OLIVE = colors.HexColor('#BFDDAB')  # pale-olive box fill (U6-8 vocab)
+RULE = colors.HexColor('#A9D8A0')
+ZEBRA = colors.HexColor('#F0F8EC')
+FILL_MAP = {'B9E9B5': BOX_GREEN, 'BFDDAB': BOX_OLIVE}
 SOFT = colors.HexColor('#5A6B66')
 
 SERIF, SANS, FALLBACK = 'SourceSerif', 'SourceSans', 'DejaVuSans'
@@ -140,7 +146,8 @@ def build_styles():
     S['label'] = P('label', fontName=SANS+'-SB', fontSize=9.6, leading=13.5,
                    alignment=TA_LEFT, spaceBefore=3, spaceAfter=3, keepWithNext=1)
     S['topic'] = P('topic', fontName=SANS+'-SB', fontSize=10.8, leading=14.5,
-                   alignment=TA_LEFT, textColor=ACCENT, spaceBefore=7, spaceAfter=4,
+                   alignment=TA_LEFT, textColor=INK, backColor=BAND,
+                   borderPadding=(2, 5, 3, 5), spaceBefore=7, spaceAfter=5,
                    keepWithNext=1)
     S['titleline'] = P('titleline', fontName=SERIF+'-I', fontSize=10.5, leading=14.5,
                        alignment=TA_LEFT, spaceAfter=4, keepWithNext=0)
@@ -161,7 +168,9 @@ def build_styles():
     S['note'] = P('note', fontName=SERIF+'-I', fontSize=9.8, leading=14,
                   textColor=SOFT, leftIndent=2, rightIndent=4, alignment=TA_LEFT)
     S['sec'] = P('sec', fontName=SANS+'-SB', fontSize=13, leading=16,
-                 spaceBefore=16, spaceAfter=5, keepWithNext=1)
+                 textColor=INK, backColor=BAND,
+                 borderPadding=(2.5, 5, 3.5, 5),
+                 spaceBefore=16, spaceAfter=6, keepWithNext=1)
     S['sub'] = P('sub', fontName=SANS+'-SB', fontSize=10.8, leading=14,
                  textColor=ACCENT, spaceBefore=11, spaceAfter=3.5, keepWithNext=1)
     S['subsub'] = P('subsub', fontName=SANS+'-B', fontSize=9.4, leading=12.5,
@@ -171,15 +180,17 @@ def build_styles():
     S['unitkicker'] = P('unitkicker', fontName=SANS+'-SB', fontSize=12.5, leading=15,
                         textColor=ACCENT, spaceAfter=8)
     S['unittitle'] = P('unittitle', fontName=SERIF+'-B', fontSize=27, leading=31,
-                       spaceAfter=4)
+                       textColor=INK, backColor=BAND,
+                       borderPadding=(3, 6, 5, 6), spaceAfter=8)
     S['chapkicker'] = P('chapkicker', fontName=SANS+'-SB', fontSize=10.5, leading=13,
                         textColor=ACCENT, spaceAfter=5)
     S['chaptitle'] = P('chaptitle', fontName=SERIF+'-B', fontSize=17.5, leading=21.5,
-                       spaceAfter=6)
+                       textColor=BANNER, spaceAfter=6)
     S['warmhead'] = P('warmhead', fontName=SANS+'-SB', fontSize=11, leading=14,
                       textColor=ACCENT, spaceAfter=4)
     S['fmhead'] = P('fmhead', fontName=SERIF+'-B', fontSize=19, leading=24,
-                    spaceAfter=14, alignment=TA_LEFT)
+                    textColor=colors.white, backColor=BANNER,
+                    borderPadding=(3, 6, 4, 6), spaceAfter=14, alignment=TA_LEFT)
     S['fmsub'] = P('fmsub', fontName=SANS+'-SB', fontSize=11.5, leading=15,
                    textColor=ACCENT, spaceBefore=10, spaceAfter=5, keepWithNext=1)
     S['fmsub2'] = P('fmsub2', fontName=SANS+'-SB', fontSize=10.5, leading=14,
@@ -198,14 +209,15 @@ def build_styles():
                        spaceBefore=14)
     S['signdate'] = P('signdate', fontName=SANS, fontSize=9.8, leading=13,
                       textColor=SOFT)
-    S['toc0'] = P('toc0', fontName=SANS+'-SB', fontSize=11, leading=16.5, spaceBefore=9)
-    S['toc1'] = P('toc1', fontName=SERIF, fontSize=10, leading=14.5, leftIndent=18)
+    S['toc0'] = P('toc0', fontName=SANS+'-SB', fontSize=11, leading=15, spaceBefore=4)
+    S['toc1'] = P('toc1', fontName=SERIF, fontSize=10, leading=13.2, leftIndent=18)
     S['tochead'] = P('tochead', fontName=SERIF+'-B', fontSize=19, leading=24,
-                     spaceAfter=16)
+                     textColor=colors.white, backColor=BANNER,
+                     borderPadding=(3, 6, 4, 6), spaceAfter=16)
     S['tabhead'] = P('tabhead', fontName=SANS+'-SB', fontSize=8.8, leading=11.5,
-                     textColor=colors.white, alignment=TA_LEFT)
+                     textColor=INK, alignment=TA_LEFT)
     S['tabcell'] = P('tabcell', fontName=SERIF, fontSize=9.2, leading=12.2,
-                     alignment=TA_LEFT)
+                     textColor=INK, alignment=TA_LEFT)
     for st in S.values():
         st.bulletFontName = SANS
 
@@ -350,6 +362,7 @@ def table_flow(el):
         return None
     cls = (el.get('class') or '').split()
     role = cls[-1] if len(cls) > 1 else 'generic'
+    fill = FILL_MAP.get(el.get('data-fill') or '')
     if role in ('questions', 'warmup'):
         # write-in tables: question + answer space, minimal rules
         data = [[Paragraph(fallback(t), S['tabcell']) for t in r] + [Paragraph('', S['tabcell'])]
@@ -423,8 +436,15 @@ def table_flow(el):
              ('LEFTPADDING', (0,0), (-1,-1), 5),
              ('RIGHTPADDING', (0,0), (-1,-1), 5),
              ('GRID', (0,0), (-1,-1), 0.5, RULE)]
-    if header:
-        style += [('BACKGROUND', (0,0), (-1,0), ACCENT),
+    if fill:
+        # original identity: solid pastel box with white separators
+        style += [('BACKGROUND', (0,0), (-1,-1), fill),
+                  ('GRID', (0,0), (-1,-1), 1.0, colors.white)]
+        if header:
+            style += [('TOPPADDING', (0,0), (-1,0), 4),
+                      ('BOTTOMPADDING', (0,0), (-1,0), 4)]
+    elif header:
+        style += [('BACKGROUND', (0,0), (-1,0), BAND),
                   ('TOPPADDING', (0,0), (-1,0), 4),
                   ('BOTTOMPADDING', (0,0), (-1,0), 4)]
         for ri in range(1, len(data)):
@@ -477,8 +497,8 @@ def wrap_block(flows, kind):
                   ('TOPPADDING', (0,0), (-1,-1), 7),
                   ('BOTTOMPADDING', (0,0), (-1,-1), 7)]
     elif kind == 'warmup':
-        style += [('BACKGROUND', (0,0), (-1,-1), ZEBRA),
-                  ('LINEBEFORE', (0,0), (0,-1), 2, ACCENT),
+        style += [('BACKGROUND', (0,0), (-1,-1), BOX_GREEN),
+                  ('LINEBEFORE', (0,0), (0,-1), 2, BANNER),
                   ('LEFTPADDING', (0,0), (-1,-1), 12),
                   ('RIGHTPADDING', (0,0), (-1,-1), 10),
                   ('TOPPADDING', (0,0), (-1,-1), 9),

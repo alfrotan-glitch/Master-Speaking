@@ -228,7 +228,8 @@
          "His message inspired many people."
         ]
        ],
-       "src": 179
+       "src": 179,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -709,7 +710,8 @@
          "Listening respectfully is more effective than trying to force someone to change their mind."
         ]
        ],
-       "src": 282
+       "src": 282,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -1027,7 +1029,8 @@
          "Describe a time you worked things out."
         ]
        ],
-       "src": 344
+       "src": 344,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -1297,7 +1300,8 @@
          "Closing"
         ]
        ],
-       "src": 407
+       "src": 407,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -1578,7 +1582,8 @@
          "Set realistic goals."
         ]
        ],
-       "src": 456
+       "src": 456,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -2139,7 +2144,8 @@
          "Education helps people reach their full potential."
         ]
        ],
-       "src": 589
+       "src": 589,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -2470,7 +2476,8 @@
          "You must take ownership of your success instead of blaming others."
         ]
        ],
-       "src": 673
+       "src": 673,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -2734,7 +2741,8 @@
          "Closing the presentation"
         ]
        ],
-       "src": 732
+       "src": 732,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -2953,7 +2961,8 @@
          "University students interact with others from different cultures."
         ]
        ],
-       "src": 781
+       "src": 781,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -3462,7 +3471,8 @@
          "Good teachers help students cultivate hope for the future."
         ]
        ],
-       "src": 906
+       "src": 906,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -3788,7 +3798,8 @@
          "Instead of arguing, respond in a constructive way."
         ]
        ],
-       "src": 987
+       "src": 987,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -4153,7 +4164,8 @@
          "Closing"
         ]
        ],
-       "src": 1063
+       "src": 1063,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -4366,7 +4378,8 @@
          "Volunteering gave her a strong sense of purpose."
         ]
        ],
-       "src": 1101
+       "src": 1101,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -4856,7 +4869,8 @@
          "Spending time on learning often has a bigger return than spending money on luxury goods."
         ]
        ],
-       "src": 1223
+       "src": 1223,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -5218,7 +5232,8 @@
          "Learning English is one of the best ways to invest in yourself."
         ]
        ],
-       "src": 1299
+       "src": 1299,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -5414,7 +5429,8 @@
          ""
         ]
        ],
-       "src": 1340
+       "src": 1340,
+       "fill": "B9E9B5"
       },
       {
        "k": "instr",
@@ -5490,7 +5506,8 @@
          "pri OR i ty"
         ]
        ],
-       "src": 1346
+       "src": 1346,
+       "fill": "B9E9B5"
       },
       {
        "k": "sub",
@@ -5587,7 +5604,8 @@
          "Closing"
         ]
        ],
-       "src": 1358
+       "src": 1358,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -5904,7 +5922,8 @@
          "Powerful technology should always be used responsibly and ethically."
         ]
        ],
-       "src": 1417
+       "src": 1417,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -6355,7 +6374,8 @@
          "General-purpose AI could transform many areas of human life."
         ]
        ],
-       "src": 1521
+       "src": 1521,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -6701,7 +6721,8 @@
          "Powerful AI systems should operate under human oversight."
         ]
        ],
-       "src": 1602
+       "src": 1602,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -7495,7 +7516,7 @@
   },
   {
    "number": 6,
-   "title": "Marriage",
+   "title": "Is Love Enough?",
    "image": "image16.png",
    "chapters": [
     {
@@ -7567,7 +7588,8 @@
          "A healthy relationship requires ongoing effort from both partners."
         ]
        ],
-       "src": 1813
+       "src": 1813,
+       "fill": "BFDDAB"
       },
       {
        "k": "sec",
@@ -8087,7 +8109,8 @@
          "Couples need a shared vision of the life they want to build."
         ]
        ],
-       "src": 1932
+       "src": 1932,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -8441,7 +8464,8 @@
          "Mutual understanding is essential when partners have different priorities."
         ]
        ],
-       "src": 2012
+       "src": 2012,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -9243,7 +9267,8 @@
          "Governments may need policies to protect local communities."
         ]
        ],
-       "src": 2188
+       "src": 2188,
+       "fill": "BFDDAB"
       },
       {
        "k": "sec",
@@ -9762,7 +9787,8 @@
          "Many countries compete to attract talent from around the world."
         ]
        ],
-       "src": 2299
+       "src": 2299,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -10165,7 +10191,8 @@
          "Countries should take responsibility for reducing environmental damage."
         ]
        ],
-       "src": 2381
+       "src": 2381,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -10962,7 +10989,8 @@
          "Some young people are losing their ancestral language."
         ]
        ],
-       "src": 2551
+       "src": 2551,
+       "fill": "BFDDAB"
       },
       {
        "k": "sec",
@@ -11503,7 +11531,8 @@
          "She argues that equating intelligence with English knowledge is arbitrary."
         ]
        ],
-       "src": 2652
+       "src": 2652,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",
@@ -11954,7 +11983,8 @@
          "People should not be judged by their English alone."
         ]
        ],
-       "src": 2720
+       "src": 2720,
+       "fill": "B9E9B5"
       },
       {
        "k": "sec",

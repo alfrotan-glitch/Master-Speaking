@@ -17,7 +17,7 @@ Pass 2 of the specification (2026-08-24). Tool: `book/tools/qa_editorial.py` (bl
 
 ## Editorial corrections applied during the project
 
-- 50 logged changes in `CHANGELOG.md`, each with ORIGINAL / CORRECTION / REASON / CONFIDENCE.
+- 51 logged changes in `CHANGELOG.md`, each with ORIGINAL / CORRECTION / REASON / CONFIDENCE.
 - Notable classes: duplicated “Before You Read” blocks removed (8×); jammed MCQ options split (e.g. “excitementb.” artefacts); “quad” → “quote” (U5); “Team AAgree” → “Team A: Agree”; “on-going” → “ongoing”; one straight apostrophe restored as ’ ; activity renumbering (Activity 1/1/2 → 1/2/3); lettered subsection sequences repaired (A. True or False).
 - Preserved by decision: author’s voice, stress respellings (fi NAN cial), intentional respellings (turnitoff, pickitup, theez), 
 British/American variants quoted from source.

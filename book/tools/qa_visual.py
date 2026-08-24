@@ -41,10 +41,19 @@ for pno in range(len(d)):
     depth = ((max(ys) - Y0) / (Y1 - Y0)) if ys else 0.0
     img_area = sum((b['bbox'][2] - b['bbox'][0]) * (b['bbox'][3] - b['bbox'][1])
                    for b in pg.get_image_info()) / (504 * 720)
+    # table page? many stroked horizontal rules = worksheet/organizer table;
+    # short cell text is intentional there, not an accidental half-empty page
+    hlines = 0
+    for dr in pg.get_drawings():
+        r = dr.get('rect')
+        if r is not None and r.height < 2.5 and r.width > 80:
+            hlines += 1
+    is_table_page = hlines >= 8
     rows.append({'page': page,
                  'words': len(words),
                  'blanks': len(blanks),
                  'img_area': round(img_area, 3),
+                 'is_table_page': is_table_page,
                  'depth': round(min(depth, 1.0), 3),
                  'is_unit_opener': page in units,
                  'is_chapter_start': page in chapter_pages,
@@ -67,8 +76,9 @@ for i in range(main_start - 1, len(rows) - 1, 2):
         nxt = rows[r['page']] if r['page'] < len(rows) else None  # page+1 (1-based)
         chapter_tail = nxt is not None and (nxt['is_chapter_start'] or
                                             nxt['is_unit_opener'])
+        unit_tail = r['page'] + 2 in units      # last page before a blank verso + opener
         return (r['is_unit_opener'] or r['is_chapter_start'] or
-                r['is_chapter_start'] or chapter_tail or
+                r['is_chapter_start'] or chapter_tail or unit_tail or
                 r['img_area'] > 0.05 or r['blanks'] >= 1 or
                 other['is_chapter_start'] or other['is_unit_opener'])
     if ratio > 3.2 and not (intentional_light(a, b) or intentional_light(b, a)):
@@ -77,7 +87,8 @@ for i in range(main_start - 1, len(rows) - 1, 2):
     # accidental near-empty page
     for r in (a, b):
         if (r['words'] - r['blanks']) < 25 and r['depth'] < 0.35 and \
-                r['img_area'] < 0.05 and not intentional_light(r, a if r is b else b):
+                r['img_area'] < 0.05 and not r.get('is_table_page') and \
+                not intentional_light(r, a if r is b else b):
             flags.append(f"page {r['page']}: only {r['words']} words, "
                          f"{r['depth']:.0%} depth — accidental half-empty page")
 

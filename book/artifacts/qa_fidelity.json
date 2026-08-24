@@ -1,16 +1,17 @@
 {
- "master_blocks": 3396,
+ "master_blocks": 3397,
  "pdf": {
-  "covered": 3396,
+  "covered": 3397,
   "missing": []
  },
  "epub": {
-  "covered": 3396,
+  "covered": 3397,
   "missing": []
  },
  "docx": {
-  "covered": 3396,
+  "covered": 3397,
   "missing": []
  },
+ "pdf_word_split_matches": 4,
  "ok": true
 }

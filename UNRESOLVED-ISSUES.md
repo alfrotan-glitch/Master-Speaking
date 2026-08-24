@@ -25,7 +25,7 @@ As of build 2026-08-24. None of these block the deliverables; each is a consciou
 
 ## Environment limitations
 
-8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-REPORT.md).
+8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-QA-REPORT.md).
 9. **Google Fonts offline**: text faces are the locally installed Source Serif 4 / Source Sans 3 / DejaVu Sans files, all embedded and subset in the PDF.
 
 ## Verification aids

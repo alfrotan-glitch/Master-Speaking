@@ -162,8 +162,8 @@ print('QA-REPORT.md')
 
 # ---------------- PREFLIGHT-REPORT.md ----------------
 src = open(os.path.join(BUILD, 'qa_preflight_report.md'), encoding='utf-8').read()
-open(os.path.join(ROOT, 'PREFLIGHT-REPORT.md'), 'w', encoding='utf-8').write(src)
-print('PREFLIGHT-REPORT.md')
+open(os.path.join(ROOT, 'PDF-PREFLIGHT-REPORT.md'), 'w', encoding='utf-8').write(src)
+print('PDF-PREFLIGHT-REPORT.md')
 
 # ---------------- EPUB-REPORT.md ----------------
 md = ['# EPUB Report — *Master Speaking* (reflowable EPUB 3)',
@@ -203,8 +203,8 @@ md = ['# EPUB Report — *Master Speaking* (reflowable EPUB 3)',
       '- MCQ options as list items (jammed source options were split during '
       'parsing; verified absent)',
       '- pronunciation lines (/IPA/, stress respellings) preserved verbatim']
-open(os.path.join(ROOT, 'EPUB-REPORT.md'), 'w', encoding='utf-8').write('\n'.join(md))
-print('EPUB-REPORT.md')
+open(os.path.join(ROOT, 'EPUB-QA-REPORT.md'), 'w', encoding='utf-8').write('\n'.join(md))
+print('EPUB-QA-REPORT.md')
 
 # ---------------- EDITORIAL-QA-REPORT.md ----------------
 md = ['# Editorial QA Report — *Master Speaking*',

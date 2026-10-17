@@ -1,0 +1,22 @@
+{
+  "pdf": "Master-Speaking-print-7x10.pdf",
+  "sha256": "598a33c4ae5d633587bb6fee06b231634c5d478c3b53cc2bae6807aacd275343",
+  "pages": 160,
+  "all_pages_rendered_as_thumbnails": true,
+  "full_size_pages": [
+    1,
+    4,
+    5,
+    7,
+    10,
+    26,
+    44,
+    62,
+    82,
+    102,
+    122,
+    142,
+    160
+  ],
+  "limitation": "Layout overview only; not a signed human line-by-line proof."
+}

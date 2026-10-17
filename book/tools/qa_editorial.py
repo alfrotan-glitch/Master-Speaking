@@ -166,3 +166,6 @@ print(f"--- duplicated words: {dict(dups)}")
 print(f"double spaces: {double_spaces}  straight quotes: {straight_quotes}  "
       f"straight apostrophes: {straight_apos}  space-before-punct: {space_before_punct}")
 print('OK' if report['ok'] else 'ISSUES PRESENT')
+
+import sys
+sys.exit(0 if report['ok'] else 1)

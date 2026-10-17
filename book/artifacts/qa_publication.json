@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "scanned": [
+    "semantic book",
+    "Word",
+    "EPUB",
+    "Master-Speaking-print-7x10.pdf",
+    "Master-Speaking-print-7x10.pdf metadata",
+    "Master-Speaking.pdf",
+    "Master-Speaking.pdf metadata",
+    "Master-Speaking-Reading-Edition.pdf",
+    "Master-Speaking-Reading-Edition.pdf metadata"
+  ],
+  "patterns": 19,
+  "findings": [],
+  "scope": "Reader-facing book only; production reports remain separate."
+}

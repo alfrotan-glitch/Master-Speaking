@@ -1,3 +1,5 @@
+> Historical production snapshot. The October 2026 revision is documented in [QA-REPORT.md](QA-REPORT.md); counts and appearance below may no longer match the current files.
+
 # Print Preflight Report — Master Speaking (7×10 in)
 
 - PDF version: PDF 1.4

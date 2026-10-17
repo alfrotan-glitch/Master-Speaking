@@ -1,3 +1,5 @@
+> Historical production snapshot. The October 2026 revision is documented in [QA-REPORT.md](QA-REPORT.md); counts and appearance below may no longer match the current files.
+
 # Editorial QA Report — *Master Speaking*
 
 Pass 2 of the specification (2026-08-24). Tool: `book/tools/qa_editorial.py` (block-boundary-aware extraction; pyspellchecker + curated ESL whitelist).

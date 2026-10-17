@@ -73,9 +73,12 @@
    "k": "howto",
    "subtitle": "A Practical Guide for Students",
    "paras": [
-    "Welcome to the TOEFL House-Master speaking course designed to help you do more than simply learn English.",
+    "Welcome to Master Speaking, a course from The TOEFL House.",
     "This book is designed to help you use English to think, discuss, question, explain, argue, and communicate ideas.",
     "The topics become increasingly challenging, but the goal is not to give you perfect answers. The goal is to help you become a more confident, independent, and thoughtful English speaker.",
+    "Prepare a few key words, speak in your own words, listen for your partner’s main point, and ask a follow-up question. After feedback, repeat part of the task and notice one improvement. Aim for clear, thoughtful communication rather than memorized answers or imitation of a particular accent.",
+    "For personal or sensitive questions, you may use a fictional example or discuss a comparable team or community situation. You do not need to disclose private information. Respect other perspectives and ask permission before recording anyone.",
+    "When presenting research, identify the author or organization, the source title, and the date or page where available. Explain what the evidence supports, distinguish facts from opinions, and acknowledge uncertainty. Do not invent statistics or references.",
     "How Is Each Unit Organized?",
     "Each unit is divided into four chapters."
    ],
@@ -107,15 +110,15 @@
     {
      "n": 3,
      "title": "Speaking through Discussion",
-     "desc": "This is your main communication day.",
+     "desc": "Use the language from the reading and listening lessons to develop your own ideas.",
      "you_will": [
-      "collocations and phrasal verbs",
-      "discussion expressions",
-      "vocabulary activation",
-      "group discussions",
-      "ranking activities",
-      "challenge questions",
-      "spontaneous speaking"
+      "use collocations and phrasal verbs",
+      "practice discussion expressions",
+      "activate topic vocabulary in conversation",
+      "take part in group discussions",
+      "compare and rank ideas",
+      "answer challenging questions",
+      "speak without a full script"
      ]
     },
     {
@@ -129,8 +132,7 @@
       "organize your ideas",
       "use evidence and examples",
       "prepare a short presentation",
-      "respond to questions from your classmates",
-      "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way."
+      "respond to questions from your classmates"
      ]
     }
    ],
@@ -204,7 +206,7 @@
          "Classroom interaction improves learning."
         ],
         [
-         "Misunderstanding",
+         "misunderstanding",
          "n.",
          "failure to understand correctly",
          "A misunderstanding caused the problem."
@@ -323,7 +325,7 @@
       },
       {
        "k": "reading",
-       "text": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
+       "text": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner.",
        "img": null
       },
       {
@@ -647,7 +649,7 @@
       },
       {
        "k": "p",
-       "text": "Here is a list of most useful expressions to learn.",
+       "text": "Here are some useful expressions to learn.",
        "img": null
       },
       {
@@ -944,7 +946,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -1045,11 +1047,6 @@
        "k": "sec",
        "text": "Guided Discussion",
        "src": 352
-      },
-      {
-       "k": "p",
-       "text": "Now students already have the language they need.",
-       "img": null
       },
       {
        "k": "sub",
@@ -1209,7 +1206,7 @@
       },
       {
        "k": "instr",
-       "text": "Read these sentences aloud. Stress the bold words."
+       "text": "Read these sentences aloud. Choose the key words to stress so that your meaning is clear."
       },
       {
        "k": "p",
@@ -2414,7 +2411,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -3046,7 +3043,7 @@
       },
       {
        "k": "reading",
-       "text": "Fortunately, emotional intelligence is not a fixed trait. Unlike IQ, it can be developed through conscious practice. Reflecting on one’s emotions, listening actively, seeking feedback, and responding thoughtfully rather than impulsively are all practical strategies for strengthening emotional intelligence.",
+       "text": "Emotional skills can be strengthened through practice. Reflecting on your emotions, listening actively, seeking feedback, and pausing before you respond are practical ways to work on them.",
        "img": null
       },
       {
@@ -3736,7 +3733,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -5170,7 +5167,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -5987,7 +5984,7 @@
       },
       {
        "k": "reading",
-       "text": "One of AI’s greatest strengths is its ability to process enormous amounts of information in a very short time. It can recognize patterns, analyze data, and perform repetitive tasks more quickly and accurately than humans. As a result, businesses, hospitals, schools, and governments are increasingly relying on AI to improve efficiency and solve complex problems.",
+       "text": "AI can process large amounts of information quickly. On some tasks, it can recognize patterns, analyze data, and handle repetitive work faster than a person. Its accuracy depends on the task, the system, and the data it uses. Businesses, hospitals, schools, and governments use these tools, but the results still need checking.",
        "img": null
       },
       {
@@ -6617,9 +6614,8 @@
        "text": "If AI becomes much more intelligent than humans, should humans still have the final decision-making power?"
       },
       {
-       "k": "p",
-       "text": "Imagine that scientists develop an AI system that can solve major problems such as climate change.",
-       "img": null
+       "k": "q",
+       "text": "Imagine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?"
       },
       {
        "k": "q",
@@ -6659,7 +6655,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -6906,12 +6902,12 @@
       },
       {
        "k": "p",
-       "text": "Students should give a 1-minute prediction.",
+       "text": "Give a one-minute prediction.",
        "img": null
       },
       {
        "k": "instr",
-       "text": "They must include:"
+       "text": "Include:"
       },
       {
        "k": "p",
@@ -6956,7 +6952,7 @@
       },
       {
        "k": "p",
-       "text": "When native speakers speak naturally, the words in a sentence often connect, rather than being pronounced as separate units.",
+       "text": "In connected speech, words in a sentence often link rather than being pronounced as separate units.",
        "img": null
       },
       {
@@ -6992,7 +6988,7 @@
       },
       {
        "k": "p",
-       "text": "Have students practice these phrases first slowly, then naturally:",
+       "text": "Practice these phrases slowly at first, then at a comfortable speaking pace:",
        "img": null
       },
       {
@@ -8402,7 +8398,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -8616,11 +8612,6 @@
       {
        "k": "instr",
        "text": "Give a 1-minute response and support your opinion with at least two reasons and one example."
-      },
-      {
-       "k": "p",
-       "text": "Students should give a 1-minute prediction.",
-       "img": null
       }
      ]
     },
@@ -8635,7 +8626,7 @@
       },
       {
        "k": "sub",
-       "text": "Skill: Linking Sounds",
+       "text": "Skill: Pronouncing Regular Past-Tense Endings",
        "src": 2047
       },
       {
@@ -8646,7 +8637,7 @@
       },
       {
        "k": "p",
-       "text": "This is a very useful pronunciation problem for B2+ students, especially when they are speaking about relationships, experiences, and research.",
+       "text": "Practise regular past-tense endings when speaking about relationships, experiences, and research.",
        "img": null
       },
       {
@@ -8765,7 +8756,7 @@
       },
       {
        "k": "p",
-       "text": "Ask students to put these words into three groups:",
+       "text": "Put these words into three groups according to the pronunciation of the -ed ending:",
        "img": null
       },
       {
@@ -8797,7 +8788,7 @@
       },
       {
        "k": "p",
-       "text": "Students choose one word from each column and create a sentence about relationships.",
+       "text": "Choose one word from each column and create a sentence about relationships.",
        "img": null
       },
       {
@@ -10129,7 +10120,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -10944,32 +10935,32 @@
          "English is often used as a lingua franca at international conferences."
         ],
         [
-         "Influential",
+         "influential",
          "having the power to affect people or events",
          "The United States has been highly influential in global culture."
         ],
         [
-         "Expansion",
+         "expansion",
          "the process of becoming larger or spreading",
          "The expansion of the British Empire helped spread English."
         ],
         [
-         "Establish",
+         "establish",
          "to create or set up something officially",
          "The company established offices in several countries."
         ],
         [
-         "Commerce",
+         "commerce",
          "the activity of buying and selling goods and services",
          "English became important in international commerce."
         ],
         [
-         "Accelerate",
+         "accelerate",
          "to make something happen faster",
          "Technology accelerated the spread of English."
         ],
         [
-         "Adapt",
+         "adapt",
          "to change something so that it works in a new situation",
          "Languages adapt when speakers from different cultures use them."
         ],
@@ -10994,7 +10985,7 @@
       },
       {
        "k": "sec",
-       "text": "Vocabulary Check",
+       "text": "Vocabulary in Discussion",
        "src": 2552
       },
       {
@@ -11475,7 +11466,7 @@
       },
       {
        "k": "instr",
-       "text": "Choose one and explain their choice."
+       "text": "Choose one and explain your choice."
       },
       {
        "k": "instr",
@@ -11496,7 +11487,7 @@
          "Language loss can also mean the loss of cultural knowledge."
         ],
         [
-         "Unprecedented",
+         "unprecedented",
          "never happening before or happening at an unusually high level",
          "Languages are dying at an unprecedented rate."
         ],
@@ -11506,7 +11497,7 @@
          "English teaching has morphed into a massive international business."
         ],
         [
-         "Bandwagon",
+         "bandwagon",
          "a popular activity that many people join because it is becoming successful",
          "English education has become a global bandwagon."
         ],
@@ -11516,7 +11507,7 @@
          "A person’s linguistic ability does not necessarily show their intelligence."
         ],
         [
-         "Gatekeeper",
+         "gatekeeper",
          "a person or system that controls access to something",
          "English teachers can become gatekeepers to higher education."
         ],
@@ -11526,7 +11517,7 @@
          "The English requirement can become a self-fulfilling prophecy because more research is then produced in English."
         ],
         [
-         "Arbitrary",
+         "arbitrary",
          "based on a choice rather than a clear logical reason",
          "She argues that equating intelligence with English knowledge is arbitrary."
         ]
@@ -11921,7 +11912,7 @@
       },
       {
        "k": "instr",
-       "text": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic."
+       "text": "Study the expressions below. Try using them to explain and develop your ideas."
       },
       {
        "k": "table",
@@ -12116,7 +12107,7 @@
       },
       {
        "k": "p",
-       "text": "see how the unstressed vowel becomes weak:",
+       "text": "Notice how the unstressed vowel becomes weak:",
        "img": null
       },
       {
@@ -12205,7 +12196,7 @@
       },
       {
        "k": "p",
-       "text": "Students should notice that unstressed vowels are often reduced, rather than pronounced as clearly as stressed vowels.",
+       "text": "Notice how unstressed vowels are often reduced while stressed vowels remain more prominent.",
        "img": null
       },
       {
@@ -12275,7 +12266,7 @@
       },
       {
        "k": "p",
-       "text": "Ask students to underline the syllables that should contain a schwa /ə/.",
+       "text": "Underline the syllables that contain a schwa /ə/ in the pronunciation you are practising.",
        "img": null
       },
       {
@@ -12320,7 +12311,7 @@
       },
       {
        "k": "instr",
-       "text": "Then have students say the words first carefully, and then naturally."
+       "text": "Say the words slowly at first, then at a comfortable speaking pace."
       },
       {
        "k": "sec",

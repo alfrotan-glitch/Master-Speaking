@@ -1,0 +1,9 @@
+# Publication exports and artwork are binary, even when PDF streams are ASCII.
+*.pdf binary
+*.docx binary
+*.epub binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ttf binary

@@ -31,6 +31,10 @@ def on_page_main(canv, doc):
     """Mirrors the DOCX running heads: recto = book title (right),
     verso = current unit title (left); folio bottom-centre."""
     page = canv.getPageNumber()
+    if page < (MS_FIXED[0] or doc.main_start or 1):
+        # Recto-alignment leaves a front verso: never show a stale unit header.
+        on_page_fm(canv, doc)
+        return
     folio = folio_for(page, MS_FIXED[0] or doc.main_start)
     dx = 0 if page % 2 == 1 else -GUTTER_SHIFT
     canv.saveState()
@@ -80,7 +84,8 @@ STYMAP = {
     'MS TOC Heading': 'tochead', 'MS Unit Title': 'unittitle',
     'MS Chapter Title': 'chaptitle', 'MS Section': 'sec',
     'MS Subsection': 'sub', 'MS Reading Title': 'readingtitle',
-    'MS Body': 'body', 'MS Instruction': 'instr', 'MS Label': 'label',
+    'MS Guide Bullet': 'guidebullet', 'MS Guide Heading': 'guideheading',
+    'MS Body': 'body', 'MS Table Cell': 'tabcell', 'MS Instruction': 'instr', 'MS Label': 'label',
     'MS Topic': 'topic', 'MS Title Line': 'titleline',
     'MS Media Title': 'mediatitle', 'MS RunIn': 'subsub',
     'MS Question': 'q', 'MS Option': 'opt', 'MS Statement': 'tf',
@@ -118,7 +123,25 @@ def para_flows(p, doc, ctx=None):
                 mk += t
         if not mk.strip() and mk == '':
             return
-        out.append(Paragraph(mk, S[skey]))
+        style = S[skey]
+        if name in ('MS Book Title', 'MS Author'):
+            # Respect the Word display styles: ReportLab discards spaceBefore
+            # at frame starts, so use a real spacer for the title's inset.
+            from copy import copy
+            style = copy(style)
+            pf = p.style.paragraph_format
+            if p.style.font.size is not None:
+                style.fontSize = p.style.font.size.pt
+                style.leading = style.fontSize * (pf.line_spacing if isinstance(pf.line_spacing, float) else 1.2)
+            if pf.space_before is not None:
+                out.append(Spacer(1, pf.space_before.pt))
+            if pf.space_after is not None:
+                style.spaceAfter = pf.space_after.pt
+        if p.paragraph_format.keep_with_next is not None:
+            from copy import copy
+            style = copy(style)
+            style.keepWithNext = int(p.paragraph_format.keep_with_next)
+        out.append(Paragraph(mk, style))
         segs.clear()
     for r in p.runs:
         rpr = r._r.find(qn('w:rPr'))
@@ -256,7 +279,7 @@ def table_flow(t, doc):
             if ri % 2 == 1:
                 style.append(('BACKGROUND', (0, ri), (-1, ri), ZEBRA))
 
-    tab = Table(data, colWidths=widths, hAlign='LEFT')
+    tab = Table(data, colWidths=widths, hAlign='LEFT', repeatRows=1 if header else 0)
     tab.setStyle(TableStyle(style))
     return [Spacer(1, 3), tab, Spacer(1, 8)]
 

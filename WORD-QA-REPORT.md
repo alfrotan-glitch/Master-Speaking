@@ -1,3 +1,5 @@
+> Historical production snapshot. The October 2026 revision is documented in [QA-REPORT.md](QA-REPORT.md); counts and appearance below may no longer match the current files.
+
 # Word Master QA Report — Master-Speaking-7x10.docx
 
 Pass 4 of the specification (2026-08-24). Tools: `book/tools/wordmaster.py` (generator) and `book/tools/qa_word.py` (verifier).

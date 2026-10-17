@@ -177,7 +177,7 @@
  {
   "area": "U5 text",
   "original": "magine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
-  "correction": "Imagine that scientists develop an AI system that can solve major problems such as climate change.",
+  "correction": "Imagine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
   "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
   "confidence": "high"
  },
@@ -355,5 +355,334 @@
   "correction": "Do you think people’s expectations of marriage have changed over time?",
   "reason": "final-pass apostrophe smartening: block reached tree without clean()",
   "confidence": "high"
+ },
+ {
+  "area": "How to Use · October classroom guidance",
+  "original": "(new editorial guidance)",
+  "correction": "Prepare a few key words, speak in your own words, listen for your partner’s main point, and ask a follow-up question. After feedback, repeat part of the task and notice one improvement. Aim for clear, thoughtful communication rather than memorized answers or imitation of a particular accent.",
+  "reason": "Reader-facing learning guidance; authorship and production history recorded only in external reports.",
+  "confidence": "new supplementary text"
+ },
+ {
+  "area": "How to Use · October classroom guidance",
+  "original": "(new editorial guidance)",
+  "correction": "For personal or sensitive questions, you may use a fictional example or discuss a comparable team or community situation. You do not need to disclose private information. Respect other perspectives and ask permission before recording anyone.",
+  "reason": "Reader-facing learning guidance; authorship and production history recorded only in external reports.",
+  "confidence": "new supplementary text"
+ },
+ {
+  "area": "How to Use · October classroom guidance",
+  "original": "(new editorial guidance)",
+  "correction": "When presenting research, identify the author or organization, the source title, and the date or page where available. Explain what the evidence supports, distinguish facts from opinions, and acknowledge uncertainty. Do not invent statistics or references.",
+  "reason": "Reader-facing learning guidance; authorship and production history recorded only in external reports.",
+  "confidence": "new supplementary text"
+ },
+ {
+  "area": "U1 Ch2 · October editorial review",
+  "original": "Here is a list of most useful expressions to learn.",
+  "correction": "Here are some useful expressions to learn.",
+  "reason": "Repair missing determiner and avoid an unsupported superlative.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch4 · October editorial review",
+  "original": "Read these sentences aloud. Stress the bold words.",
+  "correction": "Read these sentences aloud. Choose the key words to stress so that your meaning is clear.",
+  "reason": "No words in the five practice sentences are marked bold; make the task usable without inventing emphasis markings.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "When native speakers speak naturally, the words in a sentence often connect, rather than being pronounced as separate units.",
+  "correction": "In connected speech, words in a sentence often link rather than being pronounced as separate units.",
+  "reason": "Explain the speech feature directly without making native-speaker identity the learning target.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch4 · October editorial review",
+  "original": "Skill: Linking Sounds",
+  "correction": "Skill: Pronouncing Regular Past-Tense Endings",
+  "reason": "The lesson teaches the three pronunciations of -ed, not linking sounds; align heading with content.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch4 · October editorial review",
+  "original": "This is a very useful pronunciation problem for B2+ students, especially when they are speaking about relationships, experiences, and research.",
+  "correction": "Practise regular past-tense endings when speaking about relationships, experiences, and research.",
+  "reason": "Replace teacher-facing commentary with a direct learner instruction; remove an unsubstantiated level restriction.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch4 · October editorial review",
+  "original": "Ask students to put these words into three groups:",
+  "correction": "Put these words into three groups according to the pronunciation of the -ed ending:",
+  "reason": "Convert teacher-facing direction into an explicit student task.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Choose one and explain their choice.",
+  "correction": "Choose one and explain your choice.",
+  "reason": "Correct pronoun agreement in an instruction addressed to the learner.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "see how the unstressed vowel becomes weak:",
+  "correction": "Notice how the unstressed vowel becomes weak:",
+  "reason": "Correct sentence capitalization and make the instruction direct.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Ask students to underline the syllables that should contain a schwa /ə/.",
+  "correction": "Underline the syllables that contain a schwa /ə/ in the pronunciation you are practising.",
+  "reason": "Use learner-facing instructions and allow for pronunciation variation.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch1 · October editorial review",
+  "original": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
+  "correction": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner.",
+  "reason": "Supply missing final punctuation; preserve the author’s closing encouragement.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "Fortunately, emotional intelligence is not a fixed trait. Unlike IQ, it can be developed through conscious practice. Reflecting on one’s emotions, listening actively, seeking feedback, and responding thoughtfully rather than impulsively are all practical strategies for strengthening emotional intelligence.",
+  "correction": "Emotional skills can be strengthened through practice. Reflecting on your emotions, listening actively, seeking feedback, and pausing before you respond are practical ways to work on them.",
+  "reason": "Remove the misleading contrast implying IQ is fixed; use direct, practical language without claiming a measured outcome.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch1 · October editorial review",
+  "original": "One of AI’s greatest strengths is its ability to process enormous amounts of information in a very short time. It can recognize patterns, analyze data, and perform repetitive tasks more quickly and accurately than humans. As a result, businesses, hospitals, schools, and governments are increasingly relying on AI to improve efficiency and solve complex problems.",
+  "correction": "AI can process large amounts of information quickly. On some tasks, it can recognize patterns, analyze data, and handle repetitive work faster than a person. Its accuracy depends on the task, the system, and the data it uses. Businesses, hospitals, schools, and governments use these tools, but the results still need checking.",
+  "reason": "Replace an unqualified claim of greater speed and accuracy with task-dependent language; avoid vague hype.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch3 · October editorial review",
+  "original": "Students should give a 1-minute prediction.",
+  "correction": "Give a one-minute prediction.",
+  "reason": "Address the learner directly.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch3 · October editorial review",
+  "original": "They must include:",
+  "correction": "Include:",
+  "reason": "Keep the follow-on instruction in the same second-person voice.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "Have students practice these phrases first slowly, then naturally:",
+  "correction": "Practice these phrases slowly at first, then at a comfortable speaking pace:",
+  "reason": "Replace teacher-facing wording and an undefined naturalness target with a usable learner instruction.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch3 · October editorial review",
+  "original": "Students should give a 1-minute prediction.",
+  "correction": "(removed)",
+  "reason": "Remove a stray prediction instruction copied from the AI unit; the preceding task already requires a reasoned response to “Is love enough?”.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch4 · October editorial review",
+  "original": "Students choose one word from each column and create a sentence about relationships.",
+  "correction": "Choose one word from each column and create a sentence about relationships.",
+  "reason": "Use direct learner-facing language.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Students should notice that unstressed vowels are often reduced, rather than pronounced as clearly as stressed vowels.",
+  "correction": "Notice how unstressed vowels are often reduced while stressed vowels remain more prominent.",
+  "reason": "Remove teacher-facing commentary and avoid implying reduced vowels are unclear.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch3 · October editorial review",
+  "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+  "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+  "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch1 · October editorial review",
+  "original": "Misunderstanding",
+  "correction": "misunderstanding",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Influential",
+  "correction": "influential",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Expansion",
+  "correction": "expansion",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Establish",
+  "correction": "establish",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Commerce",
+  "correction": "commerce",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Accelerate",
+  "correction": "accelerate",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Adapt",
+  "correction": "adapt",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Unprecedented",
+  "correction": "unprecedented",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Bandwagon",
+  "correction": "bandwagon",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Gatekeeper",
+  "correction": "gatekeeper",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Arbitrary",
+  "correction": "arbitrary",
+  "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Vocabulary Check",
+  "correction": "Vocabulary in Discussion",
+  "reason": "The activity asks learners to discuss a quote using vocabulary, not complete a vocabulary test; align the label with the actual task.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch3 · October editorial review",
+  "original": "Now students already have the language they need.",
+  "correction": "(removed)",
+  "reason": "Remove teacher-facing commentary from the reader-facing publication text.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Then have students say the words first carefully, and then naturally.",
+  "correction": "Say the words slowly at first, then at a comfortable speaking pace.",
+  "reason": "Address the learner directly rather than leaving a teaching-production direction in the book.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "How to Use · final language review",
+  "original": "Welcome to the TOEFL House-Master speaking course designed to help you do more than simply learn English.",
+  "correction": "Welcome to Master Speaking, a course from The TOEFL House.",
+  "reason": "Correct the book-title capitalization and awkward publisher/title joining.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "How to Use · final language review",
+  "original": "This is your main communication day.",
+  "correction": "Use the language from the reading and listening lessons to develop your own ideas.",
+  "reason": "Replace an unexplained day reference with the chapter’s actual purpose.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "How to Use · final language review",
+  "original": "['collocations and phrasal verbs', 'discussion expressions', 'vocabulary activation', 'group discussions', 'ranking activities', 'challenge questions', 'spontaneous speaking']",
+  "correction": "['use collocations and phrasal verbs', 'practice discussion expressions', 'activate topic vocabulary in conversation', 'take part in group discussions', 'compare and rank ideas', 'answer challenging questions', 'speak without a full script']",
+  "reason": "Make the learning-outcome list grammatical and parallel: each item begins with a verb.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "How to Use · final language review",
+  "original": "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way.",
+  "correction": "(removed)",
+  "reason": "Remove the closing sentence accidentally included as a bullet; it remains once as the guide’s closing paragraph.",
+  "confidence": "high (reviewed)"
  }
 ]

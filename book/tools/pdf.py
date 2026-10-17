@@ -47,10 +47,11 @@ GUTTER_SHIFT = M_IN - M_OUT          # mirrored-margin offset applied to verso p
 
 INK = colors.HexColor('#14181A')
 # ---- original manuscript visual identity (audited from Master Speaking.docx)
-BAND = colors.HexColor('#7BE1D0')      # mint band behind section headings
-BANNER = colors.HexColor('#92D050')    # bright green: FM banners, chapter titles
-ACCENT = colors.HexColor('#00B050')    # deep green: kickers, labels, bullets
-ACCENT_HEX = '#00B050'
+from design import BAND as BAND_HEX, BANNER as BANNER_HEX, ACCENT as TEAL_HEX
+BAND = colors.HexColor('#' + BAND_HEX)
+BANNER = colors.HexColor('#' + BANNER_HEX)
+ACCENT_HEX = '#' + TEAL_HEX
+ACCENT = colors.HexColor(ACCENT_HEX)
 BOX_GREEN = colors.HexColor('#B9E9B5')  # light-green box fill (U1-5 vocab, warm-ups)
 BOX_OLIVE = colors.HexColor('#BFDDAB')  # pale-olive box fill (U6-8 vocab)
 RULE = colors.HexColor('#A9D8A0')
@@ -135,14 +136,14 @@ def rich_text(el, base=SERIF):
 S = {}
 def build_styles():
     P = ParagraphStyle
-    S['body'] = P('body', fontName=SERIF, fontSize=10.3, leading=15.2,
+    S['body'] = P('body', fontName=SERIF, fontSize=11, leading=15.6,
                   alignment=TA_JUSTIFY, textColor=INK, spaceAfter=6.5,
                   hyphenationLang='en_US', allowWidows=0, allowOrphans=0,
                   embeddedHyphenation=1)
-    S['reading'] = P('reading', parent=S['body'], leading=15.4)
-    S['instr'] = P('instr', fontName=SANS+'-I', fontSize=9.6, leading=13.6,
+    S['reading'] = P('reading', parent=S['body'], leading=15.6)
+    S['instr'] = P('instr', fontName=SANS+'-I', fontSize=10, leading=13.6,
                    textColor=SOFT, alignment=TA_LEFT, spaceBefore=2, spaceAfter=5,
-                   hyphenationLang='en_US', allowWidows=0, allowOrphans=0)
+                   hyphenationLang='en_US', allowWidows=0, allowOrphans=0, keepWithNext=1)
     S['label'] = P('label', fontName=SANS+'-SB', fontSize=9.6, leading=13.5,
                    alignment=TA_LEFT, spaceBefore=3, spaceAfter=3, keepWithNext=1)
     S['topic'] = P('topic', fontName=SANS+'-SB', fontSize=10.8, leading=14.5,
@@ -154,7 +155,7 @@ def build_styles():
     S['mediatitle'] = P('mediatitle', fontName=SANS+'-SB', fontSize=11.5, leading=15,
                         alignment=TA_LEFT, spaceBefore=1, spaceAfter=7, keepWithNext=1)
     S['q'] = P('q', parent=S['body'], leftIndent=22, firstLineIndent=-22,
-               alignment=TA_LEFT, spaceAfter=5, leading=14.8)
+               alignment=TA_LEFT, spaceAfter=5, leading=15.6)
     S['opt'] = P('opt', parent=S['body'], leftIndent=40, firstLineIndent=-14,
                  alignment=TA_LEFT, spaceAfter=2.5, fontSize=10.1)
     S['tf'] = P('tf', parent=S['body'], leftIndent=26, firstLineIndent=-26,
@@ -209,8 +210,8 @@ def build_styles():
                        spaceBefore=14)
     S['signdate'] = P('signdate', fontName=SANS, fontSize=9.8, leading=13,
                       textColor=SOFT)
-    S['toc0'] = P('toc0', fontName=SANS+'-SB', fontSize=11, leading=15, spaceBefore=4)
-    S['toc1'] = P('toc1', fontName=SERIF, fontSize=10, leading=13.2, leftIndent=18)
+    S['toc0'] = P('toc0', fontName=SANS+'-SB', fontSize=10.5, leading=14, spaceBefore=3)
+    S['toc1'] = P('toc1', fontName=SERIF, fontSize=9.7, leading=12.2, leftIndent=18)
     S['tochead'] = P('tochead', fontName=SERIF+'-B', fontSize=19, leading=24,
                      textColor=colors.white, backColor=BANNER,
                      borderPadding=(3, 6, 4, 6), spaceAfter=16)
@@ -218,6 +219,10 @@ def build_styles():
                      textColor=INK, alignment=TA_LEFT)
     S['tabcell'] = P('tabcell', fontName=SERIF, fontSize=9.2, leading=12.2,
                      textColor=INK, alignment=TA_LEFT)
+    S['guidebullet'] = P('guidebullet', fontName=SANS, fontSize=10, leading=13,
+                         spaceAfter=2, leftIndent=10, firstLineIndent=-7)
+    S['guideheading'] = P('guideheading', fontName=SANS+'-SB', fontSize=10.5, leading=14,
+                          textColor=ACCENT, spaceBefore=9, spaceAfter=4, keepWithNext=1)
     for st in S.values():
         st.bulletFontName = SANS
 

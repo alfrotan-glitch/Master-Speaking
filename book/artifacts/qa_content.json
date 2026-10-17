@@ -1,6 +1,6 @@
 {
  "checked": 3181,
- "covered": 3161,
+ "covered": 3131,
  "classified_transforms": [
   [
    "Forward -> Foreword (locked decision)",
@@ -8,9 +8,54 @@
    "forward"
   ],
   [
+   "logged-correction",
+   70,
+   "welcome to the toefl house-master speaking course "
+  ],
+  [
+   "logged-correction",
+   92,
+   "this is your main communication day."
+  ],
+  [
+   "logged-correction",
+   98,
+   "ranking activities"
+  ],
+  [
+   "logged-correction",
+   99,
+   "challenge questions"
+  ],
+  [
+   "logged-correction",
+   100,
+   "spontaneous speaking"
+  ],
+  [
    "dedup-by-design",
    166,
    "the power of communication the power of communicat"
+  ],
+  [
+   "logged-correction",
+   281,
+   "here is a list of most useful expressions to learn"
+  ],
+  [
+   "logged-correction",
+   343,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   353,
+   "now students already have the language they need."
+  ],
+  [
+   "logged-correction",
+   397,
+   "read these sentences aloud. stress the bold words."
   ],
   [
    "dedup-by-design",
@@ -18,9 +63,19 @@
    "unit 2unit 2the art of goal settingthe art of goal"
   ],
   [
+   "logged-correction",
+   672,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
    "dedup-by-design",
    770,
    "emotional intelligenceemotional intelligenceunit 3"
+  ],
+  [
+   "logged-correction",
+   800,
+   "fortunately, emotional intelligence is not a fixed"
   ],
   [
    "activity-fold (changelog)",
@@ -31,6 +86,11 @@
    "logged-correction",
    853,
    "activity 1: critical thinking"
+  ],
+  [
+   "logged-correction",
+   986,
+   "study 10 carefully selected collocations, phrasal "
   ],
   [
    "dedup-by-design",
@@ -49,13 +109,48 @@
   ],
   [
    "logged-correction",
+   1298,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
    1404,
    "living with ai (artificial intelligence)living wit"
   ],
   [
    "logged-correction",
+   1433,
+   "one of ai's greatest strengths is its ability to p"
+  ],
+  [
+   "logged-correction",
    1496,
    "share your ideas about the quad:"
+  ],
+  [
+   "logged-correction",
+   1601,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   1642,
+   "students should give a 1-minute prediction."
+  ],
+  [
+   "logged-correction",
+   1643,
+   "they must include:"
+  ],
+  [
+   "logged-correction",
+   1674,
+   "when native speakers speak naturally, the words in"
+  ],
+  [
+   "logged-correction",
+   1679,
+   "have students practice these phrases first slowly,"
   ],
   [
    "dedup-by-design",
@@ -73,6 +168,26 @@
    "activity 2: critical thinking"
   ],
   [
+   "logged-correction",
+   2011,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   2044,
+   "students should give a 1-minute prediction."
+  ],
+  [
+   "logged-correction",
+   2049,
+   "this is a very useful pronunciation problem for b2"
+  ],
+  [
+   "logged-correction",
+   2073,
+   "ask students to put these words into three groups:"
+  ],
+  [
    "dedup-by-design",
    2177,
    "unit 7unit 7globalizationglobalization"
@@ -88,6 +203,11 @@
    "activity 2: critical thinking"
   ],
   [
+   "logged-correction",
+   2380,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
    "dedup-by-design",
    2542,
    "unit 8unit 8lingua francalingua franca"
@@ -101,6 +221,36 @@
    "logged-correction",
    2625,
    "activity 2: critical thinking"
+  ],
+  [
+   "logged-correction",
+   2650,
+   "choose one and explain their choice."
+  ],
+  [
+   "logged-correction",
+   2719,
+   "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   2763,
+   "see how the unstressed vowel becomes weak:"
+  ],
+  [
+   "logged-correction",
+   2781,
+   "students should notice that unstressed vowels are "
+  ],
+  [
+   "logged-correction",
+   2798,
+   "ask students to underline the syllables that shoul"
+  ],
+  [
+   "logged-correction",
+   2807,
+   "then have students say the words first carefully, "
   ]
  ],
  "missing": [],

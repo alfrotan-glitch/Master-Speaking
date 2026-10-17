@@ -38,9 +38,8 @@ XH = 'http://www.w3.org/1999/xhtml'
 SERIF = 'Source Serif 4'
 SANS = 'Source Sans 3'
 # ---- original manuscript visual identity (audited from Master Speaking.docx)
-BAND = '7BE1D0'      # mint band: section heads, unit titles
-BANNER = '92D050'    # bright green: FM banners, chapter titles
-ACCENT = RGBColor(0x00, 0xB0, 0x50)   # deep green: kickers, labels, run-ins
+from design import BAND, BANNER, ACCENT as ACCENT_HEX
+ACCENT = RGBColor.from_string(ACCENT_HEX)
 INK = RGBColor(0x14, 0x18, 0x1A)
 GRAY = RGBColor(0x5A, 0x6B, 0x66)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
@@ -74,6 +73,10 @@ cp = doc.core_properties
 cp.title = 'Master Speaking'
 cp.author = 'Abdul Raziq Nazari'
 cp.language = 'en'
+cp.subject = 'English speaking course'
+cp.comments = ''
+cp.keywords = 'English, speaking, communication'
+cp.last_modified_by = ''
 
 # ---- settings: mirrored margins + even/odd headers ------------------------
 settings = doc.settings.element
@@ -132,6 +135,14 @@ def fmt(st, font=None, size=None, bold=None, italic=None, color=None,
     pf.widow_control = widow
     return st
 
+fmt(pstyle('MS Table Cell'), SERIF, 9.2, color=INK,
+    align=WD_ALIGN_PARAGRAPH.LEFT, after=2, line=1.3)
+
+fmt(pstyle('MS Guide Bullet'), SANS, 10, color=INK, after=2, line=1.3,
+    indent_l=0.14, indent_h=-0.1)
+fmt(pstyle('MS Guide Heading'), SANS, 10.5, bold=True, color=ACCENT,
+    before=9, after=4, keep_next=True)
+
 # front matter display styles
 fmt(pstyle('MS Book Title'), SERIF, 30, bold=True, color=INK,
     align=WD_ALIGN_PARAGRAPH.CENTER, before=120, after=18, line=1.05)
@@ -152,7 +163,7 @@ fmt(pstyle('MS TOC Heading'), SANS, 19, bold=True, color=WHITE, after=12)
 fmt(pstyle('MS Unit Title', base='Heading 1'), SANS, 25, bold=True, color=INK,
     before=36, after=10, page_break=True, keep_next=True, line=1.05)
 fmt(pstyle('MS Chapter Title', base='Heading 2'), SANS, 16, bold=True,
-    color=RGBColor(0x92, 0xD0, 0x50), before=6, after=10, page_break=True,
+    color=RGBColor.from_string(BANNER), before=6, after=10, page_break=True,
     keep_next=True)
 fmt(pstyle('MS Section', base='Heading 3'), SANS, 12, bold=True, color=INK,
     before=15, after=4, keep_next=True)
@@ -162,10 +173,10 @@ fmt(pstyle('MS Reading Title', base='Heading 4'), SERIF, 12.5, bold=True,
     italic=False, color=INK, before=12, after=5, keep_next=True)
 
 # body
-fmt(pstyle('MS Body'), SERIF, 10.5, align=WD_ALIGN_PARAGRAPH.JUSTIFY,
-    after=6, line=1.2)
+fmt(pstyle('MS Body'), SERIF, 11, align=WD_ALIGN_PARAGRAPH.JUSTIFY,
+    after=6, line=1.4)
 fmt(pstyle('MS Instruction'), SANS, 10, italic=True, color=GRAY,
-    after=5, line=1.15)
+    after=5, line=1.15, keep_next=True)
 fmt(pstyle('MS Label'), SANS, 10.5, bold=True, color=INK, after=4, keep_next=True)
 fmt(pstyle('MS Topic'), SANS, 10.5, bold=True, color=INK, after=5)
 fmt(pstyle('MS Title Line'), SERIF, 10.5, italic=True, after=4)
@@ -173,12 +184,12 @@ fmt(pstyle('MS Media Title'), SANS, 11, bold=True, color=INK, after=4,
     keep_next=True)
 fmt(pstyle('MS RunIn'), SANS, 10, bold=True, color=ACCENT, before=9, after=2,
     keep_next=True)
-fmt(pstyle('MS Question'), SERIF, 10.5, after=5, line=1.2,
+fmt(pstyle('MS Question'), SERIF, 11, after=5, line=1.4,
     indent_l=0.3, indent_h=-0.3)
 fmt(pstyle('MS Option'), SERIF, 10.5, after=2.5, line=1.15,
     indent_l=0.55, indent_h=-0.25)
 fmt(pstyle('MS Statement'), SERIF, 10.5, after=5, line=1.2, indent_l=0.3)
-fmt(pstyle('MS Reading'), SERIF, 10.5, after=5, line=1.25, indent_l=0.18)
+fmt(pstyle('MS Reading'), SERIF, 11, after=5, line=1.4, indent_l=0.18)
 fmt(pstyle('MS Note'), SERIF, 10, italic=True, color=GRAY, after=5,
     indent_l=0.18)
 fmt(pstyle('MS Figure'), SERIF, 10.5, align=WD_ALIGN_PARAGRAPH.CENTER,
@@ -380,19 +391,38 @@ def render_table(tbl_el):
         wsum = sum(min(len(r[0][ci]) if ci < len(r[0]) else 0, 90)
                    for r in header + body_rows)
         weights.append(max(wsum, 10))
-    wtotal = sum(weights)
-    min_tw = int(0.75 * 1440)
-    widths = [max(min_tw, int(total_tw * w / wtotal)) for w in weights]
-    over = sum(widths) - total_tw
-    if over > 0 and ncols > 1:
-        widths[widths.index(max(widths))] -= over
-    for texts, _ in header + body_rows:
+    # Reserve enough width for complete words, not just average text length.
+    # This prevents headwords such as 'misunderstanding' breaking mid-word.
+    import re
+    from reportlab.pdfbase import pdfmetrics
+    from reportlab.pdfbase.ttfonts import TTFont
+    if 'WordTableMeasure' not in pdfmetrics.getRegisteredFontNames():
+        pdfmetrics.registerFont(TTFont('WordTableMeasure', os.path.join(
+            ROOT, 'book', 'assets', 'fonts', 'source-serif-4-latin-400-normal.ttf')))
+    minima = []
+    for ci in range(ncols):
+        words = [word for row, _ in header + body_rows if ci < len(row)
+                 for word in re.findall(r'[\w’–-]+', row[ci])]
+        longest = max((pdfmetrics.stringWidth(word, 'WordTableMeasure', 9.2)
+                       for word in words), default=0)
+        minima.append(max(0.65 * 1440, (longest + 20) * 20))
+    if sum(minima) > total_tw:
+        # Unusual many-column grids need a separate editorial layout review.
+        minima = [total_tw / ncols * .8] * ncols
+    remaining = total_tw - sum(minima)
+    widths = [int(minimum + remaining * weight / sum(weights))
+              for minimum, weight in zip(minima, weights)]
+    widths[-1] += total_tw - sum(widths)
+    # Word grid and cell widths must agree; the PDF renderer reads tblGrid.
+    for ci, width in enumerate(widths):
+        t.columns[ci].width = Inches(width / 1440)
+    for row_index, (texts, _) in enumerate(header + body_rows):
         row = t.add_row()
         # rows must not split across pages
         trpr = row._tr.get_or_add_trPr()
         cs = OxmlElement('w:cantSplit')
         trpr.append(cs)
-        if header and row is t.rows[0] or (len(t.rows) - 1) < len(header):
+        if row_index < len(header):
             th = OxmlElement('w:tblHeader')
             trpr.append(th)
         for ci in range(ncols):
@@ -400,7 +430,7 @@ def render_table(tbl_el):
             cell.width = Inches(widths[ci] / 1440)
             txt = texts[ci] if ci < len(texts) else ''
             par = cell.paragraphs[0]
-            par.style = S['MS Body']
+            par.style = S['MS Table Cell']
             par.paragraph_format.space_after = Pt(2)
             par.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
             par.add_run(txt)
@@ -408,7 +438,7 @@ def render_table(tbl_el):
                 # original identity: solid pastel box, white separators,
                 # dark bold header row (direct shading overrides the band)
                 set_cell_fill(cell, tbl_fill)
-                if header and row is t.rows[0]:
+                if row_index < len(header):
                     for r in par.runs:
                         r.font.bold = True
                         r.font.name = SANS
@@ -422,10 +452,12 @@ def render_blocks(el, ctx=None):
             continue
         ln = etree.QName(c).localname
         cls = cls_of(c)
-        if ln == 'h2':
+        if ln == 'h2' and 'chapter-title' in cls:
+            continue  # Already rendered once as the navigable MS Chapter Title.
+        elif ln == 'h2':
             add_par(text_of(c), 'MS FM Sub')
         elif ln == 'h3':
-            add_par(text_of(c), 'MS Section')
+            add_par(text_of(c), 'MS Guide Heading' if ctx == 'guide' else 'MS Section')
         elif ln == 'h4' and 'reading-title' in cls:
             add_par(text_of(c), 'MS Reading Title')
         elif ln == 'h4':
@@ -459,8 +491,9 @@ def render_blocks(el, ctx=None):
             render_list(c)
         elif ln == 'ul':
             for li in c.findall('x:li', NS):
-                p = add_par(' '.join(''.join(li.itertext()).split()),
-                            'List Bullet')
+                text = ' '.join(''.join(li.itertext()).split())
+                p = add_par('• ' + text if ctx == 'guide' else text,
+                            'MS Guide Bullet' if ctx == 'guide' else 'List Bullet')
         elif ln == 'table':
             classes = cls
             ncols = len(c.findall('.//x:tr', NS)[0].findall('x:td', NS)) if c.findall('.//x:tr', NS) else 0
@@ -489,7 +522,13 @@ def render_blocks(el, ctx=None):
                 for p_el in c.findall('x:p', NS):
                     add_par(text_of(p_el), 'MS Note')
             else:
-                render_blocks(c)
+                start = len(doc.paragraphs)
+                render_blocks(c, ctx)
+                if ctx == 'guide' and 'howto-chapter' in cls:
+                    # Keep each short chapter overview together as a unit.
+                    group = doc.paragraphs[start:]
+                    for paragraph in group[:-1]:
+                        paragraph.paragraph_format.keep_with_next = True
         elif ln == 'figure':
             for im in c.findall('.//x:img', NS):
                 wide = 'unit-figure' in cls or 'reading-figure' in cls
@@ -551,7 +590,7 @@ for part in body.findall('x:section', NS):
     elif kind == 'how-to-use':
         head = part.find('x:h1', NS)
         add_par(text_of(head), 'MS FM Head')
-        render_blocks(part)
+        render_blocks(part, 'guide')
     elif kind == 'epigraph':
         render_blocks(part)
 
@@ -559,9 +598,19 @@ for part in body.findall('x:section', NS):
 tocp = add_par('Contents', 'MS TOC Heading')
 tocp.paragraph_format.page_break_before = True
 p = doc.add_paragraph()
-add_field(p, 'TOC \\o "1-2" \\h \\z \\u',
-          'Table of contents — right-click and choose “Update Field” to '
-          'refresh page numbers.')
+p.paragraph_format.space_after = Pt(0)
+p.paragraph_format.line_spacing = 1.1
+contents_entries = []
+for unit in body.findall('x:section[@class="unit"]', NS):
+    name = text_of(unit.find('.//x:span[@class="unit-name"]', NS))
+    contents_entries.append(f"Unit {unit.get('data-unit')} · {name}")
+    for chapter in unit.findall('x:section[@class="chapter"]', NS):
+        name = text_of(chapter.find('.//x:span[@class="chapter-name"]', NS))
+        contents_entries.append(f"    Chapter {chapter.get('data-chapter')} · {name}")
+# Real contents labels in the field cache, never an instruction to the reader.
+# Native Word can refresh the field to add its own pagination; that production
+# step is documented externally rather than printed in the publication.
+add_field(p, 'TOC \\o "1-2" \\h \\z \\u', '\n'.join(contents_entries), size=9.7)
 
 # ---------------------------------------------------------------------------
 # SECTION 2 — main body (decimal folios restart at 1)

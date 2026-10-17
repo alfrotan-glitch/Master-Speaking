@@ -1,0 +1,9 @@
+unit,alternative_id,title,script_source,detail_questions,delivery,recorded_audio_supplied,original_video_status,live_pilot_conducted
+1,U1-ALT,The meeting that almost went wrong,"book/classroom/modules.json — unit 1, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+2,U2-ALT,A smaller plan that lasted,"book/classroom/modules.json — unit 2, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+3,U3-ALT,Before making an assumption,"book/classroom/modules.json — unit 3, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+4,U4-ALT,One hundred credits,"book/classroom/modules.json — unit 4, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+5,U5-ALT,A confident answer was not enough,"book/classroom/modules.json — unit 5, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+6,U6-ALT,Friends with different plans,"book/classroom/modules.json — unit 6, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+7,U7-ALT,Testing an online market,"book/classroom/modules.json — unit 7, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO
+8,U8-ALT,Making the welcome clear,"book/classroom/modules.json — unit 8, listening.script",5,TEACHER_READ,NO,UNVERIFIED,NO

@@ -159,5 +159,8 @@ print(f'--- {len(issues)} issues ---')
 for it in issues[:60]:
     print(' *', it)
 json.dump({'issues': issues, 'unit_pages': unit_pages, 'images': img_report,
-           'blank': blank_pages, 'pages': d.page_count},
+           'blank': blank_pages, 'pages': d.page_count, 'main_start': main_start},
           open(os.path.join(ROOT, 'book/artifacts/qa_print.json'), 'w'), indent=1)
+
+import sys
+sys.exit(1 if issues else 0)

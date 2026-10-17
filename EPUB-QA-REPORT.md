@@ -1,3 +1,5 @@
+> Historical production snapshot. The October 2026 revision is documented in [QA-REPORT.md](QA-REPORT.md); counts and appearance below may no longer match the current files.
+
 # EPUB Report — *Master Speaking* (reflowable EPUB 3)
 
 Build date: 2026-08-24 · `Master-Speaking.epub` (5,778,094 bytes)

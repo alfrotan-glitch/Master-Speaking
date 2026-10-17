@@ -1,0 +1,63 @@
+[
+  {
+    "path": [
+      "howto",
+      "paras",
+      0
+    ],
+    "original": "Welcome to the TOEFL House-Master speaking course designed to help you do more than simply learn English.",
+    "correction": "Welcome to Master Speaking, a course from The TOEFL House.",
+    "reason": "Correct the book-title capitalization and awkward publisher/title joining."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      2,
+      "desc"
+    ],
+    "original": "This is your main communication day.",
+    "correction": "Use the language from the reading and listening lessons to develop your own ideas.",
+    "reason": "Replace an unexplained day reference with the chapter’s actual purpose."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      2,
+      "you_will"
+    ],
+    "original": [
+      "collocations and phrasal verbs",
+      "discussion expressions",
+      "vocabulary activation",
+      "group discussions",
+      "ranking activities",
+      "challenge questions",
+      "spontaneous speaking"
+    ],
+    "correction": [
+      "use collocations and phrasal verbs",
+      "practice discussion expressions",
+      "activate topic vocabulary in conversation",
+      "take part in group discussions",
+      "compare and rank ideas",
+      "answer challenging questions",
+      "speak without a full script"
+    ],
+    "reason": "Make the learning-outcome list grammatical and parallel: each item begins with a verb."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      3,
+      "you_will",
+      7
+    ],
+    "original": "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way.",
+    "correction": "",
+    "reason": "Remove the closing sentence accidentally included as a bullet; it remains once as the guide’s closing paragraph.",
+    "action": "remove"
+  }
+]

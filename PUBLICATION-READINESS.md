@@ -1,0 +1,91 @@
+# Master Speaking — Editorial & Publication Review
+
+October 17, 2026 • Revised classroom edition in development
+
+## Edition status
+
+**Improved editorial/design proof, not yet cleared for commercial publication.** The new reading PDF is suitable for reviewing the revised book. Automated production checks pass, but they do not substitute for rights clearance, media verification, factual review, classroom trials, or a physical printer proof.
+
+Author and existing publisher attribution remain Abdul Raziq Nazari / The TOEFL House. No ISBN, accreditation, endorsement, or proficiency certification has been invented. The original `Master Speaking.docx` is unchanged.
+
+## What changed in this revision
+
+### Editing and teaching
+
+- Restored the **entire Unit 5 AI decision-making question** from manuscript item 1582. The previous reconstruction accidentally stopped after “climate change,” removing “disease, and poverty” and the actual decision-making question. Only the missing initial I is repaired in the restored source text.
+- Applied 42 exact-match reviewed edits across chapter text, vocabulary cells, and front matter. These clarify learner-facing instructions, fix “their choice” to “your choice,” remove a reference to nonexistent bold words, and align Unit 6’s pronunciation heading with its actual regular past-tense lesson.
+- Added four explicitly labelled classroom-guidance paragraphs: a speaking/repetition routine, privacy and sensitive-topic choices, research-source attribution, and an honest warning about unverified listening inputs.
+- Kept the author’s readings, eight themes, and 32-chapter sequence. No third-party transcript, exercise answer, research finding, or missing vocabulary item was fabricated.
+- Retained the separate 17-page Class Companion with lesson plans, assessment, role plays, and student practice tools. Its approximate B1–B2 planning range is not a certified level for the main book; the manuscript itself includes more demanding material. Diagnose the actual class before choosing pace and support.
+
+### Design and production
+
+- Created an original front-cover concept using vector typography and paired speech shapes. Teal, warm ivory, and mint connect the cover to the interior without introducing stock imagery.
+- Replaced bright-green text/banner defaults with a shared dark-teal palette. Default text contrast ratios: accent/white 6.86:1, white/banner 7.87:1, ink/pale band 15.44:1. This is not a claim of whole-book accessibility compliance.
+- Fixed a duplicated chapter heading in the Word/PDF rendering path: one navigable heading now appears per chapter, not an extra fused “Chapter1Speaking…” line beneath it.
+- Fixed table grid/cell width disagreement. Column widths now reserve space for complete words and distribute remaining space by content. Table text is smaller, left-aligned, and header rows repeat when PDF tables continue across pages.
+- Connected instructions to the following content to reduce stranded directions at page bottoms.
+- Fixed title-page placement by respecting Word’s display-style inset and spacing in the custom PDF renderer.
+- Added a cover image to the EPUB manifest and spine, with descriptive alt text and a navigation entry.
+- Built a bookmarked **reading edition** combining the front cover with the interior. The separate 7×10 interior remains available for production review.
+
+## Files and intended uses
+
+| File | Use |
+|---|---|
+| `Master-Speaking-Reading-Edition.pdf` | Main review/read-through copy: front cover plus revised interior, with bookmarks |
+| `Master-Speaking-print-7x10.pdf` | Revised interior only; 7×10 trim, no bleed; printer review required |
+| `Master-Speaking-7x10.docx` | Editable formatted Word edition; refresh TOC in Word before native export |
+| `Master-Speaking.epub` | Reflowable ebook with new cover; structurally checked, not official EPUBCheck-certified |
+| `Master-Speaking-Front-Cover.pdf` | Front-cover concept only, not a complete print cover wrap |
+| `Master-Speaking-Class-Companion.pdf` / `.docx` | Separate teacher/student support pack |
+| `book/publishing/media-register.csv` | Eight listening lessons awaiting exact source identification and alignment checks |
+| `book/publishing/asset-rights-register.csv` | Existing image inventory and rights evidence still needed |
+
+## Classroom implementation follow-up
+
+Two separate 18-page packs now support the student/teacher recommendations. The Student Practice Pack supplies checklists and speaking models for all eight units, with matching alternative-listening worksheets. The Teacher Implementation Pack supplies eight original fictional teacher-read scripts and keys, the 15-item Unit 1 reading key, and four 75-minute pilot plans. These are new supplementary materials, not recovered original videos, a complete eight-unit book key, recorded audio, or evidence of an actual pilot. See `CLASSROOM-QA-REPORT.md` for verified scope and `README.md` for use/build instructions.
+
+## Required before commercial release
+
+1. **Confirm listening inputs.** For every Chapter 2, obtain the intended recording, exact title, creator, stable link, access conditions, and permission basis. Check each comprehension question against the actual recording. Unit 2’s displayed topic and pre-listening title differ; do not guess the intended video. Broad “TED-Ed lesson” references are not proof of source identity or licensing. Do not invent scripts or answer keys.
+2. **Review rights and attribution.** Existing manuscript images have not been cleared by this revision. Complete the asset register with source, creator, license, and evidence; replace or remove unlicensed material with author approval. Confirm quotation attribution and retain the bundled font licenses and provenance records. Owning the manuscript file is not evidence of permission for every embedded asset.
+3. **Complete subject/factual review.** Check claims about psychology, relationships, money, globalization, and technology against identified sources. Existing readings contain generalized research claims; this pass did not substantiate them. Add precise references or qualify unsupported assertions with author approval. Recheck technology-related passages close to publication.
+4. **Supply missing source content or approve its treatment.** Unit 5 vocabulary-activation items and the absent Video Scripts section remain unresolved. The editorial report must distinguish “not supplied” from “completed.”
+5. **Proof every final page.** Run a full human review after content approval: question numbering, table continuation, answer space, language accuracy, cross-references, and images. Automated checks are necessary but cannot establish readability or exercise validity. Selected page inspection has been performed, not a signed full proof.
+6. **Test access and devices.** Run official EPUBCheck; test common ebook readers, text resizing, dark mode, keyboard navigation, and screen-reader order. Audit whether generic existing image descriptions sufficiently convey instructional meaning. PDF accessibility tagging has not been established.
+7. **Prepare the actual print cover.** Confirm binding, final page count, stock/caliper, spine width, bleed, color requirements, and barcode placement with the chosen printer. Produce a full front/spine/back wrap only after these are fixed. The front-cover concept has no bleed and is not that wrap.
+8. **Check print assets and native Word.** Two existing image placements are approximately 122 and 143 dpi; obtain originals if the printer requires higher resolution. Install the intended fonts, refresh Word fields, export natively, and compare with the custom-rendered proof. Approve a physical bound proof.
+9. **Finalize publishing metadata.** Confirm imprint authority, edition statement, publication date, distribution territories, price, ISBN ownership if applicable, and any required trademark/disclaimer language. The existing copyright page attribution is carried from the earlier project; it has not been independently verified here.
+10. **Pilot the course.** Use representative learners to test difficulty, timings, cultural suitability, sensitive-topic alternatives, and assessment consistency. Collect consent-based feedback before describing the book as classroom-validated.
+
+## Reproducible workflow
+
+```sh
+bash book/tools/bootstrap.sh
+python book/tools/release.py
+python book/tools/companion.py
+python book/tools/qa_companion.py
+```
+
+`release.py` stops if a build stage fails, records each QA process’s exit status, writes fresh checksums and QA results, and returns failure if a QA gate fails. To check existing outputs without rebuilding, use `python book/tools/release.py --skip-build`.
+
+Editorial source chain: original DOCX → existing extracted dump → `parse.py` plus `reviewed-edits.json` and `classroom-guide.json` → semantic XHTML → formatted DOCX → custom-rendered print PDF. EPUB is generated from semantic XHTML. `cover.py` generates the front concept and ebook image. Editing generated Word/XHTML files without updating the source chain will be overwritten by a rebuild. See `CHANGELOG.md` for all logged text changes and `QA-REPORT.md` for current results.
+
+## Final natural-language and typography sweep
+
+The follow-up pass preserves the supplied authorial voice rather than rewriting every paragraph into a uniform style. It removes teacher-facing leftovers, repairs parallel learning outcomes, softens an unqualified AI-performance claim, removes the misleading “unlike IQ” comparison, and uses lowercase for ordinary vocabulary headwords. Repeated teaching routines remain deliberately consistent. The book title remains **Master Speaking**; it is clear, accurate to the course, and does not imply test certification.
+
+The main reading and question text is now 11 pt, with approximately 15.6 pt leading in the print renderer. Instructions are 10 pt; table text remains 9.2 pt to preserve usable column widths. Official Source Serif 4 and Source Sans 3 static font files replace the earlier inconsistently named subsets. Their revision IDs, hashes, and licenses are retained in `book/assets/fonts/`. The remaining commercial-release rights questions concern existing third-party manuscript content and attribution, not a missing license record for these newly sourced Adobe fonts.
+
+The student-guide chapter summaries stay together, the contents fits on one page, and a blank front-matter verso no longer inherits a stale unit header. The QA tools now derive the main-text start from current pagination, and content/editorial/print tools return a failure exit status when issues are detected. This fixes verification weaknesses rather than changing tolerances to hide defects.
+
+See `FINAL-EDITORIAL-REVIEW.md` for the final scope and limitations.
+
+## Reader-facing publication cleanup
+
+At the author’s request, the book itself no longer includes discussion/revision notices, media-verification status, or references to the separately developed teaching packs. Three ordinary learning-guidance paragraphs remain, without a production-history preface. The media/source limitations are still recorded here and in UNRESOLVED-ISSUES.md; removing their discussion from the reading text does not resolve them.
+
+The main reader file is now `Master-Speaking.pdf`, with the title metadata **Master Speaking**. The former reading-edition filename is an identical compatibility copy. Word’s visible TOC cache now contains the actual eight unit and 32 chapter labels instead of an “Update Field” instruction; native Word may refresh the field to supply its own pagination. No tracked review markup or default generator comment is retained in the formatted Word book.
+
+`qa_publication.py` checks the semantic book, Word, EPUB, PDF text, and PDF metadata for 19 known production/chat phrases. It passes with no findings. This additional content-boundary check is included in the release workflow, taking the current report to eleven checks. It is not commercial-release certification.

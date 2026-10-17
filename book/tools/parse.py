@@ -136,7 +136,7 @@ REMOVE_ITEMS = {
 # targeted proofreading fixes {index: new text}
 TEXT_FIXES = {
     1518: 'Education, employment, healthcare, communication, entertainment',
-    1582: 'Imagine that scientists develop an AI system that can solve major problems such as climate change.',
+    1582: 'Imagine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?',
     1496: 'Share your ideas about the quote:',
     2554: 'Use this idea to discuss the title above. Use as many vocabulary expressions as you can.',
 }
@@ -983,6 +983,48 @@ def build():
         'front': front,
         'units': units,
     }
+    guide = json.load(open(os.path.join(ROOT, 'book', 'master', 'classroom-guide.json'), encoding='utf-8'))
+    intro = book['front']['howto']['paras']
+    guide_at = intro.index('How Is Each Unit Organized?')
+    intro[guide_at:guide_at] = guide
+    for paragraph in guide:
+        log('How to Use · October classroom guidance', '(new editorial guidance)',
+            paragraph, 'Reader-facing learning guidance; authorship and production history recorded only in external reports.',
+            'new supplementary text')
+    # Reviewed second-edition copyedits: exact-match guards prevent silent drift.
+    edits_path = os.path.join(ROOT, 'book', 'master', 'reviewed-edits.json')
+    for edit in json.load(open(edits_path, encoding='utf-8')):
+        chapter = book['units'][edit['unit'] - 1]['chapters'][edit['chapter'] - 1]
+        if 'table_column' in edit:
+            column = edit['table_column']
+            matches = [row for block in chapter['blocks'] if block.get('k') == 'table'
+                       for row in block['rows'][1:] if len(row) > column and row[column] == edit['original']]
+            if len(matches) != 1:
+                raise ValueError(f"Reviewed table edit must match exactly once: {edit['original']!r}")
+            matches[0][column] = edit['correction']
+        else:
+            matches = [b for b in chapter['blocks'] if b.get('text') == edit['original']]
+            if len(matches) != 1:
+                raise ValueError(f"Reviewed edit must match exactly once: {edit['original']!r}")
+            if edit.get('action') == 'remove':
+                chapter['blocks'].remove(matches[0])
+            else:
+                matches[0]['text'] = edit['correction']
+        log(f"U{edit['unit']} Ch{edit['chapter']} · October editorial review",
+            edit['original'], edit['correction'] or '(removed)', edit['reason'], 'high (reviewed)')
+    for edit in json.load(open(os.path.join(ROOT, 'book', 'master', 'reviewed-front-edits.json'), encoding='utf-8')):
+        parent = book['front']
+        for key in edit['path'][:-1]:
+            parent = parent[key]
+        key = edit['path'][-1]
+        if parent[key] != edit['original']:
+            raise ValueError(f"Front-matter edit did not match: {edit['path']}")
+        if edit.get('action') == 'remove':
+            del parent[key]
+        else:
+            parent[key] = edit['correction']
+        log('How to Use · final language review', str(edit['original']),
+            str(edit['correction']) or '(removed)', edit['reason'], 'high (reviewed)')
     json.dump(book, open(os.path.join(BUILD, 'book.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     json.dump(CHANGES, open(os.path.join(BUILD, 'changelog.json'), 'w', encoding='utf-8'),

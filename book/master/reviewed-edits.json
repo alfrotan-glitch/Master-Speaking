@@ -1,0 +1,295 @@
+[
+  {
+    "unit": 1,
+    "chapter": 2,
+    "original": "Here is a list of most useful expressions to learn.",
+    "correction": "Here are some useful expressions to learn.",
+    "reason": "Repair missing determiner and avoid an unsupported superlative."
+  },
+  {
+    "unit": 1,
+    "chapter": 4,
+    "original": "Read these sentences aloud. Stress the bold words.",
+    "correction": "Read these sentences aloud. Choose the key words to stress so that your meaning is clear.",
+    "reason": "No words in the five practice sentences are marked bold; make the task usable without inventing emphasis markings."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "When native speakers speak naturally, the words in a sentence often connect, rather than being pronounced as separate units.",
+    "correction": "In connected speech, words in a sentence often link rather than being pronounced as separate units.",
+    "reason": "Explain the speech feature directly without making native-speaker identity the learning target."
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "original": "Skill: Linking Sounds",
+    "correction": "Skill: Pronouncing Regular Past-Tense Endings",
+    "reason": "The lesson teaches the three pronunciations of -ed, not linking sounds; align heading with content."
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "original": "This is a very useful pronunciation problem for B2+ students, especially when they are speaking about relationships, experiences, and research.",
+    "correction": "Practise regular past-tense endings when speaking about relationships, experiences, and research.",
+    "reason": "Replace teacher-facing commentary with a direct learner instruction; remove an unsubstantiated level restriction."
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "original": "Ask students to put these words into three groups:",
+    "correction": "Put these words into three groups according to the pronunciation of the -ed ending:",
+    "reason": "Convert teacher-facing direction into an explicit student task."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "original": "Choose one and explain their choice.",
+    "correction": "Choose one and explain your choice.",
+    "reason": "Correct pronoun agreement in an instruction addressed to the learner."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "see how the unstressed vowel becomes weak:",
+    "correction": "Notice how the unstressed vowel becomes weak:",
+    "reason": "Correct sentence capitalization and make the instruction direct."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Ask students to underline the syllables that should contain a schwa /ə/.",
+    "correction": "Underline the syllables that contain a schwa /ə/ in the pronunciation you are practising.",
+    "reason": "Use learner-facing instructions and allow for pronunciation variation."
+  },
+  {
+    "unit": 1,
+    "chapter": 1,
+    "original": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
+    "correction": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner.",
+    "reason": "Supply missing final punctuation; preserve the author’s closing encouragement."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "Fortunately, emotional intelligence is not a fixed trait. Unlike IQ, it can be developed through conscious practice. Reflecting on one’s emotions, listening actively, seeking feedback, and responding thoughtfully rather than impulsively are all practical strategies for strengthening emotional intelligence.",
+    "correction": "Emotional skills can be strengthened through practice. Reflecting on your emotions, listening actively, seeking feedback, and pausing before you respond are practical ways to work on them.",
+    "reason": "Remove the misleading contrast implying IQ is fixed; use direct, practical language without claiming a measured outcome."
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "original": "One of AI’s greatest strengths is its ability to process enormous amounts of information in a very short time. It can recognize patterns, analyze data, and perform repetitive tasks more quickly and accurately than humans. As a result, businesses, hospitals, schools, and governments are increasingly relying on AI to improve efficiency and solve complex problems.",
+    "correction": "AI can process large amounts of information quickly. On some tasks, it can recognize patterns, analyze data, and handle repetitive work faster than a person. Its accuracy depends on the task, the system, and the data it uses. Businesses, hospitals, schools, and governments use these tools, but the results still need checking.",
+    "reason": "Replace an unqualified claim of greater speed and accuracy with task-dependent language; avoid vague hype."
+  },
+  {
+    "unit": 5,
+    "chapter": 3,
+    "original": "Students should give a 1-minute prediction.",
+    "correction": "Give a one-minute prediction.",
+    "reason": "Address the learner directly."
+  },
+  {
+    "unit": 5,
+    "chapter": 3,
+    "original": "They must include:",
+    "correction": "Include:",
+    "reason": "Keep the follow-on instruction in the same second-person voice."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "Have students practice these phrases first slowly, then naturally:",
+    "correction": "Practice these phrases slowly at first, then at a comfortable speaking pace:",
+    "reason": "Replace teacher-facing wording and an undefined naturalness target with a usable learner instruction."
+  },
+  {
+    "unit": 6,
+    "chapter": 3,
+    "original": "Students should give a 1-minute prediction.",
+    "correction": "",
+    "reason": "Remove a stray prediction instruction copied from the AI unit; the preceding task already requires a reasoned response to “Is love enough?”.",
+    "action": "remove"
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "original": "Students choose one word from each column and create a sentence about relationships.",
+    "correction": "Choose one word from each column and create a sentence about relationships.",
+    "reason": "Use direct learner-facing language."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Students should notice that unstressed vowels are often reduced, rather than pronounced as clearly as stressed vowels.",
+    "correction": "Notice how unstressed vowels are often reduced while stressed vowels remain more prominent.",
+    "reason": "Remove teacher-facing commentary and avoid implying reduced vowels are unclear."
+  },
+  {
+    "unit": 1,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 2,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 3,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 4,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 5,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 6,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 7,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 8,
+    "chapter": 3,
+    "original": "Study 10 carefully selected collocations, phrasal verbs, and discussion expressions related to the week’s topic.",
+    "correction": "Study the expressions below. Try using them to explain and develop your ideas.",
+    "reason": "Replace promotional filler with a clear, useful instruction; preserve repeated task structure for learners."
+  },
+  {
+    "unit": 1,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Misunderstanding",
+    "correction": "misunderstanding",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Influential",
+    "correction": "influential",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Expansion",
+    "correction": "expansion",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Establish",
+    "correction": "establish",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Commerce",
+    "correction": "commerce",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Accelerate",
+    "correction": "accelerate",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "table_column": 0,
+    "original": "Adapt",
+    "correction": "adapt",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "table_column": 0,
+    "original": "Unprecedented",
+    "correction": "unprecedented",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "table_column": 0,
+    "original": "Bandwagon",
+    "correction": "bandwagon",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "table_column": 0,
+    "original": "Gatekeeper",
+    "correction": "gatekeeper",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "table_column": 0,
+    "original": "Arbitrary",
+    "correction": "arbitrary",
+    "reason": "Use lowercase for ordinary dictionary headwords; preserve sentence examples, proper names, and acronyms."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "original": "Vocabulary Check",
+    "correction": "Vocabulary in Discussion",
+    "reason": "The activity asks learners to discuss a quote using vocabulary, not complete a vocabulary test; align the label with the actual task."
+  },
+  {
+    "unit": 1,
+    "chapter": 3,
+    "original": "Now students already have the language they need.",
+    "correction": "",
+    "action": "remove",
+    "reason": "Remove teacher-facing commentary from the reader-facing publication text."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Then have students say the words first carefully, and then naturally.",
+    "correction": "Say the words slowly at first, then at a comfortable speaking pace.",
+    "reason": "Address the learner directly rather than leaving a teaching-production direction in the book."
+  }
+]

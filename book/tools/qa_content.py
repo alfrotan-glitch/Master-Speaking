@@ -197,3 +197,6 @@ print(f"checked {n_checked} source texts: covered {n_cov}, "
 for kind, i, t in missing[:60]:
     print(f'  MISS {kind} #{i}: {t}')
 print('OK' if not missing else 'ISSUES PRESENT')
+
+import sys
+sys.exit(0 if not missing else 1)

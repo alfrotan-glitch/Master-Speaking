@@ -151,6 +151,10 @@ def strip_ids(el):
         if n.get('id'):
             del n.attrib['id']
 
+# Apply the same accessible default palette used by Word and print.
+from design import BAND, BANNER, ACCENT
+CSS = CSS.replace('#7BE1D0', '#' + BAND).replace('#92D050', '#' + BANNER).replace('#00B050', '#' + ACCENT)
+
 def main():
     if os.path.exists(WORK):
         shutil.rmtree(WORK)
@@ -174,6 +178,17 @@ def main():
         spine.append((fname.rsplit('.',1)[0], 'yes'))
         if toc_label:
             nav_items.append((toc_level or 1, toc_label, fname, toc_children))
+
+    # Original vector-designed edition cover; separate from licensed interior media.
+    cover_src = os.path.join(ROOT, 'book', 'assets', 'cover.png')
+    if not os.path.exists(cover_src):
+        raise FileNotFoundError('Run book/tools/cover.py before building the EPUB')
+    shutil.copy(cover_src, os.path.join(WORK, 'images', 'cover.png'))
+    manifest.append(('cover-image', 'images/cover.png', 'image/png', 'cover-image'))
+    cover = etree.Element(f'{{{XH}}}div', {'class': 'cover', f'{{{EP}}}type': 'cover'})
+    etree.SubElement(cover, f'{{{XH}}}img', src='images/cover.png',
+                     alt='Master Speaking. An English speaking course by Abdul Raziq Nazari. The TOEFL House.')
+    add_xhtml('cover.xhtml', 'Cover', [cover], 'Cover', 1)
 
     # ---- front matter --------------------------------------------------
     for sec in body:

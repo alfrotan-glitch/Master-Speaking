@@ -32,7 +32,7 @@ for k, v in _raw_units.items():
         _unit_pages[v] = int(str(k).split('-')[-1])
     except ValueError:
         pass
-main_start = (_qp or {}).get('main_start', 11)
+main_start = _qp.get('main_start') or next(physical for physical, unit in _unit_pages.items() if unit == 1)
 
 for pno in range(len(d)):
     pg = d[pno]

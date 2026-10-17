@@ -1,169 +1,169 @@
 {
- "pages": 172,
- "spreads": 81,
+ "pages": 160,
+ "spreads": 76,
  "chapter_ends": [
   {
-   "before_chapter_page": 12,
-   "end_page": 11,
-   "fill_depth": 0.611
+   "before_chapter_page": 10,
+   "end_page": 9,
+   "fill_depth": 0.615
   },
   {
-   "before_chapter_page": 18,
-   "end_page": 17,
-   "fill_depth": 0.599
+   "before_chapter_page": 15,
+   "end_page": 14,
+   "fill_depth": 0.846
+  },
+  {
+   "before_chapter_page": 19,
+   "end_page": 18,
+   "fill_depth": 0.428
   },
   {
    "before_chapter_page": 22,
    "end_page": 21,
-   "fill_depth": 0.964
+   "fill_depth": 0.268
   },
   {
-   "before_chapter_page": 25,
-   "end_page": 24,
-   "fill_depth": 0.638
+   "before_chapter_page": 26,
+   "end_page": 25,
+   "fill_depth": 0.625
   },
   {
-   "before_chapter_page": 30,
-   "end_page": 29,
-   "fill_depth": 0.672
+   "before_chapter_page": 32,
+   "end_page": 31,
+   "fill_depth": 0.426
   },
   {
    "before_chapter_page": 36,
    "end_page": 35,
-   "fill_depth": 0.679
+   "fill_depth": 0.621
   },
   {
-   "before_chapter_page": 41,
-   "end_page": 40,
-   "fill_depth": 0.261
+   "before_chapter_page": 39,
+   "end_page": 38,
+   "fill_depth": 0.053
   },
   {
    "before_chapter_page": 44,
    "end_page": 43,
-   "fill_depth": 0.396
+   "fill_depth": 0.624
   },
   {
-   "before_chapter_page": 48,
-   "end_page": 47,
-   "fill_depth": 0.668
+   "before_chapter_page": 50,
+   "end_page": 49,
+   "fill_depth": 0.374
   },
   {
    "before_chapter_page": 54,
    "end_page": 53,
-   "fill_depth": 0.927
+   "fill_depth": 0.871
   },
   {
-   "before_chapter_page": 59,
-   "end_page": 58,
-   "fill_depth": 0.484
+   "before_chapter_page": 57,
+   "end_page": 56,
+   "fill_depth": 0.532
   },
   {
    "before_chapter_page": 62,
    "end_page": 61,
-   "fill_depth": 0.854
+   "fill_depth": 0.615
   },
   {
-   "before_chapter_page": 66,
-   "end_page": 65,
-   "fill_depth": 0.609
+   "before_chapter_page": 68,
+   "end_page": 67,
+   "fill_depth": 0.223
   },
   {
-   "before_chapter_page": 72,
-   "end_page": 71,
-   "fill_depth": 0.849
+   "before_chapter_page": 73,
+   "end_page": 72,
+   "fill_depth": 0.515
   },
   {
-   "before_chapter_page": 77,
-   "end_page": 76,
-   "fill_depth": 0.927
+   "before_chapter_page": 76,
+   "end_page": 75,
+   "fill_depth": 0.934
   },
   {
-   "before_chapter_page": 81,
-   "end_page": 80,
-   "fill_depth": 0.194
+   "before_chapter_page": 82,
+   "end_page": 81,
+   "fill_depth": 0.646
   },
   {
-   "before_chapter_page": 86,
-   "end_page": 85,
-   "fill_depth": 0.638
+   "before_chapter_page": 87,
+   "end_page": 86,
+   "fill_depth": 0.721
   },
   {
    "before_chapter_page": 92,
    "end_page": 91,
-   "fill_depth": 0.25
+   "fill_depth": 0.941
   },
   {
-   "before_chapter_page": 98,
-   "end_page": 97,
-   "fill_depth": 0.02
+   "before_chapter_page": 95,
+   "end_page": 94,
+   "fill_depth": 0.59
   },
   {
-   "before_chapter_page": 101,
-   "end_page": 100,
-   "fill_depth": 0.935
+   "before_chapter_page": 102,
+   "end_page": 101,
+   "fill_depth": 0.625
   },
   {
    "before_chapter_page": 108,
    "end_page": 107,
-   "fill_depth": 0.62
+   "fill_depth": 0.666
+  },
+  {
+   "before_chapter_page": 112,
+   "end_page": 111,
+   "fill_depth": 0.962
   },
   {
    "before_chapter_page": 115,
    "end_page": 114,
-   "fill_depth": 0.339
+   "fill_depth": 0.5
   },
   {
-   "before_chapter_page": 120,
-   "end_page": 119,
-   "fill_depth": 0.593
+   "before_chapter_page": 122,
+   "end_page": 121,
+   "fill_depth": 0.637
   },
   {
-   "before_chapter_page": 123,
-   "end_page": 122,
-   "fill_depth": 0.9
+   "before_chapter_page": 128,
+   "end_page": 127,
+   "fill_depth": 0.54
   },
   {
-   "before_chapter_page": 130,
-   "end_page": 129,
-   "fill_depth": 0.63
+   "before_chapter_page": 133,
+   "end_page": 132,
+   "fill_depth": 0.274
   },
   {
-   "before_chapter_page": 137,
-   "end_page": 136,
-   "fill_depth": 0.106
+   "before_chapter_page": 136,
+   "end_page": 135,
+   "fill_depth": 0.269
   },
   {
    "before_chapter_page": 142,
    "end_page": 141,
-   "fill_depth": 0.844
+   "fill_depth": 0.625
   },
   {
-   "before_chapter_page": 145,
-   "end_page": 144,
-   "fill_depth": 0.879
+   "before_chapter_page": 148,
+   "end_page": 147,
+   "fill_depth": 0.94
   },
   {
-   "before_chapter_page": 152,
-   "end_page": 151,
-   "fill_depth": 0.621
+   "before_chapter_page": 153,
+   "end_page": 152,
+   "fill_depth": 0.682
   },
   {
-   "before_chapter_page": 159,
-   "end_page": 158,
-   "fill_depth": 0.821
-  },
-  {
-   "before_chapter_page": 165,
-   "end_page": 164,
-   "fill_depth": 0.195
-  },
-  {
-   "before_chapter_page": 168,
-   "end_page": 167,
-   "fill_depth": 0.585
+   "before_chapter_page": 156,
+   "end_page": 155,
+   "fill_depth": 0.222
   }
  ],
- "median_chapter_end_fill": 0.625,
+ "median_chapter_end_fill": 0.618,
  "spread_imbalance_flags": [],
  "ok": true
 }

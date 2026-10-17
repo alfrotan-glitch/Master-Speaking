@@ -1,39 +1,38 @@
-# Unresolved Issues — *Master Speaking*
+# Unresolved Issues — Master Speaking
 
-As of build 2026-08-24. None of these block the deliverables; each is a conscious carry-over or environment limitation, recorded here rather than silently “fixed”.
+Current review: October 17, 2026. This replaces the earlier statement that no outstanding issue blocks release. Several issues below **do block a responsible claim of commercial publication readiness**. See PUBLICATION-READINESS.md for the complete release checklist and QA-REPORT.md for current automated results.
 
-## Content carries (source defects preserved or dropped, never invented)
+## Content and learning inputs
 
-1. **U5 vocabulary-activation items missing in source** (dump items 1604–1605): the source document itself lacks these list items; no content was invented to fill the gap.
-2. **U8 item 2593 dropped** (mismatched True/False instruction that belonged to a different exercise) — logged in the change log.
-3. **Unit 8 “The Future of Marriage” heading** removed (wrong heading in source); its questions retained under the preceding section, with no invented replacement heading (locked decision).
-4. **Foreword sign-off “September, 2026”** carried exactly as written in source (comma included).
+- **New classroom support now available:** the separate Student Practice and Teacher Implementation packs supply original teacher-read alternatives for all eight themes, their own keys, a source-linked Unit 1 reading key, and a pilot plan. These do not resolve the original-video inputs or constitute a completed classroom trial. See CLASSROOM-QA-REPORT.md.
+- **Eight listening inputs are not verified.** The book supplies topic/title references but this revision has not established exact recordings, stable URLs, licensing, transcripts, or question alignment. Unit 2 has different opening/pre-listening labels. The printed guidance now tells teachers to verify inputs before assigning exercises. Tracking: `book/publishing/media-register.csv`.
+- **Video Scripts section absent from the source.** Earlier audits found no scripts in the original DOCX. None have been fabricated. Author-supplied scripts and any necessary permissions are required before adding them.
+- **Unit 5 vocabulary-activation items missing in the source.** This pass has not manufactured replacements or an answer key. Author approval is needed to supply or formally redesign the exercise.
+- **Research/factual substantiation incomplete.** The readings include broad claims about money, psychology, relationships, and social/technological changes. Production fidelity is not evidence of factual accuracy. A subject review with references remains necessary.
+- **Full language and classroom proof pending.** Forty-two reviewed chapter/front-matter/table edits and the source restoration are completed; that does not mean every instruction and exercise is validated. Timings, level fit, sensitive topics, answerability, and assessment require teacher/learner trials.
 
-5. **Video Scripts section — absent from the original manuscript.** A complete audit of `Master Speaking.docx` (all 166,777 body characters reconciled to dump paragraphs and tables; footnotes and endnotes empty; all 50 textbox stories inventoried = front epigraph + 8 unit-opener panels) found **no Video Scripts section anywhere in the source**. Under the locked no-invention rule the fidelity count is therefore **0 = 0 = 0 = 0** across ORIGINAL / DOCX / PDF / EPUB. If scripts exist elsewhere, supply them and the section will be rebuilt to the original visual identity.
+## Rights and publishing
 
-## Scope notes
+- Embedded interior images lack verified rights evidence in this revision. Source and permission checks are required; inventory is in `book/publishing/asset-rights-register.csv`.
+- Quotation attribution, imprint authority, and any required trademark statements require publisher review. Official Adobe font licenses and source provenance are now supplied, along with the DejaVu fallback license notice.
+- No ISBN or final distribution metadata has been assigned here.
+- The new cover is an original **front-only concept**, not a bleed-ready front/spine/back wrap. Final binding, stock, page count, spine width, and printer specifications must be approved first.
 
-5. **Cover files**: the source document contains no cover art (all 25 media files are interior content images). A designed cover would be new artwork — outside the locked no-invention scope — so none is included. The title page (PDF p. 3 / EPUB title.xhtml) serves as the opening display page.
-6. **No bleed**: interior text-and-figure book on white ground; all content sits inside margins. Print-ready as a borderless 7×10 PDF or with standard grip (locked decision).
+## Production and access
 
-## Deliberate typographic conventions
+- The custom DOCX-based PDF renderer is not Microsoft Word or LibreOffice. Compare a refreshed native Word export and physical printer proof before manufacturing. Word appearance depends on local fonts; the PDF embeds its typefaces.
+- Word’s TOC fields require refresh in Word; final native pagination must be checked after refresh.
+- Two existing image placements remain below 150 effective dpi (approximately 122 and 143). Higher-resolution originals may be needed; no artificial upscaling has been used.
+- Official EPUBCheck and reader/assistive-technology tests have not been performed. Structural validation alone is not conformance certification.
+- Whole-book accessibility, meaningful instructional alt text for existing imagery, PDF tagging, and reading order have not been fully audited. The new palette’s contrast ratios do not establish accessibility compliance.
+- Automated bounds/collision/structure checks pass, but a complete human page-by-page proof has not been signed off. Blank versos used to preserve recto unit starts are intentional; current pagination is recorded in QA artifacts rather than historical reports.
 
-11. **Four blank verso pages (physical 28, 106, 128, 150)** immediately before recto unit openers — the standard print convention when sections are locked to recto starts; intentional and verified by QA.
+## Resolved in the October revision
 
-## Word master notes
+- The Unit 5 AI prompt is no longer truncated: its disease/poverty examples and decision-making question are restored from manuscript item 1582.
+- Unit 6’s pronunciation skill heading now names regular past-tense endings, matching the lesson.
+- Directions no longer refer to nonexistent bold words in Unit 1’s stress practice.
+- Duplicate Word/PDF chapter-title rendering, title-page inset, table-grid disagreement, unjustified cell text, and nonrepeating PDF headers were repaired.
+- A front-cover concept and EPUB cover are now supplied. The previous “no cover included” scope note no longer describes this revision.
 
-6. **DOCX TOC field** computes page numbers on refresh: open the file, right-click the TOC, choose “Update Field” (no rendering engine exists in this sandbox to pre-bake field results).
-7. **Fonts**: the DOCX references Source Serif 4 / Source Sans 3 by name; without them installed, Word falls back gracefully and the style system (sizes, spacing, colours) is unaffected. The print PDF embeds the fonts and is authoritative for final appearance.
-
-## Environment limitations
-
-10. **DOCX→PDF conversion**: no LibreOffice/MS Word exists in the build sandbox and the system package mirror is unreachable (PyPI only). The print PDF is therefore produced by `book/tools/docxpdf.py`, a dedicated renderer that reads **Master-Speaking-7x10.docx itself** (its styles, shading fills, table cell fills, images, column widths and page-break structure) — never the semantic master — so every PDF fix still starts as a DOCX fix. For a Word/LibreOffice-native render, open the DOCX in Word and export; the DOCX is the production master either way.
-
-8. **epubcheck / Java unavailable** in the build sandbox; EPUB validated structurally instead (see EPUB-QA-REPORT / EPUB-REPORT.md).
-9. **Google Fonts offline**: text faces are the locally installed Source Serif 4 / Source Sans 3 / DejaVu Sans files, all embedded and subset in the PDF.
-
-## Verification aids
-
-- Page renders for the human visual pass: `book/artifacts/proof_png/`
-- Machine-readable QA artifacts: `book/artifacts/qa_*.json`
-- Change log: `CHANGELOG.md` (machine copy `book/artifacts/changelog.json`)
+Historical editorial choices (duplicate removals, mismatched T/F instruction removal, and other reconstruction decisions) remain recorded in CHANGELOG.md; this pass did not silently reverse them. The original manuscript remains intact.

@@ -1,6 +1,6 @@
 {
  "pdf_version": "PDF 1.4",
- "page_count": 172,
+ "page_count": 160,
  "encryption": false,
  "metadata": {
   "format": "PDF 1.4",
@@ -9,8 +9,8 @@
   "subject": "(unspecified)",
   "creator": "(unspecified)",
   "producer": "ReportLab PDF Library - (opensource)",
-  "creationDate": "D:20260824020250+00'00'",
-  "modDate": "D:20260824020250+00'00'"
+  "creationDate": "D:20261017140921+00'00'",
+  "modDate": "D:20261017140921+00'00'"
  },
  "page_sizes_pt": [
   [
@@ -19,7 +19,7 @@
   ]
  ],
  "fonts": {
-  "AAAAAA+SourceSans3ExtraLight-Regular": {
+  "AAAAAA+SourceSans3-Regular": {
    "type": "TrueType",
    "ext": "ttf"
   },
@@ -27,7 +27,7 @@
    "type": "TrueType",
    "ext": "ttf"
   },
-  "AAAAAA+SourceSans3ExtraLight-SemiBold": {
+  "AAAAAA+SourceSans3-Semibold": {
    "type": "TrueType",
    "ext": "ttf"
   },
@@ -35,11 +35,11 @@
    "type": "TrueType",
    "ext": "ttf"
   },
-  "AAAAAA+SourceSans3ExtraLight-Italic": {
+  "AAAAAA+SourceSans3-It": {
    "type": "TrueType",
    "ext": "ttf"
   },
-  "AAAAAA+SourceSerif4-Italic": {
+  "AAAAAA+SourceSerif4-It": {
    "type": "TrueType",
    "ext": "ttf"
   },
@@ -47,7 +47,7 @@
    "type": "Type1",
    "ext": "n/a"
   },
-  "AAAAAA+SourceSans3ExtraLight-Bold": {
+  "AAAAAA+SourceSans3-Bold": {
    "type": "TrueType",
    "ext": "ttf"
   },
@@ -58,18 +58,18 @@
  },
  "fonts_used": [
   "DejaVuSans",
-  "SourceSans3ExtraLight-Bo",
-  "SourceSans3ExtraLight-It",
-  "SourceSans3ExtraLight-Re",
-  "SourceSans3ExtraLight-Se",
+  "SourceSans3-Bold",
+  "SourceSans3-It",
+  "SourceSans3-Regular",
+  "SourceSans3-Semibold",
   "SourceSerif4-Bold",
-  "SourceSerif4-Italic",
+  "SourceSerif4-It",
   "SourceSerif4-Regular"
  ],
  "images": [
   {
-   "xref": 92,
-   "page": 11,
+   "xref": 90,
+   "page": 9,
    "px": [
     1000,
     562
@@ -78,8 +78,8 @@
    "dpi": 204.1
   },
   {
-   "xref": 98,
-   "page": 14,
+   "xref": 95,
+   "page": 11,
    "px": [
     1920,
     1080
@@ -88,8 +88,8 @@
    "dpi": 457.1
   },
   {
-   "xref": 106,
-   "page": 20,
+   "xref": 102,
+   "page": 16,
    "px": [
     640,
     480
@@ -98,8 +98,8 @@
    "dpi": 177.8
   },
   {
-   "xref": 116,
-   "page": 29,
+   "xref": 112,
+   "page": 25,
    "px": [
     600,
     400
@@ -108,8 +108,8 @@
    "dpi": 122.4
   },
   {
-   "xref": 119,
-   "page": 31,
+   "xref": 115,
+   "page": 27,
    "px": [
     600,
     420
@@ -118,8 +118,8 @@
    "dpi": 142.9
   },
   {
-   "xref": 127,
-   "page": 38,
+   "xref": 122,
+   "page": 33,
    "px": [
     1280,
     720
@@ -128,8 +128,8 @@
    "dpi": 355.6
   },
   {
-   "xref": 137,
-   "page": 47,
+   "xref": 133,
+   "page": 43,
    "px": [
     2560,
     1440
@@ -138,8 +138,8 @@
    "dpi": 522.4
   },
   {
-   "xref": 141,
-   "page": 50,
+   "xref": 136,
+   "page": 45,
    "px": [
     836,
     557
@@ -148,8 +148,8 @@
    "dpi": 181.7
   },
   {
-   "xref": 148,
-   "page": 56,
+   "xref": 143,
+   "page": 51,
    "px": [
     1280,
     720
@@ -158,8 +158,8 @@
    "dpi": 355.6
   },
   {
-   "xref": 158,
-   "page": 65,
+   "xref": 154,
+   "page": 61,
    "px": [
     1024,
     576
@@ -168,8 +168,8 @@
    "dpi": 209.0
   },
   {
-   "xref": 162,
-   "page": 68,
+   "xref": 157,
+   "page": 63,
    "px": [
     959,
     639
@@ -178,8 +178,8 @@
    "dpi": 228.3
   },
   {
-   "xref": 169,
-   "page": 74,
+   "xref": 164,
+   "page": 69,
    "px": [
     640,
     480
@@ -188,8 +188,8 @@
    "dpi": 177.8
   },
   {
-   "xref": 181,
-   "page": 85,
+   "xref": 177,
+   "page": 81,
    "px": [
     1260,
     720
@@ -198,8 +198,8 @@
    "dpi": 257.1
   },
   {
-   "xref": 185,
-   "page": 88,
+   "xref": 180,
+   "page": 83,
    "px": [
     973,
     715
@@ -208,8 +208,8 @@
    "dpi": 231.7
   },
   {
-   "xref": 192,
-   "page": 94,
+   "xref": 187,
+   "page": 89,
    "px": [
     640,
     480
@@ -218,8 +218,8 @@
    "dpi": 177.8
   },
   {
-   "xref": 206,
-   "page": 107,
+   "xref": 200,
+   "page": 101,
    "px": [
     2880,
     1920
@@ -228,8 +228,8 @@
    "dpi": 587.8
   },
   {
-   "xref": 210,
-   "page": 110,
+   "xref": 203,
+   "page": 103,
    "px": [
     1028,
     578
@@ -238,8 +238,8 @@
    "dpi": 244.8
   },
   {
-   "xref": 218,
-   "page": 117,
+   "xref": 210,
+   "page": 109,
    "px": [
     1135,
     835
@@ -248,8 +248,8 @@
    "dpi": 315.3
   },
   {
-   "xref": 231,
-   "page": 129,
+   "xref": 223,
+   "page": 121,
    "px": [
     1000,
     600
@@ -258,8 +258,8 @@
    "dpi": 204.1
   },
   {
-   "xref": 235,
-   "page": 132,
+   "xref": 226,
+   "page": 123,
    "px": [
     869,
     587
@@ -268,8 +268,8 @@
    "dpi": 206.9
   },
   {
-   "xref": 243,
-   "page": 139,
+   "xref": 233,
+   "page": 129,
    "px": [
     800,
     550
@@ -278,8 +278,8 @@
    "dpi": 222.2
   },
   {
-   "xref": 256,
-   "page": 151,
+   "xref": 246,
+   "page": 141,
    "px": [
     1000,
     667
@@ -288,8 +288,8 @@
    "dpi": 204.1
   },
   {
-   "xref": 260,
-   "page": 154,
+   "xref": 249,
+   "page": 143,
    "px": [
     640,
     448
@@ -298,8 +298,8 @@
    "dpi": 152.4
   },
   {
-   "xref": 268,
-   "page": 161,
+   "xref": 256,
+   "page": 149,
    "px": [
     640,
     427
@@ -309,8 +309,8 @@
   }
  ],
  "source_limited_images": [
-  "image xref 116 on p29: 122.4 dpi (source-limited, original composition size kept)",
-  "image xref 119 on p31: 142.9 dpi (source-limited, original composition size kept)"
+  "image xref 112 on p25: 122.4 dpi (source-limited, original composition size kept)",
+  "image xref 115 on p27: 142.9 dpi (source-limited, original composition size kept)"
  ],
  "issues": [],
  "ok": true

@@ -9,8 +9,8 @@
   "subject": "(unspecified)",
   "creator": "(unspecified)",
   "producer": "ReportLab PDF Library - (opensource)",
-  "creationDate": "D:20261017140921+00'00'",
-  "modDate": "D:20261017140921+00'00'"
+  "creationDate": "D:20261017150617+00'00'",
+  "modDate": "D:20261017150617+00'00'"
  },
  "page_sizes_pt": [
   [
@@ -19,15 +19,15 @@
   ]
  ],
  "fonts": {
-  "AAAAAA+SourceSans3-Regular": {
-   "type": "TrueType",
-   "ext": "ttf"
-  },
   "AAAAAA+SourceSerif4-Bold": {
    "type": "TrueType",
    "ext": "ttf"
   },
   "AAAAAA+SourceSans3-Semibold": {
+   "type": "TrueType",
+   "ext": "ttf"
+  },
+  "AAAAAA+SourceSans3-Regular": {
    "type": "TrueType",
    "ext": "ttf"
   },

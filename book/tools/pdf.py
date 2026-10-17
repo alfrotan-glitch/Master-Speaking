@@ -187,6 +187,8 @@ def build_styles():
                         textColor=ACCENT, spaceAfter=5)
     S['chaptitle'] = P('chaptitle', fontName=SERIF+'-B', fontSize=17.5, leading=21.5,
                        textColor=BANNER, spaceAfter=6)
+    S['chapterfocus'] = P('chapterfocus', fontName=SANS, fontSize=10, leading=13.5,
+                           textColor=SOFT, spaceAfter=9, keepWithNext=1)
     S['warmhead'] = P('warmhead', fontName=SANS+'-SB', fontSize=11, leading=14,
                       textColor=ACCENT, spaceAfter=4)
     S['fmhead'] = P('fmhead', fontName=SERIF+'-B', fontSize=19, leading=24,
@@ -324,7 +326,8 @@ def on_page(canv, doc, kind):
     canv.saveState()
     canv.setFont(SANS, 8.8)
     canv.setFillColor(SOFT)
-    canv.drawCentredString(PAGE_W / 2, M_BOT / 2 + 4, folio)
+    if not (kind == 'fm' and page == 1):
+        canv.drawCentredString(PAGE_W / 2, M_BOT / 2 + 4, folio)
     if kind == 'main':
         head = doc.head_left + ('   ·   ' + doc.head_right if doc.head_right else '')
         canv.setFont(SANS, 8.2)
@@ -541,12 +544,16 @@ def content_flowables(section, story):
             k = cls_[0] if cls_ else 'body'
             stmap = {'instr': 'instr', 'label': 'label', 'topic': 'topic',
                      'titleline': 'titleline', 'media-title': 'mediatitle',
-                     'reading': 'reading'}
+                     'reading': 'reading', 'chapter-focus': 'chapterfocus'}
             st = stmap.get(k, 'body')
             if k == 'titleline':
                 story.append(Paragraph('<em>' + fallback(text_of(el)) + '</em>', S[st]))
             else:
                 story.append(para(el, S[st]))
+        elif tag == 'div' and 'stress-contrast' in cls_:
+            comparison = []
+            content_flowables(el, comparison)
+            story.append(KeepTogether(comparison))
         elif tag == 'div' and 'note' in cls_:
             p = Q(el, './x:p')[0]
             story.append(Spacer(1, 4))

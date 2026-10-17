@@ -15,8 +15,10 @@ Interior: **160 pages**, 7 × 10 inches. Reading edition: 161 pages including a 
 | proof | PASS |
 | preflight | PASS |
 | epub | PASS |
+| epubcheck | PASS |
 | visual | PASS |
 | publication | PASS |
+| chapters | PASS |
 
 ## Palette contrast (default colors only)
 
@@ -29,18 +31,18 @@ Interior: **160 pages**, 7 × 10 inches. Reading edition: 161 pages including a 
 - Content and fidelity checks trace source text into the semantic master and the master into PDF, Word, and EPUB. They do not verify factual accuracy or teaching effectiveness.
 - Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.
 - Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.
-- EPUB structural checks pass/fail as reported above; official EPUBCheck and assistive-technology testing have not been performed. Palette ratios are not an accessibility certification.
+- EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.
 - PDF uses the existing DOCX-based custom renderer, not Microsoft Word. A native Word export and printer proof still need comparison.
 - The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.
 - Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.
 
-Editorial log: 98 entries. Machine results: `book/artifacts/qa_october_run.json`.
+Editorial log: 137 entries. Machine results: `book/artifacts/qa_october_run.json`.
 
 ## Export checksums (SHA-256)
 
-- `Master-Speaking-print-7x10.pdf`: `598a33c4ae5d633587bb6fee06b231634c5d478c3b53cc2bae6807aacd275343`
-- `Master-Speaking-7x10.docx`: `2fedd53e9292dea98434ba85ea70be6e9ff4cd2c468d6d8c66e1e1408259c44f`
-- `Master-Speaking.epub`: `87d7ae154134802b7693197bafb4b1dd43fc1163b046e4af51ed40724280a701`
-- `Master-Speaking-Front-Cover.pdf`: `f988b7a17acfb11180475a9b27f626a27ee2acd0b07c0b679019d86221d59dd0`
-- `Master-Speaking-Reading-Edition.pdf`: `ef5704bc50277edf7ecc2e9b1fb223ae5f4eb8a1e96ccdc2e3e4b280cd40e8b0`
-- `Master-Speaking.pdf`: `ef5704bc50277edf7ecc2e9b1fb223ae5f4eb8a1e96ccdc2e3e4b280cd40e8b0`
+- `Master-Speaking-print-7x10.pdf`: `5be83180f9b4c736702f217d0e083d21352a4ce3a1199cb2b8e9c7ccaee4165b`
+- `Master-Speaking-7x10.docx`: `f1fb825945c25bf0354a6cf362e8728fd677f340e502010a004af34f9762c452`
+- `Master-Speaking.epub`: `290549cb0642e4d7bc780762aa03a4938c2bdea1b6c1c62cc770ad302757b324`
+- `Master-Speaking-Front-Cover.pdf`: `b2e192ced7de3ed5e821fb2ebdaad946ea694c39d34c5ba96bbbc686aa5ee78b`
+- `Master-Speaking-Reading-Edition.pdf`: `2211c1731f4c9079f1a0ec3b93a9b13d91b09370d63ed3f83ba856d9d528d0e8`
+- `Master-Speaking.pdf`: `2211c1731f4c9079f1a0ec3b93a9b13d91b09370d63ed3f83ba856d9d528d0e8`

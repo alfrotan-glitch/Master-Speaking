@@ -102,6 +102,8 @@ for iid, it in items.items():
 
 spine = opf.find(f'{{{OPF_NS}}}spine')
 idrefs = [ir.get('idref') for ir in spine.findall(f'{{{OPF_NS}}}itemref')]
+linear_idrefs = [ir.get('idref') for ir in spine.findall(f'{{{OPF_NS}}}itemref')
+                 if ir.get('linear', 'yes') != 'no']
 for idr in idrefs:
     if idr not in items:
         err(f'spine idref {idr!r} not in manifest')
@@ -171,7 +173,7 @@ if nav_it is not None:
     else:
         # every spine doc ideally has a toc entry — count anchor targets
         anchors = [a.get('href') for a in tocs[0].iter(f'{{{XH}}}a') if a.get('href')]
-        for idr in idrefs:
+        for idr in linear_idrefs:
             h = items[idr].get('href')
             base_h = h.split('#')[0]
             if not any(a.split('#')[0] == base_h for a in anchors):
@@ -192,8 +194,8 @@ if ncx_it:
     zp = zpath(ncx_it[0].get('href'))
     ncx = etree.fromstring(z.read(zp))
     npts = ncx.findall('.//{http://www.daisy.org/z3986/2005/ncx/}navPoint')
-    if len(npts) < len(idrefs):
-        err(f'NCX has {len(npts)} navPoints < {len(idrefs)} spine items')
+    if len(npts) < len(linear_idrefs):
+        err(f'NCX has {len(npts)} navPoints < {len(linear_idrefs)} linear spine items')
     for c in ncx.findall('.//{http://www.daisy.org/z3986/2005/ncx/}content'):
         src = c.get('src')
         target = os.path.normpath(os.path.join(os.path.dirname(zp), src.split('#')[0])).replace('\\', '/')

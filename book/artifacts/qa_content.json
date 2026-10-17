@@ -1,6 +1,6 @@
 {
  "checked": 3181,
- "covered": 3131,
+ "covered": 3128,
  "classified_transforms": [
   [
    "Forward -> Foreword (locked decision)",
@@ -91,6 +91,16 @@
    "logged-correction",
    986,
    "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   1033,
+   "use a rising tone when asking a question, expressi"
+  ],
+  [
+   "logged-correction",
+   1047,
+   "stress the most important words, not every word."
   ],
   [
    "dedup-by-design",
@@ -231,6 +241,11 @@
    "logged-correction",
    2719,
    "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   2737,
+   "the future of marriage"
   ],
   [
    "logged-correction",

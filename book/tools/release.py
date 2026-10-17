@@ -40,7 +40,7 @@ def main():
                 raise SystemExit(f'Build stopped at {name}; no success report written.')
     if run('review_pages')['exit_code']:
         raise SystemExit('Could not render current proof pages.')
-    names = ['revision', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'visual']
+    names = ['revision', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
     results = {name: run('qa_' + name) for name in names}
     palette = {'accent on white': contrast(ACCENT, 'FFFFFF'),
                'white on banner': contrast('FFFFFF', BANNER),
@@ -55,6 +55,9 @@ def main():
             toc = [[1, 'Cover', 1]]
             toc.extend([[depth, title, page + 1] for depth, title, page in interior.get_toc()])
             reader.set_toc(toc)
+            reader.set_page_labels(
+                [{'startpage': 0, 'prefix': 'Cover', 'style': '', 'firstpagenum': 1}] +
+                [dict(rule, startpage=rule['startpage'] + 1) for rule in interior.get_page_labels()])
             reader.set_metadata({'title': 'Master Speaking',
                                  'author': 'Abdul Raziq Nazari',
                                  'subject': 'English speaking course'})
@@ -62,6 +65,7 @@ def main():
             shutil.copyfile(ROOT / 'Master-Speaking.pdf', ROOT / 'Master-Speaking-Reading-Edition.pdf')
         pages = len(interior)
     results['publication'] = run('qa_publication')
+    results['chapters'] = run('qa_chapters')
     artifact.write_text(json.dumps(results, indent=2) + '\n')
     changes = json.loads((ROOT / 'book/artifacts/changelog.json').read_text())
     md = ['# Change Log — Master Speaking', '',
@@ -86,7 +90,7 @@ def main():
                '- Content and fidelity checks trace source text into the semantic master and the master into PDF, Word, and EPUB. They do not verify factual accuracy or teaching effectiveness.',
                '- Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.',
                '- Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.',
-               '- EPUB structural checks pass/fail as reported above; official EPUBCheck and assistive-technology testing have not been performed. Palette ratios are not an accessibility certification.',
+               '- EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.',
                '- PDF uses the existing DOCX-based custom renderer, not Microsoft Word. A native Word export and printer proof still need comparison.',
                '- The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.',
                '- Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.', '',

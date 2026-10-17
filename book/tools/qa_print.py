@@ -62,8 +62,9 @@ for i in range(d.page_count):
     # folio check: bottom-centre text equals expected folio
     folio_spans = [s for s in spans if s['bbox'][1] > PAGE_H - M_BOT/2 - 20]
     ftxt = ''.join(s['text'] for s in folio_spans).strip()
-    if ftxt != folio_for(page):
-        issues.append(f'p{page}: folio {ftxt!r} != expected {folio_for(page)!r}')
+    expected_folio = '' if page == 1 else folio_for(page)
+    if ftxt != expected_folio:
+        issues.append(f'p{page}: folio {ftxt!r} != expected {expected_folio!r}')
     # running head check (main pages only, excluding unit openers)
     is_opener = page in unit_pages.values()
     head_spans = [s for s in spans if s['bbox'][3] < M_TOP - 10]

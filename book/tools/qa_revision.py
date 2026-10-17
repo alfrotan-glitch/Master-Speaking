@@ -21,7 +21,7 @@ for edit in edits:
     else:
         if edit.get('action') != 'remove':
             assert sum(b.get('text') == edit['correction'] for b in blocks) == 1, edit
-        assert not any(b.get('text') == edit['original'] for b in blocks), edit
+        assert sum(b.get('text') == edit['original'] for b in blocks) == edit.get('expected_matches', 1) - 1, edit
 front_edits = json.loads((ROOT / 'book/master/reviewed-front-edits.json').read_text())
 for edit in front_edits:
     parent = book['front']
@@ -71,5 +71,41 @@ with zipfile.ZipFile(ROOT / 'Master-Speaking.epub') as epub:
     assert covers[0].get('href') in epub.namelist()
     cover = etree.fromstring(epub.read('cover.xhtml'))
     assert cover.xpath('//*[local-name()="img"]')[0].get('alt')
+# Instructional regression: stress must remain distinguishable in all exports.
+import re
+import pymupdf
+flat = 'Emotional intelligence is important for everyone.'
+stressed = 'Emotional intelligence is IMPORTANT for EVERYONE.'
+blocks = book['units'][2]['chapters'][3]['blocks']
+assert sum(b.get('text') == flat for b in blocks) == 1
+assert sum(b.get('text') == stressed for b in blocks) == 1
+for number, sentence in enumerate([
+        'Why is emotional intelligence important in leadership?',
+        'Emotional intelligence helps people build stronger relationships.',
+        'What would happen if people never controlled their emotions?',
+        'We can improve emotional intelligence through daily practice.'], 1):
+    assert any(p.text == f'{number}. {sentence}' for p in word.paragraphs), 'Pronunciation practice numbering'
+assert any('Wh-questions often end with a falling tone.' in b.get('text', '') for b in blocks)
+normalize_space = lambda text: re.sub(r'\s+', ' ', text)
+with pymupdf.open(ROOT / 'Master-Speaking-print-7x10.pdf') as pdf:
+    pdf_text = normalize_space(' '.join(p.get_text() for p in pdf))
+    comparison_pages = [p for p in pdf if 'Flat delivery' in p.get_text()]
+    assert len(comparison_pages) == 1
+    comparison = normalize_space(comparison_pages[0].get_text())
+    assert flat in comparison and stressed in comparison and 'Emphasize Key Words' in comparison, \
+        'Teaching comparison split across PDF pages'
+with zipfile.ZipFile(ROOT / 'Master-Speaking.epub') as epub:
+    epub_text = normalize_space(' '.join(etree.fromstring(epub.read(n)).xpath('string()')
+                                         for n in epub.namelist() if n.endswith('.xhtml')))
+word_text = normalize_space(' '.join(p.text for p in word.paragraphs))
+master_text = normalize_space(etree.parse(str(ROOT / 'book/master/master.xhtml')).xpath('string()'))
+groups = etree.parse(str(ROOT / 'book/master/master.xhtml')).xpath(
+    '//*[local-name()="div" and @class="stress-contrast"]')
+assert len(groups) == 1 and len(groups[0]) == 6
+start = next(i for i, p in enumerate(word.paragraphs) if p.text == 'Emphasize Key Words')
+assert all(p.paragraph_format.keep_with_next is True for p in word.paragraphs[start:start+5])
+for text in [pdf_text, epub_text, word_text, master_text]:
+    assert flat in text and stressed in text, 'Stress contrast lost in an export'
+    assert 'Flat delivery' in text and 'With key-word stress' in text
 print(f'PASS: {len(edits) + len(front_edits)} reviewed edits, complete AI question, classroom guidance, contrast, '
       '32 unique Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.')

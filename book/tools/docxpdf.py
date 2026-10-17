@@ -82,7 +82,7 @@ STYMAP = {
     'MS Copyright Line': 'copyright', 'MS FM Head': 'fmhead',
     'MS FM Sub': 'fmsub', 'MS Epigraph': 'epigraph',
     'MS TOC Heading': 'tochead', 'MS Unit Title': 'unittitle',
-    'MS Chapter Title': 'chaptitle', 'MS Section': 'sec',
+    'MS Chapter Title': 'chaptitle', 'MS Chapter Focus': 'chapterfocus', 'MS Section': 'sec',
     'MS Subsection': 'sub', 'MS Reading Title': 'readingtitle',
     'MS Guide Bullet': 'guidebullet', 'MS Guide Heading': 'guideheading',
     'MS Body': 'body', 'MS Table Cell': 'tabcell', 'MS Instruction': 'instr', 'MS Label': 'label',
@@ -392,7 +392,7 @@ def main():
                     for f in flows:
                         if isinstance(f, Paragraph):
                             f._toc = (1, txt)
-                            f._tockey = f'unit-{cur_unit}-ch-{txt[:24]}'
+                            f._tockey = f'unit-{cur_unit}-chapter-{txt.split()[1]}'
                     story.extend(f for f in flows if not isinstance(f, tuple))
                     continue
                 if has_page_break_before(el):
@@ -422,6 +422,14 @@ def main():
         extra_breaks.add(bad[0][1])
     else:
         raise SystemExit('recto forcing did not converge')
+    # PDF viewer navigation uses the same Roman / Arabic labels as the book.
+    import pymupdf
+    with pymupdf.open(OUT) as labelled:
+        labelled.set_page_labels([
+            {'startpage': 0, 'prefix': '', 'style': 'r', 'firstpagenum': 1},
+            {'startpage': FIXED_MS - 1, 'prefix': '', 'style': 'D', 'firstpagenum': 1},
+        ])
+        labelled.saveIncr()
     print(f'PDF written: {OUT} ({os.path.getsize(OUT):,} bytes) | '
           f'unit pages: {sorted(doc.unit_pages.items())}')
 

@@ -165,6 +165,7 @@ fmt(pstyle('MS Unit Title', base='Heading 1'), SANS, 25, bold=True, color=INK,
 fmt(pstyle('MS Chapter Title', base='Heading 2'), SANS, 16, bold=True,
     color=RGBColor.from_string(BANNER), before=6, after=10, page_break=True,
     keep_next=True)
+fmt(pstyle('MS Chapter Focus'), SANS, 10, color=GRAY, after=9, keep_next=True)
 fmt(pstyle('MS Section', base='Heading 3'), SANS, 12, bold=True, color=INK,
     before=15, after=4, keep_next=True)
 fmt(pstyle('MS Subsection', base='Heading 4'), SANS, 10.5, bold=True,
@@ -465,7 +466,9 @@ def render_blocks(el, ctx=None):
         elif ln == 'h5':
             add_par(text_of(c), 'MS RunIn')
         elif ln == 'p':
-            if 'instr' in cls:
+            if 'chapter-focus' in cls:
+                add_par(text_of(c), 'MS Chapter Focus')
+            elif 'instr' in cls:
                 add_par(text_of(c), 'MS Instruction')
             elif 'label' in cls:
                 add_par(text_of(c), 'MS Label')
@@ -524,8 +527,9 @@ def render_blocks(el, ctx=None):
             else:
                 start = len(doc.paragraphs)
                 render_blocks(c, ctx)
-                if ctx == 'guide' and 'howto-chapter' in cls:
-                    # Keep each short chapter overview together as a unit.
+                if ('stress-contrast' in cls or
+                        (ctx == 'guide' and 'howto-chapter' in cls)):
+                    # Keep short teaching comparisons / guide overviews together.
                     group = doc.paragraphs[start:]
                     for paragraph in group[:-1]:
                         paragraph.paragraph_format.keep_with_next = True

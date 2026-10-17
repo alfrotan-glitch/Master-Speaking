@@ -20,7 +20,7 @@
   {
    "before_chapter_page": 22,
    "end_page": 21,
-   "fill_depth": 0.268
+   "fill_depth": 0.336
   },
   {
    "before_chapter_page": 26,
@@ -35,7 +35,7 @@
   {
    "before_chapter_page": 36,
    "end_page": 35,
-   "fill_depth": 0.621
+   "fill_depth": 0.762
   },
   {
    "before_chapter_page": 39,
@@ -55,7 +55,7 @@
   {
    "before_chapter_page": 54,
    "end_page": 53,
-   "fill_depth": 0.871
+   "fill_depth": 0.962
   },
   {
    "before_chapter_page": 57,
@@ -113,13 +113,13 @@
    "fill_depth": 0.666
   },
   {
-   "before_chapter_page": 112,
-   "end_page": 111,
-   "fill_depth": 0.962
+   "before_chapter_page": 113,
+   "end_page": 112,
+   "fill_depth": 0.137
   },
   {
-   "before_chapter_page": 115,
-   "end_page": 114,
+   "before_chapter_page": 116,
+   "end_page": 115,
    "fill_depth": 0.5
   },
   {
@@ -140,7 +140,7 @@
   {
    "before_chapter_page": 136,
    "end_page": 135,
-   "fill_depth": 0.269
+   "fill_depth": 0.394
   },
   {
    "before_chapter_page": 142,
@@ -163,7 +163,7 @@
    "fill_depth": 0.222
   }
  ],
- "median_chapter_end_fill": 0.618,
+ "median_chapter_end_fill": 0.615,
  "spread_imbalance_flags": [],
  "ok": true
 }

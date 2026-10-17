@@ -30,6 +30,12 @@ def group_blocks(blocks):
     while i < n:
         b = blocks[i]
         k = b.get('k')
+        if (i + 5 < n and k == 'sub' and b.get('text') == 'Emphasize Key Words'
+                and blocks[i+2].get('text') == 'Flat delivery'
+                and blocks[i+4].get('text') == 'With key-word stress'):
+            out.append(('stresscontrast', blocks[i:i+6]))
+            i += 6
+            continue
         if k == 'q':
             # question possibly followed by its options
             if i + 1 < n and blocks[i+1].get('k') == 'opt':
@@ -111,7 +117,10 @@ def render_blocks(blocks, ctx):
     """Render grouped blocks to HTML lines."""
     h = []
     for kind, payload in group_blocks(blocks):
-        if kind == 'sec':
+        if kind == 'stresscontrast':
+            head = f'<h4 class="sub">{esc(payload[0]["text"])}</h4>'
+            h.append('<div class="stress-contrast">' + head + ''.join(render_blocks(payload[1:], ctx)) + '</div>')
+        elif kind == 'sec':
             h.append(f'<h3 class="sec" id="{pid(ctx, payload["text"])}">{esc(payload["text"])}</h3>')
         elif kind == 'sub':
             h.append(f'<h4 class="sub">{esc(payload["text"])}</h4>')
@@ -294,7 +303,8 @@ for u in book['units']:
         cp = ['<section class="chapter" id="' + pid('unit', u['number'], 'chapter', c['number']) +
               f'" data-chapter="{c["number"]}">',
               f'<h2 class="chapter-title"><span class="chapter-kicker">Chapter {c["number"]}</span>'
-              f'<span class="chapter-name">{esc(c["title"])}</span></h2>']
+              f'<span class="chapter-name">{esc(c["title"])}</span></h2>',
+              f'<p class="chapter-focus">{esc(c["focus"])}</p>']
         cp.extend(render_blocks(c['blocks'], pid('unit', u['number'], 'chapter', c['number'])))
         cp.append('</section>')
         up.append('\n'.join(cp))

@@ -1,15 +1,22 @@
 {
- "master_blocks": 3397,
+ "method": "Complete normalized blocks plus minimum occurrence counts; no sampled-fragment acceptance",
+ "regression_probes": "prefix-only and missing-middle rejected",
+ "occurrence_issues": {
+  "pdf": [],
+  "epub": [],
+  "docx": []
+ },
+ "master_blocks": 3430,
  "pdf": {
-  "covered": 3397,
+  "covered": 3430,
   "missing": []
  },
  "epub": {
-  "covered": 3397,
+  "covered": 3430,
   "missing": []
  },
  "docx": {
-  "covered": 3397,
+  "covered": 3430,
   "missing": []
  },
  "pdf_word_split_matches": 0,

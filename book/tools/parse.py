@@ -1004,14 +1004,36 @@ def build():
             matches[0][column] = edit['correction']
         else:
             matches = [b for b in chapter['blocks'] if b.get('text') == edit['original']]
-            if len(matches) != 1:
-                raise ValueError(f"Reviewed edit must match exactly once: {edit['original']!r}")
+            expected = edit.get('expected_matches', 1)
+            occurrence = edit.get('occurrence', 1)
+            if len(matches) != expected or not 1 <= occurrence <= expected:
+                raise ValueError(f"Reviewed edit match/occurrence drift: {edit['original']!r}")
+            target = matches[occurrence - 1]
             if edit.get('action') == 'remove':
-                chapter['blocks'].remove(matches[0])
+                chapter['blocks'].remove(target)
             else:
-                matches[0]['text'] = edit['correction']
+                target['text'] = edit['correction']
         log(f"U{edit['unit']} Ch{edit['chapter']} · October editorial review",
             edit['original'], edit['correction'] or '(removed)', edit['reason'], 'high (reviewed)')
+    # Four read-aloud models form ONE numbered sequence. Interleaved prose
+    # previously split the questions into two separate lists both starting at 1.
+    practice = book['units'][2]['chapters'][3]['blocks']
+    start = next(i for i, b in enumerate(practice)
+                 if b.get('k') == 'sub' and b.get('text') == 'Practice')
+    models = practice[start + 2:start + 6]
+    expected_models = [
+        'Why is emotional intelligence important in leadership?',
+        'Emotional intelligence helps people build stronger relationships.',
+        'What would happen if people never controlled their emotions?',
+        'We can improve emotional intelligence through daily practice.',
+    ]
+    if [b.get('text') for b in models] != expected_models:
+        raise ValueError('Pronunciation practice models changed; review numbering')
+    for model in models:
+        model['k'] = 'q'
+    log('U3 Ch4 · pronunciation practice numbering', 'Two questions interleaved with two prose models',
+        'One numbered sequence of four read-aloud models',
+        'Keep all four practice sentences in one coherent list rather than restarting at 1.')
     for edit in json.load(open(os.path.join(ROOT, 'book', 'master', 'reviewed-front-edits.json'), encoding='utf-8')):
         parent = book['front']
         for key in edit['path'][:-1]:
@@ -1025,6 +1047,23 @@ def build():
             parent[key] = edit['correction']
         log('How to Use · final language review', str(edit['original']),
             str(edit['correction']) or '(removed)', edit['reason'], 'high (reviewed)')
+    title_plan = json.load(open(os.path.join(ROOT, 'book', 'master', 'chapter-titles.json'), encoding='utf-8'))
+    if [item['unit'] for item in title_plan] != list(range(1, 9)):
+        raise ValueError('Chapter title plan must cover Units 1–8 in order')
+    seen_titles = set()
+    for unit, planned in zip(book['units'], title_plan):
+        if len(planned['titles']) != 4:
+            raise ValueError('Each unit needs four named chapters')
+        for chapter, title in zip(unit['chapters'], planned['titles']):
+            if not title.strip() or title.casefold() in seen_titles:
+                raise ValueError('Every chapter needs its own nonempty, distinct title')
+            seen_titles.add(title.casefold())
+            chapter['focus'] = chapter['title']
+            chapter['title'] = title
+            log(f"U{unit['number']} Ch{chapter['number']} · chapter naming",
+                chapter['focus'], title,
+                'Give the chapter its own topical title; preserve the original learning strand as its subtitle.',
+                'new reader-facing title')
     json.dump(book, open(os.path.join(BUILD, 'book.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     json.dump(CHANGES, open(os.path.join(BUILD, 'changelog.json'), 'w', encoding='utf-8'),

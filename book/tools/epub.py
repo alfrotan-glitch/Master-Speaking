@@ -24,6 +24,7 @@ body { line-height: 1.45; margin: 0 0.2em; padding: 0 0.4em;
        font-family: "Source Serif 4", Georgia, serif; color: #14181A; }
 h1, h2, h3, h4, h5 { font-family: "Source Sans 3", Helvetica, sans-serif;
                      color: #14181A; font-weight: 600; line-height: 1.25; }
+.stress-contrast { break-inside: avoid; page-break-inside: avoid; }
 p { margin: 0 0 0.65em 0; text-align: justify; hyphens: auto; }
 /* unit opener */
 section.unit { margin-top: 1em; }
@@ -35,7 +36,10 @@ h1.unit-title { font-size: 1.7em; margin: 0.2em 0 0.4em 0;
 figure.unit-figure { margin: 1em 0; text-align: center; }
 img { max-width: 100%; height: auto; }
 /* chapters */
-h2.chapter-title { font-size: 1.35em; margin: 0 0 0.6em 0; }
+h2.chapter-title { font-size: 1.35em; margin: 0 0 0.35em 0;
+                   break-before: page; page-break-before: always; }
+p.chapter-focus { font-family: sans-serif; font-size: 0.9em; text-align: left;
+                  color: #42554F; margin: 0 0 1em 0; break-after: avoid; }
 .chapter-name { color: #92D050; }
 .chapter-kicker { display: block; font-size: 0.8em; letter-spacing: 0.1em;
                   text-transform: uppercase; color: #00B050; }
@@ -229,6 +233,12 @@ def main():
         if warm is not None:
             opener_children.append(warm)
         chapters_nav = []
+        for child in opener_children:
+            fix_img_paths(child)
+        # Store the live chapter-nav list, then fill it below. The spine must
+        # place the unit opener BEFORE its four chapters, not after them.
+        add_xhtml(f'{uid}.xhtml', f'Unit {unum} — {utitle}', opener_children,
+                  f'Unit {unum} · {utitle}', 1, chapters_nav)
         for ch_sec in q(unit, './x:section[@class="chapter"]'):
             cnum = int(ch_sec.get('data-chapter'))
             cname = q(ch_sec, './x:h2/x:span[@class="chapter-name"]/text()')[0]
@@ -239,10 +249,6 @@ def main():
                 strip_ids(c)
             add_xhtml(fname, f'Unit {unum} · {cname}', children)
             chapters_nav.append((2, f'Chapter {cnum} · {cname}', fname, None))
-        for c in opener_children:
-            fix_img_paths(c)
-        add_xhtml(f'{uid}.xhtml', f'Unit {unum} — {utitle}', opener_children,
-                  f'Unit {unum} · {utitle}', 1, chapters_nav)
 
     # ---- nav doc ---------------------------------------------------------
     nav_root = etree.Element(f'{{{XH}}}html', nsmap={None: XH, 'epub': EP})
@@ -250,9 +256,10 @@ def main():
     head = etree.SubElement(nav_root, f'{{{XH}}}head')
     t = etree.SubElement(head, f'{{{XH}}}title'); t.text = 'Master Speaking'
     mt = etree.SubElement(head, f'{{{XH}}}meta'); mt.set('charset', 'utf-8')
+    etree.SubElement(head, f'{{{XH}}}link', rel='stylesheet', href='style.css')
     bodynav = etree.SubElement(nav_root, f'{{{XH}}}body')
     nav = etree.SubElement(bodynav, f'{{{XH}}}nav',
-                           {f'{{{EP}}}type': 'toc', 'id': 'toc', 'hidden': 'hidden'})
+                           {f'{{{EP}}}type': 'toc', 'id': 'toc'})
     h = etree.SubElement(nav, f'{{{XH}}}h1'); h.text = 'Contents'
     def build_ol(items, parent):
         ol = etree.SubElement(parent, f'{{{XH}}}ol')
@@ -276,6 +283,9 @@ def main():
         a.text = label
     open(os.path.join(WORK, 'nav.xhtml'), 'wb').write(serialize(nav_root))
     manifest.append(('nav', 'nav.xhtml', 'application/xhtml+xml', 'nav'))
+    # The contents landmark must target a spine resource (EPUBCheck RSC-011).
+    # Nonlinear keeps it available on demand without interrupting the course.
+    spine.insert(6, ('nav', 'no'))
 
     # ---- css + images -----------------------------------------------------
     open(os.path.join(WORK, 'style.css'), 'w').write(CSS)

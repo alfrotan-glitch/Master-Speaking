@@ -9,7 +9,7 @@
 
 ## Spread balance
 
-- 76 body spreads measured; median words/spread 321.
+- 76 body spreads measured; median words/spread 320.
 - Imbalance tolerance: ratio > 3.2 is flagged **unless** the spread contains a chapter or unit opening (intentional white space by design — §22).
 - Flags: **0**
 

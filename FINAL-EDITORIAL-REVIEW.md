@@ -12,7 +12,7 @@ This is not a certification that the book is error-free, entirely human-written,
 
 The title **Master Speaking** is retained. It describes the course without inventing a test qualification or an endorsement. The author-provided examples and thematic structure remain; the text has not been wholesale rewritten into a uniform promotional voice.
 
-The reviewed-edit register now contains **42 exact-match changes** across chapter prose, vocabulary cells, and front matter, in addition to the earlier reconstruction repairs and the complete AI-question restoration. Every such change is guarded against source drift and logged.
+The reviewed-edit register now contains **50 exact-match changes** across chapter prose, vocabulary cells, and front matter, in addition to the earlier reconstruction repairs and the complete AI-question restoration. Every such change is guarded against source drift and logged.
 
 Specific follow-up improvements:
 
@@ -51,7 +51,7 @@ The previous font subsets had inconsistent family metadata, including “ExtraLi
 
 - All ten gates in `QA-REPORT.md` pass: revision, source content, editorial mechanics, Word structure, cross-format fidelity, print, page proof, preflight, EPUB structure, and layout metrics.
 - All **3,399 semantic text blocks** are traced into PDF, Word, and EPUB. The change from the preceding block count reflects removal of the stray prediction and duplicated guide sentence, not silent loss.
-- All 160 pages were rendered in eight thumbnail overviews for a broad layout scan. Thirteen selected full-size page renders cover the title, guide, contents, first reading chapter in every unit, and final page. The current PDF checksum and image coverage are recorded in `book/qa/edition-review/index.json`.
+- All 160 pages were rendered in eight thumbnail overviews for a broad layout scan. Selected full-size page renders cover the title, guide, contents, all 32 chapter openings, corrected pronunciation comparison, and final page; the exact current selection is in the proof manifest. The current PDF checksum and image coverage are recorded in `book/qa/edition-review/index.json`.
 - The overview scan checks broad layout balance, missing content regions, and obvious placement anomalies. It is not a line-by-line reading of every page. Selected full-size pages were inspected during the revision.
 - Content/editorial/print QA scripts now return a failing process status when they find issues. Page-proof checks use the detected main-text start, not the previous hard-coded page 11. Word heading checks distinguish the four front-guide headings from instructional section headings.
 - `git diff --check` passes for textual changes. Publication exports are declared binary in `.gitattributes`.
@@ -65,3 +65,21 @@ See `PUBLICATION-READINESS.md`, `UNRESOLVED-ISSUES.md`, and the publishing regis
 ## Subsequent reader-facing cleanup
 
 The book’s discussion/revision commentary has been removed at the author’s request. Reader guidance remains as ordinary book prose; production history and unresolved requirements stay in external reports. Two further exact-match edits remove a teacher-facing aside and revise an indirect instruction. Current counts and checks supersede the snapshot above: see QA-REPORT.md and `book/artifacts/qa_publication.json`. The clean reader file is `Master-Speaking.pdf`.
+
+## Chapter titles and pagination follow-up
+
+All 32 chapters now have distinct topic-specific titles, recorded in `book/master/chapter-titles.json`. The original four learning strands remain visible as chapter subtitles. Chapter numbering still runs 1–4 within each unit to preserve classroom references. Contents entries, Word headings, PDF bookmarks, and EPUB navigation use the same titles. The copied marriage-topic heading in Unit 8’s English discussion has been corrected to “English and Academic Opportunity.”
+
+Every chapter opens on a fresh page in the generated PDF; Word stores an explicit page-break-before property on each chapter heading, with the title and learning-focus subtitle kept together. Native Word pagination still requires a Word proof. Unit openers continue to start on right-hand pages. The interior title page has no visible folio; the front matter uses lowercase Roman numerals and main text uses continuous Arabic numbering. PDF viewer page labels match these sequences, including the separate cover offset. EPUB reading order now places each unit opener before its four chapters, with chapter-level page-break styling for paginated readers; reflowable ebooks do not have fixed print page counts.
+
+A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 13 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
+
+## Strict-audit follow-up
+
+Five further guarded edits repair the missing stress contrast and qualify the question-intonation rule in Unit 3 Chapter 4. The original sentence remains as the flat model; “Emotional intelligence is IMPORTANT for EVERYONE.” is the contrasting delivery model. Explicit directions explain the capitals. Case-sensitive export regression checks protect the distinction.
+
+Fidelity checks now require complete normalized blocks and minimum occurrence counts, rather than accepting any sampled fragment. This materially strengthens coverage but does not replace human proofreading or preserve every typographic/phonetic distinction by itself.
+
+Official EPUBCheck 5.3.0 is now a release gate. A real RSC-011 contents/spine defect was found and repaired. The current EPUB passes with zero errors and zero warnings. Device and assistive-technology checks, native Word pagination, rights, original listening alignment, specialist/factual review, and print approval remain open. See the current issue register rather than superseded report prose.
+
+The stress comparison is kept together as one short teaching unit in Word/PDF, with break-inside protection in EPUB. Its four subsequent read-aloud practice sentences now form a single 1–4 sequence instead of two lists restarting at 1. Regression checks cover both the same-page comparison and the four-item sequence.

@@ -4,6 +4,7 @@ body { line-height: 1.45; margin: 0 0.2em; padding: 0 0.4em;
        font-family: "Source Serif 4", Georgia, serif; color: #14181A; }
 h1, h2, h3, h4, h5 { font-family: "Source Sans 3", Helvetica, sans-serif;
                      color: #14181A; font-weight: 600; line-height: 1.25; }
+.stress-contrast { break-inside: avoid; page-break-inside: avoid; }
 p { margin: 0 0 0.65em 0; text-align: justify; hyphens: auto; }
 /* unit opener */
 section.unit { margin-top: 1em; }
@@ -15,7 +16,10 @@ h1.unit-title { font-size: 1.7em; margin: 0.2em 0 0.4em 0;
 figure.unit-figure { margin: 1em 0; text-align: center; }
 img { max-width: 100%; height: auto; }
 /* chapters */
-h2.chapter-title { font-size: 1.35em; margin: 0 0 0.6em 0; }
+h2.chapter-title { font-size: 1.35em; margin: 0 0 0.35em 0;
+                   break-before: page; page-break-before: always; }
+p.chapter-focus { font-family: sans-serif; font-size: 0.9em; text-align: left;
+                  color: #42554F; margin: 0 0 1em 0; break-after: avoid; }
 .chapter-name { color: #145C4D; }
 .chapter-kicker { display: block; font-size: 0.8em; letter-spacing: 0.1em;
                   text-transform: uppercase; color: #176653; }

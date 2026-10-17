@@ -131,10 +131,8 @@ for pno in range(len(d)):
     # opener pages must carry the right unit title
     if ptype == 'unit-opener':
         expect_unit = _unit_pages[page]
-        TITLES = {1: 'The Power of Communication', 2: 'The Art of Goal Setting',
-                  3: 'Emotional Intelligence', 4: 'Money and Happiness',
-                  5: 'Living with AI', 6: 'Marriage', 7: 'Globalization',
-                  8: 'Lingua Franca'}
+        TITLES = {u['number']: u['title'] for u in json.load(open(
+            os.path.join(ROOT, 'book/artifacts/book.json'), encoding='utf-8'))['units']}
         t = ' '.join(pg.get_text().split()).lower()
         if TITLES[expect_unit].lower() not in t or f'unit {expect_unit}' not in t:
             issues.append(f'p{page}: unit opener missing expected title')

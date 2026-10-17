@@ -61,7 +61,8 @@ for pno in range(len(d)):
 
 spreads = []
 flags = []
-for i in range(main_start - 1, len(rows) - 1, 2):
+first_verso = main_start - 1 if main_start % 2 else main_start
+for i in range(first_verso - 1, len(rows) - 1, 2):
     a, b = rows[i], rows[i + 1]           # verso (even phys), recto (odd phys)
     pair = (a['page'], b['page'])
     wa, wb = a['words'], b['words']

@@ -5,7 +5,7 @@ and the editable Word master).
 
 Closes the last link of the chain:
   docx -> dump -> book.json -> master -> {PDF, EPUB, DOCX}
-Pass 1 (qa_content) proved docx->master; this proves master->outputs,
+Pass 1 (qa_content) checks docx->master; this checks master->outputs,
 catching dropped flowables, missing EPUB sections or copy bugs (it caught
 the missing unit-opener warmup blocks).
 
@@ -14,12 +14,13 @@ Method:
     their kicker/name spans (the PDF renders them as separate lines)
   * PDF target text built from get_text('blocks') sorted by (y, x) with
     running-head/folio zones removed — keeps table cells contiguous
-  * probe windows matched loosely; short texts (<5 loose chars) matched
+  * complete blocks matched loosely; short texts (<5 loose chars) matched
     exactly against the target's leaf-text set; underscore runs matched
     against the normalized (not loose) target text
 Writes book/artifacts/qa_fidelity.json.
 """
 import json, os, re, sys, unicodedata, zipfile
+from collections import Counter
 from lxml import etree
 import pymupdf
 
@@ -143,45 +144,33 @@ epub_loose = loose(epub_text)
 epub_leaf_set.discard('')
 
 
-def windows(t):
-    out = []
-    if len(t) < 60:
-        out.append(t)
-    else:
-        out.append(t[:60])
-        out.append(t[20:80])
-        out.append(t[len(t) // 2:len(t) // 2 + 60])
-        out.append(t[-60:])
-    return [p.strip() for p in out if p.strip()]
-
-
 def hit(t, target_loose, target_leaf, target_norm_text):
+    """Require the WHOLE normalized block, never one sampled fragment."""
     n = norm(t)
     l = loose(n)
     if not l:
-        return '_' in n and n in target_norm_text      # underscore blanks
+        return bool(n) and n in target_norm_text
     if len(l) < 5:
-        return l in target_leaf or l in target_loose
-    for w in windows(l):
-        if w in target_loose:
-            return True
-    return False
+        return l in target_leaf
+    return l in target_loose
 
 
-import re as _re
+def compact(text):
+    return re.sub(r'[^a-z0-9]', '', loose(norm(text)))
 
+
+pdf_compact = compact(pdf_text)
 def split_retry(t):
-    """PDF-only retry: narrow table cells wrap long words without hyphens
-    (ReportLab splitLongWords), so extraction shows e.g. 'misunderstan ding'.
-    Re-search allowing whitespace between every character."""
-    l = loose(norm(t))
-    for w in windows(l):
-        if len(w) < 8:
-            continue
-        pat = _re.compile(r'\s*'.join(_re.escape(ch) for ch in w if not ch.isspace()))
-        if pat.search(pdf_loose):
-            return True
-    return False
+    """Full-block fallback for whitespace introduced by PDF word wrapping."""
+    needle = compact(t)
+    return len(needle) >= 5 and needle in pdf_compact
+
+
+# Regression probes: a retained prefix or a missing middle is NOT a match.
+_probe = 'A careful reader examines the entire example before deciding whether its complete meaning has survived the export process.'
+assert not hit(_probe, loose(norm(_probe))[:60], set(), _probe[:60])
+assert not hit(_probe, loose(norm(_probe.replace('entire example', ''))), set(), '')
+assert hit(_probe, loose(norm(_probe)), set(), _probe)
 
 miss_pdf, miss_epub, miss_docx = [], [], []
 n = 0
@@ -200,12 +189,26 @@ for t, kind in texts:
     if not hit(t, docx_loose, docx_leaf, docx_text):
         miss_docx.append(t[:90])
 
-report = {'master_blocks': n,
+# Minimum occurrence counts catch loss of repeated blocks, not just presence.
+# This is normalized text coverage, not proof of semantic order or typography.
+expected_counts = Counter(compact(t) for t, _ in texts if len(compact(t)) >= 8)
+occurrence_issues = {}
+for name, target in [('pdf', pdf_compact), ('epub', compact(epub_text)), ('docx', compact(docx_text))]:
+    failures = []
+    for needle, expected in expected_counts.items():
+        actual = target.count(needle)
+        if actual < expected:
+            failures.append({'text_prefix': needle[:90], 'expected': expected, 'found': actual})
+    occurrence_issues[name] = failures
+
+report = {'method': 'Complete normalized blocks plus minimum occurrence counts; no sampled-fragment acceptance',
+          'regression_probes': 'prefix-only and missing-middle rejected',
+          'occurrence_issues': occurrence_issues, 'master_blocks': n,
           'pdf': {'covered': n - len(miss_pdf), 'missing': miss_pdf},
           'epub': {'covered': n - len(miss_epub), 'missing': miss_epub},
           'docx': {'covered': n - len(miss_docx), 'missing': miss_docx},
           'pdf_word_split_matches': split_tolerant,
-          'ok': not miss_pdf and not miss_epub and not miss_docx}
+          'ok': not miss_pdf and not miss_epub and not miss_docx and not any(occurrence_issues.values())}
 open(os.path.join(ROOT, 'book/artifacts/qa_fidelity.json'), 'w').write(
     json.dumps(report, indent=1, ensure_ascii=False))
 print(f'master blocks checked: {n}')

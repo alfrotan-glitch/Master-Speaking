@@ -108,4 +108,4 @@ for text in [pdf_text, epub_text, word_text, master_text]:
     assert flat in text and stressed in text, 'Stress contrast lost in an export'
     assert 'Flat delivery' in text and 'With key-word stress' in text
 print(f'PASS: {len(edits) + len(front_edits)} reviewed edits, complete AI question, classroom guidance, contrast, '
-      '32 unique Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.')
+      '32 Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.')

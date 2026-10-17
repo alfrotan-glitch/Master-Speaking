@@ -136,7 +136,7 @@ for p in doc.paragraphs:
 expect = {
     'MS Unit Title': 8,
     'MS Chapter Title': 32,
-    'MS Chapter Focus': 32,
+    'MS Chapter Focus': mcount('p', 'chapter-focus'),
     'MS Section': mcount('h3') - mcount('h3', 'fm-sub2'),
     'MS Guide Heading': mcount('h3', 'fm-sub2'),
     'MS Subsection': mcount('h4', 'sub'),

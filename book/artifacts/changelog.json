@@ -735,227 +735,164 @@
   "confidence": "high (reviewed)"
  },
  {
-  "area": "U1 Ch1 · chapter naming",
+  "area": "U1 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "More Than Words",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Power of Communication",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U1 Ch2 · chapter naming",
+  "area": "U1 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "Listening with Attention",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Are You a Good Listener?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U1 Ch3 · chapter naming",
+  "area": "U1 Ch3 · source-backed chapter heading",
   "original": "Speaking through Discussion",
-  "correction": "Making Yourself Understood",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Importance of Communication",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U1 Ch4 · chapter naming",
-  "original": "Speaking through Research Presentation",
-  "correction": "Presenting Your Ideas",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U2 Ch1 · chapter naming",
+  "area": "U2 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "From Wishes to Action",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Dreams Become Reality through Goals",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U2 Ch2 · chapter naming",
+  "area": "U2 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "Rethinking Goals and Habits",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Art of Goal Setting",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U2 Ch3 · chapter naming",
-  "original": "Speaking through Discussion",
-  "correction": "Choosing a Path Forward",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U2 Ch4 · chapter naming",
+  "area": "U2 Ch4 · source-backed chapter heading",
   "original": "Speaking through Research Presentation",
-  "correction": "Goals, Habits, and Evidence",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Goals or Systems: Which Leads to Greater Success?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U3 Ch1 · chapter naming",
+  "area": "U3 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "Understanding Our Emotions",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Power of Emotional Intelligence",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U3 Ch2 · chapter naming",
+  "area": "U3 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "Recognizing Emotional Skills",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Power of Emotional Intelligence",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U3 Ch3 · chapter naming",
-  "original": "Speaking through Discussion",
-  "correction": "Responding with Empathy",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U3 Ch4 · chapter naming",
+  "area": "U3 Ch4 · source-backed chapter heading",
   "original": "Speaking through Research Presentation",
-  "correction": "Can Emotional Skills Be Learned?",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Can Emotional Intelligence Be Improved?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U4 Ch1 · chapter naming",
+  "area": "U4 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "The Price of Happiness",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Can Money Buy Happiness?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U4 Ch2 · chapter naming",
+  "area": "U4 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "Does Wealth Bring Happiness?",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Can Money Buy Happiness?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U4 Ch3 · chapter naming",
-  "original": "Speaking through Discussion",
-  "correction": "Deciding What Matters",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U4 Ch4 · chapter naming",
-  "original": "Speaking through Research Presentation",
-  "correction": "Investigating Well-Being",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U5 Ch1 · chapter naming",
+  "area": "U5 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "AI in Everyday Life",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Living with AI: Friend or Foe?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U5 Ch2 · chapter naming",
+  "area": "U5 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "How AI Could Change Our Lives",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "How Will AI Change the World?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U5 Ch3 · chapter naming",
-  "original": "Speaking through Discussion",
-  "correction": "Debating Human and Machine Roles",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U5 Ch4 · chapter naming",
-  "original": "Speaking through Research Presentation",
-  "correction": "Exploring Our Future with AI",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U6 Ch1 · chapter naming",
+  "area": "U6 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "Beyond Romantic Feelings",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Is Love Enough?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U6 Ch2 · chapter naming",
+  "area": "U6 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "What Keeps Couples Together?",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The Science of a Lasting Relationship",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U6 Ch3 · chapter naming",
+  "area": "U6 Ch3 · source-backed chapter heading",
   "original": "Speaking through Discussion",
-  "correction": "Love, Trust, and Expectations",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "What Makes Relationships Work?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U6 Ch4 · chapter naming",
-  "original": "Speaking through Research Presentation",
-  "correction": "Understanding Lasting Relationships",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U7 Ch1 · chapter naming",
+  "area": "U7 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "A World of Connections",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "The World Is Getting Smaller",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U7 Ch2 · chapter naming",
+  "area": "U7 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "Our Shared Global Future",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Navigating Our Global Future",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U7 Ch3 · chapter naming",
+  "area": "U7 Ch3 · source-backed chapter heading",
   "original": "Speaking through Discussion",
-  "correction": "Weighing Global Choices",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Globalization: Opportunity or Threat?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U7 Ch4 · chapter naming",
+  "area": "U7 Ch4 · source-backed chapter heading",
   "original": "Speaking through Research Presentation",
-  "correction": "Global Challenges, Shared Solutions",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "Globalization: Opportunity or Threat?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U8 Ch1 · chapter naming",
+  "area": "U8 Ch1 · source-backed chapter heading",
   "original": "Speaking through Reading",
-  "correction": "How English Became Global",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "English: From a Local Language to a Global Lingua Franca",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U8 Ch2 · chapter naming",
+  "area": "U8 Ch2 · source-backed chapter heading",
   "original": "Speaking through Listening",
-  "correction": "English beyond Borders",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "English Without Borders",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  },
  {
-  "area": "U8 Ch3 · chapter naming",
+  "area": "U8 Ch3 · source-backed chapter heading",
   "original": "Speaking through Discussion",
-  "correction": "English, Identity, and Opportunity",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
- },
- {
-  "area": "U8 Ch4 · chapter naming",
-  "original": "Speaking through Research Presentation",
-  "correction": "Speaking to a Multilingual World",
-  "reason": "Give the chapter its own topical title; preserve the original learning strand as its subtitle.",
-  "confidence": "new reader-facing title"
+  "correction": "WHO OWNS ENGLISH?",
+  "reason": "Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.",
+  "confidence": "exact existing content title"
  }
 ]

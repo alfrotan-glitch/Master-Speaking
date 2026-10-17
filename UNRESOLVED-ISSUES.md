@@ -17,7 +17,7 @@ Updated 17 October 2026 after strict-audit remediation. This register supersedes
 
 ## Resolved or corrected in the current revision
 
-- All 32 chapters have distinct topical titles, visible learning-focus subtitles and separate PDF opening pages; unit openers remain recto. Chapter contents folios/links, bookmarks, reader offsets and EPUB unit-before-chapter order are checked.
+- All 32 chapter headings use exact existing content titles or original chapter headings, with no invented aliases or redundant identical subtitles, and have separate PDF opening pages; unit openers remain recto. Chapter contents folios/links, bookmarks, reader offsets and EPUB unit-before-chapter order are checked.
 - The complete Unit 5 AI decision-making prompt is restored from source. Unit 6's pronunciation heading matches regular past-tense endings. Unit 8's copied marriage heading now matches its English/academic-opportunity questions.
 - Unit 3's formerly identical pronunciation examples now visibly contrast flat delivery with capitalized stress targets. The broad rising-question rule now gives context and acknowledges common falling wh-question intonation. All-format, case-sensitive regression checks protect the contrast.
 - Export fidelity now requires full normalized blocks and minimum occurrence counts; deliberate prefix-only and missing-middle regression cases fail. This is not universal semantic or typographic verification.

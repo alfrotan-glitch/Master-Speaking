@@ -7,7 +7,7 @@ This is a stricter follow-up to the 12 passing production checks. It distinguish
 
 ## Remediation update — 17 October 2026
 
-The findings and fingerprints below describe the **pre-remediation snapshot**, not the rebuilt exports. Publication remains on hold for the unresolved conditions in `UNRESOLVED-ISSUES.md`.
+The findings and fingerprints below describe the **pre-remediation snapshot**, not the rebuilt exports. A subsequent author-requested title correction also removes the invented editorial aliases: current headings use exact existing principal content titles or retain original chapter headings. Repeated source titles are intentional; the older “32 distinct names” finding describes only the historical audited snapshot. Publication remains on hold for the unresolved conditions in `UNRESOLVED-ISSUES.md`.
 
 - **A1 corrected:** contrasting stress targets are explicitly capitalized, with matching delivery instructions and case-sensitive checks across all formats.
 - **A3 materially strengthened:** complete normalized blocks replace sampled-fragment acceptance; minimum occurrence counts and truncation regression probes are included. This is not a complete semantic-order or typography proof.

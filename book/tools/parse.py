@@ -1050,20 +1050,25 @@ def build():
     title_plan = json.load(open(os.path.join(ROOT, 'book', 'master', 'chapter-titles.json'), encoding='utf-8'))
     if [item['unit'] for item in title_plan] != list(range(1, 9)):
         raise ValueError('Chapter title plan must cover Units 1–8 in order')
-    seen_titles = set()
     for unit, planned in zip(book['units'], title_plan):
-        if len(planned['titles']) != 4:
-            raise ValueError('Each unit needs four named chapters')
-        for chapter, title in zip(unit['chapters'], planned['titles']):
-            if not title.strip() or title.casefold() in seen_titles:
-                raise ValueError('Every chapter needs its own nonempty, distinct title')
-            seen_titles.add(title.casefold())
-            chapter['focus'] = chapter['title']
+        if len(planned['titles']) != 4 or len(planned['sources']) != 4:
+            raise ValueError('Each unit needs four source-backed chapter headings')
+        for chapter, title, source in zip(unit['chapters'], planned['titles'], planned['sources']):
+            original_heading = chapter['title']
+            if source == 'original-chapter-heading':
+                if title != original_heading:
+                    raise ValueError('Fallback must retain the exact original chapter heading')
+            elif not any(block.get('k') == source and block.get('text') == title
+                         for block in chapter['blocks']):
+                raise ValueError(f'Chapter title is not an exact existing content heading: {title!r}')
+            chapter['focus'] = original_heading
             chapter['title'] = title
-            log(f"U{unit['number']} Ch{chapter['number']} · chapter naming",
-                chapter['focus'], title,
-                'Give the chapter its own topical title; preserve the original learning strand as its subtitle.',
-                'new reader-facing title')
+            chapter['title_source'] = source
+            if title != original_heading:
+                log(f"U{unit['number']} Ch{chapter['number']} · source-backed chapter heading",
+                    original_heading, title,
+                    'Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.',
+                    'exact existing content title')
     json.dump(book, open(os.path.join(BUILD, 'book.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     json.dump(CHANGES, open(os.path.join(BUILD, 'changelog.json'), 'w', encoding='utf-8'),

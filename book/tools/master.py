@@ -303,8 +303,9 @@ for u in book['units']:
         cp = ['<section class="chapter" id="' + pid('unit', u['number'], 'chapter', c['number']) +
               f'" data-chapter="{c["number"]}">',
               f'<h2 class="chapter-title"><span class="chapter-kicker">Chapter {c["number"]}</span>'
-              f'<span class="chapter-name">{esc(c["title"])}</span></h2>',
-              f'<p class="chapter-focus">{esc(c["focus"])}</p>']
+              f'<span class="chapter-name">{esc(c["title"])}</span></h2>']
+        if c['title'] != c['focus']:
+            cp.append(f'<p class="chapter-focus">{esc(c["focus"])}</p>')
         cp.extend(render_blocks(c['blocks'], pid('unit', u['number'], 'chapter', c['number'])))
         cp.append('</section>')
         up.append('\n'.join(cp))

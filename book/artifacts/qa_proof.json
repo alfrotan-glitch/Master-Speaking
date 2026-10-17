@@ -82,7 +82,7 @@
   {
    "page": 7,
    "type": "front",
-   "words": 1124,
+   "words": 1038,
    "images": 0,
    "folio": null,
    "bounds": [
@@ -121,7 +121,7 @@
   {
    "page": 10,
    "type": "body",
-   "words": 159,
+   "words": 160,
    "images": 0,
    "folio": 2,
    "bounds": [
@@ -186,7 +186,7 @@
   {
    "page": 15,
    "type": "body",
-   "words": 208,
+   "words": 210,
    "images": 0,
    "folio": 7,
    "bounds": [
@@ -238,7 +238,7 @@
   {
    "page": 19,
    "type": "body",
-   "words": 211,
+   "words": 212,
    "images": 0,
    "folio": 11,
    "bounds": [
@@ -277,14 +277,14 @@
   {
    "page": 22,
    "type": "body",
-   "words": 158,
+   "words": 155,
    "images": 0,
    "folio": 14,
    "bounds": [
     51.8,
     445.0,
     55.5,
-    641.0
+    643.0
    ]
   },
   {
@@ -329,14 +329,14 @@
   {
    "page": 26,
    "type": "body",
-   "words": 171,
+   "words": 172,
    "images": 0,
    "folio": 18,
    "bounds": [
     51.8,
     433.8,
     55.5,
-    633.2
+    654.7
    ]
   },
   {
@@ -407,7 +407,7 @@
   {
    "page": 32,
    "type": "body",
-   "words": 221,
+   "words": 222,
    "images": 0,
    "folio": 24,
    "bounds": [
@@ -459,14 +459,14 @@
   {
    "page": 36,
    "type": "body",
-   "words": 258,
+   "words": 254,
    "images": 0,
    "folio": 28,
    "bounds": [
     51.8,
     436.0,
     55.5,
-    612.2
+    592.7
    ]
   },
   {
@@ -498,40 +498,40 @@
   {
    "page": 39,
    "type": "body",
-   "words": 178,
+   "words": 173,
    "images": 0,
    "folio": 31,
    "bounds": [
     59.0,
     452.2,
     55.5,
-    652.0
+    649.3
    ]
   },
   {
    "page": 40,
    "type": "body",
-   "words": 168,
+   "words": 169,
    "images": 0,
    "folio": 32,
    "bounds": [
     51.8,
     413.2,
     61.8,
-    650.3
+    630.4
    ]
   },
   {
    "page": 41,
    "type": "body",
-   "words": 29,
+   "words": 37,
    "images": 0,
    "folio": 33,
    "bounds": [
     59.0,
-    272.1,
+    306.7,
     56.2,
-    174.2
+    213.8
    ]
   },
   {
@@ -563,12 +563,12 @@
   {
    "page": 44,
    "type": "body",
-   "words": 214,
+   "words": 216,
    "images": 0,
    "folio": 36,
    "bounds": [
     51.8,
-    436.0,
+    437.7,
     55.5,
     654.4
    ]
@@ -641,7 +641,7 @@
   {
    "page": 50,
    "type": "body",
-   "words": 226,
+   "words": 228,
    "images": 0,
    "folio": 42,
    "bounds": [
@@ -693,14 +693,14 @@
   {
    "page": 54,
    "type": "body",
-   "words": 228,
+   "words": 225,
    "images": 0,
    "folio": 46,
    "bounds": [
     51.8,
     433.4,
     55.5,
-    600.0
+    580.5
    ]
   },
   {
@@ -739,7 +739,7 @@
     59.0,
     452.2,
     55.5,
-    512.1
+    533.6
    ]
   },
   {
@@ -940,14 +940,14 @@
   {
    "page": 73,
    "type": "body",
-   "words": 233,
+   "words": 230,
    "images": 0,
    "folio": 65,
    "bounds": [
     59.0,
     441.8,
     55.5,
-    612.2
+    592.7
    ]
   },
   {
@@ -979,14 +979,14 @@
   {
    "page": 76,
    "type": "body",
-   "words": 126,
+   "words": 124,
    "images": 0,
    "folio": 68,
    "bounds": [
     51.8,
     376.9,
     55.5,
-    607.1
+    609.1
    ]
   },
   {
@@ -1057,7 +1057,7 @@
   {
    "page": 82,
    "type": "body",
-   "words": 201,
+   "words": 203,
    "images": 0,
    "folio": 74,
    "bounds": [
@@ -1187,14 +1187,14 @@
   {
    "page": 92,
    "type": "body",
-   "words": 227,
+   "words": 222,
    "images": 0,
    "folio": 84,
    "bounds": [
     51.8,
-    436.6,
+    433.6,
     55.5,
-    575.6
+    556.1
    ]
   },
   {
@@ -1226,14 +1226,14 @@
   {
    "page": 95,
    "type": "body",
-   "words": 134,
+   "words": 129,
    "images": 0,
    "folio": 87,
    "bounds": [
     59.0,
     452.2,
     55.5,
-    655.6
+    657.6
    ]
   },
   {
@@ -1395,12 +1395,12 @@
   {
    "page": 108,
    "type": "body",
-   "words": 214,
+   "words": 216,
    "images": 0,
    "folio": 100,
    "bounds": [
     51.8,
-    435.3,
+    443.2,
     55.5,
     614.5
    ]
@@ -1499,14 +1499,14 @@
   {
    "page": 116,
    "type": "body",
-   "words": 133,
+   "words": 130,
    "images": 0,
    "folio": 108,
    "bounds": [
     51.8,
     445.0,
     55.5,
-    647.6
+    649.6
    ]
   },
   {
@@ -1577,7 +1577,7 @@
   {
    "page": 122,
    "type": "body",
-   "words": 203,
+   "words": 204,
    "images": 0,
    "folio": 114,
    "bounds": [
@@ -1720,14 +1720,14 @@
   {
    "page": 133,
    "type": "body",
-   "words": 228,
+   "words": 229,
    "images": 0,
    "folio": 125,
    "bounds": [
     59.0,
     442.9,
     55.5,
-    622.7
+    644.2
    ]
   },
   {
@@ -1764,9 +1764,9 @@
    "folio": 128,
    "bounds": [
     51.8,
-    434.5,
+    382.6,
     55.5,
-    627.2
+    648.7
    ]
   },
   {
@@ -1837,66 +1837,66 @@
   {
    "page": 142,
    "type": "body",
-   "words": 237,
+   "words": 217,
    "images": 0,
    "folio": 134,
    "bounds": [
     51.8,
     435.6,
     55.5,
-    652.1
+    632.9
    ]
   },
   {
    "page": 143,
    "type": "body",
-   "words": 212,
+   "words": 195,
    "images": 1,
    "folio": 135,
    "bounds": [
     59.0,
     452.2,
     56.2,
-    658.4
+    639.7
    ]
   },
   {
    "page": 144,
    "type": "body",
-   "words": 312,
+   "words": 333,
    "images": 0,
    "folio": 136,
    "bounds": [
     51.8,
     445.0,
     55.8,
-    635.0
+    659.7
    ]
   },
   {
    "page": 145,
    "type": "body",
-   "words": 226,
+   "words": 241,
    "images": 0,
    "folio": 137,
    "bounds": [
     59.0,
     452.2,
     55.8,
-    642.9
+    654.7
    ]
   },
   {
    "page": 146,
    "type": "body",
-   "words": 225,
+   "words": 232,
    "images": 0,
    "folio": 138,
    "bounds": [
     51.8,
     436.5,
     55.8,
-    567.6
+    585.7
    ]
   },
   {
@@ -1980,7 +1980,7 @@
   {
    "page": 153,
    "type": "body",
-   "words": 247,
+   "words": 246,
    "images": 0,
    "folio": 145,
    "bounds": [
@@ -2019,14 +2019,14 @@
   {
    "page": 156,
    "type": "body",
-   "words": 159,
+   "words": 154,
    "images": 0,
    "folio": 148,
    "bounds": [
     51.8,
     445.0,
     55.5,
-    651.6
+    653.6
    ]
   },
   {

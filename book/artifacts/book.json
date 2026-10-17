@@ -148,7 +148,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "More Than Words",
+     "title": "The Power of Communication",
      "blocks": [
       {
        "k": "sec",
@@ -589,11 +589,12 @@
        "text": "I will improve this skill by _____________________________________________________________."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "Listening with Attention",
+     "title": "Are You a Good Listener?",
      "blocks": [
       {
        "k": "mediatitle",
@@ -930,11 +931,12 @@
        "text": "Watch the video again. Without looking at your notes, record yourself giving a 90-second summary."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Making Yourself Understood",
+     "title": "The Importance of Communication",
      "blocks": [
       {
        "k": "mediatitle",
@@ -1159,11 +1161,12 @@
        "text": "Give one personal example."
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "mediatitle"
     },
     {
      "number": 4,
-     "title": "Presenting Your Ideas",
+     "title": "Speaking through Research Presentation",
      "blocks": [
       {
        "k": "sec",
@@ -1480,7 +1483,8 @@
        "text": "Use at least five collocations from Day 2 or Day 3."
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "original-chapter-heading"
     }
    ],
    "warmup": {
@@ -1516,7 +1520,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "From Wishes to Action",
+     "title": "Dreams Become Reality through Goals",
      "blocks": [
       {
        "k": "sec",
@@ -2019,11 +2023,12 @@
        "text": "Prepare a 2-minute oral summary of today’s reading."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "Rethinking Goals and Habits",
+     "title": "The Art of Goal Setting",
      "blocks": [
       {
        "k": "mediatitle",
@@ -2404,11 +2409,12 @@
        "text": "Do you agree or disagree? Explain your opinion with reasons and examples."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Choosing a Path Forward",
+     "title": "Speaking through Discussion",
      "blocks": [
       {
        "k": "sec",
@@ -2616,11 +2622,12 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "original-chapter-heading"
     },
     {
      "number": 4,
-     "title": "Goals, Habits, and Evidence",
+     "title": "Goals or Systems: Which Leads to Greater Success?",
      "blocks": [
       {
        "k": "sec",
@@ -2863,7 +2870,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "topic"
     }
    ],
    "warmup": {
@@ -2899,7 +2907,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "Understanding Our Emotions",
+     "title": "The Power of Emotional Intelligence",
      "blocks": [
       {
        "k": "sec",
@@ -3342,11 +3350,12 @@
        "text": "Use at least six expressions from the Reading Toolbox."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "Recognizing Emotional Skills",
+     "title": "The Power of Emotional Intelligence",
      "blocks": [
       {
        "k": "mediatitle",
@@ -3730,11 +3739,12 @@
        "text": "Do you agree or disagree? Support your opinion with examples from your own experience or from people you know."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Responding with Empathy",
+     "title": "Speaking through Discussion",
      "blocks": [
       {
        "k": "sec",
@@ -3967,11 +3977,12 @@
        "text": "After three minutes, switch roles."
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "original-chapter-heading"
     },
     {
      "number": 4,
-     "title": "Can Emotional Skills Be Learned?",
+     "title": "Can Emotional Intelligence Be Improved?",
      "blocks": [
       {
        "k": "sec",
@@ -4280,7 +4291,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "topic"
     }
    ],
    "warmup": {
@@ -4320,7 +4332,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "The Price of Happiness",
+     "title": "Can Money Buy Happiness?",
      "blocks": [
       {
        "k": "sec",
@@ -4752,11 +4764,12 @@
        "text": "Use at least six expressions from the Reading Toolbox and share your understanding of the quote."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "Does Wealth Bring Happiness?",
+     "title": "Can Money Buy Happiness?",
      "blocks": [
       {
        "k": "mediatitle",
@@ -5168,11 +5181,12 @@
        "text": "Which option would you choose, and why? Do you think your choice would make you happier? Support your answer with examples."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Deciding What Matters",
+     "title": "Speaking through Discussion",
      "blocks": [
       {
        "k": "sec",
@@ -5448,11 +5462,12 @@
        "text": "Present your group’s plan to the class and explain why you believe it would bring the greatest happiness."
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "original-chapter-heading"
     },
     {
      "number": 4,
-     "title": "Investigating Well-Being",
+     "title": "Speaking through Research Presentation",
      "blocks": [
       {
        "k": "sec",
@@ -5828,7 +5843,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "original-chapter-heading"
     }
    ],
    "warmup": {
@@ -5864,7 +5880,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "AI in Everyday Life",
+     "title": "Living with AI: Friend or Foe?",
      "blocks": [
       {
        "k": "sec",
@@ -6249,11 +6265,12 @@
        "text": "Present your answers to the class."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "How AI Could Change Our Lives",
+     "title": "How Will AI Change the World?",
      "blocks": [
       {
        "k": "mediatitle",
@@ -6660,11 +6677,12 @@
        "text": "Choose one position and defend it with at least three arguments."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Debating Human and Machine Roles",
+     "title": "Speaking through Discussion",
      "blocks": [
       {
        "k": "sec",
@@ -6953,11 +6971,12 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "original-chapter-heading"
     },
     {
      "number": 4,
-     "title": "Exploring Our Future with AI",
+     "title": "Speaking through Research Presentation",
      "blocks": [
       {
        "k": "sec",
@@ -7501,7 +7520,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "original-chapter-heading"
     }
    ],
    "warmup": {
@@ -7537,7 +7557,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "Beyond Romantic Feelings",
+     "title": "Is Love Enough?",
      "blocks": [
       {
        "k": "sec",
@@ -8001,11 +8021,12 @@
        "text": "Use at least six expressions from the Reading Toolbox."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "What Keeps Couples Together?",
+     "title": "The Science of a Lasting Relationship",
      "blocks": [
       {
        "k": "mediatitle",
@@ -8403,11 +8424,12 @@
        "text": "The speaker says, “You don’t fall out of love. You fall out of loving.” Do you agree or disagree? Explain your answer with examples."
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Love, Trust, and Expectations",
+     "title": "What Makes Relationships Work?",
      "blocks": [
       {
        "k": "sec",
@@ -8636,11 +8658,12 @@
        "text": "Give a 1-minute response and support your opinion with at least two reasons and one example."
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "q"
     },
     {
      "number": 4,
-     "title": "Understanding Lasting Relationships",
+     "title": "Speaking through Research Presentation",
      "blocks": [
       {
        "k": "sec",
@@ -9179,7 +9202,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "original-chapter-heading"
     }
    ],
    "warmup": {
@@ -9215,7 +9239,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "A World of Connections",
+     "title": "The World Is Getting Smaller",
      "blocks": [
       {
        "k": "sec",
@@ -9684,11 +9708,12 @@
        "text": "Use at least six expressions from the Reading Toolbox."
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "Our Shared Global Future",
+     "title": "Navigating Our Global Future",
      "blocks": [
       {
        "k": "mediatitle",
@@ -10127,11 +10152,12 @@
        "text": "If you could give one piece of advice to the world’s leaders about the future, what would it be?"
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "Weighing Global Choices",
+     "title": "Globalization: Opportunity or Threat?",
      "blocks": [
       {
        "k": "sec",
@@ -10353,11 +10379,12 @@
        "text": "Give a 1-minute response and support your opinion with at least two reasons and one example."
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "sub"
     },
     {
      "number": 4,
-     "title": "Global Challenges, Shared Solutions",
+     "title": "Globalization: Opportunity or Threat?",
      "blocks": [
       {
        "k": "sec",
@@ -10905,7 +10932,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "sub"
     }
    ],
    "warmup": {
@@ -10941,7 +10969,7 @@
    "chapters": [
     {
      "number": 1,
-     "title": "How English Became Global",
+     "title": "English: From a Local Language to a Global Lingua Franca",
      "blocks": [
       {
        "k": "sec",
@@ -11432,11 +11460,12 @@
        "text": "If English is the world’s lingua franca, is the goal to speak English “correctly” — or simply to communicate successfully?"
       }
      ],
-     "focus": "Speaking through Reading"
+     "focus": "Speaking through Reading",
+     "title_source": "readingtitle"
     },
     {
      "number": 2,
-     "title": "English beyond Borders",
+     "title": "English Without Borders",
      "blocks": [
       {
        "k": "mediatitle",
@@ -11925,11 +11954,12 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Listening"
+     "focus": "Speaking through Listening",
+     "title_source": "mediatitle"
     },
     {
      "number": 3,
-     "title": "English, Identity, and Opportunity",
+     "title": "WHO OWNS ENGLISH?",
      "blocks": [
       {
        "k": "sec",
@@ -12106,11 +12136,12 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Discussion"
+     "focus": "Speaking through Discussion",
+     "title_source": "q"
     },
     {
      "number": 4,
-     "title": "Speaking to a Multilingual World",
+     "title": "Speaking through Research Presentation",
      "blocks": [
       {
        "k": "sec",
@@ -12713,7 +12744,8 @@
        "img": null
       }
      ],
-     "focus": "Speaking through Research Presentation"
+     "focus": "Speaking through Research Presentation",
+     "title_source": "original-chapter-heading"
     }
    ],
    "warmup": {

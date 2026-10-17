@@ -2,73 +2,121 @@
   {
     "unit": 1,
     "titles": [
-      "More Than Words",
-      "Listening with Attention",
-      "Making Yourself Understood",
-      "Presenting Your Ideas"
+      "The Power of Communication",
+      "Are You a Good Listener?",
+      "The Importance of Communication",
+      "Speaking through Research Presentation"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "mediatitle",
+      "original-chapter-heading"
     ]
   },
   {
     "unit": 2,
     "titles": [
-      "From Wishes to Action",
-      "Rethinking Goals and Habits",
-      "Choosing a Path Forward",
-      "Goals, Habits, and Evidence"
+      "Dreams Become Reality through Goals",
+      "The Art of Goal Setting",
+      "Speaking through Discussion",
+      "Goals or Systems: Which Leads to Greater Success?"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "original-chapter-heading",
+      "topic"
     ]
   },
   {
     "unit": 3,
     "titles": [
-      "Understanding Our Emotions",
-      "Recognizing Emotional Skills",
-      "Responding with Empathy",
-      "Can Emotional Skills Be Learned?"
+      "The Power of Emotional Intelligence",
+      "The Power of Emotional Intelligence",
+      "Speaking through Discussion",
+      "Can Emotional Intelligence Be Improved?"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "original-chapter-heading",
+      "topic"
     ]
   },
   {
     "unit": 4,
     "titles": [
-      "The Price of Happiness",
-      "Does Wealth Bring Happiness?",
-      "Deciding What Matters",
-      "Investigating Well-Being"
+      "Can Money Buy Happiness?",
+      "Can Money Buy Happiness?",
+      "Speaking through Discussion",
+      "Speaking through Research Presentation"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "original-chapter-heading",
+      "original-chapter-heading"
     ]
   },
   {
     "unit": 5,
     "titles": [
-      "AI in Everyday Life",
-      "How AI Could Change Our Lives",
-      "Debating Human and Machine Roles",
-      "Exploring Our Future with AI"
+      "Living with AI: Friend or Foe?",
+      "How Will AI Change the World?",
+      "Speaking through Discussion",
+      "Speaking through Research Presentation"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "original-chapter-heading",
+      "original-chapter-heading"
     ]
   },
   {
     "unit": 6,
     "titles": [
-      "Beyond Romantic Feelings",
-      "What Keeps Couples Together?",
-      "Love, Trust, and Expectations",
-      "Understanding Lasting Relationships"
+      "Is Love Enough?",
+      "The Science of a Lasting Relationship",
+      "What Makes Relationships Work?",
+      "Speaking through Research Presentation"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "q",
+      "original-chapter-heading"
     ]
   },
   {
     "unit": 7,
     "titles": [
-      "A World of Connections",
-      "Our Shared Global Future",
-      "Weighing Global Choices",
-      "Global Challenges, Shared Solutions"
+      "The World Is Getting Smaller",
+      "Navigating Our Global Future",
+      "Globalization: Opportunity or Threat?",
+      "Globalization: Opportunity or Threat?"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "sub",
+      "sub"
     ]
   },
   {
     "unit": 8,
     "titles": [
-      "How English Became Global",
-      "English beyond Borders",
-      "English, Identity, and Opportunity",
-      "Speaking to a Multilingual World"
+      "English: From a Local Language to a Global Lingua Franca",
+      "English Without Borders",
+      "WHO OWNS ENGLISH?",
+      "Speaking through Research Presentation"
+    ],
+    "sources": [
+      "readingtitle",
+      "mediatitle",
+      "q",
+      "original-chapter-heading"
     ]
   }
 ]

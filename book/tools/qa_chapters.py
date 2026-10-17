@@ -17,10 +17,17 @@ def check(ok, message):
 def norm(text):
     return ' '.join(text.split())
 check(len(chapters) == 32, 'Expected 32 chapters')
-check(len({c['title'].casefold() for _, c in chapters}) == 32, 'Chapter names are not distinct')
+# Repeated existing lesson titles are intentional, not grounds to invent names.
 for u, c in chapters:
     check(c['title'] == plan[u['number']-1]['titles'][c['number']-1], 'Title plan mismatch')
     check(c.get('focus', '').startswith('Speaking through '), 'Original learning focus missing')
+    source = plan[u['number']-1]['sources'][c['number']-1]
+    check(c.get('title_source') == source, 'Title provenance mismatch')
+    if source == 'original-chapter-heading':
+        check(c['title'] == c['focus'], 'Original chapter heading was replaced')
+    else:
+        check(any(x.get('k') == source and x.get('text') == c['title'] for x in c['blocks']),
+              f'Title does not exactly match chapter content: {c["title"]}')
 
 word = Document(ROOT / 'Master-Speaking-7x10.docx')
 paras = word.paragraphs
@@ -33,8 +40,12 @@ for (i, p), (u, c) in zip(headings, chapters):
     if page_break is None:
         page_break = p.style.paragraph_format.page_break_before
     check(page_break is True, f'Word new-page property missing: {label}')
-    check(i+1 < len(paras) and paras[i+1].style.name == 'MS Chapter Focus'
-          and paras[i+1].text == c['focus'], f'Word focus subtitle missing: {label}')
+    if c['title'] != c['focus']:
+        check(i+1 < len(paras) and paras[i+1].style.name == 'MS Chapter Focus'
+              and paras[i+1].text == c['focus'], f'Word focus subtitle missing: {label}')
+    else:
+        check(i+1 < len(paras) and paras[i+1].style.name != 'MS Chapter Focus',
+              f'Redundant repeated subtitle: {label}')
     check(p.style.paragraph_format.keep_with_next is True, f'Word heading not kept with subtitle: {label}')
 check(word.styles['MS Chapter Focus'].paragraph_format.keep_with_next is True, 'Word subtitle orphan protection')
 
@@ -63,6 +74,10 @@ with pymupdf.open(ROOT / 'Master-Speaking-print-7x10.pdf') as pdf:
                 numbers = [s['text'].split()[-1] for s in spans
                            if abs(s['bbox'][1]-title_span['bbox'][1]) < 1
                            and s['bbox'][0] > title_span['bbox'][2]]
+                # Equal source titles can legitimately recur in different units.
+                # Select the entry by its printed folio before checking its link.
+                if numbers != [str(pg-main_start+1)]:
+                    continue
                 entries.extend(numbers)
                 check(any(link.get('page') == pg-1 and
                           link['from'].intersects(pymupdf.Rect(title_span['bbox']))
@@ -96,7 +111,8 @@ with ZipFile(ROOT / 'Master-Speaking.epub') as z:
         node = etree.fromstring(z.read(href))
         name = node.xpath('string(//x:span[@class="chapter-name"])', namespaces=ns)
         focus = node.xpath('string(//x:p[@class="chapter-focus"])', namespaces=ns)
-        check(name == c['title'] and focus == c['focus'], f'EPUB heading/focus mismatch: {href}')
+        check(name == c['title'] and focus == (c['focus'] if c['title'] != c['focus'] else ''),
+              f'EPUB heading/focus mismatch: {href}')
         links = nav.xpath('//x:a[@href=$href]', namespaces=ns, href=href)
         check(len(links) == 1 and c['title'] in ''.join(links[0].itertext()), f'EPUB navigation mismatch: {href}')
 

@@ -1,7 +1,7 @@
 {
   "revision": {
     "exit_code": 0,
-    "stdout_tail": "PASS: 50 reviewed edits, complete AI question, classroom guidance, contrast, 32 unique Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.\n",
+    "stdout_tail": "PASS: 50 reviewed edits, complete AI question, classroom guidance, contrast, 32 Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.\n",
     "stderr_tail": ""
   },
   "content": {
@@ -11,7 +11,7 @@
   },
   "editorial": {
     "exit_code": 0,
-    "stdout_tail": "blocks: 3408   pronunciation lines skipped: 167\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (43 types) ---\nlong-term\u00d713, follow-up\u00d712, one-minute\u00d79, non-native\u00d77, open-ended\u00d75, well-being\u00d75, two-minute\u00d74, pro-social\u00d74, general-purpose\u00d74, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, machine-dependent\u00d73, self-fulfilling\u00d73, self-discipline\u00d72, past-tense\u00d72, english-speaking\u00d72, native-like\u00d72, great-grandparents\u00d72, english-language\u00d72, topic-related\u00d71, thought-provoking\u00d71, two-way\u00d71, high-quality\u00d71, well-defined\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, longer-lasting\u00d71, high-paying\u00d71, lower-paying\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, native-speaker\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
+    "stdout_tail": "blocks: 3399   pronunciation lines skipped: 168\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (43 types) ---\nlong-term\u00d713, follow-up\u00d712, one-minute\u00d79, non-native\u00d77, open-ended\u00d75, two-minute\u00d74, well-being\u00d74, pro-social\u00d74, general-purpose\u00d74, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, machine-dependent\u00d73, self-fulfilling\u00d73, self-discipline\u00d72, past-tense\u00d72, english-speaking\u00d72, native-like\u00d72, great-grandparents\u00d72, english-language\u00d72, topic-related\u00d71, thought-provoking\u00d71, two-way\u00d71, high-quality\u00d71, well-defined\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, longer-lasting\u00d71, high-paying\u00d71, lower-paying\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, native-speaker\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
     "stderr_tail": ""
   },
   "word": {
@@ -21,7 +21,7 @@
   },
   "fidelity": {
     "exit_code": 0,
-    "stdout_tail": "master blocks checked: 3430\n  PDF : covered 3430, missing 0\n  EPUB: covered 3430, missing 0\n  DOCX: covered 3430, missing 0\nOK\n",
+    "stdout_tail": "master blocks checked: 3421\n  PDF : covered 3421, missing 0\n  EPUB: covered 3421, missing 0\n  DOCX: covered 3421, missing 0\nOK\n",
     "stderr_tail": ""
   },
   "print": {
@@ -46,7 +46,7 @@
   },
   "epubcheck": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-17-2026 15:06:27\",\n    \"elapsedTime\": 4463,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
+    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-17-2026 15:31:20\",\n    \"elapsedTime\": 3862,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
     "stderr_tail": ""
   },
   "visual": {

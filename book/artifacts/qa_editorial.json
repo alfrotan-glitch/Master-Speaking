@@ -1,5 +1,5 @@
 {
- "blocks": 3408,
+ "blocks": 3399,
  "unknown_words": {},
  "hyphenated_compounds_accepted": {
   "long-term": 13,
@@ -7,8 +7,8 @@
   "one-minute": 9,
   "non-native": 7,
   "open-ended": 5,
-  "well-being": 5,
   "two-minute": 4,
+  "well-being": 4,
   "pro-social": 4,
   "general-purpose": 4,
   "open-minded": 3,
@@ -46,7 +46,7 @@
   "native-speaker": 1,
   "far-reaching": 1
  },
- "pronunciation_lines_skipped": 167,
+ "pronunciation_lines_skipped": 168,
  "duplicated_word_hits": {},
  "double_spaces": 0,
  "straight_quotes": 0,

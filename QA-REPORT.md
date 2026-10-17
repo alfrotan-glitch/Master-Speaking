@@ -36,13 +36,13 @@ Interior: **160 pages**, 7 × 10 inches. Reading edition: 161 pages including a 
 - The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.
 - Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.
 
-Editorial log: 137 entries. Machine results: `book/artifacts/qa_october_run.json`.
+Editorial log: 128 entries. Machine results: `book/artifacts/qa_october_run.json`.
 
 ## Export checksums (SHA-256)
 
-- `Master-Speaking-print-7x10.pdf`: `5be83180f9b4c736702f217d0e083d21352a4ce3a1199cb2b8e9c7ccaee4165b`
-- `Master-Speaking-7x10.docx`: `f1fb825945c25bf0354a6cf362e8728fd677f340e502010a004af34f9762c452`
-- `Master-Speaking.epub`: `290549cb0642e4d7bc780762aa03a4938c2bdea1b6c1c62cc770ad302757b324`
-- `Master-Speaking-Front-Cover.pdf`: `b2e192ced7de3ed5e821fb2ebdaad946ea694c39d34c5ba96bbbc686aa5ee78b`
-- `Master-Speaking-Reading-Edition.pdf`: `2211c1731f4c9079f1a0ec3b93a9b13d91b09370d63ed3f83ba856d9d528d0e8`
-- `Master-Speaking.pdf`: `2211c1731f4c9079f1a0ec3b93a9b13d91b09370d63ed3f83ba856d9d528d0e8`
+- `Master-Speaking-print-7x10.pdf`: `a680feb287d4b059acf02431f436b3d2528976ab2a78a552c337d6965671c79c`
+- `Master-Speaking-7x10.docx`: `8b8bc6f7206f7b963fd38469e7a1897d21efeffe062d84dc66d42e732eaa7dc0`
+- `Master-Speaking.epub`: `e2bbc3ba80a0b62379b45562dea185d8664662fc3360e040598d2eceafe17faf`
+- `Master-Speaking-Front-Cover.pdf`: `309ed6c1d557443a3859ec7a6fbb9be4033fb20108ececb138c03d89a56f0bef`
+- `Master-Speaking-Reading-Edition.pdf`: `dffdcdfcec4aaca418e6459f7751d0dc29798c0f97a37530b80887c2421dc023`
+- `Master-Speaking.pdf`: `dffdcdfcec4aaca418e6459f7751d0dc29798c0f97a37530b80887c2421dc023`

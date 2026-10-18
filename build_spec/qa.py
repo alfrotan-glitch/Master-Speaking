@@ -189,6 +189,16 @@ def main():
           "comparatives compare two choices" in blob.lower())
     check("question auxiliary rule allows non-subject exceptions", "Most direct English questions" in blob)
     check("guiding principle present", "Learn the grammar. Use it in conversation." in blob)
+    # Lesson 1 approved revision (spec 3.2)
+    L1 = lessons[0]
+    check("Lesson 1: three core rule groups", len(L1["rules"]) == 3 and "Present tenses:" in L1["rules"][0]["label"])
+    check("Lesson 1: five Practice A items and four Practice B tasks", len(L1["practice_a"]) == 5 and len(L1["practice_b"]) == 4)
+    check("Lesson 1: present-perfect continuous in optional Advanced Upgrade", "present perfect continuous" in " ".join(L1["advanced"]["upgrade"]).lower())
+    check("Pair Speaking carries expected-output guidance", all(L.get("pair", {}).get("output") for L in lessons))
+    check("Real Talk Challenge is separate from Pair Speaking (planning + model response)", all(L.get("realtalk", {}).get("plan") and L.get("realtalk", {}).get("model") and L["pair"].get("output") != L["realtalk"]["model"] for L in lessons))
+    check("Intermediate vs Advanced reasoning separated", all(L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") for L in lessons))
+    check("Review links back to Simple Rule and Appendix card", "return to Part 2" in blob and "Formula Book card" in blob)
+    check("speaking-section headings kept with next content (keepNext)", doc.element.xml.count("w:keepNext") >= 32)
 
     print()
     if fails:

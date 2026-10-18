@@ -99,8 +99,11 @@ def h_banner(doc, text, sub=None, fill=FILL_NAVY):
     run(p, text, size=13, bold=True, color=WHITE, font=HEAD_FONT)
     if sub:
         p2 = c.add_paragraph()
+        p2.paragraph_format.keep_with_next = True
         run(p2, sub, size=9.5, color=WHITE, font=HEAD_FONT)
-    spacer(doc, 4)
+    after = spacer(doc, 4)
+    # Keep the banner together with the content that follows it.
+    after.paragraph_format.keep_with_next = True
     return t
 
 
@@ -113,7 +116,10 @@ def section_label(doc, text):
     p.style = doc.styles['Heading 2']
     p.paragraph_format.keep_with_next = True
     run(p, text, size=10.5, bold=True, color=WHITE, font=HEAD_FONT, caps=True)
-    spacer(doc, 3)
+    after = spacer(doc, 3)
+    # Keep the section label together with the content that follows it,
+    # so speaking-section headings are never stranded at a page bottom.
+    after.paragraph_format.keep_with_next = True
     return t
 
 

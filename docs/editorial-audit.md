@@ -1,6 +1,14 @@
 # Editorial audit and prioritized revision log
 
-**Edition reviewed:** source regenerated from `build_spec/` on 2026-10-18. Lesson/section references are used because Word pagination changes by rendering engine; PDF page references below refer to the current generated PDF. This is an internal editorial pass, not independent expert approval or classroom evidence.
+**Edition reviewed:** source regenerated from `build_spec/` on 2026-10-19 (Student Book + Teacher's Book). Lesson/section references are used because Word pagination changes by rendering engine; PDF page references below refer to the current generated PDFs (Student Book 76 pages, Teacher's Book 60 pages). This is an internal editorial pass, not independent expert approval or classroom evidence.
+
+## What changed in this pass (2026-10-19)
+
+- **Student Book — Lesson 1 approved revision:** present-simple and present-continuous merged into one present-tenses group (three core rule groups total); controlled practice corrected to five A items and four B tasks; Pair Speaking now carries explicit expected speaking output; Real Talk Challenge separated as a planning-and-transfer task with its own planning instructions and model response; present-perfect continuous and emphasis patterns kept optional in the Advanced Upgrade; Review links back to the Simple Rule and Appendix card when a self-check item is unticked.
+- **Student Book — all 16 lessons:** every Pair Speaking now states the expected speaking output; every Real Talk Challenge now has separate planning guidance and a model response (clearly labelled as one example, not the only answer); Review now gives a return-to-rule reference. Speaking-section headings are prevented from stranding at page bottoms via keep-with-next layout. Automated QA gates were added for the Lesson 1 revision, expected output, Real Talk separation, and heading flow.
+- **Student Book — front matter:** added a formal copyright and publication-information page (© TOEFL HOUSE, 2026; placeholders for ISBN/edition/place identified explicitly; disclaimer and statement of limits) and a Teacher's Book cross-reference.
+- **Teacher's Book (new):** 16 companion lesson guides generated from the same lesson sources as the Student Book, guaranteeing identical objectives, practice items, answers and model responses. Each guide contains: outcomes and measurable success criteria, materials/preparation, 60-minute timing that matches the Student Book's pacing blocks (every lesson totals exactly 60), step-by-step procedures for all eight functions, checking-understanding prompts, complete Practice A/B answers with explanatory notes, acceptable alternatives, model exchanges and model responses, assessment guidance for open-ended tasks, Intermediate scaffolding, Advanced extension, common errors with correction strategies, shorter-session (45-minute) adaptations, and review/consolidation guidance with feedback-without-interrupting-fluency instructions. Back matter adds a model final speaking response and keys for the Diagnostic, three Review Tests and Final Assessment.
+- **Publication:** both books now build from a single reproducible pipeline to DOCX, PDF, EPUB and HTML; both PDFs are searchable A4 with embedded fonts, page numbers and bookmarks; both EPUBs pass package/XML/link checks; both HTMLs are semantic and navigable.
 
 ## Prioritized issue list
 
@@ -12,6 +20,7 @@
 6. **Moderate — several simplified rules sounded absolute.** Qualified “recently” with present perfect/past simple; ordinary future *if*-clauses versus willingness *will*; comparative/superlative meaning; modal certainty groupings; passive agent omission; the subject of reduced participle clauses; and *wish I were/was*. These revisions preserve an accessible core rule while identifying real variation.
 7. **Moderate — production/navigation was incomplete.** Added Word heading styles, dynamic PDF contents/bookmarks/page numbers, a reflowable EPUB build and package checks, writable space in the final error-analysis table, and explicit reproducible build/validation documentation.
 8. **Pending external work — qualified teacher review, a learner pilot, EPUBCheck, and a rendered Word/print proof.** Instruments are in `docs/teacher-review-checklist.md` and `docs/pilot-feedback-form.md`. No reviewer results, learner results, or learning gains are claimed.
+9. **Medium — no Teacher's Book existed.** Added the companion Teacher's Book volume with identical lesson sources, full answer keys with notes, model speaking responses, timing, differentiation and assessment guidance. Both books share one build pipeline.
 
 ## Ten-angle findings and corrections
 
@@ -83,7 +92,7 @@
 - **Moderate finding — whole book, contents, final rubric, tests, and appendices.** The original DOCX used a restrained palette and A4 geometry but did not supply generated PDF page navigation or page-numbered contents; Word’s semantic navigation needed verification.
 - **Why it mattered:** a usable book needs page references, a navigable structure, readable tables, and clear monochrome-safe distinctions.
 - **Correction:** preserved the navy/teal/gold/grey print-friendly system; added Word Heading 1/2 styles, a native updateable Word contents field, A4 output, PDF page numbers/bookmarks and live contents, repeatable table headers, and writable blank rows. Meaning is signalled by labels and structure as well as fill colour.
-- **Verification:** PDF rendered to page images and visually inspected at the title (p. 1), contents (p. 4), diagnostic test (p. 5), matched baseline speaking task/rubric (p. 6), Lesson 1 (p. 7), Review Test 1 (p. 19), final written assessment (p. 58), final speaking rubric/writing table (p. 59), answer key (p. 65), and end (p. 67). PDF structure confirms 67 A4 pages and 26 bookmarks. DOCX has semantic headings and A4 dimensions.
+- **Verification:** Student Book PDF rendered and visually sampled at the title, contents (p. 6), copyright page (p. 2), diagnostic test, matched baseline speaking task/rubric, Lesson 1 (Rule 1 now shows the merged present-tenses group), Review Test 1, final written assessment, final speaking rubric/writing table, answer key, and end. PDF structure confirms 76 A4 pages and 26 bookmarks; Teacher's Book PDF confirms 60 A4 pages and 16 bookmarks. Both DOCX files have semantic headings, A4 dimensions and an updateable TOC field.
 - **Severity:** Moderate.
 - **Remaining risk:** the Word document itself was not rendered in LibreOffice/Word because neither was installed; manual grayscale and physical print proofing remain pending.
 
@@ -92,7 +101,7 @@
 - **Major finding — distribution pipeline.** The repository initially contained a DOCX and HTML, but no PDF or EPUB.
 - **Why it mattered:** HTML renamed as EPUB would not meet ebook-reader navigation or package requirements.
 - **Correction:** created a searchable PDF with embedded DejaVu fonts, A4 page numbers, live page-numbered contents, and bookmarks; created a reflowable EPUB package with metadata, navigation, XHTML and CSS; copied the editable DOCX to `dist/` with semantic headings. Final names are linked in the README.
-- **Verification:** Python structural validator opens all files, checks required section markers across the three editions, checks PDF dimensions/text/bookmarks, parses EPUB XML and manifest/spine/nav, resolves internal links, and opens the EPUB with EbookLib. PDF visual inspection was performed as listed above.
+- **Verification:** Python structural validator opens all files, checks required section markers across editions, checks PDF dimensions/text/bookmarks, parses EPUB XML and manifest/spine/nav, resolves internal links, and opens the EPUB with EbookLib for both books. Visual inspection sampled both PDFs as listed above.
 - **Severity:** Major at baseline; production now exists.
 - **Remaining risk:** EPUBCheck and an actual dedicated reader were unavailable. The package checks are **not** an EPUBCheck certification. Word/LibreOffice visual rendering is also pending.
 

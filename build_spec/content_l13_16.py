@@ -94,6 +94,9 @@ L13 = {
                  "using different reporting verbs. Swap.",
         'task': ["Messages to report: a complaint · a promise · a warning · an invitation · a refusal.",
                  "Use at least four different reporting verbs and both question and command reports."],
+        'output': "Five faithfully reported messages per reporter, using at least four different "
+                  "reporting verbs, with one reported question and one reported command, that the "
+                  "listener can repeat accurately.",
         'criteria': ["backshift is accurate",
                      "question word order correct in reports",
                      "at least four reporting verbs used",
@@ -107,9 +110,18 @@ L13 = {
                     "Report with judgement-free precision: 'He claimed to have seen nothing, yet witnesses disagreed.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose a real conversation and list four things that were "
+                "said — keywords only, with who said each one. Pick your four reporting verbs before "
+                "you speak: admitted, warned, promised, suggested, agreed, asked…",
         'task': "Retell challenge (ninety seconds): report a real conversation you had this week — a "
                 "discussion, an argument, an interview or a negotiation. Report at least four things people "
                 "said, using varied reporting verbs. End with your own comment.",
+        'model': "On Saturday my sister called to tell me that she had accepted the job offer. She "
+                 "admitted that she was nervous, but she promised to ask for a training week. My "
+                 "father warned her not to sign without reading the contract, and she agreed to send "
+                 "it to him first. She also asked me whether I thought she should negotiate the "
+                 "salary; I suggested doing the same research she had done for the interview. In my "
+                 "opinion, she should ask — the worst they can say is no.",
         'feedback': ["accurate backshift and time references",
                      "varied reporting verbs (not only 'said')",
                      "questions and commands reported correctly",
@@ -223,6 +235,8 @@ L14 = {
         'task': ["Include: one 'Having + past participle', one opening with 'Given/Considering/With', "
                  "and one -ed/-ing adjective pair.",
                  "Partner listens and reports the briefing back in one sentence."],
+        'output': "One 60-second briefing per partner containing the three required structures, plus "
+                  "a listener's one-sentence report-back that matches the briefing's content.",
         'criteria': ["participle clauses have correct subjects",
                      "forms are accurate (-ing / -ed / having done)",
                      "meaning stays clear after compression",
@@ -236,9 +250,18 @@ L14 = {
                     "Use participles in formal closings: 'Considering all the evidence, we recommend…'"],
     },
     'realtalk': {
+        'plan': "Planning (45 seconds): choose the policy and write three lines — your evidence, "
+                "your recommendation, your closing judgement. Mark where 'Given…' and 'Having…' will "
+                "go so the openings come out whole.",
         'task': "Ninety-second formal recommendation: recommend one policy for your workplace or school "
                 "(more training, a schedule change, a new rule). Open with 'Considering…' or 'Given…', "
                 "use one 'Having…' clause, and close formally.",
+        'model': "Given the number of late arrivals, we recommend shifting the morning meeting to "
+                 "nine o'clock. Having reviewed the attendance records, I noticed that most delays "
+                 "happen before ten, when the traffic is heaviest. The current schedule is "
+                 "frustrating for parents, and several tired employees arrive unprepared. "
+                 "Considering the cost of the change — none — the benefit is obvious. All things "
+                 "considered, a two-week trial would settle the question.",
         'feedback': ["at least two accurate participle clauses",
                      "-ed/-ing adjectives used correctly",
                      "recommendation is clear and logical",
@@ -354,6 +377,9 @@ L15 = {
         'task': ["Plan for ten seconds only. In your answer include: one hedge (may well / tend to / it could be argued), "
                  "one cleft (It is… that / What… is), and one conclusion.",
                  "Answer the follow-up question carefully — hedging is welcome when you are unsure."],
+        'output': "Two one-minute answers per partner, each containing one well-placed hedge, one "
+                  "accurate emphasis structure and a clear conclusion — plus one careful answer to "
+                  "the partner's hard follow-up question.",
         'criteria': ["claims are hedged appropriately (not over-hedged)",
                      "emphasis structures used accurately once or twice",
                      "certainty level matches the evidence",
@@ -367,9 +393,20 @@ L15 = {
                     "Use formal conditional inversion in writing-style speech: 'Were this proposal accepted…' · 'Had we known…'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): one claim plus its evidence for the hedge; one fact worth "
+                "spotlighting for the cleft; one strong statement for the inversion. Write single "
+                "keywords, not sentences — you will not read them.",
         'task': "Two-minute formal talk: 'One change that would improve education in my country.' "
                 "Include: a hedged claim, one cleft sentence, one inversion, and a clear closing. "
                 "Speak with confidence — no notes.",
+        'model': "Education in my country will change in one area above all: access. It is "
+                 "broadband that will decide who benefits from that change. Rarely have we seen "
+                 "technology move so quickly in our cities, yet rural schools are often left without "
+                 "a reliable connection. The government could take the first step by funding "
+                 "internet in district centres — this may well be the cheapest investment of the "
+                 "decade. If the infrastructure were in place, teachers could share materials "
+                 "overnight. In closing, I would say one thing: connect the schools first, and the "
+                 "rest will follow.",
         'feedback': ["hedging used for claims, not for every word",
                      "at least one cleft and one inversion — accurate",
                      "register is consistently formal",
@@ -449,6 +486,9 @@ L16 = {
                  "Round 2 — Advice: a friend must choose between two jobs.  (modals, conditionals)",
                  "Round 3 — Report: what your colleagues or classmates have decided.  (reported speech, passives)",
                  "Round 4 — Argument: one change that would improve your school or workplace.  (linkers, hedging, emphasis)"],
+        'output': "Four one-minute rounds per pair: each round delivered without notes, with the "
+                  "target structures counted aloud and at least one self-repair noted by the "
+                  "listener.",
         'criteria': ["structures match the round's target",
                      "errors are self-corrected during speech",
                      "ideas are clear and well-linked",
@@ -462,9 +502,20 @@ L16 = {
                     "Practise repair phrases: 'What I mean is…' · 'Let me rephrase that…' · 'Or rather…'"],
     },
     'realtalk': {
+        'plan': "Planning (one minute): three lines only — the story (when and what changed), the "
+                "decision (what you chose and why), the goal (what comes next and how you will know "
+                "you have reached it). Then deliberately choose two 'show-off' structures.",
         'task': "Final speaking challenge (two minutes): 'How I have changed — and what comes next.' "
                 "Tell a story, explain a decision, and state a goal. Use at least six different structures "
                 "from the course. This is also your practice for the Final Speaking Assessment.",
+        'model': "Two years ago I avoided speaking English in class because I was afraid of mistakes "
+                 "— I would translate every sentence in my head first. Joining a speaking club "
+                 "changed that: within a month, I had made friends who corrected me kindly. Since "
+                 "then I have been practising almost every day, and my teachers have noticed the "
+                 "difference. I've decided to take the TOEFL next spring, which is why I'm "
+                 "recording myself twice a week. If I keep this up, the score will take care of "
+                 "itself. What I need most now is confidence under pressure — and that comes only "
+                 "from speaking.",
         'feedback': ["range of structures used accurately",
                      "clear story shape with linking",
                      "at least one hedged or emphatic structure",

@@ -76,6 +76,8 @@ L9 = {
                  "(local, personal or world news) using the passive. The editor (partner) asks: who did it?",
         'task': ["Events: an accident · a new opening · a rule change · a sports result · something at work or school.",
                  "Use at least two passives and one reporting structure (It is said / It is believed)."],
+        'output': "Three news items per reporter in report-style speech, with two accurate passives "
+                  "and one reporting structure, surviving the editor's 'who did it?' question.",
         'criteria': ["passive forms are accurate across tenses",
                      "the agent is given only when it matters",
                      "tone is objective and report-like",
@@ -89,9 +91,17 @@ L9 = {
                     "Use passive + participle clauses in writing-style speech: 'Founded in 1971, the school now teaches over a thousand students.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): pick three real events from this week — two that affect "
+                "people rather than doers, one you want to comment on. Fix the tense of each passive "
+                "(is/are, was/were, will be, has been).",
         'task': "Ninety-second news brief: report three things that happened this week (in your city, "
                 "your work or your studies). Use the passive for events and one reporting structure. "
                 "Finish with one comment in the active voice.",
+        'model': "Three things happened this week. A new footbridge was opened near the school, so "
+                 "traffic has been diverted along the main road. It is said that the council will "
+                 "publish the survey results on Friday, and two main streets were cleaned every "
+                 "night last week. My own view is simple: the council should publish the data openly "
+                 "— that is the first thing I would ask for.",
         'feedback': ["at least three accurate passive structures",
                      "objective reporting tone",
                      "agent mentioned only when important",
@@ -197,6 +207,8 @@ L10 = {
         'task': ["Partner B: describe at least three things that need doing (need to have… done).",
                  "Partner A: explain what you will do (I'll have… done), what the customer should do, "
                  "and the price. Use make/let/get at least once."],
+        'output': "One completed service negotiation per pair: at least three things that need doing, "
+                  "a price and a time agreed, and one make/let/get sentence used accurately.",
         'criteria': ["causative forms are accurate (have/get + object + participle)",
                      "service language sounds natural",
                      "prices and times are agreed",
@@ -210,9 +222,18 @@ L10 = {
                     "Use 'get round to + -ing' and 'end up + -ing': 'I finally got round to having the flat painted.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose a real or invented bad day. Plan three moments — one "
+                "service you arranged (had something done), one accident (had something happen to "
+                "me), and one make/let/get moment.",
         'task': "Story challenge (one minute): 'A day when everything went wrong.' Use at least two "
                 "causatives (including 'had something done' or 'had something happen to me'), and explain "
                 "what you made, let or got someone to do afterwards.",
+        'model': "Last Friday started badly. I had my car serviced the evening before, but it still "
+                 "wouldn't start, so I let my neighbour try the battery — he is a mechanic. Then the "
+                 "courier delivered my laptop to the wrong company, and I had to wait while it was "
+                 "forwarded. My manager made me postpone the presentation until the afternoon, and I "
+                 "finally got my brother to drive me to work. By the evening the whole day had me "
+                 "laughing — what a mess!",
         'feedback': ["causative structures used accurately",
                      "clear distinction between service and accident",
                      "story is easy to follow",
@@ -322,6 +343,8 @@ L11 = {
         'task': ["Questions to adapt: What do you enjoy doing at weekends? What have you decided to change "
                  "this year? What do you avoid doing? What are you looking forward to?",
                  "Each person must use at least four different gerund/infinitive verbs."],
+        'output': "A five-question interview per role: each person answers with at least four "
+                  "different gerund/infinitive patterns and asks two follow-up questions.",
         'criteria': ["patterns are accurate (-ing vs to)",
                      "at least one meaning-changing verb used correctly",
                      "conversation flows naturally",
@@ -335,8 +358,17 @@ L11 = {
                     "Use 'have difficulty (in) + -ing': 'I had difficulty understanding the accent.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): list three activities you enjoy or avoid (-ing) and two "
+                "plans or decisions (to + verb). Mark one meaning-changing verb — stop, remember or "
+                "try — to use in both patterns if you can.",
         'task': "Speak for one minute: 'What learning English has taught me about myself.' Use at least "
                 "three gerunds and two infinitives. End with one decision you have made (to + verb).",
+        'model': "Learning English has taught me to be patient with myself. I enjoy reading in "
+                 "English now, and at first I tried translating every word — that only slowed me "
+                 "down, so I stopped doing it and started guessing from context. I keep a short "
+                 "vocabulary journal every evening because writing helps me notice patterns. I used "
+                 "to avoid speaking because I feared mistakes, so I've decided to join an evening "
+                 "class this winter and speak with real people.",
         'feedback': ["gerund and infinitive patterns accurate",
                      "at least one meaning-changing verb used correctly",
                      "sentences are connected, not listed",
@@ -443,6 +475,9 @@ L12 = {
                  "clauses — never name it. Partner guesses, then swaps.",
         'task': ["Each person describes two items, using at least one defining and one non-defining clause.",
                  "After guessing, improve each other's sentences: make them more concise."],
+        'output': "Two successful guesses per pair: each description contains one defining and one "
+                  "non-defining clause, and both partners leave with one improved, more concise "
+                  "sentence.",
         'criteria': ["relative pronouns chosen correctly (who/which/whose/where)",
                      "defining vs non-defining punctuation/meaning respected",
                      "descriptions are concise and clear",
@@ -456,8 +491,17 @@ L12 = {
                     "Use reduced clauses in formal speech: 'Anyone arriving late will be asked to wait.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose the person, then note three roles — who they are "
+                "(defining), one extra detail with commas (non-defining), and one -ing description "
+                "(reduced). Decide which clause identifies and which one comments.",
         'task': "Describe-and-explain talk (one minute): talk about a person who influenced you. Use two "
                 "defining clauses, one non-defining clause, and one reduced clause. Do not write anything.",
+        'model': "The person who influenced me most is my uncle, who taught physics for thirty years. "
+                 "He is the man whose advice I still hear when I sit down to study: start with the "
+                 "hardest task. The teacher who encouraged me at school lent me books written by "
+                 "Afghan authors, and the colleague sitting beside me at my first job showed me how "
+                 "to admit a mistake quickly. Anyone working with him learns the same thing — "
+                 "preparation beats talent.",
         'feedback': ["relative clauses are accurate and natural",
                      "at least one non-defining clause with correct meaning",
                      "one concise reduced form",

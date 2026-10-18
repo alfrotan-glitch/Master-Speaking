@@ -82,6 +82,8 @@ L5 = {
         'task': ["Start: 'If I had woken up early this morning…'",
                  "Continue for at least six sentences, mixing 2nd, 3rd and mixed conditionals.",
                  "Then invent a second chain starting 'If the internet stopped working tomorrow…'"],
+        'output': "One shared story of at least six linked conditional sentences per pair, including "
+                  "one third and one mixed conditional, that both partners can retell in summary.",
         'criteria': ["conditional forms are accurate",
                      "at least one third and one mixed conditional appear",
                      "the story makes logical sense",
@@ -95,9 +97,18 @@ L5 = {
                     "Use 'suppose / supposing (that)…' for playful hypotheses: 'Suppose you had to leave tomorrow — what would you take?'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): give each conditional type a job — first for real "
+                "consequences, second for the unlikely option, third or mixed for last year's "
+                "mistake. Note only the verbs you will need.",
         'task': "Decision talk (one minute): imagine your organisation has extra money. Choose between "
                 "three options (training, new equipment, a trip). Explain what will happen if you choose "
                 "each one — and what you would have done differently last year with this money.",
+        'model': "If we choose training, the team will improve their skills, but we will have to "
+                 "postpone the equipment purchase. New equipment would help more in the short term, "
+                 "although if I were on the committee, I would invest in people first. If I had been "
+                 "on it last year, I would have set aside a training budget monthly — then we "
+                 "wouldn't be choosing one thing over another now. So my choice is training, and I'd "
+                 "approve it today.",
         'feedback': ["first conditional for real consequences",
                      "second conditional for unlikely options",
                      "third or mixed conditional for the past reflection",
@@ -211,6 +222,9 @@ L6 = {
                  "(using wish). The other offers solutions (using should / could / it's time). Swap after two minutes.",
         'task': ["Choose three areas: studies · work · health · free time · family life.",
                  "Each complaint must use wish; each solution must use a modal or 'it's time'."],
+        'output': "Three complaint–solution exchanges per role: each complaint uses a correct wish "
+                  "form, each solution a natural modal or 'it's time', and partners swap roles "
+                  "smoothly.",
         'criteria': ["wish forms are accurate (present vs past)",
                      "solutions use should / could / it's time naturally",
                      "the conversation sounds genuine, not read",
@@ -224,8 +238,16 @@ L6 = {
                     "Use 'as though nothing had happened' style narrative: 'She greeted me as though we had argued yesterday.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose one real regret (wish + past perfect), one present "
+                "situation you would change (wish + past or could), and one piece of advice for a "
+                "younger learner. Decide the verb forms before you speak.",
         'task': "Speak for one minute: 'My biggest regret — and what it taught me.' Include one wish "
                 "(past) and one wish (present), then one sentence of advice for a younger learner.",
+        'model': "I wish I had taken English seriously at school — I lost two years worrying about "
+                 "mistakes instead of speaking. I wish I could explain things as clearly as my "
+                 "teacher could. What it taught me is this: accuracy grows through use. If I were "
+                 "talking to a younger learner now, I'd say record yourself every week and compare "
+                 "the recordings after a month — the progress is real, and you will hear it.",
         'feedback': ["wish + past perfect for the regret",
                      "wish + past simple (or could) for the present",
                      "advice given with an appropriate modal",
@@ -330,6 +352,8 @@ L7 = {
         'task': ["Use at least: one comparative with a degree word, one superlative, one 'as … as' or "
                  "'the more … the more'.",
                  "After both presentations, agree together on ONE choice."],
+        'output': "Two 30-second recommendations, each containing at least three accurate comparisons "
+                  "with reasons, followed by one agreed joint choice stated aloud.",
         'criteria': ["comparative and superlative forms are accurate",
                      "each comparison has a reason",
                      "at least two degree words used (far, slightly, much…)",
@@ -343,9 +367,18 @@ L7 = {
                     "Use 'compared with / in contrast to' to frame data like an academic: 'Compared with 2020, participation has doubled.'"],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose your position, then prepare three comparisons — one "
+                "with a degree word (far, much, slightly), one superlative, and one 'the more …' or "
+                "'as … as' pattern. Give each one a short reason.",
         'task': "Persuasion talk (one minute): argue for ONE of these — 'The best age to learn a language' / "
                 "'The best way to prepare for the TOEFL' / 'The best investment of one hour a day'. "
                 "Use at least three comparisons.",
+        'model': "The best age to start learning a language is early childhood — children pick up "
+                 "pronunciation far more easily than adults, and they are much less afraid of "
+                 "mistakes. The best use of one hour a day, however, is deliberate speaking practice: "
+                 "it is twice as effective as passive review because you get instant feedback. "
+                 "Compared with grammar drills alone, conversation is by far the most useful "
+                 "investment. The more you speak, the more natural your grammar becomes.",
         'feedback': ["accurate comparative and superlative forms",
                      "reasons support the comparisons",
                      "degree words add precision (far, slightly, by far…)",
@@ -452,6 +485,9 @@ L8 = {
         'task': ["Topic: 'Homework should be replaced by daily speaking practice.'",
                  "Each person must use at least: one although/despite, one cause linker, one result linker, "
                  "and one summary opener."],
+        'output': "One two-minute mini-debate per role: a clear point with reason and example, one "
+                  "answer to the other side, and a closing summary — followed by a one-sentence "
+                  "verdict you both accept.",
         'criteria': ["linkers are accurate (especially despite + noun)",
                      "argument has point → reason → example",
                      "the other side is answered (counterargument)",
@@ -465,8 +501,17 @@ L8 = {
                     "Use 'which' to comment on a whole clause: 'She apologised publicly, which changed the whole mood.'"],
     },
     'realtalk': {
+        'plan': "Planning (45 seconds): write only four keywords — claim, two reasons, concession. "
+                "Choose your linkers before you speak (although / because / therefore / to sum up), "
+                "and leave the example to improvise.",
         'task': "Opinion talk (90 seconds): 'What makes a good teacher?' Structure: opinion → two reasons "
                 "with examples → one concession → summary. Speak without notes.",
+        'model': "I believe what makes a good teacher is clear feedback. This is because learners "
+                 "improve fastest when they know exactly what to fix. For instance, my first English "
+                 "teacher corrected our pronunciation every day, and within a month our class sounded "
+                 "noticeably better. Although games and fun activities help people relax, I would "
+                 "trade them for precise correction any day. To sum up: a good teacher makes the "
+                 "next step obvious.",
         'feedback': ["point → reason → example structure is visible",
                      "contrast and concession used accurately (although / despite)",
                      "cause and result linkers present",

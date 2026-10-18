@@ -42,7 +42,7 @@ Story, Music, Habit & Garden):
 Plus the **Mistake Killer Protocol** and 16 **Golden Patterns** (one sentence frame per day that contains the whole book).
 
 **Built-in assessment system:**
-- **Diagnostic Test** before Day 1 (30 items + score guide)
+- **Diagnostic Test** before Day 1 (25 items + score guide)
 - **Progress Tests 1–3** after Days 4, 8 and 12 (15 items each)
 - **Final Written Test** after Day 16 (30 items covering the whole C1–C2 system)
 - Full answer keys for every exercise and every test in the appendices,

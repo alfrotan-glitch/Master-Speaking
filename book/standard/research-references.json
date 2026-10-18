@@ -1,0 +1,50 @@
+[
+  {
+    "id": "matthews-goals",
+    "citation": "Matthews, Gail. (n.d.). Goals Research Summary. Dominican University of California. Undated institutional summary of a four-week study; not a peer-reviewed journal article.",
+    "url": "https://www.dominican.edu/sites/default/files/2020-02/gailmatthews-harvard-goals-researchsummary.pdf",
+    "supports": "Limited summary of the goal-writing, action-commitment, and accountability study cited in Unit 2."
+  },
+  {
+    "id": "goleman-ei",
+    "citation": "Goleman, Daniel. (1995). Emotional Intelligence: Why It Can Matter More Than IQ. Bantam Books.",
+    "url": "",
+    "supports": "Source for the five-part framework attributed to Goleman in Unit 3; this is one framework, not a universal definition of emotional intelligence."
+  },
+  {
+    "id": "robinson-ei",
+    "citation": "Robinson, Michael D. (2024). Ability-Related Emotional Intelligence: An Introduction. Journal of Intelligence, 12(5), 51. DOI: 10.3390/jintelligence12050051.",
+    "url": "https://doi.org/10.3390/jintelligence12050051",
+    "supports": "Unit 3 wording on the debated definition, measurement, and predictive value of emotional-intelligence measures."
+  },
+  {
+    "id": "ritchie-tucker-drob",
+    "citation": "Ritchie, Stuart J., & Tucker-Drob, Elliot M. (2018). How Much Does Education Improve Intelligence? A Meta-Analysis. Psychological Science. DOI: 10.1177/0956797618774253.",
+    "url": "https://doi.org/10.1177/0956797618774253",
+    "supports": "Unit 3 clarification that cognitive abilities and intelligence-test scores are not immutable or a simple opposite of emotional intelligence."
+  },
+  {
+    "id": "weingarten-goodman",
+    "citation": "Weingarten, Evan, & Goodman, Joseph K. (2021). Re-examining the Experiential Advantage in Consumption: A Meta-Analysis and Review. Journal of Consumer Research, 47(6), 855–877. DOI: 10.1093/jcr/ucaa047.",
+    "url": "https://doi.org/10.1093/jcr/ucaa047",
+    "supports": "Unit 4 qualified summary of average findings and variation in the experiential-purchase literature."
+  },
+  {
+    "id": "killingsworth-kahneman-mellers",
+    "citation": "Killingsworth, Matthew A., Kahneman, Daniel, & Mellers, Barbara. (2023). Income and Emotional Well-Being: A Conflict Resolved. Proceedings of the National Academy of Sciences, 120(10). DOI: 10.1073/pnas.2208661120.",
+    "url": "https://doi.org/10.1073/pnas.2208661120",
+    "supports": "Unit 4 statement about the observed income–well-being relationship and the limits of a universal flattening threshold."
+  },
+  {
+    "id": "ilo-genai-jobs",
+    "citation": "International Labour Organization. (2025). Generative AI and Jobs: A 2025 Update.",
+    "url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+    "supports": "Unit 5 dated estimate of generative-AI occupational exposure and the distinction between exposure, transformation, and job loss."
+  },
+  {
+    "id": "nist-ai-rmf",
+    "citation": "National Institute of Standards and Technology. (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1.",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+    "supports": "Unit 5 phrasing on context-dependent AI risks, including validity, privacy, and harmful bias."
+  }
+]

@@ -1,10 +1,11 @@
 {
   "source_sha256": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184",
-  "method": "Normalized presence checked within original unit/chapter, with explicit dispositions for structural/copyedit differences. Reading paragraphs additionally checked in original order. This is not a character-for-character facsimile or independent editorial review.",
+  "method": "Normalized text presence checked within original unit/chapter, with explicit dispositions for structural/copyedit differences. Reading paragraphs additionally checked in original order. Original embedded illustrations were excluded from exports and replaced with newly drawn geometric artwork because permissions were undocumented. This is not a character-for-character facsimile or independent editorial/legal clearance.",
   "nonempty_source_paragraphs_and_cells": 3203,
-  "differences_with_explicit_dispositions": 83,
+  "differences_with_explicit_dispositions": 184,
   "unexplained_differences": 0,
-  "original_illustrations": 24,
+  "source_illustrations_excluded": 24,
+  "original_replacement_illustrations": 24,
   "reading_passages": [
     {
       "unit": 1,
@@ -136,6 +137,15 @@
       ],
       "paragraphs": 17,
       "replacement_reading": false
+    }
+  ],
+  "additional_unmapped_source_media_excluded": [
+    {
+      "source_file": "hdphoto1.wdp",
+      "source_sha256": "1a97bacc9dab20daa7a2dc7991a2ba2541a6033ee5dd073da03f567800f2f089",
+      "source_bytes": 130929,
+      "source_permission_status": "Unverified; additional Office image-layer payload linked through an extension in the protected source DOCX; excluded from Standard exports.",
+      "exported": false
     }
   ]
 }

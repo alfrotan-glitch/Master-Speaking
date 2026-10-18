@@ -1,17 +1,19 @@
 {
+  "semantic_sha256": "1232a51ff6d606a3d4ad79b67e057e73b547fd846d087bf6ce18bfe5e3a3700a",
+  "master_sha256": "f8bdd2d36e839fbc598165e952c5baa10cca4996eba5c963ecf514ca1934caa9",
   "source": "Master Speaking.docx",
   "source_sha256": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184",
   "outputs": {
-    "Master-Speaking-Standard.pdf": "243f7a2b202370be6cd43f2fed807fd684d5546b3a8e069f963440b8271705d9",
-    "Master-Speaking-Standard-print-7x10.pdf": "8b63e30fe3689532fef5952208df8dc950ab4dd6bf301d5437a2dc2a814505cf",
-    "Master-Speaking-Standard-7x10.docx": "543a43b9ce6e1e8eb2ded8e1479f896295b15eb08343617803b82722e865dcea",
-    "Master-Speaking-Standard.epub": "80647cd4d98b16a83e72c1d917b97c42c161c51b8fa208b1c50c4c9fc1e2aa4b",
-    "Master-Speaking-Standard-Front-Cover.pdf": "af4d4147e3f07d31529618003c9c590d35581d1eee6e31c324213477024a7ae0",
-    "Master-Speaking-Standard-Back-Cover.pdf": "d533e37b310b331b02100f9a00c8deb6b8f24172b48bb79482ac390039564b0b"
+    "Master-Speaking-Standard.pdf": "b385d0e49e8bc7d3dc88f087cd100930ca5be4eb24b9bbfacf74e2dd4b30d723",
+    "Master-Speaking-Standard-print-7x10.pdf": "da68ff7bd3e53c8f025be9d38f8b96558f818d042ee01be35300d9ce1f0bf938",
+    "Master-Speaking-Standard-7x10.docx": "60a1b20f5aa9b7b9a3800ac4c59be1a9b5c46d6df5d398f8e2dfd91abc1b627a",
+    "Master-Speaking-Standard.epub": "5dea10f10a6b4c15aced7347e3441dfacec09e30e6c752943320ceffb79724b3",
+    "Master-Speaking-Standard-Front-Cover.pdf": "a2ac51c16681c3f528bb1f0aeea30cbff3027129a2ac13fb7a27a2c6eb68e64d",
+    "Master-Speaking-Standard-Back-Cover.pdf": "eaf3c02f3ec3432fcf754ccc909ea5607d60fd540e2ab80ae9fdc773d1fd9636"
   },
-  "scope": "Original manuscript; original videos, readings, exercises and illustrations. Separate from the accepted self-contained edition.",
+  "scope": "Original manuscript text, readings, exercises, and external video dependencies. Supplied image assets and the attributed epigraph are excluded from exports; 24 original geometric replacements are included. Separate from the accepted self-contained edition.",
+  "publication_status": "Review proof; not approved for publication.",
+  "rights_status": "Manuscript rights, final author/publisher attribution, remaining quotations, external media, and replacement-artwork approval remain outstanding; supplied source images and the attributed epigraph are excluded from exports.",
   "checks_passed": 8,
-  "checks_run": 8,
-  "semantic_sha256": "6118c7aca632035a302b315ed77cdece9947644e028805d9d8f30117565d7d71",
-  "master_sha256": "5893686b5efe0562622bccb73ec6e6e67ced89100ac43f505777eff7248e510e"
+  "checks_run": 8
 }

@@ -4,5 +4,11 @@
     "chapter": 1,
     "question_space_after_pt": 3,
     "reason": "Use 3 pt rather than 5 pt after this chapter's questions so the final homework direction is not stranded on a page by itself. Fonts, line spacing and all original text stay unchanged."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "page_break_before_text": "Organizing Your Presentation",
+    "reason": "Keep the final presentation-outline prompts together on a fresh page instead of splitting three prompts onto a nearly blank continuation. Text, sequence, and type size stay unchanged."
   }
 ]

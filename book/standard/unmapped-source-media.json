@@ -1,0 +1,9 @@
+[
+  {
+    "source_file": "hdphoto1.wdp",
+    "source_sha256": "1a97bacc9dab20daa7a2dc7991a2ba2541a6033ee5dd073da03f567800f2f089",
+    "source_bytes": 130929,
+    "source_permission_status": "Unverified; additional Office image-layer payload linked through an extension in the protected source DOCX; excluded from Standard exports.",
+    "exported": false
+  }
+]

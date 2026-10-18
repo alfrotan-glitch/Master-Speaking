@@ -108,8 +108,8 @@
     "source_block": 18,
     "cell": null,
     "original": "You will also be asked to step outside your comfort zone.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace pressure to disclose or leave a comfort zone with voluntary, non-personal participation options."
   },
   {
     "source_block": 19,
@@ -199,8 +199,8 @@
     "source_block": 70,
     "cell": null,
     "original": "Welcome to the TOEFL House-Master speaking course designed to help you do more than simply learn English.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the malformed course/publisher wording without asserting an unverified publisher affiliation."
   },
   {
     "source_block": 71,
@@ -493,8 +493,8 @@
     "source_block": 121,
     "cell": null,
     "original": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett. “Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the attributed epigraph from publication exports pending primary-source verification and permission; the original DOCX remains unchanged."
   },
   {
     "source_block": 166,
@@ -921,7 +921,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.Which is more important: speaking or listening? Do grammar mistakes stop communication? What makes someone an excellent communicator? Before You ReadDiscuss.Which is more important: speaking or listening? Do grammar mistakes stop communication? What makes someone an excellent communicator? ",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 192,
@@ -983,8 +983,8 @@
     "source_block": 200,
     "cell": null,
     "original": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Add the missing final full stop; reading wording unchanged."
   },
   {
     "source_block": 203,
@@ -1004,8 +1004,8 @@
     "source_block": 205,
     "cell": null,
     "original": "According to the reading, communication is ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Complete the unnumbered multiple-choice stem as a clear question; the answer options and content are unchanged."
   },
   {
     "source_block": 206,
@@ -2418,8 +2418,8 @@
     "source_block": 353,
     "cell": null,
     "original": "Now students already have the language they need.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace a teacher-facing aside with a direct learner instruction."
   },
   {
     "source_block": 354,
@@ -2663,8 +2663,8 @@
     "source_block": 397,
     "cell": null,
     "original": "Read these sentences aloud. Stress the bold words.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "The source sentences are not bolded; ask learners to identify the key content words instead of referring to nonexistent bold text."
   },
   {
     "source_block": 398,
@@ -3455,7 +3455,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.Why do some people achieve their goals while others give up? Is talent more important than hard work? Have you ever failed to achieve a goal? What happened?Before You ReadDiscuss.Why do some people achieve their goals while others give up? Is talent more important than hard work? Have you ever failed to achieve a goal? What happened?",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 477,
@@ -3503,8 +3503,8 @@
     "source_block": 483,
     "cell": null,
     "original": "Researchers have found that writing down goals increases the likelihood of achieving them. People who write their goals often think more carefully about their plans and are more committed to taking action. Sharing goals with supportive friends, teachers, or family members can also provide encouragement and accountability.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace a broad causal claim with the limits and reported results of one four-week study; cite its undated institutional summary."
   },
   {
     "source_block": 484,
@@ -3860,8 +3860,8 @@
     "source_block": 535,
     "cell": null,
     "original": "Family support Self-discipline Confidence ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the stray duplicate of the final three ranking factors; those factors already appear in the six-item list."
   },
   {
     "source_block": 536,
@@ -4098,8 +4098,8 @@
     "source_block": 588,
     "cell": null,
     "original": "Focus on these useful expressions based on the TED-Ed lesson.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the incorrect TED-Ed label while retaining a topic-focused vocabulary direction."
   },
   {
     "source_block": 589,
@@ -5890,8 +5890,8 @@
     "source_block": 783,
     "cell": null,
     "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Point to the section that actually contains the expressions used in this exercise."
   },
   {
     "source_block": 784,
@@ -5926,7 +5926,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.What is emotional intelligence? Why is it important in daily life? How can emotional intelligence improve relationships?Before You ReadDiscuss.What is emotional intelligence? Why is it important in daily life? How can emotional intelligence improve relationships?Learning another language allows you to ____________________________ from different backgrounds.",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. The merged vocabulary fill-in is restored to the preceding Vocabulary Check."
   },
   {
     "source_block": 794,
@@ -5939,50 +5939,50 @@
     "source_block": 795,
     "cell": null,
     "original": "For many years, intelligence was measured mainly by IQ, or Intelligence Quotient. People believed that academic knowledge and logical reasoning were the most reliable predictors of success. However, research over the past few decades has challenged this assumption by highlighting another essential quality: emotional intelligence. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the EI/IQ comparison and cite a current review of ability-related EI."
   },
   {
     "source_block": 796,
     "cell": null,
     "original": "Emotional intelligence refers to the ability to recognize, understand, manage, and respond appropriately to emotions—both our own and those of others. Individuals with high emotional intelligence are often better at building relationships, resolving conflicts, and making thoughtful decisions under pressure. Rather than reacting impulsively, they pause, evaluate the situation, and choose a constructive response.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Present the definition as model-dependent and qualify claims about outcomes."
   },
   {
     "source_block": 797,
     "cell": null,
     "original": "Psychologist Daniel Goleman popularized the concept of emotional intelligence by identifying five essential components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Attribute the five-part framework and clarify that it is not the sole definition of EI."
   },
   {
     "source_block": 798,
     "cell": null,
     "original": "Emotional intelligence plays a crucial role in both personal and professional life. In the workplace, managers with strong emotional intelligence are more likely to inspire trust, encourage teamwork, and resolve disagreements constructively. Employees who feel respected and understood are generally more motivated and productive.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace broad workplace outcome claims with qualified, non-deterministic language."
   },
   {
     "source_block": 799,
     "cell": null,
     "original": "In education, emotional intelligence contributes to academic success by improving collaboration, communication, and resilience. Students with strong emotional intelligence are often better equipped to cope with stress, receive constructive feedback, and remain focused on long-term improvement instead of becoming discouraged by temporary failure.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the academic-success claim and acknowledge other influences."
   },
   {
     "source_block": 800,
     "cell": null,
     "original": "Fortunately, emotional intelligence is not a fixed trait. Unlike IQ, it can be developed through conscious practice. Reflecting on one's emotions, listening actively, seeking feedback, and responding thoughtfully rather than impulsively are all practical strategies for strengthening emotional intelligence.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the false contrast with IQ; distinguish practice of skills from the contested measurement of EI and cite the relevant reviews."
   },
   {
     "source_block": 801,
     "cell": null,
     "original": "Ultimately, success depends not only on what we know but also on how effectively we understand ourselves and interact with others. In an increasingly interconnected world, emotional intelligence has become one of the most valuable skills a person can develop.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the claim that EI is one of the most valuable determinants of success."
   },
   {
     "source_block": 805,
@@ -6310,8 +6310,8 @@
     "source_block": 854,
     "cell": null,
     "original": "(Students evaluate, argue, and defend opinions.)",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing stage direction with a learner-facing instruction."
   },
   {
     "source_block": 855,
@@ -7696,8 +7696,8 @@
     "source_block": 1033,
     "cell": null,
     "original": "Use a rising tone when asking a question, expressing uncertainty, and introducing an idea. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Avoid presenting one intonation pattern as a context-free rule or assuming a dialect."
   },
   {
     "source_block": 1034,
@@ -7731,8 +7731,8 @@
     "source_block": 1038,
     "cell": null,
     "original": "Use a falling tone when:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the intonation guidance rather than prescribing a universal rule."
   },
   {
     "source_block": 1039,
@@ -7815,8 +7815,8 @@
     "source_block": 1051,
     "cell": null,
     "original": "Emotional intelligence is important for everyone.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Make the key-word stress target visible in the example."
   },
   {
     "source_block": 1053,
@@ -8137,8 +8137,8 @@
     "source_block": 1080,
     "cell": null,
     "original": "Explain the difference between goals and systems. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace the unrelated goals-and-systems outline item with a prompt aligned to the Unit 3 topic."
   },
   {
     "source_block": 1081,
@@ -8480,8 +8480,8 @@
     "source_block": 1103,
     "cell": null,
     "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Point to the section that actually contains the expressions used in this exercise."
   },
   {
     "source_block": 1104,
@@ -8523,7 +8523,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.What do you think the reading will say about the relationship between money and happiness? Do you think the author will agree or disagree with the title? Why? List three things that you think bring people happiness besides money.Before You ReadDiscuss.What do you think the reading will say about the relationship between money and happiness? Do you think the author will agree or disagree with the title? Why? List three things that you think bring people happiness besides money.",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 1116,
@@ -8550,15 +8550,15 @@
     "source_block": 1119,
     "cell": null,
     "original": "However, once people's basic needs are met, the connection between money and happiness becomes more complicated. Research suggests that after reaching a comfortable standard of living, earning more money does not always lead to greater life satisfaction. Instead, people often become accustomed to their higher income and begin wanting even more. This phenomenon is known as the hedonic treadmill, where increased wealth quickly becomes the new normal.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the overgeneralized income threshold and distinguish association from causation using the 2023 reanalysis."
   },
   {
     "source_block": 1120,
     "cell": null,
     "original": "Another important factor is how people choose to spend their money. Studies indicate that spending money on meaningful experiences, such as traveling, learning new skills, or spending time with loved ones, often brings greater happiness than buying expensive possessions. Likewise, helping others through charity or generosity can create a stronger sense of purpose and personal satisfaction.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the experiential-purchase claim using a meta-analysis and avoid promising a uniform happiness effect."
   },
   {
     "source_block": 1121,
@@ -8767,8 +8767,8 @@
     "source_block": 1152,
     "cell": null,
     "original": "_____ Spending money on experiences may create longer-lasting happiness than buying possessions. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Make the true/false item answerable from the reading; “longer-lasting” is not stated there."
   },
   {
     "source_block": 1153,
@@ -9019,8 +9019,8 @@
     "source_block": 1210,
     "cell": null,
     "original": "If someone offered you $1 million, but you could never see your family again, would you accept? Why or why not? ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the discussion hypothetical rather than asking learners to disclose or imagine a personal family separation."
   },
   {
     "source_block": 1211,
@@ -9089,8 +9089,8 @@
     "source_block": 1222,
     "cell": null,
     "original": "Focus on these useful expressions based on the TED-Ed lesson.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the incorrect TED-Ed label while retaining a topic-focused vocabulary direction."
   },
   {
     "source_block": 1223,
@@ -9250,15 +9250,15 @@
     "source_block": 1223,
     "cell": 22,
     "original": "a behavior or characteristic found in all human societies",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the absolute definition of “human universal”."
   },
   {
     "source_block": 1223,
     "cell": 23,
     "original": "Helping family members is considered a human universal.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Present the disputed example as a question rather than an established universal."
   },
   {
     "source_block": 1223,
@@ -10174,8 +10174,8 @@
     "source_block": 1325,
     "cell": null,
     "original": "Choose one statement. Work in two teams. One team agrees, and the other disagrees. Give reasons and Student A",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Repair a corrupted debate direction that ends with a stray “Student A” label; align with the parallel debate instruction."
   },
   {
     "source_block": 1326,
@@ -10405,29 +10405,29 @@
     "source_block": 1346,
     "cell": 6,
     "original": "expeRIence",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct primary stress to the second syllable."
   },
   {
     "source_block": 1346,
     "cell": 7,
     "original": "ex pe RI ence",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the marked primary-stress syllable."
   },
   {
     "source_block": 1346,
     "cell": 8,
     "original": "geNErosity",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct primary stress to the third syllable."
   },
   {
     "source_block": 1346,
     "cell": 9,
     "original": "ge NE ros i ty",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the marked primary-stress syllable."
   },
   {
     "source_block": 1346,
@@ -10447,29 +10447,29 @@
     "source_block": 1346,
     "cell": 12,
     "original": "reSPONsibility",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct primary stress to “-bil-”."
   },
   {
     "source_block": 1346,
     "cell": 13,
     "original": "re SPON si bil i ty",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the marked primary-stress syllable."
   },
   {
     "source_block": 1346,
     "cell": 14,
     "original": "opportuNIty",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct primary stress to “-tu-”."
   },
   {
     "source_block": 1346,
     "cell": 15,
     "original": "op por tu NI ty",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the marked primary-stress syllable."
   },
   {
     "source_block": 1346,
@@ -10489,15 +10489,15 @@
     "source_block": 1346,
     "cell": 18,
     "original": "psyCHOlogical",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct primary stress to “-log-”."
   },
   {
     "source_block": 1346,
     "cell": 19,
     "original": "psy CHO log i cal",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the marked primary-stress syllable."
   },
   {
     "source_block": 1346,
@@ -11365,7 +11365,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.What advantages of AI do you expect to read about? What risks or challenges might the reading mention? Do you think the author will have a positive, negative, or balanced opinion about AI? Why?Before You ReadDiscuss.What advantages of AI do you expect to read about? What risks or challenges might the reading mention? Do you think the author will have a positive, negative, or balanced opinion about AI? Why?",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 1431,
@@ -11392,8 +11392,8 @@
     "source_block": 1434,
     "cell": null,
     "original": "However, AI also raises important questions. Some experts worry that increased automation may replace certain jobs, forcing workers to develop new skills. Others are concerned about privacy, since AI systems often depend on large amounts of personal data. In addition, AI can sometimes produce inaccurate or biased information, reminding us that human judgment remains essential.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Date and qualify the generative-AI employment claim, distinguishing exposure from job loss; cite ILO and NIST risk guidance."
   },
   {
     "source_block": 1435,
@@ -11756,8 +11756,8 @@
     "source_block": 1496,
     "cell": null,
     "original": "Share your ideas about the quad:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the apparent “quad” typo; the activity concerns a quotation."
   },
   {
     "source_block": 1497,
@@ -11882,8 +11882,8 @@
     "source_block": 1518,
     "cell": null,
     "original": "ducation, employment, healthcare, communication, entertainment ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Restore the missing initial E."
   },
   {
     "source_block": 1519,
@@ -12512,8 +12512,8 @@
     "source_block": 1582,
     "cell": null,
     "original": "magine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power? ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Restore the missing initial I; do not expand or replace the original challenge question."
   },
   {
     "source_block": 1583,
@@ -13079,15 +13079,15 @@
     "source_block": 1642,
     "cell": null,
     "original": "Students should give a 1-minute prediction.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing wording with a direct learner instruction."
   },
   {
     "source_block": 1643,
     "cell": null,
     "original": "They must include:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Use a clear learner-facing label for the following response requirements."
   },
   {
     "source_block": 1644,
@@ -13149,8 +13149,8 @@
     "source_block": 1674,
     "cell": null,
     "original": "When native speakers speak naturally, the words in a sentence often connect, rather than being pronounced as separate units.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the assumption that only native speakers link words and acknowledge variation."
   },
   {
     "source_block": 1675,
@@ -13163,15 +13163,15 @@
     "source_block": 1676,
     "cell": null,
     "original": "turn_it_off → turnitoffpick_it_up → pickitupwork_in → workindepend_on → dependon",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Retain the phrases as practice targets without suggesting joined spelling is a pronunciation transcription. Phrases are retained as separate practice targets; the joined source is not copied as a pronunciation transcription."
   },
   {
     "source_block": 1677,
     "cell": null,
     "original": "This is especially useful for your students because it helps them sound more fluent and natural, particularly during presentations and extended speaking.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing language and clarify the status of the written examples."
   },
   {
     "source_block": 1678,
@@ -13184,8 +13184,8 @@
     "source_block": 1679,
     "cell": null,
     "original": "Have students practice these phrases first slowly, then naturally:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing wording with a direct learner instruction."
   },
   {
     "source_block": 1680,
@@ -13268,8 +13268,8 @@
     "source_block": 1691,
     "cell": null,
     "original": "Students read each sentence three times:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing wording with a direct learner instruction."
   },
   {
     "source_block": 1692,
@@ -14326,7 +14326,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.Do you think people's expectations of marriage have changed over time?Which is more difficult: falling in love or maintaining a long-term relationship? Which is more difficult: falling in love or maintaining a long-term relationship? Before You ReadDiscuss.Do you think people's expectations of marriage have changed over time?Which is more difficult: falling in love or maintaining a long-term relationship? Which is more difficult: falling in love or maintaining a long-term relationship? ",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 1828,
@@ -14654,8 +14654,8 @@
     "source_block": 1879,
     "cell": null,
     "original": "(Students evaluate, argue, and defend opinions.)",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing stage direction with a learner-facing instruction."
   },
   {
     "source_block": 1880,
@@ -14850,8 +14850,8 @@
     "source_block": 1931,
     "cell": null,
     "original": "Focus on these useful expressions based on the TED-Ed lesson.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the incorrect TED-Ed label while retaining a topic-focused vocabulary direction."
   },
   {
     "source_block": 1932,
@@ -15907,8 +15907,8 @@
     "source_block": 2044,
     "cell": null,
     "original": "Students should give a 1-minute prediction.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove a teacher-facing one-minute prediction note that is misplaced between discussion and the pronunciation/research chapter."
   },
   {
     "source_block": 2045,
@@ -15928,8 +15928,8 @@
     "source_block": 2047,
     "cell": null,
     "original": "Skill: Linking Sounds",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the mislabeled pronunciation skill."
   },
   {
     "source_block": 2048,
@@ -15942,15 +15942,15 @@
     "source_block": 2049,
     "cell": null,
     "original": "This is a very useful pronunciation problem for B2+ students, especially when they are speaking about relationships, experiences, and research.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove an unsupported CEFR-level assumption and teacher-facing commentary; it is not learner content."
   },
   {
     "source_block": 2050,
     "cell": null,
     "original": "The -ed ending has three possible pronunciations:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "State the ending pattern accurately and avoid presenting mixed-dialect full-word transcriptions."
   },
   {
     "source_block": 2051,
@@ -15963,36 +15963,36 @@
     "source_block": 2052,
     "cell": null,
     "original": "After a voiceless sound such as /k/, /p/, /s/, /ʃ/, /tʃ/, and /f/.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Clarify the voicing rule and its /t/ exception."
   },
   {
     "source_block": 2053,
     "cell": null,
     "original": "liked → /laɪkt/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2054,
     "cell": null,
     "original": "kissed → /kɪst/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2055,
     "cell": null,
     "original": "discussed → /dɪˈskʌst/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2056,
     "cell": null,
     "original": "helped → /helpt/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2057,
@@ -16012,36 +16012,36 @@
     "source_block": 2059,
     "cell": null,
     "original": "After a voiced sound such as /b/, /g/, /v/, /z/, /m/, /n/, /l/, and vowels.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Clarify the voicing rule and its /d/ exception."
   },
   {
     "source_block": 2060,
     "cell": null,
     "original": "loved → /lʌvd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2061,
     "cell": null,
     "original": "shared → /ʃerd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2062,
     "cell": null,
     "original": "learned → /lɜːrnd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2063,
     "cell": null,
     "original": "showed → /ʃoʊd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2064,
@@ -16068,29 +16068,29 @@
     "source_block": 2067,
     "cell": null,
     "original": "wanted → /ˈwɒntɪd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2068,
     "cell": null,
     "original": "needed → /ˈniːdɪd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2069,
     "cell": null,
     "original": "respected → /rɪˈspektɪd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2070,
     "cell": null,
     "original": "committed → /kəˈmɪtɪd/ ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Keep the example word but remove a full-word IPA form that mixed dialect conventions; the ending category is specified separately."
   },
   {
     "source_block": 2071,
@@ -16362,8 +16362,8 @@
     "source_block": 2088,
     "cell": null,
     "original": "Research your topic using reliable sources.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Clarify the research direction without duplicating the topic-selection instruction."
   },
   {
     "source_block": 2089,
@@ -16376,8 +16376,8 @@
     "source_block": 2090,
     "cell": null,
     "original": "Choose ONE of the following questions:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Resolve the conflict between selecting a topic and selecting a single question."
   },
   {
     "source_block": 2091,
@@ -17112,7 +17112,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.What does the word globalization mean to you? How many products do you use every day that were made in another country? How has the internet changed the way people communicate around the world?Before You ReadDiscuss.What does the word globalization mean to you? How many products do you use every day that were made in another country? How has the internet changed the way people communicate around the world?Studying abroad can create __________ for young people.",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. The merged vocabulary fill-in is restored to the preceding Vocabulary Check."
   },
   {
     "source_block": 2200,
@@ -17664,8 +17664,8 @@
     "source_block": 2298,
     "cell": null,
     "original": "Focus on these useful expressions based on the TED-Ed lesson.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the incorrect TED-Ed label while retaining a topic-focused vocabulary direction."
   },
   {
     "source_block": 2299,
@@ -18070,8 +18070,8 @@
     "source_block": 2334,
     "cell": null,
     "original": "True or False",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the comprehension subsection lettering sequence to A/B/C."
   },
   {
     "source_block": 2335,
@@ -19260,8 +19260,8 @@
     "source_block": 2478,
     "cell": null,
     "original": "Choose ONE of the following questions:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Resolve the conflict between the topic heading and instruction to choose a question."
   },
   {
     "source_block": 2479,
@@ -19274,8 +19274,8 @@
     "source_block": 2480,
     "cell": null,
     "original": "Research your topic and answer:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Avoid repeating the research direction; the following questions guide the selected topic."
   },
   {
     "source_block": 2481,
@@ -19883,8 +19883,8 @@
     "source_block": 2554,
     "cell": null,
     "original": "Use this idea to discuss about the title above. Use as many vocabulary expressions as you can. ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the unidiomatic “discuss about” construction."
   },
   {
     "source_block": 2555,
@@ -19898,7 +19898,7 @@
     "cell": null,
     "original": "Before You ReadDiscuss.How many countries do you think use English as an official or widely used language?What areas do you think English has the strongest influence on?Do you think everyone in the world should learn English?Before You ReadDiscuss.How many countries do you think use English as an official or widely used language?What areas do you think English has the strongest influence on?Do you think everyone in the world should learn English?",
     "retained_normalized": false,
-    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained. Merged vocabulary item retained where present."
+    "disposition": "Repeated Before You Read text collapsed; each distinct original question retained."
   },
   {
     "source_block": 2563,
@@ -20177,8 +20177,8 @@
     "source_block": 2603,
     "cell": null,
     "original": "Answer the Questions. Answer in complete sentences.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Distinguish the opinion/discussion prompts from the preceding comprehension questions; the questions themselves are unchanged."
   },
   {
     "source_block": 2604,
@@ -20471,8 +20471,8 @@
     "source_block": 2651,
     "cell": null,
     "original": "Focus on these useful expressions based on the TED-Ed lesson.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove the incorrect TED-Ed label while retaining a topic-focused vocabulary direction."
   },
   {
     "source_block": 2652,
@@ -21010,8 +21010,8 @@
     "source_block": 2708,
     "cell": null,
     "original": "They must also use at least two expressions from the vocabulary section, such as:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Point to the correct vocabulary section and use only listed examples."
   },
   {
     "source_block": 2709,
@@ -21038,15 +21038,15 @@
     "source_block": 2712,
     "cell": null,
     "original": "prohibitive ",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove an example not listed in the referenced Vocabulary Preview."
   },
   {
     "source_block": 2713,
     "cell": null,
     "original": "far-reaching consequences",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove an example not listed in the referenced Vocabulary Preview."
   },
   {
     "source_block": 2716,
@@ -21402,8 +21402,8 @@
     "source_block": 2737,
     "cell": null,
     "original": "The Future of Marriage",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct a copied heading that does not match the questions below it; chapter titles are unchanged."
   },
   {
     "source_block": 2738,
@@ -21493,15 +21493,15 @@
     "source_block": 2760,
     "cell": null,
     "original": "One of the biggest differences between natural English pronunciation and careful learner pronunciation is the schwa /ə/.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove universal pronunciation claims and acknowledge accent/context variation."
   },
   {
     "source_block": 2761,
     "cell": null,
     "original": "The schwa is the weak, relaxed vowel sound found in many unstressed syllables. Learning to use it makes speech smoother, faster, and more natural—especially during presentations.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Make the learner-facing guidance inclusive of different accents and avoid stigmatizing clear speech."
   },
   {
     "source_block": 2762,
@@ -21514,8 +21514,8 @@
     "source_block": 2763,
     "cell": null,
     "original": "see how the unstressed vowel becomes weak:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Correct the capitalization and replace an unsupported universal pronunciation direction with a model-accent listening task."
   },
   {
     "source_block": 2764,
@@ -21563,8 +21563,8 @@
     "source_block": 2770,
     "cell": null,
     "original": "The first vowel in about is not pronounced strongly like the “a” in cat. It is relaxed: about → ə-BOUT",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Qualify the example and acknowledge variation."
   },
   {
     "source_block": 2771,
@@ -21577,8 +21577,8 @@
     "source_block": 2772,
     "cell": null,
     "original": "These words are especially useful for today's presentation topic:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace mixed-dialect IPA with an accent-aware listening direction."
   },
   {
     "source_block": 2773,
@@ -21640,8 +21640,8 @@
     "source_block": 2781,
     "cell": null,
     "original": "Students should notice that unstressed vowels are often reduced, rather than pronounced as clearly as stressed vowels.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove teacher-facing wording and avoid a context-free pronunciation rule."
   },
   {
     "source_block": 2785,
@@ -21661,8 +21661,8 @@
     "source_block": 2787,
     "cell": null,
     "original": "to → /tə/a → /ə/the → /ðə/for → /fə/of → /əv/ or /ə/can → /kən/",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Separate the jammed examples and avoid presenting one set of weak forms as universal."
   },
   {
     "source_block": 2788,
@@ -21689,8 +21689,8 @@
     "source_block": 2791,
     "cell": null,
     "original": "I want tə learn English.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace a single presumed “natural speech” transcription with an accent-aware comparison."
   },
   {
     "source_block": 2792,
@@ -21717,8 +21717,8 @@
     "source_block": 2795,
     "cell": null,
     "original": "English is ə global language.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace a single presumed “natural speech” transcription with an accent-aware comparison."
   },
   {
     "source_block": 2796,
@@ -21738,8 +21738,8 @@
     "source_block": 2798,
     "cell": null,
     "original": "Ask students to underline the syllables that should contain a schwa /ə/.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing directions and avoid imposing a single dialect."
   },
   {
     "source_block": 2799,
@@ -21801,8 +21801,8 @@
     "source_block": 2807,
     "cell": null,
     "original": "Then have students say the words first carefully, and then naturally.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Replace teacher-facing wording and preserve variation across accents."
   },
   {
     "source_block": 2810,
@@ -21997,8 +21997,8 @@
     "source_block": 2815,
     "cell": null,
     "original": "Research your topic using reliable sources.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Clarify the research direction without duplicating the topic-selection instruction."
   },
   {
     "source_block": 2816,
@@ -22011,22 +22011,22 @@
     "source_block": 2817,
     "cell": null,
     "original": "Choose ONE of the following questions:",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Resolve the conflict between selecting a topic and selecting a single question."
   },
   {
     "source_block": 2818,
     "cell": null,
     "original": "Research your topic using reliable sources.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove a repeated research direction."
   },
   {
     "source_block": 2819,
     "cell": null,
     "original": "Choose ONE of the following questions.",
-    "retained_normalized": true,
-    "disposition": "Retained in its original unit/chapter (normalization and list-label handling only)."
+    "retained_normalized": false,
+    "disposition": "Remove a repeated, conflicting question-selection direction."
   },
   {
     "source_block": 2820,

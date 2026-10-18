@@ -1,80 +1,64 @@
-# Master Speaking — Original-manuscript course edition
+# Master Speaking — Original-manuscript Standard review proof
 
-## What this edition is
+> **Status: review proof; not approved for publication or public release.** A passing build is not author, publisher, legal, accessibility, printer, or course-owner approval.
 
-This is a separate, source-faithful production edition of **Master Speaking.docx**, not a revision of the accepted self-contained edition. The original manuscript and the previously accepted PDF, Word, EPUB and semantic masters remain unchanged. The original course text takes priority over replacement stories or rewritten readings.
+This separate edition reconstructs the original `Master Speaking.docx` with guarded copyedits and limited structural/layout repairs. It preserves the 32 source-backed chapter titles, original readings, video-based listening lessons, and exercises. It is not the accepted self-contained edition.
 
-The book uses the approved edition's green visual identity, Source Serif/Source Sans typography, 7 × 10 inch page design, styled tables, running heads, linked contents and navigation. Every chapter opens on its own page. Unit openers begin on recto pages.
+## Scope decisions
 
-### Files
+The requester chose print PDF + EPUB, stated they hold or represent manuscript rights, directed that uncleared third-party material be removed or replaced, and said course-owner confirmations can be supplied. These are authorization and workflow decisions, not independent proof of ownership, third-party clearance, video intent, or publication metadata. The source DOCX and unprefixed accepted-edition files remain unchanged.
 
-| File | Purpose |
-|---|---|
-| `Master-Speaking-Standard.pdf` | 162-page reader PDF, including front cover |
-| `Master-Speaking-Standard-print-7x10.pdf` | 161-page interior, without cover |
-| `Master-Speaking-Standard-7x10.docx` | Editable Word edition |
-| `Master-Speaking-Standard.epub` | Reflowable EPUB with its own edition identifier |
-| `Master-Speaking-Standard-Front-Cover.pdf` | Separate front panel |
-| `Master-Speaking-Standard-Back-Cover.pdf` | Separate back panel with video-dependent course description |
-| `Master-Speaking-Standard-Edition.zip` | These six files plus this review and the reading guide |
+The Standard export excludes the attributed epigraph pending primary-source verification/permission. It replaces all **24 canonical source illustrations** with original geometric artwork generated in `book/tools/standard_artwork.py` from generic shapes and course-owned labels. Text uses the bundled Source Sans 3 fonts under the SIL Open Font License (`book/assets/fonts/source-sans-LICENSE.md`); no supplied image, video still, logo, or speaker likeness is used by that renderer. A further WDP image-layer object in the source package is separately inventoried and excluded. Original source media remains only in the protected source DOCX; an old QA contact sheet containing that source imagery was removed. The 35-row `book/standard/publication-clearance.csv` records progress and open evidence requirements; it is not a clearance certificate.
 
-The cover panels are **not** a printer-imposed wrap. Spine width, bleed, stock, binding and printer approval are still required.
+The eight listening lessons remain external and unembedded. The replacement resource cards are generic and make course-owner confirmation explicit. Independently located official video candidates and evidence are in `book/standard/video-dependencies.json`; candidate matching is not owner confirmation or permission.
 
-## Manuscript preservation
+## Current files
 
-- All eight original reading passages are retained: **75 reading paragraphs**, checked against the source in their original order. The missing final full stop in Unit 1 is repaired; readings have not been shortened or replaced.
-- All eight original video-based listening lessons and their exercises are retained. No fictional replacement listening scripts are inserted.
-- The original lesson sequence, discussions, research tasks, vocabulary tables and pronunciation material are retained, subject to the recorded copyediting and structural repairs below.
-- The 32 chapter titles use the same exact, source-backed title plan as the approved design. Original learning strands remain as subtitles; legitimate repeated titles remain.
-- All 24 source illustrations are retained. Their staged source files match the manuscript's embedded image bytes. The GIF has a derived PNG for formats that require it; its original is retained in the source assets. No stock-image replacement or new diagram silently substitutes for content-bearing artwork.
-- The full Unit 5 opener title, including “Artificial Intelligence,” is retained.
+- `Master-Speaking-Standard.pdf` — 163 pages including the front cover.
+- `Master-Speaking-Standard-print-7x10.pdf` — 162-page 7 × 10 inch print interior, without a cover.
+- `Master-Speaking-Standard.epub` — reflowable EPUB, 47 spine items.
+- `Master-Speaking-Standard-7x10.docx` — editable Word proof.
+- `Master-Speaking-Standard-Front-Cover.pdf` and `Master-Speaking-Standard-Back-Cover.pdf` — separate cover panels, not an imposed wrap.
 
-The source ledger covers **3,203 nonempty original paragraphs/table cells**. Normalized presence is checked within the original unit/chapter, with **83 explicitly explained differences**, chiefly regenerated contents, heading presentation, duplicate-text cleanup and copyedits. There are **zero unexplained differences**. This is a scoped normalized-content audit, not a claim that every character is unchanged or that an independent editor has approved every sentence.
+The reader PDF and panels identify the review-only status. Printer trim, bleed, spine, stock, binding, imposition, and physical proof remain outstanding.
 
-### Recorded changes, not wholesale rewriting
+## Editorial and source audit
 
-`book/standard/copyedits.json` contains seven exact-match, source-indexed edits: a final full stop; a missing article; the missing initial letters in “Education” and “Imagine”; the inappropriate true/false direction before eight open questions; “your choice” in a direct instruction; and initial capitalization in a schwa instruction.
+The Standard model has **105 exact-source-block copyedits** (including eight removals), **13 structural edits**, and two layout overrides. These are recorded in `book/standard/copyedits.json`, `structural-edits.json`, and `layout-overrides.json`. They address confirmed copy errors, repeated material, directions, a Unit 1 listening stem, sensitive participation language, selected research claims, and limited pagination issues; they are not a wholesale rewrite. Chapter titles were preserved. The Unit 5 connected-speech prompts are not represented as phonetic spellings; the Unit 6 *-ed* explanation/stress examples were corrected, while remaining dialect-specific IPA still requires specialist review.
 
-The reconstruction log also records six “Chooses 10” → “Choose 10” imperative repairs, splitting jammed options/items, repairing activity numbering, restoring a missing Student A label, numbering the two existing Unit 6 speaking challenges, and formatting existing topic/clinic labels as headings rather than numbered questions. Repeated Before You Read blocks are collapsed without removing distinct questions; merged vocabulary items are retained. Whitespace, apostrophes and list presentation are normalized.
+The source ledger covers **3,203 nonempty source paragraphs/table cells**. It records **184 normalized differences** with explicit dispositions and zero unexplained differences. All **75 original reading paragraphs** remain in source order. This method is not a character-for-character facsimile or independent every-word proof. Eight selected references support a limited set of qualified claims; they do not validate every factual assertion or establish publication rights.
 
-The repeated Unit 4 title inside Unit 6's before-listening section is aligned with the original Unit 6 lesson title. This is an **internal consistency repair**, not verification of the recording's identity.
+## Build, package, and visual checks
 
-A localized 3 pt question-spacing override in Unit 7 Chapter 1 prevents its final homework direction from occupying an otherwise empty page. No font size, line spacing or course text is reduced.
+Latest build evidence in `book/standard/production-checks.json`:
 
-## Checks completed
+- **3,422 master text blocks** checked in PDF, DOCX, and EPUB; zero missing in each.
+- 162 print-interior pages; unit starts at physical pages 9, 25, 43, 61, 81, 101, 121, and 141.
+- 24 image placements; effective print resolution 327–444 dpi; no automated print issues.
+- Eight production checks pass: Word structure; cross-format coverage; print geometry; automated page proof; EPUB structure; official EPUBCheck 5.3.0 (zero errors and warnings); 32 chapter/title/navigation checks; and 77 spread metrics with zero flags.
+- `book/tools/qa_standard.py` passes the separate freshness, identity, protected-input, source-image exclusion, and epigraph-removal checks.
+- Six overview contact sheets cover all 162 physical interior pages. All 24 replacement illustrations were visually checked in a contact sheet, and selected full-size pages plus both cover panels and the rights notice were inspected. The SMART labels are readable. Generic listening cards do not identify a recording and state that owner confirmation is required.
 
-The separate original-manuscript build passed eight production checks: Word structure, cross-format text coverage, print geometry, automated page proof, EPUB structure, official EPUBCheck, chapter/contents/navigation checks, and spread metrics. The independent edition-identity/freshness check also passes.
+The inspection record is `book/standard/qa/reviewed.json`; generated files listed in `candidates.json` are candidates, not proof that someone inspected them. The scope does not amount to an every-word/full-size proof, native Word pagination proof, EPUB device test, tagged-PDF/accessibility certification, assistive-technology test, physical printer proof, or independent legal/editorial sign-off. A selected reference appendix and passing EPUBCheck are not accessibility or legal certification.
 
-- **3,422 master text blocks** found in each of PDF, Word and EPUB; zero missing blocks.
-- **161 interior pages**, zero reported automated print/proof issues and zero spread-metric flags.
-- **32/32 chapter openings** checked against the title plan, contents and navigation.
-- Official **EPUBCheck 5.3.0: zero errors and zero warnings**.
-- All six delivered file hashes, the semantic master, source manuscript and protected prior-edition hashes are recorded.
+## Open release conditions
 
-### Visual review scope
+1. **Videos:** Obtain owner confirmation of exact recording/version, playback, exercise alignment, availability, permissions, and caption/transcript plan for each unit. Unit 1's exercise content matches a TED-Ed candidate but its old still appears to show a different School of Life video. Unit 3's exercise content matches a TED-Ed candidate, but its old still identity remains unresolved. Units 2 and 4–8 have transcript-content candidates only. None is confirmed by the course owner. Do not use the prior-edition media register as evidence for this Standard edition.
+2. **Rights and attribution:** The requester says they hold or represent manuscript rights, but no supporting authority record or final rights statement has been supplied. Independently confirm author/publisher/imprint metadata and clear remaining text/quotation/mark/media uses, video licenses, transcripts/captions, references, and replacement-artwork use. Excluding the original images and epigraph does not clear the rest of the manuscript.
+3. **Metadata and printer:** Obtain final author/publisher/copyright line and required market metadata (for example ISBN/price/legal deposit if applicable), printer specifications, and a physical proof. The covers are separate 7 × 10 panels only.
+4. **Access:** PDF files are not tagged-accessible PDFs and have no certification. EPUB structure/image descriptions and EPUBCheck do not establish conformance. Test on actual devices and with assistive technology; review reading order and replacement-image descriptions.
+5. **Pronunciation/teaching:** Commission specialist review of remaining IPA and model accent. Keep personal/relationship prompts optional and allow general or fictional answers. No learner level, dialect, first language, classroom pilot, suitability, or learning-effect claim has been established.
 
-All interior pages were examined as overview contact sheets during production; selected full-size pages were inspected, including the eight listening openings, the Unit 7 homework repair and the Unit 8 schwa page. Both cover panels and a contact sheet of the 24 original illustrations were inspected. Corrected full-size pages were rechecked during iteration. Candidate generation alone is not counted as inspection; the exact scope and hashes are in `book/standard/qa/reviewed.json`.
+Do not publish, distribute, or describe this candidate as release-ready until the appropriate owners/reviewers complete and document these conditions.
 
-This is **not** a complete independent, every-word/full-size proof of all pages. Native Microsoft Word pagination, physical print proofs, learner/teacher pilot approval, assistive-technology testing and EPUB-device testing remain outstanding. The PDF is not a tagged-accessibility publication. EPUB descriptions and navigation do not constitute accessibility conformance certification; the supplied goal-setting mind map lacks a complete text transcription.
-
-## Items requiring course-owner/publisher decisions
-
-1. **Recordings:** the source document contains no external hyperlink relationships identifying the videos. Confirm exact titles, speakers, URLs, versions, availability, captions/transcripts, classroom-use conditions and exercise-to-recording alignment before teaching the listening lessons. None has been externally verified in this work.
-2. **Title/thumbnail alignment:** Unit 2's original prediction section/thumbnail says “Why You Should Stop Setting Goals (Yes, Really)” while the lesson heading is “The Art of Goal Setting.” Unit 3's thumbnail says “Are You Emotionally Mature?” while its lesson title is “The Power of Emotional Intelligence.” Unit 5's thumbnail says “Things Are Going to Get Weird.” These source differences are retained, not invented away. Generic “TED-Ed lesson” directions also require checking against the actual recordings, since several source stills show TED-style stages rather than TED-Ed animation.
-3. **Artwork/quotation permissions:** preserving a supplied image or quotation does not establish permission to publish it. Clear all source photographs, video stills, marks, the goal-setting mind map and the attributed epigraph; do not infer endorsement. Full artwork provenance is recorded separately.
-4. **Image quality:** the original Unit 2 opener and reading illustration place at approximately **122 dpi and 143 dpi**, below the 150 dpi advisory threshold. The SMART mind map is especially small-text artwork. Obtain lawful higher-resolution originals and a complete text equivalent; upsampling cannot recover missing detail.
-5. **Original factual/pedagogical claims:** retained passages include unsourced research assertions, the Unit 3 contrast “Unlike IQ” about development, and general claims about goals, money and happiness. These require a factual/reference review rather than an unsupported certification. The Unit 6 clinic's “Skill: Linking Sounds” label precedes material on -ed endings; confirm the intended label. Mixed-dialect IPA and all pronunciation instruction need specialist review. These are not represented as fully validated.
-6. **Teacher materials:** the earlier edition's fictional-listening scripts, related answers and teacher-book page references are not validated keys for this standard edition. No new video answer keys are fabricated. The standard-edition ZIP intentionally does not include those other-edition supplements.
-
-**Status:** manuscript-based production/review edition. Not cleared for unrestricted commercial printing or sale. A controlled teacher-led pilot should use only prepared and lawfully available materials; unresolved video lessons must be prepared or deferred, not improvised from unverified answer keys.
-
-## Reproduce and inspect
+## Reproduction
 
 ```sh
 bash book/tools/bootstrap.sh
-python book/tools/standard_edition.py
-python book/tools/qa_standard.py
-python book/tools/review_standard.py
+python3 book/tools/standard_edition.py --source-only
+python3 book/tools/standard_edition.py
+python3 book/tools/qa_standard.py
+python3 book/tools/review_standard.py
 ```
 
-The build uses ignored `book/standard/work/` staging and never invokes the replacement edition's full parser build. It reconstructs from a fresh extraction of the original Word manuscript, applies guarded copyedits, generates separate exports and validates protected files. `review_standard.py` produces candidates only; re-inspection is needed after a changed build. A new export hash invalidates earlier visual-review evidence until reviewed again.
+The Standard builder stages the original manuscript and shared renderers under ignored `book/standard/work/`, then makes only the prefixed Standard files. It does not rebuild the accepted self-contained edition. `review_standard.py` renders current proof candidates; after actual inspection, update `book/standard/qa/reviewed.json` and rerun the freshness check as appropriate.

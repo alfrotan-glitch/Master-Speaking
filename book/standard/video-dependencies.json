@@ -1,70 +1,200 @@
 {
-  "source_external_hyperlink_relationships": 0,
-  "videos_embedded": false,
+  "research_as_of": "2026-10-18",
+  "source_external_hyperlink_relationships_in_original_docx": 0,
+  "videos_embedded_in_edition": false,
+  "course_owner_confirmation": "NOT VERIFIED for every lesson; the records below are independently located candidates, not confirmation of the course owner's intended recording.",
+  "rights_and_permissions": "UNVERIFIED for all recordings, transcripts, and stills. Inclusion in this register is not a license or permission grant.",
+  "method": "Compared exact official lesson/talk pages and transcripts with the printed comprehension questions where available. A chapter title or still alone was not treated as proof. Playback, classroom availability, captions, and permission were not verified.",
   "lessons": [
     {
       "unit": 1,
       "original_lesson_title": "Are You a Good Listener?",
       "source_video_image": "image3.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+      "course_owner_intended_recording": "UNRESOLVED",
+      "exercise_content_alignment": "The exercise questions match the official TED-Ed lesson candidate below; whether that was the course owner's intended recording is unverified.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "4 things all great listeners know",
+          "speaker": null,
+          "publisher": "TED-Ed",
+          "event_or_date": null,
+          "url": "https://ed.ted.com/lessons/4-things-all-great-listeners-know",
+          "transcript_url": "https://go.ted.com/CQKS5",
+          "questions_url": "https://ed.ted.com/lessons/4-things-all-great-listeners-know/think",
+          "video_id": "i3ku5nx4tMU",
+          "version": "Official lesson page, transcript, and questions checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The printed exercises correspond to the official lesson questions and transcript. This establishes a content match, not course-owner intent or rights."
+        },
+        {
+          "candidate_role": "visual match for supplied still; not the exercise-content match above",
+          "title": "Being A Good Listener",
+          "speaker": null,
+          "publisher": "The School of Life",
+          "event_or_date": null,
+          "url": "https://www.youtube.com/watch?v=-BdbiZcNBXg",
+          "source_page": "https://ed.ted.com/best_of_web/foptnjVE",
+          "video_id": "-BdbiZcNBXg",
+          "version": "Video ID and TED-Ed Best of Web page checked 2026-10-18.",
+          "evidence": "The supplied still appears on the Best of Web page for this separate School of Life recording. It is distinct from the TED-Ed lesson whose questions match the exercises. Intended source remains unresolved."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 2,
       "original_lesson_title": "The Art of Goal Setting",
       "source_video_image": "image6.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Lesson heading differs from the original prediction-section/thumbnail title Why You Should Stop Setting Goals (Yes, Really)."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official talk transcript candidate below; intended-source confirmation remains outstanding.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "Why you should stop setting goals (yes, really)",
+          "speaker": "Emmanuel Acho",
+          "publisher": "TED",
+          "event_or_date": "TED2023; April 2023",
+          "url": "https://www.ted.com/talks/emmanuel_acho_why_you_should_stop_setting_goals_yes_really",
+          "transcript_url": "https://www.ted.com/talks/emmanuel_acho_why_you_should_stop_setting_goals_yes_really/transcript",
+          "version": "Official talk page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The transcript content corresponds to the unit's listening exercises. The printed Unit 2 lesson title is retained and is not replaced with the talk title."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 3,
       "original_lesson_title": "The Power of Emotional Intelligence",
       "source_video_image": "image9.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Thumbnail reads Are You Emotionally Mature?; match the full question set to the intended recording."
+      "course_owner_intended_recording": "NOT CONFIRMED; exact still-to-recording match remains unresolved.",
+      "exercise_content_alignment": "MATCHES the official TED-Ed lesson transcript candidate below; the still's identity is unresolved.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "How to manage your emotions",
+          "speaker": "Lesson by Kelso Harper; narration by Jack Cutmore-Scott",
+          "publisher": "TED-Ed",
+          "event_or_date": null,
+          "url": "https://ed.ted.com/lessons/how-to-manage-your-emotions",
+          "video_id": "Uew5BbvmLks",
+          "version": "Official lesson page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The printed exercises match the official lesson transcript. The supplied still reads “Are You Emotionally Mature?”; that wording does not establish that it is this recording."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 4,
       "original_lesson_title": "Can Money Buy Happiness?",
       "source_video_image": "image12.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official talk transcript candidate below; intended-source confirmation remains outstanding.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "How to buy happiness",
+          "speaker": "Michael Norton",
+          "publisher": "TED",
+          "event_or_date": "TEDxCambridge; November 2011",
+          "url": "https://www.ted.com/talks/michael_norton_how_to_buy_happiness",
+          "transcript_url": "https://www.ted.com/talks/michael_norton_how_to_buy_happiness/transcript",
+          "version": "Official talk page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The transcript content corresponds to the unit's listening exercises. The printed Unit 4 lesson title is retained and is not replaced with the talk title."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 5,
       "original_lesson_title": "How Will AI Change the World?",
       "source_video_image": "image15.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Thumbnail reads Things Are Going to Get Weird; match the full question set to the intended recording."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official TED-Ed lesson transcript candidate below.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "How will AI change the world?",
+          "speaker": "Narrated by George Zaidan and Stuart Russell",
+          "publisher": "TED-Ed",
+          "event_or_date": "December 2022",
+          "url": "https://ed.ted.com/lessons/things-are-going-to-get-weird",
+          "video_id": "RzkD_rTEBYs",
+          "version": "Official lesson page and transcript checked 2026-10-18; the lesson URL slug and still use “Things Are Going to Get Weird.”",
+          "evidence": "The title, URL slug/still wording, and exercise content refer to the same TED-Ed lesson. Course-owner intent and rights remain unverified."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 6,
       "original_lesson_title": "The Science of a Lasting Relationship",
       "source_video_image": "image18.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official talk transcript candidate below; intended-source confirmation remains outstanding.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "The 6 essential ingredients of loving relationships",
+          "speaker": "Sara Nasserzadeh",
+          "publisher": "TED",
+          "event_or_date": "TEDNext 2025",
+          "url": "https://www.ted.com/talks/sara_nasserzadeh_the_6_essential_ingredients_of_loving_relationships",
+          "transcript_url": "https://www.ted.com/talks/sara_nasserzadeh_the_6_essential_ingredients_of_loving_relationships/transcript",
+          "version": "Official talk page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The transcript content corresponds to the unit's listening exercises. The printed Unit 6 lesson title is retained and is not replaced with the talk title."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 7,
       "original_lesson_title": "Navigating Our Global Future",
       "source_video_image": "image21.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official talk transcript candidate below; intended-source confirmation remains outstanding.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "Navigating our global future",
+          "speaker": "Ian Goldin",
+          "publisher": "TED",
+          "event_or_date": "TEDGlobal 2009",
+          "url": "https://www.ted.com/talks/ian_goldin_navigating_our_global_future",
+          "transcript_url": "https://www.ted.com/talks/ian_goldin_navigating_our_global_future/transcript",
+          "version": "Official talk page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The transcript content corresponds to the unit's listening exercises. Historical claims in the talk must be read relative to its 2009 date."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     },
     {
       "unit": 8,
       "original_lesson_title": "English Without Borders",
       "source_video_image": "image24.jpeg",
-      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
-      "url": null,
-      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+      "course_owner_intended_recording": "NOT CONFIRMED",
+      "exercise_content_alignment": "MATCHES the official talk transcript candidate below; intended-source confirmation remains outstanding.",
+      "candidate_sources": [
+        {
+          "candidate_role": "exercise-content match",
+          "title": "Don’t insist on English!",
+          "speaker": "Patricia Ryan",
+          "publisher": "TED",
+          "event_or_date": "TEDxDubai / TED; December 2010",
+          "url": "https://www.ted.com/talks/patricia_ryan_don_t_insist_on_english",
+          "transcript_url": "https://www.ted.com/talks/patricia_ryan_don_t_insist_on_english/transcript",
+          "version": "Official talk page and transcript checked 2026-10-18; no immutable version identifier recorded.",
+          "evidence": "The transcript content corresponds to the unit's listening exercises. The printed Unit 8 lesson title is retained and is not replaced with the talk title."
+        }
+      ],
+      "recording_availability_and_playback": "NOT TESTED for classroom use",
+      "permissions": "UNVERIFIED"
     }
   ]
 }

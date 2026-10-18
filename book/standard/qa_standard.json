@@ -2,6 +2,6 @@
   "status": "PASS",
   "issues": [],
   "outputs_checked": 6,
-  "edition": "Original-manuscript course edition; not the self-contained edition",
-  "scope": "Freshness, identity and source/accepted-edition protection; not editorial or legal clearance"
+  "edition": "Original-manuscript Standard review proof; not approved for publication",
+  "scope": "Freshness, identity, protected-input, source-art exclusion, and epigraph-removal checks; not editorial, legal, accessibility, or printer clearance"
 }

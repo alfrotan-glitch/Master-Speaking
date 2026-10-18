@@ -1,7 +1,7 @@
 {
   "qa_word": {
     "exit_code": 0,
-    "output": "sections 2 | styles used 29 | tables 60 | images 24\nunit headings: ['Unit 1 ·\\nThe Power of Comm', 'Unit 2 ·\\nThe Art of Goal S', 'Unit 3 ·\\nEmotional Intelli'] ...\nOK\n"
+    "output": "sections 2 | styles used 28 | tables 60 | images 24\nunit headings: ['Unit 1 ·\\nThe Power of Comm', 'Unit 2 ·\\nThe Art of Goal S', 'Unit 3 ·\\nEmotional Intelli'] ...\nOK\n"
   },
   "qa_fidelity": {
     "exit_code": 0,
@@ -9,11 +9,11 @@
   },
   "qa_print": {
     "exit_code": 0,
-    "output": "pages: 161   units at: {1: 9, 2: 25, 3: 43, 4: 61, 5: 81, 6: 101, 7: 121, 8: 141}   main_start: 9\nimages placed: 24  (effective dpi min-max: 122-588)\nimages below 150 dpi effective: 2 -> [(25, 122), (27, 143)]\n--- 0 issues ---\n"
+    "output": "pages: 162   units at: {1: 9, 2: 25, 3: 43, 4: 61, 5: 81, 6: 101, 7: 121, 8: 141}   main_start: 9\nimages placed: 24  (effective dpi min-max: 327-444)\n--- 0 issues ---\n"
   },
   "qa_proof": {
     "exit_code": 0,
-    "output": "161 pages proofed, 0 issues\nOK\n"
+    "output": "162 pages proofed, 0 issues\nOK\n"
   },
   "qa_epub": {
     "exit_code": 0,
@@ -21,7 +21,7 @@
   },
   "qa_epubcheck": {
     "exit_code": 0,
-    "output": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././book/standard/work/Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 10:55:12\",\n    \"elapsedTime\": 7668,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n"
+    "output": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././book/standard/work/Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 17:02:58\",\n    \"elapsedTime\": 4615,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n"
   },
   "qa_chapters": {
     "exit_code": 0,
@@ -29,6 +29,6 @@
   },
   "qa_visual": {
     "exit_code": 0,
-    "output": "161 pages, 77 spreads, flags: 0\nOK\n"
+    "output": "162 pages, 77 spreads, flags: 0\nOK\n"
   }
 }

@@ -1,10 +1,98 @@
 [
-  {"unit":6,"chapter":3,"text":"What Makes Relationships Work?","from":"q","to":"sub"},
-  {"unit":8,"chapter":3,"text":"WHO OWNS ENGLISH?","from":"q","to":"sub"},
-  {"unit":2,"chapter":2,"text":"Challenge Question","from":"q","to":"subsub"},
-  {"unit":7,"chapter":4,"text":"/θ/ — voiceless TH","from":"q","to":"sub"},
-  {"unit":7,"chapter":4,"text":"/ð/ — voiced TH","from":"q","to":"sub"},
-  {"unit":8,"chapter":4,"text":"The Schwa in Common Words","from":"q","to":"sub"},
-  {"unit":8,"chapter":4,"text":"The Schwa in Academic Vocabulary","from":"q","to":"sub"},
-  {"unit":8,"chapter":4,"text":"The Schwa in Function Words","from":"q","to":"sub"}
+  {
+    "unit": 6,
+    "chapter": 3,
+    "text": "What Makes Relationships Work?",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 3,
+    "text": "WHO OWNS ENGLISH?",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 2,
+    "chapter": 2,
+    "text": "Challenge Question",
+    "from": "q",
+    "to": "subsub"
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "text": "/θ/ — voiceless TH",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "text": "/ð/ — voiced TH",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "text": "The Schwa in Common Words",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "text": "The Schwa in Academic Vocabulary",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "text": "The Schwa in Function Words",
+    "from": "q",
+    "to": "sub"
+  },
+  {
+    "unit": 3,
+    "chapter": 4,
+    "text": "Why is emotional intelligence important in leadership?",
+    "from": "q",
+    "to": "li",
+    "reason": "Make all four read-aloud models one bulleted practice list so the two question stems do not restart numbering at 1."
+  },
+  {
+    "unit": 3,
+    "chapter": 4,
+    "text": "Emotional intelligence helps people build stronger relationships.",
+    "from": "p",
+    "to": "li",
+    "reason": "Keep the read-aloud model with the same unnumbered practice list."
+  },
+  {
+    "unit": 3,
+    "chapter": 4,
+    "text": "What would happen if people never controlled their emotions?",
+    "from": "q",
+    "to": "li",
+    "reason": "Make all four read-aloud models one bulleted practice list so numbering does not restart at 1."
+  },
+  {
+    "unit": 3,
+    "chapter": 4,
+    "text": "We can improve emotional intelligence through daily practice.",
+    "from": "p",
+    "to": "li",
+    "reason": "Keep the read-aloud model with the same unnumbered practice list."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "text": "Discussion Questions: Answer in complete sentences.",
+    "from": "p",
+    "to": "instr",
+    "reason": "Differentiate the opinion/discussion prompt from the preceding comprehension heading without changing the questions."
+  }
 ]

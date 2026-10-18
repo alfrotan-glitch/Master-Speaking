@@ -26,7 +26,7 @@
       },
       {
         "k": "p",
-        "text": "You will also be asked to step outside your comfort zone."
+        "text": "Try unfamiliar activities at your own pace. For prompts about personal experiences, you may answer generally, use an imagined example, or pass; you do not need to share private information."
       },
       {
         "k": "p",
@@ -73,7 +73,7 @@
       "k": "howto",
       "subtitle": "A Practical Guide for Students",
       "paras": [
-        "Welcome to the TOEFL House-Master speaking course designed to help you do more than simply learn English.",
+        "Welcome to Master Speaking, a course for developing English speaking skills.",
         "This book is designed to help you use English to think, discuss, question, explain, argue, and communicate ideas.",
         "The topics become increasingly challenging, but the goal is not to give you perfect answers. The goal is to help you become a more confident, independent, and thoughtful English speaker.",
         "How Is Each Unit Organized?",
@@ -129,14 +129,13 @@
             "organize your ideas",
             "use evidence and examples",
             "prepare a short presentation",
-            "respond to questions from your classmates",
-            "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way."
+            "respond to questions from your classmates"
           ]
         }
       ],
       "closing": "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way."
     },
-    "epigraph": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett. “Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett."
+    "epigraph": ""
   },
   "units": [
     {
@@ -338,9 +337,8 @@
               "img": null
             },
             {
-              "k": "p",
-              "text": "According to the reading, communication is",
-              "img": null
+              "k": "q",
+              "text": "According to the reading, what is communication?"
             },
             {
               "k": "opt",
@@ -1051,9 +1049,8 @@
               "src": 352
             },
             {
-              "k": "p",
-              "text": "Now students already have the language they need.",
-              "img": null
+              "k": "instr",
+              "text": "Use the expressions above to prepare for the next activity."
             },
             {
               "k": "sub",
@@ -1215,7 +1212,7 @@
             },
             {
               "k": "instr",
-              "text": "Read these sentences aloud. Stress the bold words."
+              "text": "Read these sentences aloud. Identify and stress the key content words."
             },
             {
               "k": "p",
@@ -1675,7 +1672,7 @@
             },
             {
               "k": "reading",
-              "text": "Researchers have found that writing down goals increases the likelihood of achieving them. People who write their goals often think more carefully about their plans and are more committed to taking action. Sharing goals with supportive friends, teachers, or family members can also provide encouragement and accountability.",
+              "text": "One four-week study summary from Dominican University reports that participants who wrote goals achieved more than those who only thought about their goals. The highest achievement scores came from a group that wrote action commitments and sent weekly progress reports to a supportive friend. Only 149 of the 267 recruits completed the study, and the design does not show that writing alone guarantees success (Matthews, n.d.).",
               "img": null
             },
             {
@@ -1923,11 +1920,6 @@
               "text": "Confidence"
             },
             {
-              "k": "p",
-              "text": "Family support Self-discipline Confidence",
-              "img": null
-            },
-            {
               "k": "label",
               "text": "Task:"
             },
@@ -2092,7 +2084,7 @@
             },
             {
               "k": "instr",
-              "text": "Focus on these useful expressions based on the TED-Ed lesson."
+              "text": "Focus on these useful expressions related to the talk."
             },
             {
               "k": "table",
@@ -2987,7 +2979,7 @@
             },
             {
               "k": "instr",
-              "text": "Complete each sentence using the correct expression from the Reading Toolbox."
+              "text": "Complete each sentence using the correct expression from the Vocabulary Preview."
             },
             {
               "k": "fill",
@@ -3004,6 +2996,10 @@
             {
               "k": "fill",
               "text": "People who stay calm ____________________________ usually make better decisions."
+            },
+            {
+              "k": "fill",
+              "text": "Learning another language allows you to ____________________________ from different backgrounds."
             },
             {
               "k": "sec",
@@ -3026,10 +3022,6 @@
               "text": "How can emotional intelligence improve relationships?"
             },
             {
-              "k": "fill",
-              "text": "Learning another language allows you to ____________________________ from different backgrounds."
-            },
-            {
               "k": "readingtitle",
               "text": "The Power of Emotional Intelligence",
               "unit": 3,
@@ -3037,37 +3029,37 @@
             },
             {
               "k": "reading",
-              "text": "For many years, intelligence was measured mainly by IQ, or Intelligence Quotient. People believed that academic knowledge and logical reasoning were the most reliable predictors of success. However, research over the past few decades has challenged this assumption by highlighting another essential quality: emotional intelligence.",
+              "text": "IQ tests assess some cognitive abilities, while emotional intelligence (EI) is a separate construct with debated definitions and measures. Researchers continue to examine how EI measures predict real-world outcomes (Robinson, 2024).",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Emotional intelligence refers to the ability to recognize, understand, manage, and respond appropriately to emotions—both our own and those of others. Individuals with high emotional intelligence are often better at building relationships, resolving conflicts, and making thoughtful decisions under pressure. Rather than reacting impulsively, they pause, evaluate the situation, and choose a constructive response.",
+              "text": "Some models define EI as the ability to recognize, understand, use, and regulate emotions. Findings on how EI measures relate to relationships, conflict resolution, and decision-making vary; a high score does not guarantee success (Robinson, 2024).",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Psychologist Daniel Goleman popularized the concept of emotional intelligence by identifying five essential components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+              "text": "Psychologist Daniel Goleman popularized one framework of emotional intelligence that describes five areas: self-awareness, self-regulation, motivation, empathy, and social skills (Goleman, 1995). The framework is not the only way researchers define EI (Robinson, 2024).",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Emotional intelligence plays a crucial role in both personal and professional life. In the workplace, managers with strong emotional intelligence are more likely to inspire trust, encourage teamwork, and resolve disagreements constructively. Employees who feel respected and understood are generally more motivated and productive.",
+              "text": "At work, skills such as recognizing emotional cues, listening, and responding constructively may support teamwork. They do not by themselves guarantee trust, motivation, or productivity; outcomes also depend on context and other factors.",
               "img": null
             },
             {
               "k": "reading",
-              "text": "In education, emotional intelligence contributes to academic success by improving collaboration, communication, and resilience. Students with strong emotional intelligence are often better equipped to cope with stress, receive constructive feedback, and remain focused on long-term improvement instead of becoming discouraged by temporary failure.",
+              "text": "In education, communicating clearly, collaborating, managing stress, and using feedback can support learning. None of these skills alone guarantees academic success; instruction, opportunity, prior knowledge, and other conditions also matter.",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Fortunately, emotional intelligence is not a fixed trait. Unlike IQ, it can be developed through conscious practice. Reflecting on one’s emotions, listening actively, seeking feedback, and responding thoughtfully rather than impulsively are all practical strategies for strengthening emotional intelligence.",
+              "text": "People can practise specific actions, such as pausing to identify a feeling, listening carefully, and choosing a response. Whether this should be described as improving “emotional intelligence” depends on its definition and measurement. Cognitive abilities can also change: a meta-analysis found that additional schooling can improve scores on intelligence measures (Ritchie & Tucker-Drob, 2018). EI and IQ are not simple opposites; they are assessed in different ways (Robinson, 2024).",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Ultimately, success depends not only on what we know but also on how effectively we understand ourselves and interact with others. In an increasingly interconnected world, emotional intelligence has become one of the most valuable skills a person can develop.",
+              "text": "Emotion-related skills can be useful in daily life, but no single trait determines success. Evidence depends on how a skill is defined, measured, and applied (Robinson, 2024).",
               "img": null
             },
             {
@@ -3284,7 +3276,7 @@
             },
             {
               "k": "p",
-              "text": "(Students evaluate, argue, and defend opinions.)",
+              "text": "Evaluate ideas, support claims with reasons, and defend your position respectfully.",
               "img": null
             },
             {
@@ -4009,8 +4001,9 @@
               "img": null
             },
             {
-              "k": "instr",
-              "text": "Use a rising tone when asking a question, expressing uncertainty, and introducing an idea."
+              "k": "p",
+              "text": "A rising tone may signal uncertainty or continuation. Its use is not determined by punctuation alone; it varies with dialect, context, and speaker intent. Use the model chosen for class.",
+              "img": null
             },
             {
               "k": "sub",
@@ -4035,8 +4028,9 @@
               "img": null
             },
             {
-              "k": "instr",
-              "text": "Use a falling tone when:"
+              "k": "p",
+              "text": "A falling tone often marks a completed statement or a point the speaker presents as complete; context and speaker intent matter.",
+              "img": null
             },
             {
               "k": "p",
@@ -4095,7 +4089,7 @@
             },
             {
               "k": "p",
-              "text": "Emotional intelligence is important for everyone.",
+              "text": "Emotional intelligence is IMPORTANT for everyone.",
               "img": null
             },
             {
@@ -4109,20 +4103,20 @@
               "text": "Read the following sentences aloud with appropriate intonation."
             },
             {
-              "k": "q",
+              "k": "li",
               "text": "Why is emotional intelligence important in leadership?"
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "Emotional intelligence helps people build stronger relationships.",
               "img": null
             },
             {
-              "k": "q",
+              "k": "li",
               "text": "What would happen if people never controlled their emotions?"
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "We can improve emotional intelligence through daily practice.",
               "img": null
             },
@@ -4261,7 +4255,7 @@
             },
             {
               "k": "p",
-              "text": "Explain the difference between goals and systems.",
+              "text": "Explain one way people can practise emotion-related skills.",
               "img": null
             },
             {
@@ -4412,7 +4406,7 @@
             },
             {
               "k": "instr",
-              "text": "Complete each sentence using the correct expression from the Reading Toolbox."
+              "text": "Complete each sentence using the correct expression from the Vocabulary Preview."
             },
             {
               "k": "fill",
@@ -4472,12 +4466,12 @@
             },
             {
               "k": "reading",
-              "text": "However, once people’s basic needs are met, the connection between money and happiness becomes more complicated. Research suggests that after reaching a comfortable standard of living, earning more money does not always lead to greater life satisfaction. Instead, people often become accustomed to their higher income and begin wanting even more. This phenomenon is known as the hedonic treadmill, where increased wealth quickly becomes the new normal.",
+              "text": "The relationship between income and emotional well-being is complex, not a single threshold. A 2023 reanalysis found that reported well-being rose with log income across the full sample; a flattening pattern appeared only for the least-happy group. These observational results show an association, not that income alone causes happiness (Killingsworth, Kahneman, & Mellers, 2023). The term “hedonic treadmill” is sometimes used for adapting to changed circumstances; it does not describe a universal income cutoff.",
               "img": null
             },
             {
               "k": "reading",
-              "text": "Another important factor is how people choose to spend their money. Studies indicate that spending money on meaningful experiences, such as traveling, learning new skills, or spending time with loved ones, often brings greater happiness than buying expensive possessions. Likewise, helping others through charity or generosity can create a stronger sense of purpose and personal satisfaction.",
+              "text": "A meta-analysis of 141 studies found an average experiential advantage over material purchases, but the size varied by outcome and context, and the authors estimated that publication bias could explain about one third of the effect (Weingarten & Goodman, 2021). Experiences and helping others may be meaningful ways to use money, but no purchase guarantees happiness.",
               "img": null
             },
             {
@@ -4606,7 +4600,7 @@
             },
             {
               "k": "tf",
-              "text": "_____ Spending money on experiences may create longer-lasting happiness than buying possessions."
+              "text": "_____ The reading reports an average advantage for experiential purchases over material purchases, though the size varies by outcome and context."
             },
             {
               "k": "tf",
@@ -4790,7 +4784,7 @@
             },
             {
               "k": "q",
-              "text": "If someone offered you $1 million, but you could never see your family again, would you accept? Why or why not?"
+              "text": "Consider a hypothetical: A person is offered $1 million on the condition that they can never see their family again. Would you advise that person to accept? Why or why not?"
             },
             {
               "k": "q",
@@ -4833,7 +4827,7 @@
             },
             {
               "k": "instr",
-              "text": "Focus on these useful expressions based on the TED-Ed lesson."
+              "text": "Focus on these useful expressions related to the talk."
             },
             {
               "k": "table",
@@ -4876,8 +4870,8 @@
                 ],
                 [
                   "human universal",
-                  "a behavior or characteristic found in all human societies",
-                  "Helping family members is considered a human universal."
+                  "a behavior or characteristic proposed to occur in all human societies under a stated definition",
+                  "Researchers may debate whether helping family members qualifies as a human universal."
                 ],
                 [
                   "be positively correlated with",
@@ -5352,7 +5346,7 @@
             },
             {
               "k": "instr",
-              "text": "Choose one statement. Work in two teams. One team agrees, and the other disagrees. Give reasons and Student A"
+              "text": "Choose one statement. Work in two teams: one agrees and the other disagrees. Give reasons and examples to support your opinions."
             },
             {
               "k": "sub",
@@ -5504,32 +5498,32 @@
                   "re LA tion ship"
                 ],
                 [
-                  "expeRIence",
-                  "ex pe RI ence"
+                  "exPErience",
+                  "ex PE ri ence"
                 ],
                 [
-                  "geNErosity",
-                  "ge NE ros i ty"
+                  "geneROSity",
+                  "ge ne ROS i ty"
                 ],
                 [
                   "satisFACtion",
                   "sat is FAC tion"
                 ],
                 [
-                  "reSPONsibility",
-                  "re SPON si bil i ty"
+                  "responsiBILity",
+                  "re spon si BIL i ty"
                 ],
                 [
-                  "opportuNIty",
-                  "op por tu NI ty"
+                  "opporTUnity",
+                  "op por TU ni ty"
                 ],
                 [
                   "inVESTment",
                   "in VEST ment"
                 ],
                 [
-                  "psyCHOlogical",
-                  "psy CHO log i cal"
+                  "psychoLOGical",
+                  "psy cho LOG i cal"
                 ],
                 [
                   "priORity",
@@ -6024,7 +6018,7 @@
             },
             {
               "k": "reading",
-              "text": "However, AI also raises important questions. Some experts worry that increased automation may replace certain jobs, forcing workers to develop new skills. Others are concerned about privacy, since AI systems often depend on large amounts of personal data. In addition, AI can sometimes produce inaccurate or biased information, reminding us that human judgment remains essential.",
+              "text": "AI also raises potential risks. Some experts worry that automation may change tasks or displace particular jobs. The International Labour Organization’s 2025 analysis estimated that one in four workers are in occupations with some exposure to generative AI; exposure is not the same as job loss, and transformation is more likely than full replacement (ILO, 2025). Privacy, accuracy, and harmful-bias risks also depend on the data, system, and context of use (NIST, 2023).",
               "img": null
             },
             {
@@ -6255,7 +6249,7 @@
             },
             {
               "k": "p",
-              "text": "Share your ideas about the quad:",
+              "text": "Share your ideas about the quote:",
               "img": null
             },
             {
@@ -6940,36 +6934,35 @@
               "img": null
             },
             {
-              "k": "p",
-              "text": "Students should give a 1-minute prediction.",
-              "img": null
-            },
-            {
               "k": "instr",
-              "text": "They must include:"
+              "text": "Give a one-minute prediction to complete the statement."
             },
             {
-              "k": "p",
+              "k": "label",
+              "text": "Include:"
+            },
+            {
+              "k": "li",
               "text": "one prediction about employment",
               "img": null
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "one prediction about education",
               "img": null
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "one prediction about daily life",
               "img": null
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "one potential risk",
               "img": null
             },
             {
-              "k": "p",
+              "k": "li",
               "text": "one potential benefit",
               "img": null
             }
@@ -6993,7 +6986,7 @@
             },
             {
               "k": "p",
-              "text": "When native speakers speak naturally, the words in a sentence often connect, rather than being pronounced as separate units.",
+              "text": "In fluent speech, adjacent words may link across word boundaries. The pattern varies by accent, speaking rate, and context.",
               "img": null
             },
             {
@@ -7002,24 +6995,24 @@
               "img": null
             },
             {
-              "k": "pair",
-              "text": "turn_it_off → turnitoff"
+              "k": "choice",
+              "text": "turn it off"
             },
             {
-              "k": "pair",
-              "text": "pick_it_up → pickitup"
+              "k": "choice",
+              "text": "pick it up"
             },
             {
-              "k": "pair",
-              "text": "work_in → workin"
+              "k": "choice",
+              "text": "work in"
             },
             {
-              "k": "pair",
-              "text": "depend_on → dependon"
+              "k": "choice",
+              "text": "depend on"
             },
             {
               "k": "p",
-              "text": "This is especially useful for your students because it helps them sound more fluent and natural, particularly during presentations and extended speaking.",
+              "text": "Use these phrases to notice connected speech; the written examples are not phonetic transcriptions. Choose a pronunciation model for class and do not treat other accents as errors.",
               "img": null
             },
             {
@@ -7029,7 +7022,7 @@
             },
             {
               "k": "p",
-              "text": "Have students practice these phrases first slowly, then naturally:",
+              "text": "Practice these phrases first slowly, then at a natural pace:",
               "img": null
             },
             {
@@ -7088,9 +7081,8 @@
               "img": null
             },
             {
-              "k": "p",
-              "text": "Students read each sentence three times:",
-              "img": null
+              "k": "instr",
+              "text": "Read each sentence three times:"
             },
             {
               "k": "pair",
@@ -7966,7 +7958,7 @@
             },
             {
               "k": "p",
-              "text": "(Students evaluate, argue, and defend opinions.)",
+              "text": "Evaluate ideas, support claims with reasons, and defend your position respectfully.",
               "img": null
             },
             {
@@ -8098,7 +8090,7 @@
             },
             {
               "k": "instr",
-              "text": "Focus on these useful expressions based on the TED-Ed lesson."
+              "text": "Focus on these useful expressions related to the talk."
             },
             {
               "k": "table",
@@ -8663,11 +8655,6 @@
             {
               "k": "instr",
               "text": "Give a 1-minute response and support your opinion with at least two reasons and one example."
-            },
-            {
-              "k": "p",
-              "text": "Students should give a 1-minute prediction.",
-              "img": null
             }
           ],
           "focus": "Speaking through Discussion",
@@ -8684,7 +8671,7 @@
             },
             {
               "k": "sub",
-              "text": "Skill: Linking Sounds",
+              "text": "Skill: Pronouncing the “-ed” Ending",
               "src": 2047
             },
             {
@@ -8695,12 +8682,7 @@
             },
             {
               "k": "p",
-              "text": "This is a very useful pronunciation problem for B2+ students, especially when they are speaking about relationships, experiences, and research.",
-              "img": null
-            },
-            {
-              "k": "p",
-              "text": "The -ed ending has three possible pronunciations:",
+              "text": "For regular past-tense verbs, the -ed ending is commonly pronounced /t/, /d/, or /ɪd/. These labels describe the ending only; vowel pronunciations in the rest of each word can vary by accent.",
               "img": null
             },
             {
@@ -8710,26 +8692,26 @@
             },
             {
               "k": "instr",
-              "text": "After a voiceless sound such as /k/, /p/, /s/, /ʃ/, /tʃ/, and /f/."
+              "text": "After a voiceless consonant other than /t/ (for example, /k/, /p/, /s/, /ʃ/, /tʃ/, or /f/)."
             },
             {
               "k": "p",
-              "text": "liked → /laɪkt/",
+              "text": "liked",
               "img": null
             },
             {
               "k": "p",
-              "text": "kissed → /kɪst/",
+              "text": "kissed",
               "img": null
             },
             {
               "k": "p",
-              "text": "discussed → /dɪˈskʌst/",
+              "text": "discussed",
               "img": null
             },
             {
               "k": "p",
-              "text": "helped → /helpt/",
+              "text": "helped",
               "img": null
             },
             {
@@ -8744,26 +8726,26 @@
             },
             {
               "k": "instr",
-              "text": "After a voiced sound such as /b/, /g/, /v/, /z/, /m/, /n/, /l/, and vowels."
+              "text": "After a voiced consonant other than /d/, or a vowel sound."
             },
             {
               "k": "p",
-              "text": "loved → /lʌvd/",
+              "text": "loved",
               "img": null
             },
             {
               "k": "p",
-              "text": "shared → /ʃerd/",
+              "text": "shared",
               "img": null
             },
             {
               "k": "p",
-              "text": "learned → /lɜːrnd/",
+              "text": "learned",
               "img": null
             },
             {
               "k": "p",
-              "text": "showed → /ʃoʊd/",
+              "text": "showed",
               "img": null
             },
             {
@@ -8783,22 +8765,22 @@
             },
             {
               "k": "p",
-              "text": "wanted → /ˈwɒntɪd/",
+              "text": "wanted",
               "img": null
             },
             {
               "k": "p",
-              "text": "needed → /ˈniːdɪd/",
+              "text": "needed",
               "img": null
             },
             {
               "k": "p",
-              "text": "respected → /rɪˈspektɪd/",
+              "text": "respected",
               "img": null
             },
             {
               "k": "p",
-              "text": "committed → /kəˈmɪtɪd/",
+              "text": "committed",
               "img": null
             },
             {
@@ -8932,7 +8914,7 @@
             },
             {
               "k": "instr",
-              "text": "Research your topic using reliable sources."
+              "text": "Use reliable sources to research the topic you select below."
             },
             {
               "k": "instr",
@@ -8940,7 +8922,7 @@
             },
             {
               "k": "instr",
-              "text": "Choose ONE of the following questions:"
+              "text": "Use the questions under your chosen topic to guide your research."
             },
             {
               "k": "sub",
@@ -9352,6 +9334,10 @@
               "text": "Social media helps small businesses __________ that they could not access before."
             },
             {
+              "k": "fill",
+              "text": "Studying abroad can create __________ for young people."
+            },
+            {
               "k": "sec",
               "text": "Before You Read"
             },
@@ -9370,10 +9356,6 @@
             {
               "k": "q",
               "text": "How has the internet changed the way people communicate around the world?"
-            },
-            {
-              "k": "fill",
-              "text": "Studying abroad can create __________ for young people."
             },
             {
               "k": "readingtitle",
@@ -9788,7 +9770,7 @@
             },
             {
               "k": "instr",
-              "text": "Focus on these useful expressions based on the TED-Ed lesson."
+              "text": "Focus on these useful expressions related to the talk."
             },
             {
               "k": "table",
@@ -10047,7 +10029,7 @@
             },
             {
               "k": "sub",
-              "text": "A. True or False",
+              "text": "B. True or False",
               "src": 2334,
               "img": null
             },
@@ -10716,7 +10698,7 @@
             },
             {
               "k": "instr",
-              "text": "Choose ONE of the following questions:"
+              "text": "Use the questions below to guide your research:"
             },
             {
               "k": "sub",
@@ -10725,8 +10707,9 @@
               "img": null
             },
             {
-              "k": "instr",
-              "text": "Research your topic and answer:"
+              "k": "p",
+              "text": "Consider these questions:",
+              "img": null
             },
             {
               "k": "q",
@@ -11063,7 +11046,7 @@
             },
             {
               "k": "instr",
-              "text": "Use this idea to discuss about the title above. Use as many vocabulary expressions as you can."
+              "text": "Use this idea to discuss the title above. Use as many vocabulary expressions as you can."
             },
             {
               "k": "p",
@@ -11330,13 +11313,8 @@
               "text": "What does the writer mean by saying that English may “belong to everyone who uses it”?"
             },
             {
-              "k": "sec",
-              "text": "Answer the Questions",
-              "src": 2603
-            },
-            {
               "k": "instr",
-              "text": "Answer in complete sentences."
+              "text": "Discussion Questions: Answer in complete sentences."
             },
             {
               "k": "table",
@@ -11545,7 +11523,7 @@
             },
             {
               "k": "instr",
-              "text": "Focus on these useful expressions based on the TED-Ed lesson."
+              "text": "Focus on these useful expressions related to the talk."
             },
             {
               "k": "table",
@@ -11943,7 +11921,7 @@
             },
             {
               "k": "instr",
-              "text": "They must also use at least two expressions from the vocabulary section, such as:"
+              "text": "Use at least two expressions from the Vocabulary Preview, such as:"
             },
             {
               "k": "p",
@@ -11958,16 +11936,6 @@
             {
               "k": "p",
               "text": "self-fulfilling prophecy",
-              "img": null
-            },
-            {
-              "k": "p",
-              "text": "prohibitive",
-              "img": null
-            },
-            {
-              "k": "p",
-              "text": "far-reaching consequences",
               "img": null
             }
           ],
@@ -12112,7 +12080,7 @@
             },
             {
               "k": "topic",
-              "text": "The Future of Marriage"
+              "text": "The Future of English"
             },
             {
               "k": "q",
@@ -12172,12 +12140,12 @@
             },
             {
               "k": "p",
-              "text": "One of the biggest differences between natural English pronunciation and careful learner pronunciation is the schwa /ə/.",
+              "text": "A schwa /ə/ is a reduced vowel found in many unstressed syllables in English. Whether a vowel is reduced, and how it sounds, varies by accent and speaking context.",
               "img": null
             },
             {
               "k": "p",
-              "text": "The schwa is the weak, relaxed vowel sound found in many unstressed syllables. Learning to use it makes speech smoother, faster, and more natural—especially during presentations.",
+              "text": "Not every unstressed vowel is a schwa, and clear speech does not require imitating one accent. Use the model chosen for class and focus on being understood.",
               "img": null
             },
             {
@@ -12186,7 +12154,7 @@
             },
             {
               "k": "p",
-              "text": "See how the unstressed vowel becomes weak:",
+              "text": "Listen to each example in the chosen model accent and notice which unstressed vowel, if any, is reduced to /ə/.",
               "img": null
             },
             {
@@ -12221,7 +12189,7 @@
             },
             {
               "k": "p",
-              "text": "The first vowel in about is not pronounced strongly like the “a” in cat. It is relaxed: about → ə-BOUT",
+              "text": "In many accents, the first vowel in “about” is reduced; other realizations occur. Compare the chosen model rather than treating one pronunciation as the only correct form.",
               "img": null
             },
             {
@@ -12230,7 +12198,7 @@
             },
             {
               "k": "p",
-              "text": "These words are especially useful for today’s presentation topic:",
+              "text": "Listen to these useful topic words in the chosen model accent; note any unstressed syllable you hear as /ə/.",
               "img": null
             },
             {
@@ -12275,7 +12243,7 @@
             },
             {
               "k": "p",
-              "text": "Students should notice that unstressed vowels are often reduced, rather than pronounced as clearly as stressed vowels.",
+              "text": "Unstressed vowels are often reduced in connected speech, but the pattern varies by accent, word, and speaking context.",
               "img": null
             },
             {
@@ -12289,7 +12257,7 @@
             },
             {
               "k": "p",
-              "text": "to → /tə/a → /ə/the → /ðə/for → /fə/of → /əv/ or /ə/can → /kən/",
+              "text": "In connected speech, words such as “to,” “a,” “the,” “for,” “of,” and “can” may be reduced; the exact form varies by accent and context.",
               "img": null
             },
             {
@@ -12309,7 +12277,7 @@
             },
             {
               "k": "p",
-              "text": "I want tə learn English.",
+              "text": "In some accents, the word “to” is reduced in this sentence; compare it with the model used in class.",
               "img": null
             },
             {
@@ -12329,7 +12297,7 @@
             },
             {
               "k": "p",
-              "text": "English is ə global language.",
+              "text": "In some accents, the article “a” is reduced here; compare it with the model used in class.",
               "img": null
             },
             {
@@ -12345,7 +12313,7 @@
             },
             {
               "k": "p",
-              "text": "Ask students to underline the syllables that should contain a schwa /ə/.",
+              "text": "In the chosen model accent, underline any unstressed syllable you hear as /ə/. Do not treat differences across accents as errors.",
               "img": null
             },
             {
@@ -12389,8 +12357,9 @@
               "img": null
             },
             {
-              "k": "instr",
-              "text": "Then have students say the words first carefully, and then naturally."
+              "k": "p",
+              "text": "Say the words first carefully, then at a natural pace in the chosen model accent. Compare where vowel reduction occurs.",
+              "img": null
             },
             {
               "k": "sec",
@@ -12465,7 +12434,7 @@
             },
             {
               "k": "instr",
-              "text": "Research your topic using reliable sources."
+              "text": "Use reliable sources to research the topic you select below."
             },
             {
               "k": "instr",
@@ -12473,15 +12442,7 @@
             },
             {
               "k": "instr",
-              "text": "Choose ONE of the following questions:"
-            },
-            {
-              "k": "instr",
-              "text": "Research your topic using reliable sources."
-            },
-            {
-              "k": "instr",
-              "text": "Choose ONE of the following questions."
+              "text": "Use the questions under your chosen topic to guide your research."
             },
             {
               "k": "sub",
@@ -12790,6 +12751,56 @@
           "src": 2548
         }
       }
+    }
+  ],
+  "research_references": [
+    {
+      "id": "matthews-goals",
+      "citation": "Matthews, Gail. (n.d.). Goals Research Summary. Dominican University of California. Undated institutional summary of a four-week study; not a peer-reviewed journal article.",
+      "url": "https://www.dominican.edu/sites/default/files/2020-02/gailmatthews-harvard-goals-researchsummary.pdf",
+      "supports": "Limited summary of the goal-writing, action-commitment, and accountability study cited in Unit 2."
+    },
+    {
+      "id": "goleman-ei",
+      "citation": "Goleman, Daniel. (1995). Emotional Intelligence: Why It Can Matter More Than IQ. Bantam Books.",
+      "url": "",
+      "supports": "Source for the five-part framework attributed to Goleman in Unit 3; this is one framework, not a universal definition of emotional intelligence."
+    },
+    {
+      "id": "robinson-ei",
+      "citation": "Robinson, Michael D. (2024). Ability-Related Emotional Intelligence: An Introduction. Journal of Intelligence, 12(5), 51. DOI: 10.3390/jintelligence12050051.",
+      "url": "https://doi.org/10.3390/jintelligence12050051",
+      "supports": "Unit 3 wording on the debated definition, measurement, and predictive value of emotional-intelligence measures."
+    },
+    {
+      "id": "ritchie-tucker-drob",
+      "citation": "Ritchie, Stuart J., & Tucker-Drob, Elliot M. (2018). How Much Does Education Improve Intelligence? A Meta-Analysis. Psychological Science. DOI: 10.1177/0956797618774253.",
+      "url": "https://doi.org/10.1177/0956797618774253",
+      "supports": "Unit 3 clarification that cognitive abilities and intelligence-test scores are not immutable or a simple opposite of emotional intelligence."
+    },
+    {
+      "id": "weingarten-goodman",
+      "citation": "Weingarten, Evan, & Goodman, Joseph K. (2021). Re-examining the Experiential Advantage in Consumption: A Meta-Analysis and Review. Journal of Consumer Research, 47(6), 855–877. DOI: 10.1093/jcr/ucaa047.",
+      "url": "https://doi.org/10.1093/jcr/ucaa047",
+      "supports": "Unit 4 qualified summary of average findings and variation in the experiential-purchase literature."
+    },
+    {
+      "id": "killingsworth-kahneman-mellers",
+      "citation": "Killingsworth, Matthew A., Kahneman, Daniel, & Mellers, Barbara. (2023). Income and Emotional Well-Being: A Conflict Resolved. Proceedings of the National Academy of Sciences, 120(10). DOI: 10.1073/pnas.2208661120.",
+      "url": "https://doi.org/10.1073/pnas.2208661120",
+      "supports": "Unit 4 statement about the observed income–well-being relationship and the limits of a universal flattening threshold."
+    },
+    {
+      "id": "ilo-genai-jobs",
+      "citation": "International Labour Organization. (2025). Generative AI and Jobs: A 2025 Update.",
+      "url": "https://www.ilo.org/publications/generative-ai-and-jobs-2025-update",
+      "supports": "Unit 5 dated estimate of generative-AI occupational exposure and the distinction between exposure, transformation, and job loss."
+    },
+    {
+      "id": "nist-ai-rmf",
+      "citation": "National Institute of Standards and Technology. (2023). Artificial Intelligence Risk Management Framework (AI RMF 1.0). NIST AI 100-1.",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+      "supports": "Unit 5 phrasing on context-dependent AI risks, including validity, privacy, and harmful bias."
     }
   ]
 }

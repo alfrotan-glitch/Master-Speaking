@@ -16,6 +16,10 @@ The author approved replacing the source-dependent listening lessons, existing i
 
 See [what changed in the improvement pass](IMPROVEMENT-REVIEW.md) for the protected content and actual review scope.
 
+## Original-manuscript Standard review proof
+
+The separate files named `Master-Speaking-Standard...` reconstruct the original video-based manuscript and remain **review proofs, not approved for publication or public release**. Their 24 supplied illustrations have been replaced with original geometric artwork, and the attributed epigraph is omitted; course-owner video confirmations, final metadata, rights review, accessibility/device checks, and printer approval remain outstanding. They are not the accepted self-contained edition or a source of verified keys for its video lessons. See the [Standard review-proof guide](STANDARD-EDITION-READ-ME.md), [implementation/review record](STANDARD-EDITION-REVIEW.md), and [35-item evidence register](book/standard/publication-clearance.csv).
+
 ## Books and cover panels
 
 - **[Main reading PDF](Master-Speaking.pdf)** — clean learner-facing book with cover, linked contents and bookmarks.

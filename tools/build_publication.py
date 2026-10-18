@@ -21,12 +21,11 @@ from lxml import etree, html as lxml_html
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_CENTER, TA_LEFT
 from reportlab.lib.pagesizes import A4
-from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.platypus import (
     BaseDocTemplate, Frame, PageTemplate, PageBreak, Paragraph, Spacer,
-    Table, LongTable, TableStyle, PageTemplate, NextPageTemplate,
-    KeepTogether, CondPageBreak,
+    Table, LongTable, TableStyle, KeepTogether, CondPageBreak,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -52,15 +51,37 @@ PALE_GOLD = colors.HexColor("#FBF3E2")
 
 
 def _apply_orphan_fix(story):
-    """Insert CondPageBreak before every section heading so the heading moves
-    to the next page when the remaining space would leave it stranded."""
+    """Keep every section heading and rule subheading attached to its following
+    content block using KeepTogether so no heading is ever stranded at the bottom
+    of a page and boxes never clip."""
     fixed = []
-    for item in story:
-        if getattr(item, "_is_section_heading", False):
-            # 160pt covers heading (18pt) + spacer (2pt) + first box/table row,
-            # enough to keep the heading with at least one line of real content.
-            fixed.append(CondPageBreak(160))
+    i = 0
+    n = len(story)
+    while i < n:
+        item = story[i]
+        if getattr(item, "_is_section_heading", False) or getattr(item, "_is_sub_heading", False):
+            group = [item]
+            j = i + 1
+            while j < n and isinstance(story[j], Spacer):
+                group.append(story[j])
+                j += 1
+            if j < n and not isinstance(story[j], PageBreak):
+                group.append(story[j])
+                j += 1
+                if getattr(group[-1], "_is_sub_heading", False) or getattr(group[-1], "_is_section_heading", False):
+                    while j < n and isinstance(story[j], Spacer):
+                        group.append(story[j])
+                        j += 1
+                    if j < n and not isinstance(story[j], PageBreak):
+                        group.append(story[j])
+                        j += 1
+            fixed.append(KeepTogether(group))
+            i = j
+            continue
+        if getattr(item, "_is_large_box", False):
+            fixed.append(CondPageBreak(105))
         fixed.append(item)
+        i += 1
     story[:] = fixed
 
 
@@ -158,22 +179,22 @@ def pdf_styles():
     pdfmetrics.registerFontFamily("BookSans", normal="BookSans", bold="BookSans-Bold",
                                   italic="BookSans-Italic", boldItalic="BookSans-BoldItalic")
     return {
-        "body": ParagraphStyle("BookBody", fontName="BookSans", fontSize=9.1, leading=12.2,
-                                textColor=INK, spaceBefore=2, spaceAfter=3, splitLongWords=1),
-        "small": ParagraphStyle("BookSmall", fontName="BookSans", fontSize=8, leading=10.2,
+        "body": ParagraphStyle("BookBody", fontName="BookSans", fontSize=9.2, leading=12.6,
+                                textColor=INK, spaceBefore=2, spaceAfter=3.2, splitLongWords=1),
+        "small": ParagraphStyle("BookSmall", fontName="BookSans", fontSize=8, leading=10.4,
                                  textColor=INK, spaceAfter=2),
         "h1": ParagraphStyle("BookH1", fontName="BookSans-Bold", fontSize=13, leading=16,
                              textColor=NAVY, spaceBefore=7, spaceAfter=5, keepWithNext=True),
-        "h2": ParagraphStyle("BookH2", fontName="BookSans-Bold", fontSize=10.5, leading=13,
+        "h2": ParagraphStyle("BookH2", fontName="BookSans-Bold", fontSize=10.5, leading=13.2,
                              textColor=TEAL, spaceBefore=5, spaceAfter=3, keepWithNext=True),
-        "h3": ParagraphStyle("BookH3", fontName="BookSans-Bold", fontSize=10, leading=12,
-                             textColor=NAVY, spaceBefore=4, spaceAfter=2, keepWithNext=True),
+        "h3": ParagraphStyle("BookH3", fontName="BookSans-Bold", fontSize=10, leading=12.6,
+                             textColor=NAVY, spaceBefore=5, spaceAfter=2.5, keepWithNext=True),
         "toc": ParagraphStyle("TOCHead", fontName="BookSans-Bold", fontSize=19, leading=24,
                               textColor=NAVY, spaceAfter=10),
-        "table": ParagraphStyle("BookTable", fontName="BookSans", fontSize=8.1, leading=10.1,
-                                 textColor=INK, spaceAfter=0),
-        "tablehead": ParagraphStyle("BookTableHead", fontName="BookSans-Bold", fontSize=8.1,
-                                     leading=10.1, textColor=colors.white, spaceAfter=0),
+        "table": ParagraphStyle("BookTable", fontName="BookSans", fontSize=8.2, leading=10.6,
+                                 textColor=INK, spaceAfter=1.2),
+        "tablehead": ParagraphStyle("BookTableHead", fontName="BookSans-Bold", fontSize=8.2,
+                                     leading=10.6, textColor=colors.white, spaceAfter=0),
         "toc_entry": ParagraphStyle("TOCEntry", fontName="BookSans", fontSize=9.2, leading=13,
                                      leftIndent=8, firstLineIndent=0, textColor=NAVY),
     }
@@ -187,7 +208,7 @@ def _is_major_heading(p):
     text = p.text.strip()
     if p.style.name.startswith("Heading 1"):
         return text
-    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", text, re.I):
+    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", text, re.I):
         return text
     return None
 
@@ -208,7 +229,7 @@ def _table_flowable(table, styles, doc_width):
                     style = styles["h1"]
                 elif p.style.name.startswith("Heading 2"):
                     style = styles["h2"]
-                elif p.runs and any(r.bold for r in p.runs) and len(p.text) < 110:
+                elif p.runs and any(r.bold for r in p.runs) and len(p.text) < 55 and "→" not in p.text and "·" not in p.text:
                     style = styles["h3"]
                 if major:
                     key = "pdf-" + re.sub(r"[^a-z0-9]+", "-", major.lower()).strip("-")
@@ -225,7 +246,10 @@ def _table_flowable(table, styles, doc_width):
     cols = len(rows[0])
     widths = []
     try:
-        widths = [float(table.columns[i].width) / 914400 * 72 for i in range(cols)]
+        widths = [
+            float(table.rows[0].cells[i].width or table.columns[i].width) / 914400 * 72
+            for i in range(cols)
+        ]
     except Exception:
         widths = []
     if len(widths) != cols or sum(widths) <= 1:
@@ -233,8 +257,12 @@ def _table_flowable(table, styles, doc_width):
     scale = doc_width / sum(widths)
     widths = [w * scale for w in widths]
     if cols == 1:
-        data = [[rows[0][0]] ]
-        flow = LongTable(data, colWidths=widths, splitByRow=1, splitInRow=1, hAlign="LEFT")
+        cell_paras = rows[0][0]
+        data = [[cell_paras]]
+        # Keep short and medium callout boxes intact across page breaks so a box
+        # never splits into a tiny empty sliver at the bottom of a page.
+        can_split_in_row = 1 if len(cell_paras) > 12 else 0
+        flow = LongTable(data, colWidths=widths, splitByRow=1, splitInRow=can_split_in_row, hAlign="LEFT")
         fill = shade_color(table.rows[0].cells[0], PALE)
         flow.setStyle(TableStyle([
             ("BACKGROUND", (0, 0), (-1, -1), fill or colors.white),
@@ -242,6 +270,8 @@ def _table_flowable(table, styles, doc_width):
             ("LEFTPADDING", (0, 0), (-1, -1), 6), ("RIGHTPADDING", (0, 0), (-1, -1), 6),
             ("TOPPADDING", (0, 0), (-1, -1), 4), ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
         ]))
+        if can_split_in_row:
+            flow._is_large_box = True  # type: ignore[attr-defined]
         return flow
     data = []
     for ri, row in enumerate(rows):
@@ -250,7 +280,7 @@ def _table_flowable(table, styles, doc_width):
     row_heights = [float(row.height) / 914400 * 72 if row.height else None for row in table.rows]
     flow = LongTable(data, colWidths=widths, rowHeights=row_heights,
                      repeatRows=1 if len(rows) > 1 else 0,
-                     splitByRow=1, splitInRow=1, hAlign="LEFT")
+                     splitByRow=1, splitInRow=0, hAlign="LEFT")
     style_cmds = [
         ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#C8CDD4")),
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
@@ -268,6 +298,33 @@ def _table_flowable(table, styles, doc_width):
     return flow
 
 
+def _custom_para_style(p, base_style, idx):
+    """Build a ParagraphStyle respecting centering, custom font size, and keep_with_next."""
+    is_center = (p.alignment == 1)
+    run_pt = None
+    for r in p.runs:
+        if r.text.strip() and r.font.size is not None:
+            run_pt = float(r.font.size.pt)
+            break
+    keep_next = bool(p.paragraph_format.keep_with_next)
+    sb = float(p.paragraph_format.space_before.pt) if p.paragraph_format.space_before is not None else base_style.spaceBefore
+    sa = float(p.paragraph_format.space_after.pt) if p.paragraph_format.space_after is not None else base_style.spaceAfter
+    if not is_center and (run_pt is None or abs(run_pt - 10.5) < 1.2) and not keep_next:
+        return base_style
+    font_size = run_pt if (run_pt is not None and (is_center or run_pt >= 11.5)) else base_style.fontSize
+    leading = max(font_size * 1.28, base_style.leading)
+    return ParagraphStyle(
+        f"CustomPara_{idx}",
+        parent=base_style,
+        fontSize=font_size,
+        leading=leading,
+        alignment=TA_CENTER if is_center else TA_LEFT,
+        spaceBefore=sb,
+        spaceAfter=sa,
+        keepWithNext=keep_next or getattr(base_style, "keepWithNext", False),
+    )
+
+
 def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
     if not source_docx.exists():
         raise FileNotFoundError(source_docx)
@@ -279,14 +336,18 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
     contents_tables_skipped = False
     doc_width = A4[0] - 36*mm
     body = doc.element.body
+    para_idx = 0
     for child in body:
         tag = child.tag.rsplit("}", 1)[-1]
         if tag == "p":
             from docx.text.paragraph import Paragraph as DocxParagraph
             p = DocxParagraph(child, doc)
+            para_idx += 1
             if _is_page_break(p):
                 if toc_active:
                     toc_active = False
+                while story and isinstance(story[-1], Spacer):
+                    story.pop()
                 story.append(PageBreak())
                 continue
             text = paragraph_html(p)
@@ -294,8 +355,11 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
             if toc_active and raw:
                 continue
             if not raw:
-                story.append(Spacer(1, 2))
+                sa = float(p.paragraph_format.space_after.pt) if p.paragraph_format.space_after is not None else 2.0
+                run_sz = float(p.runs[0].font.size.pt) if (p.runs and p.runs[0].font.size is not None) else 0.0
+                story.append(Spacer(1, max(2.0, sa, run_sz * 0.7)))
                 continue
+            keep_next = bool(p.paragraph_format.keep_with_next)
             if p.style.name.startswith("Heading 2"):
                 para = Paragraph(text, styles["h2"])
                 para._is_section_heading = True  # type: ignore[attr-defined]
@@ -304,8 +368,16 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
                 para = Paragraph(text, styles["h1"])
                 para._is_section_heading = True  # type: ignore[attr-defined]
                 story.append(para)
+            elif p.style.name.startswith("Heading 3"):
+                para = Paragraph(text, styles["h3"])
+                para._is_sub_heading = True  # type: ignore[attr-defined]
+                story.append(para)
             else:
-                story.append(Paragraph(text, styles["body"]))
+                st = _custom_para_style(p, styles["body"], para_idx)
+                para = Paragraph(text, st)
+                if keep_next and p.alignment != 1:
+                    para._is_sub_heading = True  # type: ignore[attr-defined]
+                story.append(para)
         elif tag == "tbl":
             from docx.table import Table as DocxTable
             tbl = DocxTable(child, doc)
@@ -331,20 +403,16 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
                 continue
             flow = _table_flowable(tbl, styles, doc_width)
             if flow is not None:
-                # Keep section headings with the content that follows them so a heading
-                # is never stranded as the last line on a page.
-                is_heading = raw.startswith("Part ") and "·" in raw
+                is_heading = (
+                    (raw.startswith("Part ") and "·" in raw)
+                    or (first is not None and first.style.name.startswith("Heading 2"))
+                )
                 if is_heading:
-                    # Mark the heading for KeepTogether; wrap with the next element later.
-                    # Use CondPageBreak if remaining space is too small, otherwise KeepTogether.
                     flow._is_section_heading = True  # type: ignore[attr-defined]
                 story.append(flow)
                 story.append(Spacer(1, 2))
     if not toc_inserted:
         raise RuntimeError(f"Could not locate the source contents banner for the PDF TOC in {source_docx.name}")
-    # Genuine PDF fix: keep each Part heading with the following block so the
-    # heading is never left as the last line on a page.  Apply to both DOCX-
-    # paragraph headings (H1/H2) and table-banner headings (Part X ·).
     _apply_orphan_fix(story)
     DIST.mkdir(exist_ok=True)
     template = BookDocTemplate(pdf_out, title)
@@ -388,7 +456,7 @@ def _build_epub_for(html_path: Path, epub_path: Path, title: str, uuid: str):
             continue
         if heading_text.upper() == "DIAGNOSTIC TEST":
             in_static_contents = False
-        match = re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", heading_text, re.I)
+        match = re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", heading_text, re.I)
         if match and heading_text.casefold() not in seen_titles:
             seen_titles.add(heading_text.casefold())
             hid = "nav-" + re.sub(r"[^a-z0-9]+", "-", heading_text.lower()).strip("-")
@@ -407,11 +475,13 @@ def _build_epub_for(html_path: Path, epub_path: Path, title: str, uuid: str):
         if heading_text.upper() == "CONTENTS":
             in_static_contents = True
     css = """
-    body { font-family: serif; line-height: 1.5; margin: 5%; color: #1a1a1a; }
-    h1,h2,h3 { font-family: sans-serif; color: #1f3a5f; break-before: page; }
-    h1 { font-size: 1.45em; } h2 { font-size: 1.15em; }
+    body { font-family: serif; line-height: 1.55; margin: 5%; color: #1a1a1a; }
+    h1, h2, h3 { font-family: sans-serif; color: #1f3a5f; page-break-after: avoid; break-after: avoid; }
+    h1 { font-size: 1.45em; break-before: page; page-break-before: always; }
+    h2 { font-size: 1.15em; color: #0e6b6b; margin-top: 1.2em; }
+    h3 { font-size: 1.05em; margin-top: 0.9em; }
     table { width: 100%; border-collapse: collapse; margin: 0.8em 0; }
-    td,th { border: 1px solid #c8cdd4; padding: 0.35em; vertical-align: top; }
+    td, th { border: 1px solid #c8cdd4; padding: 0.4em; vertical-align: top; }
     img { max-width: 100%; height: auto; }
     a { color: #0e6b6b; }
     """
@@ -464,7 +534,6 @@ def verify_epub(path):
             if name.endswith((".xhtml", ".opf", ".ncx", ".xml")):
                 etree.fromstring(z.read(name), parser)
         xhtml = z.read("EPUB/book.xhtml").decode("utf-8")
-        # Student book vs teacher book: check appropriate tokens
         if "Teacher" in str(path):
             for token in ("LESSON 16", "TEACHER GUIDE", "ASSESSMENT GUIDANCE"):
                 if token not in xhtml:
@@ -495,7 +564,6 @@ def main():
     verify_epub(epub_path)
     print(f"PDF:   {pdf.relative_to(ROOT)} ({pdf.stat().st_size:,} bytes)")
     print(f"EPUB:  {epub_path.relative_to(ROOT)} ({epub_path.stat().st_size:,} bytes; package/XML checks passed)")
-    # Teacher book — only if DOCX exists
     if TEACHER_DOCX.exists() and TEACHER_HTML.exists():
         tpdf = build_teacher_pdf()
         tepub = build_teacher_epub()
@@ -504,6 +572,7 @@ def main():
         print(f"Teacher EPUB: {tepub.relative_to(ROOT)} ({tepub.stat().st_size:,} bytes; package/XML checks passed)")
     elif TEACHER_DOCX.exists():
         print(f"NOTE: Teacher HTML not found at {TEACHER_HTML.name} — skipping teacher EPUB (run build_html first)")
+
 
 if __name__ == "__main__":
     main()

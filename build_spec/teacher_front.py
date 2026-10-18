@@ -8,25 +8,25 @@ from docx.oxml.ns import qn
 
 
 def title_page(doc):
-    spacer(doc, 60)
-    para(doc, "TOEFL HOUSE", size=14, bold=True, color=TEAL, align='c', space_after=2)
+    spacer(doc, 48)
+    para(doc, "TOEFL HOUSE", size=14, bold=True, color=TEAL, align='c', space_after=4)
     para(doc, "GRAMMAR FOR", size=28, bold=True, color=NAVY, align='c',
-         space_before=18, space_after=0)
+         space_before=14, space_after=2)
     para(doc, "SPECIAL SPEAKING", size=28, bold=True, color=NAVY, align='c',
-         space_before=0, space_after=4)
+         space_before=0, space_after=6)
     para(doc, "TEACHER'S BOOK", size=22, bold=True, color=GOLD, align='c',
          space_before=6, space_after=10)
-    para(doc, "Lesson procedures, complete answers, model speaking responses, "
-              "timing and differentiation for all sixteen lessons",
-         size=13, italic=True, color=GREY, align='c', space_before=6, space_after=24)
+    para(doc, "Lesson procedures, complete answer keys, model speaking responses, "
+              "timing plans and mixed-classroom guidance for all sixteen lessons",
+         size=12.5, italic=True, color=GREY, align='c', space_before=4, space_after=24)
     box(doc, None, [
         ("Companion to the Student Book: Grammar for Special Speaking", True),
         ("Learn the grammar. Use it in conversation. Make it part of your speech.", False),
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
-    spacer(doc, 40)
-    para(doc, "For teachers of Intermediate and Advanced learners", size=12, color=INK, align='c')
-    para(doc, "16 lesson guides  ·  3 review-test guides  ·  assessment keys  ·  feedback guidance",
-         size=11, color=GREY, align='c')
+    spacer(doc, 36)
+    para(doc, "For instructors of the Special Speaking classroom", size=11.5, color=INK, align='c')
+    para(doc, "16 lesson guides  ·  3 review-test guides  ·  assessment keys  ·  classroom feedback guide",
+         size=10.5, color=GREY, align='c')
     page_break(doc)
 
 
@@ -36,86 +36,81 @@ def publication_note(doc):
     para(doc, "© TOEFL HOUSE, 2026. All rights reserved.", size=11, bold=True, color=NAVY)
     para(doc, "This Teacher's Book is the companion volume to the Student Book "
               "Grammar for Special Speaking (author and publisher: TOEFL HOUSE; publication year "
-              "2026). Full publication details, edition and ISBN placeholders, and the statement "
-              "of limits are printed on the Student Book's copyright page and apply equally here.")
-    para(doc, "The lesson guides in this volume reproduce the Student Book's objectives, practice "
-              "items, answers and model responses for teaching use. Assessment keys are provided "
-              "here for instructors; they should not be distributed to learners before a test is "
-              "completed.")
+              "2026). Full publication details and copyright notices printed on the Student Book's "
+              "copyright page apply equally to this volume.")
+    para(doc, "The lesson guides in this volume match the Student Book's sixteen lessons, practice "
+              "items, answers, and model responses for classroom delivery. Assessment keys are provided "
+              "in the back matter for instructors; they should not be distributed to learners before a "
+              "test is completed.")
     para(doc, "TOEFL® is a registered trademark of Educational Testing Service (ETS). This book is "
-              "an independent teaching resource prepared by TOEFL HOUSE; it is not affiliated with, "
+              "an independent educational resource prepared by TOEFL HOUSE; it is not affiliated with, "
               "authorised or endorsed by ETS.")
     page_break(doc)
 
 
 def introduction(doc):
-    h_banner(doc, "INTRODUCTION", sub="What this Teacher's Book is and how it was built")
-    para(doc, "This volume exists so that a competent English teacher can prepare and deliver any "
-              "lesson in Grammar for Special Speaking without having to invent missing "
-              "explanations, answers, procedures or activities.")
-    para(doc, "Every guide that follows corresponds, line by line, to the Student Book: the same "
-              "sixteen lessons in the same order, the same eight lesson functions, the same "
-              "practice items and the same answer key. The teaching content in this book and the "
-              "practice content in the Student Book are generated from a single shared source, so "
-              "the two volumes cannot drift apart between editions.")
-    para(doc, "Each guide gives you: measurable lesson outcomes and success criteria; materials and "
-              "preparation; a sixty-minute timing plan that matches the Student Book's pacing "
-              "guidance; step-by-step procedures for all eight lesson functions; quick "
-              "checks for understanding; the complete practice answers with notes on where "
-              "learners lose marks; model exchanges and model responses for the speaking tasks; "
-              "assessment guidance for open-ended work; Intermediate scaffolding and Advanced "
-              "extension; common learner errors with correction strategies; a forty-five-minute "
-              "shorter-session plan; and review and feedback guidance.")
-    para(doc, "The Student Book's assessment policy carries over unchanged: model answers are "
-              "examples, not scripts; acceptable alternatives are accepted wherever an exercise "
-              "allows them; speaking tasks are judged with success criteria and the four-criterion "
-              "rubric, not with a single mandatory response; and the Diagnostic Test and Final "
-              "Assessment raw totals must not be compared as a measure of learning gain.")
-    para(doc, "What this book does not claim: it is not a record of classroom trials, teacher "
-              "certification, or external approval. Its procedures are editorially prepared and "
-              "structurally verified; qualified-teacher review and a real learner pilot remain "
-              "separate, documented steps.", size=10.5, italic=True, color=GREY)
+    h_banner(doc, "INTRODUCTION", sub="Teaching one unified Special Speaking classroom")
+    para(doc, "This Teacher's Book is designed so that you can walk into your Special Speaking "
+              "classroom ready to run an engaging, clear, and productive lesson without having to "
+              "invent missing explanations, answer keys, follow-up prompts, or timing plans.")
+    para(doc, "In a real Special Speaking class, learners sit in the same room with a wide range of "
+              "fluency and confidence — from solid intermediate speakers who still hesitate over "
+              "tense choices or word order to more advanced speakers who are ready to refine their "
+              "register, nuance, and rhetorical control. Rather than splitting the room into separate "
+              "tracks or handing out different worksheets, the Student Book teaches the whole class "
+              "through one shared learning journey. Every student participates in the same opening "
+              "conversation, learns from the same clear explanation and side-by-side contrasts, and "
+              "engages in the same pair and real-talk tasks.")
+    para(doc, "Differentiation happens naturally through the richness of each student's spoken "
+              "response and through how you guide them in the room. Each lesson guide in this book "
+              "gives you concrete ways to support developing speakers (so they can participate "
+              "accurately and confidently in the shared task) and ways to stretch stronger speakers "
+              "(through deeper follow-up questions, added nuance, and the precision patterns in "
+              "Part 6) without ever labeling or segregating learners.")
+    para(doc, "Across all sixteen guides you will find: clear lesson objectives and observable "
+              "success criteria; board and preparation notes; a practical 60-minute timing plan "
+              "(plus a 45-minute adaptation); step-by-step guidance for all eight lesson parts; "
+              "quick concept-check questions; complete Practice A and B answer keys with explanatory "
+              "notes and acceptable alternatives; model pair exchanges and Real Talk responses; "
+              "mixed-classroom support and extension strategies; targeted remedies for common "
+              "misunderstandings; and fluency-protecting feedback routines.")
     page_break(doc)
 
 
 def how_to_use(doc):
-    h_banner(doc, "HOW TO USE THIS TEACHER'S BOOK", sub="Map of the guides")
-    para(doc, "Lesson-by-lesson layout", size=12, bold=True, color=NAVY)
-    table(doc, ["Section of each guide", "What it gives you"], [
-        ["Lesson outcomes and measurable success criteria",
-         "what to teach toward, and observable evidence that learners got there"],
-        ["Materials and preparation",
-         "what to print, write on the board or set up before learners arrive"],
+    h_banner(doc, "HOW TO USE THIS TEACHER'S BOOK", sub="A quick map of each lesson guide")
+    para(doc, "What each lesson guide contains", size=12, bold=True, color=NAVY)
+    table(doc, ["Section of each guide", "How it helps you in class"], [
+        ["Lesson outcomes and observable success criteria",
+         "Defines the communicative goal of the hour and what to listen for as evidence of learning"],
+        ["Materials and board preparation",
+         "Shows the simple board layout or timeline to set up before class begins"],
         ["Suggested timing (60-minute lesson)",
-         "minutes per lesson function; every table totals exactly 60"],
-        ["Parts 1–8 (the eight lesson functions)",
-         "step-by-step procedures mirroring the Student Book, in teaching order"],
+         "Allocates minutes across the eight lesson steps; every guide totals exactly 60 minutes"],
+        ["Parts 1–8 (step-by-step teaching procedures)",
+         "Follows the exact sequence of the Student Book with practical classroom instructions"],
         ["Check understanding",
-         "quick whole-class checks after the Simple Rule"],
-        ["Answer key and teaching notes",
-         "complete Practice A/B answers (identical to the Student Book) with notes on likely confusion"],
+         "Gives fast, interactive concept checks to confirm the rule landed before written practice"],
+        ["Answer key and explanatory teaching notes",
+         "Provides all Practice A/B answers (matching Student Book Appendix 5) plus why common traps occur"],
         ["Model exchange and model response",
-         "examples for rehearsal and Real Talk tasks — show these only after first attempts"],
-        ["Differentiation, common errors, shorter session, review and feedback",
-         "pathways, correction strategies, a 45-minute plan, and how to close the lesson"],
+         "Supplies natural conversational models for rehearsal and post-task comparison"],
+        ["Supporting and stretching one mixed classroom",
+         "Shows how to scaffold developing speakers and challenge stronger speakers within the same activity"],
+        ["Common misunderstandings, 45-minute plan, and feedback",
+         "Offers rapid board repairs, a shorter-session plan, and delayed error-correction guidance"],
     ], widths=[2.6, 3.7], font_size=9.5)
-    para(doc, "Back matter", size=12, bold=True, color=NAVY, space_before=6)
-    para(doc, "After the sixteen guides you will find administration and key notes for the "
-              "Diagnostic Test, the three Review Tests and the Final Assessment, including a model "
-              "final speaking response and rubric-use reminders.")
-    para(doc, "Three working rules", size=12, bold=True, color=NAVY, space_before=6)
-    box(doc, "Before you teach", [
-        "•  Read the Student Book lesson first — you will teach from the same page order as learners.",
-        "•  Decide in advance which learners need the Intermediate scaffold and which are ready for "
-        "the Advanced upgrade; both pathways share one objective.",
-        "•  During speaking work, keep feedback until the two minutes are over — note errors, then "
-        "repair them together afterwards.",
+    para(doc, "Three habits of effective delivery", size=12, bold=True, color=NAVY, space_before=6)
+    box(doc, "Before and during class", [
+        "•  Let students speak first in Part 1 before you explain any grammar on the board — those first two minutes create curiosity for the rule.",
+        "•  Keep everyone on the same task: use sentence starters or board prompts when a pair needs support, and ask 'Why?', 'Under what conditions?', or 'How could you say that more precisely?' when a pair finishes early.",
+        "•  Protect spoken fluency during Parts 5 and 7: listen and note recurring slips quietly, then run a brisk three-minute board repair after everyone has finished speaking.",
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
     page_break(doc)
 
 
 def contents(doc):
-    h_banner(doc, "CONTENTS", sub="Lesson guides, front matter and assessment keys")
+    h_banner(doc, "CONTENTS", sub="Front matter, sixteen lesson guides, and assessment keys")
     para(doc, "This is an automatic Word table of contents. It updates to show page numbers when "
               "opened in Word; if it has not refreshed, select it and choose Update Field / Update "
               "entire table.", size=10.5, italic=True, color=GREY)
@@ -145,10 +140,10 @@ def contents(doc):
 
 
 def course_overview(doc, lessons, lesson_titles):
-    h_banner(doc, "COURSE OVERVIEW", sub="The approved sixteen-lesson syllabus, as taught")
-    para(doc, "The course is the Student Book syllabus in full: sixteen lessons in eight thematic "
-              "parts, each lesson carrying the same eight teaching functions. Nothing is merged, "
-              "omitted or reordered between the two volumes.")
+    h_banner(doc, "COURSE OVERVIEW", sub="The sixteen-lesson syllabus and assessment structure")
+    para(doc, "The course comprises sixteen lessons arranged in eight thematic parts, progressing "
+              "from core sentence and tense control to persuasive comparison, focus structures, "
+              "and confident rhetorical style.")
     rows = []
     for L in lessons:
         rows.append([str(L["n"]), lesson_titles[L["n"]], f"Part {L['part_no']}", L["goal"]])
@@ -157,12 +152,12 @@ def course_overview(doc, lessons, lesson_titles):
     para(doc, "Assessment architecture", size=12, bold=True, color=NAVY, space_before=6)
     _bullets = [
         "Diagnostic Test (25 written items + matched baseline speaking sample) — before Lesson 1.",
-        "Review Test 1 after Lesson 4 (scope: Lessons 1–4); Review Test 2 after Lesson 8 (1–8); "
-        "Review Test 3 after Lesson 12 (1–12). Cumulative, taught material only.",
-        "Final Assessment after Lesson 16: 30 written items with an item-level coverage matrix, "
-        "plus the matched speaking task and four-criterion rubric.",
-        "Five appendices in the Student Book: Formula Book, Common Errors Guide, Sentence "
-        "Patterns, Can-Do Tracker and the Complete Answer Key (Appendix 5).",
+        "Review Test 1 after Lesson 4 (Lessons 1–4); Review Test 2 after Lesson 8 (Lessons 1–8); "
+        "Review Test 3 after Lesson 12 (Lessons 1–12). Each review test assesses only taught material.",
+        "Final Assessment after Lesson 16: 30 written items sampling all lessons, plus the matched "
+        "two-minute speaking task and four-criterion rubric.",
+        "Five student reference appendices: Grammar Formula Book, Common Errors Guide, Essential "
+        "Sentence Patterns, Can-Do Tracker, and the Complete Answer Key (Appendix 5).",
     ]
     for b in _bullets:
         para(doc, f"•  {b}", indent=0.12)
@@ -170,32 +165,35 @@ def course_overview(doc, lessons, lesson_titles):
 
 
 def teaching_principles(doc):
-    h_banner(doc, "TEACHING PRINCIPLES", sub="The instructional philosophy behind every guide")
+    h_banner(doc, "TEACHING PRINCIPLES", sub="Eight habits that make grammar stick in conversation")
     principles = [
-        ("Meaning first, form second.",
-         "Every lesson opens with the Speaking Hook: learners speak before they see the rule, so "
-         "the grammar arrives as a tool they were already reaching for."),
-        ("Keep explanation short, production long.",
-         "The Simple Rule and See the Difference should take a quarter of the lesson at most; the "
-         "remaining time belongs to guided and spoken use."),
-        ("Accuracy and fluency alternate.",
-         "Controlled practice builds accuracy; Pair Speaking rehearses with support; the Real Talk "
-         "Challenge demands independent transfer. Do not collapse the three into one."),
-        ("Correction that protects speaking.",
-         "Do not interrupt fluency work to fix errors. Note them, finish the task, then repair "
-         "together — see the Pacing and Feedback section."),
-        ("Models are examples, never scripts.",
-         "Printed models illustrate effective language. Learners produce their own versions; "
-           "accept any response that meets the success criteria."),
-        ("One objective, two pathways.",
-         "Intermediate learners secure the core pattern with scaffolds; Advanced learners deepen "
-         "choice, register and precision. Advanced work must add precision, not merely workload."),
-        ("Assessment stays honest.",
-         "Accept legitimate alternatives, assess speaking with criteria rather than a single "
-         "answer, and never present raw diagnostic and final totals as a gain score."),
-        ("Return-to-rule on failure.",
-         "When a self-check box is unticked, the learner goes back to the Simple Rule, redoes the "
-         "matching practice item, and revisits the Formula Book card before moving on."),
+        ("1. Situation and meaning before terminology.",
+         "Begin every lesson with a concrete human situation and let learners talk in Part 1 before "
+         "introducing any rule. When a grammatical term is needed, explain what it means in everyday English."),
+        ("2. Keep explanation brisk; give the hour to speaking.",
+         "Parts 1–3 should take roughly 15 minutes in total. The remaining 45 minutes belong to active "
+         "practice, pair conversation, precision building, and the unscripted Real Talk Challenge."),
+        ("3. Teach contrasts side by side in the same context.",
+         "Students rarely understand a structure in isolation. Show how changing 'I lived' to 'I have lived' "
+         "or 'mustn't' to 'can't' changes the real-world message in the listener's mind."),
+        ("4. One classroom, open-ended depth.",
+         "Never split the room into separate tracks. Give the whole class the same communicative task; "
+         "help hesitant speakers land a clear, accurate core answer while prompting confident speakers "
+         "to elaborate with reasons, stories, concessions, and the precision patterns in Part 6."),
+        ("5. Models are inspiration, not scripts to memorize.",
+         "Have learners attempt the speaking task first before uncovering the printed Model Response. "
+         "Then ask them to notice one useful phrase or connection in the model and try a second round."),
+        ("6. Correct without interrupting communication.",
+         "During pair work and Real Talk, listen with the printed criteria and jot down two or three "
+         "anonymous sentences on a notepad. Put them on the board after the timer ends so the whole "
+         "class can repair them together."),
+        ("7. Honour legitimate grammatical alternatives.",
+         "English often allows more than one natural form depending on the speaker's focus (for instance, "
+         "present perfect simple vs continuous, or 'may / might / could' for possibility). Credit every "
+         "accurate option noted in the key."),
+        ("8. Close every lesson with active recall.",
+         "In the final five minutes, ask students to close their books and produce the target patterns "
+         "from memory. Retrieval without looking at the page is what builds real-time fluency."),
     ]
     for title, text in principles:
         box(doc, title, [text], fill=FILL_BOX_GREY, label_color=GOLD)
@@ -203,82 +201,71 @@ def teaching_principles(doc):
 
 
 def pacing_and_feedback(doc):
-    h_banner(doc, "PACING AND FEEDBACK", sub="Sixty minutes, mapped from the Student Book guidance")
-    para(doc, "The Student Book's summary pacing table for a sixty-minute lesson groups the eight "
-              "lesson functions into five blocks. The per-lesson timing tables in this book are "
-              "finer cuts of exactly the same hour — every guide totals 60 minutes and every block "
-              "matches the Student Book's figures.")
-    table(doc, ["Student Book block", "Minutes", "Lesson functions in this book"], [
-        ["Explanation and examples", "15", "Speaking Hook + Simple Rule + See the Difference"],
-        ["Controlled practice", "10", "Practice the Pattern"],
-        ["Pair speaking", "20", "Pair Speaking + Advanced Upgrade"],
-        ["Independent speaking challenge", "10", "Real Talk Challenge"],
-        ["Feedback and review", "5", "Review and Self-Check"],
+    h_banner(doc, "PACING AND FEEDBACK", sub="Managing a 60-minute or 45-minute Special Speaking class")
+    para(doc, "Every lesson guide in this book is paced for a standard 60-minute class session, "
+              "grouped into five clear teaching blocks:")
+    table(doc, ["Teaching block", "Minutes", "Lesson parts covered"], [
+        ["Opening, explanation, and contrast", "15", "Part 1 (Speaking Hook) + Part 2 (Simple Rule) + Part 3 (See the Difference)"],
+        ["Controlled oral and written practice", "10", "Part 4 (Practice the Pattern A & B)"],
+        ["Interactive speaking and precision", "20", "Part 5 (Pair Speaking) + Part 6 (Say It with Greater Precision)"],
+        ["Independent transfer challenge", "10", "Part 7 (Real Talk Challenge + model comparison)"],
+        ["Active recall and feedback", "5", "Part 8 (Review and Self-Check) + board repair"],
         [("Total", True), ("60", True), ("", False)],
     ], widths=[2.3, 0.8, 3.2], font_size=9.5)
-    para(doc, "Session variants", size=12, bold=True, color=NAVY, space_before=6)
+    para(doc, "Adapting to different class schedules", size=12, bold=True, color=NAVY, space_before=6)
     for b in [
-        "45-minute lesson: follow the shorter-session box printed in each guide — the core "
-        "objective, controlled practice and a shortened supported speaking task survive; the "
-        "Advanced upgrade moves to independent study.",
-        "90-minute lesson: run the full guide, then repeat the Real Talk Challenge with a new "
-        "partner and finish with the Review and Self-Check written twice (second attempt in "
-        "different words).",
-        "Multiple weekly sessions: place a review-test day between lesson blocks rather than "
-        "compressing two lessons into one hour.",
+        "45-minute session: follow the 'Shorter-session adaptation' box in each lesson guide — keep the "
+        "15-minute explanation and 10-minute practice intact, run a focused 12-minute Pair Speaking + "
+        "precision round, a 5-minute Real Talk sprint, and a 3-minute recall check.",
+        "90-minute session: run the full 60-minute plan, then have students switch partners and repeat "
+        "the Real Talk Challenge on a second topic, incorporating feedback from the first round.",
     ]:
         para(doc, f"•  {b}", indent=0.12)
-    para(doc, "Feedback that protects fluency", size=12, bold=True, color=NAVY, space_before=6)
-    box(doc, "During speaking tasks — do not interrupt", [
-        "•  Listen with the printed success criteria; tick what you hear instead of writing while "
-        "learners speak.",
-        "•  Note one or two recurring global errors (tense choice, word order) on the board "
-        "anonymously — never one note per learner.",
-        "•  Praise one specific success per speaker: a structure, a repair, a follow-up question.",
+    para(doc, "Fluency-protecting feedback routine", size=12, bold=True, color=NAVY, space_before=6)
+    box(doc, "While students are speaking — listen and note", [
+        "•  Circulate quietly with the lesson's success criteria; never interrupt a speaker mid-thought to fix a grammar slip.",
+        "•  Write down two strong sentences you hear and two recurring errors on your notepad (without student names).",
+        "•  If a pair stalls, join briefly as a curious listener and ask one natural follow-up question to restart the flow.",
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
-    box(doc, "After the task — repair in three minutes", [
-        "•  Recast once, ask the class to rebuild the sentence, then say the model version.",
-        "•  Correct only what was taught in this lesson; file other errors for a later review.",
-        "•  Send learners back to the printed Watch out list in Part 8 for self-correction before "
-        "you supply answers.",
-        "•  With Advanced learners, ask them to justify their choice of structure — discussion is "
-        "correction too.",
+    box(doc, "After the speaking round — repair in three minutes", [
+        "•  Start by praising one specific communicative success and one strong sentence from the room.",
+        "•  Write the two anonymous error sentences on the board and invite pairs to spot and repair the pattern in 30 seconds.",
+        "•  Have the whole class say the repaired sentences aloud once so the natural rhythm lands in everyone's ear.",
     ], fill=FILL_BOX_GREY, label_color=GOLD)
-    page_break(doc)
+    # Note: render_teacher_lesson begins with page_break(doc), so we do not add a duplicate page_break here.
 
 
 def assessment_guidance(doc, keys_registry, model_final_speech):
-    h_banner(doc, "ASSESSMENT GUIDANCE", sub="Keys, alternatives, speaking tasks and score honesty")
-    para(doc, "Where the answers live", size=12, bold=True, color=NAVY)
+    page_break(doc)
+    h_banner(doc, "ASSESSMENT GUIDANCE", sub="Keys, acceptable alternatives, and scoring spoken progress")
+    para(doc, "How the assessments work together", size=12, bold=True, color=NAVY)
     for b in [
-        "Lesson practice answers: printed inside every guide (identical to Student Book Appendix 5).",
-        "Diagnostic Test, Review Tests 1–3 and Final Assessment keys: printed in the back matter "
-        "of this book; learners see them only in Student Book Appendix 5, after they have worked.",
-        "Open-ended speaking tasks: never keyed to a single response. Use the success criteria in "
-        "each task and the four-criterion rubric (Grammatical accuracy · Appropriate structure "
-        "selection · Clarity · Successful communication; 1–4 each, total 16).",
+        "Lesson Practice A and B keys: printed inside every lesson guide (and in Student Book Appendix 5).",
+        "Diagnostic Test, Review Tests 1–3, and Final Assessment keys: printed below for instructor reference.",
+        "Open-ended speaking tasks: evaluate using the lesson's observable criteria and the four-criterion "
+        "speaking rubric (Grammatical accuracy · Appropriate structure selection · Clarity · Successful "
+        "communication; 1–4 points each, total 16).",
     ]:
         para(doc, f"•  {b}", indent=0.12)
-    para(doc, "Marking rules", size=12, bold=True, color=NAVY, space_before=6)
+    para(doc, "Fair marking principles", size=12, bold=True, color=NAVY, space_before=6)
     for b in [
-        "Accept every alternative the key marks as acceptable; multiple defensible answers are "
-        "acknowledged in the key, not penalised.",
-        "Where an item admits several readings and the key does not acknowledge them, treat it as "
-        "a discussion item — do not invent a single mandatory answer.",
-        "For transformations, credit any version that preserves the target structure and meaning.",
-        "Record speaking scores by criterion, not as one global impression, and keep the baseline "
-        "and final rubric scores side by side.",
-        "Do not compare Diagnostic and Final raw grammar totals as a measure of gain — the tests "
-        "differ in length and blueprint. Compare rubric criterion scores instead.",
+        "Credit every grammatical alternative listed in the key (and any other natural form that accurately "
+        "fulfils the prompt and context).",
+        "For sentence transformations and open prompts, judge whether the target structure and meaning are "
+        "accurate rather than requiring identical wording.",
+        "Do not compare the 25-item Diagnostic raw score with the 30-item Final Assessment raw score as a "
+        "numerical gain claim — the two written tests have different lengths and blueprints. Instead, compare "
+        "learners' baseline and final speaking scores across the four rubric criteria under identical task conditions.",
     ]:
         para(doc, f"•  {b}", indent=0.12)
     para(doc, "Model final speaking response (one strong example, not a script)", size=12,
          bold=True, color=NAVY, space_before=6)
     box(doc, "Approximately two minutes, delivered without reading", [model_final_speech],
         fill=FILL_BOX_GOLD, label_color=GOLD)
-    para(doc, "Score it with the printed rubric: note the criterion scores, then discuss with the "
-              "speaker which one or two behaviours would move a 3 to a 4. Learner responses that "
-              "differ in content but meet the criteria must score the same as the model.",
+    para(doc, "Use this sample to calibrate rubric scoring with colleagues: identify how the speaker "
+              "combines narrative tenses, conditionals, passives, relative clauses, hedging, and cleft "
+              "focus, and remember that any student response that meets the four criteria in the student's "
+              "own voice deserves full marks.",
          size=10.5, italic=True, color=GREY)
     para(doc, "Keys — Diagnostic Test and Review Tests", size=12, bold=True, color=NAVY,
          space_before=8)
@@ -286,37 +273,28 @@ def assessment_guidance(doc, keys_registry, model_final_speech):
         ans = keys_registry.get(name)
         if not ans:
             continue
-        para(doc, name, size=11, bold=True, color=TEAL, space_before=4)
+        para(doc, name, size=11, bold=True, color=TEAL, space_before=4, keep_with_next=True)
         lines = []
         for part in ("A", "B", "C"):
             if ans.get(part):
-                lines.append(f"{part}.  " + "  ·  ".join(f"{i + 1} {a}" for i, a in enumerate(ans[part])))
+                lines.append(f"{part}.  " + "  ·  ".join(f"{i + 1}. {a}" for i, a in enumerate(ans[part])))
         box(doc, None, lines, fill=FILL_BOX_GREY, label_color=NAVY)
-    para(doc, "Key — Final Assessment (30 items)", size=12, bold=True, color=NAVY, space_before=8)
+    para(doc, "Key — Final Assessment (30 items)", size=12, bold=True, color=NAVY, space_before=8, keep_with_next=True)
     ans = keys_registry.get("Final Assessment")
     if ans:
         lines = []
         for part in ("A", "B", "C"):
             if ans.get(part):
-                lines.append(f"{part}.  " + "  ·  ".join(f"{i + 1} {a}" for i, a in enumerate(ans[part])))
+                lines.append(f"{part}.  " + "  ·  ".join(f"{i + 1}. {a}" for i, a in enumerate(ans[part])))
         box(doc, None, lines, fill=FILL_BOX_GREY, label_color=NAVY)
-    para(doc, "Answer notes for the tests", size=12, bold=True, color=NAVY, space_before=6)
+    para(doc, "Explanatory notes on key test items", size=12, bold=True, color=NAVY, space_before=6, keep_with_next=True)
     for b in [
-        "Review Test 1 A4 'is studying': 'these days' frames a temporary current situation; "
-        "past simple here would contradict the time cue.",
-        "Review Test 1 B1 'must': legal obligation; B4 'don't have to / needn't': absence of "
-        "obligation — not 'mustn't', which would mean prohibition.",
-        "Review Test 2 B1: accept both 'Despite the exam being hard, everyone passed' and "
-        "'Despite the difficulty, everyone passed' — the first keeps the -ing complement attached "
-        "to the exam, not to everyone.",
-        "Review Test 3 A3: 'is said to speak' — reporting structure from Lesson 9; keep the "
-        "infinitive, not a finite tense.",
-        "Final Assessment A1 accepts 'have lived / 've lived / have been living' — all three "
-        "describe a situation continuing to now with 'since 2020'.",
-        "Final Assessment C3 accepts 'may well / probably / is likely to' and any equivalent "
-        "well-formed hedge; C4 is credited with any far/much/a lot + comparative + reason frame.",
-        "Diagnostic items accept the alternatives listed in the key (for example 'has worked / "
-        "has been working', 'who / that', 'may / might / could', 'had / got').",
+        "Review Test 1 A4 ('is studying'): 'these days' frames an ongoing current project; past simple would clash with the time cue.",
+        "Review Test 1 B1 ('must') vs B4 ('don't have to / needn't'): B1 expresses a legal requirement, whereas B4 expresses absence of obligation (not 'mustn't', which means forbidden).",
+        "Review Test 2 B1: credit both 'Despite the exam being hard, everyone passed' and 'Despite the difficulty, everyone passed' — both avoid attaching 'being hard' to 'everyone'.",
+        "Review Test 3 A3 ('to speak'): passive reporting structure from Lesson 9 ('She is said to speak five languages').",
+        "Final Assessment A1: credit 'have lived', ''ve lived', and 'have been living' — all three accurately express a situation continuing up to now with 'since 2020'.",
+        "Final Assessment C3 & C4: credit any well-formed hedge ('may well', 'probably', 'tends to', 'is likely to') on C3 and any accurate degree modifier + comparative + reason on C4.",
+        "Diagnostic Test: credit all listed alternatives ('has worked / has been working', 'who / that', 'may / might / could', 'had / got').",
     ]:
         para(doc, f"•  {b}", indent=0.12)
-    page_break(doc)

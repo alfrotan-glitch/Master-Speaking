@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 """TOEFL HOUSE design system for 'Grammar for Special Speaking'.
-Restrained palette, clear hierarchy, print-friendly. Design spec: section 13."""
+Restrained palette, clear hierarchy, comfortable reading rhythm, print-friendly."""
 from docx.shared import Pt, RGBColor, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ROW_HEIGHT_RULE
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
-# ---- palette (restrained: navy + teal + gold accents, greys) ----
+# ---- palette (restrained: navy + teal + gold accents, warm neutrals) ----
 NAVY = RGBColor(0x1F, 0x3A, 0x5F)
 TEAL = RGBColor(0x0E, 0x6B, 0x6B)
 GOLD = RGBColor(0x8A, 0x62, 0x00)
@@ -17,9 +17,9 @@ WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 
 FILL_NAVY = "1F3A5F"
 FILL_TEAL = "0E6B6B"
-FILL_BOX_TEAL = "EAF4F4"     # speaking / practice boxes
-FILL_BOX_GREY = "F3F4F6"     # formula boxes
-FILL_BOX_GOLD = "FBF3E2"     # warnings / advanced boxes
+FILL_BOX_TEAL = "EAF4F4"     # speaking / practice callouts
+FILL_BOX_GREY = "F4F6F8"     # pattern & example callouts
+FILL_BOX_GOLD = "FBF3E2"     # model / precision callouts
 FILL_LINE = "D9DDE3"
 
 BODY_FONT = "Calibri"
@@ -37,7 +37,7 @@ def shade(cell, fill):
     tcPr.append(shd)
 
 
-def cell_margins(cell, top=60, bottom=60, left=110, right=110):
+def cell_margins(cell, top=65, bottom=65, left=120, right=120):
     tcPr = cell._tc.get_or_add_tcPr()
     mar = OxmlElement('w:tcMar')
     for tag, v in (('top', top), ('start', left), ('bottom', bottom), ('end', right)):
@@ -71,11 +71,17 @@ def run(p, text, size=11, bold=False, italic=False, color=INK,
 
 
 def para(doc_or_cell, text="", size=11, bold=False, italic=False, color=INK,
-         align=None, space_before=2, space_after=2, indent=None, font=BODY_FONT):
+         align=None, space_before=2.5, space_after=3.5, indent=None, font=BODY_FONT,
+         keep_with_next=False, style_name=None):
     p = doc_or_cell.add_paragraph()
+    if style_name:
+        try:
+            p.style = doc_or_cell.styles[style_name]
+        except Exception:
+            pass
     p.paragraph_format.space_before = Pt(space_before)
     p.paragraph_format.space_after = Pt(space_after)
-    if bold and len(text) < 80:
+    if keep_with_next or (bold and len(text) < 95):
         p.paragraph_format.keep_with_next = True
     if indent:
         p.paragraph_format.left_indent = Inches(indent)
@@ -90,8 +96,9 @@ def h_banner(doc, text, sub=None, fill=FILL_NAVY):
     """Full-width colored banner (part / lesson headers)."""
     t = doc.add_table(rows=1, cols=1)
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
+    _no_split(t.rows[0])
     c = t.rows[0].cells[0]
-    shade(c, fill); cell_margins(c, 90, 90, 140, 140)
+    shade(c, fill); cell_margins(c, 95, 95, 140, 140)
     p = c.paragraphs[0]
     # Semantic heading style is retained inside the visual banner for DOCX navigation.
     p.style = doc.styles['Heading 1']
@@ -110,6 +117,7 @@ def h_banner(doc, text, sub=None, fill=FILL_NAVY):
 def section_label(doc, text):
     """One of the 8 standard lesson parts."""
     t = doc.add_table(rows=1, cols=1)
+    _no_split(t.rows[0])
     c = t.rows[0].cells[0]
     shade(c, FILL_TEAL); cell_margins(c, 50, 50, 120, 120)
     p = c.paragraphs[0]
@@ -124,39 +132,46 @@ def section_label(doc, text):
 
 
 def box(doc, label, lines, fill=FILL_BOX_GREY, label_color=GOLD, formula=False):
-    """Standard content box: formula / warning / speaking etc."""
+    """Standard content callout box."""
     t = doc.add_table(rows=1, cols=1)
     try:
         t.style = 'Table Grid'
     except Exception:
         pass
+    _no_split(t.rows[0])
     c = t.rows[0].cells[0]
-    shade(c, fill); cell_margins(c)
+    shade(c, fill); cell_margins(c, 65, 65, 125, 125)
     first = True
     if label:
         p = c.paragraphs[0]
+        p.paragraph_format.space_before = Pt(1)
+        p.paragraph_format.space_after = Pt(2)
+        p.paragraph_format.keep_with_next = True
         run(p, label, size=9.5, bold=True, color=label_color, font=HEAD_FONT, caps=True)
         first = False
     for item in lines:
         if isinstance(item, tuple):
             txt, bold = item[0], item[1]
+            col = item[2] if len(item) > 2 else (NAVY if bold else INK)
         else:
-            txt, bold = item, False
+            txt, bold, col = item, False, INK
         if first:
             p = c.paragraphs[0]; first = False
         else:
             p = c.add_paragraph()
-        p.paragraph_format.space_before = Pt(1); p.paragraph_format.space_after = Pt(1)
-        run(p, txt, size=10.5 if not formula else 11, bold=bold,
+        p.paragraph_format.space_before = Pt(1.5)
+        p.paragraph_format.space_after = Pt(1.5)
+        if bold and len(txt) < 90:
+            p.paragraph_format.keep_with_next = True
+        run(p, txt, size=10.5, bold=bold,
             font=CODE_FONT if formula else BODY_FONT,
-            color=NAVY if bold else INK)
+            color=col)
     spacer(doc, 3)
     return t
 
 
 def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
           zebra=True, font_size=10):
-    # defensive: align header count with row width
     width = max([len(headers)] + [len(r) for r in rows]) if rows else len(headers)
     if len(headers) != width:
         print(f"[style.table] header/row mismatch: headers={len(headers)} rows={[len(r) for r in rows][:3]} -> normalising to {width} cols")
@@ -172,14 +187,13 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
     _no_split(hdr)
     for i, h in enumerate(headers):
         c = hdr.cells[i]
-        shade(c, header_fill); cell_margins(c, 40, 40, 90, 90)
+        shade(c, header_fill); cell_margins(c, 45, 45, 95, 95)
         p = c.paragraphs[0]
         run(p, h, size=font_size, bold=True, color=WHITE, font=HEAD_FONT)
     for ri, r in enumerate(rows):
         r = list(r) + [""] * (width - len(r))
         row = t.add_row()
         if all(not (v[0] if isinstance(v, tuple) else v) for v in r):
-            # Blank response rows are deliberately writable in printed copies.
             row.height = Inches(0.34)
             row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
         _no_split(row)
@@ -188,10 +202,10 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
             c = cells[i]
             if zebra and ri % 2 == 1:
                 shade(c, "F7F8FA")
-            cell_margins(c, 40, 40, 90, 90)
+            cell_margins(c, 45, 45, 95, 95)
             p = c.paragraphs[0]
-            p.paragraph_format.space_before = Pt(1)
-            p.paragraph_format.space_after = Pt(1)
+            p.paragraph_format.space_before = Pt(1.5)
+            p.paragraph_format.space_after = Pt(1.5)
             bold = isinstance(val, tuple)
             txt = val[0] if bold else val
             run(p, txt, size=font_size, bold=bold,
@@ -202,6 +216,7 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
                 row.cells[i].width = Inches(w)
     spacer(doc, 4)
     return t
+
 
 def spacer(doc, pts=6):
     p = doc.add_paragraph()
@@ -223,7 +238,6 @@ def setup_doc():
     from docx import Document
     from docx.shared import Inches as _In
     doc = Document()
-    # Ask compatible Word processors to refresh the native TOC/PAGE fields on open.
     update_fields = OxmlElement('w:updateFields')
     update_fields.set(qn('w:val'), 'true')
     doc.settings.element.append(update_fields)
@@ -231,18 +245,16 @@ def setup_doc():
     st.font.name = BODY_FONT
     st.font.size = Pt(11)
     st.font.color.rgb = INK
-    st.paragraph_format.space_after = Pt(3)
+    st.paragraph_format.space_after = Pt(3.5)
     st.paragraph_format.space_before = Pt(2)
-    st.paragraph_format.line_spacing = 1.08
+    st.paragraph_format.line_spacing = 1.12
     for s in doc.sections:
-        # A4 page size (python-docx defaults to US Letter)
         s.page_width = _In(8.27)
         s.page_height = _In(11.69)
         s.left_margin = Inches(0.9)
         s.right_margin = Inches(0.9)
         s.top_margin = Inches(0.8)
         s.bottom_margin = Inches(0.8)
-        # footer: brand + page number
         fp = s.footer.paragraphs[0]
         fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
         run(fp, "TOEFL HOUSE  |  Grammar for Special Speaking  |  ",

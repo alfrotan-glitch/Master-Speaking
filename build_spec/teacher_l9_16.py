@@ -1,479 +1,668 @@
 # -*- coding: utf-8 -*-
-"""Teacher's Book guides for Lessons 9-16 (Parts Five to Eight)."""
+"""Teacher's Book guides for Lessons 9-12 (Parts Five and Six)."""
 
 
 def _t(hook, rule, diff, pair, adv):
     assert hook + rule + diff == 15 and pair + adv == 20
     return [("The Speaking Hook", hook), ("The Simple Rule", rule),
             ("See the Difference", diff), ("Practice the Pattern", 10),
-            ("Pair Speaking", pair), ("The Advanced Upgrade", adv),
+            ("Pair Speaking", pair), ("Say It with Greater Precision", adv),
             ("Real Talk Challenge", 10), ("Review and Self-Check", 5)]
 
 
 T9 = {
     'objectives': [
-        "Build accurate passive forms across tenses and choose active or passive for the right focus.",
-        "Use one reporting structure (It is said / believed that …) in a short news brief.",
-        "Explain to a listener when the agent is kept and when it is omitted.",
+        "Form accurate passive sentences across present, past, present perfect, future, and modal "
+        "structures by changing the tense of 'be' before the past participle.",
+        "Choose wisely between active and passive voice so the listener's attention lands on the person, "
+        "object, or result that matters most.",
+        "Deliver a calm, objective 90-second news or workplace briefing using passive structures, one "
+        "formal reporting structure ('It is said that…' / 'X is expected to…'), and an active closing opinion.",
     ],
     'success': [
-        "at least 5 of 6 Practice A passive forms correct without prompting",
-        "the newsroom exchange includes two passives and one reporting structure",
-        "listeners confirm the tone sounds objective, not personal",
+        "learners form passives across at least three tenses without dropping 'be' or misforming past participles",
+        "learners keep ordinary personal actions active ('I lost my phone', not 'My phone was lost by me')",
+        "in the Real Talk briefing, speakers use at least four passives, one formal reporting frame, and "
+        "one final active comment",
     ],
     'prep': [
-        "Board: PASSIVE = be + past participle — tense lives in 'be' (is/are/was/were/will be/has been).",
-        "News prompts ready: accident, opening, rule change, sports result.",
-        "Formula Book card 9 for display.",
+        "Write the core passive formula on the board: RECEIVER + BE (in the right tense) + PAST PARTICIPLE "
+        "(+ by doer only when informative).",
+        "List the five high-frequency passive tense shapes on the board: 'is/are done' · 'was/were done' · "
+        "'has/have been done' · 'will be done' · 'must/can be done'.",
     ],
     'timing': _t(4, 7, 4, 12, 8),
     'procedure': {
         'hook': [
-            "Display the two bicycle sentences side-by-side. Elicit: whose story is each one?",
-            "Pairs produce one active and one passive version of a real event from their week.",
-            "Take two pairs' answers and mark which focuses on the result.",
+            "Have pairs read the two sentence pairs in Part 1 aloud ('Someone stole my bicycle outside the "
+            "library' vs 'My bicycle was stolen outside the library'; 'Workers built this bridge in 1974' "
+            "vs 'This bridge was built in 1974') and explain why the second sentence in each pair sounds "
+            "sharper.",
+            "Give pairs 90 seconds to answer the two hook prompts (naming two things in their city that "
+            "were built or repaired recently, and describing a product or dish made in their region).",
+            "Explain that the passive is a camera move: we swing the lens from an unknown or obvious doer "
+            "to the result, the object, or the person affected.",
         ],
         'rule': [
-            "Rule 1: passive formation across tenses — chorally read the four lines, then transform "
-            "one sentence through every tense.",
-            "Rule 2: when to use it — ask 'Who cares about the doer here?' for each Examples line.",
-            "Rule 3: reporting verbs — drill the It-is-said pair aloud.",
+            "Teach Rule 1 (How the passive works): show how 'be' does all the tense work while the main verb "
+            "stays a past participle, and have the class read the five tense examples aloud.",
+            "Teach Rule 2 (When to choose the passive — and when to stay active): highlight that we use the "
+            "passive when the doer is unknown, obvious, or less important than the result, or when we want "
+            "an objective tone — and we stay active for our own everyday actions.",
+            "Teach Rule 3 (Formal reporting passives): practise the twin patterns 'It is said/believed/expected "
+            "that + clause' and 'Subject + is said/believed/expected + to + base verb'.",
         ],
         'diff': [
-            "Active vs passive table: cover the right column, pairs guess the rule, then reveal.",
-            "Get-passive contrast — mark the emotion tag and give one informal get example.",
-            "False passives: read two on the board; ask why they are not real passives.",
+            "Walk through the two contrast tables in Part 3: first, Active vs Passive camera focus (including "
+            "why 'I lost my keys' beats 'My keys were lost by me'); second, Personal Active vs Impersonal "
+            "Reporting Passives.",
+            "Run a quick oral transform: you say 'People expect that the new metro line will open in autumn', "
+            "and pairs produce both 'It is expected that…' and 'The new metro line is expected to…'.",
         ],
         'practice': [
-            "Practice A (6) solo + pair check; insist on full forms including auxiliaries.",
-            "Practice B (6): B1–B3 spoken transformations in pairs; B4–B6 corrections aloud.",
-            "Key after checking; drill any tense error by walking the verb through the four tenses.",
+            "Give learners 4 minutes to complete Practice A (6 items) individually, paying special attention "
+            "to word order in A5 ('has just been introduced') and the modal passive in A6 ('must be signed').",
+            "Run Practice B (6 items) in pairs: learners transform B1–B3, repair B4 and B5, and share their "
+            "two-sentence local project update for B6.",
+            "Confirm the key whole-class and spotlight why B5 ('My phone was stolen by me') must be repaired "
+            "to 'I lost my phone' (or 'My phone was stolen').",
         ],
         'pair': [
-            "Newsroom: assign reporter/editor; three events each, passives in report style.",
-            "Editor question 'Who did it?' forces the agent decision.",
-            "Swap roles in the second round.",
+            "Read the 3-turn Newsroom model exchange in Part 5 aloud so learners hear how the reporter uses "
+            "passives and 'It is expected that…' while the editor asks 'Who…?' to trigger an active or 'by…' "
+            "response.",
+            "Run the four-minute Newsroom briefing in pairs: Partner A (Reporter) delivers three local or "
+            "workplace updates using passive forms; Partner B (Editor) asks follow-up questions about who "
+            "was responsible and what will happen next — then swap roles.",
+            "Invite two reporters to share their clearest news item with the class.",
         ],
         'advanced': [
-            "Intermediate base: passive in four tenses from objects in the room + reporting pair.",
-            "Advanced upgrade: get-promoted example, alleged/assumed, and participle tail in "
-            "speech — one of each.",
-            "Discussion: where does the passive improve credibility (reports, data)?",
+            "Run the first block of Part 6 ('Make the core pattern automatic'): have pairs point to four "
+            "objects in the classroom and describe each one in a different passive tense.",
+            "Move to the second block ('Add nuance, detail, and sharper focus'): practise conversational "
+            "'get' passives ('got promoted', 'got delayed'), past reporting infinitives ('is believed to have "
+            "started'), and past-participle openings ('Founded in 1998, the institute…').",
+            "Have each learner build one 'Founded / Built / Located in…' opening sentence about a real place.",
         ],
         'realtalk': [
-            "Planning as printed: three events — two about the result, one for comment — tenses fixed.",
-            "90 seconds to a partner; covered model until after one attempt.",
-            "Uncover the model; compare passive count and final active comment, then re-deliver "
-            "one improved sentence.",
+            "Give learners 30 seconds to jot down keywords for three recent events in their city, school, or "
+            "workplace (one past event, one recent change, and one future plan).",
+            "Partners take turns delivering their 90-second objective briefing while the listener checks the "
+            "four Partner listening checklist items.",
+            "Uncover the Model response, trace how it moves from 'Last month, the main city library was "
+            "reopened…' to 'has been installed…' to 'It is expected that…' before ending with an active "
+            "personal opinion, and have learners polish one sentence of their own.",
         ],
         'review': [
-            "Covered: three objects from the room into passives (different tenses).",
-            "Formal reporting sentence about a known person — volunteer round.",
-            "Self-check; unticked boxes redo Practice A and B4 aloud.",
+            "With books closed, have pairs complete the two oral recall tasks in Part 8 (three passive "
+            "sentences in different tenses about the classroom and two formal reporting versions of 'People "
+            "believe that…').",
+            "Have learners tick the self-check boxes and review Formula Book Card 9 if needed.",
         ],
     },
     'checking': [
-        "Board transform: 'They clean the office every day.' → learners say the passive.",
-        "'My phone was broken by me' — natural? (no — use the active)",
-        "Reporting pair quick-fire: 'People say that he is the best.' → two passive versions.",
+        "'The bridge was builted in 1980' — what is the correct past participle of 'build'? ('built' — "
+        "'The bridge was built in 1980'.)",
+        "'My keys were lost by me this morning' — why does that sound unnatural, and what should we say "
+        "instead? ('I lost my keys this morning' — use active voice for your own ordinary actions.)",
+        "Transform 'People say that she speaks five languages' in two ways. ('It is said that she speaks…' "
+        "and 'She is said to speak…')",
     ],
     'notes': [
-        "A5 'has just been introduced' — adverb position before the participle; 'has just introduced' "
-        "would be active and wrong.",
-        "B3 accepts either 'It is said that he is the best' or 'He is said to be…'.",
-        "B5 'I lost my phone' — insist on the natural active; 'I had my phone stolen' is also credited "
-        "where noted.",
-        "B2 'The board made the decision' — learners must restore the agent as subject; 'It was decided' "
-        "would need a different structure.",
-        "B6 is open only within the passive requirement — insist on one future passive with when/tomorrow.",
+        "A5 'has just been introduced' — present perfect passive with 'just' placed after 'has'.",
+        "B2 'The board made the decision' — restores the agent ('the board') as the active subject.",
+        "B3 accepts both 'It is said that he is the best surgeon in the city' and 'He is said to be the "
+        "best surgeon in the city'.",
+        "B5 'I lost my phone' (or 'My phone was stolen') — removes the unnatural self-agent 'by me'.",
+        "B6 is open — credit any two-sentence project description using one past passive and one future passive.",
     ],
-    'pair_model': "A: A new library was opened near the hospital. B: Who opened it? A: The mayor opened it, "
-                  "but it is said that funding came from abroad. B: How about a rule change? A: Smoking has been "
-                  "banned on campus — students were informed this morning. B: Was anyone upset? A: A few were, "
-                  "but the meeting was held calmly.",
+    'pair_model': "A: A new solar power clinic was opened in the northern district yesterday, and twenty "
+                  "local technicians have already been trained to run it. B: That's great news. Who funded "
+                  "the construction? A: The equipment was donated by two regional hospitals, and it is "
+                  "expected that three more clinics will be built next year.",
     'assess': [
-        "Passives counted live against the four criteria; objective tone means no first-person story.",
-        "Accept any news content that holds the structure; the model is one of many.",
-        "If reporting structure is missing, prompt once with 'People say…' → 'It is said…'.",
+        "Listen for the four Partner listening checklist criteria: four passive verb forms across at least "
+        "two tenses, one formal reporting structure, natural 'by' agent choice, and a final active opinion.",
+        "Accept any authentic local, campus, or workplace news items.",
+        "Note any missing forms of 'be' ('The report finished yesterday') or irregular participle slips for "
+        "the closing board repair.",
     ],
     'inter': [
-        "Tense table stays visible during pair work; learners point before speaking.",
-        "Frames: 'was/were done' · 'is/are done' · 'will be done' · 'It is said that…'",
-        "Remediation: re-do B4 (builted → built) as a choral correction before Real Talk.",
+        "Keep the five-tense passive chart visible on the board so developing speakers can check the form "
+        "of 'be' before speaking.",
+        "Provide three briefing starters on the board: 'Last month, … was opened/repaired' · 'Recently, … "
+        "has been introduced' · 'It is expected that … will be completed…'",
+        "If a learner drops 'be' ('The rules changed yesterday' when passive is intended), have them tap "
+        "two fingers on the desk — one for 'was/were' and one for the past participle.",
     ],
     'adv': [
-        "Get-passive in speech: 'He got promoted' vs 'He was promoted' — feeling marked?",
-        "Reporting nuance: alleged vs claimed — which accuses more strongly?",
-        "Formal tail: 'Founded in 1971, the school…' — one own example.",
+        "Encourage confident speakers to use 'is believed to have + participle' for past reported events "
+        "and a 'Founded / Built in…' participle opener in their Real Talk briefing.",
+        "Ask stronger pairs to compare when the conversational 'get' passive ('He got promoted') fits and "
+        "when the standard 'be' passive ('He was promoted') is better.",
+        "Challenge early finishers to include a modal passive ('should be prioritised', 'can be accessed') "
+        "in their closing recommendation.",
     ],
     'errors': [
-        "'The house was builted' → 'was built' — fix: irregular participle sort.",
-        "'My phone was stolen by me' → 'I lost my phone' — fix: active for your own actions.",
-        "Keeping the agent when the event matters more — fix: agent-last rule; give the agent only "
-        "if asked.",
+        "'The house was builted in 1990.' → 'The house was built in 1990.' — Fix: review common irregular "
+        "participles (built, written, chosen, spoken, stolen).",
+        "'My laptop was broken by me.' → 'I broke my laptop.' — Fix: keep your own actions active.",
+        "'A new policy has introduced.' → 'A new policy has been introduced.' — Fix: present perfect "
+        "passive always needs 'been' before the participle.",
     ],
     'short': [
-        "Parts 1–4 at 15 + 10; newsroom runs two items instead of three.",
-        "Upgrade moves to homework; reporting pair kept in class.",
-        "Real Talk: two events only, still with one reporting structure and final active comment.",
+        "Keep Parts 1–4 at 15 + 10 minutes; run two news updates per partner in the Part 5 Newsroom.",
+        "Do the four-tense classroom object drill in Part 6 in class and assign the participle-opener "
+        "sentences as homework.",
+        "Run a 60-second Real Talk briefing per partner and finish with the Part 8 oral recall check.",
     ],
     'review_note': [
-        "Exit ticket: one passive from each of two tenses about today.",
-        "Passive feeds Lessons 10, 13–14 and the Final Assessment (A5/B5).",
-        "Formula card 9.",
+        "Exit ticket: each learner says one past passive and one present perfect passive about their city.",
+        "Remind learners that passive voice connects directly to Lesson 10 (Causatives) and appears in "
+        "Review Test 3 and the Final Assessment.",
+        "Point learners to Formula Book Card 9 in Appendix 1 for revision.",
     ],
-    'feedback': "Tick passives and reporting structures without interrupting the report-style delivery; "
-                "repair the tense of be only after the brief, with two anonymous examples.",
+    'feedback': "Praise reporters who maintained an objective news tone and shifted cleanly to active voice "
+                "for their final comment. Then put two anonymous passive tense slips on the board for a "
+                "60-second class repair.",
 }
 
 T10 = {
     'objectives': [
-        "Use have/get something done to arrange services and to describe misfortunes.",
-        "Distinguish make, let, have and get + person + verb in speech.",
-        "Negotiate a service conversation that includes causative language and a price/time agreement.",
+        "Use 'have/get + object + past participle' accurately to describe professional services arranged "
+        "by the speaker as well as unexpected misfortunes.",
+        "Distinguish the four interpersonal causative verbs in speech: 'make + person + base verb' (force), "
+        "'let + person + base verb' (allow), 'have + person + base verb' (assign), and 'get + person + to "
+        "+ verb' (persuade).",
+        "Deliver a natural one-minute story about a busy week combining service causatives, a minor mishap, "
+        "and interpersonal causative verbs.",
     ],
     'success': [
-        "causative service vs accident distinction correct in at least 4 of 5 attempts",
-        "make/let/have/get verb patterns used correctly (to only after get)",
-        "negotiation ends with a stated time and price",
+        "learners place the object before the past participle in 'have/get something done' ('I had my laptop "
+        "repaired', never 'I had repaired my laptop' or 'get my laptop to repair')",
+        "learners use 'to' after 'get + person' ('got my brother to help') and bare infinitives after "
+        "'make', 'let', and 'have'",
+        "in the passive, learners restore 'to' after 'made' ('We were made to wait')",
     ],
     'prep': [
-        "Board: HAVE/GET + object + participle = service OR accident.",
-        "Service vocabulary ready: haircuts, repairs, tailoring, deliveries, cleaning.",
-        "Formula Book card 10.",
+        "Write the two core causative patterns on the board: (1) SERVICE / MISHAP: have / get + OBJECT + "
+        "PAST PARTICIPLE ('have my suit cleaned'); (2) PEOPLE: make / let / have + PERSON + BASE VERB vs "
+        "get + PERSON + TO + VERB.",
+        "Write the contrast pair 'I painted my flat' (my own hands) vs 'I had my flat painted' (I hired a "
+        "painter) on the board for Part 1.",
     ],
     'timing': _t(5, 7, 3, 12, 8),
     'procedure': {
         'hook': [
-            "Hook conversation: what do people 'have done' in your city? — collect five examples "
-            "on the board.",
-            "Ask who does it (self vs hired) for each — mark S or H.",
-            "Tell learners the lesson names this structure.",
+            "Have pairs read the two sentence pairs in Part 1 aloud ('I cut my hair' vs 'I had my hair cut'; "
+            "'My older brother fixed my laptop' vs 'I got my older brother to fix my laptop') and explain "
+            "who held the scissors and how the brother was convinced.",
+            "Give pairs 90 seconds to answer the two personal hook questions (tasks they do themselves vs "
+            "services they pay someone else to do, and what teachers or parents made or let them do at school).",
+            "Point out how English packs 'I arranged for a professional to do this for me' into a four-word "
+            "pattern.",
         ],
         'rule': [
-            "Rule 1: have/get sth done — chorally read, then contrast service vs story-misfortune "
-            "examples.",
-            "Rule 2: make/let/have/get + person + verb — sort four sentences by force (force / "
-            "allow / instruct / persuade).",
-            "Rule 3: service phrases — drill 'I get my…done…every month' as a chunk.",
+            "Teach Rule 1 ('have/get something done'): drill the word order 'have/get + object + past "
+            "participle' across tenses and contrast arranged services ('I had my watch repaired') with "
+            "unexpected mishaps ('He had his wallet stolen').",
+            "Teach Rule 2 ('make, let, have, and get + person'): highlight the memory hook — 'make, let, and "
+            "have take the bare verb; only get takes to' — and note that passive 'be made to + verb' "
+            "brings 'to' back.",
+            "Teach Rule 3 (Everyday service chunks): chorally practise 'get my hair cut', 'have the brakes "
+            "checked', 'get a document translated', and 'have my photo taken'.",
         ],
         'diff': [
-            "Service vs accident table: pairs label each row before seeing the Why column.",
-            "Causative-verbs table: read aloud, then learners supply their own 'made me…' sentence.",
-            "Make-passive point: 'I was made to wait' — mark the kept to.",
+            "Walk through the two contrast tables in Part 3: first, Doing It Yourself vs Arranging a Service "
+            "vs Suffering a Mishap; second, the four interpersonal verbs ('made me stay' / 'let me leave' / "
+            "'had the assistant book' / 'got my friend to help').",
+            "Run a quick oral check: say 'I paid a mechanic to service my car', and have the class answer "
+            "with 'I had/got my car serviced.'",
         ],
         'practice': [
-            "Practice A (6) solo + pair; A3/A6 (made/lost vs persuade) need the pattern named.",
-            "Practice B (6): spoken rewrites; B5 and B6 are open — two samples.",
-            "Key display; on any to-after-make error, stop and rebuild Rule 2.",
+            "Give learners 4 minutes to complete Practice A (6 items) individually, checking A1 ('repaired'), "
+            "A3 ('lose' after 'made'), and A6 ('to eat' after 'get').",
+            "Run Practice B (6 items) in pairs: learners transform B1–B2, repair B3 and B4 aloud, and share "
+            "their true sentences for B5 and B6.",
+            "Confirm the key whole-class and chorally repair B3 ('get my car repaired') and B4 ('made me wait').",
         ],
         'pair': [
-            "Service shop: A = shop, B = customer with three problems; causatives + price/time.",
-            "Monitor for make/let/get inclusion with a tick; prompt once if missing.",
-            "Swap roles or run a second customer if time allows.",
+            "Read the 3-turn model exchange in Part 5 aloud so learners hear how two partners plan an event "
+            "or office move using 'have the invitations printed', 'get the projector checked', 'have the "
+            "technician test…', and 'got my cousin to lend…'.",
+            "Give pairs four minutes to choose one of the two scenarios in Part 5 (preparing for a big family "
+            "wedding or setting up a new office/study centre) and agree on their plan using at least three "
+            "'have/get something done' structures and two 'make/let/have/get + person' structures.",
+            "Have two pairs report their plan to the class.",
         ],
         'advanced': [
-            "Intermediate base: four causatives from own life + service chunks.",
-            "Advanced upgrade: have-person-do delegation, 'had us laughing', 'got round to…' — one "
-            "each true.",
-            "Discussion: when is have-person-do businesslike but impolite?",
+            "Run the first block of Part 6 ('Make the core pattern automatic'): each learner says four true "
+            "sentences about their own life (two services they have done regularly, one thing they got a "
+            "friend to help with, and one rule a teacher or manager made them follow).",
+            "Move to the second block ('Add nuance, detail, and sharper focus'): practise workplace delegation "
+            "('I'll have the team send you the figures'), expressive 'had us all laughing', and 'get around "
+            "to + verb-ing' ('I finally got around to having my eyes tested').",
+            "Ask pairs to compare the tone of 'I'll have my assistant call you' with 'I'll ask my assistant "
+            "to call you'.",
         ],
         'realtalk': [
-            "Planning: three moments — arranged service, accident, make/let/get.",
-            "One minute to a partner; model covered.",
-            "Model uncovered; underline the causatives, compare counts, then improve one line.",
+            "Give learners 30 seconds to jot down three keywords for their one-minute 'busy week' story: "
+            "(1) a service they arranged, (2) an unexpected problem or mishap, and (3) how someone made, "
+            "let, or got them to handle it.",
+            "Partners take turns speaking for one full minute while the listener checks the four Partner "
+            "listening checklist items.",
+            "Uncover the Model response, notice how it links 'I had to get my passport photo taken and have "
+            "my degree certificates translated', 'I had my umbrella blown inside out', 'made me fill in…', "
+            "and 'got my brother to pick me up', and have learners refine one line of their story.",
         ],
         'review': [
-            "Covered: three things to have done this month — each a full causative sentence.",
-            "Made vs let: one person per learner.",
-            "Self-check; unticked redo A1/A6 and B2 aloud.",
+            "With books closed, have pairs complete the two oral recall tasks in Part 8 (three things to "
+            "have/get done this month and contrasting 'made me do' with 'let me do').",
+            "Have learners tick the self-check boxes and review Formula Book Card 10 if needed.",
         ],
     },
     'checking': [
-        "'I had my phone stolen on the bus.' — is the stealing a service? (no — misfortune) "
-        "but same grammar.",
-        "Pattern check: make + to? (no) get + to? (yes)",
-        "Board 'get my car to repair' — whole-class repair.",
+        "'I will get my car to repair tomorrow' — how do we fix this causative? ('I will get my car "
+        "repaired tomorrow' — object + past participle.)",
+        "'The teacher made us to rewrite the essay' vs 'We were made to rewrite the essay' — why is the "
+        "first wrong and the second right? (Active 'make' takes a bare verb; passive 'be made' takes 'to'.)",
+        "Which of the four verbs ('make', 'let', 'have', 'get') requires 'to' before the action in active "
+        "sentences? ('get' — 'got him to help'.)",
     ],
     'notes': [
-        "A3 'lose' — made + base verb, no to; 'made to lose' here would be passive and wrong.",
-        "A6 'to eat' — get needs to; 'eat' alone would be make/have/let.",
-        "B1 'I had my car serviced.' — accept 'got' variant.",
-        "B2 'I got my friend to drive us.' — the persuasion marker to is the whole point.",
-        "B3 correction: 'get my car repaired' (participle, not infinitive). B4: 'made me wait'.",
+        "A1 'repaired' — past participle after 'had my watch…'.",
+        "A3 'lose' — bare infinitive after active 'made me…'.",
+        "A6 'to eat' — 'get + person + to + verb' for persuasion.",
+        "B1 'I had my car serviced last week' (or 'got my car serviced').",
+        "B3 repairs 'to repair' to 'repaired'; B4 repairs 'to wait' to 'wait'.",
     ],
-    'pair_model': "A: I need to have my suit shortened — can you do it this week? B: We can have "
-                  "it ready by Thursday; it will cost 400 afghanis. A: My mother made me wear it "
-                  "to the wedding — I had my shoes repaired too. B: Did your boss let you leave "
-                  "early? A: He got me to finish the report first, then he let me go.",
+    'pair_model': "A: For the conference on Saturday, we still need to have the programme booklets printed "
+                  "and get the sound system tested. B: I can have the technician check the microphones "
+                  "tomorrow morning, and I've already got Tariq to design the welcome banner. A: Great — "
+                  "will the venue manager let us set up the tables on Friday evening? B: Yes, she let us "
+                  "have the keys after five, as long as we don't make the security staff stay past nine.",
     'assess': [
-        "Listen for the four printed criteria; time/price agreement is required.",
-        "Misfortune 'had sth done' counts as causative only if learners name it as accident, not "
-        "service.",
-        "Accept any price vocabulary that closes the negotiation.",
+        "Listen for the four Partner listening checklist targets: 'have/get + object + past participle' for "
+        "services, a second causative for a repair or mishap, 'make/let/have + bare verb', and 'get + person "
+        "+ to + verb'.",
+        "Accept any real or realistic busy-week narrative.",
+        "Collect two anonymous word-order or 'to'-insertion slips for the closing board repair.",
     ],
     'inter': [
-        "Desk card: HAVE/GET + object + done; make/let/have + base / get + to.",
-        "Chunk drill: 'I had my car fixed' · 'I got my friend to help me'.",
-        "Remediation: re-drill A5/A6 before Real Talk if pair work confused to.",
+        "Leave the two board formulas visible during Pair Speaking and Real Talk so developing speakers can "
+        "check whether they are talking about an OBJECT (past participle) or a PERSON (base verb / to + verb).",
+        "Provide simple starters: 'First, I had my… fixed/checked' · 'My manager made/let me…' · 'Luckily, I "
+        "got my friend to…'",
+        "If a learner says 'I had repaired my car', write 'I had [MY CAR] [REPAIRED]' in two boxes on the "
+        "board and have them point to the object box first.",
     ],
     'adv': [
-        "Delegation: 'I'll have the team look into it.' vs 'I'll ask the team to…' — difference?",
-        "Story colour: 'He had us all laughing' — when does it fit?",
-        "End-up pattern: 'I ended up waiting…' as complement to causatives.",
+        "Encourage confident speakers to weave in 'got around to having… done' and 'had us all laughing / "
+        "worried' during their Real Talk story.",
+        "Challenge stronger pairs to include one passive 'was made to…' or ' wasn't allowed to…' contrast "
+        "in their conversation.",
+        "Ask early finishers to discuss how causative structures make business negotiations sound concise "
+        "and professional.",
     ],
     'errors': [
-        "'Will get my car to repair' → 'repaired' — fix: have/get + done chorus.",
-        "'Made me to wait' → 'wait' — fix: make-pattern sort.",
-        "Using have-done for self-done actions — fix: 'I fixed my laptop' vs 'I had it fixed' "
-        "contrast on the board.",
+        "'I'll get my laptop to fix.' → 'I'll get my laptop fixed.' — Fix: after 'have/get + object', always "
+        "use the past participle.",
+        "'He made me to apologise.' → 'He made me apologise.' — Fix: no 'to' after active 'make', 'let', or 'have'.",
+        "'I had cut my hair yesterday.' → 'I had my hair cut yesterday.' — Fix: put the object ('my hair') "
+        "between 'had' and the past participle.",
     ],
     'short': [
-        "Parts 1–4 at 15 + 10; negotiation runs two items with price/time.",
-        "Second role in the pair becomes homework dialogue.",
-        "Upgrade moves to the self-check spoken task.",
+        "Keep Parts 1–4 at 15 + 10 minutes; run one planning scenario in Part 5 for 3 minutes.",
+        "Do the four personal causative sentences in Part 6 in class and assign the 'got around to…' "
+        "extension as homework.",
+        "Run one 60-second Real Talk story per partner and finish with the Part 8 recall check.",
     ],
     'review_note': [
-        "Exit ticket: one service and one misfortune sentence.",
-        "Causatives return in the Final Assessment (A8/B7); link them there.",
-        "Formula card 10.",
+        "Exit ticket: each learner says one 'have/get something done' sentence and one 'get someone to do' "
+        "sentence before leaving.",
+        "Remind learners that causatives are tested in Review Test 3 (A2, C3) and the Final Assessment (A8, B7).",
+        "Point learners to Formula Book Card 10 in Appendix 1 for revision.",
     ],
-    'feedback': "During the shop role-play, tick causative accuracy and negotiation outcome only; "
-                "repair a sample of to errors afterwards on the board, one pair at a time.",
+    'feedback': "Praise speakers who combined service causatives with 'got someone to…' naturally in their "
+                "busy-week story. Then put two anonymous 'made me to…' or 'get it to repair' slips on the "
+                "board for a quick class repair.",
 }
 
 T11 = {
     'objectives': [
-        "Choose gerund or infinitive correctly after the core lesson verbs.",
-        "Use one meaning-changing verb (remember/forget/stop/try) with both patterns.",
-        "Handle preposition + -ing including look forward to / be used to.",
+        "Choose accurately between the gerund ('verb-ing') and the to-infinitive ('to + base verb') after "
+        "common English verbs and expressions.",
+        "Control meaning-changing verbs ('remember', 'forget', 'stop', 'try') where switching between "
+        "'-ing' and 'to + verb' changes the real-world event.",
+        "Use 'verb-ing' consistently after prepositions, including expressions where 'to' is a preposition "
+        "('look forward to + verb-ing', 'be used to + verb-ing').",
     ],
     'success': [
-        "at most two -ing/to errors across the pair interview",
-        "one meaning-changing verb used correctly and explained",
-        "no 'to + -ing' errors where to is a preposition",
+        "learners use '-ing' after 'enjoy', 'avoid', 'mind', 'suggest', and 'keep', and 'to + verb' after "
+        "'decide', 'hope', 'plan', 'promise', and 'refuse'",
+        "learners use '-ing' after 'look forward to' and 'be/get used to' without slipping into the base verb",
+        "in Pair Speaking and Real Talk, speakers accurately use at least one meaning-changing verb ('stop', "
+        "'remember', or 'try')",
     ],
     'prep': [
-        "Board: -ING verbs (enjoy, mind, avoid…) vs TO verbs (hope, decide, plan…).",
-        "Meaning-changers ready: stop (quit vs pause) · remember (before vs after) · try.",
-        "Formula Book card 11.",
+        "Write three clear columns on the board: (1) VERB + -ING ('enjoy, avoid, mind, suggest, finish, keep') "
+        "· (2) VERB + TO + BASE VERB ('decide, plan, hope, promise, offer, refuse') · (3) PREPOSITION + -ING "
+        "('interested in, good at, instead of, look forward to, be used to').",
+        "Write the contrast pair 'He stopped smoking' vs 'He stopped to smoke' on the board for Part 1.",
     ],
     'timing': _t(4, 7, 4, 12, 8),
     'procedure': {
         'hook': [
-            "Learners finish the four hook stems; pairs compare.",
-            "Ask 'Which felt natural with -ing? With to?' — collect five on each side.",
-            "State the aim: -ing after some verbs is not a decoration.",
+            "Have pairs read the two sentence pairs in Part 1 aloud ('He stopped smoking' vs 'He stopped to "
+            "smoke'; 'I remembered locking the door' vs 'I remembered to lock the door') and decide who quit "
+            "a habit and when the memory happened.",
+            "Give pairs 90 seconds to complete the four personal stems in Part 1 aloud ('After a long week, "
+            "I really enjoy…', 'This year, I've decided…', 'When I have a deadline, I try to avoid…', and "
+            "'Next month, I'm really looking forward to…').",
+            "Show learners that learning verb patterns as two-word spoken chunks ('enjoy reading', 'decide "
+            "to apply', 'look forward to meeting') makes the choice automatic.",
         ],
         'rule': [
-            "Rule 1: -ing verbs as a group; Rule 2: to verbs as a group — two quick sorts.",
-            "Rule 3: meaning-changing demo: read both I-remember sentences and ask which action "
-            "came first.",
-            "Rule 4: preposition + -ing — insist 'look forward to + -ing' chorally three times.",
+            "Teach Rule 1 (Verbs followed by '-ing'): have the class read the chunk list aloud and spotlight "
+            "two high-value traps — 'Would you mind opening…?' and 'She suggested taking…' (never 'suggested "
+            "me to take').",
+            "Teach Rule 2 (Verbs followed by 'to + base verb'): point out how future-oriented verbs ('decide', "
+            "'plan', 'hope', 'promise', 'expect') and 'verb + person + to + verb' ('advise/remind/encourage "
+            "someone to…') point forward toward a goal.",
+            "Teach Rule 3 (Verbs whose meaning changes): explain the timeline principle — '-ing' looks back "
+            "at an existing or earlier action ('remember locking', 'stopped talking'), whereas 'to + verb' "
+            "looks forward to a new action or purpose ('remember to lock', 'stopped to buy').",
+            "Teach Rule 4 (Prepositions + '-ing'): drill 'look forward to hearing', 'be used to waking up', "
+            "and 'instead of waiting' chorally.",
         ],
         'diff': [
-            "Meaning-changing table: cover the right column; pairs predict, then reveal.",
-            "Need + -ing vs need + to — write both; ask which is more natural in the region.",
-            "Preposition traps: rapid-fire four prompts ('interested in…').",
+            "Walk through the meaning-changing table in Part 3 ('stopped checking' vs 'stopped to check'; "
+            "'remembered calling' vs 'remembered to call'; 'tried restarting' vs 'tried to fix') and the "
+            "'need + -ing' ('needs charging') vs 'need + to' note.",
+            "Ask pairs to test each other: Partner A reads one sentence from the table, and Partner B explains "
+            "which action happened first.",
         ],
         'practice': [
-            "Practice A (6) solo + pair; A4 is the preposition trap — emphasise it.",
-            "Practice B (6): B1–B3 corrections aloud; B5 meaning choice named.",
-            "Key display; if B2 recurs, re-drill look-forward-to with the whole class.",
+            "Give learners 4 minutes to complete Practice A (6 items) individually, checking A2 ('criticising'), "
+            "A4 ('hearing' after 'look forward to'), and the A5/A6 'stopped' vs 'tried' pair.",
+            "Run Practice B (6 items) in pairs: learners repair B1–B3 aloud, produce both 'need' forms for "
+            "B4, explain B5 ('posting' = memory of an earlier action), and say their 'Instead of + -ing' "
+            "sentence for B6.",
+            "Confirm the key whole-class and re-drill B2 ('look forward to meeting') and B3 ('suggested leaving') "
+            "chorally.",
         ],
         'pair': [
-            "Interview: pairs adapt the four printed question frames; use four patterns each.",
-            "One follow-up after most answers required — monitor for interview depth.",
-            "Swap roles; take two strong exchanges to replay for the class.",
+            "Read the 3-turn model exchange in Part 5 aloud so learners hear how the two partners use "
+            "'avoid checking', 'decided to leave', 'used to leaving', 'enjoy reading', and 'looking forward "
+            "to visiting'.",
+            "Run the four-minute Pair Speaking interview using the four prompts in Part 5, requiring at "
+            "least one follow-up question after every answer.",
+            "Have two learners report one habit their partner enjoys or avoids and one goal their partner "
+            "plans to achieve.",
         ],
         'advanced': [
-            "Intermediate base: five chunks per pattern + meaning-pair drill.",
-            "Advanced upgrade: gerund as subject, 'no point in + -ing / worth + -ing', 'have "
-            "difficulty + -ing'.",
-            "Discussion: when does 'There is no point…' shut down a debate politely?",
+            "Run the first block of Part 6 ('Make the core pattern automatic'): have pairs practise the "
+            "ten spoken chunks aloud and build true sentence pairs with 'stop + -ing / stop + to' and "
+            "'try + -ing / try + to'.",
+            "Move to the second block ('Add nuance, detail, and sharper focus'): introduce gerund subjects "
+            "('Speaking a second language in public takes courage'), evaluative frames ('It's worth + -ing', "
+            "'There's no point in + -ing', 'have difficulty + -ing'), and 'used to do' (past habit) vs "
+            "'be/get used to doing' (accustomed to).",
+            "Have each learner build one 'used to do' + 'am used to doing' pair about a change in their life.",
         ],
         'realtalk': [
-            "Planning: three -ing activities + two to-plans + one meaning-changer marked.",
-            "One minute to a partner; model covered.",
-            "Model uncovered; count the patterns in it, compare with own talk, upgrade one line.",
+            "Give learners 30 seconds to jot down keywords for their one-minute talk on habits and goals: "
+            "two '-ing' habits/activities, two 'to + verb' plans, one preposition + '-ing' phrase, and one "
+            "meaning-changing verb.",
+            "Partners take turns speaking for one full minute while the listener checks the four Partner "
+            "listening checklist criteria.",
+            "Uncover the Model response, trace how it weaves 'enjoy starting', 'avoid looking', 'tried "
+            "studying', 'stopped studying… to practise', 'decided to take', and 'looking forward to joining', "
+            "and have learners polish one sentence of their own.",
         ],
         'review': [
-            "Covered: two sentences per meaning-changer (stop + try).",
-            "Five verbs per list from memory — pairs compete.",
-            "Self-check; unticked redo A1/A6 and B2 aloud.",
+            "With books closed, have pairs complete the two oral recall tasks in Part 8 (contrasting 'stop' "
+            "and 'remember' with '-ing' vs 'to', and naming five '-ing' verbs and five 'to' verbs from memory).",
+            "Have learners tick the self-check boxes and review Formula Book Card 11 if needed.",
         ],
     },
     'checking': [
-        "Five-verb thumbs: enjoy? (ing) decide? (to) mind? (ing) hope? (to) suggest? (ing)",
-        "'I stopped to eat' vs 'I stopped eating' — action test: which lunch ended?",
-        "'look forward to' — following verb is…? (meeting)",
+        "'I look forward to meet you on Monday' — why do we need 'meeting' after 'to' here? (Because 'to' "
+        "in 'look forward to' is a preposition — test it with a noun: 'I look forward to the meeting'.)",
+        "'She suggested me to take the train' — how do we repair this sentence? ('She suggested taking the "
+        "train' or 'She suggested that I take the train'.)",
+        "'I stopped buying coffee on the way to work' vs 'I stopped to buy coffee on the way to work' — who "
+        "saved money? (The first speaker — 'stopped buying' means quit the habit.)",
     ],
     'notes': [
-        "A4 'hearing' — 'to' is a preposition here; 'to hear' in this frame is the target error.",
-        "A5 'smoking' — 'stopped smoking' = quit; 'stopped to smoke' would be pause-and-smoke.",
-        "A6 'to open' — attempt, not experiment; 'try opening' would be method.",
-        "B3 'suggested going' — 'suggested me to go' is the error this item exists to remove.",
-        "B5 expects the -ing reading for 'I remember calling her'; credit the alternative only if "
-        "the learner explains the meaning correctly.",
+        "A1 'helping' — 'Would you mind + verb-ing'.",
+        "A4 'hearing' — 'look forward to + verb-ing'.",
+        "A5 'smoking' (quit the habit) vs A6 'to open' (made a difficult attempt).",
+        "B3 accepts 'My colleague suggested leaving early…' or 'My colleague suggested that we leave early…'.",
+        "B4 'The classroom needs cleaning / The classroom needs to be cleaned before tomorrow.'",
+        "B5 'posting' — the speaker has the receipt in their pocket, so they are looking back at a memory "
+        "of an earlier action.",
     ],
-    'pair_model': "A: What do you enjoy doing at weekends? B: I enjoy hiking. A: Have you decided "
-                  "to change anything this year? B: I have decided to learn English properly. A: What "
-                  "do you avoid doing? B: I try to avoid complaining — I stopped doing it last year. "
-                  "A: Nice. What are you looking forward to? B: Looking forward to finishing this course!",
+    'pair_model': "A: What is one distraction you always try to avoid when you're working? B: I avoid checking "
+                  "my phone in the morning — in fact, I've decided to leave it in another room until noon. "
+                  "A: Was it hard to get used to doing that? B: At first it was, but now I really enjoy having "
+                  "two quiet hours, and I'm looking forward to finishing my project early this week.",
     'assess': [
-        "Pattern accuracy decides success — meaning-changer and preposition items are must-pass.",
-        "Follow-ups must be present; interview that lists answers without questioning is incomplete.",
-        "The Real Talk requirement is quantitative: 3× -ing + 2× to + decision sentence.",
+        "Listen for the four Partner listening checklist items: accurate '-ing' verbs, accurate 'to + verb' "
+        "verbs, one preposition + '-ing' structure ('look forward to / used to / instead of + -ing'), and "
+        "one meaning-changing verb.",
+        "Praise natural chunk fluency rather than counting isolated grammar terms.",
+        "Collect two anonymous slips (especially 'suggest someone to do' or 'look forward to + base verb') "
+        "for the closing board repair.",
     ],
     'inter': [
-        "Chunk cards: 'enjoy + ing' · 'decided to + base' · 'look forward to + ing'.",
-        "Starter bank: 'I enjoy…' · 'I decided to…' · 'I avoid…'",
-        "Remediation: if to-preposition slips, re-do A4 and B2 chorally before Real Talk.",
+        "Keep the three-column board chart visible during Parts 5 and 7 so developing speakers can glance "
+        "at the verb chunks while speaking.",
+        "Drill the five most useful two-word chunks chorally before Pair Speaking: 'enjoy doing · avoid "
+        "doing · suggest doing · decide to do · look forward to doing'.",
+        "If a learner hesitates on 'remember/stop + -ing vs to', ask: 'Did the action happen first (-ing), "
+        "or was it the next goal (to)?'",
     ],
     'adv': [
-        "Subject gerund debate: 'Finding time is harder than finding motivation' — true?",
-        "Worth / no-point frames: three opinions about study habits.",
-        "Difficulty frame: 'I had difficulty + -ing' about accent or reading speed.",
+        "Encourage confident speakers to open their Real Talk turn with a gerund subject ('Building a new "
+        "habit takes…') and include 'It's worth + -ing' or 'have difficulty + -ing'.",
+        "Challenge stronger pairs to use both 'used to + base verb' (past state/habit) and 'be/get used to "
+        "+ verb-ing' (becoming accustomed) in the same answer during Part 5.",
+        "Ask early finishers to explain the difference between 'I regret telling him' (looking back at a "
+        "past action) and 'We regret to inform you…' (formal announcement of bad news).",
     ],
     'errors': [
-        "'Enjoy to read' → 'reading' — fix: -ing-verb list drill.",
-        "'Look forward to meet' → 'meeting' — fix: preposition-to check; board both uses of to.",
-        "Using only to-patterns — fix: require one -ing sentence per answer in the interview.",
+        "'I really enjoy to read in the evening.' → 'I really enjoy reading in the evening.' — Fix: drill "
+        "'enjoy + -ing' as an inseparable chunk.",
+        "'We look forward to hear from you.' → 'We look forward to hearing from you.' — Fix: 'to' is a "
+        "preposition here, so it takes '-ing'.",
+        "'He suggested me to apply.' → 'He suggested applying / that I apply.' — Fix: 'suggest' never takes "
+        "'person + to + verb' (contrast with 'He advised me to apply').",
     ],
     'short': [
-        "Parts 1–4 at 15 + 10; interview uses three questions instead of four.",
-        "Upgrade patterns become homework examples.",
-        "Real Talk: 45 seconds with the same counting requirement.",
+        "Keep Parts 1–4 at 15 + 10 minutes; run two interview questions per partner in Part 5.",
+        "Do the chunk and meaning-pair drill in Part 6 in class and assign the 'used to do / be used to "
+        "doing' sentences as homework.",
+        "Run a 60-second Real Talk turn per partner and close with the Part 8 oral recall check.",
     ],
     'review_note': [
-        "Exit ticket: preposition + -ing about this lesson.",
-        "Test 3 revisits this lesson — flag Appendix 1 card 11.",
-        "Gerund/infinitive feeds Lesson 13's verb patterns (suggest/warn) — connect there.",
+        "Exit ticket: each learner finishes 'This weekend I'm looking forward to…' and 'Next month I plan "
+        "to…' aloud before leaving.",
+        "Remind learners that gerunds and infinitives are tested in Review Test 3 (A4, C4) and the Final "
+        "Assessment (A7, A11, C8).",
+        "Point learners to Formula Book Card 11 in Appendix 1 for revision.",
     ],
-    'feedback': "Note the meaning-changing verbs live — one 'stop' correction from a learner's "
-                "own story teaches more than ten worksheet items; repair the rest after.",
+    'feedback': "Quote one strong meaning-changing sentence ('I stopped scrolling and started reading…') "
+                "you heard during Part 7, then put two anonymous preposition/verb-pattern slips on the board "
+                "for a quick class repair.",
 }
 
 T12 = {
     'objectives': [
-        "Build accurate defining and non-defining relative clauses in speech.",
-        "Reduce a clause correctly by dropping which-is/who-was where possible.",
-        "Choose who/which/that/whose/where and punctuate meaning accordingly.",
+        "Use defining relative clauses ('who', 'which', 'that', 'whose', 'where', 'when') to identify "
+        "people, things, and places precisely without repeating pronouns.",
+        "Use non-defining relative clauses (with commas/spoken pauses and 'who/which/whose/where', never "
+        "'that') to add extra background information or comment on a whole situation.",
+        "Compress relative clauses naturally by dropping object pronouns or omitting 'who/which/that + be' "
+        "before '-ing' phrases, past participles, and adjective phrases.",
     ],
     'success': [
-        "relative pronoun choice correct in at least 5 of 6 spoken descriptions",
-        "one non-defining clause used with correct meaning and pause",
-        "one reduced clause produced naturally in the talk",
+        "learners never use 'what' as a relative pronoun after a noun ('the book that I read', not 'the "
+        "book what I read') and never use 'that' after a comma",
+        "learners drop redundant object pronouns inside relative clauses ('the friend I told you about', "
+        "not 'the friend who I told you about her')",
+        "in the Real Talk Challenge, speakers combine a defining clause, a non-defining clause, a 'whose' "
+        "or 'where' clause, and a concise reduced phrase",
     ],
     'prep': [
-        "Board: who/people · which/things · that/both · whose/possession · where/place.",
-        "Optional: classroom objects to describe without naming.",
-        "Formula Book card 12.",
+        "Write the two clause types on the board: (1) DEFINING (no commas — identifies WHICH ONE; 'who / "
+        "which / that', object pronoun can drop); (2) NON-DEFINING (commas / brief pauses — adds EXTRA "
+        "DETAIL; 'who / which / whose / where', NEVER 'that').",
+        "Write the choppy four-sentence description and the smooth combined sentence from Part 1 on the board.",
     ],
-    'timing': _t(5, 7, 3, 12, 8),
+    'timing': _t(4, 8, 3, 12, 8),
     'procedure': {
         'hook': [
-            "Guessing hook: learners describe (who/which/that in every sentence) without naming.",
-            "Two strong descriptions played back; class names the pronoun each used.",
-            "Goal stated: two ideas in one clean sentence.",
+            "Have pairs read the two descriptions in Part 1 aloud (Speaker A's choppy four-sentence chain "
+            "vs Speaker B's smooth one-sentence description) and notice how relative clauses weave separate "
+            "facts into one clear portrait.",
+            "Run the 90-second guessing game in Part 1: each learner describes one famous place in their "
+            "country and one object in their bag using 'It's a place where…' and 'It's something that…' "
+            "without naming it, while their partner guesses.",
+            "Explain that relative clauses give speakers three powers: identifying, adding background "
+            "detail, and compressing descriptions.",
         ],
         'rule': [
-            "Rule 1: defining — essential, no commas; object pronoun can drop — drill with one "
-            "sentence each on the board.",
-            "Rule 2: non-defining — extra detail, commas, never that — contrast the same name "
-            "with/without commas.",
-            "Rule 3: preposition position — formal vs normal vs speech, all three versions of "
-            "one sentence.",
-            "Rule 4: reduced — drop only who is/which was; wrong drops shown first as anti-examples.",
+            "Teach Rule 1 (Defining relative clauses): walk through 'who/that' (people), 'which/that' (things), "
+            "'whose' (possession), and 'where' (place), and show when the relative pronoun can be dropped "
+            "(when it is the OBJECT of the clause: 'the laptop [that] I bought').",
+            "Teach Rule 2 (Non-defining relative clauses): contrast 'My brother who lives in Herat' with "
+            "'My brother, who lives in Herat,' and stress that 'that' is never used after a comma.",
+            "Teach Rule 3 (Prepositions in relative clauses): compare formal 'the colleague with whom I "
+            "worked' with natural spoken 'the colleague I worked with'.",
+            "Teach Rule 4 (Reduced relative clauses): show how dropping 'who/which/that + be' produces crisp "
+            "phrases ('the woman standing by the window', 'courses taught in English', 'students interested "
+            "in the trip') — and why we cannot reduce an ordinary active verb like 'the man who called'.",
         ],
         'diff': [
-            "Defining vs non-defining table: pairs state 'how many?' for each row.",
-            "that/which/who sorting: speech vs commas rule — three quick examples.",
-            "Whose vs of-whom: why is 'whose' natural and 'of whom' clumsy?",
+            "Walk through the two contrast tables in Part 3: first, Defining vs Non-Defining ('how many "
+            "brothers?' and 'all battery cars vs subset'); second, Full vs Reduced Relative Clauses.",
+            "Have pairs read the defining vs non-defining brother sentences aloud, using a slight voice "
+            "pause at the commas in the non-defining version so their partner can hear the difference.",
         ],
         'practice': [
-            "Practice A (6) solo + pair; A2 comma and A5 gap require justification.",
-            "Practice B (6): B1–B5 transformations spoken; B6 performed as a 20-second talk.",
-            "Key display; if A5 is missed, re-teach the reduced rule with the printed example.",
+            "Give learners 4 minutes to complete Practice A (6 items) individually, checking A2 ('which' "
+            "after a comma), A3 ('whose'), and A5 ('built / which were built').",
+            "Run Practice B (6 items) in pairs: learners combine B1, reduce B2, repair B3–B5, and deliver "
+            "their two-clause description of an admired person for B6.",
+            "Confirm the key whole-class, spotlighting the three classic repairs in B3 ('who' after a comma), "
+            "B4 (no 'what' after a noun), and B5 (removing the redundant pronoun 'it').",
         ],
         'pair': [
-            "Guessing game: two items each, defining + non-defining, make the partner guess.",
-            "Second pass: improve the sentences to be more concise — one edit each.",
-            "Class hears the best concise version.",
+            "Read the 3-turn model exchange in Part 5 aloud so learners hear how Speaker A layers a defining "
+            "clause, a reduced phrase, and a non-defining clause in the guessing game.",
+            "Run the four-minute Definition & Guessing Game in pairs: each partner secretly chooses one "
+            "person, one place, and one object/profession and describes each in two sentences for their "
+            "partner to guess — then compresses one sentence into a reduced relative phrase.",
+            "Have two learners share their most concise clue with the class.",
         ],
         'advanced': [
-            "Intermediate base: four pronouns drilled + object pronoun dropped.",
-            "Advanced upgrade: which-comment, cleft 'what', reduced in formal register — one "
-            "each.",
-            "Discussion: 'which surprised everyone' vs 'that surprised everyone' — which is a "
-            "comment on the whole sentence?",
+            "Run the first block of Part 6 ('Make the core pattern automatic'): have pairs build four true "
+            "sentences using 'who', 'which/that' (dropped), 'whose', and 'where'.",
+            "Move to the second block ('Add nuance, detail, and sharper focus'): practise whole-clause "
+            "commenting ', which…' ('She apologised immediately, which changed the whole mood'), 'What… is…' "
+            "focus frames ('What I really appreciate is…'), and concise reduced noun phrases.",
+            "Have each learner build one ', which…' comment sentence about something good that happened "
+            "this week.",
         ],
         'realtalk': [
-            "Planning: person → defining role → non-defining extra → reduced description.",
-            "One minute to a partner without notes; model covered.",
-            "Model uncovered; count its four clauses, compare, improve one learner sentence.",
+            "Give learners 30 seconds to choose a person who influenced them or a place that means a lot "
+            "to them and jot down four keywords: (1) Defining role, (2) Non-defining background detail, "
+            "(3) 'whose' or 'where' detail, and (4) Reduced relative phrase.",
+            "Partners take turns speaking for one full minute while the listener checks the four Partner "
+            "listening checklist criteria.",
+            "Uncover the Model response, trace how it combines 'Dr Rahimi, who taught our first-year "
+            "history seminar, is the professor who changed…', 'a teacher whose feedback was always honest', "
+            "'articles written by different historians', and ', which made every student feel capable', "
+            "and have learners polish one sentence of their own.",
         ],
         'review': [
-            "Covered: one defining + one non-defining about the room.",
-            "City description: two + reduced — volunteer then pairs.",
-            "Self-check; unticked redo A1/A4 and B3 aloud.",
+            "With books closed, have pairs complete the two oral recall tasks in Part 8 (one defining + one "
+            "non-defining clause about the classroom, and a three-clause city description including a "
+            "reduced phrase).",
+            "Have learners tick the self-check boxes and remind them that Review Test 3 (Lessons 1–12) "
+            "follows this lesson.",
         ],
     },
     'checking': [
-        "'My mother, that lives…' — correct? (no: who after commas)",
-        "'The book what I read' — which pronoun? (that/which, no what)",
-        "Reduced test: can 'who called' become 'man called'? (no — full verb, not droppable)",
+        "'My mother, that lives in Kabul, is a doctor' — why is 'that' wrong here, and what replaces it? "
+        "('who' — never use 'that' in a non-defining clause after a comma.)",
+        "'The book what I read was fascinating' — why is 'what' wrong after 'the book'? ('what' means 'the "
+        "thing that'; after a noun, use 'that', 'which', or nothing: 'The book I read…'.)",
+        "Can we reduce 'the woman who is waiting outside' to 'the woman waiting outside'? What about 'the "
+        "woman who phoned yesterday'? (Yes to the first — 'who is' drops before '-ing'; no to the second — "
+        "'phoned' is a single past action.)",
     ],
     'notes': [
-        "A2 'which' — commas demand which/who, not that.",
-        "A5 expects the reduced form or explicit 'which were'; both credited; the gap is the "
-        "lesson's test.",
-        "A6: the omitted pronoun is subject vs object — B6 in student book clarifies it; both "
-        "'that' and 'which' credited for the object case.",
-        "B3 accepts only 'who' after commas; 'that' after commas is never correct.",
-        "B6 is open but must demonstrably contain both clause types — do not score a single-clause "
-        "name.",
+        "A2 'which' — non-defining clause after a comma requires 'which' (never 'that').",
+        "A5 accepts 'built' (reduced relative phrase) or 'which were built / that were built' (full clause).",
+        "A6 'who / that' — subject of 'helped me', so the relative pronoun cannot be dropped.",
+        "B3 repairs ', that' to ', who'; B4 repairs 'what' to '(that / which)'; B5 removes the redundant "
+        "object pronoun 'it' ('The film (that) we watched last night was gripping').",
+        "B6 is open — credit any description that accurately combines one defining and one non-defining "
+        "clause.",
     ],
-    'pair_model': "A: The woman who is standing by the window is my colleague — the one who taught "
-                  "me last year. B: The colleague with whom you worked? A: Yes, the colleague I worked "
-                  "with on the project. She, who lives in Bamyan, visits us twice a year. — B: The "
-                  "students interested in the course should apply early; the man whose son won the "
-                  "prize applied yesterday.",
+    'pair_model': "A: I'm thinking of a place in our city that is always busy in the late afternoon. "
+                  "The street, which was renovated two years ago, is full of small bookshops selling "
+                  "second-hand textbooks. B: Is it the book market near the university? A: Spot on — "
+                  "it's the place where I bought all my exam guides last semester.",
     'assess': [
-        "Criteria in the pair and talk boxes decide — pronoun choice + defining/non-defining "
-        "meaning + concision.",
-        "Guessing success is the speaking test: if the partner guesses, the description did its "
-        "job.",
-        "Count the reduced clause in Real Talk explicitly — accept only a droppings of who-is/",
-        "which-was, not a raw participle.",
+        "Evaluate the one-minute descriptions using the four Partner listening checklist items: defining "
+        "clause, non-defining clause (with brief spoken pauses), 'whose' or 'where' clause, and a reduced "
+        "relative phrase.",
+        "Count the reduced clause in the Real Talk Challenge: credit any natural reduction where "
+        "'who/which/that + be' is omitted before an -ing form, past participle, or adjective phrase.",
+        "Collect two anonymous pronoun or redundant-object slips ('the place where I went there') for the "
+        "closing board repair.",
     ],
     'inter': [
-        "Pronoun board visible; learners point before speaking.",
-        "Starters: 'The person who…' · 'The place where…'",
-        "Remediation: if A2/B3 keep failing, drill commas-as-pauses aloud with hand gestures.",
+        "Keep the Defining vs Non-Defining board chart visible during Parts 5 and 7 so developing speakers "
+        "can check pronoun choices at a glance.",
+        "Offer four clean description starters on the board: '…is someone who…' · '…, who/which…, …' · "
+        "'…is a person whose…' · '…is the place where…'",
+        "If a learner repeats the object pronoun ('the friend who I met him'), write the sentence on the "
+        "board and show how 'who' already replaces 'him'.",
     ],
     'adv': [
-        "Comment-which: 'She apologised, which changed the whole mood.' — learners build one.",
-        "Cleft focus: 'What I need is time.' — build one about their own study.",
-        "Reduced formality: when does 'Anyone arriving late…' sound sharper than 'If you "
-        "arrive late…'?",
+        "Encourage confident speakers to include one whole-clause ', which…' comment and one 'What… is…' "
+        "focus frame during Part 7.",
+        "Challenge stronger pairs to compress two clauses into a single sentence using both a non-defining "
+        "clause and a reduced participle phrase.",
+        "Ask early finishers to compare formal 'the professor with whom I spoke' and conversational 'the "
+        "professor I spoke with' for different speaking contexts.",
     ],
     'errors': [
-        "'The book what I read' → 'the book I read' — fix: pronoun chart on desk.",
-        "'My mother, that…' → 'who' — fix: after a comma, never that.",
-        "Dropping a full verb instead of who is — fix: only who is/which was droppable, "
-        "shown by two anti-examples.",
+        "'The book what I read was great.' → 'The book (that) I read was great.' — Fix: never use 'what' "
+        "after a noun.",
+        "'My uncle, that is an engineer, helped me.' → 'My uncle, who is an engineer, helped me.' — Fix: "
+        "after a comma, use 'who' or 'which', never 'that'.",
+        "'That's the café where we met there.' → 'That's the café where we met.' — Fix: 'where' already "
+        "means 'there', so drop 'there'.",
     ],
     'short': [
-        "Parts 1–4 at 15 + 10; guessing game one item each.",
-        "Advanced upgrades become three written sentences for homework.",
-        "Real Talk: two clause types required instead of three + reduced.",
+        "Keep Parts 1–4 at 15 + 10 minutes; run two guessing items per partner in Part 5.",
+        "Do the four-pronoun drill in Part 6 in class and assign the ', which…' and 'What… is…' sentences "
+        "as written homework.",
+        "Run one 60-second Real Talk description per partner and finish with the Part 8 recall check.",
     ],
     'review_note': [
-        "Exit ticket: 'The person who…which…' about a classmate.",
-        "Relative clauses return in the Final Assessment (C5/C8) — flag those items.",
-        "Formula card 12.",
+        "Exit ticket: each learner describes a classmate or place in the city using one defining clause "
+        "and one non-defining clause.",
+        "Remind learners that Review Test 3 (covering Lessons 1–12) follows this lesson; point them to "
+        "Formula Book Cards 1–12 in Appendix 1.",
+        "Note that reduced relative phrases connect directly to Lesson 14 (Participles).",
     ],
-    'feedback': "Tick clause-type accuracy rather than elegance during descriptions; repair the "
-                "worst pronoun error on the board afterwards with two correct reformulations.",
+    'feedback': "Praise descriptions that painted a clear picture and used natural voice pauses for "
+                "non-defining details. Then put two anonymous relative-clause slips on the board and let "
+                "pairs repair them together.",
 }

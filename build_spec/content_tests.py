@@ -6,7 +6,7 @@ from style import (para, run, box, table, spacer, h_banner, page_break,
 
 
 def _qblock(doc, title, items, start=1):
-    para(doc, title, size=11, bold=True, color=NAVY)
+    para(doc, title, size=11, bold=True, color=NAVY, space_before=4, space_after=2, keep_with_next=True)
     for i, q in enumerate(items, start):
         para(doc, f"{i}.  {q}", indent=0.12)
 
@@ -126,8 +126,8 @@ def final_assessment(doc, keys_registry):
     page_break(doc)
     h_banner(doc, "FINAL ASSESSMENT", sub="Part 1: Grammar knowledge  ·  Part 2: Independent speaking task")
     para(doc, "Part 1 — Grammar knowledge  (30 questions · suggested time: 35 minutes)",
-         size=12, bold=True, color=NAVY)
-    para(doc, "Section A — Complete the sentences.  (12 questions)", size=11, bold=True, color=TEAL)
+         size=12, bold=True, color=NAVY, keep_with_next=True)
+    para(doc, "Section A — Complete the sentences.  (12 questions)", size=11, bold=True, color=TEAL, keep_with_next=True)
     A = [
         "I __________ (live) here since 2020.",
         "When I got home, my family __________ (already / have) dinner.",
@@ -144,7 +144,7 @@ def final_assessment(doc, keys_registry):
     ]
     for i, q in enumerate(A, 1):
         para(doc, f"{i}.  {q}", indent=0.12)
-    para(doc, "Section B — Rewrite or transform.  (10 questions)", size=11, bold=True, color=TEAL)
+    para(doc, "Section B — Rewrite or transform.  (10 questions)", size=11, bold=True, color=TEAL, keep_with_next=True)
     B = [
         "Report: 'I'll help you tomorrow,' he said.",
         "Report: 'Where did you buy it?'  (She asked me…)",
@@ -159,7 +159,7 @@ def final_assessment(doc, keys_registry):
     ]
     for i, q in enumerate(B, 13):
         para(doc, f"{i}.  {q}", indent=0.12)
-    para(doc, "Section C — Use and communication.  (8 questions)", size=11, bold=True, color=TEAL)
+    para(doc, "Section C — Use and communication.  (8 questions)", size=11, bold=True, color=TEAL, keep_with_next=True)
     C = [
         "Choose: He (mustn't / can't) be at home — his car is gone.",
         "Complete with a linker: __________ being expensive, the course is worth it.",

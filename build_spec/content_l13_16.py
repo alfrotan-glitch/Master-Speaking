@@ -6,144 +6,224 @@ L13 = {
     'n': 13, 'part_no': 7, 'part_title': 'Sound More Natural and Advanced',
     'title': 'Reported Speech and Reporting Verbs',
     'goal': 'report conversations and summarise information accurately and naturally',
-    'intro': "Half of real speaking is reporting what other people said. This lesson makes that effortless.",
+    'intro': [
+        "Listen to how an inexperienced speaker recounts a meeting: 'The manager said, \"We have a problem.\" Then Sara said, "
+        "\"Let's delay the launch.\" Then the manager said, \"No, we can't.\"' Now listen to how an experienced "
+        "speaker summarizes the exact same exchange in one breath: 'When the manager explained that we had a problem, "
+        "Sara suggested delaying the launch, but he insisted on keeping the original date.'",
+        "Nearly half of everyday conversation consists of telling one person what another person said, asked, "
+        "promised, or advised. When you master reported speech and expressive reporting verbs, you stop reciting "
+        "transcripts and start summarizing ideas with clarity and style."
+    ],
     'hook': [
-        "Tell your partner: what did a friend or family member say to you this week? "
-        "Report the words — don't read them. What exactly did they say?",
+        "Think about two real messages or conversations from your week:",
+        "•  A piece of advice or a reminder a family member, teacher, or colleague gave you recently.",
+        "•  A question someone asked you this week — and how you answered it.",
+        "Tell your partner about both moments without quoting the speaker's exact words ('She told me that…', "
+        "'He asked me whether…', 'They reminded me to…'). Which parts felt easy to report, and where did you pause to think?",
     ],
     'rules': [
-        {'label': 'Rule 1 — The backshift: one step back in time',
-         'formula': ["Direct: 'I am tired.'  →  She said (that) she was tired.",
-                     "Present simple → past simple · Present continuous → past continuous",
-                     "Past simple → past perfect · will → would · can → could · may → might",
-                     "would / could / should / past perfect → stay the same"],
-         'text': ["When you report, the verbs usually step back one tense. 'That' is optional and often "
-                  "dropped in speech."],
-         'examples': ["\"I work here.\" → He said he worked there.",
-                      "\"I've finished.\" → She said she had finished.",
-                      "\"I'll call you.\" → He said he would call me."],
-         'remember': ["If the statement is still true, you may keep the original tense: "
-                      "'She said the earth goes round the sun.'"]},
-        {'label': 'Rule 2 — Reporting questions and commands',
-         'formula': ["Yes/No question:  ask + if / whether + subject + verb  (statement order!)",
-                     "Wh- question:  ask + question word + subject + verb",
-                     "Command:  tell / ask / order + person + to + base verb",
-                     "Negative command:  told me not to + base verb"],
-         'text': ["Reported questions use statement word order — no auxiliary 'do', no question mark."],
-         'examples': ["\"Where do you live?\" → She asked me where I lived.",
-                      "\"Are you ready?\" → He asked if I was ready.",
-                      "\"Sit down.\" → She told me to sit down.",
-                      "\"Don't worry.\" → He told me not to worry."],
-         'remember': ["'say' has no object: 'He said that…' · 'tell' needs a person: 'He told me that…' "
-                      "(never 'He said me…')."]},
-        {'label': 'Rule 3 — Reporting verbs: beyond say and tell',
-         'formula': ["admit · agree · apologise · argue · claim · complain · explain · insist · "
-                     "mention · promise · refuse · remind · suggest · warn",
-                     "Patterns:  verb + that …  ·  verb + to + verb  ·  verb + person + to + verb  ·  verb + -ing"],
-         'text': ["Reporting verbs make summaries compact and precise — exactly what the TOEFL and "
-                  "professional English require."],
-         'examples': ["He admitted making a mistake.  (verb + -ing)",
-                      "She promised to call back.  (verb + to)",
-                      "The doctor warned me not to travel.  (verb + person + to)",
-                      "He suggested leaving early.  (verb + -ing)"],
-         'remember': ["'suggest' takes -ing or 'that': 'She suggested going' / 'She suggested that we go' "
-                      "(not 'suggested me to go')."]},
-        {'label': 'Rule 4 — Time and place references',
-         'formula': ["now → then · today → that day · yesterday → the day before",
-                     "tomorrow → the next day / the following day · last week → the week before",
-                     "here → there · this → that · ago → before"],
-         'text': ["When you report later, shift the time words too — or the story makes no sense."],
-         'examples': ["\"I'll do it tomorrow.\" → She said she would do it the next day.",
-                      "\"I saw him yesterday.\" → He said he had seen him the day before."],
-         'remember': ["If you report on the same day, you can keep the time words: "
-                      "'He said he'd do it tomorrow' (said earlier today)."]},
+        {'label': 'Rule 1 — Stepping back in time: tense backshift and when to keep the present',
+         'text': [
+             "When you report what someone said in the past, the original moment of speaking is now behind you. "
+             "To reflect that distance, English normally shifts the verb one step back in time: present simple becomes "
+             "past simple, present continuous becomes past continuous, past simple and present perfect become past "
+             "perfect, 'will' becomes 'would', and 'can' becomes 'could'.",
+             "However, backshift is not a blind mechanical rule. If what the speaker said is a permanent truth, or a "
+             "situation that is still clearly true right now, you can either shift the tense or keep the present tense."
+         ],
+         'formula': [
+             "Standard backshift:  am/is/are → was/were  ·  work → worked  ·  worked / have worked → had worked  ·  will → would  ·  can → could",
+             "Forms that stay unchanged:  would, could, should, might, and past perfect (had done) stay as they are"
+         ],
+         'examples': [
+             "Direct: \"I'm working on the budget.\"   →   Reported: He said (that) he was working on the budget.",
+             "Direct: \"We've already booked the hall.\"   →   Reported: They told us (that) they had already booked the hall.",
+             "Direct: \"I'll call you this evening.\"   →   Reported: She said she would call me that evening.",
+             "Direct: \"My sister lives in Bamyan.\"   →   Reported: He said his sister lives / lived in Bamyan.  (still true today)"
+         ],
+         'remember': [
+             "Watch the difference between 'say' and 'tell': 'say' never takes a personal object directly ('He said that he was ready' or 'He said to me…'), "
+             "while 'tell' must have a person right after it ('He told me that he was ready' — never 'He said me…')."
+         ]},
+        {'label': 'Rule 2 — Reporting questions, requests, and commands',
+         'text': [
+             "When you report a question ('She asked me where I lived'), it is no longer a direct question — it is a "
+             "statement about a question. That means you drop the question mark, drop the auxiliary 'do/does/did', "
+             "and return the words to normal statement order (subject + verb)!",
+             "For Yes/No questions, link with 'if' or 'whether'. For requests and commands, use 'asked / told / "
+             "warned + person + (not) to + base verb'."
+         ],
+         'formula': [
+             "Reported Wh- question:  asked (+ person) + Wh- word + subject + verb (no inversion!)",
+             "Reported Yes/No question:  asked (+ person) + if / whether + subject + verb",
+             "Reported command / request:  told / asked / advised / warned + person + (not) to + base verb"
+         ],
+         'examples': [
+             "Direct: \"Where did you park the car?\"   →   She asked me where I had parked (or: parked) the car.",
+             "Direct: \"Are the results ready?\"   →   He asked whether the results were ready.",
+             "Direct: \"Please check the figures twice.\"   →   The director asked us to check the figures twice.",
+             "Direct: \"Don't touch the wet paint!\"   →   He warned the children not to touch the wet paint."
+         ],
+         'remember': [
+             "Place 'not' before 'to' in negative commands: 'She told me not to worry' (not 'She told me to not worry' or 'not worry')."
+         ]},
+        {'label': 'Rule 3 — Summarising with expressive reporting verbs',
+         'text': [
+             "If you report every sentence with 'He said… and then she said…', your story quickly sounds repetitive. "
+             "Reporting verbs like admit, suggest, promise, deny, remind, warn, apologise, and insist capture the "
+             "speaker's exact attitude in a single word — provided you pair each verb with its natural grammar pattern."
+         ],
+         'formula': [
+             "Verb + to + base verb:  agree · offer · promise · refuse · threaten + to do",
+             "Verb + person + (not) to + base verb:  advise · encourage · invite · remind · persuade · tell · warn + someone to do",
+             "Verb + verb-ing (or that-clause):  admit · deny · recommend · suggest + doing   ·   apologise for / insist on + doing"
+         ],
+         'examples': [
+             "He admitted making a calculation mistake in the first table.  (admit + -ing)",
+             "She promised to send the feedback before Friday morning.  (promise + to + verb)",
+             "The doctor advised my father to walk for thirty minutes every day.  (advise + person + to + verb)",
+             "Tariq suggested taking the early train to avoid the crowd.  (suggest + -ing)"
+         ],
+         'remember': [
+             "Never say 'She suggested me to go' or 'He explained me the rule' — say 'She suggested going / that we go' "
+             "and 'He explained the rule to me.'"
+         ]},
+        {'label': 'Rule 4 — Shifting time and place words naturally',
+         'text': [
+             "When you report a conversation days or weeks later in a different place, adjust the time and place words "
+             "so they match your listener's viewpoint (now → then, today → that day, yesterday → the day before, "
+             "tomorrow → the next day, here → there)."
+         ],
+         'formula': [
+             "today → that day   ·   yesterday → the day before / the previous day   ·   tomorrow → the next day / the following day",
+             "now → then / at that moment   ·   last week → the week before   ·   here → there   ·   this → that"
+         ],
+         'examples': [
+             "Direct (on Monday): \"I'll finish the report tomorrow.\"   →   Reported (on Friday): She said she would finish the report the next day.",
+             "Direct (on Monday): \"I'll finish the report tomorrow.\"   →   Reported (later on Monday): She said she'll / she'd finish the report tomorrow."
+         ],
+         'remember': [
+             "Use common sense with time words: if you are reporting a conversation on the very same day, keep 'today' and 'tomorrow' as they are!"
+         ]},
     ],
     'differences': [
-        {'title': 'say vs tell (and ask)',
+        {'title': 'say vs tell vs ask — choosing the right core verb',
          'rows': [
-             ["He said that he was busy.", "He told me that he was busy.", "He asked me if I was busy.", "say + that (no person) · tell + person · ask + person + question"],
-         ], 'headers': ['say + that', 'tell + person', 'ask + person', 'The pattern']},
-        {'title': 'reporting with the same tense or backshift',
+             ["He said (that) the meeting was over.", "He told me (that) the meeting was over.", "He asked me if the meeting was over.", "'Say' focuses on the words (no personal object); 'tell' focuses on informing a person ('told me'); 'ask' reports a question or request."],
+         ], 'headers': ['say (+ that)', 'tell + person (+ that)', 'ask (+ person) + if / Wh- / to', 'How to keep them straight']},
+        {'title': 'Reporting later (backshift) vs reporting a still-true fact',
          'rows': [
-             ["She said she was tired. (reported later)", "She said she is tired. (still true now)", "Both can be correct: backshift for reporting later; no shift when the fact is still true — or when you report immediately."],
-         ], 'headers': ['Reported later (backshift)', 'Still true now (no shift)', 'The rule']},
-        {'title': 'command vs request vs advice',
-         'rows': [
-             ["told me to wait", "asked me to wait", "advised me to wait", "insisted on my waiting", "The verb carries the force: order → request → advice → insistence."],
-         ], 'headers': ['order: told me to wait', 'request: asked me to wait', 'advice: advised me to wait', 'insistence: insisted on my waiting', 'The force']},
+             ["She said she was feeling exhausted.", "She said she speaks three languages.", "In the first, her tiredness belonged to that past moment, so we shift to 'was'. In the second, her ability to speak three languages is still true today, so 'speaks' (or 'spoke') is completely natural."],
+         ], 'headers': ['Past situation (backshifted)', 'Permanent / still-true fact', 'Why both work']},
+        {'title': 'How reporting verbs compress whole sentences into one precise word',
+         'text': [
+             "Compare how a specific reporting verb captures the tone without needing a long quote:",
+             "•  \"No, I definitely didn't leave the freezer door open!\"   →   He denied leaving the freezer door open.",
+             "•  \"Don't forget to bring your passport tomorrow morning.\"   →   She reminded me to bring my passport the next morning.",
+             "•  \"Why don't we test the microphone before the guests arrive?\"   →   He suggested testing the microphone before the guests arrived."
+         ]},
     ],
     'practice_a': [
-        "\"I am working now.\"  →  He said he __________ (work) then.",
-        "\"We have finished.\"  →  They said they __________ (finish).",
-        "\"Where did you park?\"  →  She asked me where I __________ (park).",
-        "\"Don't touch it!\"  →  He warned me __________ touch it.",
-        "\"I'll help you.\"  →  She promised __________ (help) me.",
-        "\"Let's take a break.\"  →  He suggested __________ (take) a break.",
+        "\"I am working on the presentation right now.\"   →   He said he __________ (work) on the presentation then.",
+        "\"We have already submitted the application.\"   →   They told us they __________ (already / submit) the application.",
+        "\"Where did you park the van?\"   →   She asked me where I __________ (park) the van.",
+        "\"Don't touch the hot Kettle!\"   →   He warned the child __________ touch the hot kettle.",
+        "\"I'll definitely help you revise on Saturday.\"   →   She promised __________ (help) me revise on Saturday.",
+        "\"Let's take a ten-minute break before part two.\"   →   He suggested __________ (take) a ten-minute break.",
     ],
     'practice_b': [
-        "Report: 'I never lie.'  (He said…)",
-        "Report a question: 'When will the results be announced?'  (They asked…)",
-        "Correct: 'He said me that he was tired.'",
-        "Correct: 'She suggested me to go early.'",
-        "Report with a strong verb: 'No, I didn't break the window.'  (He denied…)",
-        "Report advice your teacher has given you (2 sentences, 2 different reporting verbs).",
+        "Report this statement: 'I never drink coffee after six in the evening.'  (He said…)",
+        "Report this question: 'When will the scholarship results be announced?'  (They asked…)",
+        "Correct the mistake: 'He said me that the train had been cancelled.'",
+        "Correct the mistake: 'My colleague suggested me to apply for the fellowship.'",
+        "Report this sentence using the verb deny: '\"No, I did not share the password with anyone.\"'  (He denied…)",
+        "Report two helpful pieces of advice a teacher or family member has given you, using two different reporting verbs (such as advised, encouraged, reminded, or warned).",
     ],
     'pair': {
-        'intro': "The message game. Partner A reads (or says) three short messages from 'other people' "
-                 "(notes, emails, quotes). Partner B reports them to a third person (the teacher/another pair) "
-                 "using different reporting verbs. Swap.",
-        'task': ["Messages to report: a complaint · a promise · a warning · an invitation · a refusal.",
-                 "Use at least four different reporting verbs and both question and command reports."],
+        'intro': "Play 'The Diplomatic Messenger'. Partner A speaks five short direct messages from everyday life "
+                 "(a complaint, a promise, a question, a warning, and a suggestion). Partner B listens carefully and "
+                 "reports each message aloud using a precise reporting verb — without repeating 'said' every time. "
+                 "Then swap roles.",
+        'task': [
+            "Partner A: create or adapt five one-sentence messages (for example: 'Why didn't the courier call me?', 'I'll send the slides by noon', 'Don't drive over the mountain pass at night', 'Why don't we meet at the library?', 'I'm sorry I missed your call').",
+            "Partner B: report all five messages back to Partner A (or to a neighbouring pair) using at least four different reporting verbs, accurate backshift, and statement word order in questions."
+        ],
+        'model': [
+            "A (Direct): 'I'm really sorry I missed your presentation yesterday — I'll watch the recording tonight.'",
+            "B (Reported): 'She apologised for missing my presentation the day before and promised to watch the recording that night.'"
+        ],
         'output': "Five faithfully reported messages per reporter, using at least four different "
                   "reporting verbs, with one reported question and one reported command, that the "
                   "listener can repeat accurately.",
-        'criteria': ["backshift is accurate",
-                     "question word order correct in reports",
-                     "at least four reporting verbs used",
-                     "time references shifted correctly"],
+        'criteria': [
+            "uses tense backshift and time-reference shifts accurately",
+            "uses statement word order (no 'do/did' inversion) in all reported questions",
+            "uses at least four varied reporting verbs with their right patterns (promised to, suggested -ing, warned not to…)",
+            "summarizes the meaning smoothly and naturally"
+        ],
     },
     'advanced': {
-        'base': ["Drill the backshift table out loud with true sentences about your day.",
-                 "Learn the verb patterns in chunks: 'admitted -ing' · 'promised to' · 'warned me not to' · 'suggested -ing'."],
-        'upgrade': ["Use continuous reporting verbs for liveliness: 'She kept insisting that she was right.' · 'He went on to explain…'",
-                    "Use 'point out / observe / note' in academic reporting: 'The report points out that demand has fallen.'",
-                    "Report with judgement-free precision: 'He claimed to have seen nothing, yet witnesses disagreed.'"],
+        'intro': "In academic discussions, journalism, and workplace negotiations, reporting verbs also signal how "
+                 "much weight or skepticism you attach to someone else's words.",
+        'base': [
+            "Practise the four core reporting-verb families as spoken chunks: 'promised / offered / agreed to do' · 'advised / reminded / warned me to do' · 'suggested / admitted / denied doing' · 'explained / pointed out that…'.",
+            "Take three questions someone asked you today and report them aloud using 'asked me if…' and 'asked me where/when/why…'."
+        ],
+        'upgrade': [
+            "Use continuous or narrative frames to make spoken storytelling vivid: 'She kept insisting that she knew the shortcut' · 'He went on to explain how the system worked.'",
+            "Use analytical reporting verbs in presentations and essays: 'The study points out / demonstrates / confirms that…' · 'Critics argue / question whether…'",
+            "Distinguish neutral reporting from cautious skepticism: compare 'The minister stated that costs had fallen' (neutral) with 'The minister claimed to have reduced costs, although the audit disagreed' (cautious)."
+        ],
     },
     'realtalk': {
-        'plan': "Planning (30 seconds): choose a real conversation and list four things that were "
-                "said — keywords only, with who said each one. Pick your four reporting verbs before "
-                "you speak: admitted, warned, promised, suggested, agreed, asked…",
-        'task': "Retell challenge (ninety seconds): report a real conversation you had this week — a "
-                "discussion, an argument, an interview or a negotiation. Report at least four things people "
-                "said, using varied reporting verbs. End with your own comment.",
-        'model': "On Saturday my sister called to tell me that she had accepted the job offer. She "
-                 "admitted that she was nervous, but she promised to ask for a training week. My "
-                 "father warned her not to sign without reading the contract, and she agreed to send "
-                 "it to him first. She also asked me whether I thought she should negotiate the "
-                 "salary; I suggested doing the same research she had done for the interview. In my "
-                 "opinion, she should ask — the worst they can say is no.",
-        'feedback': ["accurate backshift and time references",
-                     "varied reporting verbs (not only 'said')",
-                     "questions and commands reported correctly",
-                     "clear final comment"],
+        'plan': "Take 30 seconds to recall a real conversation you had recently — a family discussion, a job interview, "
+                "a team meeting, or a lively debate with a friend. Jot down four keywords for what was said and pick "
+                "four different reporting verbs before you speak (for example: asked, suggested, warned, promised, "
+                "admitted, agreed).",
+        'task': "Ninety-second conversation recap: Retell a memorable conversation you had recently. Report at least "
+                "four things that were said (including at least one question and one piece of advice or suggestion) "
+                "using varied reporting verbs, and finish with your own reflection on how the conversation turned out.",
+        'model': "Last Saturday my younger sister called to tell me that she had been offered a position at a graphic "
+                 "design studio. She admitted that she felt nervous about the tight deadlines, but she promised to "
+                 "give it her best effort for the first six months. Our father warned her not to sign the contract "
+                 "without checking the evening hours first, and she agreed to ask the director for a written schedule. "
+                 "She also asked me whether I thought she should negotiate the starting salary; I suggested showing "
+                 "them her portfolio from university before naming a figure. In the end, they offered her a better rate "
+                 "than she had expected.",
+        'feedback': [
+            "accurate backshift and time expressions throughout the retelling",
+            "uses at least four varied reporting verbs with their natural grammar patterns",
+            "reports questions with statement word order and advice/warnings with '(not) to + verb'",
+            "ends with a clear personal comment on the outcome of the conversation"
+        ],
     },
     'review': {
-        'points': ["Backshift: one tense back; time words shift too.",
-                   "say (+ that) vs tell (+ person); reported questions use statement order.",
-                   "Reporting verbs (admit, promise, warn, suggest…) carry meaning and grammar patterns."],
-        'retrieval': ["Report three things someone said to you today.",
-                      "Report one question, one command and one promise — all out loud."],
-        'watch': ["'He said me…' → 'He told me…'.",
-                  "'She suggested me to go' → 'She suggested going' / 'She suggested that I go'."],
-        'selfcheck': ["I can report statements, questions and commands accurately.",
-                      "I use reporting verbs beyond 'say'."],
+        'points': [
+            "When reporting past speech, verbs normally step back one tense, and time/place words shift to match the listener's viewpoint.",
+            "Reported questions return to normal statement word order (subject + verb) with 'if/whether' or a Wh- word — never invert with 'do/did'.",
+            "Match each reporting verb to its grammar pattern: 'promised to do', 'warned me not to do', 'suggested doing', 'explained that…'."
+        ],
+        'retrieval': [
+            "Report three things different people have said or asked you over the past two days.",
+            "Say one sentence with 'warned', one with 'suggested', and one with 'asked whether' from memory."
+        ],
+        'watch': [
+            "'He said me that he was busy.' → 'He told me that he was busy' or 'He said that he was busy.'",
+            "'She suggested me to take a taxi.' → 'She suggested taking a taxi' or 'She suggested that we take a taxi.'"
+        ],
+        'selfcheck': [
+            "I can report statements, questions, and requests accurately without word-order slips.",
+            "I can summarize conversations naturally using a variety of reporting verbs beyond 'say' and 'tell'."
+        ],
         'answers': {
-            'A': ["was working", "had finished", "had parked (or: parked)", "not to", "to help", "taking"],
-            'B': ["He said (that) he never lied. / He said (that) he never lies.",
-                  "They asked when the results would be announced.",
-                  "He told me that he was tired.",
-                  "She suggested going early. / She suggested that I go early.",
-                  "He denied breaking the window.", "answers vary"],
+            'A': ["was working", "had already submitted", "had parked (or: parked)", "not to", "to help", "taking"],
+            'B': ["He said (that) he never drank coffee after six in the evening. / He said (that) he never drinks coffee after six in the evening.",
+                  "They asked when the scholarship results would be announced.",
+                  "He told me that the train had been cancelled. / He said that the train had been cancelled.",
+                  "My colleague suggested applying for the fellowship. / My colleague suggested that I apply for the fellowship.",
+                  "He denied sharing the password with anyone.",
+                  "answers vary (e.g. 'My teacher advised me to read aloud every morning, and my mother reminded me not to skip breakfast before an exam.')"],
         },
     },
 }
@@ -152,138 +232,227 @@ L14 = {
     'n': 14, 'part_no': 7, 'part_title': 'Sound More Natural and Advanced',
     'title': 'Participles and Advanced Sentence Patterns',
     'goal': 'combine ideas concisely without losing clarity',
-    'intro': "Participles are how English professionals compress ideas — speed without confusion.",
+    'intro': [
+        "Read this sentence carefully and picture what it literally says: 'Walking down the mountain road, the "
+        "snowstorm started.' Grammatically, that sentence claims that the snowstorm had two legs and was walking down "
+        "the mountain road! What the speaker meant, of course, was: 'Walking down the mountain road, we were caught "
+        "in a snowstorm.'",
+        "Participles (-ing and past participles) allow you to compress two bulky clauses into one sleek, authoritative "
+        "sentence — as long as you keep the subject clear and choose the right participle for the job."
+    ],
     'hook': [
-        "Combine these ideas aloud, any way you like:",
-        "•  The team was exhausted. They finished the project on time.",
-        "•  She opened the letter. She found the news she had waited for.",
-        "Which version sounds most professional?",
+        "Try combining each pair of sentences below into one smooth sentence aloud with your partner:",
+        "•  Pair 1:  'She finished the presentation. Then she opened the floor to questions.'",
+        "•  Pair 2:  'The lecture lasted three hours without a break. The students felt exhausted.'",
+        "Now compare: why do we call the lecture 'exhausting' (-ing) but the students 'exhausted' (-ed)? Discuss "
+        "one experience you found 'exciting' or 'challenging' recently and how you felt during it.",
     ],
     'rules': [
-        {'label': 'Rule 1 — Present and past participles as adjectives',
-         'formula': ["-ing (present participle)  →  causes the feeling:  a boring lecture",
-                     "-ed (past participle)  →  feels the effect:  bored students"],
-         'text': ["The rule: things are -ing; people (and animals) are usually -ed — because they feel it."],
-         'examples': ["The film was fascinating.  (the film causes interest)",
-                      "I was fascinated.  (I felt it)",
-                      "tiring work / tired workers · confusing news / confused readers"],
-         'remember': ["Some -ing words describe a person's behaviour instead: 'He is very interesting' "
-                      "(he holds my attention) vs 'He is very interested' (he feels interest)."]},
-        {'label': 'Rule 2 — Participial clauses: the professional connector',
-         'formula': ["Verb-ing …, subject + verb   →  same time / reason",
-                     "Having + past participle …, subject + verb   →  earlier action",
-                     "Past participle …, subject + verb   →  passive meaning",
-                     "Used carefully, these replace 'because/after/while + full clause'"],
-         'text': ["Participial clauses open or close a sentence with compressed information. "
-                  "Use them in formal speech and writing."],
-         'examples': ["Having finished the report, she left the office.  (After she had finished…)",
-                      "Written in 1963, the novel is still popular.  (The novel, which was written…)",
-                      "Walking to the station, I realised my mistake.  (While I was walking…)"],
-         'remember': ["In a reduced opening clause with no stated subject, the understood subject should match the main clause: 'Walking to the station, I got soaked' (I was walking), not 'Walking to the station, the rain started.' An absolute clause names its own subject: 'With prices rising, families are worried.'"]},
-        {'label': 'Rule 3 — Absolute and fronted patterns for emphasis',
-         'formula': ["Fronted participle:  'Considering the costs…', 'Given the evidence…', 'Looking at the results…'",
-                     "With + noun + participle:  'With prices rising, families are worried.'",
-                     "Having been + participle:  'Having been warned, we prepared carefully.'"],
-         'text': ["These patterns frame a whole clause — they sound composed and formal."],
-         'examples': ["Given the circumstances, we agreed to wait.",
-                      "With the deadline approaching, the team worked faster.",
-                      "All things considered, it was a success."],
-         'remember': ["'Given' = when you consider; 'considering' = taking into account; "
-                      "'all things considered' = final judgement phrase."]},
-        {'label': 'Rule 4 — Concise combination: fewer words, same meaning',
-         'formula': ["'She opened the letter and she read it slowly.'  →  'Opening the letter, she read it slowly.'",
-                     "Two actions → one main verb + participle (if the subject is the same)."],
-         'text': ["Concision is not using difficult words; it is removing whole clauses."],
-         'examples': ["Because he had not slept, he made mistakes. → Not having slept, he made mistakes.",
-                      "The report, which was published today, contains errors. → The report published today contains errors."],
-         'remember': ["Do not over-compress speech. One or two participial clauses per answer is plenty."]},
+        {'label': 'Rule 1 — Participle adjectives: -ing (the cause) vs -ed (the feeling)',
+         'text': [
+             "Many everyday adjectives are built from verbs: boring / bored, confusing / confused, fascinating / "
+             "fascinated, exhausting / exhausted. Confusing the two endings can lead to unintentional comedy: saying "
+             "'I am boring in class' tells your classmates that *you* put *them* to sleep!",
+             "Hold on to one simple principle: the '-ing' adjective describes the source that *causes* the feeling, "
+             "while the '-ed' adjective describes how a person *feels* inside as a result."
+         ],
+         'formula': [
+             "Present participle adjective (-ing)  →  the source / cause of the experience:  a confusing instruction · an inspiring talk",
+             "Past participle adjective (-ed)  →  the person experiencing the feeling:  confused applicants · inspired listeners"
+         ],
+         'examples': [
+             "The documentary about deep-sea exploration was fascinating, and the audience was fascinated.",
+             "Working a twelve-hour shift at the hospital is exhausting, so the nurses are exhausted by evening.",
+             "The new bus timetable is confusing — even regular commuters look confused."
+         ],
+         'remember': [
+             "A person can be described with '-ing' only when they are the cause of the feeling in others: "
+             "'Our history professor is very interesting' (she fascinates her students) versus 'Our history professor is very interested in ancient coins' (she feels curiosity)."
+         ]},
+        {'label': 'Rule 2 — Participle clauses: compressing time, reason, and passive background',
+         'text': [
+             "Instead of starting every sentence with a heavy clause ('Because she wanted to save time…', 'After he "
+             "had reviewed the data…', 'The report, which was written in haste…'), you can compress the first clause "
+             "into a participle phrase — provided both halves of the sentence share the exact same subject.",
+             "Use 'Verb-ing…' for an action happening at the same time or as the reason; use 'Having + past participle…' "
+             "when the first action was clearly completed before the second; and use a 'Past participle…' when the "
+             "opening idea is passive."
+         ],
+         'formula': [
+             "Simultaneous action or reason (active):  Verb-ing …, subject + main verb   →   Walking into the hall, she spotted her friend.",
+             "Earlier completed action (active):  Having + past participle …, subject + main verb   →   Having finished the exam, he breathed a sigh of relief.",
+             "Passive condition or reason:  Past participle (or Having been + participle) …, subject + main verb   →   Built in 1920, the bridge still carries heavy traffic."
+         ],
+         'examples': [
+             "Realising that the train was about to leave, we ran to the platform.  (= Because we realised…)",
+             "Having lived in Kandahar for ten years, he knew every street in the old city.  (= Because he had lived…)",
+             "Warned about the approaching storm, the mountain guides postponed the climb.  (= Because they had been warned…)"
+         ],
+         'remember': [
+             "In a reduced opening clause with no stated subject, the understood subject should match the main clause: "
+             "'Walking to the station, I got soaked' (I was walking), not 'Walking to the station, the rain started.' "
+             "An absolute clause names its own subject: 'With prices rising, families are worried.'"
+         ]},
+        {'label': 'Rule 3 — Framing a whole situation: Given, Considering, and With + noun + participle',
+         'text': [
+             "What if you want to set the stage with an outside factor that has its own subject (such as rising prices "
+             "or an approaching deadline), or frame a professional judgment? English uses two clean patterns that "
+             "never dangle:",
+             "1. Prepositional participle frames ('Given the tight budget…', 'Considering the weather…', 'All things considered…') "
+             "which are established discourse markers that do not need to match the main subject.",
+             "2. Absolute clauses with 'With + noun + participle' ('With the exams approaching, the library is packed'), "
+             "which explicitly state their own noun subject right after 'With'."
+         ],
+         'formula': [
+             "Evaluative frames:  Given + noun phrase, …  ·  Considering + noun phrase / that-clause, …  ·  All things considered, …",
+             "With-absolute clause:  With + noun + verb-ing / past participle, main clause"
+         ],
+         'examples': [
+             "Given the limited rehearsal time, the students delivered an impressive performance.",
+             "With winter approaching rapidly, the municipality repaired the heating pipes.",
+             "Considering how little funding the project received, the results were remarkable.",
+             "All things considered, moving the workshop to Saturday was the right call."
+         ],
+         'remember': [
+             "'Given' and 'Considering' are exceptionally useful at the start of formal speaking responses because they "
+             "let you weigh the context before stating your conclusion."
+         ]},
+        {'label': 'Rule 4 — Keeping compression natural in spoken English',
+         'text': [
+             "Concision is not about sounding like a legal contract; it is about removing clutter so your key verbs "
+             "stand out. In spoken English, using one or two well-placed participle openings in a two-minute talk "
+             "makes you sound composed and articulate — using ten in a row makes you sound unnatural."
+         ],
+         'formula': [
+             "Two clauses with the same subject  →  Participle opening + main clause",
+             "Negative participle opening:  Not knowing / Not having received …, subject + main verb"
+         ],
+         'examples': [
+             "Not wanting to wake the children, we spoke in whispers.",
+             "Not having received the agenda in advance, several members asked for extra time to read it."
+         ],
+         'remember': [
+             "To make any participle clause negative, place 'Not' (or 'Never') right at the front: 'Not knowing the route, I asked a taxi driver.'"
+         ]},
     ],
     'differences': [
-        {'title': '-ing vs -ed adjectives',
+        {'title': '-ing (the source) vs -ed (the experiencer)',
          'rows': [
-             ["an exciting game", "excited players", "The game causes excitement; the players feel it."],
-             ["a tiring day", "tired students", "The day causes tiredness; the students experience it."],
-         ], 'headers': ['-ing (causes the feeling)', '-ed (feels it)', 'Example']},
-        {'title': 'participle clause vs full clause',
+             ["an inspiring speech", "an inspired audience", "The speech generates the inspiration (-ing); the audience feels it inside (-ed)."],
+             ["frustrating delays", "frustrated passengers", "The delays cause the frustration (-ing); the passengers experience it (-ed)."],
+         ], 'headers': ['-ing adjective (causes the feeling)', '-ed adjective (feels the effect)', 'How to choose instantly']},
+        {'title': 'Full adverbial clause vs compressed participle clause',
          'rows': [
-             ["Having finished, she left.", "After she had finished, she left.", "Same meaning; the participle version is compressed and formal."],
-             ["Written in haste, the report had errors.", "The report, which was written in haste, had errors.", "Compression with a passive participle."],
-         ], 'headers': ['Participle clause (compressed)', 'Full clause', 'Why']},
-        {'title': 'the subject rule',
-         'text': ["In a reduced participle clause with no stated subject, the understood subject should normally match the main clause: "
-                  "'Opening the door, I felt the cold.' (I opened), not 'Opening the door, the room was cold.' Absolute clauses state their own subject, as in 'Weather permitting, we will leave.'"]},
+             ["After she had reviewed the patients' charts, she began her rounds.", "Having reviewed the patients' charts, she began her rounds.", "Both sentences mean the exact same thing; 'Having reviewed…' removes three unstressed words and sharpens the rhythm."],
+             ["Because the manual was written in clear English, it was easy to follow.", "Written in clear English, the manual was easy to follow.", "The passive participle 'Written…' attaches directly to 'the manual'."],
+         ], 'headers': ['Full clause (everyday conversation)', 'Participle clause (crisp / formal)', 'What changes']},
+        {'title': 'The subject-matching check — catching dangling participles',
+         'text': [
+             "In a reduced participle clause with no stated subject, the understood subject should normally match "
+             "the main clause: 'Opening the door, I felt the cold air' (I opened the door, and I felt the air) — not "
+             "'Opening the door, the room was cold' (which makes it sound as if the room opened the door!). "
+             "Absolute clauses state their own subject, as in 'Weather permitting, we will leave at dawn' or "
+             "'With the rain pouring down, we stayed indoors.'"
+         ]},
     ],
     'practice_a': [
-        "The lecture was so __________ (bore) that half the class fell asleep.",
-        "We were __________ (amaze) by the results.",
-        "__________ (finish) his speech, he answered questions.",
-        "__________ (warn) about the traffic, we left early.",
-        "__________ the prices rising, families are saving more.  (with / despite)",
-        "__________ (walk) into the room, she noticed the broken window.",
+        "The three-hour lecture was so __________ (bore) that several people in the back row nodded off.",
+        "We were genuinely __________ (amaze) by how quickly the volunteers rebuilt the footbridge.",
+        "__________ (finish) her keynote speech, Dr Sadat invited questions from the audience.  (earlier completed action)",
+        "__________ (warn) about the icy mountain pass, the drivers fitted snow chains before dawn.  (passive participle)",
+        "__________ fuel prices rising this winter, many commuters are sharing rides to work.  (With / Despite)",
+        "__________ (walk) into the laboratory, she immediately noticed the unlocked cabinet.",
     ],
     'practice_b': [
-        "Combine with a participle: 'Because she had studied hard, she passed easily.'",
-        "Combine with a participle: 'The man who was standing at the door waved.'",
-        "Correct: 'Opening the window, the cold air came in.'",
-        "Rewrite with 'Given': 'When you consider the costs, the plan is unrealistic.'",
-        "Correct: 'I am very interesting in history.'",
-        "Compress one of your own sentences with 'Having + past participle'.",
+        "Compress into one sentence using Having + past participle: 'Because she had practised her talk five times, she spoke without hesitation.'",
+        "Compress by reducing the relative clause: 'The technician who was standing by the generator switched off the power.'",
+        "Repair the dangling participle so the subject matches: 'Opening the window, the fresh morning breeze cooled the room.'",
+        "Rewrite more concisely starting with Given: 'When you take the tight deadline into account, the team's report is very thorough.'",
+        "Correct the adjective mistake: 'I have always been very interesting in architectural history.'",
+        "Write one sentence of your own starting with 'Having + past participle…' about something you did earlier today.",
     ],
     'pair': {
-        'intro': "The formal briefing. Each partner gives a 60-second briefing on a situation "
-                 "(a project, a trip, an event). The briefing must use at least two participle clauses.",
-        'task': ["Include: one 'Having + past participle', one opening with 'Given/Considering/With', "
-                 "and one -ed/-ing adjective pair.",
-                 "Partner listens and reports the briefing back in one sentence."],
+        'intro': "Play 'The Sixty-Second Executive Briefing'. Take turns giving a calm, concise 60-second briefing "
+                 "to your partner on a recent project, trip, or community event — using participle structures to "
+                 "pack background and reasons cleanly.",
+        'task': [
+            "In your 60-second briefing, include: (1) one 'Having + past participle' clause for an earlier step, (2) one framing opener with 'Given…', 'Considering…', or 'With + noun + -ing', and (3) one pair of -ing and -ed adjectives.",
+            "While you listen to your partner, check that every participle opening matches the subject that follows it, then summarize their briefing back in one sentence."
+        ],
+        'model': [
+            "A: Given the short notice we received last Monday, our student book fair went remarkably well. Having collected over three hundred donated books during the week, we set up four stalls in the courtyard. The morning setup was exhausting, but everyone felt energised when the first visitors arrived.",
+            "B: So having gathered the books in just a few days, you managed to run a busy fair despite the exhausting start!"
+        ],
         'output': "One 60-second briefing per partner containing the three required structures, plus "
                   "a listener's one-sentence report-back that matches the briefing's content.",
-        'criteria': ["participle clauses have correct subjects",
-                     "forms are accurate (-ing / -ed / having done)",
-                     "meaning stays clear after compression",
-                     "listener's report matches the content"],
+        'criteria': [
+            "every reduced participle clause matches the subject of the main clause",
+            "uses 'Having + past participle' and passive/active participles accurately",
+            "distinguishes clearly between -ing (cause) and -ed (feeling) adjectives",
+            "maintains natural spoken clarity without overloading a single sentence"
+        ],
     },
     'advanced': {
-        'base': ["Drill -ed/-ing pairs about real life: tired/tiring, confused/confusing, interested/interesting — five sentences.",
-                 "Practise the subject rule: make two correct participle openings from your week."],
-        'upgrade': ["Use 'There being + noun': 'There being no further questions, the meeting ended.'",
-                    "Use 'Not having… / Never having…': 'Never having travelled abroad, he found the airport overwhelming.'",
-                    "Use participles in formal closings: 'Considering all the evidence, we recommend…'"],
+        'intro': "Used thoughtfully, participle and absolute phrases give formal talks, policy recommendations, "
+                 "and academic summaries a composed, effortless flow.",
+        'base': [
+            "Test every -ing/-ed adjective pair on real situations from your week: tiring / tired, encouraging / encouraged, overwhelming / overwhelmed, satisfying / satisfied.",
+            "Whenever you start a sentence with an -ing or -ed phrase, make sure the very next word after the comma is the person or thing doing (or receiving) that action."
+        ],
+        'upgrade': [
+            "Use negative participle openings for concise reasons: 'Never having spoken in front of a camera before, he practised with a timer first' · 'Not wanting to delay the team, she sent the summary ahead.'",
+            "Use formal absolute expressions when closing a meeting or summarizing a situation: 'Weather permitting, fieldwork will begin on Monday' · 'There being no further objections, the schedule was approved.'",
+            "Close formal recommendations with 'Considering all the evidence,…' or 'All things considered,…' to signal a balanced final judgment."
+        ],
     },
     'realtalk': {
-        'plan': "Planning (45 seconds): choose the policy and write three lines — your evidence, "
-                "your recommendation, your closing judgement. Mark where 'Given…' and 'Having…' will "
-                "go so the openings come out whole.",
-        'task': "Ninety-second formal recommendation: recommend one policy for your workplace or school "
-                "(more training, a schedule change, a new rule). Open with 'Considering…' or 'Given…', "
-                "use one 'Having…' clause, and close formally.",
-        'model': "Given the number of late arrivals, we recommend shifting the morning meeting to "
-                 "nine o'clock. Having reviewed the attendance records, I noticed that most delays "
-                 "happen before ten, when the traffic is heaviest. The current schedule is "
-                 "frustrating for parents, and several tired employees arrive unprepared. "
-                 "Considering the cost of the change — none — the benefit is obvious. All things "
-                 "considered, a two-week trial would settle the question.",
-        'feedback': ["at least two accurate participle clauses",
-                     "-ed/-ing adjectives used correctly",
-                     "recommendation is clear and logical",
-                     "formal, composed tone"],
+        'plan': "Take 45 seconds to choose one practical improvement for your school, university, or workplace "
+                "(such as shifting morning hours, creating a quiet study zone, or introducing a mentorship system). "
+                "Jot down three keywords only: the problem evidence ('Given…' or 'Having reviewed…'), your specific "
+                "recommendation, and your closing judgment ('All things considered…').",
+        'task': "Ninety-second policy recommendation: Present one practical change to improve your school or workplace. "
+                "Open with 'Given…' or 'Considering…', include at least one 'Having + past participle' clause and one "
+                "-ing/-ed adjective contrast, and close with 'All things considered…'. Speak without reading.",
+        'model': "Given the number of late arrivals during the winter months, I would recommend shifting our first "
+                 "morning seminar from eight o'clock to eight-thirty. Having reviewed the attendance logs from last "
+                 "January, our committee noticed that almost all delays occurred before eight-fifteen, when icy roads "
+                 "make the morning commute frustrating for drivers and passengers alike. Many tired students walk in "
+                 "ten minutes late, missing the opening explanation of the lecture. With classes starting just thirty "
+                 "minutes later, everyone could travel more safely and arrive focused. All things considered, a "
+                 "one-month winter trial costs nothing and would benefit the entire department.",
+        'feedback': [
+            "includes at least two accurate participle or framing structures ('Given…', 'Having reviewed…', 'With…')",
+            "keeps the subject of every reduced participle clause aligned with the main clause",
+            "uses -ing and -ed adjectives accurately ('frustrating commute', 'tired students')",
+            "delivers a clear, composed, and persuasive recommendation"
+        ],
     },
     'review': {
-        'points': ["-ing adjectives cause feelings; -ed adjectives feel them.",
-                   "Participle clauses compress because/after/while clauses — subject must match.",
-                   "'Given…', 'Considering…', 'With + noun + participle' frame formal speech."],
-        'retrieval': ["Open a sentence with 'Having…' about your day.",
-                      "Describe today with one -ing and one -ed adjective."],
-        'watch': ["'Opening the window, the room was cold.' (subject mismatch).",
-                  "'interesting in' → 'interested in'."],
-        'selfcheck': ["I can compress two clauses into one formal sentence.",
-                      "My participle clauses keep the correct subject."],
+        'points': [
+            "Use '-ing' adjectives for the source that causes a feeling ('a tiring journey') and '-ed' adjectives for the person who feels it ('tired travellers').",
+            "Participle clauses ('Walking…', 'Having finished…', 'Written in…') compress two clauses into one — make sure their understood subject matches the main-clause subject.",
+            "Use 'Given…', 'Considering…', and 'With + noun + participle' to frame evidence and background formally."
+        ],
+        'retrieval': [
+            "Say one sentence about your morning starting with 'Having + past participle…'.",
+            "Describe a recent class, book, or journey using one '-ing' adjective and one '-ed' adjective."
+        ],
+        'watch': [
+            "'Opening the window, the room felt cold.' → 'Opening the window, I felt the cold air.' (The room did not open the window!)",
+            "'I am very interesting in history.' → 'I am very interested in history.' (People feel '-ed' about a subject.)"
+        ],
+        'selfcheck': [
+            "I can compress two connected clauses into a clean participle sentence without losing the subject.",
+            "I can use 'Given…', 'Considering…', and -ing/-ed adjectives naturally in formal speech."
+        ],
         'answers': {
-            'A': ["boring", "amazed", "Having finished", "Having been warned / Warned", "With", "Walking"],
-            'B': ["Having studied hard, she passed easily.",
-                  "The man standing at the door waved.",
-                  "Opening the window, I felt the cold air come in. / As I opened the window, the cold air came in.",
-                  "Given the costs, the plan is unrealistic.",
-                  "I am very interested in history.", "answers vary"],
+            'A': ["boring", "amazed", "Having finished", "Warned / Having been warned", "With", "Walking"],
+            'B': ["Having practised her talk five times, she spoke without hesitation.",
+                  "The technician standing by the generator switched off the power.",
+                  "Opening the window, I felt the fresh morning breeze cool the room. / When I opened the window, the fresh morning breeze cooled the room.",
+                  "Given the tight deadline, the team's report is very thorough.",
+                  "I have always been very interested in architectural history.",
+                  "answers vary (e.g. 'Having had a cup of green tea, I sat down to read Lesson 14.')"],
         },
     },
 }
@@ -292,142 +461,230 @@ L15 = {
     'n': 15, 'part_no': 8, 'part_title': 'Speak with Confidence',
     'title': 'Hedging, Emphasis, and Natural Inversion',
     'goal': 'control certainty, emphasis and formality like an educated speaker',
-    'intro': "The difference between good and excellent English is control: how strong, how sure, how formal.",
+    'intro': [
+        "Imagine two economists on a panel discussion. The first says, 'This tax policy will destroy small businesses.' "
+        "The second says, 'The evidence suggests that this policy may well place extra pressure on small businesses — "
+        "and it is the rural shopkeepers who will feel that pressure first.' Who sounds more credible?",
+        "Experienced speakers know two secrets of authority: they soften unproved claims so no one can accuse them "
+        "of exaggerating (*hedging*), and they save their strongest grammatical spotlights (*cleft sentences* and "
+        "*inversion*) for the one key sentence they want the audience to remember."
+    ],
     'hook': [
-        "Two speakers say: 'The plan will fail.' / 'The plan may well fail.'  Which sounds more educated? Why?",
-        "Give the same opinion twice: once very certain, once carefully hedged. How does the effect change?",
+        "Read these two pairs of sentences aloud with a partner, paying attention to tone and voice stress:",
+        "•  Pair 1 (Certainty):   'Working from home makes people lazier.'   vs.   'Working from home can sometimes make it harder to separate rest from work.'",
+        "•  Pair 2 (Spotlight):   'The practical examples helped me most.'   vs.   'What helped me most were the practical examples.'",
+        "With your partner, take one controversial opinion about education or work and say it twice: first as a "
+        "blunt 100% generalisation, and second as a careful, measured claim that an expert would respect.",
     ],
     'rules': [
-        {'label': 'Rule 1 — Hedging: the art of careful claims',
-         'formula': ["may / might / could + base verb  ·  may well  ·  it is likely that …",
-                     "seem to / tend to / appear to  ·  generally / broadly / in most cases",
-                     "it could be argued that …  ·  one possible explanation is …"],
-         'text': ["Hedging can make a claim sound measured when evidence is limited or a conclusion is uncertain. Academic and professional speakers often hedge; too much hedging, however, can make a message unclear."],
-         'examples': ["The results suggest a small improvement.",
-                      "This policy may well reduce costs in the long run.",
-                      "It could be argued that the data is incomplete."],
-         'remember': ["Too many hedges sound vague: 'It might perhaps possibly be…' — one careful hedge per claim is enough."]},
-        {'label': 'Rule 2 — Emphasis: clefts and focus',
-         'formula': ["It is/was + emphasised part + who/that …   (cleft)",
-                     "What I need is …  ·  What surprised me was …  (wh-cleft)",
-                     "do/does/did + base verb  (auxiliary emphasis): 'I do believe you.'"],
-         'text': ["Cleft sentences split one idea in two to put the spotlight on one part."],
-         'examples': ["It was the price that changed my mind.  (not the quality)",
-                      "What I love about this city is its energy.",
-                      "She did call — I saw the message."],
-         'remember': ["In speech, stress the focused word: 'It was JOHN who…'."]},
-        {'label': 'Rule 3 — Inversion: formal emphasis',
-         'formula': ["Negative opener + auxiliary + subject + verb:",
-                     "Never have I seen …  ·  Not only did she …, but she also …",
-                     "Rarely / Seldom / Little / Nowhere + auxiliary + subject + verb",
-                     "Only + adverbial + auxiliary + subject + verb:  Only then did I understand …",
-                     "No sooner … than …  ·  Hardly … when …  ·  Under no circumstances …"],
-         'text': ["When a sentence begins with a strong negative or limiting phrase, English reverses the "
-                  "order — like raising your voice politely."],
-         'examples': ["Never have I been so surprised.",
-                      "Not only did he apologise, but he also refunded the money.",
-                      "Only after the meeting did I understand the decision."],
-         'remember': ["Inversion is punctuation for the ear. Use it once for impact — never in every sentence."]},
-        {'label': 'Rule 4 — Choosing the right level of certainty and formality',
-         'formula': ["Strong prediction/inference: will (prediction) · must be (strong deduction)",
-                     "Expectation/likelihood: should · be likely to · may well",
-                     "Possibility: may · might · could (no fixed ranking; context and speaker matter)",
-                     "formal markers: passive · inversion · clefts · hedging · full forms"],
-         'text': ["Match the strength of your language to your evidence and your audience. "
-                  "Over-claiming damages credibility; careful claims build it."],
-         'examples': ["Formal: 'Should you require further information, please do not hesitate to contact us.'",
-                      "Neutral: 'If you need more information, contact us.'",
-                      "Casual: 'Just call me if you need anything.'"],
-         'remember': ["A careful hedge signals that you are matching the strength of your claim to the evidence — not that you lack confidence."]},
+        {'label': 'Rule 1 — Hedging: matching the strength of your claim to the evidence',
+         'text': [
+             "In real life, very few social or economic statements are true 100% of the time for 100% of people. "
+             "When you say 'Social media ruins concentration,' a listener only has to think of one exception to "
+             "reject your argument.",
+             "Hedging is the art of calibrating your claim with modal expressions ('may well', 'could'), tendency "
+             "verbs ('tend to', 'seem to', 'appear to'), frequency qualifiers ('in many cases', 'broadly speaking'), "
+             "or impersonal frames ('the data suggests that…', 'it could be argued that…'). Hedging can make a claim "
+             "sound measured when evidence is limited or a conclusion is uncertain. Academic and professional speakers "
+             "often hedge; too much hedging, however, can make a message unclear."
+         ],
+         'formula': [
+             "Modal hedges:  may / might / could + base verb   ·   may well (= quite likely)   ·   is likely to + verb",
+             "Tendency verbs:  tend(s) to + base verb   ·   seem(s) / appear(s) to + base verb",
+             "Evidence & argument frames:  The evidence suggests that …   ·   It could be argued that …   ·   In most cases, …"
+         ],
+         'examples': [
+             "Students who study in short daily sessions tend to retain vocabulary longer.",
+             "Upgrading the regional roads may well reduce transport costs by twenty percent.",
+             "The preliminary figures suggest that enrolment has risen this autumn.",
+             "It could be argued that practical apprenticeships are just as valuable as university degrees."
+         ],
+         'remember': [
+             "Use one well-chosen hedge per claim, not three piled on top of each other: 'This policy may well reduce costs' "
+             "sounds thoughtful; 'Perhaps this policy might possibly seem to reduce costs' sounds unsure."
+         ]},
+        {'label': 'Rule 2 — Spotlight emphasis: cleft sentences and emphatic "do"',
+         'text': [
+             "In writing, you can underline or bold a word to make it stand out. In speaking, English gives you "
+             "a structural spotlight called a *cleft sentence*, which splits a single sentence into two halves so "
+             "the listener's ear lands squarely on the key point.",
+             "Use an 'It-cleft' ('It was the cost that delayed us') to contrast one specific person, thing, or time "
+             "with others; use a 'Wh-cleft' ('What we need now is clear communication') to build anticipation before "
+             "delivering your main point; or add 'do / does / did' before a base verb for warm personal emphasis."
+         ],
+         'formula': [
+             "It-cleft:  It is / was + focused item + that / who + rest of clause   →   It was Mariam who solved the problem.",
+             "Wh-cleft:  What + clause + is / was + focused item (or base/to-verb)   →   What matters most is consistency.",
+             "Auxiliary emphasis:  Subject + do / does / did + base verb   →   I do appreciate your patience."
+         ],
+         'examples': [
+             "It wasn't the grammar rules that held me back — it was my fear of speaking aloud.",
+             "What surprised the researchers most was how rapidly the village adopted solar power.",
+             "We didn't win the tournament, but we did learn how to play as a real team."
+         ],
+         'remember': [
+             "When you speak an It-cleft or auxiliary emphasis sentence, match the grammar with vocal stress on the "
+             "spotlighted word: 'It was the DEADLINE that forced our hand' · 'She DID call you yesterday.'"
+         ]},
+        {'label': 'Rule 3 — Negative and limiting inversion: formal rhetorical power',
+         'text': [
+             "When you place a strong negative or limiting expression ('Never', 'Rarely', 'Seldom', 'Not only', "
+             "'Only after…', 'Under no circumstances') at the very beginning of a sentence for dramatic or formal "
+             "emphasis, English flips the subject and auxiliary verb into question word order.",
+             "Because inversion is a high-impact rhetorical device, treat it like a trumpet note in a speech: using "
+             "it once at a key moment commands attention; using it in every paragraph sounds theatrical."
+         ],
+         'formula': [
+             "Negative adverbial + auxiliary + subject + verb:  Never have I seen …  ·  Rarely does a team achieve …  ·  Seldom had we faced …",
+             "Correlative addition:  Not only + did/has/is + subject + verb …, (but) … also …",
+             "Limiting 'Only' phrase:  Only then / Only after + phrase/clause + did + subject + base verb"
+         ],
+         'examples': [
+             "Never have I heard a more practical explanation of the issue.",
+             "Not only did the clinic treat patients free of charge, but it also trained local nurses.",
+             "Rarely do we get a second chance to make a first impression.",
+             "Only after reading the contract a second time did I notice the hidden fee."
+         ],
+         'remember': [
+             "With 'Only after…', 'Only when…', and 'Not until…', wait until the main clause to invert the verb: "
+             "'Only when the plane landed did I relax' (do not invert 'the plane landed')."
+         ]},
+        {'label': 'Rule 4 — Calibrating certainty and register to your audience',
+         'text': [
+             "Notice how English organises probability and formality by meaning and context rather than on a rigid "
+             "mathematical ladder. When your evidence is solid, state it firmly ('will', 'must be'); when it is "
+             "probable, signal expectation ('should', 'is likely to', 'may well'); when it is one open possibility "
+             "among others, keep the door open ('may', 'might', 'could')."
+         ],
+         'formula': [
+             "Strong prediction / inference:  will · must be   ·   Expectation / high likelihood:  should · be likely to · may well   ·   Open possibility:  may · might · could",
+             "Adjusting register:  Formal (inversion, clefts, passives, full forms)  ↔  Everyday conversation (contractions, direct active verbs)"
+         ],
+         'examples': [
+             "Formal presentation: 'Not only does this approach reduce waste, but it may well lower operating costs.'",
+             "Everyday workplace chat: 'This approach cuts waste, and it'll probably save us money too.'"
+         ],
+         'remember': [
+             "A thoughtful hedge signals intellectual honesty — showing your listener that you are matching the strength "
+             "of your claim to the strength of your evidence."
+         ]},
     ],
     'differences': [
-        {'title': 'certainty levels',
+        {'title': 'Three levels of commitment to the same prediction',
          'rows': [
-             ["The plan will succeed.  (certain)", "The plan may well succeed.  (likely)", "The plan might succeed.  (possible)", "Same claim, three levels of commitment."],
-         ], 'headers': ['Certain: will', 'Likely: may well', 'Possible: might', 'The idea']},
-        {'title': 'normal order vs inversion',
+             ["The new rail link will transform regional trade.", "The new rail link may well transform regional trade.", "The new rail link could transform regional trade.", "1. 'Will' = firm conviction.  2. 'May well' = strong likelihood based on current signs.  3. 'Could' = one realistic possibility if conditions go well."],
+         ], 'headers': ['Firm prediction (will)', 'Strong likelihood (may well)', 'Open possibility (could / might)', 'What your audience hears']},
+        {'title': 'Standard word order vs formal negative inversion',
          'rows': [
-             ["I have never seen such a mess.", "Never have I seen such a mess.", "The inverted version is emphatic and formal — powerful in speeches, heavy in casual chat."],
-         ], 'headers': ['Normal order', 'Inversion (emphatic)', 'The effect']},
-        {'title': 'cleft focus changes meaning',
+             ["I have never witnessed such determination.", "Never have I witnessed such determination.", "Same factual meaning, different impact: placing 'Never' first and inverting 'have I' elevates the sentence for a speech or key conclusion."],
+             [" I understood the problem only after I visited the site.", "Only after I visited the site did I understand the problem.", "The 'Only after…' opening builds suspense and lands the insight ('did I understand') with sharp focus."],
+         ], 'headers': ['Everyday word order', 'Inverted emphasis (formal)', 'When to use it']},
+        {'title': 'Moving the spotlight with cleft sentences',
          'rows': [
-             ["I met the manager yesterday.", "It was the manager who I met yesterday.", "What I did yesterday was meet the manager.", "Each version puts the spotlight in a different place."],
-         ], 'headers': ['Basic sentence', 'It-cleft', 'Wh-cleft', 'The idea']},
+             ["The training budget needs urgent attention.", "It is the training budget that needs urgent attention.", "What needs urgent attention is the training budget.", "1. Neutral statement.  2. It-cleft (contrasts the training budget with other budgets).  3. Wh-cleft (builds anticipation before naming the budget at the end)."],
+         ], 'headers': ['Direct statement', 'It-cleft (initial spotlight)', 'Wh-cleft (end spotlight)', 'How the focus shifts']},
     ],
     'practice_a': [
-        "__________ have I heard such a convincing argument.  (Never / Ever)",
-        "Not only __________ (she / pass) the exam, but she also got the highest mark.",
-        "Only after reading it twice __________ (I / understand) the letter.",
-        "The data __________ (suggest) that costs are falling.  (hedged claim)",
-        "It was __________ the deadline that forced us to decide.  (focus on the reason)",
-        "This method __________ (tend) to work better with small groups.",
+        "__________ have I heard such a clear and fair summary of the debate.  (Never / Ever)",
+        "Not only __________ (she / pass) the fellowship exam, but she also achieved the highest score in the province.",
+        "Only after reading the instructions twice __________ (I / understand) how the device worked.",
+        "The survey data __________ (suggest) that evening classes are popular with working parents.  (hedged claim)",
+        "It was __________ that convinced the committee to approve the project.  (spotlight 'the detailed budget')",
+        "Learners who practise out loud __________ (tend) to build fluency faster than those who only read silently.",
     ],
     'practice_b': [
-        "Hedge the claim: 'This policy will reduce costs.'",
-        "Make a cleft: 'The price changed my mind.'  (focus the price)",
-        "Invert: 'I had rarely felt so confident.'",
-        "Correct: 'Never I have seen such a mess.'",
-        "Say the same request at two formality levels: you need more time for a report.",
-        "Use 'Not only … but also' with inversion about two of your skills.",
+        "Hedge this sweeping claim so it sounds measured and credible: 'Online learning will replace classrooms everywhere.'",
+        "Rewrite as an It-cleft focusing on 'the practical examples': 'The practical examples made the lesson easy to follow.'",
+        "Rewrite using formal negative inversion starting with Rarely: 'We had rarely seen such rapid progress in a single term.'",
+        "Correct the word-order mistake: 'Never I have seen such a busy market.'",
+        "Make the same request ('I need two more days to finish the report') at two register levels: (1) to a close teammate, and (2) in a formal meeting with a senior director.",
+        "Write one sentence about two strengths of a person you admire starting with 'Not only + auxiliary + subject…'.",
     ],
     'pair': {
-        'intro': "The panel discussion. Question: 'What will work look like in ten years?' Each partner "
-                 "gives a one-minute answer using hedging and at least one emphatic structure "
-                 "(cleft or inversion). Then ask each other one hard follow-up question.",
-        'task': ["Plan for ten seconds only. In your answer include: one hedge (may well / tend to / it could be argued), "
-                 "one cleft (It is… that / What… is), and one conclusion.",
-                 "Answer the follow-up question carefully — hedging is welcome when you are unsure."],
+        'intro': "Hold a two-person 'Future of Work and Study Panel'. Take turns answering the panel question below "
+                 "for one minute each, using careful hedging for predictions and at least one emphatic structure "
+                 "(a cleft sentence or negative inversion) for your central thesis. Then ask your partner one "
+                 "challenging follow-up question.",
+        'task': [
+            "Panel question: 'How will artificial intelligence and online tools change the way people learn and work over the next ten years?'",
+            "In your one-minute view, include: (1) at least two hedged claims ('may well', 'tend to', 'the evidence suggests'), (2) one Wh-cleft or It-cleft ('What will matter most is…' / 'It is… that…'), and (3) one emphatic 'do/did' or inversion."
+        ],
+        'model': [
+            "A: While software tools will handle routine translation, it is human judgment and empathy that will become even more valuable. Digital platforms may well make self-study faster, yet rarely do people master persuasive communication without live human feedback.",
+            "B: That's a thoughtful point — do you think rural schools will benefit equally from those tools, or could the gap widen at first?"
+        ],
         'output': "Two one-minute answers per partner, each containing one well-placed hedge, one "
                   "accurate emphasis structure and a clear conclusion — plus one careful answer to "
                   "the partner's hard follow-up question.",
-        'criteria': ["claims are hedged appropriately (not over-hedged)",
-                     "emphasis structures used accurately once or twice",
-                     "certainty level matches the evidence",
-                     "answers stay clear and confident"],
+        'criteria': [
+            "hedges predictions thoughtfully without stacking too many hedges together",
+            "uses at least one cleft sentence or negative inversion accurately",
+            "matches the strength of claims to realistic evidence",
+            "handles the partner's challenging follow-up question with composure"
+        ],
     },
     'advanced': {
-        'base': ["Practise three certainty groups in context: strong prediction/inference (will / must be), expectation or likelihood (should / may well), and possibility (may / might / could). Explain what evidence supports each choice.",
-                 "Learn three inversion frames by heart: 'Never have I…' · 'Not only did…' · 'Only then did…'."],
-        'upgrade': ["Use 'little did he know…' and 'little did I realise…' in storytelling.",
-                    "Use litotes (understatement): 'not unlike', 'no small achievement', 'not bad at all'.",
-                    "Use formal conditional inversion in writing-style speech: 'Were this proposal accepted…' · 'Had we known…'"],
+        'intro': "Knowing when to soften a claim and when to spotlight a conclusion is what separates mechanical "
+                 "correctness from genuine rhetorical authority.",
+        'base': [
+            "Practise expressing the same observation at three levels of certainty in context: firm inference ('will / must be'), reasonable expectation ('should / may well / is likely to'), and open possibility ('may / might / could') — and state what evidence supports each level.",
+            "Say three core inversion frames aloud until the auxiliary-before-subject rhythm feels natural: 'Never have I…' · 'Not only did…' · 'Only then did I…'."
+        ],
+        'upgrade': [
+            "Use 'Little did I know / realise…' to add suspense at a turning point in a spoken story: 'Little did we realise how much that five-minute conversation would change our plans.'",
+            "Use deliberate understatement (litotes) for composed, diplomatic evaluation: 'Reaching agreement across four departments was no small achievement' · 'The initial results are not unpromising.'",
+            "Combine a formal inverted conditional with a hedged result in policy talks: 'Were the municipality to expand the bus network, peak-hour congestion might well fall by a third.'"
+        ],
     },
     'realtalk': {
-        'plan': "Planning (30 seconds): one claim plus its evidence for the hedge; one fact worth "
-                "spotlighting for the cleft; one strong statement for the inversion. Write single "
-                "keywords, not sentences — you will not read them.",
-        'task': "Two-minute formal talk: 'One change that would improve education in my country.' "
-                "Include: a hedged claim, one cleft sentence, one inversion, and a clear closing. "
-                "Speak with confidence — no notes.",
-        'model': "Education in my country will change in one area above all: access. It is "
-                 "broadband that will decide who benefits from that change. Rarely have we seen "
-                 "technology move so quickly in our cities, yet rural schools are often left without "
-                 "a reliable connection. The government could take the first step by funding "
-                 "internet in district centres — this may well be the cheapest investment of the "
-                 "decade. If the infrastructure were in place, teachers could share materials "
-                 "overnight. In closing, I would say one thing: connect the schools first, and the "
-                 "rest will follow.",
-        'feedback': ["hedging used for claims, not for every word",
-                     "at least one cleft and one inversion — accurate",
-                     "register is consistently formal",
-                     "closing states the position clearly"],
+        'plan': "Take 30 seconds to prepare a two-minute formal talk on improving education or professional training "
+                "in your country. Jot down three single keywords only: one realistic benefit to hedge ('may well' / "
+                "'tends to'), one core priority to spotlight with a cleft ('It is… that…' or 'What we need most is…'), "
+                "and one strong observation to frame with an inversion ('Rarely…' or 'Not only…').",
+        'task': "Two-minute keynote talk: 'One practical change that would strengthen education in my country.' "
+                "Include at least one hedged claim, one cleft sentence, and one negative inversion, and finish with "
+                "a clear, memorable call to action. Speak without reading from notes.",
+        'model': "If we want to strengthen education across our country over the next decade, we must look first at "
+                 "practical access. It is reliable internet connectivity in district schools that will determine who "
+                 "benefits from modern learning tools. Rarely have we seen technology advance as rapidly in our major "
+                 "cities as it has in recent years, yet students in smaller towns often study without updated textbooks "
+                 "or digital libraries. Providing solar-powered digital libraries in district centres may well be the "
+                 "most cost-effective educational investment of the decade. Studies suggest that when teachers can "
+                 "share resources easily, classroom engagement rises within a single term. What our students need "
+                 "most is not a more complicated syllabus, but equal access to the tools that already exist.",
+        'feedback': [
+            "uses hedging naturally to make predictions and claims sound credible",
+            "uses at least one cleft sentence ('It is… that…' / 'What… is…') to spotlight the central priority",
+            "uses one negative or limiting inversion accurately for rhetorical impact",
+            "delivers a composed, persuasive two-minute talk with a strong closing line"
+        ],
     },
     'review': {
-        'points': ["Hedging (may well, tend to, it could be argued) makes claims professional.",
-                   "Clefts and do-emphasis spotlight information: 'It was X that…' / 'What I need is…'.",
-                   "Inversion follows negative openers: 'Never have I…' — use for impact, sparingly."],
-        'retrieval': ["Make one claim at three certainty levels.",
-                      "Say one cleft and one inversion from memory."],
-        'watch': ["'Never I have seen' → 'Never have I seen'.",
-                  "Over-hedging sounds vague; over-inverting sounds theatrical."],
-        'selfcheck': ["I can control how strong my claims sound.",
-                      "I can emphasise with clefts and inversion — accurately and sparingly."],
+        'points': [
+            "Hedging ('may well', 'tend to', 'the evidence suggests', 'it could be argued') calibrates your claims to your evidence and builds credibility.",
+            "Cleft sentences ('It was X that…', 'What matters most is…') and auxiliary 'do/did' act as vocal spotlights for key information.",
+            "Negative or limiting openers ('Never', 'Rarely', 'Not only', 'Only after…') trigger auxiliary + subject inversion — use them sparingly for high impact."
+        ],
+        'retrieval': [
+            "Take one prediction about your field of work or study and say it at three levels of certainty: 'will', 'may well', and 'might'.",
+            "Say one 'What… is…' cleft sentence and one 'Not only did…' sentence from memory."
+        ],
+        'watch': [
+            "'Never I have seen such a crowd.' → 'Never have I seen such a crowd.' (Invert the auxiliary before the subject after a negative opener.)",
+            "Avoid stacking hedges ('It might possibly perhaps tend to…') or inverting every sentence — clarity and balance always come first."
+        ],
+        'selfcheck': [
+            "I can soften sweeping claims using natural hedging expressions when the evidence is not absolute.",
+            "I can spotlight my most important point using a cleft sentence or a well-placed inversion."
+        ],
         'answers': {
-            'A': ["Never", "did she pass", "did I understand", "suggests (or: suggest)", "the deadline", "tends"],
-            'B': ["This policy may well reduce costs. / This policy is likely to reduce costs.",
-                  "It was the price that changed my mind.",
-                  "Rarely had I felt so confident.",
-                  "Never have I seen such a mess.", "answers vary", "answers vary"],
+            'A': ["Never", "did she pass", "did I understand", "suggests (or: suggest)", "the detailed budget", "tend"],
+            'B': ["Online learning may well replace some traditional lectures, or tends to complement classroom study. (answers vary)",
+                  "It was the practical examples that made the lesson easy to follow.",
+                  "Rarely had we seen such rapid progress in a single term.",
+                  "Never have I seen such a busy market.",
+                  "answers vary (e.g. Teammate: 'Could I have two more days on the report?' / Director: 'I was wondering if it might be possible to extend the deadline by two days so we can verify the final figures.')",
+                  "answers vary (e.g. 'Not only does my mentor listen patiently, but she also gives practical advice.')"],
         },
     },
 }
@@ -436,114 +693,193 @@ L16 = {
     'n': 16, 'part_no': 8, 'part_title': 'Speak with Confidence',
     'title': 'Grammar in Real Conversation',
     'goal': 'bring all the course grammar together in free, accurate, confident speech',
-    'intro': "This lesson is not new theory — it is the moment everything you have learned becomes your voice.",
+    'intro': [
+        "When a skilled musician walks onto the stage, they are no longer thinking about individual finger exercises "
+        "— they are listening to the music and shaping the phrase. Speaking a language works the same way. Over the "
+        "past fifteen lessons, you have built every core grammatical tool you need for real-world English.",
+        "This final lesson is not about learning a brand-new rule. It is about seeing how all sixteen lessons fit "
+        "together on one simple mental map, and mastering the habit that keeps confident speakers moving smoothly "
+        "even when they slip: natural self-repair."
+    ],
     'hook': [
-        "Warm-up round with a partner: speak for thirty seconds on any topic. Your partner listens "
-        "and names every grammar structure they recognise (tenses, conditionals, passives…). Swap.",
+        "Play a 60-second warm-up round with your partner:",
+        "•  Partner A speaks for 45 seconds without stopping on 'One decision that taught me something important.'",
+        "•  Partner B listens not only to the story, but also to the grammar tools Partner A uses naturally (tenses, conditionals, linkers, relative clauses, modals, or passives), and names at least three of them at the end. Then swap roles!",
     ],
     'rules': [
-        {'label': 'The course grammar: one map',
-         'formula': ["TIME:        tenses · storytelling · reported speech",
-                     "CHOICE:      modals · conditionals · wishes · gerunds/infinitives",
-                     "SHAPE:       questions · linkers · relatives · participles · passive · causative",
-                     "STYLE:       comparisons · hedging · emphasis · inversion"],
-         'text': ["Every lesson in this course belongs to one of these four jobs. When you speak, "
-                  "ask: what job does my next sentence need?"],
-         'examples': ["Tell the story (time) → explain the cause (choice) → describe the people (shape) → give your view (style)."],
-         'remember': ["Accuracy first, then range. A clear sentence in the right tense beats a fancy one in the wrong tense."]},
-        {'label': 'The speaking strategy: three steps to confident speech',
-         'formula': ["1. THINK the meaning  →  2. CHOOSE the structure  →  3. SAY it whole",
-                     "If stuck: simplify — and keep going. Repair later: 'What I mean is…'"],
-         'text': ["Fluency is not speed; it is continuity. Keep the message moving and fix problems as you go."],
-         'examples': ["'If I would have known…' — stop, repair: 'If I had known, I would have come.'"],
-         'remember': ["Self-repair is a strength in speaking tests — it shows control."]},
+        {'label': 'Rule 1 — The whole course on one mental map: four jobs of spoken grammar',
+         'text': [
+             "Whenever you open your mouth to answer a complex question — in a university seminar, a job interview, "
+             "a workplace meeting, or the TOEFL speaking test — you do not need to search through sixteen separate "
+             "chapters in your head. Every grammar pattern in this book performs one of just four practical jobs:",
+             "1. TIME (Lessons 1, 2, 13): placing events in the present, past, future, or reported speech.",
+             "2. CHOICE & POSSIBILITY (Lessons 4, 5, 6, 11): expressing modals, conditionals, wishes, and verb patterns (-ing / to).",
+             "3. SENTENCE SHAPE & FOCUS (Lessons 3, 8, 9, 10, 12, 14): asking questions, linking arguments, shifting focus with passives/causatives, and combining ideas with relative or participle clauses.",
+             "4. TONE & PRECISION (Lessons 7, 15): comparing persuasively, hedging claims, and spotlighting key ideas with clefts or inversion."
+         ],
+         'formula': [
+             "TIME:  tenses (L1) · narrative layers (L2) · reported speech (L13)",
+             "CHOICE:  modals (L4) · conditionals (L5) · wishes & regrets (L6) · gerunds & infinitives (L11)",
+             "SHAPE:  questions & follow-ups (L3) · linkers (L8) · passive (L9) · causative (L10) · relatives (L12) · participles (L14)",
+             "STYLE:  comparisons (L7) · hedging, clefts & inversion (L15)"
+         ],
+         'examples': [
+             "Story + reflection in four moves:  'Two years ago I was working at a small clinic (TIME — L2) when my mentor encouraged me to apply for a fellowship (TIME/CHOICE — L13/L11). Although the exam was far more demanding than I expected (SHAPE/STYLE — L8/L7), passing it changed my career — and if I hadn't taken that chance, I wouldn't be teaching here today (CHOICE — L5).'"
+         ],
+         'remember': [
+             "Accuracy always comes before complexity: a clear, accurate sentence that fits your meaning beats a "
+             "complicated structure forced into the wrong place."
+         ]},
+        {'label': 'Rule 2 — The three-step speaking habit and the art of self-repair',
+         'text': [
+             "Many learners think fluency means speaking fast without ever making a mistake. In reality, even native "
+             "speakers and experienced professionals start sentences that head down a blind alley. The difference is "
+             "that confident speakers do not freeze, apologize, or switch back to their first language — they use a "
+             "smooth self-repair phrase ('What I mean is…', 'Or rather…', 'Let me put that another way…') and keep "
+             "the message moving.",
+             "In speaking assessments and professional life alike, catching and repairing a slip calmly is a sign of "
+             "high linguistic control."
+         ],
+         'formula': [
+             "The 3-step habit:  1. PICTURE the meaning  →  2. PICK the right tool (Time / Choice / Shape / Style)  →  3. SPEAK the chunk whole",
+             "Natural self-repair phrases:  What I mean is …  ·  Or rather, …  ·  Let me rephrase that — …  ·  To put it more precisely, …"
+         ],
+         'examples': [
+             "Repairing a tense slip mid-sentence: 'I have seen him yesterday — or rather, I saw him yesterday afternoon outside the library.'",
+             "Repairing a conditional slip: 'If I would have known — sorry, if I had known about the traffic, I would have taken the train.'",
+             "Sharpening an idea: 'The new schedule is better — or to put it more precisely, it gives working students far more flexibility.'"
+         ],
+         'remember': [
+             "Never stop dead in silence when you notice a grammar slip. Either repair it in one smooth breath with "
+             "'or rather…' or keep moving forward so your listener never loses the thread of your message."
+         ]},
     ],
     'differences': [
-        {'title': 'recognition vs use',
-         'text': ["You already recognise most course structures. The final step is producing them "
-                  "under pressure — that is what the challenges below train."]},
+        {'title': 'Freezing on a mistake vs repairing like a confident speaker',
+         'text': [
+             "Compare how two speakers handle the exact same mid-sentence grammar slip during a speaking task:"
+         ],
+         'rows': [
+             ["'Despite of the rain… uh… no, wait… although rain… sorry, I forgot the word…'", "'Despite the heavy rain — or rather, although it was raining heavily — the outdoor concert went ahead.'", "Speaker A panics over a preposition and loses the listener. Speaker B pivots smoothly with 'or rather', repairs the structure in stride, and finishes the thought with authority."],
+         ], 'headers': ['Freezing (loses fluency)', 'Natural self-repair (shows control)', 'Why the repair works']},
+        {'title': 'Knowing a rule on paper vs owning it under real-time pressure',
+         'text': [
+             "You already recognize all sixteen grammar areas when you read them quietly. The four-round speaking "
+             "workout below trains your brain to summon those same patterns on your feet while your attention is "
+             "focused on communicating a real idea."
+         ]},
     ],
     'practice_a': [
-        "Fix and explain: 'I have seen him yesterday.'",
-        "Fix and explain: 'If I will have time, I will help.'",
-        "Fix and explain: 'Despite of the price, we bought it.'",
-        "Fix and explain: 'He suggested me to wait.'",
-        "Fix and explain: 'Never I have been so tired.'",
-        "Fix and explain: 'I look forward to meet you.'",
+        "Repair the mistake and name the rule: 'I have finished my university degree in 2022.'",
+        "Repair the mistake and name the rule: 'If the flight will be delayed tomorrow, we will call the hotel.'",
+        "Repair the mistake in two ways (despite / although): 'Despite of the cold wind, we walked to the summit.'",
+        "Repair the mistake and name the verb pattern: 'My supervisor suggested me to attend the workshop.'",
+        "Repair the word order: 'Never I have felt so proud of our team.'",
+        "Repair the verb form after 'to': 'We really look forward to host your delegation next month.'",
     ],
     'practice_b': [
-        "Combine (participles): 'Because he had not slept, he made errors.'",
-        "Report: 'Don't worry,' she said.  (2 forms)",
-        "Compare with nuance: 'This option is better.'  (use a degree word + reason)",
-        "Make it passive and formal: 'Someone has changed the schedule.'",
-        "Hedge the claim: 'This method is the best.'",
-        "Ask a polite indirect question about tomorrow's schedule.",
+        "Compress using a participle opening: 'Because he had not slept the night before, he made several small calculation errors.'",
+        "Report this sentence in two ways (using 'told' and 'reassured'): '\"Don't worry about the deadline,\" she said to me.'",
+        "Strengthen this flat comparison using 'far', a comparative, and a 'because' reason: 'Practising out loud is better than silent reading.'",
+        "Rewrite as a formal passive announcement: 'The committee has changed tomorrow's examination schedule.'",
+        "Hedge this sweeping claim so it sounds measured: 'This new teaching method is the best for every learner.'",
+        "Turn this direct question into a polite indirect question: 'What time does tomorrow's rehearsal start?'",
     ],
     'pair': {
-        'intro': "The grammar gym — four rounds. Each round: speak for one minute on the topic, using the "
-                 "target structures. Partner counts the structures used and gives feedback.",
-        'task': ["Round 1 — Storytelling: a challenge you overcame.  (tenses, participles)",
-                 "Round 2 — Advice: a friend must choose between two jobs.  (modals, conditionals)",
-                 "Round 3 — Report: what your colleagues or classmates have decided.  (reported speech, passives)",
-                 "Round 4 — Argument: one change that would improve your school or workplace.  (linkers, hedging, emphasis)"],
+        'intro': "Run the 'Four-Round Conversation Circuit' with your partner. In each round, speak for one full "
+                 "minute on the prompt while deliberately weaving in the target grammar family. Your partner listens, "
+                 "asks one follow-up question, and notes which structures they heard.",
+        'task': [
+            "Round 1 — Story & Time (Lessons 1, 2, 14): Tell the story of a challenge or problem you overcame, using narrative tenses and one participle opening.",
+            "Round 2 — Choice & Advice (Lessons 4, 5, 6): Advise a friend who is torn between two career paths or cities, using modals, conditionals, and 'If I were you / I'd rather'.",
+            "Round 3 — Report & Focus (Lessons 9, 10, 12, 13): Summarize a recent change or conversation at school, work, or in your city, using passives, reporting verbs, and relative clauses.",
+            "Round 4 — Persuade & Spotlight (Lessons 7, 8, 15): Argue for one practical improvement in your community, using comparisons, concession linkers, hedging, and a cleft sentence."
+        ],
+        'model': [
+            "A (Round 4): Although expanding our public library hours would require extra staffing, it is by far the most helpful step we could take for students. What many learners lack at home is a quiet desk with reliable lighting...",
+            "B: If the library stayed open until nine, how do you think students would manage transport home in winter?"
+        ],
         'output': "Four one-minute rounds per pair: each round delivered without notes, with the "
                   "target structures counted aloud and at least one self-repair noted by the "
                   "listener.",
-        'criteria': ["structures match the round's target",
-                     "errors are self-corrected during speech",
-                     "ideas are clear and well-linked",
-                     "confidence and continuity are maintained"],
+        'criteria': [
+            "summons structures from the target grammar family naturally in each round",
+            "uses self-repair phrases smoothly if a slip occurs rather than stopping",
+            "connects ideas with clear signposts and reasons",
+            "responds to the partner's follow-up question with confidence and accuracy"
+        ],
     },
     'advanced': {
-        'base': ["Re-do any lesson exercise that felt hard — out loud, not on paper.",
-                 "For each of the four jobs (time / choice / shape / style), write three sentences from your own life."],
-        'upgrade': ["Stack structures in one sentence: 'Had I known that the report would be delayed, I would have asked for help.'",
-                    "Use style deliberately: open a talk with an inversion, hedge your main claim, close with a cleft.",
-                    "Practise repair phrases: 'What I mean is…' · 'Let me rephrase that…' · 'Or rather…'"],
+        'intro': "At your highest level of spoken control, different grammar families work together inside a single "
+                 "breath — combining a conditional with reported speech, or opening an argument with an inversion and "
+                 "closing it with a cleft.",
+        'base': [
+            "Go back to any earlier lesson where an exercise made you hesitate and speak those corrected sentences aloud three times without looking at the page.",
+            "Create four personal anchor sentences — one each for Time, Choice, Shape, and Style — about your own life goals this year."
+        ],
+        'upgrade': [
+            "Combine two course structures smoothly inside one sentence: 'Had I known that the application deadline had been brought forward, I would have had my transcripts translated a week earlier.'",
+            "Pace your rhetorical style deliberately across a two-minute talk: open with a concrete story, hedge your central prediction, and land your conclusion with a crisp cleft sentence.",
+            "Keep three natural self-repair and refinement phrases on the tip of your tongue: 'What I mean is…', 'Let me rephrase that…', and 'Or to put it more precisely…'."
+        ],
     },
     'realtalk': {
-        'plan': "Planning (one minute): three lines only — the story (when and what changed), the "
-                "decision (what you chose and why), the goal (what comes next and how you will know "
-                "you have reached it). Then deliberately choose two 'show-off' structures.",
-        'task': "Final speaking challenge (two minutes): 'How I have changed — and what comes next.' "
-                "Tell a story, explain a decision, and state a goal. Use at least six different structures "
-                "from the course. This is also your practice for the Final Speaking Assessment.",
-        'model': "Two years ago I avoided speaking English in class because I was afraid of mistakes "
-                 "— I would translate every sentence in my head first. Joining a speaking club "
-                 "changed that: within a month, I had made friends who corrected me kindly. Since "
-                 "then I have been practising almost every day, and my teachers have noticed the "
-                 "difference. I've decided to take the TOEFL next spring, which is why I'm "
-                 "recording myself twice a week. If I keep this up, the score will take care of "
-                 "itself. What I need most now is confidence under pressure — and that comes only "
-                 "from speaking.",
-        'feedback': ["range of structures used accurately",
-                     "clear story shape with linking",
-                     "at least one hedged or emphatic structure",
-                     "confident, continuous delivery with natural self-repair"],
+        'plan': "Take one minute to plan your culminating two-minute talk on 'How my communication has changed — and "
+                "where I am heading next.' Write down only three brief keyword lines: (1) Past story (where you started "
+                "and what turning point changed your approach), (2) Present habits & choices (what you do differently "
+                "now and why), and (3) Future goal (what you plan to achieve next and what it will take). Choose two "
+                "precision structures (such as a mixed conditional, a non-defining relative clause, or a cleft) to weave in.",
+        'task': "Two-minute culminating challenge: Speak for two minutes on 'How I have grown as a speaker — and what "
+                "comes next.' Tell a concrete story from your past, explain a decision that helped you improve, and "
+                "state your next goal, using structures from at least six different lessons in this course. Then "
+                "exchange two follow-up questions with your partner — just as you will in the Final Speaking Assessment.",
+        'model': "Two years ago, I used to avoid speaking English in group meetings because I was afraid of making "
+                 "mistakes — while others were sharing their ideas, I would translate every sentence in my head until "
+                 "the moment had passed. Joining a weekly speaking circle, which a colleague recommended to me, was "
+                 "the turning point that changed that habit. Within a month, I had met partners who corrected me "
+                 "encouragingly, and I realised that communication is about clarity, not perfection. Since then, I've "
+                 "been practising aloud almost every day, and my supervisor has noticed the difference. Next spring "
+                 "I'm going to take the TOEFL exam so that I can apply for a graduate programme. If I keep building "
+                 "one small habit at a time, the score will take care of itself. What matters most to me now is "
+                 "staying calm under pressure — and that comes only from using my voice every day.",
+        'feedback': [
+            "uses a wide range of course structures (at least six lessons represented) accurately and naturally",
+            "moves smoothly from past narrative to present reflection to future goal",
+            "includes at least one precision or emphasis structure (relative clause, conditional, hedge, or cleft)",
+            "maintains confident, continuous delivery and handles follow-up questions or self-repair smoothly"
+        ],
     },
     'review': {
-        'points': ["Course grammar does four jobs: time, choice, shape, style.",
-                   "Speak in three steps: think meaning → choose structure → say it whole.",
-                   "Accuracy first, then range; self-repair shows control."],
-        'retrieval': ["Name all four grammar jobs and one structure for each.",
-                      "Tell a one-minute story using three different course structures."],
-        'watch': ["Choosing complexity over accuracy — simple and correct is always better.",
-                  "Freezing on errors — repair and continue instead."],
-        'selfcheck': ["I can use structures from at least six lessons in free speech.",
-                      "I can self-repair and keep talking."],
+        'points': [
+            "All sixteen lessons serve four practical communication jobs: Time, Choice, Sentence Shape, and Style.",
+            "Follow the three-step speaking habit: picture the meaning → pick the structure → speak the phrase whole.",
+            "When you notice a slip in real conversation, use a natural repair phrase ('What I mean is…', 'Or rather…') and keep your message moving."
+        ],
+        'retrieval': [
+            "Name the four communication jobs of grammar and give one example sentence of your own for each job.",
+            "Speak for 60 seconds about a goal for next year, deliberately including one conditional, one relative clause, and one cleft sentence."
+        ],
+        'watch': [
+            "Never sacrifice clarity just to show off a complicated structure — natural accuracy always comes first.",
+            "Never freeze in silence after a small slip — repair calmly with 'or rather…' and continue."
+        ],
+        'selfcheck': [
+            "I can combine grammar patterns from across the course naturally in a two-minute unscripted talk.",
+            "I can answer unexpected follow-up questions and self-repair smoothly without losing confidence."
+        ],
         'answers': {
-            'A': ["I saw him yesterday. (finished time)",
-                  "If I have time, I will help.",
-                  "Despite the price, we bought it. / Although it was expensive, we bought it.",
-                  "He suggested waiting. / He suggested that I wait.",
-                  "Never have I been so tired.",
-                  "I look forward to meeting you."],
-            'B': ["Not having slept, he made errors.",
-                  "She told me not to worry. / She reassured me.",
-                  "answers vary — degree word + reason required",
-                  "The schedule has been changed.",
-                  "This method may well be the best. / This method is probably the best. (answers vary)",
-                  "answers vary — indirect word order required"],
+            'A': ["I finished my university degree in 2022. ('in 2022' is a finished past time → past simple)",
+                  "If the flight is delayed tomorrow, we will call the hotel. (ordinary future condition → present simple after 'if')",
+                  "Despite the cold wind, we walked to the summit. / Although the wind was cold, we walked to the summit.",
+                  "My supervisor suggested attending the workshop. / …suggested that I attend the workshop. ('suggest' takes -ing or a that-clause, never 'me to')",
+                  "Never have I felt so proud of our team. (negative opener triggers auxiliary + subject inversion)",
+                  "We really look forward to hosting your delegation next month. ('to' in 'look forward to' is a preposition → verb-ing)"],
+            'B': ["Not having slept the night before, he made several small calculation errors.",
+                  "She told me not to worry about the deadline. / She reassured me that I didn't need to worry about the deadline.",
+                  "answers vary (e.g. 'Practising out loud is far more effective than silent reading because it trains your mouth and ear to work together in real time.')",
+                  "Tomorrow's examination schedule has been changed (by the committee).",
+                  "This new teaching method may well be one of the most effective for many learners. / This new teaching method tends to work very well for most learners. (answers vary)",
+                  "Could you tell me what time tomorrow's rehearsal starts? / Do you know what time tomorrow's rehearsal starts?"],
         },
     },
 }

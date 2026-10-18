@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
-"""Automated QA gates for 'Grammar for Special Speaking'.
-Run AFTER build.py:  python build_spec/qa.py
+"""Automated QA gates for 'Grammar for Special Speaking' (Student Book and Teacher's Book).
+Run AFTER build.py and build_teacher.py:  python build_spec/qa.py
 Exit code 0 = all gates pass. Non-zero = genuine defects (do not weaken checks)."""
 import sys, os, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docx import Document
 from docx.oxml.ns import qn
 import content_l1_4, content_l5_8, content_l9_12, content_l13_16
+import teacher_l1_8, teacher_l9_16, teacher_l13_16
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCX = os.path.join(ROOT, 'Grammar for Special Speaking (TOEFL House).docx')
+TEACHER_DOCX = os.path.join(ROOT, "Grammar for Special Speaking — Teacher's Book (TOEFL House).docx")
 
 SPEC_TITLES = {
     1: "Tenses for Real Communication", 2: "Telling Stories and Describing Experiences",
@@ -22,7 +24,7 @@ SPEC_TITLES = {
     15: "Hedging, Emphasis, and Natural Inversion", 16: "Grammar in Real Conversation",
 }
 PARTS_LABELS = ["The Speaking Hook", "The Simple Rule", "See the Difference",
-                "Practice the Pattern", "Pair Speaking", "The Advanced Upgrade",
+                "Practice the Pattern", "Pair Speaking", "Say It with Greater Precision",
                 "Real Talk Challenge", "Review and Self-Check"]
 
 
@@ -55,10 +57,11 @@ def main():
     lessons = (content_l1_4.LESSONS_1_4 + content_l5_8.LESSONS_5_8 +
                content_l9_12.LESSONS_9_12 + content_l13_16.LESSONS_13_16)
     completeness = all(
-        L.get("hook") and L.get("rules") and L.get("differences") and
+        L.get("intro") and L.get("hook") and L.get("rules") and L.get("differences") and
+        all(r.get("text") and r.get("formula") and r.get("examples") and r.get("remember") for r in L.get("rules", [])) and
         L.get("practice_a") and L.get("practice_b") and
-        L.get("pair", {}).get("task") and L.get("pair", {}).get("criteria") and
-        L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") and
+        L.get("pair", {}).get("task") and L.get("pair", {}).get("model") and L.get("pair", {}).get("criteria") and
+        L.get("advanced", {}).get("intro") and L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") and
         L.get("realtalk", {}).get("task") and L.get("realtalk", {}).get("feedback") and
         L.get("review", {}).get("points") and L.get("review", {}).get("selfcheck")
         for L in lessons)
@@ -104,6 +107,7 @@ def main():
     }
     for k, kw in coverage.items():
         check(f"final assessment covers {k}", kw in blob)
+
     # review-test scope evidence (no leakage of later-lesson grammar)
     def walk_between(start, end):
         """Collect all text (document order) strictly between two banner markers."""
@@ -143,10 +147,14 @@ def main():
     check("diagnostic, review-test, and final-test keys are kept separate from test items",
           all("Answer key" not in scope for scope in (walk_between("DIAGNOSTIC TEST", "LESSON 1"), t1, t2, t3,
                                                        walk_between("FINAL ASSESSMENT", "FINAL ASSESSMENT — PART 2"))))
-    # banned language
+    # banned language & unified classroom checks
     check("no scheduling words", not re.search(r"\b(Day \d|Week \d|MONTH \d|teaching days)\b", blob))
     check("no Master Speaking references", not re.search(r"Master Speaking", blob, re.I))
     check("no unearned claims", not re.search(r"expert-verified|publication-ready|pedagogically validated", blob, re.I))
+    check("no student-facing proficiency-track labels or 'The Advanced Upgrade'",
+          not re.search(r"The Advanced Upgrade|Intermediate\s*[—–-]\s*build|Advanced\s*[—–-]\s*build|\bBeginner\b|For lower-level students|For advanced students", blob, re.I))
+    check("no placeholder text or stray characters",
+          not re.search(r"\b(TODO|TBD|FIXME|Lorem ipsum)\b|同伴|droppings", blob))
     check("zero decorative emojis", sum(1 for ch in blob if ord(ch) >= 0x1F300) == 0)
     # comparable assessment and item-level coverage blueprint
     check("diagnostic and final clearly reject raw-total gain claims",
@@ -167,7 +175,9 @@ def main():
                 all_paras.extend(cell.paragraphs)
     h1_count = sum(p.style.name.startswith("Heading 1") for p in all_paras)
     h2_count = sum(p.style.name.startswith("Heading 2") for p in all_paras)
-    check("DOCX uses semantic heading levels for navigation", h1_count >= 20 and h2_count >= 128)
+    h3_count = sum(p.style.name.startswith("Heading 3") for p in all_paras)
+    check("DOCX uses semantic heading levels for navigation (H1/H2/H3)",
+          h1_count >= 20 and h2_count >= 128 and h3_count >= 48)
     a4 = all(abs(s.page_width.inches - 8.27) < 0.03 and abs(s.page_height.inches - 11.69) < 0.03 for s in doc.sections)
     check("DOCX pages use A4 dimensions", a4)
     check("DOCX publication metadata identifies title and house", doc.core_properties.title == "Grammar for Special Speaking" and doc.core_properties.author == "TOEFL HOUSE")
@@ -193,12 +203,29 @@ def main():
     L1 = lessons[0]
     check("Lesson 1: three core rule groups", len(L1["rules"]) == 3 and "Present tenses:" in L1["rules"][0]["label"])
     check("Lesson 1: five Practice A items and four Practice B tasks", len(L1["practice_a"]) == 5 and len(L1["practice_b"]) == 4)
-    check("Lesson 1: present-perfect continuous in optional Advanced Upgrade", "present perfect continuous" in " ".join(L1["advanced"]["upgrade"]).lower())
-    check("Pair Speaking carries expected-output guidance", all(L.get("pair", {}).get("output") for L in lessons))
+    check("Lesson 1: present-perfect continuous in Part 6 precision section", "present perfect continuous" in " ".join(L1["advanced"]["upgrade"]).lower())
+    check("Pair Speaking carries conversation goal and model exchange", all(L.get("pair", {}).get("output") and L.get("pair", {}).get("model") for L in lessons))
     check("Real Talk Challenge is separate from Pair Speaking (planning + model response)", all(L.get("realtalk", {}).get("plan") and L.get("realtalk", {}).get("model") and L["pair"].get("output") != L["realtalk"]["model"] for L in lessons))
-    check("Intermediate vs Advanced reasoning separated", all(L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") for L in lessons))
+    check("Part 6 provides core consolidation and precision extension", all(L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") for L in lessons))
     check("Review links back to Simple Rule and Appendix card", "return to Part 2" in blob and "Formula Book card" in blob)
     check("speaking-section headings kept with next content (keepNext)", doc.element.xml.count("w:keepNext") >= 32)
+
+    # Teacher's Book checks
+    check("Teacher's Book DOCX exists", os.path.exists(TEACHER_DOCX))
+    if os.path.exists(TEACHER_DOCX):
+        tdoc = Document(TEACHER_DOCX)
+        ttexts = [p.text for p in tdoc.paragraphs]
+        for t in tdoc.tables:
+            for r in t.rows:
+                for c in r.cells:
+                    ttexts.append(c.text)
+        tblob = "\n".join(ttexts)
+        check("Teacher's Book has 16 lesson guides",
+              sum(1 for t in ttexts if t.strip() and re.match(r"^LESSON \d+\s+·.*TEACHER GUIDE$", t.splitlines()[0].strip())) == 16)
+        check("Teacher's Book uses 'Part 6  ·  Say It with Greater Precision' x16",
+              sum(1 for t in ttexts if t.strip() == "Part 6  ·  Say It with Greater Precision") == 16)
+        check("Teacher's Book has no stray CJK or broken strings",
+              not re.search(r"同伴|droppings|The Advanced Upgrade|Intermediate base:|Advanced upgrade:", tblob))
 
     print()
     if fails:

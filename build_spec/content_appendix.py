@@ -174,13 +174,13 @@ def render_all(doc, keys_registry):
     page_break(doc)
     h_banner(doc, "APPENDIX 4  ·  SPEAKING SELF-ASSESSMENT AND CAN-DO TRACKER",
              sub="Tick honestly:  ✓ = I can do this in speech  ·  ~ = almost  ·  ✗ = not yet")
-    rows = [[f"Lesson {n}", stmt, "", ""] for n, stmt in CANDO]
-    table(doc, ["Lesson", "Can-do statement", "Before the course", "After Lesson 16"],
-          rows, widths=[0.8, 3.6, 1.0, 1.0], font_size=9.5)
-    para(doc, "Speaking self-assessment", size=11, bold=True, color=NAVY)
+    para(doc, "Speaking self-assessment", size=11, bold=True, color=NAVY, keep_with_next=True)
     para(doc, "Record yourself for two minutes (any topic) and rate yourself with the Final Assessment "
               "rubric. Repeat after one month and compare the recordings — that is your true progress.",
-         size=10.5, italic=True, color=GREY)
+         size=10, italic=True, color=GREY, space_after=4)
+    rows = [[f"Lesson {n}", stmt, "", ""] for n, stmt in CANDO]
+    table(doc, ["Lesson", "Can-do statement", "Before course", "After Lesson 16"],
+          rows, widths=[0.7, 4.2, 0.7, 0.7], font_size=9)
 
     # ---- Appendix 5: Complete Answer Key ----
     page_break(doc)
@@ -194,19 +194,19 @@ def render_all(doc, keys_registry):
         ans = keys_registry.get(name)
         if not ans:
             continue
-        para(doc, name, size=11, bold=True, color=NAVY, space_before=6)
+        para(doc, name, size=11, bold=True, color=NAVY, space_before=6, keep_with_next=True)
         if name == "Diagnostic":
-            lines = ["A.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['A'])),
-                     "B.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['B'])),
-                     "C.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['C']))]
+            lines = ["A.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['A'])),
+                     "B.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['B'])),
+                     "C.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['C']))]
         elif name.startswith("Lesson"):
             lines = []
             if ans.get('A'):
-                lines.append("Practice A.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['A'])))
+                lines.append("Practice A:  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['A'])))
             if ans.get('B'):
-                lines.append("Practice B.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['B'])))
+                lines.append("Practice B:  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['B'])))
         else:
-            lines = ["A.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['A'])),
-                     "B.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['B'])),
-                     "C.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(ans['C']))]
+            lines = ["A.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['A'])),
+                     "B.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['B'])),
+                     "C.  " + "  ·  ".join(f"{i+1}. {a}" for i, a in enumerate(ans['C']))]
         box(doc, None, lines, fill=FILL_BOX_GREY, label_color=NAVY)

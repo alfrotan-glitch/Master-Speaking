@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-"""Front matter: title, introduction & objectives, how to use (students & teachers),
-contents, diagnostic test. Spec sections 2, 9, 10, 11."""
+"""Front matter: title, publication info, introduction, how to use,
+contents, and diagnostic test."""
 from style import (para, run, box, table, spacer, h_banner, page_break,
                    setup_doc, NAVY, TEAL, GOLD, INK, GREY, WHITE,
                    FILL_BOX_TEAL, FILL_BOX_GOLD, FILL_BOX_GREY, FILL_NAVY, FILL_TEAL)
@@ -40,56 +40,19 @@ LESSON_TITLES = {
 
 
 def title_page(doc):
-    spacer(doc, 60)
-    para(doc, "TOEFL HOUSE", size=14, bold=True, color=TEAL, align='c', space_after=2)
-    para(doc, "GRAMMAR FOR", size=30, bold=True, color=NAVY, align='c', space_before=18, space_after=0)
-    para(doc, "SPECIAL SPEAKING", size=30, bold=True, color=NAVY, align='c', space_before=0, space_after=6)
+    spacer(doc, 48)
+    para(doc, "TOEFL HOUSE", size=14, bold=True, color=TEAL, align='c', space_after=4)
+    para(doc, "GRAMMAR FOR", size=28, bold=True, color=NAVY, align='c', space_before=14, space_after=2)
+    para(doc, "SPECIAL SPEAKING", size=28, bold=True, color=NAVY, align='c', space_before=0, space_after=8)
     para(doc, "A practical grammar course for accurate, natural, confident speech",
-         size=13, italic=True, color=GREY, align='c', space_before=6, space_after=24)
+         size=13, italic=True, color=GREY, align='c', space_before=4, space_after=24)
     box(doc, None, [
         ("Learn the grammar. Use it in conversation. Make it part of your speech.", True),
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
-    spacer(doc, 40)
-    para(doc, "For Intermediate and Advanced learners", size=12, color=INK, align='c')
-    para(doc, "16 lessons  ·  3 review tests  ·  final assessment  ·  5 appendices",
-         size=11, color=GREY, align='c')
-    page_break(doc)
-
-
-def introduction(doc):
-    h_banner(doc, "INTRODUCTION", sub="What this book does and how it works")
-    para(doc, "This book has one purpose: to help you use grammar accurately, naturally and "
-              "confidently when you speak English.")
-    para(doc, "It is not enough to know a rule. The goal is to turn that knowledge into active "
-              "speaking skill — to choose the right structure, in the right moment, and say it "
-              "without thinking about it.")
-    para(doc, "Every lesson follows the same path: you speak first, you learn clear grammar patterns, "
-              "you see how similar structures differ, you practise, and then you speak again — "
-              "this time with the new grammar in your voice. Each lesson ends with a short review "
-              "and a self-check, so you always know what you can already do.")
-    para(doc, "The course works for both Intermediate and Advanced learners in the same room. "
-              "Everyone studies the same core lesson. The core work builds accuracy; the Advanced "
-              "Upgrade boxes build flexibility, precision and naturalness. Advanced work rewards "
-              "appropriate, precise use — never complexity for its own sake.")
-    para(doc, "", space_after=6)
-    para(doc, "By the end of the course, you should be able to:", size=11, bold=True, color=NAVY)
-    for b in [
-        "construct grammatically accurate sentences while speaking;",
-        "choose appropriate tenses and sentence structures for your meaning;",
-        "ask questions and respond with greater precision;",
-        "explain experiences, opinions and hypothetical situations;",
-        "connect ideas into coherent spoken responses;",
-        "use a wider range of structures naturally;",
-        "recognise and correct your recurring grammatical mistakes;",
-        "apply learned structures in unfamiliar speaking situations.",
-    ]:
-        para(doc, f"•  {b}", indent=0.12)
-    para(doc, "Completion of the sixteen lessons is not proof of these outcomes by itself. The "
-              "written Diagnostic Test and Final Assessment sample related grammar skills, but they "
-              "are not parallel tests and their raw totals should not be compared as a measure of "
-              "gain. For a fairer progress check, use the same speaking task conditions and rubric "
-              "before and after the course, and compare the four criterion scores.",
-         size=11, italic=True, color=GREY)
+    spacer(doc, 36)
+    para(doc, "A classroom and self-study course for real spoken communication", size=11.5, color=INK, align='c')
+    para(doc, "16 lessons  ·  3 review tests  ·  final assessment  ·  5 reference appendices",
+         size=10.5, color=GREY, align='c')
     page_break(doc)
 
 
@@ -106,73 +69,108 @@ def publication_info(doc):
     table(doc, ["Publication detail", "Information"], [
         ["Title", "Grammar for Special Speaking"],
         ["Author / creator", "TOEFL HOUSE"],
-        ["Edition", "[Edition information to be confirmed before print release]"],
-        ["ISBN", "[ISBN to be assigned]"],
-        ["Place of publication", "[To be confirmed]"],
+        ["Edition", "First Classroom Edition (2026)"],
         ["Companion volume", "Grammar for Special Speaking — Teacher's Book (TOEFL HOUSE)"],
         ["Language", "English"],
     ], widths=[2.0, 4.3], font_size=10)
     para(doc, "", space_after=4)
-    para(doc, "Disclaimer", size=11, bold=True, color=NAVY)
+    para(doc, "Trademark notice", size=11, bold=True, color=NAVY)
     para(doc, "TOEFL® is a registered trademark of Educational Testing Service (ETS). This book is "
-              "an independent teaching resource prepared by TOEFL HOUSE; it is not affiliated with, "
-              "authorised or endorsed by ETS. Any mention of tests or exams in this book is for "
-              "general language-teaching purposes only.")
-    para(doc, "Statement of limits", size=11, bold=True, color=NAVY)
-    para(doc, "This manuscript has been produced and checked with automated structural and "
-              "editorial quality gates. Qualified teacher review, classroom piloting, EPUBCheck "
-              "certification and a commercial print proof are separate steps recorded in the "
-              "project documentation; none of them is claimed here.")
-    para(doc, "The answer key for learners appears in Appendix 5. Teachers should use the "
-              "companion Teacher's Book, which contains lesson procedures, full answers with "
-              "notes, model speaking responses, timing and differentiation guidance.",
+              "an independent educational resource prepared by TOEFL HOUSE; it is not affiliated with, "
+              "authorised or endorsed by ETS. Any reference to speaking exams or academic tasks is for "
+              "general language-learning purposes.")
+    para(doc, "Where to find the answers", size=11, bold=True, color=NAVY, space_before=4)
+    para(doc, "The complete answer key for learners appears in Appendix 5 at the back of this book. "
+              "Instructors teaching with this course should use the companion Teacher's Book, which "
+              "provides complete lesson procedures, answer notes, acceptable alternatives, model "
+              "conversations, timing plans and classroom guidance.",
          size=10.5, italic=True, color=GREY)
     page_break(doc)
 
 
+def introduction(doc):
+    h_banner(doc, "INTRODUCTION", sub="Why knowing a rule on paper is different from owning it in speech")
+    para(doc, "Most English learners have had the same frustrating experience. You study a grammar rule, "
+              "you complete a page of exercises without a single mistake, and you feel ready. Then someone "
+              "asks you an unexpected question in a real conversation — and in that split second, the rule "
+              "disappears. You hesitate, translate in your head, or fall back on the same safe, simple "
+              "sentences you were using two years ago.")
+    para(doc, "That gap between what you recognize on paper and what you can say out loud is not a lack "
+              "of intelligence or effort. It happens because most grammar books teach grammar as a set of "
+              "abstract formulas for your eyes, whereas speaking requires fast, meaningful choices in your "
+              "voice.")
+    para(doc, "In real life, grammar is not decoration. It is how you signal what you mean. The difference "
+              "between 'I lived in Herat for three years' and 'I have lived in Herat for three years' tells "
+              "your listener whether you still live there today. The difference between 'You mustn't be late' "
+              "and 'He can't be late' separates a strict rule from a logical guess. When you understand what "
+              "a structure actually does for your listener, you stop memorizing charts and start making clear, "
+              "confident choices.")
+    para(doc, "This book is built around one simple habit: speak first, see the principle clearly, hear the "
+              "difference, and immediately use the pattern in real conversation. Every small improvement in "
+              "how you connect tenses, frame questions, compare ideas, or soften a claim compounds over time. "
+              "Fix one recurring habit in each lesson, and within sixteen lessons your spoken English sounds "
+              "noticeably clearer, more natural, and more persuasive.")
+    para(doc, "By the end of this course, you will be able to:", size=11, bold=True, color=NAVY, space_before=4)
+    for b in [
+        "choose the right tense to describe habits, ongoing projects, past stories, and life changes;",
+        "ask natural questions, soften polite requests, and keep a real conversation moving;",
+        "express advice, certainty, possibilities, wishes, and regrets with the exact shade of meaning you intend;",
+        "compare options persuadably and connect your ideas into clear, logical arguments;",
+        "shift focus smoothly using the passive voice, causative patterns, relative clauses, and participles;",
+        "report what others said accurately and control your tone with hedging and natural emphasis;",
+        "catch and repair your own slips in the middle of a conversation without losing your flow.",
+    ]:
+        para(doc, f"•  {b}", indent=0.12)
+    page_break(doc)
+
+
 def how_to_use(doc):
-    h_banner(doc, "HOW TO USE THIS BOOK", sub="For students and teachers")
-    para(doc, "For students", size=12, bold=True, color=NAVY)
-    para(doc, "Work through the lessons in order: each one builds on earlier material. Always "
-              "begin with the Speaking Hook — say your answers out loud before you read the rule. "
-              "The rule then gives you the tool you were already reaching for.")
-    para(doc, "Do the exercises out loud whenever possible. Grammar becomes speech through the "
-              "mouth, not only through the eyes. Use the Pair Speaking and Real Talk sections as "
-              "they are designed: no reading from notes.")
-    para(doc, "After every lesson, cover the page and try the retrieval questions. Tick the "
-              "self-check honestly. Return to the Formula Book (Appendix 1) whenever you review.")
-    para(doc, "", space_after=4)
-    para(doc, "Two pathways, one classroom", size=12, bold=True, color=NAVY)
-    table(doc, ["Pathway", "Focus", "What to do"], [
-        [("Intermediate — Build Accuracy", True),
-         "guided construction, error correction, short clear responses",
-         "complete all core practice; use the Intermediate box in each Advanced Upgrade"],
-        [("Advanced — Build Flexibility", True),
-         "choice between structures, subtle meaning, extended arguments",
-         "add the Advanced Upgrade work; in speaking tasks, qualify, counter and connect"],
-    ], widths=[1.7, 2.2, 2.4])
-    para(doc, "Both groups can respond to the same topic at different levels: give a clear opinion "
-              "with two reasons (Intermediate), or qualify your position, address a counterargument "
-              "and connect ideas with varied structures (Advanced).")
-    para(doc, "", space_after=4)
-    para(doc, "For teachers", size=12, bold=True, color=NAVY)
-    para(doc, "Keep grammar explanation short and give learners substantial time to produce spoken "
-              "English. The suggested pacing below is a guide — adjust it to your class length.")
-    table(doc, ["Activity", "Minutes (of a 60-minute lesson)"], [
-        ["Explanation and examples", "15"],
-        ["Controlled practice", "10"],
-        ["Pair speaking", "20"],
-        ["Independent speaking challenge", "10"],
-        ["Feedback and review", "5"],
-        [("Total", True), ("60", True)],
-    ], widths=[3.6, 2.7])
-    para(doc, "Review earlier structures in the review tests and in retrieval practice. Evaluate "
-              "speaking with the success criteria and the rubric in the Final Assessment — not with "
-              "rigid model answers. Accept alternative answers where an exercise allows them.")
-    para(doc, "The companion Teacher's Book follows the same sixteen lessons and gives teachers "
-              "step-by-step procedures for all eight lesson functions, complete answers with "
-              "explanations, model speaking responses, realistic timings, differentiation and "
-              "remediation guidance, and common-error notes.", space_before=6)
+    h_banner(doc, "HOW TO USE THIS BOOK", sub="A practical guide to turning grammar into automatic speech")
+    para(doc, "Four habits that make this book work", size=12, bold=True, color=NAVY)
+    para(doc, "1. Always speak before you read the rule.  Every lesson begins with The Speaking Hook — a "
+              "short situation or question to discuss with a partner right away. Do not worry about perfection "
+              "in those first two minutes. Speaking first wakes up your ear; when you read The Simple Rule "
+              "a moment later, you will immediately recognize the exact tool you were just reaching for.")
+    para(doc, "2. Read the side-by-side contrasts aloud.  In See the Difference, you will see pairs of "
+              "sentences that look similar on the page but send very different messages in conversation. "
+              "Say both sentences out loud and notice where your voice stresses the words. Your ear remembers "
+              "contrasts far better than definitions.")
+    para(doc, "3. Stretch your answers to match your voice.  Everyone in your class works through the same "
+              "lessons and conversations together. In every speaking activity, start by making your core point "
+              "clearly and accurately. Once that feels comfortable, push yourself one step further: add a "
+              "concrete example, explain the reason behind your choice, address another point of view, or try "
+              "one of the sharper patterns in Part 6 (Say It with Greater Precision).")
+    para(doc, "4. Close the book for the final recall check.  At the end of every lesson, cover the page and "
+              "answer the retrieval prompts out loud from memory. Calling a pattern up from memory without "
+              "looking at the page is what moves grammar from short-term recognition into long-term speech.")
+    para(doc, "", space_after=2)
+    para(doc, "How each lesson moves from curiosity to confident speech", size=12, bold=True, color=NAVY)
+    table(doc, ["Lesson step", "What you do", "Why it matters"], [
+        [("Part 1 · The Speaking Hook", True),
+         "Discuss a real-life situation or short contrast with a partner.",
+         "Activates your own ideas so the grammar answers a real need."],
+        [("Part 2 · The Simple Rule", True),
+         "Learn how the pattern works through meaning and natural examples.",
+         "Gives you a clear mental picture instead of a dry rule to memorize."],
+        [("Part 3 · See the Difference", True),
+         "Compare easily confused forms side by side in the same situation.",
+         "Shows you how a small change in grammar changes what people hear."],
+        [("Part 4 · Practice the Pattern", True),
+         "Complete, repair, and transform sentences — saying each one aloud.",
+         "Builds accuracy before you have to think on your feet."],
+        [("Part 5 · Pair Speaking", True),
+         "Use the grammar in a guided back-and-forth conversation.",
+         "Turns controlled sentences into responsive dialogue."],
+        [("Part 6 · Say It with Greater Precision", True),
+         "Explore ways to add nuance, detail, and sharper focus to your ideas.",
+         "Helps you express more sophisticated thoughts naturally."],
+        [("Part 7 · Real Talk Challenge", True),
+         "Plan briefly with keywords and speak for 1–2 minutes without notes.",
+         "Builds real-world fluency and independence under time pressure."],
+        [("Part 8 · Review and Self-Check", True),
+         "Test your memory with the page covered and check your progress.",
+         "Locks in the core insight and spots any habit that still needs attention."],
+    ], widths=[1.95, 2.2, 2.15], font_size=9.5)
     page_break(doc)
 
 
@@ -209,12 +207,12 @@ def contents(doc):
 
 def diagnostic(doc, keys_registry):
     h_banner(doc, "DIAGNOSTIC TEST", sub="Find your starting point — 25 questions · no time limit")
-    para(doc, "Do this test before Lesson 1. Do not study first: the point is to see what you can "
-              "already do. Mark your score out of 25 and keep the paper. This is a broad starting "
-              "snapshot, not a parallel form of the 30-item Final Assessment; do not interpret the "
-              "difference between their raw totals as a learning gain. For a comparable progress "
-              "check, complete the speaking sample below and score it with the same rubric used at "
-              "the end of the book.", size=11, italic=True, color=GREY)
+    para(doc, "Complete this test before Lesson 1 without studying first: the purpose is simply to see which "
+              "patterns already feel natural and which ones deserve extra attention. Mark your score out of 25 "
+              "and keep your notes. This is a broad starting snapshot, not a parallel form of the 30-item "
+              "Final Assessment; do not interpret the difference between their raw totals as a learning gain. "
+              "For a direct before-and-after comparison, complete the speaking sample in Part D and score it "
+              "with the same four-criterion rubric used at the end of the book.", size=10.5, italic=True, color=GREY)
     para(doc, "Part A — Tenses and time  (10 questions)", size=11, bold=True, color=NAVY)
     A = [
         "I __________ (see) that film last week.",
@@ -256,7 +254,7 @@ def diagnostic(doc, keys_registry):
     for i, q in enumerate(C, 21):
         para(doc, f"{i}.  {q}", indent=0.12)
     page_break(doc)
-    para(doc, "Part D — Baseline speaking sample (not included in the 25-point grammar score)",
+    para(doc, "Part D — Baseline speaking sample (not included in the 25-point written snapshot)",
          size=11, bold=True, color=NAVY)
     box(doc, "Speak for two minutes", [
         "Choose one topic. Prepare for two minutes, then speak for two minutes without reading a script:",
@@ -265,9 +263,9 @@ def diagnostic(doc, keys_registry):
         "•  A person who influenced you, and the advice they gave you.",
         "After your talk, a partner asks two follow-up questions. Answer them, then ask one relevant "
         "question in return. If you get stuck, repair and continue. Record the topic and, if possible, "
-        "save a recording. At the end of the course, repeat this task under the same conditions. The "
-        "Final Assessment uses the same task and four-criterion rubric; score this baseline now and "
-        "score the final sample later."
+        "save an audio recording. At the end of the course, repeat this task under the same conditions. "
+        "The Final Assessment uses the same task and four-criterion rubric so you can compare your baseline "
+        "and final scores directly."
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
     table(doc, ["Criterion", "4 — Strong", "3 — Good", "2 — Developing", "1 — Beginning"], [
         [("Grammatical accuracy", True), "structures are consistently accurate; occasional slips do not affect meaning", "generally accurate; some errors, meaning always clear", "frequent errors; meaning sometimes unclear", "errors dominate; meaning often unclear"],
@@ -275,9 +273,9 @@ def diagnostic(doc, keys_registry):
         [("Clarity", True), "ideas well organised and easy to follow; effective linking", "clear overall; some linking", "ideas loosely connected; hard to follow at times", "ideas listed without clear connection"],
         [("Successful communication", True), "message fully delivered; natural delivery, relevant follow-up exchange and self-repair", "message delivered; answers and asks relevant follow-ups, with some hesitation", "message partly delivered; responses are limited or pauses are long", "message largely not delivered; little response to questions"],
     ], widths=[1.35, 1.35, 1.25, 1.2, 1.15], font_size=8.5)
-    para(doc, "Baseline speaking score: ____ / 16. Keep this page for the matched end-of-course comparison.",
+    para(doc, "Baseline speaking score: ____ / 16. Keep this page for your end-of-course comparison.",
          size=10.5, italic=True, color=GREY)
-    para(doc, "When you finish, check your work in Appendix 5. The answer key is kept separate so you can complete the diagnostic without seeing it.",
+    para(doc, "When you finish, check your work in Appendix 5. The answer key is kept at the back of the book so you can complete the diagnostic first.",
          size=10.5, italic=True, color=GREY)
     keys_registry["Diagnostic"] = {
         "A": ["saw", "has worked / has been working", "was cooking", "had worked / had been working; 'worked' is also possible with before", "boils", "were building",
@@ -286,8 +284,9 @@ def diagnostic(doc, keys_registry):
               "the station is", "who / that", "didn't smoke", "more intelligent", "did she finish"],
         "C": ["can't", "Despite", "where I lived / where I live (if still true)", "may / might / could", "had / got"],
     }
-    para(doc, "Score guide: 21–25 — strong base, keep the Advanced Upgrade in sight.  "
-              "15–20 — solid core; work carefully through both pathways.  "
-              "Below 15 — do the core practice twice and speak every answer aloud; "
-              "accuracy first, speed later.", size=10.5, italic=True, color=GREY)
+    para(doc, "What your snapshot means: 21–25 — strong foundation; pay special attention to nuance, register, "
+              "and the precision patterns in Part 6 of each lesson.  15–20 — solid core; study the side-by-side "
+              "contrasts in Part 3 carefully and speak every practice item aloud.  Below 15 — take your time with "
+              "the core explanations in Part 2, repeat Practice A and B aloud, and build clean, accurate sentences "
+              "first.", size=10.5, italic=True, color=GREY)
     page_break(doc)

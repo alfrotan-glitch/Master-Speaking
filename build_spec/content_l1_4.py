@@ -6,124 +6,215 @@ L1 = {
     'n': 1, 'part_no': 1, 'part_title': 'Build Strong Sentences',
     'title': 'Tenses for Real Communication',
     'goal': 'talk about habits, experiences and changes accurately',
-    'intro': "Tenses are not a chart to memorise — they are choices you make every time you speak.",
+    'intro': [
+        "Imagine two candidates in a job interview. The first says, 'I worked at a city clinic for three years.' "
+        "The second says, 'I have worked at a city clinic for three years.' Only one small word changed, yet the "
+        "interviewer hears two completely different life stories: the first person no longer works there, while "
+        "the second still walks through those clinic doors every morning.",
+        "Tenses are not a chart of endings to memorise for a test. They are the camera lens you choose every time "
+        "you open your mouth — telling your listener whether something is a permanent routine, a temporary project, "
+        "a closed chapter in the past, or a change that still shapes your life today."
+    ],
     'hook': [
-        "Discuss with a partner:",
-        "•  What do you usually do on a normal weekday? (present simple)",
-        "•  What are you doing these days to improve your English? (present continuous)",
-        "•  What did you do last weekend? (past simple)",
-        "•  What has changed in your life since last year? (present perfect)",
+        "Read these two pairs of sentences aloud with a partner:",
+        "•  'I live with my cousin.'   vs.   'I'm living with my cousin until my flat is ready.'",
+        "•  'I lost my keys yesterday.'   vs.   'I've lost my keys — can you let me in?'",
+        "Without using grammar terms, explain to your partner what changes in the real-world situation between "
+        "the left sentence and the right sentence. Then take one minute each to answer:",
+        "•  What does a normal weekday look like for you, and what is one temporary project you are working on this month?",
+        "•  What is one important thing that has changed in your daily life over the past year?",
     ],
     'rules': [
         {'label': 'Rule 1 — Present tenses: habits, facts and what is happening now',
-         'formula': ["Present simple:  Subject + base verb (+ s/es for he/she/it)  →  habits · facts · fixed timetables · states",
-                     "Present continuous:  Subject + am/is/are + verb-ing  →  happening now · current projects · temporary situations · changing trends"],
-         'text': ["Use the present simple when something is generally true or repeated.",
-                  "Use the present continuous for what is true around this period of your life."],
-         'examples': ["I work in a clinic.", "She studies every evening.",
-                      "The course starts at eight.  (fixed timetable)",
-                      "I'm working on my pronunciation this month.",
-                      "More students are learning English online every year.  (a change)"],
-         'remember': ["Add -s/-es with he/she/it: he works, she studies, it rains.",
-                      "Stative verbs usually stay simple: know, believe, own, seem. "
-                      "→ 'I know the answer' (not 'I am knowing')."]},
-        {'label': 'Rule 2 — Past simple vs present perfect',
-         'formula': ["Past simple: verb-ed / irregular  →  a finished time",
-                     "Subject + have/has + past participle  →  connected to now"],
-         'text': ["Use the past simple for a finished time (yesterday, last year, in 2020, when I was a child).",
-                  "Use the present perfect for a time period that is still open (today, this week), for an experience or result connected to now, "
-                  "or for a situation that continues to now (often with since or for). 'Recently' can take either tense, depending on the time focus and variety of English."],
-         'examples': ["I visited Bamyan last summer.  (finished)",
-                      "I have visited Bamyan twice.  (experience — no finished time)",
-                      "She has lived here since 2021.  (still true)"],
-         'remember': ["In standard use, a finished-time expression normally takes the past simple: "
-                      "'I saw him yesterday.' Avoid 'I have seen him yesterday.' With 'recently', either tense can be natural: 'I've seen her recently' / 'I saw her recently'."]},
+         'text': [
+             "When you talk about the present, English asks a simple question: are you describing your normal "
+             "baseline, or are you shining a spotlight on something temporary happening around now?",
+             "Use the present simple for your baseline — habits, routines, permanent facts, fixed timetables, "
+             "and mental states. Use the present continuous when an action is in progress right now, when a project "
+             "is temporary around this period of your life, or when a situation is gradually changing."
+         ],
+         'formula': [
+             "Present simple:  Subject + base verb (+ s/es for he/she/it)  →  habits · facts · fixed timetables · states",
+             "Present continuous:  Subject + am/is/are + verb-ing  →  happening now · current projects · temporary situations · changing trends"
+         ],
+         'examples': [
+             "I work in a medical clinic, and our morning shift starts at eight.  (permanent routine and fixed timetable)",
+             "I'm working on my pronunciation this month by recording myself for five minutes a day.  (temporary current project)",
+             "More professionals are learning English online every year.  (an ongoing trend)",
+             "I know the answer, and I believe your plan will work.  (mental states stay in the present simple)"
+         ],
+         'remember': [
+             "Add -s or -es with he, she, and it in the present simple: he works, she studies, it matters.",
+             "Stative verbs describe a state rather than an active process (know, believe, understand, own, belong, seem, prefer). "
+             "They normally stay in the simple form: say 'I understand the problem' (not 'I am understanding')."
+         ]},
+        {'label': 'Rule 2 — Past simple vs present perfect: closed time vs connected to now',
+         'text': [
+             "Many speakers hesitate between 'I did' and 'I have done' because both refer to something that happened "
+             "before now. The real difference is not how long ago the event happened — it is whether the time period "
+             "is closed or still connected to the present.",
+             "Use the past simple when you name or think of a finished time period (yesterday, last summer, in 2020, "
+             "when I was a student). That chapter is closed. Use the present perfect when the time period is still open "
+             "(today, this week, so far this year), when a past event has a clear result right now, or when a situation "
+             "began in the past and continues up to today (often with since or for). 'Recently' can take either tense, "
+             "depending on the time focus and variety of English."
+         ],
+         'formula': [
+             "Past simple:  Subject + past verb (verb-ed / irregular)  →  a finished, closed time in the past",
+             "Present perfect:  Subject + have/has + past participle  →  open time period · life experience · present result · continuing to now"
+         ],
+         'examples': [
+             "I visited Bamyan last summer with my classmates.  (finished time: 'last summer' is over)",
+             "I have visited Bamyan twice in my life.  (life experience up to now — no finished time is named)",
+             "Nadia has lived in this neighbourhood since 2021.  (she moved here in 2021 and still lives here today)",
+             "I've sent the application, so we can relax now.  (past action with a direct present result)"
+         ],
+         'remember': [
+             "Once you attach a finished time stamp (yesterday, two days ago, in 2019), close the door with the past simple: "
+             "'I saw him yesterday' (never 'I have seen him yesterday').",
+             "With 'recently', either tense can be natural: 'I've spoken to her recently' (focusing on the recent link to now) "
+             "or 'I spoke to her recently' (thinking of that specific recent occasion)."
+         ]},
         {'label': 'Rule 3 — Talking about changes and the future',
-         'formula': ["going to + base verb  →  plans and intentions",
-                     "will + base verb  →  instant decisions, predictions, promises",
-                     "present continuous + time word  →  fixed arrangements"],
-         'text': ["For the near future, choose by meaning: a plan you have decided (going to), "
-                  "a decision you make while speaking (will), or an arrangement (present continuous)."],
-         'examples': ["I'm going to take the TOEFL next year.  (plan)",
-                      "That looks heavy — I'll help you.  (decision now)",
-                      "We're meeting the teacher on Thursday.  (arrangement)"],
-         'remember': ["In 'if' and 'when' clauses about the future, use the present simple: "
-                      "'If it rains, we'll stay home.'"]},
+         'text': [
+             "English does not have just one future tense because we do not think about every future event in the same way. "
+             "Whenever you talk about tomorrow or next year, you are showing your listener how prepared that future is.",
+             "Choose 'be going to + base verb' when you have already made a decision or plan before speaking, or when "
+             "you can see clear present evidence of what is about to happen. Choose 'will + base verb' when you make an "
+             "instant decision while speaking, make a promise, or state a general prediction. Choose the present continuous "
+             "(with a future time expression) when you have a fixed arrangement with another person or organisation."
+         ],
+         'formula': [
+             "am/is/are going to + base verb  →  prior plans and intentions · predictions from visible evidence",
+             "will + base verb  →  decisions made while speaking · promises and offers · general predictions",
+             "Present continuous + future time word  →  fixed personal arrangements already on the calendar"
+         ],
+         'examples': [
+             "I'm going to take the TOEFL exam next spring — I've already bought the study guide.  (decided plan)",
+             "Those bags look heavy — I'll carry one for you.  (instant offer made at the moment of speaking)",
+             "We're meeting the new instructor on Thursday at ten.  (fixed arrangement with a specific time)"
+         ],
+         'remember': [
+             "In future time and condition clauses starting with if, when, as soon as, before, or after, use the present simple: "
+             "'When the results arrive, I'll call you' and 'If it rains tomorrow, we'll stay indoors.'"
+         ]},
     ],
     'differences': [
         {'title': 'Present perfect vs past simple — the choice is about TIME',
+         'text': [
+             "Look at how the same verb changes meaning when you shift from the past simple to the present perfect. "
+             "In each pair below, ask yourself: is the speaker looking back at a finished moment, or looking at how "
+             "the past touches right now?"
+         ],
          'rows': [
-             ["I lost my keys yesterday.", "I've lost my keys.", "The left sentence tells when; the right one is about now (I still don't have them)."],
-             ["She worked there for five years. (she doesn't now)", "She has worked there for five years. (she still does)", "Past simple = finished period. Present perfect = continuing to now."],
-             ["When did you arrive?", "Have you arrived yet?", "Past simple asks for a finished time; present perfect asks about the present result."],
-         ], 'headers': ['Past simple (finished time)', 'Present perfect (now link)', 'The difference']},
-        {'title': 'State verbs vs action verbs',
-         'text': ["A state verb describes a condition, not an action: know, understand, believe, belong, own, seem, prefer.",
-                  "These usually take simple forms: 'I understand the rule' — not 'I am understanding the rule'."]},
+             ["I lost my keys yesterday.", "I've lost my keys.", "The left sentence reports when it happened (perhaps I found them later). The right sentence is about right now: I am standing outside the door and cannot get in."],
+             ["She worked at the hospital for five years.", "She has worked at the hospital for five years.", "Past simple means her five-year period is finished — she works somewhere else now. Present perfect means she started five years ago and still works there."],
+             ["Did you eat breakfast this morning?", "Have you eaten breakfast this morning?", "We ask 'Did you eat?' when the morning is over. We ask 'Have you eaten?' while it is still morning and there is still time to make you some toast."],
+         ], 'headers': ['Past simple (closed past time)', 'Present perfect (connected to now)', 'What your listener hears']},
+        {'title': 'State verbs vs action verbs — when a verb changes its job',
+         'text': [
+             "Most state verbs (know, believe, understand, belong, own, seem, prefer) describe a steady condition, "
+             "so they stay in the simple form: 'I understand the rule' — never 'I am understanding the rule.'",
+             "However, a few everyday verbs have two meanings: a state meaning (simple) and an active meaning (continuous). "
+             "Compare: 'I think this course is practical' (my opinion — state) versus 'I'm thinking about applying for a scholarship' "
+             "(an active mental process happening right now). Likewise, 'She has a small car' (ownership) versus "
+             "'She's having lunch with her supervisor' (an action in progress)."
+         ]},
     ],
     'practice_a': [
-        "I __________ (see) that film last week.",
-        "Nadia __________ (work) at the hospital since 2022.",
-        "We __________ (meet) the new teacher tomorrow at ten.  (arrangement)",
-        "Look! It __________ (snow)!",
-        "My brother __________ (believe) in hard work.",
+        "I __________ (see) that documentary last week, and we talked about it for hours.",
+        "Nadia __________ (work) at the children's hospital since 2022.",
+        "We __________ (meet) the new course director tomorrow morning at ten.  (fixed arrangement)",
+        "Look out of the window — it __________ (snow)!",
+        "My older brother __________ (believe) that consistent daily practice beats last-minute cramming.",
     ],
     'practice_b': [
-        "Correct the mistake: 'I have finished my homework last night.'",
-        "Correct the mistake: 'She is knowing the answer.'",
-        "Choose: How long (do you know / have you known) Sara?",
-        "Rewrite with going to: 'I intend to study medicine.'",
+        "Correct the mistake and explain why: 'I have finished my assignment last night.'",
+        "Correct the mistake and explain why: 'She is knowing three foreign languages.'",
+        "Choose the natural form: How long (do you know / have you known) your closest friend, Sara?",
+        "Rewrite using going to so it sounds like a decided plan: 'My intention is to study medicine next year.'",
     ],
     'pair': {
-        'intro': "Interview your partner. Listen carefully and ask one follow-up question each time.",
-        'task': ["What do you usually do at the weekend?",
-                 "What are you doing these days that is new?",
-                 "What did you do last night?",
-                 "What has changed in your life since last year?"],
+        'intro': "Interview your partner using the four questions below. Do not treat this as a checklist — "
+                 "listen closely to the details in every answer and ask at least one natural follow-up question "
+                 "before moving to the next prompt.",
+        'task': [
+            "What does a typical weekend look like for you when you have no urgent deadlines?",
+            "What is something new or different you are doing these days that was not part of your routine six months ago?",
+            "What was the best part of your last weekend, and who were you with?",
+            "What has changed most in your work, studies, or daily habits since last year?"
+        ],
+        'model': [
+            "A: What are you doing these days that wasn't part of your routine six months ago?",
+            "B: I'm walking to class every morning instead of taking the bus. It takes forty minutes, so I listen to English podcasts on the way.",
+            "A: That's a great habit. How long have you been doing that, and have you noticed a difference in your listening?"
+        ],
         'output': "Both partners answer all four questions, exchange at least four follow-up questions in "
                   "total, and can report one interesting answer about the other person to the class.",
-        'criteria': ["uses present simple for habits",
-                     "uses present continuous for current situations",
-                     "uses past simple and present perfect with correct time words",
-                     "asks one natural follow-up question"],
+        'criteria': [
+            "uses present simple for regular habits and routines",
+            "uses present continuous for current projects and temporary changes",
+            "uses past simple for finished past moments and present perfect for changes continuing to now",
+            "asks natural follow-up questions that react to what the partner actually said"
+        ],
     },
     'advanced': {
-        'base': ["Drill the time cues: yesterday / ago / in 2020 → past simple; since / for → present perfect when the situation continues to now; this week → often present perfect while the period is open.",
-                 "Make three true sentences about yourself: one habit, one current project, one recent experience."],
-        'upgrade': ["Use the present perfect continuous for the activity itself: 'I've been revising all morning.' (and I'm tired)",
-                    "Use past simple + present perfect in one sentence: 'I failed twice, but I've learned from both failures.'",
-                    "Use 'It's the first time I've…' and 'This is the most … I've ever …' for emphasis."],
+        'intro': "Once your tense choices are accurate, you can express richer shades of time by showing "
+                 "continuous effort, contrasting past setbacks with present growth, or highlighting a milestone.",
+        'base': [
+            "Link every time expression directly to its natural tense: finished markers (yesterday, two weeks ago, in 2020) "
+            "close the action in the past simple; open bridges (since 2021, for three months, so far this week) connect to now with the present perfect.",
+            "Say three true sentences about your own week aloud: one permanent habit, one temporary project you are doing this month, and one experience you have had this year."
+        ],
+        'upgrade': [
+            "Use the present perfect continuous (have/has been + verb-ing) when you want to emphasise the ongoing effort or visible effect of an activity: 'I've been revising all morning, so my eyes are tired.'",
+            "Combine past simple and present perfect in a single sentence to show growth from a past event: 'I failed the driving test twice last year, but I've learned from both mistakes and I feel ready now.'",
+            "Use milestone frames such as 'It's the first time I've ever…' or 'This is the most challenging project I've worked on' to highlight a standout experience."
+        ],
     },
     'realtalk': {
-        'plan': "Planning (30 seconds): choose three time anchors — one habit (present simple), one "
-                "change up to now (present perfect), one activity of these days (present continuous). "
-                "Write keywords only, not sentences.",
-        'task': "Speak for one minute: how has your English improved? Name one specific past event, "
-                "explain what you learned from it, and say what you are still working on now.",
-        'model': "I've been studying English seriously for about two years. Last year I joined a "
-                 "speaking club, and that was the moment things changed — I learned to think in "
-                 "English instead of translating every sentence. These days I listen to a short "
-                 "podcast every morning, and I'm still working on my pronunciation. My grammar is "
-                 "much better than it was, but speaking fluently is what I'm focusing on now.",
-        'feedback': ["past simple for the specific event",
-                     "present perfect for the change up to now",
-                     "present continuous for what is happening these days",
-                     "clear time expressions (last year, since…, this month)"],
+        'plan': "Take 30 seconds to jot down three keywords only (do not write full sentences): one past turning point "
+                "(past simple), one change that has happened up to now (present perfect), and one habit or focus you "
+                "are working on these days (present simple / continuous).",
+        'task': "Speak for one full minute: How has your English — or another practical skill you value — improved over time? "
+                "Name one specific past moment that helped you, explain what has changed since then, and describe what you "
+                "are actively working on right now.",
+        'model': "I've been studying English seriously for about two years. Last year I joined a weekly speaking club, "
+                 "and that was the moment things really changed for me — I learned to respond in English right away instead "
+                 "of translating every word in my head. Since then, my confidence has grown a lot, and I've spoken in front "
+                 "of visitors twice at work. These days I listen to a short news podcast every morning while I walk, and "
+                 "I'm focusing on making my pronunciation clearer.",
+        'feedback': [
+            "past simple used for the specific turning-point event",
+            "present perfect used for progress and changes up to now",
+            "present continuous used for what the speaker is focusing on these days",
+            "time expressions match the chosen tenses naturally (last year, since then, these days)"
+        ],
     },
     'review': {
-        'points': ["Present simple = facts and habits. Present continuous = around now.",
-                   "Past simple = finished time. Present perfect = connected to now.",
-                   "going to = plan; will = decision now or prediction; present continuous = arrangement."],
-        'retrieval': ["Say your last weekend in five past-simple sentences.",
-                      "Say three things that have changed in your life since 2020."],
-        'watch': ["'I have seen him yesterday' → 'I saw him yesterday.'",
-                  "'I am knowing' → 'I know.'"],
-        'selfcheck': ["I can talk about a habit, a current project and a past experience in one answer.",
-                      "I chose past simple vs present perfect correctly in the practice."],
+        'points': [
+            "Present simple describes your permanent baseline (habits, facts, states); present continuous spotlights what is in progress or temporary around now.",
+            "Past simple closes the door on a finished time (yesterday, in 2020); present perfect connects the past to the present moment.",
+            "For the future, use 'going to' for decided plans, 'will' for spontaneous decisions and predictions, and the present continuous for fixed arrangements."
+        ],
+        'retrieval': [
+            "Describe your last weekend in four connected past-simple sentences, then add one sentence in the present perfect about how your week has gone so far.",
+            "Explain three things that have changed in your town, work, or studies since 2020."
+        ],
+        'watch': [
+            "'I have seen him yesterday.' → 'I saw him yesterday.' (A finished time stamp requires the past simple.)",
+            "'I am knowing the answer.' → 'I know the answer.' (State verbs stay in the simple form.)"
+        ],
+        'selfcheck': [
+            "I can talk about a routine, a current project, and a past experience in one smooth answer.",
+            "I can hear the difference between a finished past event and a situation that continues up to now."
+        ],
         'answers': {
             'A': ["saw", "has worked / has been working", "are meeting", "is snowing", "believes"],
-            'B': ["I finished my homework last night.", "She knows the answer.",
-                  "have you known", "I'm going to study medicine."],
+            'B': ["I finished my assignment last night. ('last night' is a finished time)",
+                  "She knows three foreign languages. ('know' is a state verb)",
+                  "have you known",
+                  "I'm going to study medicine next year."],
         },
     },
 }
@@ -132,115 +223,199 @@ L2 = {
     'n': 2, 'part_no': 1, 'part_title': 'Build Strong Sentences',
     'title': 'Telling Stories and Describing Experiences',
     'goal': 'tell a story with background, sequence and clear focus',
-    'intro': "Good stories have a shape: background first, main events in order, one moment of focus.",
+    'intro': [
+        "Have you ever listened to someone tell a story that sounded like a flat shopping list? 'I woke up late. "
+        "I ran outside. It rained. I missed the bus. My phone died.' Every sentence is grammatically correct, yet "
+        "the story feels lifeless because every action is painted on the exact same flat surface.",
+        "Skilled storytellers use grammar like a film director uses cameras. One tense paints the atmosphere in the "
+        "background, another drives the main events forward step by step, and a third flashes back to something that "
+        "had already happened before the scene began."
+    ],
     'hook': [
-        "Tell your partner a short story (30 seconds): something funny, surprising or important that happened to you.",
-        "Now listen to your partner's story. Which moment felt most important? What made it clear?",
+        "Compare these two openings to the same story:",
+        "•  Version A:  'I walked home from work. The lights went out. I realized my keys were on my office desk.'",
+        "•  Version B:  'I was walking home from work when the street lights suddenly went out — and that was the moment I realized I had left my keys on my office desk.'",
+        "Read both versions aloud with a partner. Why does Version B pull the listener in? Then take 30 seconds each "
+        "to tell a brief true story about a small surprise, delay, or lucky moment from your own life.",
     ],
     'rules': [
-        {'label': 'Rule 1 — Past continuous: the background of a story',
-         'formula': ["Subject + was/were + verb-ing",
-                     "Use it for: the background · what was happening when something started"],
-         'text': ["The past continuous paints the scene. The past simple puts the events into it."],
-         'examples': ["I was walking home when I met an old friend.",
-                      "The sun was setting and the streets were getting quiet."],
-         'remember': ["'when' usually takes the past simple; 'while' usually takes the past continuous: "
-                      "'While I was cooking, the lights went out.'"]},
-        {'label': 'Rule 2 — Past perfect: the earlier past',
-         'formula': ["Subject + had + past participle",
-                     "Use it for: the first of two past actions · background that happened before the story"],
-         'text': ["When you tell a story, the past perfect takes the reader one step further back."],
-         'examples': ["By the time we arrived, the film had already started.",
-                      "She looked upset because she had lost her wallet."],
-         'remember': ["After 'by the time', use past simple for the second action: "
-                      "'By the time the taxi came, we had packed everything.'"]},
-        {'label': 'Rule 3 — Sequencing a story clearly',
-         'formula': ["First … Then … After that … Suddenly … Finally …",
-                     "Earlier that day … · By the time … · As soon as …"],
-         'text': ["Sequence words are the signposts of a story. Without them, listeners get lost."],
-         'examples': ["First, we waited at the gate. Then, suddenly, the announcement came.",
-                      "As soon as I opened the letter, I understood everything."],
-         'remember': ["'as soon as' = the second action happens immediately after the first."]},
+        {'label': 'Rule 1 — Past continuous: painting the background scene',
+         'text': [
+             "Before an audience cares about what happened, they need to see where you were and what was going on around "
+             "you. That is the job of the past continuous (was/were + verb-ing).",
+             "Think of the past continuous as a wide-angle background shot that is already rolling when a sudden, "
+             "shorter action (in the past simple) steps into the frame: 'I was waiting at the pharmacy when my old "
+             "teacher walked in.' The waiting was already in progress; the entrance interrupted or punctuated it."
+         ],
+         'formula': [
+             "Past continuous:  Subject + was/were + verb-ing  →  ongoing background scene · action in progress at a past moment",
+             "Scene + interruption:  While + past continuous, past simple   /   Past continuous + when + past simple"
+         ],
+         'examples': [
+             "I was walking across the campus when I ran into an old classmate.",
+             "A cold wind was blowing and shopkeepers were closing their shutters as we reached the market.",
+             "While I was preparing the slides, the projector suddenly stopped working."
+         ],
+         'remember': [
+             "Use 'while' before the ongoing background action (past continuous) and 'when' before the shorter interrupting event (past simple): "
+             "'While I was cooking dinner, the lights went out' / 'I was cooking dinner when the lights went out.'"
+         ]},
+        {'label': 'Rule 2 — Past perfect: stepping one level further back',
+         'text': [
+             "Stories do not always unfold in strict 1–2–3 calendar order. Often you start your story at an exciting "
+             "moment — arriving at the airport gate, opening an exam paper, meeting someone — and then you need to "
+             "point back to something that happened earlier.",
+             "If you keep using the past simple, your listener thinks the events happened one after another ('When I "
+             "arrived, he left' means my arrival caused him to walk out). When you switch to the past perfect (had + past "
+             "participle), you signal a flashback: 'When I arrived, he had already left' (the room was already empty when I got there)."
+         ],
+         'formula': [
+             "Past perfect:  Subject + had + past participle  →  an action completed before another past moment"
+         ],
+         'examples': [
+             "By the time we reached the cinema, the film had already started.",
+             "She looked relieved because she had finally submitted her thesis.",
+             "I recognized the street immediately because I had visited the neighbourhood years earlier."
+         ],
+         'remember': [
+             "Do not overuse the past perfect for every sentence in a story. Use it only when you jump backwards from "
+             "your main past storyline to an earlier event: 'By the time the taxi arrived (main past), we had packed everything (earlier past).'"
+         ]},
+        {'label': 'Rule 3 — Signposting the sequence and landing the ending',
+         'text': [
+             "In written English, paragraphs show the reader how a story is organized. In spoken English, your listener "
+             "cannot see paragraphs — your sequence phrases are their only map.",
+             "Clear time signposts (At first, A few minutes later, Suddenly, By the time, In the end) guide the listener "
+             "from the opening scene to the turning point, and a final reflection shows why the experience mattered."
+         ],
+         'formula': [
+             "Opening & sequence:  At first …  ·  A moment later …  ·  After that …  ·  All of a sudden …  ·  Finally …",
+             "Tight time links:  Earlier that morning …  ·  By the time …  ·  As soon as …"
+         ],
+         'examples': [
+             "At first, everyone at the table stayed quiet. Then, all of a sudden, my grandfather started laughing.",
+             "As soon as I opened the envelope, I knew the hard work had paid off.",
+             "Looking back, that mistake taught me to check the schedule twice."
+         ],
+         'remember': [
+             "'As soon as' shows that the second action happened immediately after the first, with no gap in between."
+         ]},
     ],
     'differences': [
-        {'title': 'Past simple vs past continuous vs past perfect',
+        {'title': 'Three camera angles in the past: event vs scene vs earlier flashback',
+         'text': [
+             "Notice how changing the tense in the second clause completely changes the timeline of the meal in these three sentences:"
+         ],
          'rows': [
-             ["I cooked dinner.", "I was cooking dinner when she called.", "I had cooked dinner before she arrived.", "Simple = the event. Continuous = the scene. Perfect = the earlier action."],
-             ["He took a taxi.", "He was taking a taxi when it broke down.", "He had taken a taxi before the rain started.", "Each form places the action at a different level of the story."],
-         ], 'headers': ['Past simple — the events', 'Past continuous — the scene', 'Past perfect — the earlier past', 'What each does']},
-        {'title': 'Story shape: background → event → reflection',
-         'text': ["Strong stories do three things: set the scene (past continuous), report what happened (past simple), "
-                  "and look back (past perfect or present perfect): 'It was raining… I slipped… I had never been so embarrassed… I've been careful ever since.'"]},
+             ["When my sister arrived, I cooked dinner.", "When my sister arrived, I was cooking dinner.", "When my sister arrived, I had cooked dinner.", "1. Past simple: she arrived first, and then I started cooking.  2. Past continuous: I was in the middle of cooking when she walked in.  3. Past perfect: the food was already cooked and waiting on the table before she arrived."],
+             ["He took a taxi when the rain started.", "He was taking a taxi when the rain started.", "He had taken a taxi before the rain started.", "Each tense places his ride at a different point relative to the rain: after it started, during it, or before it."],
+         ], 'headers': ['Past simple (next event)', 'Past continuous (in progress)', 'Past perfect (already finished)', 'How the timeline changes']},
+        {'title': 'The three-part architecture of a memorable spoken story',
+         'text': [
+             "When you tell an anecdote in conversation or in a speaking exam, give it a clear three-part shape: "
+             "1. Set the scene (past continuous: where you were, what was happening). "
+             "2. Tell the key events in order, flashing back only when needed (past simple + past perfect). "
+             "3. Land the ending with what changed or what you learned (past simple or present perfect): "
+             "'It was pouring with rain… I slipped on the steps because I had rushed out in smooth shoes… I've checked the weather before leaving the house ever since.'"
+         ]},
     ],
     'practice_a': [
-        "While I __________ (study), the power went off.",
-        "We __________ (already / eat) when they arrived.",
-        "First, I __________ (call) the office. Then I __________ (take) a bus.",
-        "She __________ (walk) along the river when she __________ (see) the smoke.",
-        "By 2019, he __________ (finish) his degree.",
-        "The children __________ (play) outside while their mother __________ (rest).",
+        "While I __________ (study) for the final exam, the electricity suddenly went off.",
+        "We __________ (already / eat) dinner by the time our cousins arrived.",
+        "First, I __________ (call) the clinic, and then I __________ (take) a taxi across town.",
+        "She __________ (walk) along the riverbank when she __________ (see) smoke rising from the warehouse.",
+        "By 2019, he __________ (finish) his engineering degree and started his first job.",
+        "The children __________ (play) in the courtyard while their mother __________ (rest) indoors.",
     ],
     'practice_b': [
-        "Combine with while: I read the report. The printer broke.",
-        "Combine with by the time: We reached the station. The train had left.  (use past perfect)",
-        "Correct: 'When I arrived, he already left.'",
-        "Add sequence words: tell a three-sentence story about missing a bus.",
-        "Choose: The phone rang (while / when) I was having a bath.",
-        "Rewrite as a story scene: 'It rained. I forgot my umbrella. I got wet.' (use past continuous + past simple)",
+        "Combine into one sentence using while: 'I read the contract. The office printer jammed.'",
+        "Combine using by the time and the past perfect: 'We reached the station. The train left.'",
+        "Correct the timeline mistake: 'When I arrived at the hall, the speaker already left.'",
+        "Use sequence signposts (At first, Suddenly, In the end) to tell a three-sentence story about nearly missing a bus or flight.",
+        "Choose the natural connector: The doorbell rang (while / when) I was drying my hair.",
+        "Rewrite this flat list as a vivid two-sentence story scene using past continuous and past perfect: 'It rained hard. I forgot my umbrella at work. I got soaked.'",
     ],
     'pair': {
-        'intro': "Tell a two-minute story from your life. Your partner listens, then asks two follow-up questions.",
-        'task': ["Choose: a journey you remember · a day everything went wrong · an important decision you made quickly.",
-                 "Include one background scene (past continuous), one earlier action (past perfect), and one final reflection."],
+        'intro': "Take turns telling a two-minute true story from your own life. While you listen to your partner, "
+                 "picture the scene and prepare two genuine follow-up questions about details that make you curious.",
+        'task': [
+            "Choose one prompt: a journey you still remember clearly · a day when plans went wrong in an unexpected way · an important decision you had to make quickly.",
+            "Include all three story layers: a clear opening scene (past continuous), at least one earlier detail that had happened before the main moment (past perfect), and a closing line that explains why the moment mattered."
+        ],
+        'model': [
+            "A: It was a cold Tuesday morning in January, and I was waiting for a shared taxi outside the university. I had stayed up until two in the morning finishing my project, so I was half asleep...",
+            "B: Oh no — did you make it to the presentation on time, or had the professor already started when you walked in?"
+        ],
         'output': "Each partner tells a two-minute story that the other can retell in three sentences, "
                   "and asks two genuine follow-up questions about it.",
-        'criteria': ["background scene is clear",
-                     "events follow a logical order with sequence words",
-                     "past perfect marks the earlier action",
-                     "ending explains why the moment mattered"],
+        'criteria': [
+            "opens with a clear background scene using the past continuous",
+            "guides the listener with natural sequence signposts",
+            "uses the past perfect accurately to mark an earlier action",
+            "ends with a clear reflection on why the experience mattered"
+        ],
     },
     'advanced': {
-        'base': ["Drill the three levels: background (was/were + -ing), events (past simple), earlier past (had + participle).",
-                 "Tell a 30-second story using exactly one 'while', one 'when' and one 'by the time'."],
-        'upgrade': ["Use 'would' for repeated past habits in a story: 'On summer evenings, we would sit outside and talk.'",
-                    "Use 'had been doing' for earlier background activity: 'She had been waiting for an hour when the bus finally came.'",
-                    "End a story with a present reflection: 'It taught me a lesson I've never forgotten.'"],
+        'intro': "Once your three basic narrative tenses work smoothly together, you can add texture to your "
+                 "storytelling by showing repeated past routines, highlighting how long an earlier activity had "
+                 "been going on, and connecting a past story to who you are today.",
+        'base': [
+            "Before you start speaking, picture the three layers of your story: what was happening in the background (was/were + -ing), what happened next (past simple), and what had already happened earlier (had + past participle).",
+            "Practise telling a compact 30-second anecdote aloud that includes one 'while', one 'when', and one 'by the time'."
+        ],
+        'upgrade': [
+            "Use 'would + base verb' (or 'used to') to paint nostalgia or repeated past habits at the start of a story: 'On summer evenings in my hometown, we would sit in the orchard and listen to my uncle's stories.'",
+            "Use the past perfect continuous (had been + verb-ing) to show how long an activity had been in progress before the turning point: 'We had been waiting in the rain for forty minutes when the bus finally appeared.'",
+            "Close your story by bridging back to the present with the present perfect: 'That afternoon taught me a lesson I've never forgotten.'"
+        ],
     },
     'realtalk': {
-        'plan': "Plan (ten seconds only — nothing written): fix the shape of the story — background "
-                "scene, two main events, one earlier action, one ending that explains why the day mattered.",
-        'task': "Tell a two-minute story: a memorable day in your life. Plan it for ten seconds only — "
-                "do not write anything. Tell it again to a second partner, better.",
-        'model': "It was a Friday in May. I was walking home from the market when I realised I had "
-                 "left my phone at home — I had only been walking for ten minutes, so I turned back "
-                 "at once. First I checked the path behind me; then I hurried home. By the time I "
-                 "reached the flat, my sister had already answered a call from my cousin: he had won "
-                 "two tickets to the final and needed my answer straight away. I called him back "
-                 "immediately, and we went that night. I've checked my pockets before leaving the "
-                 "house ever since.",
-        'feedback': ["background + main events + ending (clear story shape)",
-                     "sequence words (first, then, suddenly, finally)",
-                     "past continuous and past perfect used accurately",
-                     "the listener can repeat the story's main events in order"],
+        'plan': "Take ten seconds of silent mental planning (write nothing down): picture your opening background "
+                "scene, the two main events in order, one earlier detail that explains why it happened (had + participle), "
+                "and your closing reflection.",
+        'task': "Tell a two-minute story about a memorable day in your life — a small crisis, an unexpected kindness, "
+                "or a lucky break. After your partner gives feedback, switch partners and tell the same story a second "
+                "time, making the sequence and ending even sharper.",
+        'model': "It was a Friday afternoon in May. I was walking home from the bookshop when I suddenly realised I had "
+                 "left my phone on the counter — I had only been walking for ten minutes, so I turned back at once. "
+                 "At first I checked my coat pockets twice; then I hurried back down the street. By the time I reached "
+                 "the shop, the owner had already answered a call from my cousin: he had won two tickets to the championship "
+                 "final and needed my answer straight away. I called him back from the shop counter, and we went to the "
+                 "stadium that evening. I've checked my pockets before leaving every shop ever since.",
+        'feedback': [
+            "clear three-part story shape (background scene → main events → closing reflection)",
+            "natural sequence signposts (at first, then, by the time, in the end)",
+            "past continuous and past perfect used accurately to separate time layers",
+            "the listener can easily retell the main events in the right order"
+        ],
     },
     'review': {
-        'points': ["Past continuous = the scene; past simple = the events; past perfect = the earlier past.",
-                   "Sequence words make a story easy to follow.",
-                   "A good story ends with why it mattered."],
-        'retrieval': ["Tell a story with exactly one 'while' and one 'by the time'.",
-                      "What is the three-part shape of a strong story?"],
-        'watch': ["'When I arrived, he left.' (wrong order) → 'When I arrived, he had left.'",
-                  "'While I was walking, I had seen…' → 'While I was walking, I saw…'"],
-        'selfcheck': ["My story has a clear background, order and ending.",
-                      "I used past perfect for the earlier action."],
+        'points': [
+            "Past continuous paints the background scene in progress; past simple moves the main events forward; past perfect flashes back to an earlier past action.",
+            "Sequence signposts (at first, suddenly, by the time, as soon as) keep your listener oriented.",
+            "Strong spoken stories end by showing what changed or what the speaker learned."
+        ],
+        'retrieval': [
+            "Tell a 30-second true or invented story aloud that uses both 'while' and 'by the time'.",
+            "Name the three layers of a well-structured story and give one example sentence for each."
+        ],
+        'watch': [
+            "'When I arrived, he left.' (means he left after I arrived) → 'When I arrived, he had already left.' (means he was gone before I arrived).",
+            "'While I was walking, I had seen an old friend.' → 'While I was walking, I saw an old friend.' (Use past simple, not past perfect, for the main interrupting event.)"
+        ],
+        'selfcheck': [
+            "My spoken stories have a clear background scene, logical sequence, and meaningful ending.",
+            "I can use the past perfect naturally to show which of two past actions happened first."
+        ],
         'answers': {
             'A': ["was studying", "had already eaten", "called / took", "was walking / saw",
                   "had finished", "were playing / was resting"],
-            'B': ["While I was reading the report, the printer broke.",
+            'B': ["While I was reading the contract, the office printer jammed.",
                   "By the time we reached the station, the train had left.",
-                  "When I arrived, he had already left.", "answers vary",
+                  "When I arrived at the hall, the speaker had already left.",
+                  "answers vary",
                   "while",
-                  "It was raining and I forgot my umbrella, so I got wet. (answers vary)"],
+                  "It was raining hard, and because I had forgotten my umbrella at work, I got soaked. (answers vary)"],
         },
     },
 }
@@ -249,125 +424,210 @@ L3 = {
     'n': 3, 'part_no': 2, 'part_title': 'Express Ideas Clearly',
     'title': 'Questions, Auxiliary Verbs, and Follow-up Questions',
     'goal': 'ask clear questions and keep a conversation alive',
-    'intro': "A conversation is a game of questions. The person who asks well controls the talk — politely.",
+    'intro': [
+        "Why do some English conversations feel effortless while others feel like a stiff border-control interview? "
+        "Usually it comes down to how people ask questions. When a speaker drops auxiliary verbs, uses direct "
+        "interrogation word order with strangers, or jumps from one unrelated topic to the next, the conversation "
+        "stalls.",
+        "When you master three habits — clean question word order, polite indirect openings, and follow-up questions "
+        "that build on what the other person just said — you can keep any conversation alive and make the other "
+        "person feel genuinely heard."
+    ],
     'hook': [
-        "With a partner, find out: their favourite way to relax, something they are learning now, and one plan for the future.",
-        "Rule for this round: after every answer, ask ONE follow-up question before you speak about yourself.",
+        "Compare these two short exchanges:",
+        "•  Exchange 1:   A: 'Where you work?'   B: 'At a bank.'   A: 'What is your favourite food?'",
+        "•  Exchange 2:   A: 'What kind of work do you do?'   B: 'I work at a bank.'   A: 'Really? What part of banking do you focus on?'",
+        "With a partner, find out three things about each other: their favourite way to unwind after a busy week, "
+        "something they are trying to learn this year, and one place they hope to visit. Rule for this warm-up: "
+        "after every answer, you must ask ONE follow-up question about what your partner just said before changing the subject.",
     ],
     'rules': [
-        {'label': 'Rule 1 — Forming questions',
-         'formula': ["Yes/No question:  Auxiliary + subject + verb …?",
-                     "Wh- question:  Wh- word + auxiliary + subject + verb …?",
-                     "Auxiliaries: be · have · do · will · can · should · would …"],
-         'text': ["Most direct English questions put an auxiliary verb before the subject. A subject question "
-                  "is a key exception: 'Who called you?' (who is the subject, so there is no inversion)."],
-         'examples': ["Do you live here?  ·  Are you ready?  ·  Have you finished?",
-                      "Where do you live?  ·  What happened?  (What = subject — no auxiliary inversion)",
-                      "Who called you?  (Who = subject)"],
-         'remember': ["With 'do/does/did', use the base verb after it: 'Did she call?' "
-                      "(not 'Did she called?')"]},
-        {'label': 'Rule 2 — Direct and indirect (polite) questions',
-         'formula': ["Direct:  Where is the bank?",
-                     "Indirect:  Could you tell me where the bank is?",
-                     "Embedded order:  question word + subject + verb  (no inversion!)"],
-         'text': ["Indirect questions use statement word order. They sound polite and professional."],
-         'examples': ["Do you know how much this costs?",
-                      "I'd like to know when the results will be announced.",
-                      "Could you tell me why the schedule changed?"],
-         'remember': ["'Do you know where is the bank?' is wrong. → 'Do you know where the bank is?'"]},
-        {'label': 'Rule 3 — Follow-up questions: the engine of conversation',
-         'formula': ["Really? · What happened next? · How about you? · What do you mean?",
-                     "Why was that? · How did that feel? · What are you going to do about it?"],
-         'text': ["Follow-up questions show you listened. They are the difference between an interview "
-                  "and a conversation."],
-         'examples': ["A: I changed my job last month.   B: Wow — how is it going so far?",
-                      "A: I failed the first time.   B: That's hard. What will you do differently?"],
-         'remember': ["Ask about the CONTENT of the answer, not only the topic. Content follow-ups "
-                      "sound genuine: 'You said it was difficult — what part was hardest?'"]},
+        {'label': 'Rule 1 — Forming direct questions: auxiliaries and the subject-question exception',
+         'text': [
+             "Most direct English questions put an auxiliary verb (do, does, did, am, is, are, have, has, will, can, "
+             "should) in front of the subject: 'Where do you live?' or 'Have you finished the report?' Once 'do', "
+             "'does', or 'did' carries the tense, the main verb returns to its base form: 'Did she call?' (never 'Did she called?').",
+             "There is one crucial exception that trips up even experienced speakers: when the question word itself "
+             "(Who, What, Which) is the subject of the verb, there is no inversion and no 'do/did'. Compare: 'Who called you?' "
+             "(Someone called you — 'Who' is the subject) versus 'Who did you call?' (You called someone — 'you' is the subject)."
+         ],
+         'formula': [
+             "Yes/No question:  Auxiliary + subject + main verb …?   →   Do you agree?  ·  Have they arrived?",
+             "Wh- object question:  Wh- word + auxiliary + subject + main verb …?   →   Where did she go?",
+             "Subject question (Who/What = subject):  Wh- subject + verb …?   →   Who wrote this?  ·  What happened?"
+         ],
+         'examples': [
+             "Where do you usually study in the evenings?",
+             "Did the coordinator send the new timetable yesterday?  (base verb 'send' after 'did')",
+             "What happened at the end of the meeting?  ('What' is the subject — no 'did')",
+             "Who organised the workshop, and who did you invite to speak?  (subject question vs object question)"
+         ],
+         'remember': [
+             "After do, does, or did, always use the base verb: 'Where did you buy that?' (not 'Where did you bought that?').",
+             "Test whether Who or What is the subject by answering the question in your head: 'Who broke the cup?' → 'Ali broke it' (subject = no 'did')."
+         ]},
+        {'label': 'Rule 2 — Polite indirect questions: softening the approach',
+         'text': [
+             "Walking up to a professor, a client, or a stranger and asking 'Where is the office?' or 'How much does "
+             "this cost?' is grammatically correct, but it can sound abrupt. To sound polite and composed, English speakers "
+             "wrap the question inside a soft opening phrase such as 'Could you tell me…?' or 'Do you know…?'",
+             "Here is the golden rule of indirect questions: the opening phrase already does the work of asking the "
+             "question, so the second half switches back to normal statement word order (subject + verb) and drops "
+             "'do/does/did'."
+         ],
+         'formula': [
+             "Direct question:  Wh- word + auxiliary + subject + verb?   →   Where is the bank?  /  When did he leave?",
+             "Indirect question:  Polite opener + Wh- word (or if/whether) + subject + verb   →   Could you tell me where the bank is?  /  Do you know when he left?"
+         ],
+         'examples': [
+             "Could you tell me where the registration desk is?",
+             "Do you happen to know what time the library closes on Fridays?",
+             "I'd like to know when the interview results will be announced.",
+             "I was wondering if you could look over my draft this afternoon."
+         ],
+         'remember': [
+             "Never invert twice! Say 'Do you know where the bank is?' (not 'Do you know where is the bank?').",
+             "For Yes/No indirect questions, connect with 'if' or 'whether': 'Do you know if the bus has left?'"
+         ]},
+        {'label': 'Rule 3 — Follow-up questions: the engine of real conversation',
+         'text': [
+             "Good conversationalists do not memorize a list of twenty questions. Instead, they ask one clear opening "
+             "question, listen for an interesting word or feeling in the answer, and ask a follow-up question about "
+             "that exact detail.",
+             "Content follow-ups show your partner that you are actually listening to their story, not just waiting "
+             "for your turn to talk."
+         ],
+         'formula': [
+             "Quick reactions + follow-ups:  Really? What happened next?  ·  How did you decide to do that?",
+             "Digging deeper:  You mentioned it was challenging — which part was hardest?  ·  What would you do differently next time?"
+         ],
+         'examples': [
+             "A: I switched from engineering to teaching last year.   B: That's a big step — what made you decide to change?",
+             "A: I took the speaking test twice before I got the score I needed.   B: What did you change between the first attempt and the second?"
+         ],
+         'remember': [
+             "Build your follow-up from the content of your partner's sentence rather than switching topics: "
+             "echo one key idea they mentioned and ask 'Why?', 'How?', or 'What was that like?'"
+         ]},
     ],
     'differences': [
-        {'title': 'Direct vs indirect questions',
+        {'title': 'Direct vs polite indirect questions in the same situation',
+         'text': [
+             "Notice two changes when you move from the direct column to the polite column: the tone becomes much "
+             "more respectful, and the verb moves back after the subject."
+         ],
          'rows': [
-             ["Where did you buy it?", "Could you tell me where you bought it?", "Indirect = polite; notice the statement word order after 'where'."],
-             ["What time does it open?", "Do you know what time it opens?", "After 'do you know', the tense can stay, but the word order changes."],
-             ["Why are you late?", "Would you mind telling me why you're late?", "Soft openings turn a sharp question into a polite one."],
-         ], 'headers': ['Direct', 'Indirect (polite)', 'Why']},
-        {'title': 'Question word is subject vs object',
-         'text': ["'Who broke the window?' (Who = subject → no 'did').  Compare: 'Who did you call?' (you = subject).",
-                  "This is a very common error at every level."]},
+             ["Where did you buy that dictionary?", "Could you tell me where you bought that dictionary?", "After 'Could you tell me where', we drop 'did' and put the past tense back on the verb ('you bought')."],
+             ["What time does the clinic open?", "Do you know what time the clinic opens?", "After 'Do you know what time', we drop 'does' and use statement order ('the clinic opens')."],
+             ["Why was the flight delayed?", "Would you mind telling me why the flight was delayed?", "The auxiliary 'was' moves after 'the flight' so the embedded clause reads like a statement."],
+         ], 'headers': ['Direct (quick / casual)', 'Indirect (polite / professional)', 'What changes in the grammar']},
+        {'title': 'Subject questions vs object questions — why "Who" works two ways',
+         'text': [
+             "Compare two questions about the same phone call: suppose Mariam called Tariq.",
+             "•  If we ask 'Who called Tariq?', the answer is Mariam (the subject). Because 'Who' stands in the subject's shoes, the verb follows directly: 'Who called Tariq?'",
+             "•  If we ask 'Who did Mariam call?', the answer is Tariq (the object), and Mariam is the subject. Because 'Mariam' is the subject, we need the auxiliary 'did' before her name: 'Who did Mariam call?'"
+         ]},
     ],
     'practice_a': [
-        "__________ you ever __________ (try) Afghan pilau?",
-        "What __________ (happen) at the meeting yesterday?",
-        "Do you know where __________ ?  (the library / be)",
-        "Could you tell me how much this __________ ?  (cost)",
-        "Who __________ (write) this report?",
-        "Who __________ you __________ (write) to yesterday?",
+        "__________ you ever __________ (try) traditional Kabuli palaw cooked over wood fire?",
+        "What __________ (happen) at the end of the department meeting yesterday?",
+        "Do you know where __________ ?  (the main library / be)",
+        "Could you tell me how much this course __________ ?  (cost)",
+        "Who __________ (write) this summary on the board?",
+        "Who __________ you __________ (speak) to at the admissions office yesterday?",
     ],
     'practice_b': [
-        "Make the question polite: 'Where did you park?'",
-        "Make the question polite: 'When will the results be ready?'",
-        "Correct: 'Do you know where is the bank?'",
-        "Add two follow-ups: 'I'm planning to change careers.'",
-        "Correct: 'Did she called you?'",
-        "Write one question with 'How long…' about English study.",
+        "Make this question polite for a stranger: 'Where did you park your car?'",
+        "Make this question polite for an administrator: 'When will the exam results be ready?'",
+        "Correct the word-order mistake: 'Do you know where is the nearest pharmacy?'",
+        "Write two natural content follow-up questions for a partner who says: 'I'm planning to change careers next year.'",
+        "Correct the verb mistake: 'Did she called you after the interview?'",
+        "Write one question starting with 'How long…' to ask a classmate about a skill or hobby they have.",
     ],
     'pair': {
-        'intro': "Three-minute interview. Partner A asks; Partner B answers — but every answer must end with "
-                 "a follow-up question back to A. Then swap.",
-        'task': ["Choose 3 topics: learning English · a proud moment · a difficult decision · future plans.",
-                 "Use at least one indirect question and three follow-up questions per person."],
+        'intro': "Run a three-minute conversational interview with your partner. Partner A starts by asking about "
+                 "one of the topics below, but every conversation must stay on that single topic for at least three "
+                 "follow-up exchanges before moving on. Then swap roles.",
+        'task': [
+            "Choose three topics from: learning English · a moment you felt proud of your work · a difficult decision you had to make · a plan for the next two years.",
+            "Each partner must use at least one polite indirect question ('Could you tell me…', 'I was wondering…') and at least three content-based follow-up questions."
+        ],
+        'model': [
+            "A: I was wondering what your biggest goal is for the next year.",
+            "B: I'm hoping to apply for a master's programme abroad.",
+            "A: Really? Do you know which university you want to apply to, or are you still comparing options?"
+        ],
         'output': "A three-minute exchange per pair in each role: three answers, at least three "
                   "content-based follow-ups, one indirect question — then a one-sentence summary of "
                   "what you learned about your partner.",
-        'criteria': ["question word order is correct (direct and indirect)",
-                     "follow-ups react to the content of the answers",
-                     "the conversation flows — no long silences",
-                     "each person speaks about the same amount"],
+        'criteria': [
+            "question word order is accurate in both direct and indirect questions",
+            "follow-up questions build directly on details the partner just shared",
+            "the conversation flows naturally without abrupt topic jumps",
+            "both partners speak and ask questions in balanced measure"
+        ],
     },
     'advanced': {
-        'base': ["Drill the two orders: 'Where did you go?' vs 'Do you know where you went?'",
-                 "Learn five soft openers: Could you tell me… · Do you happen to know… · Would you mind telling me… · I was wondering… · Do you have any idea…"],
-        'upgrade': ["Negative questions show surprise: 'Haven't we met before?' · 'Didn't you get my message?'",
-                    "Echo questions show interest: 'You did WHAT?' · 'She said it how?'",
-                    "Question tags keep a conversation shared: 'It's getting late, isn't it?' · 'You've met her, haven't you?'"],
+        'intro': "In real conversation, questions do more than request missing facts — they also express surprise, "
+                 "check shared understanding, and invite agreement.",
+        'base': [
+            "Contrast direct and embedded order aloud until your ear catches inversion errors automatically: 'Where did you go?' versus 'Do you know where you went?'",
+            "Keep five polite openers ready for formal and professional situations: 'Could you tell me…', 'Do you happen to know…', 'Would you mind telling me…', 'I was wondering if…', 'Do you have any idea…'"
+        ],
+        'upgrade': [
+            "Use negative questions to express surprise or polite expectation: 'Haven't we met before?' or 'Didn't you receive the schedule I sent?'",
+            "Use short echo questions when a detail surprises you and you want the speaker to elaborate: 'You waited how many hours at the airport?'",
+            "Use natural question tags with falling intonation to invite agreement and keep the listener engaged: 'It's been a busy week, hasn't it?' · 'You've worked with Dr Rahimi before, haven't you?'"
+        ],
     },
     'realtalk': {
-        'plan': "Plan (30 seconds): ready two one-sentence stories of your own, one indirect question "
-                "you can ask whatever the topic is, and three reactions: Really? · What happened next? · "
-                "How about you?",
-        'task': "Two-minute conversation challenge: your partner will say only one sentence to start "
-                "(for example: 'I almost missed my flight last week.'). Keep the conversation alive "
-                "for two full minutes using only questions and short reactions.",
+        'plan': "Take 30 seconds to prepare: write down one single-sentence story opener of your own (for example, "
+                "'I almost missed an important flight last year' or 'I tried cooking for twenty guests last month'), "
+                "plus two polite indirect question frames you can use during the conversation.",
+        'task': "Two-minute conversation challenge: Partner A says only their one-sentence opener. Partner B must "
+                "keep the conversation going for two full minutes by asking natural follow-up questions, reacting "
+                "genuinely, and using at least one indirect question — while Partner A answers naturally and asks "
+                "questions back.",
         'model': "A: I almost missed my flight last week.\n"
-                 "B: Really? What happened next?\n"
-                 "A: The traffic was terrible — I reached the gate twenty minutes before take-off. "
-                 "Do you often fly, or was this a one-off?\n"
-                 "B: I fly for work sometimes. What's the worst journey you've ever had?\n"
-                 "A: A train was cancelled once, so I waited six hours at the station. Have you ever "
-                 "missed a connection?\n"
-                 "B: No, but I came close in Dubai. How did you get through the wait in the end?",
-        'feedback': ["asks real follow-up questions (about content, not only topic)",
-                     "uses at least one indirect question",
-                     "correct question word order",
-                     "the conversation never stops"],
+                 "B: Really? What happened?\n"
+                 "A: The main road to the airport was closed, so I reached the check-in desk twenty minutes before boarding. "
+                 "Do you travel often, or do you prefer staying close to home?\n"
+                 "B: I fly for work a few times a year. Could you tell me how you managed to get through security in time?\n"
+                 "A: One of the staff saw my boarding pass and took me to the front of the queue. Have you ever missed a connection?\n"
+                 "B: Not a flight, but I missed the last bus from Herat once. How did you feel when you finally sat down on the plane?",
+        'feedback': [
+            "asks genuine follow-up questions that react to content rather than switching topics",
+            "uses at least one polite indirect question with statement word order",
+            "maintains accurate auxiliary and subject-question grammar throughout",
+            "keeps the two-minute exchange lively and balanced from start to finish"
+        ],
     },
     'review': {
-        'points': ["Questions need an auxiliary before the subject — except when the question word is the subject.",
-                   "Indirect questions use statement word order: 'Do you know where the bank is?'",
-                   "Follow-up questions keep conversations alive."],
-        'retrieval': ["Ask one direct and one indirect question about the same thing.",
-                      "Say three follow-up questions you could use with any partner."],
-        'watch': ["'Do you know where is the bank?' → 'Do you know where the bank is?'",
-                  "'Did she called?' → 'Did she call?'"],
-        'selfcheck': ["I can form polite questions with correct word order.",
-                      "I can keep a conversation going with follow-ups."],
+        'points': [
+            "Most direct English questions put an auxiliary before the subject — except when Who or What is the subject of the verb ('Who called you?').",
+            "Polite indirect questions ('Could you tell me…', 'Do you know…') switch to statement word order and drop 'do/does/did'.",
+            "Follow-up questions that react to specific details turn a dry Q&A into a real conversation."
+        ],
+        'retrieval': [
+            "Take one question about your city or school and say it twice: first as a direct question, then as a polite indirect question.",
+            "Say one subject question ('Who…') and one object question ('Who did…') using the same verb."
+        ],
+        'watch': [
+            "'Do you know where is the bank?' → 'Do you know where the bank is?' (Use statement word order inside an indirect question.)",
+            "'Did she called you?' → 'Did she call you?' ('Did' already carries the past tense.)"
+        ],
+        'selfcheck': [
+            "I can ask polite indirect questions without accidentally inverting the verb.",
+            "I can keep a conversation moving for two minutes using natural follow-up questions."
+        ],
         'answers': {
-            'A': ["have / tried", "happened", "the library is", "costs", "wrote", "did / write"],
-            'B': ["Could you tell me where you parked?",
-                  "Do you know when the results will be ready?",
-                  "Do you know where the bank is?",
-                  "answers vary", "Did she call you?", "answers vary"],
+            'A': ["Have / tried", "happened", "the main library is", "costs", "wrote", "did / speak"],
+            'B': ["Could you tell me where you parked your car?",
+                  "Do you know when the exam results will be ready? / Could you tell me when the exam results will be ready?",
+                  "Do you know where the nearest pharmacy is?",
+                  "answers vary (e.g. 'What field are you thinking of moving into?' / 'What made you decide to make a change?')",
+                  "Did she call you after the interview?",
+                  "answers vary (e.g. 'How long have you been studying English?')"],
         },
     },
 }
@@ -376,132 +636,213 @@ L4 = {
     'n': 4, 'part_no': 2, 'part_title': 'Express Ideas Clearly',
     'title': 'Modal Verbs for Real-Life Situations',
     'goal': 'express ability, advice, obligation, permission, possibility and certainty at the right strength',
-    'intro': "Modals are the volume knobs of English: they control how strong or soft your message is.",
+    'intro': [
+        "Suppose a colleague shows you a draft of an important email that has several confusing sentences. If you say, "
+        "'You must rewrite this,' you sound like a strict commander. If you say, 'You might want to make the second "
+        "paragraph a little clearer,' you sound like a helpful teammate.",
+        "Modal verbs (can, could, should, must, might, would) are the volume controls of English. They let you adjust "
+        "the exact social strength of your advice, requests, obligations, and logical guesses so your listener hears "
+        "both your message and your respect."
+    ],
     'hook': [
-        "Give advice to a friend who says: 'My English is not improving.'  Use at least two modals (should, could, might…).",
-        "A student asks you: 'Can I leave the class early?'  Answer politely with a modal.",
+        "Imagine two real-life moments with a partner:",
+        "•  Situation 1: A close friend tells you, 'I study English for two hours every night, but I still freeze when I have to speak.' Give them two pieces of helpful advice.",
+        "•  Situation 2: You need to leave today's class or work meeting fifteen minutes early for a medical appointment. How would you ask the instructor or manager?",
+        "Compare the exact words you both chose. Which words made your advice sound encouraging rather than bossy, "
+        "and which words made your request sound polite?",
     ],
     'rules': [
-        {'label': 'Rule 1 — The core modals',
-         'formula': ["Modal + base verb  (no -s, no to: he can swim / not he cans or he can to swim)",
-                     "can / could = ability · may / could = permission · must / have to = obligation",
-                     "should / ought to = advice · might / could / may = possibility"],
-         'text': ["Choose the modal by meaning and by how strong you want to be."],
-         'examples': ["I can speak three languages.  (ability)",
-                      "You should rest.  (advice — soft)",
-                      "You must submit the form by Friday.  (strong obligation)",
-                      "It might rain later.  (possibility)"],
-         'remember': ["'have to' is often about external rules; 'must' about the speaker's own strong belief: "
-                      "'I have to wear a uniform' (the rules say so) · 'You must see this film!' (I strongly recommend it)."]},
-        {'label': 'Rule 2 — Degrees of certainty',
-         'formula': ["must be / must have been  =  almost certainly (positive deduction)",
-                     "might / could / may be  =  possible",
-                     "can't be / couldn't have been  =  almost certainly not"],
-         'text': ["When you guess based on evidence, the modal shows how sure you are. "
-                  "For the past: must have + participle / might have + participle / can't have + participle."],
-         'examples': ["She's not answering. She must be in a meeting.",
-                      "He might have missed the bus.",
-                      "He can't be at home — his car is gone."],
-         'remember': ["mustn't = prohibition ('You mustn't tell anyone'); can't = deduction ('He can't be 40!'). "
-                      "These are completely different."]},
-        {'label': 'Rule 3 — Politeness in real life',
-         'formula': ["Would you mind + -ing …?  ·  Could I possibly …?  ·  Would it be all right if I …?",
-                     "I was wondering if I could …  (very polite)"],
-         'text': ["In professional and formal situations, softer modals protect relationships."],
-         'examples': ["Would you mind closing the window?",
-                      "Could I possibly move the deadline by one day?",
-                      "I was wondering if I could ask for your advice."],
-         'remember': ["'Would you mind + -ing' — the answer 'No' means 'yes, fine': "
-                      "'Would you mind waiting?' — 'No, not at all.'"]},
+        {'label': 'Rule 1 — Choosing modals by meaning and social strength',
+         'text': [
+             "Structurally, core modal verbs are the simplest verbs in English: they are followed directly by the base "
+             "verb for every person, with no '-s' in the third person and no 'to' ('She can swim', 'He should wait').",
+             "The real skill is choosing the right modal for the relationship. 'Must' and 'have to' express necessity "
+             "or strong obligation; 'should' and 'ought to' offer advice; 'can', 'could', and 'may' handle ability, "
+             "possibility, and permission."
+         ],
+         'formula': [
+             "Modal + base verb  (never add -s or 'to': he can speak · she should wait · you mustn't touch)",
+             "Obligation: must / have to   ·   Advice: should / ought to   ·   Possibility: may / might / could   ·   Ability & permission: can / could / may"
+         ],
+         'examples': [
+             "All applicants have to submit their transcripts by Friday.  (external institutional rule)",
+             "You really must try the fresh bread from that bakery!  (speaker's personal enthusiasm / strong recommendation)",
+             "You should take a short break before you drive home.  (supportive advice)",
+             "We could meet on Wednesday, or we might wait until the report is ready.  (open possibilities)"
+         ],
+         'remember': [
+             "'Have to' usually points to an external rule or situation ('I have to wear an ID badge at work'), whereas 'must' "
+             "often expresses the speaker's own authority or personal conviction ('I must remember to call my mother tonight').",
+             "In the negative, their meanings split completely: 'don't have to' means it is not necessary ('You don't have to bring food'), "
+             "while 'mustn't' means it is forbidden ('You mustn't park in front of the ambulance bay')."
+         ]},
+        {'label': 'Rule 2 — Degrees of certainty: reading the evidence',
+         'text': [
+             "We also use modal verbs when we look at clues in front of us and make a logical guess (a deduction). "
+             "Suppose you knock on a colleague's office door and nobody answers.",
+             "If her coat is on the chair and her computer screen is on, you say, 'She must be in the building' (you are "
+             "almost certain it is true). If you have no idea where she is, you say, 'She might / may / could be in a "
+             "meeting' (it is one possibility). If you just saw her drive out of the car park, you say, 'She can't be in "
+             "her office' (you are almost certain it is impossible)."
+         ],
+         'formula': [
+             "Present deduction:  must be (almost certainly true)  ·  may / might / could be (possible)  ·  can't be (almost certainly not true)",
+             "Past deduction:  must have + past participle  ·  may / might / could have + participle  ·  can't / couldn't have + participle"
+         ],
+         'examples': [
+             "He has been travelling for fourteen hours — he must be exhausted.",
+             "Take a warm jacket; the temperature might drop after sunset.",
+             "That can't be Bilal at the door — he's in Kandahar all week.",
+             "She isn't answering her phone; she must have left it in her bag."
+         ],
+         'remember': [
+             "For negative logical deductions, always use 'can't be' (never 'mustn't be'): "
+             "say 'He can't be at home — all the lights are off' (deduction from evidence), whereas 'He mustn't leave the room' is a prohibition."
+         ]},
+        {'label': 'Rule 3 — Diplomatic and polite framing in real life',
+         'text': [
+             "When you ask a favour, make a complaint, or suggest a change at work, stepping back from 'can/will' to "
+             "softer forms ('could', 'would', 'might') gives the other person room to say yes comfortably."
+         ],
+         'formula': [
+             "Polite requests:  Could I possibly …?  ·  Would you mind + verb-ing …?  ·  I was wondering if I could …",
+             "Diplomatic suggestions:  It might be worth + verb-ing …  ·  We could always …  ·  You might want to …"
+         ],
+         'examples': [
+             "Would you mind moving your bag slightly so I can sit down?",
+             "Could I possibly have an extra day to check the figures?",
+             "I was wondering if we could reschedule our meeting for Thursday afternoon."
+         ],
+         'remember': [
+             "Because 'Would you mind…?' literally means 'Would it bother you…?', a polite 'yes, go ahead' answer uses a negative word: "
+             "'No, not at all' or 'Of course not — go right ahead.'"
+         ]},
     ],
     'differences': [
-        {'title': 'must vs have to vs should',
+        {'title': 'must vs have to vs should — choosing the right weight',
+         'text': [
+             "Hear how the social pressure changes across these three ways of talking about seeing a doctor:"
+         ],
          'rows': [
-             ["You must see a doctor.", "You have to see a doctor.", "You should see a doctor.", "Strong advice from the speaker / external requirement / gentle advice."],
-             ["He must be tired.", "He has to be tired.", "—", "Deduction (I'm sure) vs requirement (the rules force him)."],
-         ], 'headers': ['must (strong advice)', 'have to (external rule)', 'should (gentle advice)', 'What it shows']},
-        {'title': "can't (deduction) vs mustn't (prohibition)",
-         'headers': ["can't = I'm sure it's not", "mustn't = forbidden", "The difference"],
+             ["You must see a doctor today.", "You have to see a doctor to get a medical certificate.", "You should see a doctor if that cough continues.", "'Must' carries urgent personal insistence from the speaker; 'have to' states an external requirement; 'should' gives sensible, non-pushy advice."],
+             ["You mustn't work on Saturday.", "You don't have to work on Saturday.", "You shouldn't work every Saturday.", "'Mustn't' forbids it; 'don't have to' says it is optional; 'shouldn't' advises against it for your well-being."],
+         ], 'headers': ['must / mustn\'t', 'have to / don\'t have to', 'should / shouldn\'t', 'What the listener hears']},
+        {'title': "can't (logical deduction) vs mustn't (prohibition)",
+         'text': [
+             "This is one of the most important contrasts in spoken English:",
+             "•  Deduction ('can't'): 'The restaurant can't be open yet — the chairs are still on the tables.' (I am judging from the evidence that it is impossible.)",
+             "•  Prohibition ('mustn't'): 'You mustn't use your phone in the examination hall.' (It is against the rules.)"
+         ],
+         'headers': ["can't = logically impossible", "mustn't = forbidden by rule", "Why the difference matters"],
          'rows': [
-             ["He can't be home yet.", "He mustn't leave yet.", "can't = I'm sure it is not true. mustn't = I forbid it / it is forbidden."],
+             ["He can't be home yet — his car is gone.", "He mustn't leave yet — the guests are arriving.", "Using 'mustn't' for a guess makes you sound as if you are giving an order rather than drawing a conclusion."],
          ]},
-        {'title': 'could vs was able to',
-         'text': ["'Could' describes general ability ('I could swim when I was five'); "
-                  "for one successful past achievement, use 'was able to': 'After an hour, I was able to solve it.'"]},
+        {'title': 'could vs was able to for past achievements',
+         'text': [
+             "Use 'could' for general past ability ('I could swim when I was six'), and also with verbs of perception ('I could hear the music from outside'). "
+             "When you talk about managing to succeed in one specific, difficult past situation, use 'was/were able to' (or 'managed to'): "
+             "'The road was blocked, but after an hour we were able to find another route' (not 'we could find another route'). "
+             "In the negative, both forms work everywhere: 'We couldn't / weren't able to find it.'"
+         ]},
     ],
     'practice_a': [
-        "You look tired. You __________ get some rest.  (advice)",
-        "She __________ speak four languages when she was twelve.  (past ability)",
-        "He __________ be at work — his car is in the car park.  (certainty, positive)",
-        "You __________ touch the wires — it's dangerous!  (prohibition)",
-        "It __________ rain later; take an umbrella.  (50% possibility)",
-        "__________ you mind __________ (open) the window?",
+        "You look exhausted after that double shift. You __________ get some rest tonight.  (supportive advice)",
+        "My grandmother __________ speak four languages fluently when she was a young teacher.  (general past ability)",
+        "Dr Karimi __________ be in the clinic today — his car is parked right outside the entrance.  (strong positive deduction)",
+        "Visitors __________ touch the laboratory equipment — it is high-voltage and dangerous!  (prohibition)",
+        "Take an umbrella just in case; it __________ rain later this afternoon.  (possibility)",
+        "__________ you mind __________ (open) the window for a few minutes?",
     ],
     'practice_b': [
-        "Rewrite politely: 'Open the window.'",
-        "Rewrite with deduction: 'I'm sure she is at home.'",
-        "Rewrite with deduction (past): 'Perhaps he missed the train.'",
-        "Correct: 'He mustn't be at home — his lights are off.'  (meaning: I'm sure he is not)",
-        "Answer naturally: 'Would you mind waiting five minutes?'",
-        "Give soft advice to someone with a headache (2 sentences with modals).",
+        "Rewrite this blunt command as a polite request: 'Open the window.'",
+        "Rewrite using a modal of deduction: 'I am almost certain she is at home right now.'",
+        "Rewrite using a past modal of possibility: 'Perhaps he missed the early train.'",
+        "Correct the modal mistake: 'He mustn't be at home — all his lights are off.'  (intended meaning: I'm sure he isn't)",
+        "Write a natural, polite reply agreeing to this request: 'Would you mind waiting five minutes?'",
+        "Give gentle, diplomatic advice to a classmate who has a bad headache (write two sentences using different modals).",
     ],
     'pair': {
-        'intro': "Agree on an answer together. Speak as professionals solving a real problem.",
-        'task': ["Scenario: your team must choose ONE: a weekend trip, a new project, a training course. "
-                 "There is a budget and a time limit.",
-                 "Use modals to negotiate: suggest (should), offer (could), insist (must), accept possibility (might), refuse softly."],
+        'intro': "Work with your partner as two colleagues on an organising committee. Your department has a small "
+                 "budget and one free weekend, and you must agree on ONE shared option from the three choices below.",
+        'task': [
+            "Options: (1) a two-day communication workshop, (2) upgrading the student study lounge, or (3) a one-day team excursion outside the city.",
+            "Negotiate naturally using modals at different strengths: make suggestions (should / could), point out rules or budget limits (have to / mustn't), make logical guesses about how people will react (must be / might), and use polite requests (Would you mind… / Could we…)."
+        ],
+        'model': [
+            "A: I think we should invest in the study lounge — the current chairs must be ten years old, and students use that room every day.",
+            "B: That's true, though a communication workshop could help everyone before the exam period. Would you mind if we priced the chairs first to see if we might afford a half-day workshop too?"
+        ],
         'output': "One agreed decision per pair, justified with at least three different modals, plus "
                   "two polite request forms used naturally during the negotiation.",
-        'criteria': ["modals show the right strength (advice vs obligation)",
-                     "polite forms used at least twice (Would you mind… / Could I…)",
-                     "certainty language used correctly (must be / might be)",
-                     "a decision is reached and explained"],
+        'criteria': [
+            "chooses modal strength that fits the situation (gentle advice vs firm rule)",
+            "uses polite request or suggestion frames at least twice (Would you mind… / Could we…)",
+            "uses deduction modals accurately based on evidence (must be / might be / can't be)",
+            "reaches a clear joint decision and explains the reasoning"
+        ],
     },
     'advanced': {
-        'base': ["Sort modals by job, not on one fixed scale: must be = strong deduction; should be = expectation; may/might/could be = possibilities. Compare the meaning in context.",
-                 "Practise the three deductions: must be / might be / can't be — about people in the room."],
-        'upgrade': ["Use 'must have + participle' for past deduction: 'You must have been exhausted.'",
-                    "Use 'would' for polite preference: 'I'd suggest waiting.' · 'Would you prefer tea or coffee?'",
-                    "Use hedged obligation for diplomacy: 'We really ought to consider…' · 'It might be worth revisiting…'"],
+        'intro': "To sound truly natural in professional and academic speaking, notice how modals extend into the past "
+                 "and how subtle phrases soften suggestions when speaking to senior colleagues or clients.",
+        'base': [
+            "Sort modals by the job they do in context rather than on a single mechanical scale: must be = strong logical deduction from evidence; should be = reasonable expectation ('The bus should be here soon'); may / might / could be = open possibilities.",
+            "Look around the classroom or out of the window and make three spoken deductions right now: one with 'must be', one with 'might be', and one with 'can't be'."
+        ],
+        'upgrade': [
+            "Use past deduction forms (must have / might have / can't have + past participle) to interpret past events: 'You must have been relieved when you saw your name on the list.'",
+            "Use 'would' to soften preferences and recommendations: 'I'd suggest waiting until Monday' · 'Would you prefer morning or afternoon?'",
+            "Use diplomatic obligation frames when proposing changes to a team: 'We really ought to consider…' · 'It might be worth reviewing the schedule before we commit.'"
+        ],
     },
     'realtalk': {
-        'plan': "Planning (one minute): decide your role, your goal or main complaint, two polite "
-                "request forms you will use, and one deduction you can make from visible evidence. "
-                "Swap roles after one minute.",
-        'task': "Role-play: a client calls with a problem (a delayed order, a bad hotel room, a missed class). "
-                "One of you is the client (complain with modals); one is the professional (advise, apologise, "
-                "negotiate with modals). Swap roles after one minute.",
-        'model': "Client: Good morning — I was wondering if I could talk about my order. It was due on "
-                 "Tuesday, and it still hasn't arrived.\n"
-                 "Professional: I'm sorry about that. You must be frustrated. Let me check… It looks "
-                 "like the parcel was sent to the wrong depot.\n"
-                 "Client: In that case, could I have it redelivered tomorrow? I have to be at work, so "
-                 "it might need to come after five.\n"
-                 "Professional: That should be possible. We could offer an evening slot, or I could ask "
-                 "the depot to hold it for collection. Which would you prefer?",
-        'feedback': ["modals match the intended strength",
-                     "polite professional language",
-                     "at least one deduction (must be / can't be)",
-                     "a clear solution is offered"],
+        'plan': "Take one minute to choose your role and prepare three keywords: your main problem or goal, two polite "
+                "modal frames you will use ('I was wondering if…', 'Could we possibly…'), and one deduction you can make "
+                "about the situation ('There must have been…', 'You must be…'). Swap roles after one minute.",
+        'task': "Role-play a real-world problem call: one partner is a client or student dealing with a problem (a "
+                "delayed book order, a double-booked room, or a missed registration deadline); the other is the "
+                "professional resolving it. Explain the issue politely, make deductions, propose options, and agree on "
+                "a solution. Then switch roles.",
+        'model': "Client: Good morning — I was wondering if I could speak to someone about my textbook order. It was due "
+                 "on Tuesday, and it still hasn't arrived.\n"
+                 "Professional: I'm very sorry about that. You must be frustrated, especially with classes starting this week. "
+                 "Let me check the tracking number… Ah, it looks as if the parcel was sent to the wrong district depot.\n"
+                 "Client: In that case, could I possibly have it delivered tomorrow? I have to teach until four, so it might "
+                 "need to arrive in the evening.\n"
+                 "Professional: That should be possible. We could book an evening courier slot for you, or I could have the "
+                 "main bookshop hold a fresh copy for you to collect today. Which would you prefer?",
+        'feedback': [
+            "modals match the intended social strength (polite request, gentle advice, firm obligation)",
+            "maintains a composed, polite tone even while explaining a problem",
+            "includes at least one natural deduction (must be / must have been / can't be)",
+            "arrives at a practical solution that both speakers accept"
+        ],
     },
     'review': {
-        'points': ["Modals + base verb. Choose by meaning: ability, advice, obligation, permission, possibility.",
-                   "must be / might be / can't be = degrees of certainty; mustn't ≠ can't.",
-                   "Softer modals (could, would, might) make requests and advice polite."],
-        'retrieval': ["Say three deductions about the room (must / might / can't).",
-                      "Ask for something very politely using two different soft forms."],
-        'watch': ["'He mustn't be at home' (I forbid) — if you mean deduction, say 'He can't be at home'.",
-                  "'Would you mind to open…?' → 'Would you mind opening…?'"],
-        'selfcheck': ["I chose the right modal strength in the role-play.",
-                      "I can give polite advice and deductions with correct forms."],
+        'points': [
+            "Core modals are followed directly by the base verb (no -s, no 'to') and let you adjust the strength of advice, obligation, and possibility.",
+            "Use 'must be', 'might be', and 'can't be' for logical deductions from evidence; never confuse 'can't be' (impossible) with 'mustn't' (forbidden).",
+            "Softening frames ('Could I possibly…', 'Would you mind + -ing…', 'I was wondering if…') keep requests and negotiations polite."
+        ],
+        'retrieval': [
+            "Make three logical deductions about people or things around you using 'must be', 'might be', and 'can't be'.",
+            "Ask a partner for a small favour in two different ways using polite modal openings."
+        ],
+        'watch': [
+            "'He mustn't be at home.' → 'He can't be at home.' (Use 'can't' when you mean 'I am sure it isn't true'.)",
+            "'Would you mind to open the window?' → 'Would you mind opening the window?' ('Mind' takes the -ing form.)"
+        ],
+        'selfcheck': [
+            "I can adjust how strong or polite my advice and requests sound in conversation.",
+            "I can make present and past deductions accurately using must, might, and can't."
+        ],
         'answers': {
-            'A': ["should", "could", "must", "mustn't", "might", "Would / opening"],
+            'A': ["should", "could", "must", "mustn't", "might / may / could", "Would / opening"],
             'B': ["Could you open the window, please? / Would you mind opening the window?",
                   "She must be at home.",
-                  "He might have missed the train. / He may have missed the train.",
-                  "He can't be at home — his lights are off.",
-                  "No, not at all. (No problem.)",
-                  "answers vary"],
+                  "He might have missed the early train. / He may / could have missed the early train.",
+                  "He can't be at home — all his lights are off.",
+                  "No, not at all. / Of course not — take your time.",
+                  "answers vary (e.g. 'You should drink some water and rest your eyes. You might also want to step outside for some fresh air.')"],
         },
     },
 }

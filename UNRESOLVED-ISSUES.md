@@ -1,6 +1,6 @@
 # Current release-condition register — Master Speaking
 
-Updated 17 October 2026 after strict-audit remediation. This register supersedes conflicting historical statements in earlier reports. **Commercial release remains on hold.** Production validation is not rights clearance, factual approval, or classroom validation.
+Updated 17 October 2026 after the whole-book critical audit. This register supersedes conflicting historical statements in earlier reports. **Commercial release remains on hold.** Production validation is not rights clearance, factual approval, or classroom validation.
 
 ## Open conditions
 
@@ -8,10 +8,10 @@ Updated 17 October 2026 after strict-audit remediation. This register supersedes
 |---|---|---|---|
 | R01 | Blocking — original listening lessons | All eight entries in `book/publishing/media-register.csv` remain UNVERIFIED. Identify exact recordings, creators, stable links, access and permission basis; verify every vocabulary/comprehension item against the recording. Unit 2's two media labels need reconciliation against the actual source, not a guessed rename. | Author and media editor |
 | R02 | Blocking — existing image rights | 24 existing manuscript assets are UNVERIFIED in the asset-rights register. Supply provenance/permission evidence and attribution, or approve replacements/removals. Missing evidence is not proof of infringement. Official font licenses do not clear images. | Author/publisher and rights reviewer |
-| R03 | High — claims and language/pedagogy | Verify research assertions in readings, quotations, pronunciation models, instructional answerability and language accuracy. Add source-specific references or approve carefully qualified wording. The repaired Unit 3 rule is not a whole-book specialist sign-off. | Subject, language and pronunciation reviewers |
+| R03 | High — claims and language/pedagogy | Verify research assertions in readings, quotations, pronunciation models, instructional answerability and language accuracy. Add source-specific references or approve carefully qualified wording. The Unit 3 rule and five incorrect Unit 4 stress models are repaired; ten stress positions have a pinned CMU dictionary reference. This is not a whole-book specialist sign-off. | Subject, language and pronunciation reviewers |
 | R04 | High — native Word pagination | Word has explicit chapter breaks and correct cached contents labels, but the cached TOC lacks page numbers. Install intended fonts, refresh fields in native Word, save/export and compare final folios, page starts and tables. Do not populate native Word with unverified PDF page numbers. | Word production editor |
 | R05 | High — accessibility/device testing | Reader PDF lacks structural tagging. EPUB passes official EPUBCheck but device, resizing, dark-mode, keyboard, screen-reader and instructional alt-text testing remain outstanding. Supply appropriate tagged PDF and accessible-reader proof before making compliance claims. | Accessibility specialist and production editor |
-| R06 | High — print approval | Interior image placements at 122.4 and 142.9 effective dpi require better originals, viable smaller placements, or printer approval. Front cover is a concept, not a wrap. Confirm stock, binding, bleed, spine, color and barcode requirements; approve a physical proof. | Publisher/printer |
+| R06 | High — print approval | Interior image placements at 122.4 and 142.9 effective dpi require better originals, viable smaller placements, or printer approval. Front cover is a concept, not a wrap. Confirm stock, binding, required signature/page-count multiple, bleed, spine, color and barcode requirements; approve a physical proof. | Publisher/printer |
 | R07 | High — final proof and classroom pilot | No signed complete page/exercise proof or representative learner pilot. Test level, timings, cultural suitability, sensitive-topic alternatives, answerability and assessment consistency. Separate support packs/pilot plans are not completed trials. | Lead editor and pilot teachers |
 | R08 | Publishing metadata | Confirm imprint authority, publication/edition details, distribution territories, quotation attribution and ISBN ownership if applicable. None is certified by retaining manuscript attribution. | Author/publisher |
 
@@ -30,6 +30,9 @@ Updated 17 October 2026 after strict-audit remediation. This register supersedes
 - **Missing Unit 5 vocabulary-activation items:** not substantiated for Chapter 3. Its toolbox has ten expressions and its source-backed task asks learners to use all ten in a conversation. No replacement questions should be invented for that task. Reopen only with an exact different location and evidence.
 - **Video Scripts section:** not supplied by the original source. This is a dependency if transcripts are to be published, not proof that a promised section was dropped from this edition. Obtain recording identity and any required transcript permission before adding scripts. Do not fabricate source transcripts.
 - **Supplementary listening:** separate student/teacher packs contain eight original teacher-read alternatives and their own keys. These do not authenticate the original videos or supply an eight-unit main-book answer key.
+
+- The whole-book pass adds 24 guarded structural repairs, corrects lesson cross-references and copied instructions, completes missing presentation conclusions, and provides eight unit-specific learner review/transfer tasks. Seven vocabulary exercises retain all 36 source sentences; none was deleted to force a uniform item count.
+- The new lesson gate checks 88 multiple-choice groups for organization and option lettering, not answer correctness. Exact stress capitals and selected IPA models are tested in the exports. The current release has 14 gates.
 
 ## Current evidence
 

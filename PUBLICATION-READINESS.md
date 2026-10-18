@@ -13,7 +13,7 @@ Author and existing publisher attribution remain Abdul Raziq Nazari / The TOEFL 
 ### Editing and teaching
 
 - Restored the **entire Unit 5 AI decision-making question** from manuscript item 1582. The previous reconstruction accidentally stopped after “climate change,” removing “disease, and poverty” and the actual decision-making question. Only the missing initial I is repaired in the restored source text.
-- Applied 50 exact-match reviewed edits across chapter text, vocabulary cells, and front matter. These clarify learner-facing instructions, fix “their choice” to “your choice,” remove a reference to nonexistent bold words, and align Unit 6’s pronunciation heading with its actual regular past-tense lesson.
+- Applied 130 exact-match reviewed edits across chapter text, vocabulary cells, and front matter. These clarify learner-facing instructions, fix “their choice” to “your choice,” remove a reference to nonexistent bold words, and align Unit 6’s pronunciation heading with its actual regular past-tense lesson.
 - Retained three plain learner-guidance paragraphs: a speaking/repetition routine, privacy and sensitive-topic choices, and research-source attribution. Production and media-verification notes remain only in separate reports.
 - Kept the author’s readings, eight themes, and 32-chapter sequence. No third-party transcript, exercise answer, research finding, or missing vocabulary item was fabricated.
 - Retained the separate 17-page Class Companion with lesson plans, assessment, role plays, and student practice tools. Its approximate B1–B2 planning range is not a certified level for the main book; the manuscript itself includes more demanding material. Diagnose the actual class before choosing pace and support.
@@ -70,7 +70,7 @@ python book/tools/qa_companion.py
 
 `release.py` stops if a build stage fails, records each QA process’s exit status, writes fresh checksums and QA results, and returns failure if a QA gate fails. To check existing outputs without rebuilding, use `python book/tools/release.py --skip-build`.
 
-Editorial source chain: original DOCX → existing extracted dump → `parse.py` plus `reviewed-edits.json` and `classroom-guide.json` → semantic XHTML → formatted DOCX → custom-rendered print PDF. EPUB is generated from semantic XHTML. `cover.py` generates the front concept and ebook image. Editing generated Word/XHTML files without updating the source chain will be overwritten by a rebuild. See `CHANGELOG.md` for all logged text changes and `QA-REPORT.md` for current results.
+Editorial source chain: original DOCX → existing extracted dump → `parse.py` plus the guarded editorial, structural-repair, learner-review, and exact-title JSON registers → semantic XHTML → formatted DOCX → custom-rendered print PDF. EPUB is generated from semantic XHTML. `cover.py` generates the front concept and ebook image. Editing generated Word/XHTML files without updating the source chain will be overwritten by a rebuild. See `CHANGELOG.md` for all logged text changes and `QA-REPORT.md` for current results.
 
 ## Final natural-language and typography sweep
 
@@ -88,7 +88,7 @@ At the author’s request, the book itself no longer includes discussion/revisio
 
 The main reader file is now `Master-Speaking.pdf`, with the title metadata **Master Speaking**. The former reading-edition filename is an identical compatibility copy. Word’s visible TOC cache now contains the actual eight unit and 32 chapter labels instead of an “Update Field” instruction; native Word may refresh the field to supply its own pagination. No tracked review markup or default generator comment is retained in the formatted Word book.
 
-`qa_publication.py` checks the semantic book, Word, EPUB, PDF text, and PDF metadata for 19 known production/chat phrases. It passes with no findings. This additional content-boundary check is included in the release workflow, forming one of the current thirteen checks. It is not commercial-release certification.
+`qa_publication.py` checks the semantic book, Word, EPUB, PDF text, and PDF metadata for 19 known production/chat phrases. It passes with no findings. This additional content-boundary check is included in the release workflow, forming one of the current fourteen checks. It is not commercial-release certification.
 
 ## Chapter titles and pagination follow-up
 
@@ -96,7 +96,7 @@ All 32 chapter headings now follow the exact existing manuscript/lesson wording,
 
 Every chapter opens on a fresh page in the generated PDF; Word stores an explicit page-break-before property on each chapter heading, with the title and learning-focus subtitle kept together. Native Word pagination still requires a Word proof. Unit openers continue to start on right-hand pages. The interior title page has no visible folio; the front matter uses lowercase Roman numerals and main text uses continuous Arabic numbering. PDF viewer page labels match these sequences, including the separate cover offset. EPUB reading order now places each unit opener before its four chapters, with chapter-level page-break styling for paginated readers; reflowable ebooks do not have fixed print page counts.
 
-A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 13 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
+A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 14 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
 
 ## Strict-audit remediation
 
@@ -115,3 +115,13 @@ The stress comparison is kept together as one short teaching unit in Word/PDF, w
 The earlier 32 editorial aliases have been removed from the publication. Chapter openings, contents entries, Word headings, PDF bookmarks, and EPUB navigation now use exact existing lesson titles or the original chapter heading—not newly coined names. The original content headings remain in place beside their actual reading/listening/research material. Examples: “The Power of Communication,” “Are You a Good Listener?,” “Living with AI: Friend or Foe?,” and “The Science of a Lasting Relationship.”
 
 Source fidelity takes precedence over artificial title uniqueness. A chapter containing multiple debate/research choices is not renamed after just one optional task. Where no single principal title exists, its original chapter heading is retained, with no redundant repeated subtitle. Build-time guards and chapter QA reject titles without the recorded source match. Distinct chapter identifiers and unit context keep repeated author-supplied titles unambiguous.
+
+## Whole-book critical audit and lesson review
+
+The current pass adds 80 guarded text/table corrections beyond the previous 50-edit baseline (130 chapter/front-matter edits in total), 24 guarded structural repairs, and eight authored learner-review/transfer routines. It fixes misplaced vocabulary items, task-type errors, incomplete or duplicate instructions, a copied research topic, incomplete conclusions, and pronunciation problems. All original chapter-title wording remains source-backed; no editorial aliases were reintroduced.
+
+Five of the ten Unit 4 word-stress models were incorrect. All ten primary-stress positions were cross-checked against the CMU Pronouncing Dictionary at pinned revision `74790861f652b15e4ac49015a90074ad62a27690`. The five incorrect models and both table columns were corrected. The ten selected source entries, scope and source hash are in `book/publishing/pronunciation-reference.json`; the license is `book/assets/cmudict-LICENSE.txt`. This is not verification of every IPA transcription or every accent in the course.
+
+`qa_lessons.py` checks all 32 chapters, 88 multiple-choice groups for task grouping/option labels, seven vocabulary exercises containing 36 source items, all eight reading title/passage openings, the ten stress models, exact exported stress capitals and selected IPA examples, and eight unit-specific review tasks. It does not verify all answers, research claims, recordings, accessibility, or classroom effectiveness. The full release has 14 gates. Current pagination and export fingerprints are in `QA-REPORT.md`; do not reuse earlier 160/161-page counts.
+
+See `WHOLE-BOOK-AUDIT.md` for the unit-by-unit findings and remaining release conditions. Authoritative evidence—not another positive checklist—is still required to close original recording alignment, rights, independent factual/pedagogical review, native Word proof, accessibility/device testing, and physical print approval.

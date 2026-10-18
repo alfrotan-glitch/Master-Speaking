@@ -12,6 +12,7 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 - [Front-cover concept](Master-Speaking-Front-Cover.pdf) — front only, not a printer cover wrap
 - [Editorial and publication review](PUBLICATION-READINESS.md)
 - [Final language and typography review](FINAL-EDITORIAL-REVIEW.md)
+- [Whole-book critical audit and remediation](WHOLE-BOOK-AUDIT.md)
 - [Current QA results](QA-REPORT.md) and [text change log](CHANGELOG.md)
 
 This revision restores a previously truncated AI question, applies reviewed learner-facing copyedits, adds practical learning/research guidance without production commentary, improves default text contrast, and repairs chapter/table/title-page rendering. **It is an editorial proof, not a commercially cleared release.** Exact listening inputs, image permissions, factual substantiation, and final printer/device proofs remain open.
@@ -23,7 +24,7 @@ bash book/tools/bootstrap.sh
 python book/tools/release.py
 ```
 
-The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, then runs regression and production checks. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision.
+The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, then runs 14 regression, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision.
 
 ## Classroom implementation packs
 

@@ -300,7 +300,7 @@
       },
       {
        "k": "reading",
-       "text": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. This belief often prevents them from making progress. Language experts agree that mistakes are a natural part of learning. Every conversation provides an opportunity to improve vocabulary, pronunciation, and confidence.",
+       "text": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. Waiting for perfection can keep you out of the conversations you need for practice. When you speak, notice what helps your listener understand you, ask for feedback, and try again. A mistake can become something useful to work on.",
        "img": null
       },
       {
@@ -340,7 +340,7 @@
        "img": null
       },
       {
-       "k": "p",
+       "k": "q",
        "text": "According to the reading, communication is",
        "img": null
       },
@@ -783,6 +783,14 @@
        "src": 301
       },
       {
+       "k": "sub",
+       "text": "A. Multiple Choice"
+      },
+      {
+       "k": "instr",
+       "text": "Choose the best answer."
+      },
+      {
        "k": "q",
        "text": "According to the speaker, what is the main purpose of good listening?"
       },
@@ -864,9 +872,13 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "B. True or False",
        "src": 323,
        "img": null
+      },
+      {
+       "k": "instr",
+       "text": "Write T (True) or F (False). Correct the false statements."
       },
       {
        "k": "tf",
@@ -1006,7 +1018,7 @@
         ],
         [
          "jump to conclusions",
-         "make decisions too quickly",
+         "reach a judgment without enough information",
          "Don’t jump to conclusions.",
          "Give an example."
         ],
@@ -1024,7 +1036,7 @@
         ],
         [
          "make a strong impression",
-         "create a positive effect",
+         "have a powerful or lasting effect on how someone thinks about you or something",
          "Good communication makes a strong impression.",
          "How can students do this?"
         ],
@@ -1180,7 +1192,7 @@
       },
       {
        "k": "p",
-       "text": "Good speakers do not stress every word. They stress important words (content words) and reduce grammar words (function words). This helps listeners understand the main message.",
+       "text": "Speakers often emphasize key content words and give less stress to other words. Stress depends on meaning: even a short grammar word can be important when you want to make a contrast. Choose the words that help your listener understand your message.",
        "img": null
       },
       {
@@ -1196,7 +1208,7 @@
       },
       {
        "k": "p",
-       "text": "(Natural? No.)",
+       "text": "Equal stress on every word can make the main message harder to follow.",
        "img": null
       },
       {
@@ -1480,7 +1492,31 @@
       },
       {
        "k": "instr",
-       "text": "Use at least five collocations from Day 2 or Day 3."
+       "text": "Use at least five collocations from the listening or discussion chapter in this unit."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain your main point, listen to a response, and repair a misunderstanding without starting the whole conversation again?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Explain a useful idea to a partner. Ask them to say what they understood, then clarify one detail. Notice which wording helped."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -1667,12 +1703,12 @@
       },
       {
        "k": "reading",
-       "text": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. Unexpected challenges may require us to adjust our strategy, but we should not abandon our goal completely. Successful people review their progress regularly, learn from mistakes, and continue moving forward.",
+       "text": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. You may need to adjust your strategy, reduce the size of a task, or reconsider the goal itself. Changing a goal is not always the same as giving up. Review your progress, learn from setbacks, and decide which next step is realistic for your circumstances.",
        "img": null
       },
       {
        "k": "reading",
-       "text": "Researchers have found that writing down goals increases the likelihood of achieving them. People who write their goals often think more carefully about their plans and are more committed to taking action. Sharing goals with supportive friends, teachers, or family members can also provide encouragement and accountability.",
+       "text": "Writing down a goal gives you something concrete to review. Note what you want to do, how you will practise, and when you will check your progress. Sharing the plan with a supportive friend, teacher, or family member can help you stay accountable.",
        "img": null
       },
       {
@@ -1798,7 +1834,7 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "True or False",
        "src": 516,
        "img": null
       },
@@ -1918,11 +1954,6 @@
       {
        "k": "choice",
        "text": "Confidence"
-      },
-      {
-       "k": "p",
-       "text": "Family support Self-discipline Confidence",
-       "img": null
       },
       {
        "k": "label",
@@ -2089,7 +2120,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -2396,7 +2427,7 @@
        "text": "Think of a successful person you admire. Which expressions from today’s lesson describe that person best?"
       },
       {
-       "k": "q",
+       "k": "subsub",
        "text": "Challenge Question"
       },
       {
@@ -2476,7 +2507,7 @@
         ],
         [
          "strike a balance between... and...",
-         "to give equal attention to two important things",
+         "to find a suitable way to give attention to two competing needs",
          "Students should strike a balance between studying and relaxing."
         ],
         [
@@ -2868,6 +2899,30 @@
        "k": "p",
        "text": "Leave the audience with one final message.",
        "img": null
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain a realistic goal, the habit that supports it, and a sensible change to make when your plan is not working?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Choose one small speaking habit to try this week. Decide when you will practise and how you will notice progress. Review the plan after trying it."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -2984,11 +3039,11 @@
       },
       {
        "k": "instr",
-       "text": "Complete each sentence using the correct expression from the Reading Toolbox."
+       "text": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed."
       },
       {
        "k": "fill",
-       "text": "Speaking English every day is a form of ____________________________."
+       "text": "Speaking English with a clear goal and focused feedback is a form of ____________________________."
       },
       {
        "k": "fill",
@@ -3001,6 +3056,10 @@
       {
        "k": "fill",
        "text": "People who stay calm ____________________________ usually make better decisions."
+      },
+      {
+       "k": "fill",
+       "text": "Learning another language allows you to ____________________________ from different backgrounds."
       },
       {
        "k": "sec",
@@ -3023,10 +3082,6 @@
        "text": "How can emotional intelligence improve relationships?"
       },
       {
-       "k": "fill",
-       "text": "Learning another language allows you to ____________________________ from different backgrounds."
-      },
-      {
        "k": "readingtitle",
        "text": "The Power of Emotional Intelligence",
        "unit": 3,
@@ -3034,7 +3089,7 @@
       },
       {
        "k": "reading",
-       "text": "For many years, intelligence was measured mainly by IQ, or Intelligence Quotient. People believed that academic knowledge and logical reasoning were the most reliable predictors of success. However, research over the past few decades has challenged this assumption by highlighting another essential quality: emotional intelligence.",
+       "text": "IQ tests assess some cognitive abilities, but they do not describe every skill people use in daily life. A person may solve complex problems yet struggle to listen, handle frustration, or work with others. Emotional intelligence provides a way to discuss how people understand emotions and respond to them.",
        "img": null
       },
       {
@@ -3044,7 +3099,7 @@
       },
       {
        "k": "reading",
-       "text": "Psychologist Daniel Goleman popularized the concept of emotional intelligence by identifying five essential components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+       "text": "In the model popularized by psychologist Daniel Goleman, emotional intelligence includes five components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
        "img": null
       },
       {
@@ -3160,7 +3215,7 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "True or False",
        "src": 828,
        "img": null
       },
@@ -3281,7 +3336,7 @@
       },
       {
        "k": "p",
-       "text": "(Students evaluate, argue, and defend opinions.)",
+       "text": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
        "img": null
       },
       {
@@ -3347,7 +3402,7 @@
       },
       {
        "k": "instr",
-       "text": "Use at least six expressions from the Reading Toolbox."
+       "text": "Use at least six expressions from Vocabulary Preview."
       }
      ],
      "focus": "Speaking through Reading",
@@ -3424,7 +3479,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -3857,10 +3912,6 @@
        "text": "Work in groups of 3–4 students. Use at least eight expressions from the Speaking Toolbox."
       },
       {
-       "k": "instr",
-       "text": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible."
-      },
-      {
        "k": "q",
        "text": "Why do some people lose their temper more easily than others?"
       },
@@ -4258,7 +4309,7 @@
       },
       {
        "k": "p",
-       "text": "Explain the difference between goals and systems.",
+       "text": "Explain what emotional intelligence means and assess the evidence for improving it.",
        "img": null
       },
       {
@@ -4289,6 +4340,30 @@
        "k": "p",
        "text": "Leave the audience with one final message.",
        "img": null
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you describe an emotional response, consider another perspective, and suggest a constructive way to continue a difficult conversation?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Use a fictional disagreement. Try one response that assumes the worst and another that asks for clarification. Discuss how the two responses might affect the conversation."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -4409,7 +4484,7 @@
       },
       {
        "k": "instr",
-       "text": "Complete each sentence using the correct expression from the Reading Toolbox."
+       "text": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed."
       },
       {
        "k": "fill",
@@ -4585,7 +4660,7 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "True or False",
        "src": 1148,
        "img": null
       },
@@ -4761,7 +4836,7 @@
       },
       {
        "k": "instr",
-       "text": "Use at least six expressions from the Reading Toolbox and share your understanding of the quote."
+       "text": "Use at least six expressions from Vocabulary Preview to explain your understanding of the quote."
       }
      ],
      "focus": "Speaking through Reading",
@@ -4830,7 +4905,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -4848,7 +4923,7 @@
         ],
         [
          "go into debt",
-         "to owe money because you have spent more than you have",
+         "to begin owing money after borrowing or using credit",
          "Many people go into debt after buying things they cannot afford."
         ],
         [
@@ -5299,10 +5374,6 @@
        "text": "Work in groups of 3–4 students. Use at least eight expressions from the Speaking Toolbox."
       },
       {
-       "k": "instr",
-       "text": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible."
-      },
-      {
        "k": "q",
        "text": "What does financial freedom mean to you?"
       },
@@ -5332,7 +5403,7 @@
       },
       {
        "k": "q",
-       "text": "Should parents teach children how to manage money at school or at home?"
+       "text": "Who should teach children how to manage money: families, schools, or both? Why?"
       },
       {
        "k": "q",
@@ -5349,7 +5420,7 @@
       },
       {
        "k": "instr",
-       "text": "Choose one statement. Work in two teams. One team agrees, and the other disagrees. Give reasons and Student A"
+       "text": "Work in pairs. Student A defends the first statement, and Student B defends the second. Give reasons and examples, then respond to your partner’s argument."
       },
       {
        "k": "sub",
@@ -5485,6 +5556,10 @@
        "img": null
       },
       {
+       "k": "instr",
+       "text": "Capital letters mark primary stress. The letter groups are visual guides, not phonetic transcriptions."
+      },
+      {
        "k": "table",
        "role": "vocab",
        "rows": [
@@ -5501,32 +5576,32 @@
          "re LA tion ship"
         ],
         [
-         "expeRIence",
-         "ex pe RI ence"
+         "exPErience",
+         "ex PE ri ence"
         ],
         [
-         "geNErosity",
-         "ge NE ros i ty"
+         "geneROsity",
+         "ge ne RO si ty"
         ],
         [
          "satisFACtion",
          "sat is FAC tion"
         ],
         [
-         "reSPONsibility",
-         "re SPON si bil i ty"
+         "responsiBILity",
+         "re spon si BIL i ty"
         ],
         [
-         "opportuNIty",
-         "op por tu NI ty"
+         "opporTUnity",
+         "op por TU ni ty"
         ],
         [
          "inVESTment",
          "in VEST ment"
         ],
         [
-         "psyCHOlogical",
-         "psy CHO log i cal"
+         "psychoLOgical",
+         "psy cho LO gi cal"
         ],
         [
          "priORity",
@@ -5841,6 +5916,34 @@
        "text": "Conclusion",
        "src": 1402,
        "img": null
+      },
+      {
+       "k": "p",
+       "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain a choice about money and well-being, acknowledge a trade-off, and distinguish your values from a research claim?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Compare two possible uses of a fictional budget. Explain what each choice makes possible and what it leaves out. Ask a partner whose needs your plan may overlook."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -5961,11 +6064,11 @@
       },
       {
        "k": "instr",
-       "text": "Complete the sentences."
+       "text": "Complete each sentence with a suitable expression from Vocabulary Preview. Change its form if needed."
       },
       {
        "k": "fill",
-       "text": "Hospitals often __________________________ to analyze medical images more accurately."
+       "text": "Hospitals often use __________________________ to help analyze medical images."
       },
       {
        "k": "fill",
@@ -6127,9 +6230,13 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "True or False",
        "src": 1466,
        "img": null
+      },
+      {
+       "k": "instr",
+       "text": "Write T (True) or F (False). Correct the false statements."
       },
       {
        "k": "tf",
@@ -6343,7 +6450,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -6637,7 +6744,7 @@
       },
       {
        "k": "q",
-       "text": "Should governments pose restrictions on the development of powerful AI systems?"
+       "text": "Should governments impose restrictions on the development of powerful AI systems?"
       },
       {
        "k": "q",
@@ -6995,28 +7102,28 @@
       },
       {
        "k": "p",
-       "text": "For example:",
+       "text": "The underscores below show where sounds can link. Keep the normal spaces between words when writing.",
        "img": null
       },
       {
        "k": "pair",
-       "text": "turn_it_off → turnitoff"
+       "text": "turn_it_off"
       },
       {
        "k": "pair",
-       "text": "pick_it_up → pickitup"
+       "text": "pick_it_up"
       },
       {
        "k": "pair",
-       "text": "work_in → workin"
+       "text": "work_in"
       },
       {
        "k": "pair",
-       "text": "depend_on → dependon"
+       "text": "depend_on"
       },
       {
        "k": "p",
-       "text": "This is especially useful for your students because it helps them sound more fluent and natural, particularly during presentations and extended speaking.",
+       "text": "Linking can help you speak more smoothly and help listeners follow longer phrases. Keep your meaning clear; speed is not the goal.",
        "img": null
       },
       {
@@ -7086,7 +7193,7 @@
       },
       {
        "k": "p",
-       "text": "Students read each sentence three times:",
+       "text": "Read each sentence three times:",
        "img": null
       },
       {
@@ -7137,7 +7244,7 @@
       },
       {
        "k": "p",
-       "text": "The goal isn’t to make students speak faster. The goal is to make their speech smoother.",
+       "text": "Aim for smooth, clear phrases rather than faster speech.",
        "img": null
       },
       {
@@ -7518,6 +7625,34 @@
        "text": "Conclusion",
        "src": 1774,
        "img": null
+      },
+      {
+       "k": "p",
+       "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain an AI opportunity and a risk, question a claim, and say where human checking is needed?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Choose a non-sensitive claim from an AI response or an article about AI. Check it against an identifiable source. Explain what you could verify and what remains uncertain. Do not enter private information."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -7634,7 +7769,7 @@
       },
       {
        "k": "instr",
-       "text": "Use the correct expression from the vocabulary box."
+       "text": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed."
       },
       {
        "k": "fill",
@@ -7658,7 +7793,7 @@
       },
       {
        "k": "fill",
-       "text": "A strong relationship can help __________ during difficult periods."
+       "text": "Support from a partner or friend can __________ a difficult period."
       },
       {
        "k": "sec",
@@ -7667,6 +7802,10 @@
       {
        "k": "instr",
        "text": "Discuss."
+      },
+      {
+       "k": "instr",
+       "text": "Discuss respectful relationships, using fictional examples if you prefer. Compromise does not mean accepting threats, coercion, or violence. No one needs to share private experiences."
       },
       {
        "k": "q",
@@ -7830,7 +7969,7 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "True or False",
        "src": 1847,
        "img": null
       },
@@ -7963,7 +8102,7 @@
       },
       {
        "k": "p",
-       "text": "(Students evaluate, argue, and defend opinions.)",
+       "text": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
        "img": null
       },
       {
@@ -8018,7 +8157,7 @@
       },
       {
        "k": "instr",
-       "text": "Use at least six expressions from the Reading Toolbox."
+       "text": "Use at least six expressions from Vocabulary Preview."
       }
      ],
      "focus": "Speaking through Reading",
@@ -8095,7 +8234,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -8437,7 +8576,7 @@
        "src": 2009
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "What Makes Relationships Work?"
       },
       {
@@ -8659,7 +8798,7 @@
       }
      ],
      "focus": "Speaking through Discussion",
-     "title_source": "q"
+     "title_source": "sub"
     },
     {
      "number": 4,
@@ -8925,10 +9064,6 @@
       {
        "k": "instr",
        "text": "Choose one of the following topics."
-      },
-      {
-       "k": "instr",
-       "text": "Choose ONE of the following questions:"
       },
       {
        "k": "sub",
@@ -9200,6 +9335,38 @@
        "k": "p",
        "text": "Example or Evidence",
        "img": null
+      },
+      {
+       "k": "sub",
+       "text": "Conclusion"
+      },
+      {
+       "k": "p",
+       "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you discuss trust, expectations, and disagreement respectfully without assuming everyone wants or experiences the same kind of relationship?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Use a fictional couple, friendship, or team. Describe a disagreement about a shared plan. Suggest a respectful response that takes both people’s boundaries seriously."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -9292,7 +9459,7 @@
         ],
         [
          "be distributed equally",
-         "be shared fairly or in the same way among people",
+         "be shared in equal amounts among people or groups",
          "The benefits of economic growth are not always distributed equally."
         ],
         [
@@ -9332,12 +9499,16 @@
        "text": "Universities can __________ with researchers from other countries."
       },
       {
-       "k": "tf",
+       "k": "fill",
        "text": "__________ has become an important part of the modern global economy."
       },
       {
        "k": "fill",
        "text": "Social media helps small businesses __________ that they could not access before."
+      },
+      {
+       "k": "fill",
+       "text": "Studying abroad can create __________ for young people."
       },
       {
        "k": "sec",
@@ -9358,10 +9529,6 @@
       {
        "k": "q",
        "text": "How has the internet changed the way people communicate around the world?"
-      },
-      {
-       "k": "fill",
-       "text": "Studying abroad can create __________ for young people."
       },
       {
        "k": "readingtitle",
@@ -9522,7 +9689,7 @@
       },
       {
        "k": "sub",
-       "text": "B. True or False",
+       "text": "True or False",
        "src": 2226,
        "img": null
       },
@@ -9705,7 +9872,7 @@
       },
       {
        "k": "instr",
-       "text": "Use at least six expressions from the Reading Toolbox."
+       "text": "Use at least six expressions from Vocabulary Preview."
       }
      ],
      "focus": "Speaking through Reading",
@@ -9776,7 +9943,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -10035,7 +10202,7 @@
       },
       {
        "k": "sub",
-       "text": "A. True or False",
+       "text": "B. True or False",
        "src": 2334,
        "img": null
       },
@@ -10402,7 +10569,7 @@
        "img": null
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "/θ/ — voiceless TH"
       },
       {
@@ -10440,7 +10607,7 @@
        "img": null
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "/ð/ — voiced TH"
       },
       {
@@ -10495,7 +10662,7 @@
       },
       {
        "k": "instr",
-       "text": "Put your fingers lightly on your throat."
+       "text": "Touch your throat lightly. Sustain /θ/ and then /ð/ without adding a vowel; compare the vibration before saying the example words."
       },
       {
        "k": "label",
@@ -10704,7 +10871,7 @@
       },
       {
        "k": "instr",
-       "text": "Choose ONE of the following questions:"
+       "text": "Investigate the question below. Use the guiding questions to plan your research."
       },
       {
        "k": "sub",
@@ -10930,6 +11097,34 @@
        "text": "Conclusion",
        "src": 2525,
        "img": null
+      },
+      {
+       "k": "p",
+       "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain a global connection, identify who may benefit or lose, and support a judgment without ignoring a trade-off?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Choose an everyday product or service with an international connection. Find out what you can about that connection. Explain one possible benefit, one possible cost, and one question you still need to investigate."
       }
      ],
      "focus": "Speaking through Research Presentation",
@@ -11051,7 +11246,7 @@
       },
       {
        "k": "instr",
-       "text": "Use this idea to discuss the title above. Use as many vocabulary expressions as you can."
+       "text": "Discuss who should have a say in how English is used. Support your view with examples and expressions from Vocabulary Preview."
       },
       {
        "k": "p",
@@ -11281,6 +11476,14 @@
        "text": "D. Because dictionaries are privately owned"
       },
       {
+       "k": "sub",
+       "text": "Short-Answer Questions"
+      },
+      {
+       "k": "instr",
+       "text": "Answer in your own words. Use details from the reading to support your answers."
+      },
+      {
        "k": "q",
        "text": "What is a lingua franca?"
       },
@@ -11413,7 +11616,7 @@
       },
       {
        "k": "instr",
-       "text": "It is the year 2050. English is still the world’s most widely used international language—but 90% of its users are non-native speakers."
+       "text": "Imagine the year 2050. For this discussion, assume that English remains a widely used international language and that 90% of its users are non-native speakers."
       },
       {
        "k": "label",
@@ -11528,7 +11731,7 @@
       },
       {
        "k": "instr",
-       "text": "Focus on these useful expressions based on the TED-Ed lesson."
+       "text": "Study the following expressions before listening."
       },
       {
        "k": "table",
@@ -11926,7 +12129,7 @@
       },
       {
        "k": "instr",
-       "text": "They must also use at least two expressions from the vocabulary section, such as:"
+       "text": "In both groups, use at least two of the following expressions in your arguments:"
       },
       {
        "k": "p",
@@ -11945,12 +12148,12 @@
       },
       {
        "k": "p",
-       "text": "prohibitive",
+       "text": "prohibitive — so costly that access becomes difficult",
        "img": null
       },
       {
        "k": "p",
-       "text": "far-reaching consequences",
+       "text": "far-reaching consequences — effects felt in many areas or over a long time",
        "img": null
       }
      ],
@@ -11967,7 +12170,7 @@
        "src": 2717
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "WHO OWNS ENGLISH?"
       },
       {
@@ -12137,7 +12340,7 @@
       }
      ],
      "focus": "Speaking through Discussion",
-     "title_source": "q"
+     "title_source": "sub"
     },
     {
      "number": 4,
@@ -12155,16 +12358,16 @@
       },
       {
        "k": "p",
-       "text": "One of the biggest differences between natural English pronunciation and careful learner pronunciation is the schwa /ə/.",
+       "text": "The schwa /ə/ is a useful sound to notice in unstressed syllables. Its use varies across words, accents, and speaking situations.",
        "img": null
       },
       {
        "k": "p",
-       "text": "The schwa is the weak, relaxed vowel sound found in many unstressed syllables. Learning to use it makes speech smoother, faster, and more natural—especially during presentations.",
+       "text": "The schwa is a relaxed vowel found in many unstressed syllables. Practise it to make the contrast between stressed and unstressed syllables clearer, not simply to speak faster.",
        "img": null
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "The Schwa in Common Words"
       },
       {
@@ -12208,12 +12411,12 @@
        "img": null
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "The Schwa in Academic Vocabulary"
       },
       {
        "k": "p",
-       "text": "These words are especially useful for today’s presentation topic:",
+       "text": "Compare these words from today’s topic. Most contain a schwa; linguistic is a contrast example without one.",
        "img": null
       },
       {
@@ -12262,7 +12465,7 @@
        "img": null
       },
       {
-       "k": "q",
+       "k": "sub",
        "text": "The Schwa in Function Words"
       },
       {
@@ -12272,8 +12475,27 @@
       },
       {
        "k": "p",
-       "text": "to → /tə/a → /ə/the → /ðə/for → /fə/of → /əv/ or /ə/can → /kən/",
-       "img": null
+       "text": "to → /tə/"
+      },
+      {
+       "k": "p",
+       "text": "a → /ə/"
+      },
+      {
+       "k": "p",
+       "text": "the → /ðə/"
+      },
+      {
+       "k": "p",
+       "text": "for → /fə/"
+      },
+      {
+       "k": "p",
+       "text": "of → /əv/ or /ə/"
+      },
+      {
+       "k": "p",
+       "text": "can → /kən/"
       },
       {
        "k": "p",
@@ -12448,23 +12670,11 @@
       },
       {
        "k": "instr",
-       "text": "Research your topic using reliable sources."
-      },
-      {
-       "k": "instr",
        "text": "Choose one of the following topics."
       },
       {
        "k": "instr",
-       "text": "Choose ONE of the following questions:"
-      },
-      {
-       "k": "instr",
        "text": "Research your topic using reliable sources."
-      },
-      {
-       "k": "instr",
-       "text": "Choose ONE of the following questions."
       },
       {
        "k": "sub",
@@ -12742,6 +12952,38 @@
        "k": "p",
        "text": "Example or Evidence",
        "img": null
+      },
+      {
+       "k": "sub",
+       "text": "Conclusion"
+      },
+      {
+       "k": "p",
+       "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      },
+      {
+       "k": "sub",
+       "text": "Sources Used"
+      },
+      {
+       "k": "instr",
+       "text": "List the author or organization, title, and date for each source. Add a page number or link when available."
+      },
+      {
+       "k": "sec",
+       "text": "Reflect and Try Again"
+      },
+      {
+       "k": "instr",
+       "text": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again."
+      },
+      {
+       "k": "p",
+       "text": "Check your progress: Can you explain an idea to a multilingual audience, adapt an unclear expression, and separate English proficiency from a person’s knowledge?"
+      },
+      {
+       "k": "p",
+       "text": "Put it to use: Explain an idea from your community to someone unfamiliar with it. Define one local expression or cultural reference. Ask what they understood and revise your explanation without treating either person’s accent as a problem."
       }
      ],
      "focus": "Speaking through Research Presentation",

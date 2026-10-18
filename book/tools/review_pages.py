@@ -32,7 +32,10 @@ def main():
                 draw.text((x, y - 18), str(start + index + 1), fill='black')
             sheet.save(OUT / f'overview-{start + 1:03d}.jpg', quality=85)
         chapter_starts = [page for depth, title, page in doc.get_toc() if title.startswith('Chapter ')]
-        comparisons = [i+1 for i, page in enumerate(doc) if 'Flat delivery' in page.get_text()]
+        review_markers = ['Flat delivery', 'Reflect and Try Again', 'fiNANcial',
+                          'The Schwa in Function Words', 'Short-Answer Questions']
+        comparisons = [i+1 for i, page in enumerate(doc)
+                       if any(marker in page.get_text() for marker in review_markers)]
         selected = sorted(set([1, 4, 5, 7, len(doc)] + chapter_starts + comparisons))
         for page in selected:
             doc[page - 1].get_pixmap().save(OUT / f'page-{page:03d}.png')

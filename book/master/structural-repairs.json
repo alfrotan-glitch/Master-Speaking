@@ -1,0 +1,300 @@
+[
+  {
+    "unit": 3,
+    "chapter": 1,
+    "operation": "move_before",
+    "reason": "Return a misplaced vocabulary sentence to Vocabulary Check, before the pre-reading section.",
+    "text": "Learning another language allows you to ____________________________ from different backgrounds.",
+    "anchor": "Before You Read"
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "operation": "move_before",
+    "reason": "Return a misplaced vocabulary sentence to Vocabulary Check, before the pre-reading section.",
+    "text": "Studying abroad can create __________ for young people.",
+    "anchor": "Before You Read"
+  },
+  {
+    "unit": 1,
+    "chapter": 1,
+    "operation": "set_kind",
+    "reason": "Make the first multiple-choice stem a numbered question like the other four.",
+    "text": "According to the reading, communication is",
+    "old_kind": "p",
+    "new_kind": "q"
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "operation": "set_kind",
+    "reason": "A vocabulary blank is not a true/false statement.",
+    "text": "__________ has become an important part of the modern global economy.",
+    "old_kind": "tf",
+    "new_kind": "fill"
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "operation": "set_kind",
+    "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+    "text": "/θ/ — voiceless TH",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "operation": "set_kind",
+    "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+    "text": "/ð/ — voiced TH",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "operation": "set_kind",
+    "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+    "text": "The Schwa in Common Words",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "operation": "set_kind",
+    "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+    "text": "The Schwa in Academic Vocabulary",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "operation": "set_kind",
+    "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+    "text": "The Schwa in Function Words",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 6,
+    "chapter": 3,
+    "operation": "set_kind",
+    "reason": "Treat the existing discussion title as a heading rather than an isolated numbered question.",
+    "text": "What Makes Relationships Work?",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 3,
+    "operation": "set_kind",
+    "reason": "Treat the existing discussion title as a heading rather than an isolated numbered question.",
+    "text": "WHO OWNS ENGLISH?",
+    "old_kind": "q",
+    "new_kind": "sub"
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "operation": "insert_before",
+    "reason": "Separate open-response questions from the preceding multiple-choice task.",
+    "anchor": "What is a lingua franca?",
+    "blocks": [
+      {
+        "k": "sub",
+        "text": "Short-Answer Questions"
+      },
+      {
+        "k": "instr",
+        "text": "Answer in your own words. Use details from the reading to support your answers."
+      }
+    ]
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "operation": "insert_before",
+    "reason": "Supply the missing true/false task direction.",
+    "anchor": "_____ AI is mainly a technology that will be used in the distant future.",
+    "blocks": [
+      {
+        "k": "instr",
+        "text": "Write T (True) or F (False). Correct the false statements."
+      }
+    ]
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "operation": "split",
+    "reason": "Separate six fused weak-form examples into readable individual lines.",
+    "text": "to → /tə/a → /ə/the → /ðə/for → /fə/of → /əv/ or /ə/can → /kən/",
+    "blocks": [
+      {
+        "k": "p",
+        "text": "to → /tə/"
+      },
+      {
+        "k": "p",
+        "text": "a → /ə/"
+      },
+      {
+        "k": "p",
+        "text": "the → /ðə/"
+      },
+      {
+        "k": "p",
+        "text": "for → /fə/"
+      },
+      {
+        "k": "p",
+        "text": "of → /əv/ or /ə/"
+      },
+      {
+        "k": "p",
+        "text": "can → /kən/"
+      }
+    ]
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "operation": "insert_before",
+    "reason": "Make respectful boundaries and the option not to disclose personal experiences explicit in the relationship unit.",
+    "anchor": "Do you think people’s expectations of marriage have changed over time?",
+    "blocks": [
+      {
+        "k": "instr",
+        "text": "Discuss respectful relationships, using fictional examples if you prefer. Compromise does not mean accepting threats, coercion, or violence. No one needs to share private experiences."
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "operation": "insert_after",
+    "reason": "Complete the empty conclusion prompt in the presentation outline.",
+    "anchor": "Conclusion",
+    "blocks": [
+      {
+        "k": "p",
+        "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      }
+    ]
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "operation": "insert_after",
+    "reason": "Complete the empty conclusion prompt in the presentation outline.",
+    "anchor": "Conclusion",
+    "blocks": [
+      {
+        "k": "p",
+        "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      }
+    ]
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "operation": "insert_after",
+    "reason": "Complete the empty conclusion prompt in the presentation outline.",
+    "anchor": "Conclusion",
+    "blocks": [
+      {
+        "k": "p",
+        "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      }
+    ]
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "operation": "append",
+    "reason": "Complete the presentation outline, which stops after Main Point 3.",
+    "expected_tail": "Example or Evidence",
+    "blocks": [
+      {
+        "k": "sub",
+        "text": "Conclusion"
+      },
+      {
+        "k": "p",
+        "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      }
+    ]
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "operation": "append",
+    "reason": "Complete the presentation outline, which stops after Main Point 3.",
+    "expected_tail": "Example or Evidence",
+    "blocks": [
+      {
+        "k": "sub",
+        "text": "Conclusion"
+      },
+      {
+        "k": "p",
+        "text": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought."
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "operation": "insert_after",
+    "anchor": "Correct word stress makes your speech easier to understand.",
+    "blocks": [
+      {
+        "k": "instr",
+        "text": "Capital letters mark primary stress. The letter groups are visual guides, not phonetic transcriptions."
+      }
+    ],
+    "reason": "Explain how to read the corrected stress table without treating its letter groups as IPA."
+  },
+  {
+    "unit": 1,
+    "chapter": 2,
+    "operation": "insert_before",
+    "anchor": "According to the speaker, what is the main purpose of good listening?",
+    "blocks": [
+      {
+        "k": "sub",
+        "text": "A. Multiple Choice"
+      },
+      {
+        "k": "instr",
+        "text": "Choose the best answer."
+      }
+    ],
+    "reason": "Give the first listening question set the same explicit multiple-choice boundary used in the other listening chapters."
+  },
+  {
+    "unit": 1,
+    "chapter": 2,
+    "operation": "insert_before",
+    "anchor": "_____ Good listeners should remove distractions before a conversation.",
+    "blocks": [
+      {
+        "k": "instr",
+        "text": "Write T (True) or F (False). Correct the false statements."
+      }
+    ],
+    "reason": "Supply a usable direction for the true/false task."
+  },
+  {
+    "unit": 2,
+    "chapter": 2,
+    "operation": "set_kind",
+    "text": "Challenge Question",
+    "old_kind": "q",
+    "new_kind": "subsub",
+    "reason": "Render the challenge label as a subheading, not as a numbered question."
+  }
+]

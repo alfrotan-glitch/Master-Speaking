@@ -180,6 +180,7 @@ def para_flows(p, doc, ctx=None):
                 if h and w:
                     f = Image(_img_cache[rid], width=w, height=h)
                     f.hAlign = 'CENTER'
+                    f.keepWithNext = int(bool(p.paragraph_format.keep_with_next))
                     out.append(f)
             continue
         txt = r.text

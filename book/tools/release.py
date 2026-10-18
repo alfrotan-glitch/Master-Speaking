@@ -40,7 +40,7 @@ def main():
                 raise SystemExit(f'Build stopped at {name}; no success report written.')
     if run('review_pages')['exit_code']:
         raise SystemExit('Could not render current proof pages.')
-    names = ['revision', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
+    names = ['revision', 'lessons', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
     results = {name: run('qa_' + name) for name in names}
     palette = {'accent on white': contrast(ACCENT, 'FFFFFF'),
                'white on banner': contrast('FFFFFF', BANNER),
@@ -87,7 +87,7 @@ def main():
     md.extend(['', '## Palette contrast (default colors only)', ''])
     md.extend(f'- {name}: {ratio:.2f}:1' for name, ratio in palette.items())
     md.extend(['', '## Scope and limitations', '',
-               '- Content and fidelity checks trace source text into the semantic master and the master into PDF, Word, and EPUB. They do not verify factual accuracy or teaching effectiveness.',
+               '- Content checks trace source text into the semantic master; fidelity checks require complete normalized blocks and minimum occurrence counts in PDF, Word, and EPUB. Lesson checks cover defined organizational, stress-capitalization, and IPA regression cases. These are not universal semantic-order checks, verified answer keys, factual approval, or classroom validation.',
                '- Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.',
                '- Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.',
                '- EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.',

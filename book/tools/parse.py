@@ -1047,6 +1047,8 @@ def build():
             parent[key] = edit['correction']
         log('How to Use · final language review', str(edit['original']),
             str(edit['correction']) or '(removed)', edit['reason'], 'high (reviewed)')
+    from lesson_review import apply_repairs
+    apply_repairs(book, log)
     title_plan = json.load(open(os.path.join(ROOT, 'book', 'master', 'chapter-titles.json'), encoding='utf-8'))
     if [item['unit'] for item in title_plan] != list(range(1, 9)):
         raise ValueError('Chapter title plan must cover Units 1–8 in order')

@@ -85,7 +85,7 @@
     "sources": [
       "readingtitle",
       "mediatitle",
-      "q",
+      "sub",
       "original-chapter-heading"
     ]
   },
@@ -115,7 +115,7 @@
     "sources": [
       "readingtitle",
       "mediatitle",
-      "q",
+      "sub",
       "original-chapter-heading"
     ]
   }

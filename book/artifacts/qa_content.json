@@ -1,6 +1,6 @@
 {
  "checked": 3181,
- "covered": 3128,
+ "covered": 3083,
  "classified_transforms": [
   [
    "Forward -> Foreword (locked decision)",
@@ -48,14 +48,39 @@
    "study 10 carefully selected collocations, phrasal "
   ],
   [
+   "table-cell-logged",
+   344,
+   "make decisions too quickly"
+  ],
+  [
+   "table-cell-logged",
+   344,
+   "create a positive effect"
+  ],
+  [
    "logged-correction",
    353,
    "now students already have the language they need."
   ],
   [
    "logged-correction",
+   390,
+   "good speakers do not stress every word. they stres"
+  ],
+  [
+   "logged-correction",
+   393,
+   "(natural? no.)"
+  ],
+  [
+   "logged-correction",
    397,
    "read these sentences aloud. stress the bold words."
+  ],
+  [
+   "logged-correction",
+   445,
+   "use at least five collocations from day 2 or day 3"
   ],
   [
    "dedup-by-design",
@@ -64,13 +89,38 @@
   ],
   [
    "logged-correction",
+   483,
+   "researchers have found that writing down goals inc"
+  ],
+  [
+   "logged-correction",
+   588,
+   "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
    672,
    "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "table-cell-logged",
+   673,
+   "to give equal attention to two important things"
   ],
   [
    "dedup-by-design",
    770,
    "emotional intelligenceemotional intelligenceunit 3"
+  ],
+  [
+   "logged-correction",
+   783,
+   "complete each sentence using the correct expressio"
+  ],
+  [
+   "logged-correction",
+   795,
+   "for many years, intelligence was measured mainly b"
   ],
   [
    "logged-correction",
@@ -89,8 +139,28 @@
   ],
   [
    "logged-correction",
+   854,
+   "(students evaluate, argue, and defend opinions.)"
+  ],
+  [
+   "logged-correction",
+   869,
+   "use at least six expressions from the reading tool"
+  ],
+  [
+   "logged-correction",
+   905,
+   "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
    986,
    "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   1000,
+   "discuss the following questions with your group. u"
   ],
   [
    "logged-correction",
@@ -108,6 +178,11 @@
    "money and happinessmoney and happinessunit 4unit 4"
   ],
   [
+   "logged-correction",
+   1103,
+   "complete each sentence using the correct expressio"
+  ],
+  [
    "activity-fold (changelog)",
    1169,
    "activity 1: discuss the following questions."
@@ -119,13 +194,43 @@
   ],
   [
    "logged-correction",
+   1186,
+   "use at least six expressions from the reading tool"
+  ],
+  [
+   "logged-correction",
+   1222,
+   "focus on these useful expressions based on the ted"
+  ],
+  [
+   "table-cell-logged",
+   1223,
+   "to owe money because you have spent more than you "
+  ],
+  [
+   "logged-correction",
    1298,
    "study 10 carefully selected collocations, phrasal "
   ],
   [
    "logged-correction",
+   1313,
+   "discuss the following questions with your group. u"
+  ],
+  [
+   "logged-correction",
+   1321,
+   "should parents teach children how to manage money "
+  ],
+  [
+   "logged-correction",
    1404,
    "living with ai (artificial intelligence)living wit"
+  ],
+  [
+   "logged-correction",
+   1421,
+   "hospitals often __________________________ to anal"
   ],
   [
    "logged-correction",
@@ -136,6 +241,11 @@
    "logged-correction",
    1496,
    "share your ideas about the quad:"
+  ],
+  [
+   "logged-correction",
+   1520,
+   "focus on these useful expressions based on the ted"
   ],
   [
    "logged-correction",
@@ -158,14 +268,39 @@
    "when native speakers speak naturally, the words in"
   ],
   [
+   "dedup-by-design",
+   1676,
+   "turn_it_off → turnitoffpick_it_up → pickitupwork_i"
+  ],
+  [
+   "logged-correction",
+   1677,
+   "this is especially useful for your students becaus"
+  ],
+  [
    "logged-correction",
    1679,
    "have students practice these phrases first slowly,"
   ],
   [
+   "logged-correction",
+   1691,
+   "students read each sentence three times:"
+  ],
+  [
+   "logged-correction",
+   1701,
+   "the goal isn't to make students speak faster. the "
+  ],
+  [
    "dedup-by-design",
    1804,
    "is love enough? is love enough? unit 6unit 6"
+  ],
+  [
+   "logged-correction",
+   1815,
+   "use the correct expression from the vocabulary box"
   ],
   [
    "activity-fold (changelog)",
@@ -176,6 +311,21 @@
    "logged-correction",
    1878,
    "activity 2: critical thinking"
+  ],
+  [
+   "logged-correction",
+   1879,
+   "(students evaluate, argue, and defend opinions.)"
+  ],
+  [
+   "logged-correction",
+   1890,
+   "use at least six expressions from the reading tool"
+  ],
+  [
+   "logged-correction",
+   1931,
+   "focus on these useful expressions based on the ted"
   ],
   [
    "logged-correction",
@@ -198,9 +348,19 @@
    "ask students to put these words into three groups:"
   ],
   [
+   "logged-correction",
+   2090,
+   "choose one of the following questions:"
+  ],
+  [
    "dedup-by-design",
    2177,
    "unit 7unit 7globalizationglobalization"
+  ],
+  [
+   "table-cell-logged",
+   2188,
+   "be shared fairly or in the same way among people"
   ],
   [
    "activity-fold (changelog)",
@@ -214,13 +374,38 @@
   ],
   [
    "logged-correction",
+   2264,
+   "use at least six expressions from the reading tool"
+  ],
+  [
+   "logged-correction",
+   2298,
+   "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
    2380,
    "study 10 carefully selected collocations, phrasal "
+  ],
+  [
+   "logged-correction",
+   2444,
+   "put your fingers lightly on your throat."
+  ],
+  [
+   "logged-correction",
+   2478,
+   "choose one of the following questions:"
   ],
   [
    "dedup-by-design",
    2542,
    "unit 8unit 8lingua francalingua franca"
+  ],
+  [
+   "logged-correction",
+   2554,
+   "use this idea to discuss about the title above. us"
   ],
   [
    "activity-fold (changelog)",
@@ -234,8 +419,23 @@
   ],
   [
    "logged-correction",
+   2627,
+   "it is the year 2050. english is still the world's "
+  ],
+  [
+   "logged-correction",
    2650,
    "choose one and explain their choice."
+  ],
+  [
+   "logged-correction",
+   2651,
+   "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
+   2708,
+   "they must also use at least two expressions from t"
   ],
   [
    "logged-correction",
@@ -249,8 +449,23 @@
   ],
   [
    "logged-correction",
+   2760,
+   "one of the biggest differences between natural eng"
+  ],
+  [
+   "logged-correction",
+   2761,
+   "the schwa is the weak, relaxed vowel sound found i"
+  ],
+  [
+   "logged-correction",
    2763,
    "see how the unstressed vowel becomes weak:"
+  ],
+  [
+   "logged-correction",
+   2772,
+   "these words are especially useful for today's pres"
   ],
   [
    "logged-correction",
@@ -266,6 +481,16 @@
    "logged-correction",
    2807,
    "then have students say the words first carefully, "
+  ],
+  [
+   "logged-correction",
+   2817,
+   "choose one of the following questions:"
+  ],
+  [
+   "logged-correction",
+   2819,
+   "choose one of the following questions."
   ]
  ],
  "missing": [],

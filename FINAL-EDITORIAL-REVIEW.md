@@ -1,91 +1,45 @@
-# Final Language, Typography & Design Review
+# Current language, teaching and design review
 
 17 October 2026 • Master Speaking
 
-## Result
+## Status
 
-The current book is a **revised editorial proof**, with a 160-page print interior and a 161-page reading edition including the front cover. Ten automated regression/production checks pass. The separate 17-page classroom companion also passes its export checks. The original author-supplied manuscript has not been modified.
+**Revised editorial proof, not a commercially cleared or error-free publication.** Current interior: **165 pages**; reader edition with front cover: **166 pages**. All **14** release gates pass, including official EPUBCheck 5.3.0 with zero errors/warnings. The original manuscript is unchanged.
 
-This is not a certification that the book is error-free, entirely human-written, or commercially cleared. The editing and production work is AI-assisted. Natural prose is an editorial goal, not proof of who wrote a passage; no AI-detector score or authorship guarantee is offered.
+The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It supersedes older block/page/check counts and records both corrected defects and outstanding release conditions. Editorial work is AI-assisted; a signed independent human proof has not been supplied.
 
-## Language and authorial voice
+## Language and teaching
 
-The title **Master Speaking** is retained. It describes the course without inventing a test qualification or an endorsement. The author-provided examples and thematic structure remain; the text has not been wholesale rewritten into a uniform promotional voice.
+- The exact title **Master Speaking** and all source-backed chapter-title wording are preserved. No invented chapter aliases, test qualification, endorsement, or world-best claim is added.
+- The reviewed chapter/front-matter register contains **130 exact-match changes**, including 80 added during the latest whole-book pass. **24 guarded structural repairs** separately correct order, classification, missing task boundaries, repeated directions and incomplete outlines.
+- Eight authored learner-review routines connect evidence, peer feedback, revision and a unit-specific practical application. These are new learner material, not recovered manuscript content or classroom trial results.
+- Corrected a copied goals/systems instruction in the emotional-intelligence research outline, incomplete debate directions, vocabulary placement/grammar, undefined references, and teacher-facing leftovers.
+- Five incorrect primary-stress models in Unit 4 are repaired; all ten stress positions have a pinned CMU lexicon reference and license record. Selected stress-capitalization and IPA examples have case-sensitive export checks. Wider pronunciation/subject review remains open.
+- The readings retain the author’s themes and examples. Unsupported appeals to experts/research have been replaced in selected passages with practical advice or carefully framed model descriptions—not fabricated citations. Remaining research claims still require substantiation.
 
-The reviewed-edit register now contains **50 exact-match changes** across chapter prose, vocabulary cells, and front matter, in addition to the earlier reconstruction repairs and the complete AI-question restoration. Every such change is guarded against source drift and logged.
+## Design and production
 
-Specific follow-up improvements:
+| Element | Current treatment / limit |
+|---|---|
+| Trim | 7 × 10 inches; printer requirements and physical approval still pending |
+| Main text | Source Serif 4, 11 pt; approximately 15.6 pt print leading |
+| Instructions | Source Sans 3, 10 pt; kept with following content where supported |
+| Tables | 9.2 pt, left aligned, content-aware widths; not a large-print edition |
+| Headings | Consistent dark-teal hierarchy; exact source-backed chapter titles |
+| Chapters / units | 32 fresh-page PDF chapter starts; eight recto unit openers |
+| Reading openings | Heading, image and beginning of the passage kept together; eight actual openings checked |
+| Navigation | Recomputed PDF contents folios/links, bookmarks/labels and reader offsets; matching Word/EPUB titles |
+| Fonts | Pinned official Adobe static fonts with hashes and OFL licenses |
+| Palette | Default contrast ratios 6.86:1, 7.87:1 and 15.44:1; not whole-book accessibility certification |
+| EPUB | Official EPUBCheck 5.3.0 pass; reader/device and accessibility tests still required |
+| Print cover | Original front-only concept, not a printer-approved full wrap |
 
-- Removed the stray one-minute prediction direction in the relationships unit; it belonged to a different activity type.
-- Changed remaining teacher-facing instructions into direct directions to the learner.
-- Replaced “carefully selected” promotional filler with a practical instruction to use the expressions in discussion. Repeated lesson structure remains intentional, not a reason to vary instructions arbitrarily.
-- Repaired the opening welcome line, parallel verb-led learning outcomes, a duplicated closing sentence, and missing final punctuation.
-- Removed the misleading contrast implying IQ cannot change; retained practical advice for working on emotional skills.
-- Qualified the claim that AI is faster and more accurate than people; performance is now explicitly task-dependent.
-- Standardized ordinary vocabulary headwords to lowercase while retaining proper names, acronyms, and sentence capitalization.
-- Renamed the Unit 8 quote-based vocabulary activity “Vocabulary in Discussion,” matching what students actually do.
+## Evidence and limits
 
-These edits improve clarity and restraint. They do not establish that every research claim in the remaining readings has been independently verified. Exact listening inputs and research references remain publication tasks.
+- Lesson logic checks: 32 chapters; 88 multiple-choice groups for organization/lettering; 36 vocabulary sentences across seven exercises; eight reading openings; ten stress models; eight unit-review tasks.
+- Cross-format coverage: **3,482 complete normalized semantic text blocks** plus minimum occurrence counts, with separate defined stress/IPA regression cases. Text normalization is not a universal semantic-order, typographic or factual proof.
+- All **165 pages** rendered as thumbnails in **9** overviews; **47** selected full-size proof pages. Exact coverage and the PDF fingerprint are in `book/qa/edition-review/index.json`. Selected revised pages were inspected; no signed full human page proof is claimed.
+- Separate classroom and companion checks pass; these materials remain outside the main book and do not validate original recordings.
+- Open conditions: original recording alignment, image/quotation permissions, factual and specialist review, native Word contents/pagination, accessible outputs and device testing, print assets/physical proof, publisher metadata and a learner pilot.
 
-## Typography and design
-
-| Element | Current treatment | Verification / limit |
-|---|---|---|
-| Main title | Master Speaking; coordinated cover/title-page typography | No invented qualification or bestseller claim |
-| Main reading and question text | Source Serif 4, 11 pt; print leading approximately 15.6 pt | Larger than the preceding print proof; native Word output still needs comparison |
-| Instructions | Source Sans 3, 10 pt, distinct from readings | Directions kept with following content where supported |
-| Table text | 9.2 pt, left aligned, content-aware widths | Long headwords receive reserved width; not a large-print edition |
-| Headings | Teal accents, consistent chapter hierarchy, pale section bands | Single chapter heading in Word/PDF; no duplicate fused label |
-| Typefaces | Official static Adobe Source Sans 3 / Source Serif 4 files | Pinned source revisions, SHA-256 hashes, and OFL texts in `book/assets/fonts/` |
-| Fallback glyphs | Existing DejaVu font path in PDF renderer | Distribution copyright/license notice retained alongside font records |
-| Color | Dark teal on white, white on dark teal, dark ink on pale mint | Contrast ratios 6.86:1, 7.87:1, and 15.44:1 respectively; not whole-book accessibility certification |
-| Student guide | Compact, parallel chapter overviews with visible bullets | Each short chapter overview kept together |
-| Contents | One-page print contents; all eight units and 32 chapters | Page references checked against current pagination |
-| Recto starts | Units begin on recto; deliberate blank versos may remain | Front blank no longer carries an inherited unit header |
-| EPUB | Reflowable text with reader-font fallbacks and descriptive cover alt text | Font size and appearance depend on reading-system preferences; official EPUBCheck/device tests pending |
-| Print cover | Original front-only typographic concept | Not a full printer-specified bleed/spine/back wrap |
-
-The previous font subsets had inconsistent family metadata, including “ExtraLight” names for regular-weight files. They were replaced rather than cosmetically relabelled. The new files are sourced from pinned official Adobe repository revisions, with licenses and provenance retained.
-
-## Verification evidence
-
-- All ten gates in `QA-REPORT.md` pass: revision, source content, editorial mechanics, Word structure, cross-format fidelity, print, page proof, preflight, EPUB structure, and layout metrics.
-- All **3,399 semantic text blocks** are traced into PDF, Word, and EPUB. The change from the preceding block count reflects removal of the stray prediction and duplicated guide sentence, not silent loss.
-- All 160 pages were rendered in eight thumbnail overviews for a broad layout scan. Selected full-size page renders cover the title, guide, contents, all 32 chapter openings, corrected pronunciation comparison, and final page; the exact current selection is in the proof manifest. The current PDF checksum and image coverage are recorded in `book/qa/edition-review/index.json`.
-- The overview scan checks broad layout balance, missing content regions, and obvious placement anomalies. It is not a line-by-line reading of every page. Selected full-size pages were inspected during the revision.
-- Content/editorial/print QA scripts now return a failing process status when they find issues. Page-proof checks use the detected main-text start, not the previous hard-coded page 11. Word heading checks distinguish the four front-guide headings from instructional section headings.
-- `git diff --check` passes for textual changes. Publication exports are declared binary in `.gitattributes`.
-
-## What still needs an independent sign-off
-
-Before calling the book commercially ready, obtain exact recordings and check their exercises, substantiate remaining research claims, clear existing image/quotation rights, confirm publishing metadata, run native Word and ebook/device tests, and approve a physical printer proof. A qualified human English-language editor should also review the complete final manuscript and confirm the intended voice, audience, and exercise answerability.
-
-See `PUBLICATION-READINESS.md`, `UNRESOLVED-ISSUES.md`, and the publishing registers for those concrete tasks. The aim is a dependable teaching book, not an unsupported promise that “everything is perfect.”
-
-## Subsequent reader-facing cleanup
-
-The book’s discussion/revision commentary has been removed at the author’s request. Reader guidance remains as ordinary book prose; production history and unresolved requirements stay in external reports. Two further exact-match edits remove a teacher-facing aside and revise an indirect instruction. Current counts and checks supersede the snapshot above: see QA-REPORT.md and `book/artifacts/qa_publication.json`. The clean reader file is `Master-Speaking.pdf`.
-
-## Chapter titles and pagination follow-up
-
-All 32 chapter headings now follow the exact existing manuscript/lesson wording, with source selectors recorded in `book/master/chapter-titles.json`. Twenty-three headings use an existing principal reading, listening, discussion, or research title; nine retain the original learning-strand chapter heading because no single principal content title is supplied. Existing repeated titles are preserved rather than replaced with invented alternatives. Learning-strand subtitles appear only when they differ from the heading. Chapter numbering still runs 1–4 within each unit to preserve classroom references. Contents entries, Word headings, PDF bookmarks, and EPUB navigation use the same titles. The copied marriage-topic heading in Unit 8’s English discussion has been corrected to “English and Academic Opportunity.”
-
-Every chapter opens on a fresh page in the generated PDF; Word stores an explicit page-break-before property on each chapter heading, with the title and learning-focus subtitle kept together. Native Word pagination still requires a Word proof. Unit openers continue to start on right-hand pages. The interior title page has no visible folio; the front matter uses lowercase Roman numerals and main text uses continuous Arabic numbering. PDF viewer page labels match these sequences, including the separate cover offset. EPUB reading order now places each unit opener before its four chapters, with chapter-level page-break styling for paginated readers; reflowable ebooks do not have fixed print page counts.
-
-A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 13 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
-
-## Strict-audit follow-up
-
-Five further guarded edits repair the missing stress contrast and qualify the question-intonation rule in Unit 3 Chapter 4. The original sentence remains as the flat model; “Emotional intelligence is IMPORTANT for EVERYONE.” is the contrasting delivery model. Explicit directions explain the capitals. Case-sensitive export regression checks protect the distinction.
-
-Fidelity checks now require complete normalized blocks and minimum occurrence counts, rather than accepting any sampled fragment. This materially strengthens coverage but does not replace human proofreading or preserve every typographic/phonetic distinction by itself.
-
-Official EPUBCheck 5.3.0 is now a release gate. A real RSC-011 contents/spine defect was found and repaired. The current EPUB passes with zero errors and zero warnings. Device and assistive-technology checks, native Word pagination, rights, original listening alignment, specialist/factual review, and print approval remain open. See the current issue register rather than superseded report prose.
-
-The stress comparison is kept together as one short teaching unit in Word/PDF, with break-inside protection in EPUB. Its four subsequent read-aloud practice sentences now form a single 1–4 sequence instead of two lists restarting at 1. Regression checks cover both the same-page comparison and the four-item sequence.
-
-## Exact-title correction requested by the author
-
-The earlier 32 editorial aliases have been removed from the publication. Chapter openings, contents entries, Word headings, PDF bookmarks, and EPUB navigation now use exact existing lesson titles or the original chapter heading—not newly coined names. The original content headings remain in place beside their actual reading/listening/research material. Examples: “The Power of Communication,” “Are You a Good Listener?,” “Living with AI: Friend or Foe?,” and “The Science of a Lasting Relationship.”
-
-Source fidelity takes precedence over artificial title uniqueness. A chapter containing multiple debate/research choices is not renamed after just one optional task. Where no single principal title exists, its original chapter heading is retained, with no redundant repeated subtitle. Build-time guards and chapter QA reject titles without the recorded source match. Distinct chapter identifiers and unit context keep repeated author-supplied titles unambiguous.
+See [UNRESOLVED-ISSUES.md](UNRESOLVED-ISSUES.md), [QA-REPORT.md](QA-REPORT.md), and the full [whole-book audit](WHOLE-BOOK-AUDIT.md). A passing suite is evidence for defined tests, not a universal approval certificate.

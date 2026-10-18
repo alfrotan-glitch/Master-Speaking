@@ -335,5 +335,589 @@
     "original": "Say",
     "correction": "With key-word stress",
     "reason": "Label the contrasting delivery, matching the capitalized stress targets."
+  },
+  {
+    "unit": 1,
+    "chapter": 4,
+    "original": "Use at least five collocations from Day 2 or Day 3.",
+    "correction": "Use at least five collocations from the listening or discussion chapter in this unit.",
+    "reason": "Replace undefined classroom-day references with stable chapter references."
+  },
+  {
+    "unit": 1,
+    "chapter": 4,
+    "original": "Good speakers do not stress every word. They stress important words (content words) and reduce grammar words (function words). This helps listeners understand the main message.",
+    "correction": "Speakers often emphasize key content words and give less stress to other words. Stress depends on meaning: even a short grammar word can be important when you want to make a contrast. Choose the words that help your listener understand your message.",
+    "reason": "Qualify an absolute sentence-stress rule and explain contrastive stress."
+  },
+  {
+    "unit": 1,
+    "chapter": 4,
+    "original": "(Natural? No.)",
+    "correction": "Equal stress on every word can make the main message harder to follow.",
+    "reason": "Explain the comparison instead of declaring one delivery universally unnatural."
+  },
+  {
+    "unit": 2,
+    "chapter": 1,
+    "original": "Family support Self-discipline Confidence",
+    "correction": "",
+    "reason": "Remove a repeated fragment immediately after the complete six-item ranking list.",
+    "action": "remove"
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "(Students evaluate, argue, and defend opinions.)",
+    "correction": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
+    "reason": "Address learners directly rather than leaving a teacher-facing stage direction."
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "original": "(Students evaluate, argue, and defend opinions.)",
+    "correction": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
+    "reason": "Address learners directly rather than leaving a teacher-facing stage direction."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
+    "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+    "reason": "Point to the section actually printed in the chapter and allow grammatical adjustments."
+  },
+  {
+    "unit": 4,
+    "chapter": 1,
+    "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
+    "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+    "reason": "Point to the section actually printed in the chapter and allow grammatical adjustments."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "Use at least six expressions from the Reading Toolbox.",
+    "correction": "Use at least six expressions from Vocabulary Preview.",
+    "reason": "Replace an undefined section label with the actual vocabulary heading."
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "original": "Use at least six expressions from the Reading Toolbox.",
+    "correction": "Use at least six expressions from Vocabulary Preview.",
+    "reason": "Replace an undefined section label with the actual vocabulary heading."
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "original": "Use at least six expressions from the Reading Toolbox.",
+    "correction": "Use at least six expressions from Vocabulary Preview.",
+    "reason": "Replace an undefined section label with the actual vocabulary heading."
+  },
+  {
+    "unit": 4,
+    "chapter": 1,
+    "original": "Use at least six expressions from the Reading Toolbox and share your understanding of the quote.",
+    "correction": "Use at least six expressions from Vocabulary Preview to explain your understanding of the quote.",
+    "reason": "Make the section reference accurate and the task natural."
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "original": "Use the correct expression from the vocabulary box.",
+    "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+    "reason": "Use the actual printed vocabulary heading."
+  },
+  {
+    "unit": 3,
+    "chapter": 4,
+    "original": "Explain the difference between goals and systems.",
+    "correction": "Explain what emotional intelligence means and assess the evidence for improving it.",
+    "reason": "Remove a copied Unit 2 instruction from the emotional-intelligence research outline."
+  },
+  {
+    "unit": 4,
+    "chapter": 3,
+    "original": "Choose one statement. Work in two teams. One team agrees, and the other disagrees. Give reasons and Student A",
+    "correction": "Work in pairs. Student A defends the first statement, and Student B defends the second. Give reasons and examples, then respond to your partner’s argument.",
+    "reason": "Complete a broken instruction and match the two printed student roles."
+  },
+  {
+    "unit": 3,
+    "chapter": 3,
+    "original": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible.",
+    "correction": "",
+    "reason": "Remove a redundant direction; the preceding instruction already sets group size and vocabulary use.",
+    "action": "remove"
+  },
+  {
+    "unit": 4,
+    "chapter": 3,
+    "original": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible.",
+    "correction": "",
+    "reason": "Remove a redundant direction; the preceding instruction already sets group size and vocabulary use.",
+    "action": "remove"
+  },
+  {
+    "unit": 4,
+    "chapter": 3,
+    "original": "Should parents teach children how to manage money at school or at home?",
+    "correction": "Who should teach children how to manage money: families, schools, or both? Why?",
+    "reason": "Resolve the confusing combination of parents as teachers and school as location."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "This is especially useful for your students because it helps them sound more fluent and natural, particularly during presentations and extended speaking.",
+    "correction": "Linking can help you speak more smoothly and help listeners follow longer phrases. Keep your meaning clear; speed is not the goal.",
+    "reason": "Replace a teacher-facing aside with a learner-facing purpose."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "Students read each sentence three times:",
+    "correction": "Read each sentence three times:",
+    "reason": "Address the learner directly."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "The goal isn’t to make students speak faster. The goal is to make their speech smoother.",
+    "correction": "Aim for smooth, clear phrases rather than faster speech.",
+    "reason": "Remove teacher-facing wording and emphasize intelligibility."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "For example:",
+    "correction": "The underscores below show where sounds can link. Keep the normal spaces between words when writing.",
+    "reason": "Explain the linking notation without teaching fused spellings."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "turn_it_off → turnitoff",
+    "correction": "turn_it_off",
+    "reason": "Show links without presenting a fused respelling as a written English word."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "pick_it_up → pickitup",
+    "correction": "pick_it_up",
+    "reason": "Show links without presenting a fused respelling as a written English word."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "work_in → workin",
+    "correction": "work_in",
+    "reason": "Show links without presenting a fused respelling as a written English word."
+  },
+  {
+    "unit": 5,
+    "chapter": 4,
+    "original": "depend_on → dependon",
+    "correction": "depend_on",
+    "reason": "Show links without presenting a fused respelling as a written English word."
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "original": "Put your fingers lightly on your throat.",
+    "correction": "Touch your throat lightly. Sustain /θ/ and then /ð/ without adding a vowel; compare the vibration before saying the example words.",
+    "reason": "Test voicing on the target consonant, not on a whole word containing voiced vowels."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "These words are especially useful for today’s presentation topic:",
+    "correction": "Compare these words from today’s topic. Most contain a schwa; linguistic is a contrast example without one.",
+    "reason": "Explain why a word with no schwa appears in a schwa-focused exercise."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "One of the biggest differences between natural English pronunciation and careful learner pronunciation is the schwa /ə/.",
+    "correction": "The schwa /ə/ is a useful sound to notice in unstressed syllables. Its use varies across words, accents, and speaking situations.",
+    "reason": "Avoid ranking learner speech as inherently unnatural and acknowledge pronunciation variation."
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "The schwa is the weak, relaxed vowel sound found in many unstressed syllables. Learning to use it makes speech smoother, faster, and more natural—especially during presentations.",
+    "correction": "The schwa is a relaxed vowel found in many unstressed syllables. Practise it to make the contrast between stressed and unstressed syllables clearer, not simply to speak faster.",
+    "reason": "Set an intelligibility goal instead of treating speed or imitation as the goal."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "original": "Use this idea to discuss the title above. Use as many vocabulary expressions as you can.",
+    "correction": "Discuss who should have a say in how English is used. Support your view with examples and expressions from Vocabulary Preview.",
+    "reason": "Replace an inaccurate positional reference to a title that appears later in the chapter."
+  },
+  {
+    "unit": 8,
+    "chapter": 1,
+    "original": "It is the year 2050. English is still the world’s most widely used international language—but 90% of its users are non-native speakers.",
+    "correction": "Imagine the year 2050. For this discussion, assume that English remains a widely used international language and that 90% of its users are non-native speakers.",
+    "reason": "Make the invented discussion scenario explicit, rather than presenting it as a forecast."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "original": "They must also use at least two expressions from the vocabulary section, such as:",
+    "correction": "In both groups, use at least two of the following expressions in your arguments:",
+    "reason": "Address both debate groups and remove a misleading claim that all listed expressions are in the preceding vocabulary table."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "original": "prohibitive",
+    "correction": "prohibitive — so costly that access becomes difficult",
+    "reason": "Explain a discussion expression not defined in the chapter’s vocabulary table."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "original": "far-reaching consequences",
+    "correction": "far-reaching consequences — effects felt in many areas or over a long time",
+    "reason": "Explain an additional discussion expression without inventing recording content."
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "original": "Hospitals often __________________________ to analyze medical images more accurately.",
+    "correction": "Hospitals often use __________________________ to help analyze medical images.",
+    "reason": "Supply the missing verb so the noun phrase AI-powered tools fits; avoid an unqualified accuracy claim."
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "original": "Complete the sentences.",
+    "correction": "Complete each sentence with a suitable expression from Vocabulary Preview. Change its form if needed.",
+    "reason": "Make the word-bank reference and permitted grammatical changes explicit."
+  },
+  {
+    "unit": 6,
+    "chapter": 4,
+    "original": "Choose ONE of the following questions:",
+    "correction": "",
+    "reason": "Remove a repeated selection direction; the preceding instruction already asks for one topic.",
+    "action": "remove"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Research your topic using reliable sources.",
+    "correction": "",
+    "reason": "Retain the first research direction and remove its repeated copy.",
+    "action": "remove",
+    "occurrence": 2,
+    "expected_matches": 2
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Choose ONE of the following questions:",
+    "correction": "",
+    "reason": "Keep one clear topic-selection instruction rather than three repeated variants.",
+    "action": "remove"
+  },
+  {
+    "unit": 8,
+    "chapter": 4,
+    "original": "Choose ONE of the following questions.",
+    "correction": "",
+    "reason": "Keep the existing instruction to choose one topic.",
+    "action": "remove"
+  },
+  {
+    "unit": 7,
+    "chapter": 4,
+    "original": "Choose ONE of the following questions:",
+    "correction": "Investigate the question below. Use the guiding questions to plan your research.",
+    "reason": "Match a single research topic followed by guiding questions rather than pretending there are several topic choices."
+  },
+  {
+    "unit": 1,
+    "chapter": 1,
+    "original": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. This belief often prevents them from making progress. Language experts agree that mistakes are a natural part of learning. Every conversation provides an opportunity to improve vocabulary, pronunciation, and confidence.",
+    "correction": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. Waiting for perfection can keep you out of the conversations you need for practice. When you speak, notice what helps your listener understand you, ask for feedback, and try again. A mistake can become something useful to work on.",
+    "reason": "Replace a vague appeal to language experts with concrete, learner-facing practice advice."
+  },
+  {
+    "unit": 2,
+    "chapter": 1,
+    "original": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. Unexpected challenges may require us to adjust our strategy, but we should not abandon our goal completely. Successful people review their progress regularly, learn from mistakes, and continue moving forward.",
+    "correction": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. You may need to adjust your strategy, reduce the size of a task, or reconsider the goal itself. Changing a goal is not always the same as giving up. Review your progress, learn from setbacks, and decide which next step is realistic for your circumstances.",
+    "reason": "Avoid teaching persistence as an absolute obligation when goals or circumstances legitimately change."
+  },
+  {
+    "unit": 2,
+    "chapter": 1,
+    "original": "Researchers have found that writing down goals increases the likelihood of achieving them. People who write their goals often think more carefully about their plans and are more committed to taking action. Sharing goals with supportive friends, teachers, or family members can also provide encouragement and accountability.",
+    "correction": "Writing down a goal gives you something concrete to review. Note what you want to do, how you will practise, and when you will check your progress. Sharing the plan with a supportive friend, teacher, or family member can help you stay accountable.",
+    "reason": "Replace an unidentified research claim with transparent practical advice; do not invent a study citation."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "For many years, intelligence was measured mainly by IQ, or Intelligence Quotient. People believed that academic knowledge and logical reasoning were the most reliable predictors of success. However, research over the past few decades has challenged this assumption by highlighting another essential quality: emotional intelligence.",
+    "correction": "IQ tests assess some cognitive abilities, but they do not describe every skill people use in daily life. A person may solve complex problems yet struggle to listen, handle frustration, or work with others. Emotional intelligence provides a way to discuss how people understand emotions and respond to them.",
+    "reason": "Remove the unsupported historical/predictive comparison between IQ and emotional intelligence."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "Psychologist Daniel Goleman popularized the concept of emotional intelligence by identifying five essential components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+    "correction": "In the model popularized by psychologist Daniel Goleman, emotional intelligence includes five components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+    "reason": "Attribute the five-part model without presenting it as the only universally established definition."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 0,
+    "original": "expeRIence",
+    "correction": "exPErience",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 1,
+    "original": "ex pe RI ence",
+    "correction": "ex PE ri ence",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 0,
+    "original": "geNErosity",
+    "correction": "geneROsity",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 1,
+    "original": "ge NE ros i ty",
+    "correction": "ge ne RO si ty",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 0,
+    "original": "reSPONsibility",
+    "correction": "responsiBILity",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 1,
+    "original": "re SPON si bil i ty",
+    "correction": "re spon si BIL i ty",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 0,
+    "original": "opportuNIty",
+    "correction": "opporTUnity",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 1,
+    "original": "op por tu NI ty",
+    "correction": "op por TU ni ty",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 0,
+    "original": "psyCHOlogical",
+    "correction": "psychoLOgical",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 4,
+    "chapter": 4,
+    "table_column": 1,
+    "original": "psy CHO log i cal",
+    "correction": "psy cho LO gi cal",
+    "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription."
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "original": "A strong relationship can help __________ during difficult periods.",
+    "correction": "Support from a partner or friend can __________ a difficult period.",
+    "reason": "Make the supplied phrase carry someone through fit the grammar of the completed sentence."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "Speaking English every day is a form of ____________________________.",
+    "correction": "Speaking English with a clear goal and focused feedback is a form of ____________________________.",
+    "reason": "Make the example illustrate deliberate conscious practice rather than mere repetition."
+  },
+  {
+    "unit": 1,
+    "chapter": 3,
+    "table_column": 1,
+    "original": "create a positive effect",
+    "correction": "have a powerful or lasting effect on how someone thinks about you or something",
+    "reason": "A strong impression can be positive or negative."
+  },
+  {
+    "unit": 1,
+    "chapter": 3,
+    "table_column": 1,
+    "original": "make decisions too quickly",
+    "correction": "reach a judgment without enough information",
+    "reason": "Distinguish premature inference from simply making a quick decision."
+  },
+  {
+    "unit": 2,
+    "chapter": 3,
+    "table_column": 1,
+    "original": "to give equal attention to two important things",
+    "correction": "to find a suitable way to give attention to two competing needs",
+    "reason": "Balance does not necessarily mean equal time or attention."
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "table_column": 1,
+    "original": "be shared fairly or in the same way among people",
+    "correction": "be shared in equal amounts among people or groups",
+    "reason": "Distinguish equal distribution from a judgment about fairness."
+  },
+  {
+    "unit": 4,
+    "chapter": 2,
+    "table_column": 1,
+    "original": "to owe money because you have spent more than you have",
+    "correction": "to begin owing money after borrowing or using credit",
+    "reason": "Debt can arise through borrowing for planned spending, not only overspending."
+  },
+  {
+    "unit": 2,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 3,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 4,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 5,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 6,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 7,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 8,
+    "chapter": 2,
+    "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+    "correction": "Study the following expressions before listening.",
+    "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register."
+  },
+  {
+    "unit": 2,
+    "chapter": 1,
+    "original": "A. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 3,
+    "chapter": 1,
+    "original": "A. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 4,
+    "chapter": 1,
+    "original": "A. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 5,
+    "chapter": 1,
+    "original": "A. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 6,
+    "chapter": 1,
+    "original": "A. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 7,
+    "chapter": 1,
+    "original": "B. True or False",
+    "correction": "True or False",
+    "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered."
+  },
+  {
+    "unit": 1,
+    "chapter": 2,
+    "original": "A. True or False",
+    "correction": "B. True or False",
+    "reason": "Keep listening-comprehension labels in A/B/C order."
+  },
+  {
+    "unit": 7,
+    "chapter": 2,
+    "original": "A. True or False",
+    "correction": "B. True or False",
+    "reason": "Keep listening-comprehension labels in A/B/C order."
+  },
+  {
+    "unit": 5,
+    "chapter": 2,
+    "original": "Should governments pose restrictions on the development of powerful AI systems?",
+    "correction": "Should governments impose restrictions on the development of powerful AI systems?",
+    "reason": "Use the standard collocation impose restrictions."
   }
 ]

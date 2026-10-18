@@ -700,6 +700,566 @@
   "confidence": "high (reviewed)"
  },
  {
+  "area": "U1 Ch4 · October editorial review",
+  "original": "Use at least five collocations from Day 2 or Day 3.",
+  "correction": "Use at least five collocations from the listening or discussion chapter in this unit.",
+  "reason": "Replace undefined classroom-day references with stable chapter references.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch4 · October editorial review",
+  "original": "Good speakers do not stress every word. They stress important words (content words) and reduce grammar words (function words). This helps listeners understand the main message.",
+  "correction": "Speakers often emphasize key content words and give less stress to other words. Stress depends on meaning: even a short grammar word can be important when you want to make a contrast. Choose the words that help your listener understand your message.",
+  "reason": "Qualify an absolute sentence-stress rule and explain contrastive stress.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch4 · October editorial review",
+  "original": "(Natural? No.)",
+  "correction": "Equal stress on every word can make the main message harder to follow.",
+  "reason": "Explain the comparison instead of declaring one delivery universally unnatural.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch1 · October editorial review",
+  "original": "Family support Self-discipline Confidence",
+  "correction": "(removed)",
+  "reason": "Remove a repeated fragment immediately after the complete six-item ranking list.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "(Students evaluate, argue, and defend opinions.)",
+  "correction": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
+  "reason": "Address learners directly rather than leaving a teacher-facing stage direction.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch1 · October editorial review",
+  "original": "(Students evaluate, argue, and defend opinions.)",
+  "correction": "Evaluate the ideas, give reasons, and respond respectfully to a different opinion.",
+  "reason": "Address learners directly rather than leaving a teacher-facing stage direction.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
+  "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+  "reason": "Point to the section actually printed in the chapter and allow grammatical adjustments.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch1 · October editorial review",
+  "original": "Complete each sentence using the correct expression from the Reading Toolbox.",
+  "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+  "reason": "Point to the section actually printed in the chapter and allow grammatical adjustments.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "Use at least six expressions from the Reading Toolbox.",
+  "correction": "Use at least six expressions from Vocabulary Preview.",
+  "reason": "Replace an undefined section label with the actual vocabulary heading.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch1 · October editorial review",
+  "original": "Use at least six expressions from the Reading Toolbox.",
+  "correction": "Use at least six expressions from Vocabulary Preview.",
+  "reason": "Replace an undefined section label with the actual vocabulary heading.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch1 · October editorial review",
+  "original": "Use at least six expressions from the Reading Toolbox.",
+  "correction": "Use at least six expressions from Vocabulary Preview.",
+  "reason": "Replace an undefined section label with the actual vocabulary heading.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch1 · October editorial review",
+  "original": "Use at least six expressions from the Reading Toolbox and share your understanding of the quote.",
+  "correction": "Use at least six expressions from Vocabulary Preview to explain your understanding of the quote.",
+  "reason": "Make the section reference accurate and the task natural.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch1 · October editorial review",
+  "original": "Use the correct expression from the vocabulary box.",
+  "correction": "Complete each sentence with an expression from Vocabulary Preview. Change its form if needed.",
+  "reason": "Use the actual printed vocabulary heading.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch4 · October editorial review",
+  "original": "Explain the difference between goals and systems.",
+  "correction": "Explain what emotional intelligence means and assess the evidence for improving it.",
+  "reason": "Remove a copied Unit 2 instruction from the emotional-intelligence research outline.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch3 · October editorial review",
+  "original": "Choose one statement. Work in two teams. One team agrees, and the other disagrees. Give reasons and Student A",
+  "correction": "Work in pairs. Student A defends the first statement, and Student B defends the second. Give reasons and examples, then respond to your partner’s argument.",
+  "reason": "Complete a broken instruction and match the two printed student roles.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch3 · October editorial review",
+  "original": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible.",
+  "correction": "(removed)",
+  "reason": "Remove a redundant direction; the preceding instruction already sets group size and vocabulary use.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch3 · October editorial review",
+  "original": "Discuss the following questions with your group. Use the expressions from the Speaking Toolbox whenever possible.",
+  "correction": "(removed)",
+  "reason": "Remove a redundant direction; the preceding instruction already sets group size and vocabulary use.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch3 · October editorial review",
+  "original": "Should parents teach children how to manage money at school or at home?",
+  "correction": "Who should teach children how to manage money: families, schools, or both? Why?",
+  "reason": "Resolve the confusing combination of parents as teachers and school as location.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "This is especially useful for your students because it helps them sound more fluent and natural, particularly during presentations and extended speaking.",
+  "correction": "Linking can help you speak more smoothly and help listeners follow longer phrases. Keep your meaning clear; speed is not the goal.",
+  "reason": "Replace a teacher-facing aside with a learner-facing purpose.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "Students read each sentence three times:",
+  "correction": "Read each sentence three times:",
+  "reason": "Address the learner directly.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "The goal isn’t to make students speak faster. The goal is to make their speech smoother.",
+  "correction": "Aim for smooth, clear phrases rather than faster speech.",
+  "reason": "Remove teacher-facing wording and emphasize intelligibility.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "For example:",
+  "correction": "The underscores below show where sounds can link. Keep the normal spaces between words when writing.",
+  "reason": "Explain the linking notation without teaching fused spellings.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "turn_it_off → turnitoff",
+  "correction": "turn_it_off",
+  "reason": "Show links without presenting a fused respelling as a written English word.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "pick_it_up → pickitup",
+  "correction": "pick_it_up",
+  "reason": "Show links without presenting a fused respelling as a written English word.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "work_in → workin",
+  "correction": "work_in",
+  "reason": "Show links without presenting a fused respelling as a written English word.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch4 · October editorial review",
+  "original": "depend_on → dependon",
+  "correction": "depend_on",
+  "reason": "Show links without presenting a fused respelling as a written English word.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch4 · October editorial review",
+  "original": "Put your fingers lightly on your throat.",
+  "correction": "Touch your throat lightly. Sustain /θ/ and then /ð/ without adding a vowel; compare the vibration before saying the example words.",
+  "reason": "Test voicing on the target consonant, not on a whole word containing voiced vowels.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "These words are especially useful for today’s presentation topic:",
+  "correction": "Compare these words from today’s topic. Most contain a schwa; linguistic is a contrast example without one.",
+  "reason": "Explain why a word with no schwa appears in a schwa-focused exercise.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "One of the biggest differences between natural English pronunciation and careful learner pronunciation is the schwa /ə/.",
+  "correction": "The schwa /ə/ is a useful sound to notice in unstressed syllables. Its use varies across words, accents, and speaking situations.",
+  "reason": "Avoid ranking learner speech as inherently unnatural and acknowledge pronunciation variation.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "The schwa is the weak, relaxed vowel sound found in many unstressed syllables. Learning to use it makes speech smoother, faster, and more natural—especially during presentations.",
+  "correction": "The schwa is a relaxed vowel found in many unstressed syllables. Practise it to make the contrast between stressed and unstressed syllables clearer, not simply to speak faster.",
+  "reason": "Set an intelligibility goal instead of treating speed or imitation as the goal.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "Use this idea to discuss the title above. Use as many vocabulary expressions as you can.",
+  "correction": "Discuss who should have a say in how English is used. Support your view with examples and expressions from Vocabulary Preview.",
+  "reason": "Replace an inaccurate positional reference to a title that appears later in the chapter.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch1 · October editorial review",
+  "original": "It is the year 2050. English is still the world’s most widely used international language—but 90% of its users are non-native speakers.",
+  "correction": "Imagine the year 2050. For this discussion, assume that English remains a widely used international language and that 90% of its users are non-native speakers.",
+  "reason": "Make the invented discussion scenario explicit, rather than presenting it as a forecast.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "They must also use at least two expressions from the vocabulary section, such as:",
+  "correction": "In both groups, use at least two of the following expressions in your arguments:",
+  "reason": "Address both debate groups and remove a misleading claim that all listed expressions are in the preceding vocabulary table.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "prohibitive",
+  "correction": "prohibitive — so costly that access becomes difficult",
+  "reason": "Explain a discussion expression not defined in the chapter’s vocabulary table.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "far-reaching consequences",
+  "correction": "far-reaching consequences — effects felt in many areas or over a long time",
+  "reason": "Explain an additional discussion expression without inventing recording content.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch1 · October editorial review",
+  "original": "Hospitals often __________________________ to analyze medical images more accurately.",
+  "correction": "Hospitals often use __________________________ to help analyze medical images.",
+  "reason": "Supply the missing verb so the noun phrase AI-powered tools fits; avoid an unqualified accuracy claim.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch1 · October editorial review",
+  "original": "Complete the sentences.",
+  "correction": "Complete each sentence with a suitable expression from Vocabulary Preview. Change its form if needed.",
+  "reason": "Make the word-bank reference and permitted grammatical changes explicit.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch4 · October editorial review",
+  "original": "Choose ONE of the following questions:",
+  "correction": "(removed)",
+  "reason": "Remove a repeated selection direction; the preceding instruction already asks for one topic.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Research your topic using reliable sources.",
+  "correction": "(removed)",
+  "reason": "Retain the first research direction and remove its repeated copy.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Choose ONE of the following questions:",
+  "correction": "(removed)",
+  "reason": "Keep one clear topic-selection instruction rather than three repeated variants.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch4 · October editorial review",
+  "original": "Choose ONE of the following questions.",
+  "correction": "(removed)",
+  "reason": "Keep the existing instruction to choose one topic.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch4 · October editorial review",
+  "original": "Choose ONE of the following questions:",
+  "correction": "Investigate the question below. Use the guiding questions to plan your research.",
+  "reason": "Match a single research topic followed by guiding questions rather than pretending there are several topic choices.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch1 · October editorial review",
+  "original": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. This belief often prevents them from making progress. Language experts agree that mistakes are a natural part of learning. Every conversation provides an opportunity to improve vocabulary, pronunciation, and confidence.",
+  "correction": "Unfortunately, many English learners believe they should remain silent until their English becomes perfect. Waiting for perfection can keep you out of the conversations you need for practice. When you speak, notice what helps your listener understand you, ask for feedback, and try again. A mistake can become something useful to work on.",
+  "reason": "Replace a vague appeal to language experts with concrete, learner-facing practice advice.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch1 · October editorial review",
+  "original": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. Unexpected challenges may require us to adjust our strategy, but we should not abandon our goal completely. Successful people review their progress regularly, learn from mistakes, and continue moving forward.",
+  "correction": "Another important aspect of goal setting is flexibility. Sometimes life does not go according to plan. You may need to adjust your strategy, reduce the size of a task, or reconsider the goal itself. Changing a goal is not always the same as giving up. Review your progress, learn from setbacks, and decide which next step is realistic for your circumstances.",
+  "reason": "Avoid teaching persistence as an absolute obligation when goals or circumstances legitimately change.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch1 · October editorial review",
+  "original": "Researchers have found that writing down goals increases the likelihood of achieving them. People who write their goals often think more carefully about their plans and are more committed to taking action. Sharing goals with supportive friends, teachers, or family members can also provide encouragement and accountability.",
+  "correction": "Writing down a goal gives you something concrete to review. Note what you want to do, how you will practise, and when you will check your progress. Sharing the plan with a supportive friend, teacher, or family member can help you stay accountable.",
+  "reason": "Replace an unidentified research claim with transparent practical advice; do not invent a study citation.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "For many years, intelligence was measured mainly by IQ, or Intelligence Quotient. People believed that academic knowledge and logical reasoning were the most reliable predictors of success. However, research over the past few decades has challenged this assumption by highlighting another essential quality: emotional intelligence.",
+  "correction": "IQ tests assess some cognitive abilities, but they do not describe every skill people use in daily life. A person may solve complex problems yet struggle to listen, handle frustration, or work with others. Emotional intelligence provides a way to discuss how people understand emotions and respond to them.",
+  "reason": "Remove the unsupported historical/predictive comparison between IQ and emotional intelligence.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "Psychologist Daniel Goleman popularized the concept of emotional intelligence by identifying five essential components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+  "correction": "In the model popularized by psychologist Daniel Goleman, emotional intelligence includes five components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness allows people to recognize their emotional state and understand how their feelings influence their behavior. Self-regulation enables them to control emotional reactions instead of acting impulsively. Motivation encourages people to pursue long-term goals despite setbacks. Empathy involves understanding the feelings and perspectives of others, while social skills help individuals communicate effectively and build meaningful relationships.",
+  "reason": "Attribute the five-part model without presenting it as the only universally established definition.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "expeRIence",
+  "correction": "exPErience",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "ex pe RI ence",
+  "correction": "ex PE ri ence",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "geNErosity",
+  "correction": "geneROsity",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "ge NE ros i ty",
+  "correction": "ge ne RO si ty",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "reSPONsibility",
+  "correction": "responsiBILity",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "re SPON si bil i ty",
+  "correction": "re spon si BIL i ty",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "opportuNIty",
+  "correction": "opporTUnity",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "op por tu NI ty",
+  "correction": "op por TU ni ty",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "psyCHOlogical",
+  "correction": "psychoLOgical",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch4 · October editorial review",
+  "original": "psy CHO log i cal",
+  "correction": "psy cho LO gi cal",
+  "reason": "Correct primary-stress placement, cross-checked against the pinned CMU Pronouncing Dictionary; keep the visual capitalization distinct from phonetic transcription.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch1 · October editorial review",
+  "original": "A strong relationship can help __________ during difficult periods.",
+  "correction": "Support from a partner or friend can __________ a difficult period.",
+  "reason": "Make the supplied phrase carry someone through fit the grammar of the completed sentence.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "Speaking English every day is a form of ____________________________.",
+  "correction": "Speaking English with a clear goal and focused feedback is a form of ____________________________.",
+  "reason": "Make the example illustrate deliberate conscious practice rather than mere repetition.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch3 · October editorial review",
+  "original": "create a positive effect",
+  "correction": "have a powerful or lasting effect on how someone thinks about you or something",
+  "reason": "A strong impression can be positive or negative.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch3 · October editorial review",
+  "original": "make decisions too quickly",
+  "correction": "reach a judgment without enough information",
+  "reason": "Distinguish premature inference from simply making a quick decision.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch3 · October editorial review",
+  "original": "to give equal attention to two important things",
+  "correction": "to find a suitable way to give attention to two competing needs",
+  "reason": "Balance does not necessarily mean equal time or attention.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch1 · October editorial review",
+  "original": "be shared fairly or in the same way among people",
+  "correction": "be shared in equal amounts among people or groups",
+  "reason": "Distinguish equal distribution from a judgment about fairness.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch2 · October editorial review",
+  "original": "to owe money because you have spent more than you have",
+  "correction": "to begin owing money after borrowing or using credit",
+  "reason": "Debt can arise through borrowing for planned spending, not only overspending.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U8 Ch2 · October editorial review",
+  "original": "Focus on these useful expressions based on the TED-Ed lesson.",
+  "correction": "Study the following expressions before listening.",
+  "reason": "Use a neutral learner instruction instead of asserting an unverified TED-Ed source attribution; recording identification remains in the external register.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U2 Ch1 · October editorial review",
+  "original": "A. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · October editorial review",
+  "original": "A. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U4 Ch1 · October editorial review",
+  "original": "A. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch1 · October editorial review",
+  "original": "A. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U6 Ch1 · October editorial review",
+  "original": "A. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch1 · October editorial review",
+  "original": "B. True or False",
+  "correction": "True or False",
+  "reason": "Remove an inconsistent section letter from a reading task whose other subheadings are unlettered.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U1 Ch2 · October editorial review",
+  "original": "A. True or False",
+  "correction": "B. True or False",
+  "reason": "Keep listening-comprehension labels in A/B/C order.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U7 Ch2 · October editorial review",
+  "original": "A. True or False",
+  "correction": "B. True or False",
+  "reason": "Keep listening-comprehension labels in A/B/C order.",
+  "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U5 Ch2 · October editorial review",
+  "original": "Should governments pose restrictions on the development of powerful AI systems?",
+  "correction": "Should governments impose restrictions on the development of powerful AI systems?",
+  "reason": "Use the standard collocation impose restrictions.",
+  "confidence": "high (reviewed)"
+ },
+ {
   "area": "U3 Ch4 · pronunciation practice numbering",
   "original": "Two questions interleaved with two prose models",
   "correction": "One numbered sequence of four read-aloud models",
@@ -733,6 +1293,510 @@
   "correction": "(removed)",
   "reason": "Remove the closing sentence accidentally included as a bullet; it remains once as the guide’s closing paragraph.",
   "confidence": "high (reviewed)"
+ },
+ {
+  "area": "U3 Ch1 · lesson-structure review",
+  "original": "Learning another language allows you to ____________________________ from different backgrounds.",
+  "correction": "Learning another language allows you to ____________________________ from different backgrounds. (before Before You Read)",
+  "reason": "Return a misplaced vocabulary sentence to Vocabulary Check, before the pre-reading section.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U7 Ch1 · lesson-structure review",
+  "original": "Studying abroad can create __________ for young people.",
+  "correction": "Studying abroad can create __________ for young people. (before Before You Read)",
+  "reason": "Return a misplaced vocabulary sentence to Vocabulary Check, before the pre-reading section.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U1 Ch1 · lesson-structure review",
+  "original": "According to the reading, communication is",
+  "correction": "According to the reading, communication is (q)",
+  "reason": "Make the first multiple-choice stem a numbered question like the other four.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U7 Ch1 · lesson-structure review",
+  "original": "__________ has become an important part of the modern global economy.",
+  "correction": "__________ has become an important part of the modern global economy. (fill)",
+  "reason": "A vocabulary blank is not a true/false statement.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U7 Ch4 · lesson-structure review",
+  "original": "/θ/ — voiceless TH",
+  "correction": "/θ/ — voiceless TH (sub)",
+  "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U7 Ch4 · lesson-structure review",
+  "original": "/ð/ — voiced TH",
+  "correction": "/ð/ — voiced TH (sub)",
+  "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch4 · lesson-structure review",
+  "original": "The Schwa in Common Words",
+  "correction": "The Schwa in Common Words (sub)",
+  "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch4 · lesson-structure review",
+  "original": "The Schwa in Academic Vocabulary",
+  "correction": "The Schwa in Academic Vocabulary (sub)",
+  "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch4 · lesson-structure review",
+  "original": "The Schwa in Function Words",
+  "correction": "The Schwa in Function Words (sub)",
+  "reason": "Render a pronunciation subsection as a heading, not as a question numbered 1.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U6 Ch3 · lesson-structure review",
+  "original": "What Makes Relationships Work?",
+  "correction": "What Makes Relationships Work? (sub)",
+  "reason": "Treat the existing discussion title as a heading rather than an isolated numbered question.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch3 · lesson-structure review",
+  "original": "WHO OWNS ENGLISH?",
+  "correction": "WHO OWNS ENGLISH? (sub)",
+  "reason": "Treat the existing discussion title as a heading rather than an isolated numbered question.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch1 · lesson-structure review",
+  "original": "What is a lingua franca?",
+  "correction": "Short-Answer Questions / Answer in your own words. Use details from the reading to support your answers.",
+  "reason": "Separate open-response questions from the preceding multiple-choice task.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U5 Ch1 · lesson-structure review",
+  "original": "_____ AI is mainly a technology that will be used in the distant future.",
+  "correction": "Write T (True) or F (False). Correct the false statements.",
+  "reason": "Supply the missing true/false task direction.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch4 · lesson-structure review",
+  "original": "to → /tə/a → /ə/the → /ðə/for → /fə/of → /əv/ or /ə/can → /kən/",
+  "correction": "to → /tə/ / a → /ə/ / the → /ðə/ / for → /fə/ / of → /əv/ or /ə/ / can → /kən/",
+  "reason": "Separate six fused weak-form examples into readable individual lines.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U6 Ch1 · lesson-structure review",
+  "original": "Do you think people’s expectations of marriage have changed over time?",
+  "correction": "Discuss respectful relationships, using fictional examples if you prefer. Compromise does not mean accepting threats, coercion, or violence. No one needs to share private experiences.",
+  "reason": "Make respectful boundaries and the option not to disclose personal experiences explicit in the relationship unit.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U4 Ch4 · lesson-structure review",
+  "original": "Conclusion",
+  "correction": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought.",
+  "reason": "Complete the empty conclusion prompt in the presentation outline.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U5 Ch4 · lesson-structure review",
+  "original": "Conclusion",
+  "correction": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought.",
+  "reason": "Complete the empty conclusion prompt in the presentation outline.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U7 Ch4 · lesson-structure review",
+  "original": "Conclusion",
+  "correction": "Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought.",
+  "reason": "Complete the empty conclusion prompt in the presentation outline.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U6 Ch4 · lesson-structure review",
+  "original": "Example or Evidence",
+  "correction": "Conclusion / Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought.",
+  "reason": "Complete the presentation outline, which stops after Main Point 3.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U8 Ch4 · lesson-structure review",
+  "original": "Example or Evidence",
+  "correction": "Conclusion / Answer your main question, summarize the evidence you used, and leave your audience with one clear final thought.",
+  "reason": "Complete the presentation outline, which stops after Main Point 3.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U4 Ch4 · lesson-structure review",
+  "original": "Correct word stress makes your speech easier to understand.",
+  "correction": "Capital letters mark primary stress. The letter groups are visual guides, not phonetic transcriptions.",
+  "reason": "Explain how to read the corrected stress table without treating its letter groups as IPA.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U1 Ch2 · lesson-structure review",
+  "original": "According to the speaker, what is the main purpose of good listening?",
+  "correction": "A. Multiple Choice / Choose the best answer.",
+  "reason": "Give the first listening question set the same explicit multiple-choice boundary used in the other listening chapters.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U1 Ch2 · lesson-structure review",
+  "original": "_____ Good listeners should remove distractions before a conversation.",
+  "correction": "Write T (True) or F (False). Correct the false statements.",
+  "reason": "Supply a usable direction for the true/false task.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U2 Ch2 · lesson-structure review",
+  "original": "Challenge Question",
+  "correction": "Challenge Question (subsub)",
+  "reason": "Render the challenge label as a subheading, not as a numbered question.",
+  "confidence": "guarded structural repair"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain your main point, listen to a response, and repair a misunderstanding without starting the whole conversation again?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U1 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Explain a useful idea to a partner. Ask them to say what they understood, then clarify one detail. Notice which wording helped.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain a realistic goal, the habit that supports it, and a sensible change to make when your plan is not working?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U2 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Choose one small speaking habit to try this week. Decide when you will practise and how you will notice progress. Review the plan after trying it.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you describe an emotional response, consider another perspective, and suggest a constructive way to continue a difficult conversation?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U3 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Use a fictional disagreement. Try one response that assumes the worst and another that asks for clarification. Discuss how the two responses might affect the conversation.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain a choice about money and well-being, acknowledge a trade-off, and distinguish your values from a research claim?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U4 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Compare two possible uses of a fictional budget. Explain what each choice makes possible and what it leaves out. Ask a partner whose needs your plan may overlook.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain an AI opportunity and a risk, question a claim, and say where human checking is needed?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U5 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Choose a non-sensitive claim from an AI response or an article about AI. Check it against an identifiable source. Explain what you could verify and what remains uncertain. Do not enter private information.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you discuss trust, expectations, and disagreement respectfully without assuming everyone wants or experiences the same kind of relationship?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U6 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Use a fictional couple, friendship, or team. Describe a disagreement about a shared plan. Suggest a respectful response that takes both people’s boundaries seriously.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain a global connection, identify who may benefit or lose, and support a judgment without ignoring a trade-off?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U7 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Choose an everyday product or service with an international connection. Find out what you can about that connection. Explain one possible benefit, one possible cost, and one question you still need to investigate.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Sources Used",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "List the author or organization, title, and date for each source. Add a page number or link when available.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Reflect and Try Again",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Ask a partner: Was my main point clear? Did my evidence support it? Where did you need clarification? Revise one passage and say it again.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Check your progress: Can you explain an idea to a multilingual audience, adapt an unclear expression, and separate English proficiency from a person’s knowledge?",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
+ },
+ {
+  "area": "U8 Ch4 · learner review and transfer",
+  "original": "(new learner practice)",
+  "correction": "Put it to use: Explain an idea from your community to someone unfamiliar with it. Define one local expression or cultural reference. Ask what they understood and revise your explanation without treating either person’s accent as a problem.",
+  "reason": "Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.",
+  "confidence": "new learner-facing practice"
  },
  {
   "area": "U1 Ch1 · source-backed chapter heading",

@@ -331,7 +331,7 @@ def add_field(par, instr, placeholder='', bold=None, size=None):
     r5._r.append(fc3)
     return par
 
-def add_image(el, width_in):
+def add_image(el, width_in, keep_next=False):
     src = el.get('src') or ''
     fname = gif_to_png(os.path.basename(src))
     path = os.path.join(ASSETS, fname)
@@ -339,6 +339,7 @@ def add_image(el, width_in):
         return
     alt = (el.get('alt') or '').strip() or 'Illustration'
     p = add_par(style='MS Figure')
+    p.paragraph_format.keep_with_next = keep_next
     run = p.add_run()
     run.add_picture(path, width=Inches(width_in))
     # alt text on the drawing
@@ -518,7 +519,7 @@ def render_blocks(el, ctx=None):
                         add_par(text_of(cc), 'MS Reading')
                     elif ln3 == 'figure':
                         for im in cc.findall('.//x:img', NS):
-                            add_image(im, 4.2)
+                            add_image(im, 4.2, keep_next=True)
                     else:
                         add_par(text_of(cc), 'MS Reading')
             elif 'note' in cls:
@@ -536,7 +537,7 @@ def render_blocks(el, ctx=None):
         elif ln == 'figure':
             for im in c.findall('.//x:img', NS):
                 wide = 'unit-figure' in cls or 'reading-figure' in cls
-                add_image(im, 4.6 if wide else 3.6)
+                add_image(im, 4.6 if wide else 3.6, keep_next='reading-figure' in cls)
         elif ln == 'blockquote':
             for p_el in c.findall('x:p', NS):
                 add_par(text_of(p_el), 'MS Epigraph')

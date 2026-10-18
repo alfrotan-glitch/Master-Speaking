@@ -16,6 +16,8 @@ The findings and fingerprints below describe the **pre-remediation snapshot**, n
 - **B5 format-validation portion completed:** official EPUBCheck 5.3.0 found a genuine RSC-011 contents/spine defect; it was repaired. Current validation has zero errors/warnings and is now included in the 13-check release workflow. Device/accessibility testing remains open.
 - **A2, A4, A5 and other B conditions remain open.** No permissions, original recordings, native Word proof, accessible-PDF certification, or print approvals have been invented.
 
+The later whole-book findings and current export fingerprints are in `WHOLE-BOOK-AUDIT.md`. Current release evidence has 14 gates; old counts and page references below belong to the preserved snapshot.
+
 ## 1. Confirmed findings
 
 ### A1 — High: an instructional contrast is missing

@@ -17,6 +17,13 @@ OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
 
 def main():
     doc = setup_doc()
+    props = doc.core_properties
+    props.title = "Grammar for Special Speaking"
+    props.subject = "A practical grammar course for accurate, natural, confident speech"
+    props.author = "TOEFL HOUSE"
+    props.last_modified_by = "TOEFL HOUSE"
+    props.keywords = "English grammar, speaking, TOEFL, Intermediate, Advanced"
+    props.comments = "Editable source manuscript generated from build_spec content."
     keys_registry = {}
 
     # front matter

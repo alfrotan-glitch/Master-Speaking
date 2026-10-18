@@ -3,7 +3,7 @@
 Restrained palette, clear hierarchy, print-friendly. Design spec: section 13."""
 from docx.shared import Pt, RGBColor, Inches
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.enum.table import WD_TABLE_ALIGNMENT
+from docx.enum.table import WD_TABLE_ALIGNMENT, WD_ROW_HEIGHT_RULE
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
@@ -93,6 +93,9 @@ def h_banner(doc, text, sub=None, fill=FILL_NAVY):
     c = t.rows[0].cells[0]
     shade(c, fill); cell_margins(c, 90, 90, 140, 140)
     p = c.paragraphs[0]
+    # Semantic heading style is retained inside the visual banner for DOCX navigation.
+    p.style = doc.styles['Heading 1']
+    p.paragraph_format.keep_with_next = True
     run(p, text, size=13, bold=True, color=WHITE, font=HEAD_FONT)
     if sub:
         p2 = c.add_paragraph()
@@ -107,6 +110,8 @@ def section_label(doc, text):
     c = t.rows[0].cells[0]
     shade(c, FILL_TEAL); cell_margins(c, 50, 50, 120, 120)
     p = c.paragraphs[0]
+    p.style = doc.styles['Heading 2']
+    p.paragraph_format.keep_with_next = True
     run(p, text, size=10.5, bold=True, color=WHITE, font=HEAD_FONT, caps=True)
     spacer(doc, 3)
     return t
@@ -167,6 +172,10 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
     for ri, r in enumerate(rows):
         r = list(r) + [""] * (width - len(r))
         row = t.add_row()
+        if all(not (v[0] if isinstance(v, tuple) else v) for v in r):
+            # Blank response rows are deliberately writable in printed copies.
+            row.height = Inches(0.34)
+            row.height_rule = WD_ROW_HEIGHT_RULE.AT_LEAST
         _no_split(row)
         cells = row.cells
         for i, val in enumerate(r):
@@ -208,6 +217,10 @@ def setup_doc():
     from docx import Document
     from docx.shared import Inches as _In
     doc = Document()
+    # Ask compatible Word processors to refresh the native TOC/PAGE fields on open.
+    update_fields = OxmlElement('w:updateFields')
+    update_fields.set(qn('w:val'), 'true')
+    doc.settings.element.append(update_fields)
     st = doc.styles['Normal']
     st.font.name = BODY_FONT
     st.font.size = Pt(11)

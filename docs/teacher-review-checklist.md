@@ -6,7 +6,7 @@ completed — do not record approval here until a named reviewer has actually do
 
 Reviewer name: ______________________  Date: __________  Version reviewed: __________
 
-## 1. Grammar accuracy (§12)
+## 1. Grammar accuracy
 | Check | ✓ / ✗ / notes |
 |---|---|
 | All rules are correct at the stated level of simplification | |

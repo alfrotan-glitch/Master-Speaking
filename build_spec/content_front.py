@@ -5,6 +5,8 @@ from style import (para, run, box, table, spacer, h_banner, page_break,
                    setup_doc, NAVY, TEAL, GOLD, INK, GREY, WHITE,
                    FILL_BOX_TEAL, FILL_BOX_GOLD, FILL_BOX_GREY, FILL_NAVY, FILL_TEAL)
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 
 PARTS = [
     ("Part One", "Build Strong Sentences", [1, 2]),
@@ -61,7 +63,7 @@ def introduction(doc):
     para(doc, "It is not enough to know a rule. The goal is to turn that knowledge into active "
               "speaking skill — to choose the right structure, in the right moment, and say it "
               "without thinking about it.")
-    para(doc, "Every lesson follows the same path: you speak first, you learn one clear rule, "
+    para(doc, "Every lesson follows the same path: you speak first, you learn clear grammar patterns, "
               "you see how similar structures differ, you practise, and then you speak again — "
               "this time with the new grammar in your voice. Each lesson ends with a short review "
               "and a self-check, so you always know what you can already do.")
@@ -83,8 +85,10 @@ def introduction(doc):
     ]:
         para(doc, f"•  {b}", indent=0.12)
     para(doc, "Completion of the sixteen lessons is not proof of these outcomes by itself. The "
-              "Diagnostic Test and the Final Assessment use comparable tasks so that your progress "
-              "can be seen honestly — and so you know exactly what to work on next.",
+              "written Diagnostic Test and Final Assessment sample related grammar skills, but they "
+              "are not parallel tests and their raw totals should not be compared as a measure of "
+              "gain. For a fairer progress check, use the same speaking task conditions and rubric "
+              "before and after the course, and compare the four criterion scores.",
          size=11, italic=True, color=GREY)
     page_break(doc)
 
@@ -133,43 +137,54 @@ def how_to_use(doc):
 
 def contents(doc):
     h_banner(doc, "CONTENTS", sub="Sixteen lessons in eight thematic parts")
-    rows = []
-    for pno, ptitle, lessons in PARTS:
-        rows.append([(f"{pno}  —  {ptitle}", True), ""])
-        for ln in lessons:
-            rows.append([f"    Lesson {ln}", LESSON_TITLES[ln]])
-    table(doc, ["", "Lesson"], rows, widths=[1.5, 4.8], zebra=False)
-    rows2 = [
-        ["Review Test 1  (after Lesson 4)", "Cumulative review — Lessons 1–4"],
-        ["Review Test 2  (after Lesson 8)", "Cumulative review — Lessons 1–8"],
-        ["Review Test 3  (after Lesson 12)", "Cumulative review — Lessons 1–12"],
-        [("Final Assessment", True), "Grammar assessment + independent speaking task"],
-        ["Appendix 1", "Grammar Formula Book"],
-        ["Appendix 2", "Common Errors and Corrections Guide"],
-        ["Appendix 3", "Essential Sentence Patterns for Speaking"],
-        ["Appendix 4", "Speaking Self-Assessment and Can-Do Tracker"],
-        ["Appendix 5", "Complete Answer Key"],
-    ]
-    table(doc, ["Tests and reference", ""], rows2, widths=[2.6, 3.7], zebra=True)
+    para(doc, "This is an automatic Word table of contents. It updates to show page numbers when opened "
+              "in Word; if it has not refreshed, select it and choose Update Field / Update entire table.",
+         size=10.5, italic=True, color=GREY)
+    p = doc.add_paragraph()
+    p.paragraph_format.space_before = 4
+    p.paragraph_format.space_after = 4
+    begin_run = p.add_run()
+    fld_begin = OxmlElement("w:fldChar")
+    fld_begin.set(qn("w:fldCharType"), "begin")
+    begin_run._r.append(fld_begin)
+    instr_run = p.add_run()
+    instr = OxmlElement("w:instrText")
+    instr.set(qn("xml:space"), "preserve")
+    instr.text = ' TOC \\o "1-1" \\h \\z \\u '
+    instr_run._r.append(instr)
+    sep_run = p.add_run()
+    separate = OxmlElement("w:fldChar")
+    separate.set(qn("w:fldCharType"), "separate")
+    sep_run._r.append(separate)
+    result = p.add_run("Update this field to populate the contents and page numbers.")
+    result.font.italic = True
+    result.font.color.rgb = GREY
+    end_run = p.add_run()
+    fld_end = OxmlElement("w:fldChar")
+    fld_end.set(qn("w:fldCharType"), "end")
+    end_run._r.append(fld_end)
     page_break(doc)
 
 
 def diagnostic(doc, keys_registry):
     h_banner(doc, "DIAGNOSTIC TEST", sub="Find your starting point — 25 questions · no time limit")
     para(doc, "Do this test before Lesson 1. Do not study first: the point is to see what you can "
-              "already do. Mark your score out of 25, then keep the paper — you will compare it "
-              "with your Final Assessment later.", size=11, italic=True, color=GREY)
+              "already do. Mark your score out of 25 and keep the paper. This is a broad starting "
+              "snapshot, not a parallel form of the 30-item Final Assessment; do not interpret the "
+              "difference between their raw totals as a learning gain. For a comparable progress "
+              "check, complete the speaking sample below and score it with the same rubric used at "
+              "the end of the book.", size=11, italic=True, color=GREY)
     para(doc, "Part A — Tenses and time  (10 questions)", size=11, bold=True, color=NAVY)
     A = [
         "I __________ (see) that film last week.",
         "She __________ (work) here since 2021.",
-        "While I __________ (cook), the phone rang.",
-        "He told me he __________ already __________ (leave).",
-        "Water __________ (boil) at 100°C.",
+        "While I __________ (cook — ongoing background), the phone rang.",
+        "They __________ (work) there for ten years before they moved to Kabul.",
+        "At sea level, pure water __________ (boil) at 100°C.",
         "They __________ (build) a new bridge when we visited.",
         "I __________ my keys — I can't get in.  (lose)",
         "Last summer we __________ (go) to Herat.",
-        "How many books __________ you __________ (read) this month?",
+        "How many books __________ you __________ (read) so far this month?",
         "When I arrived, the train __________ already __________ (leave).",
     ]
     for i, q in enumerate(A, 1):
@@ -182,7 +197,7 @@ def diagnostic(doc, keys_registry):
         "The report __________ (write) by the team last week.",
         "He suggested __________ early.  (leave)",
         "Could you tell me where __________ ?  (the station / be)",
-        "The girl __________ helped me was very kind.  (who / whose / which)",
+        "The girl __________ helped me was very kind.  (who / that / whose / which)",
         "I'd rather you __________ (not, smoke) here.",
         "Ali is __________ than his brother.  (intelligent)",
         "Not until midnight __________.  (she / finish)",
@@ -194,24 +209,41 @@ def diagnostic(doc, keys_registry):
         "I __________ find my passport anywhere.  (mustn't / can't)",
         "__________ being very tired, he finished the race.  (Despite / Although)",
         "She asked me, \"Where do you live?\"  →  She asked me __________.",
-        "It __________ rain later — take an umbrella.  (certainty: 50%)",
-        "I __________ my hair cut yesterday.",
+        "It __________ rain later — take an umbrella.  (may / might / could)",
+        "I __________ my hair cut yesterday.  (had / got)",
     ]
     for i, q in enumerate(C, 21):
         para(doc, f"{i}.  {q}", indent=0.12)
-    box(doc, "Diagnostic answer key", [
-        "A.  1 saw · 2 has worked · 3 was cooking · 4 had left · 5 boils · 6 were building · "
-        "7 have lost / 've lost · 8 went · 9 have … read · 10 had already left",
-        "B.  11 rains · 12 knew · 13 repairing (or: to be repaired) · 14 was written · 15 leaving · "
-        "16 the station is · 17 who · 18 didn't smoke · 19 more intelligent · 20 did she finish",
-        "C.  21 can't · 22 Despite · 23 where I lived · 24 might · 25 had",
-    ], fill=FILL_BOX_GREY, label_color=NAVY)
+    page_break(doc)
+    para(doc, "Part D — Baseline speaking sample (not included in the 25-point grammar score)",
+         size=11, bold=True, color=NAVY)
+    box(doc, "Speak for two minutes", [
+        "Choose one topic. Prepare for two minutes, then speak for two minutes without reading a script:",
+        "•  A decision that changed your life — and what you would do differently today.",
+        "•  One change that would improve education or work in your country.",
+        "•  A person who influenced you, and the advice they gave you.",
+        "After your talk, a partner asks two follow-up questions. Answer them, then ask one relevant "
+        "question in return. If you get stuck, repair and continue. Record the topic and, if possible, "
+        "save a recording. At the end of the course, repeat this task under the same conditions. The "
+        "Final Assessment uses the same task and four-criterion rubric; score this baseline now and "
+        "score the final sample later."
+    ], fill=FILL_BOX_TEAL, label_color=TEAL)
+    table(doc, ["Criterion", "4 — Strong", "3 — Good", "2 — Developing", "1 — Beginning"], [
+        [("Grammatical accuracy", True), "structures are consistently accurate; occasional slips do not affect meaning", "generally accurate; some errors, meaning always clear", "frequent errors; meaning sometimes unclear", "errors dominate; meaning often unclear"],
+        [("Appropriate structure selection", True), "wide range used naturally (tenses, conditionals, linkers, hedging…) for the intended meaning", "good range; choices usually match the meaning", "limited range; some structures forced or inappropriate", "basic structures only; frequent wrong choices"],
+        [("Clarity", True), "ideas well organised and easy to follow; effective linking", "clear overall; some linking", "ideas loosely connected; hard to follow at times", "ideas listed without clear connection"],
+        [("Successful communication", True), "message fully delivered; natural delivery, relevant follow-up exchange and self-repair", "message delivered; answers and asks relevant follow-ups, with some hesitation", "message partly delivered; responses are limited or pauses are long", "message largely not delivered; little response to questions"],
+    ], widths=[1.35, 1.35, 1.25, 1.2, 1.15], font_size=8.5)
+    para(doc, "Baseline speaking score: ____ / 16. Keep this page for the matched end-of-course comparison.",
+         size=10.5, italic=True, color=GREY)
+    para(doc, "When you finish, check your work in Appendix 5. The answer key is kept separate so you can complete the diagnostic without seeing it.",
+         size=10.5, italic=True, color=GREY)
     keys_registry["Diagnostic"] = {
-        "A": ["saw", "has worked", "was cooking", "had left", "boils", "were building",
+        "A": ["saw", "has worked / has been working", "was cooking", "had worked / had been working; 'worked' is also possible with before", "boils", "were building",
               "have lost", "went", "have read", "had already left"],
         "B": ["rains", "knew", "repairing / to be repaired", "was written", "leaving",
-              "the station is", "who", "didn't smoke", "more intelligent", "did she finish"],
-        "C": ["can't", "Despite", "where I lived", "might", "had"],
+              "the station is", "who / that", "didn't smoke", "more intelligent", "did she finish"],
+        "C": ["can't", "Despite", "where I lived / where I live (if still true)", "may / might / could", "had / got"],
     }
     para(doc, "Score guide: 21–25 — strong base, keep the Advanced Upgrade in sight.  "
               "15–20 — solid core; work carefully through both pathways.  "

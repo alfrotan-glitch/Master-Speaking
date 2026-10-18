@@ -18,8 +18,8 @@ def review_test(doc, num, after, keys_registry):
     if num == 1:
         A = [
             "I __________ (not/see) him since Monday.",
-            "While we __________ (wait), the announcement came.",
-            "Water __________ (freeze) at 0°C.",
+            "While we __________ (wait — ongoing action), the announcement came.",
+            "At standard atmospheric pressure, pure water __________ (freeze) at 0°C.",
             "She __________ (study) medicine these days.",
             "By the time we arrived, the guests __________ (eat) everything.",
             "Look at the sky — it __________ (rain).",
@@ -27,21 +27,21 @@ def review_test(doc, num, after, keys_registry):
             "Before the meeting __________ (start), we had already discussed the plan.",
         ]
         B = [
-            "If I __________ (be) you, I would apply for the visa.",
+            "You __________ wear a seat belt; it's the law.  (must / might)",
             "__________ you mind __________ (close) the door?",
             "Do you know where the post office __________ ?  (be)",
-            "Despite __________ (be) very tired, she finished the work.",
+            "You __________ bring any food; we will provide everything.  (not / have to)",
         ]
         C = [
-            "Rewrite as a second conditional: 'I don't have time, so I can't help.'",
+            "Give advice: A friend is exhausted but has a long drive.  (use should)",
             "Make it polite: 'Where did you park?'  (Could you tell me…)",
             "Give a deduction: You see a colleague carrying a tennis racket. 'You __________ (be) on your way to a game.'",
         ]
         key = {
             'A': ["haven't seen", "were waiting", "freezes", "is studying", "had eaten",
                   "is going to rain / will rain", "have / known", "started"],
-            'B': ["were", "Would / closing", "is", "being"],
-            'C': ["If I had time, I would help. / If I had more time, I could help.",
+            'B': ["must", "Would / closing", "is", "don't have to / needn't"],
+            'C': ["Answers vary; e.g., 'You should rest before driving.' (should + base verb)",
                   "Could you tell me where you parked?",
                   "must be"],
         }
@@ -50,7 +50,7 @@ def review_test(doc, num, after, keys_registry):
             "If I __________ (know) his number, I would call him now.",
             "I wish I __________ (take) that opportunity last year.",
             "This method is __________ (effective) than the old one.",
-            "While I __________ (read), the lights went out.",
+            "While I __________ (read — ongoing action), the lights went out.",
             "When we arrived, the guests __________ (already / leave).",
             "It's high time we __________ (make) a decision.",
             "This option is by far the __________ (good) for our budget.",
@@ -70,7 +70,7 @@ def review_test(doc, num, after, keys_registry):
         key = {
             'A': ["knew", "had taken", "more effective", "was reading", "had already left",
                   "made", "best", "hurry"],
-            'B': ["Despite being hard, everyone passed the exam. / Despite the difficulty, everyone passed.",
+            'B': ["Despite the exam being hard, everyone passed. / Despite the difficulty, everyone passed.",
                   "If I had a car, I would drive you. / If I had a car, I could drive you.",
                   "answers vary — advice with should/could/might",
                   "Could you tell me where the bank is?"],
@@ -117,11 +117,8 @@ def review_test(doc, num, after, keys_registry):
     _qblock(doc, "Part A — Complete the sentences.", A)
     _qblock(doc, "Part B — Rewrite, combine or transform.", B)
     _qblock(doc, "Part C — Use and communication.", C)
-    box(doc, "Answer key", [
-        "A.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['A'])),
-        "B.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['B'])),
-        "C.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['C'])),
-    ], fill=FILL_BOX_GREY, label_color=NAVY)
+    para(doc, "When you finish, check your work in Appendix 5. The answers are kept separate so you can complete the test without seeing them.",
+         size=10.5, italic=True, color=GREY)
     keys_registry[f"Review Test {num}"] = key
 
 
@@ -176,42 +173,41 @@ def final_assessment(doc, keys_registry):
     for i, q in enumerate(C, 23):
         para(doc, f"{i}.  {q}", indent=0.12)
     key = {
-        'A': ["have lived / 've lived", "had already had", "is", "hadn't said", "was cancelled",
-              "must have been working", "making", "rewrite", "challenging", "Having been warned",
+        'A': ["have lived / 've lived / have been living", "had already had", "is", "hadn't said", "was cancelled",
+              "must have been working", "making", "rewrite", "challenging", "Warned / Having been warned",
               "leaving", "did she apologise"],
         'B': ["He said he would help me the next day.",
               "She asked me where I had bought it.",
               "Could you tell me when the shop closes?",
               "If he had revised, he wouldn't have failed.",
               "The documents have been stolen.",
-              "It was the manager who approved the plan.",
+              "It was the manager who/that approved the plan.",
               "I had the roof fixed.",
               "Rarely had she felt so confident.",
               "Although the task was difficult, they finished it.",
               "Having studied hard, he passed easily."],
         'C': ["can't", "Despite", "This method may well be the best. / This method is probably the best. (answers vary)",
               "Option A is far better than Option B because… (answers vary)",
-              "The book (that) I read was amazing.",
+              "The book (that / which) I read was amazing.",
               "more confident", "She advised me to apply early.", "meeting"],
     }
-    box(doc, "Answer key — Final Assessment", [
-        "A.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['A'])),
-        "B.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['B'])),
-        "C.  " + "  ·  ".join(f"{i+1} {a}" for i, a in enumerate(key['C'])),
-    ], fill=FILL_BOX_GREY, label_color=NAVY)
+    para(doc, "Stop here until you have completed all 30 items. The answer key is in Appendix 5.",
+         size=10.5, italic=True, color=GREY)
     keys_registry["Final Assessment"] = key
     para(doc, "Accept alternative answers where the exercise allows them (e.g. 'may well' / 'probably' / "
-              "'is likely to' for hedging). Compare this score with your Diagnostic Test score — "
-              "the difference is your progress.", size=10.5, italic=True, color=GREY)
+              "'is likely to' for hedging). The Diagnostic Test is a broad starting snapshot, not a "
+              "parallel form of this 30-item assessment. Do not compare the raw grammar totals as "
+              "a measure of gain; compare your four speaking-rubric criterion scores instead.", size=10.5, italic=True, color=GREY)
 
     page_break(doc)
     h_banner(doc, "FINAL ASSESSMENT — PART 2", sub="Independent speaking task and evaluation")
-    box(doc, "Speaking task (2 minutes to prepare · 2 minutes to speak)",
+    box(doc, "Speaking task (2 minutes to prepare · 2 minutes to speak, then follow-up exchange)",
         ["Speak on ONE of the following topics:",
          "•  A decision that changed your life — and what you would do differently today.",
          "•  One change that would improve education or work in your country.",
          "•  A person who influenced you, and the advice they gave you.",
-         "",
+         "After your talk, a partner asks two follow-up questions. Answer them, then ask one relevant "
+         "question in return. If you get stuck, repair and continue.",
          "You may make brief notes during the preparation time. Speak without reading a script."],
         fill=FILL_BOX_TEAL, label_color=TEAL)
     para(doc, "Evaluation rubric", size=11, bold=True, color=NAVY)
@@ -232,12 +228,12 @@ def final_assessment(doc, keys_registry):
          "ideas loosely connected; hard to follow at times",
          "ideas listed without clear connection"],
         [("Successful communication", True),
-         "message fully delivered; confident, natural delivery with self-repair",
-         "message delivered; some hesitation",
-         "message partly delivered; long pauses",
-         "message largely not delivered"],
-    ], widths=[1.35, 1.35, 1.25, 1.2, 1.15], font_size=9)
-    para(doc, "Score: ____ / 16     Compare with the Diagnostic Test and note the progress in each criterion.",
+         "message fully delivered; natural delivery, relevant follow-up exchange and self-repair",
+         "message delivered; answers and asks relevant follow-ups, with some hesitation",
+         "message partly delivered; responses are limited or pauses are long",
+         "message largely not delivered; little response to questions"],
+    ], widths=[1.35, 1.35, 1.25, 1.2, 1.15], font_size=8.5)
+    para(doc, "Score: ____ / 16     Compare each criterion with your recorded Diagnostic speaking score.",
          size=11, bold=True, color=NAVY)
     para(doc, "Personal error analysis and improvement plan", size=11, bold=True, color=NAVY)
     para(doc, "Copy every error you made in the Final Assessment (written and spoken) into the table. "
@@ -250,7 +246,7 @@ def final_assessment(doc, keys_registry):
     ], widths=[1.6, 1.6, 1.6, 1.6], font_size=9.5, zebra=False)
     para(doc, "My next three goals:", size=11, bold=True, color=NAVY)
     for i in range(1, 4):
-        para(doc, f"{i}.  ", indent=0.12)
+        para(doc, f"{i}.  ________________________________________________________________", indent=0.12)
     para(doc, "Remember: improvement is measured by what you can do in speech — not by pages completed. "
               "Record yourself speaking for two minutes on the same topic in a month, and listen to the difference.",
          size=10.5, italic=True, color=GREY)

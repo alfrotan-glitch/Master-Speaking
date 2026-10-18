@@ -167,8 +167,7 @@ L14 = {
          'examples': ["Having finished the report, she left the office.  (After she had finished…)",
                       "Written in 1963, the novel is still popular.  (The novel, which was written…)",
                       "Walking to the station, I realised my mistake.  (While I was walking…)"],
-         'remember': ["The subject must match! 'Walking to the station, the rain started' is wrong — "
-                      "the rain was not walking. → 'Walking to the station, I got soaked.'"]},
+         'remember': ["In a reduced opening clause with no stated subject, the understood subject should match the main clause: 'Walking to the station, I got soaked' (I was walking), not 'Walking to the station, the rain started.' An absolute clause names its own subject: 'With prices rising, families are worried.'"]},
         {'label': 'Rule 3 — Absolute and fronted patterns for emphasis',
          'formula': ["Fronted participle:  'Considering the costs…', 'Given the evidence…', 'Looking at the results…'",
                      "With + noun + participle:  'With prices rising, families are worried.'",
@@ -199,8 +198,8 @@ L14 = {
              ["Written in haste, the report had errors.", "The report, which was written in haste, had errors.", "Compression with a passive participle."],
          ], 'headers': ['Participle clause (compressed)', 'Full clause', 'Why']},
         {'title': 'the subject rule',
-         'text': ["The understood subject of a participle clause must be the subject of the main clause: "
-                  "'Opening the door, I felt the cold.' (I opened). Never: 'Opening the door, the room was cold.'"]},
+         'text': ["In a reduced participle clause with no stated subject, the understood subject should normally match the main clause: "
+                  "'Opening the door, I felt the cold.' (I opened), not 'Opening the door, the room was cold.' Absolute clauses state their own subject, as in 'Weather permitting, we will leave.'"]},
     ],
     'practice_a': [
         "The lecture was so __________ (bore) that half the class fell asleep.",
@@ -280,8 +279,7 @@ L15 = {
          'formula': ["may / might / could + base verb  ·  may well  ·  it is likely that …",
                      "seem to / tend to / appear to  ·  generally / broadly / in most cases",
                      "it could be argued that …  ·  one possible explanation is …"],
-         'text': ["Hedging makes claims professional and safe. Academic and business English hedge constantly — "
-                  "it signals control, not weakness."],
+         'text': ["Hedging can make a claim sound measured when evidence is limited or a conclusion is uncertain. Academic and professional speakers often hedge; too much hedging, however, can make a message unclear."],
          'examples': ["The results suggest a small improvement.",
                       "This policy may well reduce costs in the long run.",
                       "It could be argued that the data is incomplete."],
@@ -308,14 +306,16 @@ L15 = {
                       "Only after the meeting did I understand the decision."],
          'remember': ["Inversion is punctuation for the ear. Use it once for impact — never in every sentence."]},
         {'label': 'Rule 4 — Choosing the right level of certainty and formality',
-         'formula': ["certainty scale:  will > must > should > may well > might > could > may",
-                     "formal markers:  passive · inversion · clefts · hedging · full forms"],
+         'formula': ["Strong prediction/inference: will (prediction) · must be (strong deduction)",
+                     "Expectation/likelihood: should · be likely to · may well",
+                     "Possibility: may · might · could (no fixed ranking; context and speaker matter)",
+                     "formal markers: passive · inversion · clefts · hedging · full forms"],
          'text': ["Match the strength of your language to your evidence and your audience. "
                   "Over-claiming damages credibility; careful claims build it."],
          'examples': ["Formal: 'Should you require further information, please do not hesitate to contact us.'",
                       "Neutral: 'If you need more information, contact us.'",
                       "Casual: 'Just call me if you need anything.'"],
-         'remember': ["The most confident speakers hedge the most — because they know the limits of their knowledge."]},
+         'remember': ["A careful hedge signals that you are matching the strength of your claim to the evidence — not that you lack confidence."]},
     ],
     'differences': [
         {'title': 'certainty levels',
@@ -360,7 +360,7 @@ L15 = {
                      "answers stay clear and confident"],
     },
     'advanced': {
-        'base': ["Drill the certainty scale out loud: will / must / should / may well / might / could — one claim at each level.",
+        'base': ["Practise three certainty groups in context: strong prediction/inference (will / must be), expectation or likelihood (should / may well), and possibility (may / might / could). Explain what evidence supports each choice.",
                  "Learn three inversion frames by heart: 'Never have I…' · 'Not only did…' · 'Only then did…'."],
         'upgrade': ["Use 'little did he know…' and 'little did I realise…' in storytelling.",
                     "Use litotes (understatement): 'not unlike', 'no small achievement', 'not bad at all'.",

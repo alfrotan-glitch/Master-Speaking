@@ -34,6 +34,11 @@
     "stdout_tail": "{\n  \"ok\": true,\n  \"items_checked\": 89,\n  \"issues\": [],\n  \"scope\": \"Every structured MCQ stem and all its options on one PDF page; not answer correctness or native Word pagination.\"\n}\n",
     "stderr_tail": ""
   },
+  "accessibility": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"reviewed_interior_images\": 24,\n  \"reviewed_cover_images\": 1,\n  \"word_drawings_checked\": 24,\n  \"epub_chapters_checked\": 32,\n  \"mutations\": {\n    \"generic_description_rejected\": true,\n    \"broken_navigation_rejected\": true,\n    \"missing_language_rejected\": true,\n    \"chapter_heading_regression_rejected\": true,\n    \"missing_header_scope_rejected\": true,\n    \"broken_navigation_fragment_rejected\": true,\n    \"wrong_image_bytes_rejected\": true\n  },\n  \"issues\": [],\n  \"scope\": \"Source-hashed image descriptions matched to Word drawings and EPUB; heading/language/navigation/table/metadata checks. Not screen-reader/device testing, tagged PDF, independent accessibility certification or rights clearance.\"\n}\n",
+    "stderr_tail": ""
+  },
   "content": {
     "exit_code": 0,
     "stdout_tail": "checked 3181 source texts: covered 2847, classified transforms 334, missing 0\nOK\n",
@@ -76,7 +81,7 @@
   },
   "epubcheck": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 04:46:00\",\n    \"elapsedTime\": 6131,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
+    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 05:53:43\",\n    \"elapsedTime\": 5891,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
     "stderr_tail": ""
   },
   "visual": {

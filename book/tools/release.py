@@ -40,7 +40,7 @@ def main():
                 raise SystemExit(f'Build stopped at {name}; no success report written.')
     if run('review_pages')['exit_code']:
         raise SystemExit('Could not render current proof pages.')
-    names = ['revision', 'lessons', 'learning_transfer', 'rewrite_review', 'whole_revision', 'reading_keys', 'mcq_layout', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
+    names = ['revision', 'lessons', 'learning_transfer', 'rewrite_review', 'whole_revision', 'reading_keys', 'mcq_layout', 'accessibility', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
     results = {name: run('qa_' + name) for name in names}
     palette = {'accent on white': contrast(ACCENT, 'FFFFFF'),
                'white on banner': contrast('FFFFFF', BANNER),
@@ -93,6 +93,7 @@ def main():
                '- Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.',
                '- Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.',
                '- EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.',
+               '- Accessibility gate: reviewed image descriptions match actual Word/EPUB image bytes; standalone EPUB heading levels, language, navigation, table-header scope and discovery metadata are checked. This is not accessibility certification, screen-reader/device testing or a tagged PDF. See ACCESSIBILITY-REVIEW.md.',
                '- PDF uses the existing DOCX-based custom renderer, not Microsoft Word. A native Word export and printer proof still need comparison.',
                '- The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.',
                '- Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.', '',

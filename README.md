@@ -4,7 +4,7 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 
 ## Revised book — October 2026
 
-**All-chapter revision pass complete:** all eight units and 32 chapters now have recorded substantive revisions, preserving their exact titles. Current book: **171 interior / 172 reader pages; 21 release gates pass**. All editions and supporting packs are synchronized. See [revision and proof scope](REWRITE-PROGRESS.md): this is not independent every-word or every-page full-size human proof.
+**All-chapter revision pass complete:** all eight units and 32 chapters now have recorded substantive revisions, preserving their exact titles. Current book: **171 interior / 172 reader pages; 22 release gates pass**. All editions and supporting packs are synchronized. See [revision and proof scope](REWRITE-PROGRESS.md): this is not independent every-word or every-page full-size human proof.
 
 **Start with [the clean book PDF](Master-Speaking.pdf)**: cover plus the reader-facing book, with navigation bookmarks. Discussion notes, production reports, and teaching packs are not included. The older `Master-Speaking-Reading-Edition.pdf` link remains an identical compatibility copy.
 
@@ -17,6 +17,7 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 - [Whole-book critical audit and remediation](WHOLE-BOOK-AUDIT.md)
 - [Ten-specialist-lens improvement review](TEN-LENS-REVIEW.md) — AI-assisted, not ten independent human endorsements
 - [Modern redesign and visual review](DESIGN-REVIEW.md)
+- [Word/EPUB accessibility improvements](ACCESSIBILITY-REVIEW.md) — image descriptions and structural checks, not certification
 - [Current QA results](QA-REPORT.md) and [text change log](CHANGELOG.md)
 
 This revision restores a previously truncated AI question, applies reviewed learner-facing copyedits, adds practical learning/research guidance without production commentary, improves default text contrast, and repairs chapter/table/title-page rendering. **It is an editorial proof, not a commercially cleared release.** Exact listening inputs, image permissions, factual substantiation, and final printer/device proofs remain open.
@@ -28,7 +29,7 @@ bash book/tools/bootstrap.sh
 python book/tools/release.py
 ```
 
-The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, and all three supporting packs, then runs 21 regression, revision-coverage, reading-key, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision.
+The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, and all three supporting packs, then runs 22 regression, revision-coverage, reading-key, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision. After a successful release, run `python book/tools/package_books.py` to create the all-books download ZIP from checksum-verified exports. The bundle is intentionally excluded from Git because its individual editions are already tracked.
 
 ## Classroom implementation packs
 

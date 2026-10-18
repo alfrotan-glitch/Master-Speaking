@@ -13,6 +13,7 @@ Interior: **171 pages**, 7 × 10 inches. Reading edition: 172 pages including a 
 | whole_revision | PASS |
 | reading_keys | PASS |
 | mcq_layout | PASS |
+| accessibility | PASS |
 | content | PASS |
 | editorial | PASS |
 | word | PASS |
@@ -40,6 +41,7 @@ Interior: **171 pages**, 7 × 10 inches. Reading edition: 172 pages including a 
 - Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.
 - Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.
 - EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.
+- Accessibility gate: reviewed image descriptions match actual Word/EPUB image bytes; standalone EPUB heading levels, language, navigation, table-header scope and discovery metadata are checked. This is not accessibility certification, screen-reader/device testing or a tagged PDF. See ACCESSIBILITY-REVIEW.md.
 - PDF uses the existing DOCX-based custom renderer, not Microsoft Word. A native Word export and printer proof still need comparison.
 - The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.
 - Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.
@@ -48,15 +50,15 @@ Editorial log: 563 entries. Machine results: `book/artifacts/qa_october_run.json
 
 ## Export checksums (SHA-256)
 
-- `Master-Speaking-print-7x10.pdf`: `f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859`
-- `Master-Speaking-7x10.docx`: `43c2b897875c9ecc368ffdad782fb8c407d36925b426d27b555ca7b7ab25a515`
-- `Master-Speaking.epub`: `d684aab30ca78429d0be1bd39e00cfc1f2a17188dd82fa4def9f3efee89e1fb9`
-- `Master-Speaking-Front-Cover.pdf`: `126134601360147fe7a8cd0f9a5a65ad6373dda27eedd489889157f2a557065e`
-- `Master-Speaking-Reading-Edition.pdf`: `2522b6f2237e04ba9cd56640d3f3dc0343fea34d9d5a32aa974b8070ee9f17af`
-- `Master-Speaking.pdf`: `2522b6f2237e04ba9cd56640d3f3dc0343fea34d9d5a32aa974b8070ee9f17af`
-- `Master-Speaking-Class-Companion.pdf`: `5767acfc67206d62ec3eb4aab8c5e86220d7765760e343d7aa84a938776fa7cb`
-- `Master-Speaking-Class-Companion.docx`: `9278b6c675c9b26b4f9b45220de4a794b4ca5af6f527fc96fdf926c366d22d6e`
-- `Master-Speaking-Student-Practice-Pack.pdf`: `8825e1e716c082d9ef9447dd064c90ad1f4e99ffd7e862c3cdd23eec19b115fc`
-- `Master-Speaking-Student-Practice-Pack.docx`: `3019aea6a2a4f802edb1af20967ecd8e62ef8f03357d1afe18481a96928a1957`
-- `Master-Speaking-Teacher-Implementation-Pack.pdf`: `34ca13d27ec7eb1c1a2493e2249998cba87e5bfed6ea2b031569cd3c2c8bfcaa`
-- `Master-Speaking-Teacher-Implementation-Pack.docx`: `122bc94d69e1b744d3b3fbe691cce763a4c299274cf8709133eb7c3060678b29`
+- `Master-Speaking-print-7x10.pdf`: `8115209274d9627d6b0f488f6d078448196822c95a96540cca9cb8260a9fc533`
+- `Master-Speaking-7x10.docx`: `0af9d04439b864b62ef21fcdec76601c70f313793ae5822caf28abd97b30f4fc`
+- `Master-Speaking.epub`: `b454c914b412ab75d08cd6389f35a0728dd71bccbecb8e4ac7dc54a1ecd7974a`
+- `Master-Speaking-Front-Cover.pdf`: `277feff52e827ab4eb924ddeffb7f5cde1fd91120116b0dd9ae5b328aa5e23b6`
+- `Master-Speaking-Reading-Edition.pdf`: `99c43ef6a982a7958acf215d5fd4d319103cf3c582c5620cb9261449aaf39ceb`
+- `Master-Speaking.pdf`: `99c43ef6a982a7958acf215d5fd4d319103cf3c582c5620cb9261449aaf39ceb`
+- `Master-Speaking-Class-Companion.pdf`: `b7996bb8b2db5f5aa340ec1cfdbdf68b36dd12e8a969667040ec7f3362c9f541`
+- `Master-Speaking-Class-Companion.docx`: `e6cbf31bf62c9d7976fad57a10a4f8865c83d0feee183549d1f4145e5ae37f3e`
+- `Master-Speaking-Student-Practice-Pack.pdf`: `3ddfcc4fc670a87c8ef048bde87b8ecfbde4a69c1c2174b5b64e8a0f4bceaaef`
+- `Master-Speaking-Student-Practice-Pack.docx`: `d9d0bf4c2583839d41a1df28b91c09cefe18cece2a1356f319b3daaf39b6d652`
+- `Master-Speaking-Teacher-Implementation-Pack.pdf`: `74b40b39323da94115f7b8926ce793880118a0c7c49ba8a980b6ac94b4dba373`
+- `Master-Speaking-Teacher-Implementation-Pack.docx`: `70e4cff4e8da3283e2272bc7165ca90e51ef9e1877c99fb2378fda8b083a533e`

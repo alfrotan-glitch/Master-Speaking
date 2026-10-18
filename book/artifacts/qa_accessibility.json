@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "reviewed_interior_images": 24,
+  "reviewed_cover_images": 1,
+  "word_drawings_checked": 24,
+  "epub_chapters_checked": 32,
+  "mutations": {
+    "generic_description_rejected": true,
+    "broken_navigation_rejected": true,
+    "missing_language_rejected": true,
+    "chapter_heading_regression_rejected": true,
+    "missing_header_scope_rejected": true,
+    "broken_navigation_fragment_rejected": true,
+    "wrong_image_bytes_rejected": true
+  },
+  "issues": [],
+  "scope": "Source-hashed image descriptions matched to Word drawings and EPUB; heading/language/navigation/table/metadata checks. Not screen-reader/device testing, tagged PDF, independent accessibility certification or rights clearance."
+}

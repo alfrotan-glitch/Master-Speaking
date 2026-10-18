@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-18",
+  "review_basis": "AI-assisted visual description of all 24 existing interior images and the cover; the relationship diagram and goal mind map were also inspected individually. Descriptions identify visible content, not verified recording identities, scientific evidence, or permission status. The static GIF and PNG twin have identical decoded pixels.",
+  "images": [
+    {
+      "file": "image1.png",
+      "path": "book/assets/images/image1.png",
+      "sha256": "158a6ff52481468d5960d4d2229b3f5af86d7e25f0c67fe60fdc5a0896c65a64",
+      "alt": "Two figures with a mouth and an ear for heads exchange colorful speech bubbles, illustrating speaking and listening."
+    },
+    {
+      "file": "image2.png",
+      "path": "book/assets/images/image2.png",
+      "sha256": "7df3498510e80e5aafec74d48066cadfd740c188b996ef5c59efbc3f1c13ad27",
+      "alt": "Two people face one another and gesture, with speech bubbles between them."
+    },
+    {
+      "file": "image3.jpeg",
+      "path": "book/assets/images/image3.jpeg",
+      "sha256": "6e7cb682aa27bd394ad58357a203eb0854753388888012da4a85b850f3721063",
+      "alt": "A cartoon thumbnail asks, “Are you a good listener?” Two people sit across a table; one is speaking and the other looks away. A TED-Ed logo is visible."
+    },
+    {
+      "file": "image4.png",
+      "path": "book/assets/images/image4.png",
+      "sha256": "e77efc88f40696971101b2a1d61f9ae0dad328e817accc4a2754af5af9c7103a",
+      "alt": "A goal-setting mind map surrounds a target, with branches for motivation, process, rules, benefits, development, encouragement, excuses and limits.",
+      "aliases": {
+        "image4.gif": "91ef8e8cd83b4b0cf0fc242b97cd37cad0833a74d387ccf1e78ba57553b41c30"
+      }
+    },
+    {
+      "file": "image5.jpeg",
+      "path": "book/assets/images/image5.jpeg",
+      "sha256": "bd95064c908506f2849cc2d814a78c4f3d8ab7b3bdc747df32aa40ebf35827f4",
+      "alt": "A person climbs a staircase toward a target at the top."
+    },
+    {
+      "file": "image6.jpeg",
+      "path": "book/assets/images/image6.jpeg",
+      "sha256": "4e372bbb3b5461509f531fed7c6cdffd99130962af8b5e2fe0f23b5177d3d15d",
+      "alt": "A speaker in a yellow suit stands with open arms beside the words “Why you should stop setting goals (yes, really)” and a TED logo."
+    },
+    {
+      "file": "image7.jpeg",
+      "path": "book/assets/images/image7.jpeg",
+      "sha256": "75eea2858978d5c0948992bceca342345a6bcb6184da66fb7b5ef515605478fe",
+      "alt": "A glowing brain is surrounded by faces expressing happiness, affection, sadness, anger and surprise."
+    },
+    {
+      "file": "image8.jpeg",
+      "path": "book/assets/images/image8.jpeg",
+      "sha256": "3311294f340bf1d56178a5970fb3996cab81cdb699c83d2c2529014b5b4f4c49",
+      "alt": "Two hands support brain outlines labeled IQ and EQ, each viewed through a magnifying glass."
+    },
+    {
+      "file": "image9.jpeg",
+      "path": "book/assets/images/image9.jpeg",
+      "sha256": "06eb73a64ebfe9f18d95c50f43319f057807c934a0ec7977784d00a7e2b11597",
+      "alt": "A cartoon character sheds a tear beside the question “Are you emotionally mature?” A TED-Ed logo is visible."
+    },
+    {
+      "file": "image10.jpeg",
+      "path": "book/assets/images/image10.jpeg",
+      "sha256": "3ba8c891a4bdab9aad6a5832f77d5d4d429d5ee7db30dce4248151fdca8a31e4",
+      "alt": "A person raises both arms as banknotes fall around them."
+    },
+    {
+      "file": "image11.jpeg",
+      "path": "book/assets/images/image11.jpeg",
+      "sha256": "67de9b1d9f9bcd897ffc5084243ceefc428f6fbe35ac68c232da0198ae2426c3",
+      "alt": "One hand offers a banknote while another holds a yellow smiling face, suggesting an exchange of money for happiness."
+    },
+    {
+      "file": "image12.jpeg",
+      "path": "book/assets/images/image12.jpeg",
+      "sha256": "365848762ca13b37c5cfad9436db079517f537681a895bad54d981c3aa7f3534",
+      "alt": "A speaker holds a presentation remote on a stage with part of a TED sign behind him."
+    },
+    {
+      "file": "image13.png",
+      "path": "book/assets/images/image13.png",
+      "sha256": "568655f3de93d3fdbf75d7b9402158ae2b6e1e704813a49a5db0e15259f7b867",
+      "alt": "A futuristic living room contains robots, a robotic vacuum and wall-sized digital displays; drones are visible through the windows."
+    },
+    {
+      "file": "image14.jpeg",
+      "path": "book/assets/images/image14.jpeg",
+      "sha256": "4736b377a13a9ec91772670297dded2603a4a37c38fe0c9b925da41a9e2aa509",
+      "alt": "Two back-to-back artificial faces contrast exposed circuitry with a smooth white robotic exterior."
+    },
+    {
+      "file": "image15.jpeg",
+      "path": "book/assets/images/image15.jpeg",
+      "sha256": "253e98894a71ef7bc7b2c2a28abfa076b9dd53be5a07a0b1a13af36bea35de6a",
+      "alt": "A thumbnail reads “Things are going to get weird.” A small human figure stands beside a large stylized eye; a TED-Ed logo is visible."
+    },
+    {
+      "file": "image16.png",
+      "path": "book/assets/images/image16.png",
+      "sha256": "b0c7ae9d2812b177c967a358580ab7ba6be2978e64357086f05b0a1403a08496",
+      "alt": "A heart and a human head are connected by a tangled line, linking emotion and thought."
+    },
+    {
+      "file": "image17.jpeg",
+      "path": "book/assets/images/image17.jpeg",
+      "sha256": "1c6e3027afcdc28452ebbd20d60817ca716a8328dd1278e8e268c32cb3431ba2",
+      "alt": "Two people reach toward one another beneath a red heart."
+    },
+    {
+      "file": "image18.jpeg",
+      "path": "book/assets/images/image18.jpeg",
+      "sha256": "33bd7cf42720eeac5c32d14a1f4f84d0d6d826bfbf84ec5df69810fdafc3ba0e",
+      "alt": "A speaker stands beside six petals labeled Shared Vision, Compassion, Trust, Respect, Attraction and Loving Behavior."
+    },
+    {
+      "file": "image19.png",
+      "path": "book/assets/images/image19.png",
+      "sha256": "3876726f8f36fb7bb6ad24ea5f68e1ef6d7cacb5f3db1f852620c2dd0d522c1d",
+      "alt": "Travelers with bags look toward a world map filled with city skylines and landmarks."
+    },
+    {
+      "file": "image20.jpeg",
+      "path": "book/assets/images/image20.jpeg",
+      "sha256": "24911915585303097164f1e0b9652d5167db7bc6481e0cfe17d1e955bb348243",
+      "alt": "Landmarks encircle a globe, accompanied by an airplane, a sailboat and a train."
+    },
+    {
+      "file": "image21.jpeg",
+      "path": "book/assets/images/image21.jpeg",
+      "sha256": "9d2e13934ea0e6561766b1fd8313bbc4e09eb8f2bee65f5960f8126d6577705d",
+      "alt": "A speaker gestures in front of projected line graphs, with the years 2040 and 2050 visible."
+    },
+    {
+      "file": "image22.jpeg",
+      "path": "book/assets/images/image22.jpeg",
+      "sha256": "e960e10d9f20faac1bd72c68f9b4f7011c5e5ef163b3914334910e0d668b3bac",
+      "alt": "A signpost points toward English, French, Chinese, Dutch, Japanese, Italian, Korean, Spanish, Thai, German and Russian, with national flags beside the language names."
+    },
+    {
+      "file": "image23.jpeg",
+      "path": "book/assets/images/image23.jpeg",
+      "sha256": "0d5dad5b7abdfb572b26b83cb632b9641cf3822b2a5cf092d402721f4dfb5bf2",
+      "alt": "A globe is encircled by red arrows above the word “English?”"
+    },
+    {
+      "file": "image24.jpeg",
+      "path": "book/assets/images/image24.jpeg",
+      "sha256": "a21aa7d6bd20d2f539401ba9919f2356feb212b59ec6813a9b41670654822707",
+      "alt": "A speaker with glasses gestures with both arms on a stage with a TEDx sign."
+    },
+    {
+      "file": "cover.png",
+      "path": "book/assets/cover.png",
+      "sha256": "1a75cafd15f2a454d0c40c83d09e4592ad1091bc5967cd146c82ae0ba6121dc0",
+      "alt": "Master Speaking. Think clearly. Speak with purpose. An English speaking course in eight thematic units by Abdul Raziq Nazari, The TOEFL House. Read, listen, discuss, present. Communication, critical thinking, real-world discussion. Teal and gold flowing lines decorate the cover."
+    }
+  ]
+}

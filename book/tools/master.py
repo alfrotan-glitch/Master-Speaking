@@ -6,6 +6,7 @@ with a controlled class system. Both the print PDF (pdf.py) and the EPUB
 (epub.py) are derived from it.
 """
 import json, os, re, html
+from image_accessibility import description_for
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BUILD = os.path.join(ROOT, 'book', 'artifacts')
@@ -125,20 +126,20 @@ def render_blocks(blocks, ctx):
         elif kind == 'sub':
             h.append(f'<h4 class="sub">{esc(payload["text"])}</h4>')
             if payload.get('img'):
-                alt = f'Illustration for {payload["text"].lower()}'
-                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{esc(alt)}"/></figure>')
+                alt = description_for(payload['img'])
+                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{E(alt, quote=True)}"/></figure>')
         elif kind == 'subsub':
             h.append(f'<h5 class="runin">{esc(payload["text"])}</h5>')
             if payload.get('img'):
-                alt = f'Illustration for {payload["text"].lower()}'
-                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{esc(alt)}"/></figure>')
+                alt = description_for(payload['img'])
+                h.append(f'<figure class="inline-figure"><img src="assets/images/{payload["img"]}" alt="{E(alt, quote=True)}"/></figure>')
         elif kind == 'instr':
             h.append(f'<p class="instr">{esc(payload["text"])}</p>')
         elif kind == 'label':
             h.append(f'<p class="label">{esc(payload["text"])}</p>')
         elif kind == 'p':
             img = (f'<img class="inline-img" src="assets/images/{payload["img"]}" '
-                   f'alt="Illustration accompanying the text"/>') if payload.get('img') else ''
+                   f'alt="{E(description_for(payload["img"]), quote=True)}"/>') if payload.get('img') else ''
             h.append(f'<p>{img}{esc(payload["text"])}</p>')
         elif kind == 'topic':
             h.append(f'<p class="topic">{esc(payload["text"])}</p>')
@@ -149,7 +150,7 @@ def render_blocks(blocks, ctx):
         elif kind == 'readingtitle':
             h.append(f'<h4 class="reading-title">{esc(payload["text"])}</h4>')
             if payload.get('img'):
-                h.append(f'<figure class="reading-figure"><img src="assets/images/{payload["img"]}" alt="Illustration for the reading passage"/></figure>')
+                h.append(f'<figure class="reading-figure"><img src="assets/images/{payload["img"]}" alt="{E(description_for(payload["img"]), quote=True)}"/></figure>')
         elif kind == 'note':
             h.append(f'<div class="note"><p>{esc(payload["text"])}</p></div>')
         elif kind == 'mcq':
@@ -183,7 +184,7 @@ def render_blocks(blocks, ctx):
             for pr in payload:
                 if pr.get('img') and not started:
                     parts.append(
-                        f'<figure class="reading-figure"><img src="assets/images/{pr["img"]}" alt="Illustration for the reading passage"/></figure>')
+                        f'<figure class="reading-figure"><img src="assets/images/{pr["img"]}" alt="{E(description_for(pr["img"]), quote=True)}"/></figure>')
                 parts.append(f'<p class="reading">{esc(pr["text"])}</p>')
                 started = True
             h.append('<div class="reading-block">' + ''.join(parts) + '</div>')
@@ -290,7 +291,7 @@ for u in book['units']:
           f'<span class="unit-name">{esc(u["title"])}</span></h1>']
     if u.get('image'):
         up.append(f'<figure class="unit-figure"><img src="assets/images/{u["image"]}" '
-                  f'alt="Opening image for Unit {u["number"]}: {esc(u["title"])}"/></figure>')
+                  f'alt="{E(description_for(u["image"]), quote=True)}"/></figure>')
     w = u.get('warmup', {})
     wl = ['<div class="warmup">', '<h2 class="warmup-head">Think</h2>']
     for p in w.get('paras', []):

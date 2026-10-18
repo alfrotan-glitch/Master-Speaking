@@ -31,8 +31,12 @@ The guarded edit registers contain **377 chapter entries and 21 front-matter ent
 - All 32 chapters begin on fresh pages; eight unit openers begin on recto pages. Contents, bookmarks and links have been rebuilt for the current pagination.
 - Reserved room for section headings and their first actual table content row; prevented title-only chapter starts and corrected closing-instruction grouping.
 - Readable visual proof found multiple-choice stems separated from their options. Word now keeps each stem and its alternatives together; EPUB requests equivalent break avoidance. The production-PDF gate verifies **all 89 structured question-plus-options blocks** are intact on a single page. This count includes structured blocks beyond the lesson gate's 88-item subset.
-- **21 release gates pass**, including whole-chapter revision coverage, 74 reading-key source/evidence checks, MCQ pagination, all three support packs, source fidelity and official EPUBCheck. Two deliberate key-corruption mutations are rejected by the key check. These tests do not independently establish semantic correctness of every answer or factual claim.
+- **22 release gates pass**, including whole-chapter revision coverage, 74 reading-key source/evidence checks, MCQ pagination, all three support packs, source fidelity and official EPUBCheck. Two deliberate key-corruption mutations are rejected by the key check. These tests do not independently establish semantic correctness of every answer or factual claim.
 - Final all-page main overviews and supporting-pack overviews were visually inspected. Eleven selected main pages and six teacher-key pages were inspected at readable size in the final proof set. See `book/qa/full-revision-proof/index.json` for the exact PDF hashes and selected pages.
+
+## Continued accessibility pass
+
+All 24 interior images and the cover now have source-hashed, visually authored descriptions. Word/EPUB descriptions are matched to actual embedded image bytes. EPUB chapter outlines, English language attributes, navigation labels/targets, table-header scope and discovery metadata are checked by the new accessibility gate, with seven rejected negative controls. All 235 main/support PDF page renderings remain pixel-identical; no fresh complete manual proof or accessibility certification is claimed. See [ACCESSIBILITY-REVIEW.md](ACCESSIBILITY-REVIEW.md).
 
 ## What “complete” does and does not mean
 

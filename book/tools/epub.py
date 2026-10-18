@@ -7,6 +7,7 @@ landmarks), NCX for legacy reading systems, all 24 images (gif -> png).
 """
 import os, re, shutil, zipfile, uuid, datetime, html
 from lxml import etree
+from image_accessibility import description_for
 from design import BAND, BANNER, ACCENT, INK, MUTED, RULE, ZEBRA
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -37,7 +38,7 @@ h1.unit-title { font-size: 1.7em; margin: 0.2em 0 0.4em 0;
 figure.unit-figure { margin: 1em 0; text-align: center; }
 img { max-width: 100%; height: auto; }
 /* chapters */
-h2.chapter-title { font-size: 1.35em; margin: 0 0 0.35em 0;
+.chapter-title { font-size: 1.35em; margin: 0 0 0.35em 0;
                    break-before: page; page-break-before: always; }
 p.chapter-focus { font-family: sans-serif; font-size: 0.9em; text-align: left;
                   color: #42554F; margin: 0 0 1em 0; break-after: avoid; }
@@ -46,12 +47,12 @@ p.chapter-focus { font-family: sans-serif; font-size: 0.9em; text-align: left;
                   text-transform: uppercase; color: #205F67; }
 .chapter-name { display: block; }
 /* sections */
-h3.sec { font-size: 1.12em; margin: 1.2em 0 0.35em 0; color: #182B30;
+.sec { font-size: 1.12em; margin: 1.2em 0 0.35em 0; color: #182B30;
          background-color: #EDF3F2; padding: 0.15em 0.4em; }
-h4.sub, h4.reading-title { font-size: 1.0em; margin: 0.9em 0 0.3em 0;
+.sub, .reading-title { font-size: 1.0em; margin: 0.9em 0 0.3em 0;
                            color: #205F67; }
-h4.reading-title { color: #182B30; font-size: 1.15em; font-family: inherit; }
-h5.runin { font-size: 0.9em; margin: 0.8em 0 0.2em 0; }
+.reading-title { color: #182B30; font-size: 1.15em; font-family: inherit; }
+.runin { font-size: 0.9em; margin: 0.8em 0 0.2em 0; }
 /* content types */
 p.instr { font-family: "Source Sans 3", Helvetica, sans-serif; font-style: italic;
           font-size: 0.92em; color: #52656A; text-align: left; }
@@ -117,10 +118,10 @@ body {{ color: #{INK}; }}
 p, p.reading {{ text-align: left; }}
 h1.unit-title, h1.fm-head {{ color: #{BANNER}; background: transparent; padding: 0; }}
 h1.unit-title {{ font-family: 'Source Serif 4', Georgia, serif; font-size: 2em; }}
-h2.chapter-title {{ font-family: 'Source Serif 4', Georgia, serif; font-size: 1.65em; }}
+.chapter-title {{ font-family: 'Source Serif 4', Georgia, serif; font-size: 1.65em; }}
 .chapter-name {{ color: #{BANNER}; }}
 .chapter-kicker, .unit-kicker {{ font-family: sans-serif; color: #{ACCENT}; font-size: .62em; margin-bottom: .65em; }}
-h3.sec {{ color: #{ACCENT}; background: transparent; padding: 0 0 .25em; border-bottom: 1px solid #{RULE}; }}
+.sec {{ color: #{ACCENT}; background: transparent; padding: 0 0 .25em; border-bottom: 1px solid #{RULE}; }}
 p.instr {{ font-style: normal; color: #{MUTED}; }}
 p.chapter-focus {{ color: #{MUTED}; }}
 div.reading-block {{ border: none; padding-left: 0; }}
@@ -140,6 +141,7 @@ def local(tag):
 def wrap_doc(title, body_children):
     root = etree.Element(f'{{{XH}}}html', nsmap={None: XH, 'epub': EP})
     root.set('lang', 'en')
+    root.set('{http://www.w3.org/XML/1998/namespace}lang', 'en')
     head = etree.SubElement(root, f'{{{XH}}}head')
     t = etree.SubElement(head, f'{{{XH}}}title'); t.text = title
     mt = etree.SubElement(head, f'{{{XH}}}meta'); mt.set('charset', 'utf-8')
@@ -153,6 +155,22 @@ def wrap_doc(title, body_children):
 def serialize(root):
     return etree.tostring(root, xml_declaration=True, encoding='UTF-8',
                           doctype='<!DOCTYPE html>', pretty_print=True)
+
+def chapter_heading_levels(children):
+    """A split chapter is a document: begin with h1, without skipped levels."""
+    anchor = 1
+    for child in children:
+        for element in child.iter():
+            name = local(element.tag) if isinstance(element.tag, str) else ''
+            if name not in ('h2', 'h3', 'h4', 'h5'):
+                continue
+            if name == 'h5':
+                level = anchor + 1
+            else:
+                level = int(name[1]) - 1
+                anchor = level
+            element.tag = f'{{{XH}}}h{level}'
+
 
 def copy_children(sec, tweak=None):
     out = []
@@ -212,7 +230,7 @@ def main():
     manifest.append(('cover-image', 'images/cover.png', 'image/png', 'cover-image'))
     cover = etree.Element(f'{{{XH}}}div', {'class': 'cover', f'{{{EP}}}type': 'cover'})
     etree.SubElement(cover, f'{{{XH}}}img', src='images/cover.png',
-                     alt='Master Speaking. An English speaking course by Abdul Raziq Nazari. The TOEFL House.')
+                     alt=description_for('cover.png'))
     add_xhtml('cover.xhtml', 'Cover', [cover], 'Cover', 1)
 
     # ---- front matter --------------------------------------------------
@@ -265,6 +283,7 @@ def main():
             cname = q(ch_sec, './x:h2/x:span[@class="chapter-name"]/text()')[0]
             fname = f'unit{unum}-ch{cnum}.xhtml'
             children = copy_children(ch_sec)
+            chapter_heading_levels(children)
             for c in children:
                 fix_img_paths(c)
                 strip_ids(c)
@@ -274,13 +293,14 @@ def main():
     # ---- nav doc ---------------------------------------------------------
     nav_root = etree.Element(f'{{{XH}}}html', nsmap={None: XH, 'epub': EP})
     nav_root.set('lang', 'en')
+    nav_root.set('{http://www.w3.org/XML/1998/namespace}lang', 'en')
     head = etree.SubElement(nav_root, f'{{{XH}}}head')
     t = etree.SubElement(head, f'{{{XH}}}title'); t.text = 'Master Speaking'
     mt = etree.SubElement(head, f'{{{XH}}}meta'); mt.set('charset', 'utf-8')
     etree.SubElement(head, f'{{{XH}}}link', rel='stylesheet', href='style.css')
     bodynav = etree.SubElement(nav_root, f'{{{XH}}}body')
     nav = etree.SubElement(bodynav, f'{{{XH}}}nav',
-                           {f'{{{EP}}}type': 'toc', 'id': 'toc'})
+                           {f'{{{EP}}}type': 'toc', 'id': 'toc', 'aria-label': 'Contents'})
     h = etree.SubElement(nav, f'{{{XH}}}h1'); h.text = 'Contents'
     def build_ol(items, parent):
         ol = etree.SubElement(parent, f'{{{XH}}}ol')
@@ -291,7 +311,7 @@ def main():
                 build_ol(children, li)
     build_ol(nav_items, nav)
     lnav = etree.SubElement(bodynav, f'{{{XH}}}nav', {f'{{{EP}}}type': 'landmarks',
-                                                      'id': 'landmarks', 'hidden': 'hidden'})
+                                                      'id': 'landmarks', 'hidden': 'hidden', 'aria-label': 'Landmarks'})
     h2 = etree.SubElement(lnav, f'{{{XH}}}h2'); h2.text = 'Landmarks'
     ol = etree.SubElement(lnav, f'{{{XH}}}ol')
     for typ, label, href in [('ibook', None, None)][:0]:
@@ -350,7 +370,7 @@ def main():
     OPF = 'http://www.idpf.org/2007/opf'
     DC = 'http://purl.org/dc/elements/1.1/'
     opf = etree.Element(f'{{{OPF}}}package', nsmap={None: OPF, 'dc': DC},
-                        version='3.0', **{'unique-identifier': 'pub-id'})
+                        version='3.0', **{'unique-identifier': 'pub-id', 'prefix': 'schema: http://schema.org/'})
     md = etree.SubElement(opf, f'{{{OPF}}}metadata')
     def dc(tag, text, **attrs):
         e = etree.SubElement(md, f'{{{DC}}}{tag}')
@@ -364,6 +384,14 @@ def main():
     dc('language', 'en')
     dc('date', datetime.date.today().isoformat())
     dc('description', 'A speaking course for advanced English learners: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.')
+    # Describe implemented features without claiming WCAG/EPUB conformance.
+    for prop, value in [
+        ('accessMode', 'textual'), ('accessMode', 'visual'),
+        ('accessibilityFeature', 'alternativeText'),
+        ('accessibilityFeature', 'structuralNavigation'),
+        ('accessibilityFeature', 'tableOfContents'),
+        ('accessibilitySummary', 'Reflowable text with image descriptions, headings and linked contents. Listening exercises require external recordings. Accessibility conformance has not been evaluated.')]:
+        etree.SubElement(md, f'{{{OPF}}}meta', {'property': 'schema:' + prop}).text = value
     meta = etree.SubElement(md, f'{{{OPF}}}meta', {'property': 'dcterms:modified'})
     meta.text = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
     man = etree.SubElement(opf, f'{{{OPF}}}manifest')

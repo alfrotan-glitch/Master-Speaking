@@ -1,6 +1,6 @@
 {
   "pdf": "Master-Speaking-print-7x10.pdf",
-  "sha256": "f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859",
+  "sha256": "8115209274d9627d6b0f488f6d078448196822c95a96540cca9cb8260a9fc533",
   "selected_main_pages": [
     4,
     12,
@@ -16,9 +16,9 @@
   ],
   "scope": "All main-page overview sheets and pack overview sheets; selected readable pages only. Not every-word independent proof.",
   "support_sha256": {
-    "Master-Speaking-Student-Practice-Pack.pdf": "8825e1e716c082d9ef9447dd064c90ad1f4e99ffd7e862c3cdd23eec19b115fc",
-    "Master-Speaking-Teacher-Implementation-Pack.pdf": "34ca13d27ec7eb1c1a2493e2249998cba87e5bfed6ea2b031569cd3c2c8bfcaa",
-    "Master-Speaking-Class-Companion.pdf": "5767acfc67206d62ec3eb4aab8c5e86220d7765760e343d7aa84a938776fa7cb"
+    "Master-Speaking-Student-Practice-Pack.pdf": "3ddfcc4fc670a87c8ef048bde87b8ecfbde4a69c1c2174b5b64e8a0f4bceaaef",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "74b40b39323da94115f7b8926ce793880118a0c7c49ba8a980b6ac94b4dba373",
+    "Master-Speaking-Class-Companion.pdf": "b7996bb8b2db5f5aa340ec1cfdbdf68b36dd12e8a969667040ec7f3362c9f541"
   },
   "visual_review_date": "2026-10-18",
   "selected_teacher_pages": [
@@ -28,5 +28,7 @@
     19,
     20,
     29
-  ]
+  ],
+  "previous_render_sha256": "f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859",
+  "review_reuse_basis": "All 235 main/support page renderings remain pixel-identical; prior visual proof remains applicable. See book/qa/accessibility/render-identity.json. No new full-book manual proof is claimed."
 }

@@ -1,0 +1,29 @@
+{
+  "method": "SHA-256 of PyMuPDF default RGB pixmap samples for every page before and after the metadata/semantic pass. Page counts also match. This establishes unchanged rendered pages, not fresh every-word human review.",
+  "documents": {
+    "Master-Speaking-print-7x10.pdf": {
+      "previous_sha256": "f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859",
+      "current_sha256": "8115209274d9627d6b0f488f6d078448196822c95a96540cca9cb8260a9fc533",
+      "pages_compared": 171,
+      "all_pages_pixel_identical": true
+    },
+    "Master-Speaking-Student-Practice-Pack.pdf": {
+      "previous_sha256": "8825e1e716c082d9ef9447dd064c90ad1f4e99ffd7e862c3cdd23eec19b115fc",
+      "current_sha256": "3ddfcc4fc670a87c8ef048bde87b8ecfbde4a69c1c2174b5b64e8a0f4bceaaef",
+      "pages_compared": 18,
+      "all_pages_pixel_identical": true
+    },
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": {
+      "previous_sha256": "34ca13d27ec7eb1c1a2493e2249998cba87e5bfed6ea2b031569cd3c2c8bfcaa",
+      "current_sha256": "74b40b39323da94115f7b8926ce793880118a0c7c49ba8a980b6ac94b4dba373",
+      "pages_compared": 29,
+      "all_pages_pixel_identical": true
+    },
+    "Master-Speaking-Class-Companion.pdf": {
+      "previous_sha256": "5767acfc67206d62ec3eb4aab8c5e86220d7765760e343d7aa84a938776fa7cb",
+      "current_sha256": "b7996bb8b2db5f5aa340ec1cfdbdf68b36dd12e8a969667040ec7f3362c9f541",
+      "pages_compared": 17,
+      "all_pages_pixel_identical": true
+    }
+  }
+}

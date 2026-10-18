@@ -1,3 +1,6 @@
 book/artifacts/proof_png/
 __pycache__/
 *.pyc
+
+# Download bundle; individual published editions are tracked.
+Master-Speaking-All-Books.zip

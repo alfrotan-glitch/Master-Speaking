@@ -1,17 +1,19 @@
 # Current language, teaching and design review
 
+> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **21 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+
 18 October 2026 • Master Speaking
 
 ## Status
 
-**Revised editorial proof, not a commercially cleared or error-free publication.** Current interior: **167 pages**; reader edition with front cover: **168 pages**. All **14** release gates pass, including official EPUBCheck 5.3.0 with zero errors/warnings. The original manuscript is unchanged.
+**Revised editorial proof, not a commercially cleared or error-free publication.** Current interior: **167 pages**; reader edition with front cover: **168 pages**. All **15** release gates pass, including official EPUBCheck 5.3.0 with zero errors/warnings. The original manuscript is unchanged.
 
 The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It supersedes older block/page/check counts and records both corrected defects and outstanding release conditions. Editorial work is AI-assisted; a signed independent human proof has not been supplied.
 
 ## Language and teaching
 
 - The exact title **Master Speaking** and all source-backed chapter-title wording are preserved. No invented chapter aliases, test qualification, endorsement, or world-best claim is added.
-- The reviewed chapter/front-matter register contains **130 exact-match changes**, including 80 added during the latest whole-book pass. **24 guarded structural repairs** separately correct order, classification, missing task boundaries, repeated directions and incomplete outlines.
+- The reviewed chapter/front-matter register contains **133 exact-match changes**, including 80 added during the latest whole-book pass. **24 guarded structural repairs** separately correct order, classification, missing task boundaries, repeated directions and incomplete outlines.
 - Eight authored learner-review routines connect evidence, peer feedback, revision and a unit-specific practical application. These are new learner material, not recovered manuscript content or classroom trial results.
 - Corrected a copied goals/systems instruction in the emotional-intelligence research outline, incomplete debate directions, vocabulary placement/grammar, undefined references, and teacher-facing leftovers.
 - Five incorrect primary-stress models in Unit 4 are repaired; all ten stress positions have a pinned CMU lexicon reference and license record. Selected stress-capitalization and IPA examples have case-sensitive export checks. Wider pronunciation/subject review remains open.
@@ -43,3 +45,7 @@ The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It su
 - Open conditions: original recording alignment, image/quotation permissions, factual and specialist review, native Word contents/pagination, accessible outputs and device testing, print assets/physical proof, publisher metadata and a learner pilot.
 
 See [UNRESOLVED-ISSUES.md](UNRESOLVED-ISSUES.md), [QA-REPORT.md](QA-REPORT.md), and the full [whole-book audit](WHOLE-BOOK-AUDIT.md). A passing suite is evidence for defined tests, not a universal approval certificate.
+
+## Latest ten-lens improvement pass
+
+See [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) for the AI-assisted specialist-perspective review, not a ten-person human endorsement. The rebuilt book now has eight stronger learner-evidence tasks, a deduplicated epigraph, a more inclusive listening passage and a qualified English-ownership discussion. The Unit 1 teacher-key evidence was synchronized and its supporting exports rebuilt. All 15 release gates and both supporting-pack checks pass. Current export fingerprints are in `book/artifacts/specialist-review.json`; the earlier design-only evidence is historical. Rights, recordings, independent proof, device/accessibility testing and printer approval remain open.

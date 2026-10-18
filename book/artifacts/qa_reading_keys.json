@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "units": 8,
+  "multiple_choice_items": 40,
+  "true_false_items": 34,
+  "items": 74,
+  "mutation_wrong_option_detected": true,
+  "mutation_stale_evidence_detected": true,
+  "issues": [],
+  "scope": "Authored reading judgments with structural and source-evidence checks; not automatic semantic correctness, listening keys or independent expert approval."
+}

@@ -71,7 +71,7 @@ div.note { background-color: #F5F8F7; border-left: 3px solid #205F67;
 div.note p { font-style: italic; color: #44544F; text-align: left; }
 /* lists */
 ol.questions { margin: 0.3em 0 0.7em 1.4em; padding: 0; }
-ol.questions > li { margin-bottom: 0.55em; list-style: decimal; }
+ol.questions > li { margin-bottom: 0.55em; list-style: decimal; break-inside: avoid; page-break-inside: avoid; }
 ol.options { margin: 0.25em 0 0.2em 1.6em; padding: 0; }
 ol.options li { list-style: upper-alpha; margin-bottom: 0.15em; }
 ol.options.standalone { margin-left: 0; }

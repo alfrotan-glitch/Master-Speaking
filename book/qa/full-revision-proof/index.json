@@ -1,0 +1,32 @@
+{
+  "pdf": "Master-Speaking-print-7x10.pdf",
+  "sha256": "f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859",
+  "selected_main_pages": [
+    4,
+    12,
+    30,
+    49,
+    69,
+    89,
+    109,
+    121,
+    131,
+    153,
+    171
+  ],
+  "scope": "All main-page overview sheets and pack overview sheets; selected readable pages only. Not every-word independent proof.",
+  "support_sha256": {
+    "Master-Speaking-Student-Practice-Pack.pdf": "8825e1e716c082d9ef9447dd064c90ad1f4e99ffd7e862c3cdd23eec19b115fc",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "34ca13d27ec7eb1c1a2493e2249998cba87e5bfed6ea2b031569cd3c2c8bfcaa",
+    "Master-Speaking-Class-Companion.pdf": "5767acfc67206d62ec3eb4aab8c5e86220d7765760e343d7aa84a938776fa7cb"
+  },
+  "visual_review_date": "2026-10-18",
+  "selected_teacher_pages": [
+    7,
+    8,
+    9,
+    19,
+    20,
+    29
+  ]
+}

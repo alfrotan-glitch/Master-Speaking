@@ -1,5 +1,7 @@
 # Master Speaking — Editorial & Publication Review
 
+> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **21 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+
 October 18, 2026 • Revised classroom edition in development
 
 ## Edition status
@@ -13,7 +15,7 @@ Author and existing publisher attribution remain Abdul Raziq Nazari / The TOEFL 
 ### Editing and teaching
 
 - Restored the **entire Unit 5 AI decision-making question** from manuscript item 1582. The previous reconstruction accidentally stopped after “climate change,” removing “disease, and poverty” and the actual decision-making question. Only the missing initial I is repaired in the restored source text.
-- Applied 130 exact-match reviewed edits across chapter text, vocabulary cells, and front matter. These clarify learner-facing instructions, fix “their choice” to “your choice,” remove a reference to nonexistent bold words, and align Unit 6’s pronunciation heading with its actual regular past-tense lesson.
+- Applied 133 exact-match reviewed edits across chapter text, vocabulary cells, and front matter. These clarify learner-facing instructions, fix “their choice” to “your choice,” remove a reference to nonexistent bold words, and align Unit 6’s pronunciation heading with its actual regular past-tense lesson.
 - Retained three plain learner-guidance paragraphs: a speaking/repetition routine, privacy and sensitive-topic choices, and research-source attribution. Production and media-verification notes remain only in separate reports.
 - Kept the author’s readings, eight themes, and 32-chapter sequence. No third-party transcript, exercise answer, research finding, or missing vocabulary item was fabricated.
 - Retained the separate 17-page Class Companion with lesson plans, assessment, role plays, and student practice tools. Its approximate B1–B2 planning range is not a certified level for the main book; the manuscript itself includes more demanding material. Diagnose the actual class before choosing pace and support.
@@ -44,7 +46,7 @@ Author and existing publisher attribution remain Abdul Raziq Nazari / The TOEFL 
 
 ## Classroom implementation follow-up
 
-Two separate 18-page packs now support the student/teacher recommendations. The Student Practice Pack supplies checklists and speaking models for all eight units, with matching alternative-listening worksheets. The Teacher Implementation Pack supplies eight original fictional teacher-read scripts and keys, the 15-item Unit 1 reading key, and four 75-minute pilot plans. These are new supplementary materials, not recovered original videos, a complete eight-unit book key, recorded audio, or evidence of an actual pilot. See `CLASSROOM-QA-REPORT.md` for verified scope and `README.md` for use/build instructions.
+An 18-page student pack and a 29-page teacher pack now support the student/teacher recommendations. The Student Practice Pack supplies checklists and speaking models for all eight units, with matching alternative-listening worksheets. The Teacher Implementation Pack supplies eight original fictional teacher-read scripts and keys, the broader Unit 1 reading key, closed-reading keys for Units 2–8 with exact passage evidence, and four 75-minute pilot plans. These are new supplementary materials, not recovered original videos, keys for every open exercise or original video, recorded audio, or evidence of an actual pilot. See `CLASSROOM-QA-REPORT.md` for verified scope and `README.md` for use/build instructions.
 
 ## Required before commercial release
 
@@ -96,7 +98,7 @@ All 32 chapter headings now follow the exact existing manuscript/lesson wording,
 
 Every chapter opens on a fresh page in the generated PDF; Word stores an explicit page-break-before property on each chapter heading, with the title and learning-focus subtitle kept together. Native Word pagination still requires a Word proof. Unit openers continue to start on right-hand pages. The interior title page has no visible folio; the front matter uses lowercase Roman numerals and main text uses continuous Arabic numbering. PDF viewer page labels match these sequences, including the separate cover offset. EPUB reading order now places each unit opener before its four chapters, with chapter-level page-break styling for paginated readers; reflowable ebooks do not have fixed print page counts.
 
-A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 14 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
+A dedicated chapter QA check verifies all 32 names, Word page-break/subtitle properties, actual PDF chapter starts, all chapter contents folios and links, bookmark destinations, reader-edition offsets, and EPUB spine/navigation order. The full release now runs 15 QA checks, including official EPUBCheck 5.3.0. Reports and production notes remain outside the reader-facing book.
 
 ## Strict-audit remediation
 
@@ -118,10 +120,14 @@ Source fidelity takes precedence over artificial title uniqueness. A chapter con
 
 ## Whole-book critical audit and lesson review
 
-The current pass adds 80 guarded text/table corrections beyond the previous 50-edit baseline (130 chapter/front-matter edits in total), 24 guarded structural repairs, and eight authored learner-review/transfer routines. It fixes misplaced vocabulary items, task-type errors, incomplete or duplicate instructions, a copied research topic, incomplete conclusions, and pronunciation problems. All original chapter-title wording remains source-backed; no editorial aliases were reintroduced.
+The earlier whole-book pass added 80 guarded text/table corrections beyond its 50-edit baseline (130 chapter/front-matter edits at that stage; now 133 after the ten-lens pass), 24 guarded structural repairs, and eight authored learner-review/transfer routines. It fixes misplaced vocabulary items, task-type errors, incomplete or duplicate instructions, a copied research topic, incomplete conclusions, and pronunciation problems. All original chapter-title wording remains source-backed; no editorial aliases were reintroduced.
 
 Five of the ten Unit 4 word-stress models were incorrect. All ten primary-stress positions were cross-checked against the CMU Pronouncing Dictionary at pinned revision `74790861f652b15e4ac49015a90074ad62a27690`. The five incorrect models and both table columns were corrected. The ten selected source entries, scope and source hash are in `book/publishing/pronunciation-reference.json`; the license is `book/assets/cmudict-LICENSE.txt`. This is not verification of every IPA transcription or every accent in the course.
 
-`qa_lessons.py` checks all 32 chapters, 88 multiple-choice groups for task grouping/option labels, seven vocabulary exercises containing 36 source items, all eight reading title/passage openings, the ten stress models, exact exported stress capitals and selected IPA examples, and eight unit-specific review tasks. It does not verify all answers, research claims, recordings, accessibility, or classroom effectiveness. The full release has 14 gates. Current pagination and export fingerprints are in `QA-REPORT.md`; do not reuse earlier 160/161-page counts.
+`qa_lessons.py` checks all 32 chapters, 88 multiple-choice groups for task grouping/option labels, seven vocabulary exercises containing 36 source items, all eight reading title/passage openings, the ten stress models, exact exported stress capitals and selected IPA examples, and eight unit-specific review tasks. It does not verify all answers, research claims, recordings, accessibility, or classroom effectiveness. The full release has 15 gates. Current pagination and export fingerprints are in `QA-REPORT.md`; do not reuse earlier 160/161-page counts.
 
 See `WHOLE-BOOK-AUDIT.md` for the unit-by-unit findings and remaining release conditions. Authoritative evidence—not another positive checklist—is still required to close original recording alignment, rights, independent factual/pedagogical review, native Word proof, accessibility/device testing, and physical print approval.
+
+## Latest ten-lens improvement pass
+
+See [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) for the AI-assisted specialist-perspective review, not a ten-person human endorsement. The rebuilt book now has eight stronger learner-evidence tasks, a deduplicated epigraph, a more inclusive listening passage and a qualified English-ownership discussion. The Unit 1 teacher-key evidence was synchronized and its supporting exports rebuilt. All 15 release gates and both supporting-pack checks pass. Current export fingerprints are in `book/artifacts/specialist-review.json`; the earlier design-only evidence is historical. Rights, recordings, independent proof, device/accessibility testing and printer approval remain open.

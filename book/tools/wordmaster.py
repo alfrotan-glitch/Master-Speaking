@@ -368,11 +368,18 @@ def render_list(ol_el):
             elif etree.QName(c).localname != 'ol':
                 parts.append(''.join(c.itertext()))
         body = ' '.join(''.join(parts).split())
-        add_par(body if as_option else f'{n}. {body}',
-                'MS Option' if as_option else 'MS Question')
+        paragraph = add_par(body if as_option else f'{n}. {body}',
+                            'MS Option' if as_option else 'MS Question')
         if opts is not None:
-            for li2 in opts.findall('x:li', NS):
-                add_par(' '.join(''.join(li2.itertext()).split()), 'MS Option')
+            # Keep a closed-response item intact: the learner needs all
+            # alternatives on the same page as the stem.
+            paragraph.paragraph_format.keep_with_next = True
+            paragraph.paragraph_format.keep_together = True
+            choices = opts.findall('x:li', NS)
+            for index, li2 in enumerate(choices):
+                option = add_par(' '.join(''.join(li2.itertext()).split()), 'MS Option')
+                option.paragraph_format.keep_with_next = index < len(choices)-1
+                option.paragraph_format.keep_together = True
 
 def render_table(tbl_el):
     rows = tbl_el.findall('.//x:tr', NS)
@@ -472,7 +479,13 @@ def render_blocks(el, ctx=None):
             if 'chapter-focus' in cls:
                 add_par(text_of(c), 'MS Chapter Focus')
             elif 'instr' in cls:
-                add_par(text_of(c), 'MS Instruction')
+                paragraph = add_par(text_of(c), 'MS Instruction')
+                following = c.getnext()
+                if (following is not None and isinstance(following.tag, str)
+                        and etree.QName(following).localname in ('h3', 'h4', 'h5')):
+                    # This direction closes the preceding task; it must not
+                    # drag itself onto the next activity's opening page.
+                    paragraph.paragraph_format.keep_with_next = False
             elif 'label' in cls:
                 add_par(text_of(c), 'MS Label')
             elif 'topic' in cls:

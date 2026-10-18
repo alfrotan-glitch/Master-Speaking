@@ -1,5 +1,7 @@
 # Whole-book critical audit and remediation
 
+> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **21 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+
 18 October 2026 • Master Speaking
 
 ## Decision
@@ -13,7 +15,7 @@ The reader-facing book contains the course, not this audit or the production dis
 ## Current edition and measured evidence
 
 - Print interior: **167 pages**, 7 × 10 inches; reader edition: **168 pages**, including the separate front cover.
-- **14 release gates pass**, including official EPUBCheck **5.3.0**, with zero errors and zero warnings.
+- **15 release gates pass**, including official EPUBCheck **5.3.0**, with zero errors and zero warnings.
 - Lesson checks cover **32 chapters**, **88 multiple-choice groups** for stem/option organization, **36 source vocabulary sentences** across seven exercises, **eight reading openings**, **ten primary-stress models**, and **eight unit-review tasks**. Unit 8 retains its different vocabulary-discussion activity; a new fill-in exercise was not fabricated to make it uniform.
 - Full normalized export coverage checks **3,482 semantic text blocks**, with minimum occurrence counts. Defined case-sensitive stress and Unicode IPA examples are checked separately in Word, PDF and EPUB. This is not proof of every punctuation mark, semantic order, answer, or phonetic symbol.
 - All 167 pages have thumbnail renders; 47 selected full-size proof pages include all 32 chapter openings and the corrected comparison, stress table, weak-form examples, short-answer boundary and unit-review pages. A thumbnail is not a line-by-line proof. Selected revised pages were inspected at readable size.
@@ -21,7 +23,7 @@ The reader-facing book contains the course, not this audit or the production dis
 
 ## Work completed in this pass
 
-The exact-match chapter/front-matter register now contains **130 text/cell changes**, compared with 50 before this pass: **80 additional guarded changes**. There are also **24 explicit structural repairs** and eight authored review/transfer routines. Counts distinguish copyedits from newly authored learner practice; no new text is misrepresented as recovered manuscript content.
+The exact-match chapter/front-matter register now contains **133 text/cell changes**: the earlier whole-book pass took the count from 50 to 130, and the ten-lens pass added three more. There are also **24 explicit structural repairs** and eight authored review/transfer routines. Counts distinguish copyedits from newly authored learner practice; no new text is misrepresented as recovered manuscript content.
 
 ### 1. Corrected significant teaching defects
 
@@ -120,13 +122,17 @@ The defect descriptions above retain the editorial-pass folio references; curren
 | Unit 7 · Globalization | 117 | 125 |
 | Unit 8 · Lingua Franca | 139 | 147 |
 
-## Audited export fingerprints — modern redesign, 18 October 2026
+## Audited export fingerprints — post-specialist-lens revision, 18 October 2026
 
 These hashes identify the rebuilt exports reviewed here, not the older snapshot in `STRICT-AUDIT.md`.
 
 | File | SHA-256 |
 |---|---|
-| `Master-Speaking.pdf` | `2021246090e72a06ab6fca8b51390fb32259b35f3f46b6e63dedfa1c48e93543` |
-| `Master-Speaking-print-7x10.pdf` | `45e545fda9a323758b2ea8a80b91bc7c702f33fd8b0292d19053cc8fc05a2ade` |
-| `Master-Speaking-7x10.docx` | `976f2de001d6cbbe4d25e9835da4958ca56c381d935ce9413470ebf7e4c44330` |
-| `Master-Speaking.epub` | `9aec13ee09a295c8233e15e8736086e082bde9a6678a5e36ec33f66f8541d994` |
+| `Master-Speaking.pdf` | `5b7541111103fcba4a571e8b6adce84dfd1f8ec3c8e849bbcdbc3f845a2c620e` |
+| `Master-Speaking-print-7x10.pdf` | `a0377d6cfa078bbde0d1daf3d9ecd8c996fe87b3cb6b7b360990e329f9bf966c` |
+| `Master-Speaking-7x10.docx` | `5a40ac1aec86868123338779e420df7293dbd6d74665b2cee2367673f3728fc8` |
+| `Master-Speaking.epub` | `2eaeecac007189e6f611ff963c7138e89ae3efe45ab14a89f03ef4c3523bb559` |
+
+## Latest ten-lens improvement pass
+
+See [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) for the AI-assisted specialist-perspective review, not a ten-person human endorsement. The rebuilt book now has eight stronger learner-evidence tasks, a deduplicated epigraph, a more inclusive listening passage and a qualified English-ownership discussion. The Unit 1 teacher-key evidence was synchronized and its supporting exports rebuilt. All 15 release gates and both supporting-pack checks pass. Current export fingerprints are in `book/artifacts/specialist-review.json`; the earlier design-only evidence is historical. Rights, recordings, independent proof, device/accessibility testing and printer approval remain open.

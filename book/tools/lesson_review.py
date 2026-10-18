@@ -71,3 +71,24 @@ def apply_repairs(book, log):
             log(f"U{unit['number']} Ch4 · learner review and transfer", '(new learner practice)',
                 block['text'], 'Connect the presentation to source attribution, feedback, revision, and a unit-specific real-life task.',
                 'new learner-facing practice')
+
+
+def apply_opener_rewrites(book, log):
+    """Make each opener an explicit, low-disclosure preparation task."""
+    plan = json.loads((ROOT / 'book/master/unit-opener-rewrites.json').read_text())
+    if [row['unit'] for row in plan] != list(range(1, 9)):
+        raise ValueError('Opener plan must cover all eight units')
+    for row in plan:
+        warmup = book['units'][row['unit']-1]['warmup']
+        if warmup['paras'] != row['original_paras']:
+            raise ValueError('Unit opener paragraph drift')
+        warmup['paras'] = row['new_paras']
+        log(f"U{row['unit']} opener", ' / '.join(row['original_paras']),
+            ' / '.join(row['new_paras']), 'Give preparation, interaction and privacy choices without altering the unit title.')
+        for edit in row['question_edits']:
+            matches = [r for r in warmup['table']['rows'] if r[0] == edit['original']]
+            if len(matches) != 1:
+                raise ValueError('Opener question drift')
+            matches[0][0] = edit['correction']
+            log(f"U{row['unit']} opener question", edit['original'], edit['correction'],
+                'Remove the false choice between cognitive and emotional skills.')

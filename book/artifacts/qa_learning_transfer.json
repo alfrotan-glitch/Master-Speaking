@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "units_checked": 8,
+  "mutation_probes_detected": [
+    true,
+    true,
+    true
+  ],
+  "issues": [],
+  "scope": "Task presence, defined evidence cues and epigraph deduplication; not learning efficacy, verified answers or quotation clearance."
+}

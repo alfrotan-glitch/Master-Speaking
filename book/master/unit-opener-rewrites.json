@@ -1,0 +1,87 @@
+[
+  {
+    "unit": 1,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 2,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 3,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": [
+      {
+        "original": "Who is emotionally intelligent—someone with a high IQ or someone who understands people well?",
+        "correction": "How might solving a difficult problem and understanding another person’s feelings require different skills?"
+      }
+    ]
+  },
+  {
+    "unit": 4,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 5,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 6,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 7,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  },
+  {
+    "unit": 8,
+    "original_paras": [
+      "Answer the following questions individually."
+    ],
+    "new_paras": [
+      "Think about the questions before discussing them. Note a few key words, then explain one answer to a partner. You may use a fictional example or pass on a personal question."
+    ],
+    "question_edits": []
+  }
+]

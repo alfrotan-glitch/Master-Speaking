@@ -1,7 +1,7 @@
 {
   "revision": {
     "exit_code": 0,
-    "stdout_tail": "PASS: 130 reviewed edits, complete AI question, classroom guidance, contrast, 32 Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.\n",
+    "stdout_tail": "PASS: 398 reviewed edits, complete AI question, classroom guidance, contrast, 32 Word chapter headings, instruction keeps, table grids, EPUB cover/alt text.\n",
     "stderr_tail": ""
   },
   "lessons": {
@@ -9,14 +9,39 @@
     "stdout_tail": "{\n  \"ok\": true,\n  \"chapters_checked\": 32,\n  \"multiple_choice_questions_checked\": 88,\n  \"vocabulary_items_by_unit\": {\n    \"1\": 5,\n    \"2\": 5,\n    \"3\": 5,\n    \"4\": 5,\n    \"5\": 5,\n    \"6\": 6,\n    \"7\": 5\n  },\n  \"unit_review_tasks\": 8,\n  \"reading_openings_checked\": 8,\n  \"primary_stress_words_checked\": 10,\n  \"issues\": [],\n  \"scope\": \"Lesson organization and defined regression cases; not universal exercise/factual validation.\"\n}\n",
     "stderr_tail": ""
   },
+  "learning_transfer": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"units_checked\": 8,\n  \"mutation_probes_detected\": [\n    true,\n    true,\n    true\n  ],\n  \"issues\": [],\n  \"scope\": \"Task presence, defined evidence cues and epigraph deduplication; not learning efficacy, verified answers or quotation clearance.\"\n}\n",
+    "stderr_tail": ""
+  },
+  "rewrite_review": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"reviewed_fields\": 138,\n  \"chapters_field_fingerprinted\": 1,\n  \"chapters_without_field_level_fingerprints\": 31,\n  \"issues\": [],\n  \"scope\": \"Detailed fingerprints: foreword and Unit 1 Chapter 1 only. See qa_whole_revision for the separate all-chapter revision pass; neither is independent human proof.\"\n}\n",
+    "stderr_tail": ""
+  },
+  "whole_revision": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"chapters_with_recorded_revisions\": 32,\n  \"units_with_rewritten_readings\": 8,\n  \"rewritten_openers\": 8,\n  \"remaining_pass_recorded_changes\": 238,\n  \"issues\": [],\n  \"independent_every_word_proof_complete\": false,\n  \"scope\": \"All-chapter substantive revision coverage and planned reading/opener fidelity, not a human proof of every retained word, verified original recordings or commercial clearance.\"\n}\n",
+    "stderr_tail": ""
+  },
+  "reading_keys": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"units\": 8,\n  \"multiple_choice_items\": 40,\n  \"true_false_items\": 34,\n  \"items\": 74,\n  \"mutation_wrong_option_detected\": true,\n  \"mutation_stale_evidence_detected\": true,\n  \"issues\": [],\n  \"scope\": \"Authored reading judgments with structural and source-evidence checks; not automatic semantic correctness, listening keys or independent expert approval.\"\n}\n",
+    "stderr_tail": ""
+  },
+  "mcq_layout": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"items_checked\": 89,\n  \"issues\": [],\n  \"scope\": \"Every structured MCQ stem and all its options on one PDF page; not answer correctness or native Word pagination.\"\n}\n",
+    "stderr_tail": ""
+  },
   "content": {
     "exit_code": 0,
-    "stdout_tail": "checked 3181 source texts: covered 3083, classified transforms 98, missing 0\nOK\n",
+    "stdout_tail": "checked 3181 source texts: covered 2847, classified transforms 334, missing 0\nOK\n",
     "stderr_tail": ""
   },
   "editorial": {
     "exit_code": 0,
-    "stdout_tail": "blocks: 3460   pronunciation lines skipped: 165\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (45 types) ---\nlong-term\u00d713, follow-up\u00d712, one-minute\u00d79, non-native\u00d77, open-ended\u00d75, well-being\u00d75, two-minute\u00d74, pro-social\u00d74, general-purpose\u00d74, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, machine-dependent\u00d73, self-fulfilling\u00d73, trade-off\u00d72, past-tense\u00d72, english-speaking\u00d72, native-like\u00d72, great-grandparents\u00d72, english-language\u00d72, topic-related\u00d71, thought-provoking\u00d71, two-way\u00d71, high-quality\u00d71, well-defined\u00d71, self-discipline\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, longer-lasting\u00d71, high-paying\u00d71, lower-paying\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, native-speaker\u00d71, short-answer\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
+    "stdout_tail": "blocks: 3455   pronunciation lines skipped: 162\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (49 types) ---\none-minute\u00d719, follow-up\u00d713, long-term\u00d711, four-\u00d77, five-minute\u00d77, non-native\u00d77, text-based\u00d76, open-ended\u00d75, two-minute\u00d75, well-being\u00d75, trade-off\u00d74, pro-social\u00d74, general-purpose\u00d74, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, machine-dependent\u00d73, self-fulfilling\u00d73, past-tense\u00d72, english-speaking\u00d72, native-like\u00d72, great-grandparents\u00d72, english-language\u00d72, topic-related\u00d71, thought-provoking\u00d71, two-way\u00d71, high-quality\u00d71, self-discipline\u00d71, five-component\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, high-paying\u00d71, lower-paying\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, teacher-provided\u00d71, supply-chain\u00d71, first-language\u00d71, short-answer\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
     "stderr_tail": ""
   },
   "word": {
@@ -26,22 +51,22 @@
   },
   "fidelity": {
     "exit_code": 0,
-    "stdout_tail": "master blocks checked: 3482\n  PDF : covered 3482, missing 0\n  EPUB: covered 3482, missing 0\n  DOCX: covered 3482, missing 0\nOK\n",
+    "stdout_tail": "master blocks checked: 3477\n  PDF : covered 3477, missing 0\n  EPUB: covered 3477, missing 0\n  DOCX: covered 3477, missing 0\nOK\n",
     "stderr_tail": ""
   },
   "print": {
     "exit_code": 0,
-    "stdout_tail": "pages: 167   units at: {1: 9, 2: 27, 3: 45, 4: 65, 5: 85, 6: 105, 7: 125, 8: 147}   main_start: 9\nimages placed: 24  (effective dpi min-max: 122-588)\nimages below 150 dpi effective: 2 -> [(27, 122), (29, 143)]\n--- 0 issues ---\n",
+    "stdout_tail": "pages: 171   units at: {1: 9, 2: 27, 3: 45, 4: 65, 5: 85, 6: 105, 7: 127, 8: 149}   main_start: 9\nimages placed: 24  (effective dpi min-max: 122-588)\nimages below 150 dpi effective: 2 -> [(27, 122), (29, 143)]\n--- 0 issues ---\n",
     "stderr_tail": ""
   },
   "proof": {
     "exit_code": 0,
-    "stdout_tail": "167 pages proofed, 0 issues\nOK\n",
+    "stdout_tail": "171 pages proofed, 0 issues\nOK\n",
     "stderr_tail": ""
   },
   "preflight": {
     "exit_code": 0,
-    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 167\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (8):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 122.4\u2013587.8\n- Annotations: none\n\n## Issues (0)\n- none \u2014 PASS\nissues: 0\n",
+    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 171\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (8):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 122.4\u2013587.8\n- Annotations: none\n\n## Issues (0)\n- none \u2014 PASS\nissues: 0\n",
     "stderr_tail": ""
   },
   "epub": {
@@ -51,12 +76,12 @@
   },
   "epubcheck": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 03:18:39\",\n    \"elapsedTime\": 5866,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
+    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 04:46:00\",\n    \"elapsedTime\": 6131,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
     "stderr_tail": ""
   },
   "visual": {
     "exit_code": 0,
-    "stdout_tail": "167 pages, 80 spreads, flags: 0\nOK\n",
+    "stdout_tail": "171 pages, 82 spreads, flags: 0\nOK\n",
     "stderr_tail": ""
   },
   "publication": {
@@ -67,6 +92,16 @@
   "chapters": {
     "exit_code": 0,
     "stdout_tail": "{\n  \"chapters\": 32,\n  \"issues\": [],\n  \"status\": \"PASS\"\n}\n",
+    "stderr_tail": ""
+  },
+  "classroom": {
+    "exit_code": 0,
+    "stdout_tail": "{\n  \"ok\": true,\n  \"units\": 8,\n  \"chapter_checklists\": 32,\n  \"can_do_statements\": 64,\n  \"speaking_dialogues\": 8,\n  \"short_responses\": 8,\n  \"new_listening_scripts\": 8,\n  \"new_listening_detail_questions\": 40,\n  \"unit1_reading_key_items\": 15,\n  \"pilot_lessons_minutes\": [\n    75,\n    75,\n    75,\n    75\n  ],\n  \"exports\": {\n    \"Master-Speaking-Student-Practice-Pack\": {\n      \"pages\": 18,\n      \"source_blocks\": 489,\n      \"ok\": true\n    },\n    \"Master-Speaking-Teacher-Implementation-Pack\": {\n      \"pages\": 29,\n      \"source_blocks\": 569,\n      \"ok\": true\n    }\n  },\n  \"original_video_inputs_verified\": false,\n  \"live_pilot_conducted\": false\n}\n",
+    "stderr_tail": ""
+  },
+  "companion": {
+    "exit_code": 0,
+    "stdout_tail": "PASS: 183 source blocks present in both exports; 8 unit outcomes; 15 section starts verified; 17 PDF pages within text boundaries.\n",
     "stderr_tail": ""
   }
 }

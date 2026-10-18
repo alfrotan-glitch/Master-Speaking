@@ -98,7 +98,7 @@ If a learner needs an alternative to eye contact, accept other signs of audience
 
 ## 6. Unit 1 reading key • scope and use
 
-This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Keys for Units 2–8 of the original book and all original video exercises remain to be completed or verified.
+This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. Original video exercises still require the intended recordings and verified keys; open questions allow supported alternatives.
 
 Answers are grounded in the revised passage or vocabulary table, not independently validated claims about the real world. Each quoted evidence phrase is checked against the current semantic book during QA. Use question stems rather than page numbers, since pagination can change. Accept accurate paraphrases for the five open questions. Critical Thinking, personal connections, and discussions have no single correct opinion.
 

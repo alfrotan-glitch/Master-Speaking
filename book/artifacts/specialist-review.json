@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-18",
+  "review_type": "One AI assistant applying ten specialist lenses; no independent human panel",
+  "interior_pages": 167,
+  "reader_pages": 168,
+  "reviewed_text_edits": 133,
+  "chapter_edits": 128,
+  "front_matter_edits": 5,
+  "transfer_tasks_revised": 8,
+  "new_gate": "qa_learning_transfer",
+  "release_checks": {
+    "revision": 0,
+    "lessons": 0,
+    "learning_transfer": 0,
+    "content": 0,
+    "editorial": 0,
+    "word": 0,
+    "fidelity": 0,
+    "print": 0,
+    "proof": 0,
+    "preflight": 0,
+    "epub": 0,
+    "epubcheck": 0,
+    "visual": 0,
+    "publication": 0,
+    "chapters": 0
+  },
+  "supporting_checks": {
+    "classroom": "PASS after teacher-key evidence update and pack rebuild",
+    "companion": "PASS"
+  },
+  "all_167_page_thumbnails_inspected": true,
+  "readable_revised_physical_pages_inspected": [
+    25,
+    83,
+    167
+  ],
+  "semantic_content_changed_since_design_pass": true,
+  "semantic_content_sha256": "c25cfe5b2ea625d5748c112c9638792942ea780027dcbd05085844ffa1cea7f5",
+  "sha256": {
+    "Master-Speaking.pdf": "5b7541111103fcba4a571e8b6adce84dfd1f8ec3c8e849bbcdbc3f845a2c620e",
+    "Master-Speaking-Reading-Edition.pdf": "5b7541111103fcba4a571e8b6adce84dfd1f8ec3c8e849bbcdbc3f845a2c620e",
+    "Master-Speaking-print-7x10.pdf": "a0377d6cfa078bbde0d1daf3d9ecd8c996fe87b3cb6b7b360990e329f9bf966c",
+    "Master-Speaking-7x10.docx": "5a40ac1aec86868123338779e420df7293dbd6d74665b2cee2367673f3728fc8",
+    "Master-Speaking.epub": "2eaeecac007189e6f611ff963c7138e89ae3efe45ab14a89f03ef4c3523bb559",
+    "Master-Speaking-Front-Cover.pdf": "3eb7ad9ae21c22b2eb956e918923470e7bb3a5136b98d36250ffcf4f2a3dff54",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "32a48aa2f6c8952501376c1f8049a7e1a46f811179ba3a9637fd609683d6deed",
+    "Master-Speaking-Teacher-Implementation-Pack.docx": "4cdf8b62b96763d6b9315cd313ac38b79a9f6f8170e170d3a2c21312efedd11e",
+    "Master Speaking.docx": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184"
+  },
+  "commercial_release": "HOLD; see UNRESOLVED-ISSUES.md",
+  "independent_human_reviewers": 0,
+  "status": "Historical ten-lens pass before the full-rewrite first section. Current exports: rewrite-progress.json."
+}

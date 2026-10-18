@@ -1,0 +1,66 @@
+[
+  {
+    "unit": 1,
+    "required_phrases": [
+      "unclear phrase",
+      "revised wording"
+    ],
+    "purpose": "Repair a misunderstanding"
+  },
+  {
+    "unit": 2,
+    "required_phrases": [
+      "two attempts",
+      "next adjustment"
+    ],
+    "purpose": "Plan and monitor practice"
+  },
+  {
+    "unit": 3,
+    "required_phrases": [
+      "clarification question",
+      "perspective you acknowledged"
+    ],
+    "purpose": "Clarify before disagreeing"
+  },
+  {
+    "unit": 4,
+    "required_phrases": [
+      "one benefit and one trade-off",
+      "why you changed or kept"
+    ],
+    "purpose": "Make a reasoned choice"
+  },
+  {
+    "unit": 5,
+    "required_phrases": [
+      "the source",
+      "what remains uncertain"
+    ],
+    "purpose": "Qualify a checked claim"
+  },
+  {
+    "unit": 6,
+    "required_phrases": [
+      "both perspectives",
+      "boundary you acknowledged"
+    ],
+    "purpose": "Respect boundaries in disagreement"
+  },
+  {
+    "unit": 7,
+    "required_phrases": [
+      "who may be affected",
+      "claim you qualified"
+    ],
+    "purpose": "Discuss uneven impacts"
+  },
+  {
+    "unit": 8,
+    "required_phrases": [
+      "Judge clarity",
+      "your revision"
+    ],
+    "purpose": "Adapt for a multilingual listener"
+  }
+]

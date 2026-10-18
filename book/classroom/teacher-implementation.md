@@ -98,7 +98,7 @@ If a learner needs an alternative to eye contact, accept other signs of audience
 
 ## 6. Unit 1 reading key • scope and use
 
-This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Keys for Units 2–8 of the original book and all original video exercises remain to be completed or verified.
+This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. Original video exercises still require the intended recordings and verified keys; open questions allow supported alternatives.
 
 Answers are grounded in the revised passage or vocabulary table, not independently validated claims about the real world. Each quoted evidence phrase is checked against the current semantic book during QA. Use question stems rather than page numbers, since pagination can change. Accept accurate paraphrases for the five open questions. Critical Thinking, personal connections, and discussions have no single correct opinion.
 
@@ -164,7 +164,7 @@ Answer / acceptable content: c — He avoids speaking.
 
 Reason: The example contrasts his avoidance with Sara’s regular participation.
 
-Text evidence: “Ali, however, improves more slowly because he avoids communication.”
+Text evidence: “Ali improves more slowly because he avoids communication.”
 
 ### Question: Why does Sara improve faster?
 
@@ -172,7 +172,7 @@ Answer / acceptable content: b — She practices speaking regularly.
 
 Reason: The passage explains her increased confidence through participation and practice.
 
-Text evidence: “Sara becomes a much more confident speaker because she practices regularly.”
+Text evidence: “Sara becomes a more confident speaker through regular practice.”
 
 ### Question: Which statement is TRUE?
 
@@ -180,7 +180,7 @@ Answer / acceptable content: b — Listening is an important communication skill
 
 Reason: The reading explicitly includes listening as part of communication.
 
-Text evidence: “Another important aspect of communication is listening.”
+Text evidence: “Listening deserves the same attention as speaking.”
 
 ### Question: What is the main idea of the reading?
 
@@ -188,7 +188,7 @@ Answer / acceptable content: b — Communication develops through practice.
 
 Reason: This summarizes the passage rather than only one of its examples.
 
-Text evidence: “becoming a good communicator requires practice”
+Text evidence: “learning to communicate takes practice”
 
 ### Answer the Questions · suggested content, not fixed wording
 
@@ -202,19 +202,19 @@ Text evidence: “Ali knows thousands of English words but rarely speaks because
 
 ### Question: What can good listeners do?
 
-Answer / acceptable content: Pay attention to ideas, emotions, and intentions; ask follow-up questions; show interest. Appropriate nonverbal attention may vary across cultures and access needs.
+Answer / acceptable content: Pay attention to ideas, emotions, and intentions; ask follow-up questions; restate the main point to check understanding. Attention need not look the same for everyone.
 
 Reason: Accept relevant actions from the text; do not require a specific gaze behavior from learners.
 
-Text evidence: “They ask follow-up questions and show interest through eye contact and positive body language.”
+Text evidence: “They can ask follow-up questions or briefly restate the main point to check their understanding.”
 
 ### Question: How does communication help society?
 
-Answer / acceptable content: It helps people make decisions, teach, understand needs, motivate others, solve problems, and share knowledge.
+Answer / acceptable content: It helps people make decisions, teach, understand needs, agree on action, solve problems, and share knowledge.
 
 Reason: Accept a relevant selection of examples; no need to reproduce every profession listed.
 
-Text evidence: “Without communication, knowledge cannot be shared.”
+Text evidence: “Communication also helps people solve problems and share knowledge.”
 
 ### Question: Why is communication compared to learning football or driving?
 
@@ -222,7 +222,7 @@ Answer / acceptable content: It is a skill that develops through practice, like 
 
 Reason: The analogy is about learning through practice, not proof that all skills develop in exactly the same way.
 
-Text evidence: “Just like learning to drive, play football, or use a computer, becoming a good communicator requires practice.”
+Text evidence: “Like learning to drive, play football, or use a computer, learning to communicate takes practice.”
 
 ### Question: What advice does the writer give English learners?
 
@@ -230,7 +230,7 @@ Answer / acceptable content: Speak rather than waiting for perfection, listen ca
 
 Reason: Accept paraphrases of the closing advice.
 
-Text evidence: “Speak confidently, listen carefully, and continue learning from every conversation.”
+Text evidence: “Use the words you know, listen carefully, and ask for clarification when you need it.”
 
 ## 7. Unit 1 • Original teacher-read alternative
 
@@ -642,4 +642,464 @@ One revision to try, and when: _____________________________________
 
 If comparing attempts, record the prompt, preparation time, speaking time, support, and evidence. Improvement on a repeated task does not by itself prove general proficiency growth or a causal effect of this book.
 
-Remaining development: source verification and keys for the original listening lessons; reading keys for Units 2–8; independent human review; and actual classroom trial evidence. The new alternatives and Unit 1 key are not a claim that those tasks are complete.
+Remaining development: source verification and keys for the original listening lessons; wider open-response and exercise-key review; independent human review; and actual classroom trial evidence. Reading closed-response keys are supplied separately below; the fictional listening alternatives do not answer the original video exercises.
+
+## 16. Reading closed-response keys — Units 2–8
+
+These keys refer only to the revised book’s readings, not to its original videos. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.
+
+### Unit 2 — reading
+
+### Multiple choice 1: What is the main purpose of the reading?
+
+Answer: B — To show why goal setting is important
+
+Reading paragraph 1: “A dream gives you something to imagine: becoming a doctor, starting a business, travelling, or speaking another language with confidence. A goal begins to turn that possibility into a plan. It names something you want to do and gives you a reason to take the next step. Neither a dream nor a written goal can do the work for you.”
+
+### Multiple choice 2: According to the reading, what is the difference between a dream and a goal?
+
+Answer: B — Goals require action and planning.
+
+Reading paragraph 2: “The difference between a wish and a goal is action. Wishing to improve your English does not tell you what to practise today. A workable goal connects the result you want with smaller steps you can take. You need a direction, a routine, and a way to notice whether the routine is helping.”
+
+### Multiple choice 3: Why did the second student improve more than the first student?
+
+Answer: C — He had a specific plan and practiced consistently.
+
+Reading paragraph 3: “Consider two university students learning English. The first says, ‘I want to speak fluently someday,’ but rarely practises. The second plans to learn 20 words a week, read an article each day, and speak for 15 minutes after class. In this example, the second student makes more progress because the plan is specific and followed consistently. Those numbers are an example, not a schedule everyone must copy.”
+
+### Multiple choice 4: According to the reading, what should people do when they face obstacles?
+
+Answer: C — Review their plan and continue working.
+
+Reading paragraph 4: “A goal can help you decide what to return to when you meet an obstacle. Exams, work, illness, or family responsibilities may interrupt a routine. Rather than treating the interruption as proof of failure, review your plan. What can you still do? What needs to change? Continuing may mean taking a smaller step, not simply trying harder.”
+
+### Multiple choice 5: Which statement is TRUE according to the reading?
+
+Answer: B — Writing a goal down can make it easier to review.
+
+Reading paragraph 6: “Writing a goal down makes it easier to review. Record what you intend to do, how you will practise, and when you will check the result. A supportive friend, teacher, or family member can ask how the plan is going. Sharing a goal may strengthen your commitment, but choose support that helps rather than adds pressure.”
+
+### True or false 1: _____ A goal is simply another word for a dream.
+
+Answer: F — False
+
+Possible correction: A goal requires action and planning, not only a wish.
+
+Reading paragraph 2: “The difference between a wish and a goal is action. Wishing to improve your English does not tell you what to practise today. A workable goal connects the result you want with smaller steps you can take. You need a direction, a routine, and a way to notice whether the routine is helping.”
+
+### True or false 2: _____ Daily action is more important than having a dream alone.
+
+Answer: T — True
+
+Reading paragraph 2: “The difference between a wish and a goal is action. Wishing to improve your English does not tell you what to practise today. A workable goal connects the result you want with smaller steps you can take. You need a direction, a routine, and a way to notice whether the routine is helping.”
+
+### True or false 3: _____ Obstacles mean you should stop trying.
+
+Answer: F — False
+
+Possible correction: Obstacles call for reviewing and adjusting a plan, not automatically stopping.
+
+Reading paragraph 4: “A goal can help you decide what to return to when you meet an obstacle. Exams, work, illness, or family responsibilities may interrupt a routine. Rather than treating the interruption as proof of failure, review your plan. What can you still do? What needs to change? Continuing may mean taking a smaller step, not simply trying harder.”
+
+### True or false 4: _____ The passage recommends reviewing progress regularly.
+
+Answer: T — True
+
+Reading paragraph 5: “That is why flexibility matters. A plan that worked last month may no longer fit your circumstances. You might change the time you practise, reduce a task, ask for help, or reconsider the goal itself. Review your progress regularly. Changing an unrealistic goal can be a thoughtful decision rather than a failure to keep a promise.”
+
+### True or false 5: _____ Sharing your goals with others may increase your commitment.
+
+Answer: T — True
+
+Reading paragraph 6: “Writing a goal down makes it easier to review. Record what you intend to do, how you will practise, and when you will check the result. A supportive friend, teacher, or family member can ask how the plan is going. Sharing a goal may strengthen your commitment, but choose support that helps rather than adds pressure.”
+
+### Unit 3 — reading
+
+### Multiple choice 1: What is the main purpose of the passage?
+
+Answer: B — To explain the importance of emotional intelligence.
+
+Reading paragraph 1: “A person may solve a difficult problem yet struggle to listen when a colleague disagrees. Someone else may understand a lesson but find it hard to respond to criticism. IQ tests assess some cognitive abilities; they do not describe every skill used in daily life. Emotional intelligence offers a way to discuss how people notice emotions and respond to them.”
+
+### Multiple choice 2: In the passage, an emotionally intelligent response involves
+
+Answer: C — managing emotions thoughtfully.
+
+Reading paragraph 2: “Emotional intelligence involves recognizing and understanding emotions in yourself and others, then choosing how to respond. Managing an emotion does not mean pretending it is absent. You might notice frustration, pause before answering, and ask a question rather than react impulsively. The aim is a thoughtful, constructive response, especially when a conversation is difficult.”
+
+### Multiple choice 3: Which of the following is NOT one of Goleman’s five components?
+
+Answer: C — Creativity
+
+Reading paragraph 3: “One model, popularized by psychologist Daniel Goleman, describes five components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness means noticing your feelings and their influence on your behavior. Self-regulation concerns your response to those feelings. Motivation helps you continue toward a goal. Empathy involves considering another person’s feelings and perspective; social skills help you communicate and work with others. This is one framework, not the only way to describe emotional life.”
+
+### Multiple choice 4: According to the passage, emotional intelligence can
+
+Answer: B — be developed through practice.
+
+Reading paragraph 6: “You can practise these skills in small ways. Notice an emotion before naming someone else’s intention. Listen actively, ask for feedback, and pause before responding. Afterwards, consider what helped and what you might change. Understanding another perspective does not require agreeing with it, and managing your response does not mean accepting disrespect.”
+
+### Multiple choice 5: What is the author’s overall conclusion?
+
+Answer: B — Emotional intelligence is valuable in many areas of life.
+
+Reading paragraph 7: “Emotional intelligence is useful because knowledge alone does not tell us how to handle every interaction. We also need ways to understand ourselves, communicate our concerns, and respond to other people. Treat the framework as an invitation to practise those skills, not as a label that divides people into good and bad personalities.”
+
+### True or false 1: _____ Emotional intelligence only affects workplace relationships.
+
+Answer: F — False
+
+Possible correction: The passage discusses classroom as well as workplace interactions.
+
+Reading paragraph 5: “The same ideas apply in a classroom. Feedback may feel uncomfortable even when it is useful. A student can ask for a specific example, explain what is unclear, and decide what to try next. Working with others also involves taking turns and considering different perspectives. Emotional skills can support learning alongside subject knowledge; they are not a substitute for it.”
+
+### True or false 2: _____ The passage encourages thoughtful responses rather than impulsive reactions.
+
+Answer: T — True
+
+Reading paragraph 2: “Emotional intelligence involves recognizing and understanding emotions in yourself and others, then choosing how to respond. Managing an emotion does not mean pretending it is absent. You might notice frustration, pause before answering, and ask a question rather than react impulsively. The aim is a thoughtful, constructive response, especially when a conversation is difficult.”
+
+### True or false 3: _____ The passage presents a five-component model popularized by Daniel Goleman.
+
+Answer: T — True
+
+Reading paragraph 3: “One model, popularized by psychologist Daniel Goleman, describes five components: self-awareness, self-regulation, motivation, empathy, and social skills. Self-awareness means noticing your feelings and their influence on your behavior. Self-regulation concerns your response to those feelings. Motivation helps you continue toward a goal. Empathy involves considering another person’s feelings and perspective; social skills help you communicate and work with others. This is one framework, not the only way to describe emotional life.”
+
+### True or false 4: _____ Emotional intelligence cannot be improved.
+
+Answer: F — False
+
+Possible correction: Emotional skills can be practised through listening, feedback, reflection, and pausing.
+
+Reading paragraph 6: “You can practise these skills in small ways. Notice an emotion before naming someone else’s intention. Listen actively, ask for feedback, and pause before responding. Afterwards, consider what helped and what you might change. Understanding another perspective does not require agreeing with it, and managing your response does not mean accepting disrespect.”
+
+### True or false 5: _____ Active listening is one way to strengthen emotional intelligence.
+
+Answer: T — True
+
+Reading paragraph 6: “You can practise these skills in small ways. Notice an emotion before naming someone else’s intention. Listen actively, ask for feedback, and pause before responding. Afterwards, consider what helped and what you might change. Understanding another perspective does not require agreeing with it, and managing your response does not mean accepting disrespect.”
+
+### Unit 4 — reading
+
+### Multiple choice 1: What is the main purpose of the passage?
+
+Answer: B — To examine different views about money and happiness.
+
+Reading paragraph 1: “Does more money mean a happier life? The question sounds simple until you ask what the money is needed for. Paying for food or housing is different from buying another luxury item. People also value different things: security, health, relationships, meaningful work, or time to themselves. To discuss money and happiness, we need to consider those differences rather than search for one answer that fits everyone.”
+
+### Multiple choice 2: According to the passage, how can money improve people’s lives?
+
+Answer: B — By helping people satisfy their basic needs.
+
+Reading paragraph 2: “Money helps people meet basic needs such as food, housing, healthcare, and education. Having enough to pay essential bills or handle an unexpected expense can reduce financial worry. That makes financial security important. A discussion of happiness should not dismiss the practical difference between being unable to meet a need and having the resources to meet it.”
+
+### Multiple choice 3: What is the “hedonic treadmill”?
+
+Answer: B — The tendency to become used to higher levels of wealth.
+
+Reading paragraph 3: “More income does not guarantee that every part of life will improve. People can become used to a higher standard of living and begin wanting more. This process is often called the hedonic treadmill: an improvement becomes familiar rather than remaining as exciting as it first seemed. It is a useful idea to discuss, not a fixed income threshold or a rule that describes everyone’s experience.”
+
+### Multiple choice 4: Which kind of spending does the passage discuss as a possible source of shared memories?
+
+Answer: B — Investing in meaningful experiences.
+
+Reading paragraph 4: “How money is used matters too. A meaningful experience—learning a skill, taking a trip, or sharing time with people you care about—may offer something different from an expensive possession. Helping someone else may also bring a sense of purpose. Experiences can become shared memories, but neither generosity nor travel guarantees happiness. Their value depends on the person, the circumstances, and what needs the spending serves.”
+
+### Multiple choice 5: What is the author’s overall conclusion?
+
+Answer: C — Money is valuable, but lasting happiness depends on how it is used.
+
+Reading paragraph 7: “Instead of asking only whether money buys happiness, ask what a particular use of money makes possible—and what it may leave out. Does it meet an important need? Support a valued relationship? Create pressure elsewhere? A thoughtful answer connects money with the life someone is trying to build, rather than treating wealth itself as the final goal.”
+
+### True or false 1: _____ Financial security can reduce stress.
+
+Answer: T — True
+
+Reading paragraph 2: “Money helps people meet basic needs such as food, housing, healthcare, and education. Having enough to pay essential bills or handle an unexpected expense can reduce financial worry. That makes financial security important. A discussion of happiness should not dismiss the practical difference between being unable to meet a need and having the resources to meet it.”
+
+### True or false 2: _____ The passage claims that earning more money always increases happiness.
+
+Answer: F — False
+
+Possible correction: The passage says more income does not guarantee improvement in every part of life.
+
+Reading paragraph 3: “More income does not guarantee that every part of life will improve. People can become used to a higher standard of living and begin wanting more. This process is often called the hedonic treadmill: an improvement becomes familiar rather than remaining as exciting as it first seemed. It is a useful idea to discuss, not a fixed income threshold or a rule that describes everyone’s experience.”
+
+### True or false 3: _____ The passage suggests that experiences can create shared memories.
+
+Answer: T — True
+
+Reading paragraph 4: “How money is used matters too. A meaningful experience—learning a skill, taking a trip, or sharing time with people you care about—may offer something different from an expensive possession. Helping someone else may also bring a sense of purpose. Experiences can become shared memories, but neither generosity nor travel guarantees happiness. Their value depends on the person, the circumstances, and what needs the spending serves.”
+
+### True or false 4: _____ Working long hours never affects emotional well-being.
+
+Answer: F — False
+
+Possible correction: Extra work may reduce time for rest and relationships.
+
+Reading paragraph 5: “Earning more can also involve a trade-off. Extra hours at work may increase income while leaving less time for rest, relationships, or other responsibilities. For someone whose basic needs are not secure, that choice may be difficult rather than freely made. Consider both the benefit of the income and the possible cost to well-being before judging another person’s decision.”
+
+### True or false 5: _____ The author believes money is a tool rather than the ultimate goal.
+
+Answer: T — True
+
+Reading paragraph 6: “Money is a tool, not a complete measure of a life. It can provide security, choices, and opportunities. Meaningful experiences, generosity, relationships, and personal growth are also worth considering when deciding how to use it. A balance that suits one person may not suit another, and circumstances can change what is possible.”
+
+### Unit 5 — reading
+
+### Multiple choice 1: According to the passage, one of AI’s greatest strengths is its ability to
+
+Answer: B — process enormous amounts of information quickly.
+
+Reading paragraph 2: “AI can process large amounts of information, recognize patterns, and handle some repetitive tasks quickly. Its usefulness and accuracy depend on the task, the system, and the data. A tool that performs well in one setting may fail in another. Businesses, hospitals, schools, and governments therefore need more than a demonstration of speed; they need ways to check results and decide who is responsible for them.”
+
+### Multiple choice 2: Which field is mentioned as being significantly influenced by AI?
+
+Answer: B — Education
+
+Reading paragraph 4: “In education, AI may help explain a concept, suggest practice, or summarize a text. It can also make it easier to submit an answer without understanding it. A useful test is whether you can explain the result yourself, check it against the source, and notice what is missing. Treat AI as a possible assistant to learning, not a replacement for your own thinking or a teacher’s guidance.”
+
+### Multiple choice 3: Which concern about AI is raised in the passage?
+
+Answer: B — AI may replace jobs and raise privacy concerns.
+
+Reading paragraph 3: “There are also risks. Automation can change the work people do and the skills they need. Collecting data can create privacy concerns, particularly when people do not know how their information will be used. AI can produce errors, invent plausible details, or repeat bias in its data. Human judgment is essential, but checking must be informed and deliberate rather than a quick glance at the answer.”
+
+### Multiple choice 4: According to the passage, how should students use AI?
+
+Answer: C — As a learning assistant that supports independent thinking.
+
+Reading paragraph 4: “In education, AI may help explain a concept, suggest practice, or summarize a text. It can also make it easier to submit an answer without understanding it. A useful test is whether you can explain the result yourself, check it against the source, and notice what is missing. Treat AI as a possible assistant to learning, not a replacement for your own thinking or a teacher’s guidance.”
+
+### Multiple choice 5: What is the author’s main message?
+
+Answer: C — AI can be useful, but important decisions require careful human checking.
+
+Reading paragraph 5: “The question is not simply whether AI is a friend or a foe. Ask what a particular tool is doing, what evidence supports its output, and who may be affected if it is wrong. Responsible use includes protecting private information, acknowledging uncertainty, and keeping people accountable for important decisions. Learning to work with AI includes knowing when not to rely on it.”
+
+### True or false 1: _____ AI is mainly a technology that will be used in the distant future.
+
+Answer: F — False
+
+Possible correction: AI already appears in ordinary activities.
+
+Reading paragraph 1: “Artificial intelligence, or AI, already appears in ordinary activities. A tool may help translate a message, suggest a film, generate an image, or draft an email. People also use AI to look for information, including health information. Using a tool does not make its answer reliable: a confident response still needs to be checked, especially when a decision could affect someone’s health, rights, or finances.”
+
+### True or false 2: _____ AI can recognize patterns and analyze large amounts of data quickly.
+
+Answer: T — True
+
+Reading paragraph 2: “AI can process large amounts of information, recognize patterns, and handle some repetitive tasks quickly. Its usefulness and accuracy depend on the task, the system, and the data. A tool that performs well in one setting may fail in another. Businesses, hospitals, schools, and governments therefore need more than a demonstration of speed; they need ways to check results and decide who is responsible for them.”
+
+### True or false 3: _____ The author believes AI always produces accurate information.
+
+Answer: F — False
+
+Possible correction: AI can produce errors, invented details, or biased output.
+
+Reading paragraph 3: “There are also risks. Automation can change the work people do and the skills they need. Collecting data can create privacy concerns, particularly when people do not know how their information will be used. AI can produce errors, invent plausible details, or repeat bias in its data. Human judgment is essential, but checking must be informed and deliberate rather than a quick glance at the answer.”
+
+### True or false 4: _____ The passage suggests that students should become completely dependent on AI.
+
+Answer: F — False
+
+Possible correction: Students should retain their own thinking and check what the tool produces.
+
+Reading paragraph 4: “In education, AI may help explain a concept, suggest practice, or summarize a text. It can also make it easier to submit an answer without understanding it. A useful test is whether you can explain the result yourself, check it against the source, and notice what is missing. Treat AI as a possible assistant to learning, not a replacement for your own thinking or a teacher’s guidance.”
+
+### True or false 5: _____ The passage recommends checking AI outputs and protecting private information.
+
+Answer: T — True
+
+Reading paragraph 5: “The question is not simply whether AI is a friend or a foe. Ask what a particular tool is doing, what evidence supports its output, and who may be affected if it is wrong. Responsible use includes protecting private information, acknowledging uncertainty, and keeping people accountable for important decisions. Learning to work with AI includes knowing when not to rely on it.”
+
+### Unit 6 — reading
+
+### Multiple choice 1: What is the main idea of the passage?
+
+Answer: B — Love is important, but a lasting marriage requires more than love.
+
+Reading paragraph 1: “Love is often described as the foundation of a successful marriage. Two people may care deeply about each other and imagine a future together. Yet sharing a life involves more than strong feelings. The question ‘Is love enough?’ invites us to consider what else a respectful, lasting relationship may need. You can explore that question through fictional people rather than private experiences.”
+
+### Multiple choice 2: Why can marriage reveal differences between partners?
+
+Answer: A — Couples have to deal with responsibilities and challenges together.
+
+Reading paragraph 2: “Partners make decisions, share responsibilities, and respond to financial pressures or changes in their lives. These situations can reveal differences that were not obvious at the beginning. Emotional attraction alone does not decide how responsibilities will be shared or how a disagreement will be handled. Those questions need conversation and choices from both people.”
+
+### Multiple choice 3: According to the passage, what can happen when couples ignore their problems?
+
+Answer: B — The problems may remain unresolved.
+
+Reading paragraph 3: “Communication matters because agreement cannot simply be assumed. Partners need ways to express concerns and listen to each other without threats or humiliation. Avoiding a problem may leave it unresolved; discussing it respectfully may make the differences clearer. Understanding a perspective is a starting point for a decision, not a promise that every difference can be solved.”
+
+### Multiple choice 4: What does the passage suggest about conflict in marriage?
+
+Answer: C — The way couples handle disagreements is more important than avoiding them.
+
+Reading paragraph 6: “Disagreements are an ordinary part of long-term relationships; destructive conflict is not something anyone must accept. Listening, taking responsibility, and allowing time to think can help a respectful discussion. Compromise does not mean accepting coercion, threats, or violence. A lesson about communication should never be read as an instruction to stay in an unsafe relationship.”
+
+### Multiple choice 5: What does a lasting relationship require, according to the passage?
+
+Answer: B — Ongoing effort, trust, communication, and respect
+
+Reading paragraph 11: “Love may bring people together; trust, respect, communication, commitment, and mutual effort shape how they share their lives. These ideas are a starting point for discussion, not a formula for every marriage. A thoughtful answer considers both the relationship people want to build and the boundaries each person needs to maintain.”
+
+### True or false 1: _____ Couples need to communicate honestly about their concerns.
+
+Answer: T — True
+
+Reading paragraph 3: “Communication matters because agreement cannot simply be assumed. Partners need ways to express concerns and listen to each other without threats or humiliation. Avoiding a problem may leave it unresolved; discussing it respectfully may make the differences clearer. Understanding a perspective is a starting point for a decision, not a promise that every difference can be solved.”
+
+### True or false 2: _____ Trust means believing that your partner will never make mistakes.
+
+Answer: F — False
+
+Possible correction: Trust concerns honesty, respect, and safety, not an expectation that nobody makes mistakes.
+
+Reading paragraph 4: “Trust is another part of the relationship. It involves more than expecting a partner never to make a mistake. It concerns honesty, respect, and whether each person’s words and actions give the other reason to feel safe. Constant suspicion can make trust difficult, but trust should not be demanded as a reason to ignore harmful behavior.”
+
+### True or false 3: _____ Unrealistic expectations can put pressure on a relationship.
+
+Answer: T — True
+
+Reading paragraph 5: “Expectations can create pressure too. One person may expect a partner to understand every feeling without being told or to meet every emotional need. Another may imagine that a good relationship never includes disappointment. Naming and discussing expectations gives both people a chance to consider which are realistic and which place too much responsibility on the other.”
+
+### True or false 4: _____ The passage treats disagreements as an ordinary part of long-term relationships.
+
+Answer: T — True
+
+Reading paragraph 6: “Disagreements are an ordinary part of long-term relationships; destructive conflict is not something anyone must accept. Listening, taking responsibility, and allowing time to think can help a respectful discussion. Compromise does not mean accepting coercion, threats, or violence. A lesson about communication should never be read as an instruction to stay in an unsafe relationship.”
+
+### True or false 5: _____ The passage suggests that successful couples never experience emotional distance.
+
+Answer: F — False
+
+Possible correction: Even healthy couples may experience disappointment or emotional distance.
+
+Reading paragraph 8: “A relationship may change as people and circumstances change. The excitement of a new relationship can become more familiar, and even healthy couples may experience disappointment or emotional distance. Shared time, appreciation, support, and continuing conversations can help people maintain a sense of partnership. Effort needs to be mutual, not a duty assigned to only one person.”
+
+### True or false 6: _____ External factors can influence the quality of a marriage.
+
+Answer: T — True
+
+Reading paragraph 7: “Not every difficulty begins inside the relationship. Work demands, financial problems, family expectations, social pressures, and cultural differences may also affect it. These outside factors can change what support people need. Discussing them helps distinguish a practical pressure from an assumption about a partner’s intentions.”
+
+### True or false 7: _____ A lasting relationship requires continuous effort.
+
+Answer: T — True
+
+Reading paragraph 8: “A relationship may change as people and circumstances change. The excitement of a new relationship can become more familiar, and even healthy couples may experience disappointment or emotional distance. Shared time, appreciation, support, and continuing conversations can help people maintain a sense of partnership. Effort needs to be mutual, not a duty assigned to only one person.”
+
+### Unit 7 — reading
+
+### Multiple choice 1: What is the main idea of the passage?
+
+Answer: B — Globalization has connected the world and created both opportunities and challenges.
+
+Reading paragraph 9: “Globalization is therefore neither entirely good nor entirely bad. A useful response weighs opportunities against costs and considers how local communities, workers, cultures, and the environment might be protected. That requires looking at particular connections rather than defending or rejecting every international exchange at once.”
+
+### Multiple choice 2: According to the passage, what has helped globalization grow?
+
+Answer: A — Technology, transportation, trade, and the internet
+
+Reading paragraph 3: “Globalization is the growing movement of people, products, ideas, and information across borders. Technology, transport, international trade, and the internet help make those connections possible. The term describes several linked processes, not a single invention or a change that affects every place in the same way.”
+
+### Multiple choice 3: How can globalization benefit businesses?
+
+Answer: B — It allows them to reach new markets and customers.
+
+Reading paragraph 4: “A business might design a product in one country, manufacture it in another, and sell it internationally. A student might take an online course from a distant university. A small business might reach overseas customers through social media. These examples show how distance can become less of a barrier to some activities, although cost, regulation, language, and access still matter.”
+
+### Multiple choice 4: Why are some people concerned about globalization?
+
+Answer: B — They are concerned about local cultures, jobs, inequality, and the environment.
+
+Reading paragraph 7: “There are reasons for concern. Local businesses may struggle to compete with large international companies. Moving production can create jobs in one place and remove them in another. Local traditions may receive less attention as global trends become more visible. Benefits are not shared equally, so a discussion should ask who gains, who loses, and whose view has not been heard.”
+
+### Multiple choice 5: What does the passage mean when it says communication across distance can be easier?
+
+Answer: B — People can communicate and interact across long distances more easily.
+
+Reading paragraph 10: “When people say that the world is getting smaller, they do not mean that physical distance has disappeared. They mean that communication and interaction across distance can be easier. Globalization already affects daily life, but its effects differ. Ask how a connection works and what it changes for the people involved.”
+
+### True or false 1: _____ Globalization has made it easier for products and information to cross borders.
+
+Answer: T — True
+
+Reading paragraph 3: “Globalization is the growing movement of people, products, ideas, and information across borders. Technology, transport, international trade, and the internet help make those connections possible. The term describes several linked processes, not a single invention or a change that affects every place in the same way.”
+
+### True or false 2: _____ Only large international companies can benefit from globalization.
+
+Answer: F — False
+
+Possible correction: A small business can also reach overseas customers.
+
+Reading paragraph 4: “A business might design a product in one country, manufacture it in another, and sell it internationally. A student might take an online course from a distant university. A small business might reach overseas customers through social media. These examples show how distance can become less of a barrier to some activities, although cost, regulation, language, and access still matter.”
+
+### True or false 3: _____ Globalization has influenced culture, including music, food, fashion, and language.
+
+Answer: T — True
+
+Reading paragraph 6: “Culture moves through these networks as well. Someone in Kabul may listen to Korean music, watch an American film, eat Italian food, or speak with a friend in Japan. Music, food, fashion, and language can travel and change as people adapt them. Cultural exchange can introduce new choices without making everyone’s experience identical.”
+
+### True or false 4: _____ Everyone benefits equally from globalization.
+
+Answer: F — False
+
+Possible correction: Benefits are not shared equally.
+
+Reading paragraph 7: “There are reasons for concern. Local businesses may struggle to compete with large international companies. Moving production can create jobs in one place and remove them in another. Local traditions may receive less attention as global trends become more visible. Benefits are not shared equally, so a discussion should ask who gains, who loses, and whose view has not been heard.”
+
+### True or false 5: _____ The passage presents globalization as completely positive.
+
+Answer: F — False
+
+Possible correction: The passage considers costs as well as opportunities.
+
+Reading paragraph 9: “Globalization is therefore neither entirely good nor entirely bad. A useful response weighs opportunities against costs and considers how local communities, workers, cultures, and the environment might be protected. That requires looking at particular connections rather than defending or rejecting every international exchange at once.”
+
+### True or false 6: _____ International transportation can create environmental problems.
+
+Answer: T — True
+
+Reading paragraph 8: “The environment is part of the discussion too. International transport uses energy and can produce emissions. Producing and moving large quantities of goods can contribute to pollution and waste. The effects depend on how goods are made and transported; a product’s foreign origin alone does not tell us its full environmental impact.”
+
+### True or false 7: _____ The writer believes globalization is already affecting our lives.
+
+Answer: T — True
+
+Reading paragraph 10: “When people say that the world is getting smaller, they do not mean that physical distance has disappeared. They mean that communication and interaction across distance can be easier. Globalization already affects daily life, but its effects differ. Ask how a connection works and what it changes for the people involved.”
+
+### Unit 8 — reading
+
+### Multiple choice 1: What is the main purpose of the reading?
+
+Answer: B — To explain how English became globally influential and discuss its consequences
+
+Reading paragraph 1: “English is used in international business, science, aviation, education, entertainment, and online communication. In many settings it serves as a lingua franca: a language people use to communicate when they do not share a first language. How did a language once associated mainly with England and parts of the British Isles become so widely used, and what does that mean for its users?”
+
+### Multiple choice 2: What was one important reason English spread internationally?
+
+Answer: A — British expansion and colonialism
+
+Reading paragraph 2: “The expansion of the British Empire was an important part of the story. English travelled through colonial administration, trade, education, and other institutions. That history involved unequal power, not simply a language becoming popular because people preferred it. Its effects differed across places and continue to influence opportunities and attitudes toward English.”
+
+### Multiple choice 3: What helped strengthen English during the twentieth century?
+
+Answer: B — The economic and cultural influence of the United States
+
+Reading paragraph 3: “During the twentieth century, the economic, political, scientific, and cultural influence of the United States helped strengthen English internationally. Companies, films, universities, and research institutions contributed to its visibility and use. British colonial expansion and later American influence are different parts of a complicated history, not a complete explanation of every community’s language choices.”
+
+### Multiple choice 4: According to the reading, what did technology do?
+
+Answer: C — It accelerated the global use of English.
+
+Reading paragraph 4: “Technology created further opportunities to use English across borders. Researchers, businesses, and people online could communicate with distant audiences. A person in Afghanistan might read an article from Japan, watch a video from the United States, and exchange messages with someone in Germany using English. Technology accelerated these connections; it did not make access equal or remove the value of other languages.”
+
+### Multiple choice 5: Why does the writer ask, “Who owns English?”
+
+Answer: B — Because millions of non-native speakers use and shape the language
+
+Reading paragraph 6: “English is not used only by people who learned it as a first language. Millions use it as an additional language and adapt it to local needs. English in India, Nigeria, and Singapore has developed in different contexts and has different characteristics. These varieties remind us that international use does not mean everyone speaks in exactly the same way.”

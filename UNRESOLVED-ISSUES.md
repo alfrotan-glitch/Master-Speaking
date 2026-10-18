@@ -1,6 +1,8 @@
 # Current release-condition register — Master Speaking
 
-Updated 17 October 2026 after the whole-book critical audit. This register supersedes conflicting historical statements in earlier reports. **Commercial release remains on hold.** Production validation is not rights clearance, factual approval, or classroom validation.
+> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **21 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+
+Updated 18 October 2026 after the whole-book critical audit. This register supersedes conflicting historical statements in earlier reports. **Commercial release remains on hold.** Production validation is not rights clearance, factual approval, or classroom validation.
 
 ## Open conditions
 
@@ -32,8 +34,12 @@ Updated 17 October 2026 after the whole-book critical audit. This register super
 - **Supplementary listening:** separate student/teacher packs contain eight original teacher-read alternatives and their own keys. These do not authenticate the original videos or supply an eight-unit main-book answer key.
 
 - The whole-book pass adds 24 guarded structural repairs, corrects lesson cross-references and copied instructions, completes missing presentation conclusions, and provides eight unit-specific learner review/transfer tasks. Seven vocabulary exercises retain all 36 source sentences; none was deleted to force a uniform item count.
-- The new lesson gate checks 88 multiple-choice groups for organization and option lettering, not answer correctness. Exact stress capitals and selected IPA models are tested in the exports. The current release has 14 gates.
+- The new lesson gate checks 88 multiple-choice groups for organization and option lettering, not answer correctness. Exact stress capitals and selected IPA models are tested in the exports. The current release has 15 gates.
 
 ## Current evidence
 
 `QA-REPORT.md` and `book/artifacts/qa_october_run.json` record current release checks; `book/artifacts/epubcheck-official.json` records the validator version and export fingerprint. `STRICT-AUDIT.md` preserves the original audit snapshot and a remediation update. Rebuild and rerun gates after any further edit. A passing suite does not close R01–R08.
+
+## Latest ten-lens improvement pass
+
+See [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) for the AI-assisted specialist-perspective review, not a ten-person human endorsement. The rebuilt book now has eight stronger learner-evidence tasks, a deduplicated epigraph, a more inclusive listening passage and a qualified English-ownership discussion. The Unit 1 teacher-key evidence was synchronized and its supporting exports rebuilt. All 15 release gates and both supporting-pack checks pass. Current export fingerprints are in `book/artifacts/specialist-review.json`; the earlier design-only evidence is historical. Rights, recordings, independent proof, device/accessibility testing and printer approval remain open.

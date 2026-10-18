@@ -4,6 +4,8 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 
 ## Revised book — October 2026
 
+**All-chapter revision pass complete:** all eight units and 32 chapters now have recorded substantive revisions, preserving their exact titles. Current book: **171 interior / 172 reader pages; 21 release gates pass**. All editions and supporting packs are synchronized. See [revision and proof scope](REWRITE-PROGRESS.md): this is not independent every-word or every-page full-size human proof.
+
 **Start with [the clean book PDF](Master-Speaking.pdf)**: cover plus the reader-facing book, with navigation bookmarks. Discussion notes, production reports, and teaching packs are not included. The older `Master-Speaking-Reading-Edition.pdf` link remains an identical compatibility copy.
 
 - [Editable Word book](Master-Speaking-7x10.docx)
@@ -13,6 +15,7 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 - [Editorial and publication review](PUBLICATION-READINESS.md)
 - [Final language and typography review](FINAL-EDITORIAL-REVIEW.md)
 - [Whole-book critical audit and remediation](WHOLE-BOOK-AUDIT.md)
+- [Ten-specialist-lens improvement review](TEN-LENS-REVIEW.md) — AI-assisted, not ten independent human endorsements
 - [Modern redesign and visual review](DESIGN-REVIEW.md)
 - [Current QA results](QA-REPORT.md) and [text change log](CHANGELOG.md)
 
@@ -25,25 +28,25 @@ bash book/tools/bootstrap.sh
 python book/tools/release.py
 ```
 
-The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, then runs 14 regression, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision.
+The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, and all three supporting packs, then runs 21 regression, revision-coverage, reading-key, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision.
 
 ## Classroom implementation packs
 
 The recommendations from the student/teacher review are now supported by two separate printable and editable packs:
 
 - **[Student Practice Pack (PDF)](Master-Speaking-Student-Practice-Pack.pdf)** / [Word](Master-Speaking-Student-Practice-Pack.docx): chapter checklists for all eight units, eight model exchanges, eight short model responses, listening worksheets, and a practice record.
-- **[Teacher Implementation Pack (PDF)](Master-Speaking-Teacher-Implementation-Pack.pdf)** / [Word](Master-Speaking-Teacher-Implementation-Pack.docx): eight newly authored teacher-read listening stories with their own questions and keys, the Unit 1 reading key, and four 75-minute pilot lessons.
+- **[Teacher Implementation Pack (PDF)](Master-Speaking-Teacher-Implementation-Pack.pdf)** / [Word](Master-Speaking-Teacher-Implementation-Pack.docx): eight newly authored teacher-read listening stories with their own questions and keys, the Unit 1 reading key, closed-reading keys with passage evidence for Units 2–8, and four 75-minute pilot lessons.
 
 **Start:** teach Unit 1 using the Teacher Pack’s pilot plan; give students the matching Student Pack pages. Keep teacher scripts and answers separate during listening. The pilot is intentionally slower than the companion’s two-meeting-per-unit course plan.
 
-The teacher-read stories are fictional **alternatives**, not the original video transcripts, and no recorded audio is supplied. Use their own worksheets, not the book’s video questions. The original recordings remain unverified. The source-linked original-book reading key currently covers **Unit 1, Chapter 1 only**, not all eight units. No live pilot results are claimed.
+The teacher-read stories are fictional **alternatives**, not the original video transcripts, and no recorded audio is supplied. Use their own worksheets, not the book’s video questions. The original recordings remain unverified. Closed-reading keys now cover **all eight units: 40 multiple-choice answers and 34 true/false judgments**. Open questions accept supported responses; these are not original-video answer keys. No live pilot results are claimed.
 
 ```sh
 python book/tools/classroom.py
 python book/tools/qa_classroom.py
 ```
 
-Authored sources: `book/classroom/modules.json`, `unit1-reading-key.json`, and `teacher-notes.md`. The two Markdown pack files are generated; edit the authored sources before rebuilding. See [CLASSROOM-QA-REPORT.md](CLASSROOM-QA-REPORT.md) and `book/publishing/listening-alternatives.csv` for scope and checks.
+Authored sources: `book/classroom/modules.json`, `unit1-reading-key.json`, `reading-closed-keys.json`, and `teacher-notes.md`. The two Markdown pack files are generated; edit the authored sources before rebuilding. See [CLASSROOM-QA-REPORT.md](CLASSROOM-QA-REPORT.md) and `book/publishing/listening-alternatives.csv` for scope and checks.
 
 ## Special Speaking Class companion
 

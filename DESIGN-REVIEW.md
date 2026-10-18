@@ -1,6 +1,10 @@
 # Modern editorial design review
 
+> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **21 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+
 18 October 2026 · Master Speaking · Abdul Raziq Nazari
+
+**Historical design-only pass:** subsequent content improvements and current export fingerprints are recorded in [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) and `book/artifacts/specialist-review.json`. Unchanged-content and 14-gate statements below describe the earlier design pass, not the later revision.
 
 ## Design delivered
 

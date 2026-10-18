@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "reviewed_fields": 138,
+  "chapters_field_fingerprinted": 1,
+  "chapters_without_field_level_fingerprints": 31,
+  "issues": [],
+  "scope": "Detailed fingerprints: foreword and Unit 1 Chapter 1 only. See qa_whole_revision for the separate all-chapter revision pass; neither is independent human proof."
+}

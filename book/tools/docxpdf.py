@@ -65,7 +65,7 @@ from reportlab.lib.pagesizes import inch as IN
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib import colors
 from reportlab.lib.enums import TA_LEFT
-from reportlab.platypus import (Paragraph, Spacer, PageBreak, Image, Table,
+from reportlab.platypus import (Paragraph, Spacer, PageBreak, CondPageBreak, Image, Table,
                                 TableStyle, Frame, PageTemplate,
                                 NextPageTemplate, KeepTogether)
 from reportlab.platypus.tableofcontents import TableOfContents
@@ -420,7 +420,24 @@ def main():
                 if name == 'MS Chapter Title':
                     story.append(NextPageTemplate('main'))
             elif isinstance(el, DxTable):
-                story.extend(table_flow(el, dx))
+                table_flows = table_flow(el, dx)
+                # Reserve a heading plus the first actual table content row.
+                # Keeping a whole large table with its heading can strand a
+                # chapter title; a bare leading Spacer can strand the section.
+                start = len(story)
+                while start and getattr(story[start-1], 'getKeepWithNext', lambda: False)():
+                    start -= 1
+                if start < len(story):
+                    tab = next((f for f in table_flows if isinstance(f, Table)), None)
+                    if tab is not None:
+                        tab.wrap(TEXT_W, 100000)
+                        count = 2 if tab.repeatRows else 1
+                        reserve = 3 + sum(tab._rowHeights[:count])
+                        for flow in story[start:]:
+                            reserve += flow.wrap(TEXT_W, 100000)[1]
+                            reserve += flow.getSpaceBefore() + flow.getSpaceAfter()
+                        story.insert(start, CondPageBreak(min(reserve, PAGE_H-M_TOP-M_BOT)))
+                story.extend(table_flows)
                 if not unit_seen:
                     continue
                 # warm-up box ends the opener page pattern

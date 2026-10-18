@@ -22,7 +22,8 @@ ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'book/companion/speaking-class.md'
 PDF = ROOT / 'Master-Speaking-Class-Companion.pdf'
 DOCX = ROOT / 'Master-Speaking-Class-Companion.docx'
-ACCENT = '#0E6E5C'
+from design import ACCENT as ACCENT_HEX
+ACCENT = '#' + ACCENT_HEX
 
 
 def blocks(text):

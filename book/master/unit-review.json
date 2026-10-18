@@ -1,10 +1,42 @@
 [
-  {"unit":1,"check":"Can you explain your main point, listen to a response, and repair a misunderstanding without starting the whole conversation again?","transfer":"Explain a useful idea to a partner. Ask them to say what they understood, then clarify one detail. Notice which wording helped."},
-  {"unit":2,"check":"Can you explain a realistic goal, the habit that supports it, and a sensible change to make when your plan is not working?","transfer":"Choose one small speaking habit to try this week. Decide when you will practise and how you will notice progress. Review the plan after trying it."},
-  {"unit":3,"check":"Can you describe an emotional response, consider another perspective, and suggest a constructive way to continue a difficult conversation?","transfer":"Use a fictional disagreement. Try one response that assumes the worst and another that asks for clarification. Discuss how the two responses might affect the conversation."},
-  {"unit":4,"check":"Can you explain a choice about money and well-being, acknowledge a trade-off, and distinguish your values from a research claim?","transfer":"Compare two possible uses of a fictional budget. Explain what each choice makes possible and what it leaves out. Ask a partner whose needs your plan may overlook."},
-  {"unit":5,"check":"Can you explain an AI opportunity and a risk, question a claim, and say where human checking is needed?","transfer":"Choose a non-sensitive claim from an AI response or an article about AI. Check it against an identifiable source. Explain what you could verify and what remains uncertain. Do not enter private information."},
-  {"unit":6,"check":"Can you discuss trust, expectations, and disagreement respectfully without assuming everyone wants or experiences the same kind of relationship?","transfer":"Use a fictional couple, friendship, or team. Describe a disagreement about a shared plan. Suggest a respectful response that takes both people’s boundaries seriously."},
-  {"unit":7,"check":"Can you explain a global connection, identify who may benefit or lose, and support a judgment without ignoring a trade-off?","transfer":"Choose an everyday product or service with an international connection. Find out what you can about that connection. Explain one possible benefit, one possible cost, and one question you still need to investigate."},
-  {"unit":8,"check":"Can you explain an idea to a multilingual audience, adapt an unclear expression, and separate English proficiency from a person’s knowledge?","transfer":"Explain an idea from your community to someone unfamiliar with it. Define one local expression or cultural reference. Ask what they understood and revise your explanation without treating either person’s accent as a problem."}
+  {
+    "unit": 1,
+    "check": "Can you explain your main point, listen to a response, and repair a misunderstanding without starting the whole conversation again?",
+    "transfer": "Explain a useful idea to a partner, then ask them to tell you what they understood. Clarify one detail and try that part again. Keep a progress note: the unclear phrase, your revised wording, and what your partner understood the second time. If you are working alone, write a possible listener question and answer it aloud."
+  },
+  {
+    "unit": 2,
+    "check": "Can you explain a realistic goal, the habit that supports it, and a sensible change to make when your plan is not working?",
+    "transfer": "Choose one small speaking habit to try this week. Decide when you will practise and what you will look for, such as giving a clear example or asking a follow-up question. After two attempts, keep a progress note: what you tried, one change you noticed, and the next adjustment you will make. Progress need not mean speaking faster."
+  },
+  {
+    "unit": 3,
+    "check": "Can you describe an emotional response, consider another perspective, and suggest a constructive way to continue a difficult conversation?",
+    "transfer": "Use a fictional disagreement. Give a response that asks for clarification, then explain the other person’s perspective before suggesting a next step. Try again after feedback or your own reflection. Keep a progress note: your clarification question, the perspective you acknowledged, and one phrase you changed. You do not need to share a personal conflict."
+  },
+  {
+    "unit": 4,
+    "check": "Can you explain a choice about money and well-being, acknowledge a trade-off, and distinguish your values from a research claim?",
+    "transfer": "Compare two uses of a fictional budget. Explain one benefit and one trade-off for each, then consider whose needs your plan may overlook. Revise your recommendation after a partner’s question or one you write yourself. Keep a progress note: your original choice, the question, and why you changed or kept your recommendation."
+  },
+  {
+    "unit": 5,
+    "check": "Can you explain an AI opportunity and a risk, question a claim, and say where human checking is needed?",
+    "transfer": "Choose a non-sensitive claim from an AI response or an article about AI. Check it against an identifiable source; a teacher-provided text is fine. Explain what the source supports and what remains uncertain. Keep a progress note: the claim, the source, and your revised explanation. Do not enter private information or treat an AI response as verification."
+  },
+  {
+    "unit": 6,
+    "check": "Can you discuss trust, expectations, and disagreement respectfully without assuming everyone wants or experiences the same kind of relationship?",
+    "transfer": "Use a fictional couple, friendship, or team disagreeing about a shared plan. Explain both perspectives and suggest a response that respects each person’s boundaries. Consider a partner’s question or write one yourself, then revise your response. Keep a progress note: the boundary you acknowledged and one change to your wording. No personal disclosure is needed."
+  },
+  {
+    "unit": 7,
+    "check": "Can you explain a global connection, identify who may benefit or lose, and support a judgment without ignoring a trade-off?",
+    "transfer": "Choose an everyday product or service with an international connection. Use an identifiable source, including a teacher-provided text, to investigate it. Explain one possible benefit, one possible cost, and one unanswered question. Keep a progress note: your source, who may be affected, and one claim you qualified after checking. Do not guess missing supply-chain details."
+  },
+  {
+    "unit": 8,
+    "check": "Can you explain an idea to a multilingual audience, adapt an unclear expression, and separate English proficiency from a person’s knowledge?",
+    "transfer": "Explain an idea from your community to someone unfamiliar with it. Define a local expression or cultural reference, ask what they understood, and revise one unclear part. Working alone, imagine a listener’s question and answer it aloud. Keep a progress note: the expression, your explanation, and your revision. Judge clarity, not imitation of a particular accent."
+  }
 ]

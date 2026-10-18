@@ -100,7 +100,21 @@ def compose():
                     'What the students’ feedback suggests: ______________________________',
                     'One revision to try, and when: _____________________________________',
                     'If comparing attempts, record the prompt, preparation time, speaking time, support, and evidence. Improvement on a repeated task does not by itself prove general proficiency growth or a causal effect of this book.',
-                    'Remaining development: source verification and keys for the original listening lessons; reading keys for Units 2–8; independent human review; and actual classroom trial evidence. The new alternatives and Unit 1 key are not a claim that those tasks are complete.'])
+                    'Remaining development: source verification and keys for the original listening lessons; wider open-response and exercise-key review; independent human review; and actual classroom trial evidence. Reading closed-response keys are supplied separately below; the fictional listening alternatives do not answer the original video exercises.'])
+    teacher.extend(['## 16. Reading closed-response keys — Units 2–8',
+                    'These keys refer only to the revised book’s readings, not to its original videos. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.'])
+    closed_keys = json.loads((SOURCE / 'reading-closed-keys.json').read_text())
+    for unit_number in range(2, 9):
+        teacher.append(f'### Unit {unit_number} — reading')
+        for item in closed_keys:
+            if item['unit'] != unit_number:
+                continue
+            kind = 'Multiple choice' if item['type'] == 'multiple_choice' else 'True or false'
+            teacher.extend([f"### {kind} {item['item']}: {item['stem']}",
+                            f"Answer: {item['answer']} — {item['answer_text']}"])
+            if item['correction']:
+                teacher.append('Possible correction: ' + item['correction'])
+            teacher.append(f"Reading paragraph {item['reading_paragraph']}: “{item['evidence']}”")
     student_path, teacher_path = SOURCE / 'student-practice.md', SOURCE / 'teacher-implementation.md'
     student_path.write_text('\n\n'.join(student) + '\n')
     teacher_path.write_text('\n\n'.join(teacher) + '\n')

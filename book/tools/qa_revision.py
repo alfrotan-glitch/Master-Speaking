@@ -21,7 +21,15 @@ for edit in edits:
     else:
         if edit.get('action') != 'remove':
             assert sum(b.get('text') == edit['correction'] for b in blocks) == 1, edit
-        assert sum(b.get('text') == edit['original'] for b in blocks) == edit.get('expected_matches', 1) - 1, edit
+        # Several guarded edits may replace separate occurrences of the same
+        # source direction. Check the final remaining count, not an intermediate
+        # state that no longer exists after subsequent reviewed edits.
+        same_source = [e for e in edits if 'table_column' not in e
+                       and (e['unit'], e['chapter'], e['original']) ==
+                           (edit['unit'], edit['chapter'], edit['original'])]
+        remaining = max(e.get('expected_matches', 1) for e in same_source) - len(same_source)
+        assert remaining >= 0, ('Conflicting edit occurrence guards', same_source)
+        assert sum(b.get('text') == edit['original'] for b in blocks) == remaining, edit
 front_edits = json.loads((ROOT / 'book/master/reviewed-front-edits.json').read_text())
 for edit in front_edits:
     parent = book['front']

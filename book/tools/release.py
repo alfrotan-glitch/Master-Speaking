@@ -35,12 +35,12 @@ def main():
     parser.add_argument('--skip-build', action='store_true')
     args = parser.parse_args()
     if not args.skip_build:
-        for name in ['parse', 'master', 'cover', 'wordmaster', 'docxpdf', 'epub']:
+        for name in ['parse', 'master', 'cover', 'wordmaster', 'docxpdf', 'epub', 'classroom', 'companion']:
             if run(name)['exit_code']:
                 raise SystemExit(f'Build stopped at {name}; no success report written.')
     if run('review_pages')['exit_code']:
         raise SystemExit('Could not render current proof pages.')
-    names = ['revision', 'lessons', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
+    names = ['revision', 'lessons', 'learning_transfer', 'rewrite_review', 'whole_revision', 'reading_keys', 'mcq_layout', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
     results = {name: run('qa_' + name) for name in names}
     palette = {'accent on white': contrast(ACCENT, 'FFFFFF'),
                'white on banner': contrast('FFFFFF', BANNER),
@@ -66,6 +66,8 @@ def main():
         pages = len(interior)
     results['publication'] = run('qa_publication')
     results['chapters'] = run('qa_chapters')
+    results['classroom'] = run('qa_classroom')
+    results['companion'] = run('qa_companion')
     artifact.write_text(json.dumps(results, indent=2) + '\n')
     changes = json.loads((ROOT / 'book/artifacts/changelog.json').read_text())
     md = ['# Change Log — Master Speaking', '',
@@ -97,9 +99,14 @@ def main():
                f'Editorial log: {len(changes)} entries. Machine results: `book/artifacts/qa_october_run.json`.', '',
                '## Export checksums (SHA-256)', ''])
     for file in ['Master-Speaking-print-7x10.pdf', 'Master-Speaking-7x10.docx', 'Master-Speaking.epub',
-                 'Master-Speaking-Front-Cover.pdf', 'Master-Speaking-Reading-Edition.pdf', 'Master-Speaking.pdf']:
+                 'Master-Speaking-Front-Cover.pdf', 'Master-Speaking-Reading-Edition.pdf', 'Master-Speaking.pdf',
+                 'Master-Speaking-Class-Companion.pdf', 'Master-Speaking-Class-Companion.docx',
+                 'Master-Speaking-Student-Practice-Pack.pdf', 'Master-Speaking-Student-Practice-Pack.docx',
+                 'Master-Speaking-Teacher-Implementation-Pack.pdf', 'Master-Speaking-Teacher-Implementation-Pack.docx']:
         md.append(f'- `{file}`: `{hashlib.sha256((ROOT / file).read_bytes()).hexdigest()}`')
     (ROOT / 'QA-REPORT.md').write_text('\n'.join(md) + '\n')
+    from rewrite_status import write_status
+    write_status()
     raise SystemExit(1 if any(r['exit_code'] for r in results.values()) else 0)
 
 

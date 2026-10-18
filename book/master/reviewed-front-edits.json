@@ -59,5 +59,177 @@
     "correction": "",
     "reason": "Remove the closing sentence accidentally included as a bullet; it remains once as the guide’s closing paragraph.",
     "action": "remove"
+  },
+  {
+    "path": [
+      "epigraph"
+    ],
+    "original": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett. “Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.”Roy T. Bennett.",
+    "correction": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.” — Roy T. Bennett",
+    "reason": "Remove the accidentally doubled epigraph and separate the attribution typographically; attribution and quotation rights still require publisher verification."
+  },
+  {
+    "path": [
+      "foreword",
+      0,
+      "text"
+    ],
+    "original": "This book was created with one simple belief: learning English is not only about learning what to say—it is about learning how to express what you think.",
+    "correction": "This book begins with a simple belief: learning English means more than knowing what to say. It means finding a way to express what you think.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      1,
+      "text"
+    ],
+    "original": "As your English develops, your conversations should become more than exchanges of simple information. You should be able to explain your ideas, question assumptions, disagree respectfully, tell meaningful stories, defend your opinions, and engage with ideas that do not have simple answers.",
+    "correction": "As your English develops, you need more than the language of everyday exchanges. You need to explain an idea, question an assumption, tell a story, disagree respectfully, and give reasons for your opinions. You also need to listen when an answer is not simple.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      3,
+      "text"
+    ],
+    "original": "Throughout the book, you will encounter topics that are connected to the world around you: relationships, globalization, language, society, culture, and the challenges that shape our future. You will listen to authentic speakers, encounter different perspectives, learn useful expressions, discuss difficult questions, conduct research, and present your own ideas.",
+    "correction": "The topics in this book connect English with the world around you: relationships, globalization, language, culture, and the choices that shape our future. Readings and listening activities introduce different perspectives. You will discuss them, learn useful expressions, investigate questions, and present ideas of your own.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      4,
+      "text"
+    ],
+    "original": "You will also be asked to step outside your comfort zone.",
+    "correction": "Some of that work may take you beyond familiar conversations.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      5,
+      "text"
+    ],
+    "original": "Some questions will have no single correct answer. Some discussions may challenge what you already believe. Some videos may introduce ideas you disagree with. That is intentional.",
+    "correction": "A discussion may challenge something you believe. A speaker may make a point you disagree with. You do not have to accept every argument you encounter; you do need to understand it before you respond.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      7,
+      "text"
+    ],
+    "original": "You may make mistakes. You may change your opinion. You may discover that someone else’s argument is stronger than yours. You may even find yourself defending an idea you had never considered before.",
+    "correction": "You may hesitate, make a mistake, or change your mind. You may hear a stronger argument or find yourself considering a view you had not taken seriously before.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      8,
+      "text"
+    ],
+    "original": "All of these are signs that you are learning.",
+    "correction": "Use those moments to ask a better question, revise an explanation, or try a different way of making your point.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      9,
+      "text"
+    ],
+    "original": "This book also asks you to take responsibility for your own progress. Don’t wait for your teacher to give you every word. Don’t memorize every answer. Don’t be afraid of silence while you search for the right expression.",
+    "correction": "Take an active part in your own progress. Prepare, but do not wait for someone to give you every word. Leave room to think while you speak. After a conversation, notice one thing that worked and one thing to try differently.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "foreword",
+      10,
+      "text"
+    ],
+    "original": "Your English will improve as you use it.",
+    "correction": "Give yourself opportunities to use English, listen to feedback, and try again.",
+    "reason": "Full-rewrite pass: preserve the author’s invitation and teaching purpose while reducing repetition, unsupported promises and formulaic phrasing."
+  },
+  {
+    "path": [
+      "howto",
+      "paras",
+      1
+    ],
+    "original": "This book is designed to help you use English to think, discuss, question, explain, argue, and communicate ideas.",
+    "correction": "Use this book to practise explaining, questioning, discussing, and presenting ideas in English.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "paras",
+      2
+    ],
+    "original": "The topics become increasingly challenging, but the goal is not to give you perfect answers. The goal is to help you become a more confident, independent, and thoughtful English speaker.",
+    "correction": "Each unit gives you several ways to explore a topic. You are not expected to produce a perfect answer. Prepare your ideas, speak in your own words, and use feedback to make the next attempt clearer.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      0,
+      "desc"
+    ],
+    "original": "You will be introduced to the week’s topic through questions, ideas, and activities.",
+    "correction": "Explore the unit’s topic through a reading, vocabulary, questions, and speaking activities.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      0,
+      "you_will",
+      3
+    ],
+    "original": "share your personal experiences",
+    "correction": "use personal or fictional examples",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      1,
+      "desc"
+    ],
+    "original": "You will work with an authentic video or speech connected to the topic.",
+    "correction": "Use the assigned talk or video to practise listening for a main message, supporting details, and the speaker’s position.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "chapters",
+      3,
+      "desc"
+    ],
+    "original": "You will move from discussion to academic speaking.",
+    "correction": "Develop a focused research question and present an answer supported by identifiable sources.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
+  },
+  {
+    "path": [
+      "howto",
+      "closing"
+    ],
+    "original": "By the end of the unit, you should be able to speak about the topic in a structured and academically appropriate way.",
+    "correction": "At the end of a unit, return to its main question. Explain your position, support it with reasons or evidence, and notice one thing you can now communicate more clearly.",
+    "reason": "Whole-book rewrite: clarify the learner’s action and purpose without promising a certified level or requiring personal disclosure."
   }
 ]

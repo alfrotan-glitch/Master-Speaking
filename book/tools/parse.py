@@ -552,7 +552,10 @@ def parse_chapter(u_num, c_num, c_title, start, end):
             continue  # empty paragraph (logged globally)
 
         if 'Chooses 10 expressions' in t:
+            original_direction = t
             t = t.replace('Chooses 10 expressions', 'Choose 10 expressions')
+            log(f'U{u_num} Ch3 activation direction', original_direction, t,
+                'Correct the imperative verb before applying the guarded rewrite.')
             _chooses_fixed.add(u_num)
         if i in REMOVE_ITEMS:
             area, orig, reason = REMOVE_ITEMS[i]
@@ -1047,8 +1050,9 @@ def build():
             parent[key] = edit['correction']
         log('How to Use · final language review', str(edit['original']),
             str(edit['correction']) or '(removed)', edit['reason'], 'high (reviewed)')
-    from lesson_review import apply_repairs
+    from lesson_review import apply_repairs, apply_opener_rewrites
     apply_repairs(book, log)
+    apply_opener_rewrites(book, log)
     title_plan = json.load(open(os.path.join(ROOT, 'book', 'master', 'chapter-titles.json'), encoding='utf-8'))
     if [item['unit'] for item in title_plan] != list(range(1, 9)):
         raise ValueError('Chapter title plan must cover Units 1–8 in order')

@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-18",
+  "scope": "All-chapter substantive editorial revision and synchronized editions; separate limited field-level and readable-page proof records.",
+  "chapter_revision_pass_complete": true,
+  "chapters_with_recorded_revisions": 32,
+  "chapters_without_recorded_revisions": 0,
+  "independent_every_word_proof_complete": false,
+  "commercial_release_cleared": false,
+  "interior_pages": 171,
+  "reader_pages": 172,
+  "guarded_chapter_edits": 377,
+  "guarded_front_edits": 21,
+  "initial_detailed_field_record": {
+    "fields": 138,
+    "scope": "Foreword and Unit 1 Chapter 1 only; not every retained word across all chapters."
+  },
+  "release_checks": {
+    "revision": 0,
+    "lessons": 0,
+    "learning_transfer": 0,
+    "rewrite_review": 0,
+    "whole_revision": 0,
+    "reading_keys": 0,
+    "mcq_layout": 0,
+    "content": 0,
+    "editorial": 0,
+    "word": 0,
+    "fidelity": 0,
+    "print": 0,
+    "proof": 0,
+    "preflight": 0,
+    "epub": 0,
+    "epubcheck": 0,
+    "visual": 0,
+    "publication": 0,
+    "chapters": 0,
+    "classroom": 0,
+    "companion": 0
+  },
+  "reading_closed_key_check": {
+    "ok": true,
+    "units": 8,
+    "multiple_choice_items": 40,
+    "true_false_items": 34,
+    "items": 74,
+    "mutation_wrong_option_detected": true,
+    "mutation_stale_evidence_detected": true,
+    "issues": [],
+    "scope": "Authored reading judgments with structural and source-evidence checks; not automatic semantic correctness, listening keys or independent expert approval."
+  },
+  "chapter_starts": [
+    {
+      "label": "Chapter 1 \u00b7 The Power of Communication",
+      "physical_page": 10
+    },
+    {
+      "label": "Chapter 2 \u00b7 Are You a Good Listener?",
+      "physical_page": 16
+    },
+    {
+      "label": "Chapter 3 \u00b7 The Importance of Communication",
+      "physical_page": 20
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 23
+    },
+    {
+      "label": "Chapter 1 \u00b7 Dreams Become Reality through Goals",
+      "physical_page": 28
+    },
+    {
+      "label": "Chapter 2 \u00b7 The Art of Goal Setting",
+      "physical_page": 34
+    },
+    {
+      "label": "Chapter 3 \u00b7 Speaking through Discussion",
+      "physical_page": 38
+    },
+    {
+      "label": "Chapter 4 \u00b7 Goals or Systems: Which Leads to Greater Success?",
+      "physical_page": 41
+    },
+    {
+      "label": "Chapter 1 \u00b7 The Power of Emotional Intelligence",
+      "physical_page": 46
+    },
+    {
+      "label": "Chapter 2 \u00b7 The Power of Emotional Intelligence",
+      "physical_page": 53
+    },
+    {
+      "label": "Chapter 3 \u00b7 Speaking through Discussion",
+      "physical_page": 58
+    },
+    {
+      "label": "Chapter 4 \u00b7 Can Emotional Intelligence Be Improved?",
+      "physical_page": 61
+    },
+    {
+      "label": "Chapter 1 \u00b7 Can Money Buy Happiness?",
+      "physical_page": 66
+    },
+    {
+      "label": "Chapter 2 \u00b7 Can Money Buy Happiness?",
+      "physical_page": 73
+    },
+    {
+      "label": "Chapter 3 \u00b7 Speaking through Discussion",
+      "physical_page": 78
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 81
+    },
+    {
+      "label": "Chapter 1 \u00b7 Living with AI: Friend or Foe?",
+      "physical_page": 86
+    },
+    {
+      "label": "Chapter 2 \u00b7 How Will AI Change the World?",
+      "physical_page": 92
+    },
+    {
+      "label": "Chapter 3 \u00b7 Speaking through Discussion",
+      "physical_page": 97
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 100
+    },
+    {
+      "label": "Chapter 1 \u00b7 Is Love Enough?",
+      "physical_page": 106
+    },
+    {
+      "label": "Chapter 2 \u00b7 The Science of a Lasting Relationship",
+      "physical_page": 113
+    },
+    {
+      "label": "Chapter 3 \u00b7 What Makes Relationships Work?",
+      "physical_page": 118
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 121
+    },
+    {
+      "label": "Chapter 1 \u00b7 The World Is Getting Smaller",
+      "physical_page": 128
+    },
+    {
+      "label": "Chapter 2 \u00b7 Navigating Our Global Future",
+      "physical_page": 135
+    },
+    {
+      "label": "Chapter 3 \u00b7 Globalization: Opportunity or Threat?",
+      "physical_page": 140
+    },
+    {
+      "label": "Chapter 4 \u00b7 Globalization: Opportunity or Threat?",
+      "physical_page": 143
+    },
+    {
+      "label": "Chapter 1 \u00b7 English: From a Local Language to a Global Lingua Franca",
+      "physical_page": 150
+    },
+    {
+      "label": "Chapter 2 \u00b7 English Without Borders",
+      "physical_page": 157
+    },
+    {
+      "label": "Chapter 3 \u00b7 WHO OWNS ENGLISH?",
+      "physical_page": 163
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 166
+    }
+  ],
+  "unit_physical_pages": {
+    "1": 9,
+    "2": 27,
+    "3": 45,
+    "4": 65,
+    "5": 85,
+    "6": 105,
+    "7": 127,
+    "8": 149
+  },
+  "sha256": {
+    "Master-Speaking-Class-Companion.pdf": "5767acfc67206d62ec3eb4aab8c5e86220d7765760e343d7aa84a938776fa7cb",
+    "Master-Speaking-Front-Cover.pdf": "126134601360147fe7a8cd0f9a5a65ad6373dda27eedd489889157f2a557065e",
+    "Master-Speaking-Reading-Edition.pdf": "2522b6f2237e04ba9cd56640d3f3dc0343fea34d9d5a32aa974b8070ee9f17af",
+    "Master-Speaking-Student-Practice-Pack.pdf": "8825e1e716c082d9ef9447dd064c90ad1f4e99ffd7e862c3cdd23eec19b115fc",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "34ca13d27ec7eb1c1a2493e2249998cba87e5bfed6ea2b031569cd3c2c8bfcaa",
+    "Master-Speaking-print-7x10.pdf": "f5d1dc7fcf241d854fcf8dde913d64c1cfb87635246e6951c084928599dae859",
+    "Master-Speaking.pdf": "2522b6f2237e04ba9cd56640d3f3dc0343fea34d9d5a32aa974b8070ee9f17af",
+    "Master-Speaking-7x10.docx": "43c2b897875c9ecc368ffdad782fb8c407d36925b426d27b555ca7b7ab25a515",
+    "Master-Speaking-Class-Companion.docx": "9278b6c675c9b26b4f9b45220de4a794b4ca5af6f527fc96fdf926c366d22d6e",
+    "Master-Speaking-Student-Practice-Pack.docx": "3019aea6a2a4f802edb1af20967ecd8e62ef8f03357d1afe18481a96928a1957",
+    "Master-Speaking-Teacher-Implementation-Pack.docx": "122bc94d69e1b744d3b3fbe691cce763a4c299274cf8709133eb7c3060678b29",
+    "Master-Speaking.epub": "d684aab30ca78429d0be1bd39e00cfc1f2a17188dd82fa4def9f3efee89e1fb9",
+    "Master Speaking.docx": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184"
+  },
+  "semantic_content_sha256": "13e3fb1080aee6ca22861c1f29503457f11c12aee4b64eb66f74ac01c1af6044",
+  "visual_proof": {
+    "all_interior_page_overviews_inspected": true,
+    "support_page_overviews_inspected": true,
+    "selected_main_readable_pages": [
+      4,
+      12,
+      30,
+      49,
+      69,
+      89,
+      109,
+      121,
+      131,
+      153,
+      171
+    ],
+    "selected_teacher_readable_pages": [
+      7,
+      8,
+      9,
+      19,
+      20,
+      29
+    ],
+    "every_page_read_at_full_size": false
+  },
+  "remaining_external_work": [
+    "Independent complete copyedit and factual/pronunciation/key review",
+    "Identify and clear eight original recordings and transcripts; no fabricated recording answers",
+    "Third-party image and quotation permissions; higher-resolution originals where needed",
+    "Native Word, EPUB-device and accessibility testing",
+    "Classroom pilot and printer-specific cover wrap/physical proof"
+  ]
+}

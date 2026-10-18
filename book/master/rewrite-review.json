@@ -1,0 +1,1866 @@
+{
+  "date": "2026-10-18",
+  "reviewer": "AI-assisted editorial and rendered-page review; not independent human sign-off",
+  "scope": [
+    "Foreword",
+    "Unit 1 Chapter 1 \u2014 The Power of Communication"
+  ],
+  "fields": [
+    {
+      "path": [
+        "front",
+        "foreword",
+        0,
+        "text"
+      ],
+      "sha256": "0d9391ccd18edb1391a5e7a1e87077b298b6d0ea0adde319d4098507c1073604",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        1,
+        "text"
+      ],
+      "sha256": "9d6d83e4067a51202075627a90d4c71ec0afc016fc0007977b36feb034da9cf2",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        2,
+        "text"
+      ],
+      "sha256": "3d3198da732f8ecd661f5abbe8f020e99c8329f86f88e72d0afcd6ebc6712b59",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        3,
+        "text"
+      ],
+      "sha256": "9237916ca54f5b2f18c7b8be321edbea7ffc32820d4954fc35ee3d9c538eba7e",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        4,
+        "text"
+      ],
+      "sha256": "e765766192545235395081c4f5cd532360f69b93e7352f81047be6c53c8c8a8e",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        5,
+        "text"
+      ],
+      "sha256": "4d329d4102bc194974d2ecd07f359472d6d6119c7a2b76822493cb361a81bdc1",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        6,
+        "text"
+      ],
+      "sha256": "a72927c6571584f68e3600a21ed0e2064298fd69d2724f946d8ed84fe62fc73b",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        7,
+        "text"
+      ],
+      "sha256": "52122a79fc854fac441e6653152ad15419202d1464988a98554da484088c9a58",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        8,
+        "text"
+      ],
+      "sha256": "5f8ec2b30740d31e095b427e75034ebbe023fc9bdd81dd0505a7305c74fc774d",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        9,
+        "text"
+      ],
+      "sha256": "c18a0d495c8612f4105344600096b4611353ed4e04f49a64d1b2c8772983df62",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        10,
+        "text"
+      ],
+      "sha256": "51689e6a6aad3e2f778744941faae1e0a0696c20fbbe8301f2aa7a237a1640a6",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        11,
+        "text"
+      ],
+      "sha256": "cdf19c536de49a86721e3350a39d7153fa57628577437a7b7a97a4b2f3aba3f1",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        12,
+        "text"
+      ],
+      "sha256": "c14fff081279b5ea25d76576b81833f0ac5c839619bcae7f8f5072d61071e866",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        13,
+        "text"
+      ],
+      "sha256": "c73f09fea371e2354f64232660debb11f1ea1ceb07f836cdfc4d2a16eb461db9",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "front",
+        "foreword",
+        14,
+        "text"
+      ],
+      "sha256": "5111fc9c431a95819de05d5453474ca8e5eb854ff504f0deab815daf22d0237e",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "title"
+      ],
+      "sha256": "1d539c3bdcf4f7e9b722cc82e749b237d64f4dd4396f6832688fb1c22e7a82f1",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "focus"
+      ],
+      "sha256": "a7803e44eaa2b991f3af373d4387e2de84fe75c4f1927005d309b70da83afb0c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        0,
+        "text"
+      ],
+      "sha256": "d75f8f4e184cc9a2f7da26e8cf689e0925b2a1521e6dd3d5178e559da542ee2f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        1,
+        "text"
+      ],
+      "sha256": "a3265febfb1d990de0a09c942b2994556435598f984ff3f16c8f4669bbb0fc42",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        0,
+        0
+      ],
+      "sha256": "3a2860ece5a4ee0b48b41ee96dd8054cf9bc6f113249ec601478b2582d72ead4",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        0,
+        1
+      ],
+      "sha256": "6c2881147d9f558fac3cd8b3a7f5cd61a2cde1292e83173a41a625589057ed8f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        0,
+        2
+      ],
+      "sha256": "1f5d64b92820f8238635b90ae69a38c12661a7b03c6d0d7f689711f12af7b7f9",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        0,
+        3
+      ],
+      "sha256": "3ce49840f09e4fd3dcdc278d9b3c0b6e7207bad8676872e857cbad07b3bbdf6a",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        1,
+        0
+      ],
+      "sha256": "7d22d390ec67d1aa03eca9ca45884b3c83a0595d0c152d93dea473052383444c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        1,
+        1
+      ],
+      "sha256": "bc09700ddc3536f13538608f0f97393cec61e13874eeb16524d6cd5993431d70",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        1,
+        2
+      ],
+      "sha256": "4f35a27263297a552a8719dc2684f49cb8e62b88fd75eed093af280034c22beb",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        1,
+        3
+      ],
+      "sha256": "3d5a64f5b955986cbbf691c6e2342b1074459ec319f7128e3375aabac714b5bb",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        2,
+        0
+      ],
+      "sha256": "ff0139d07c592e9ae929bd63ee9f24bb555ae6f97b6d8891af8213944126be80",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        2,
+        1
+      ],
+      "sha256": "fd015ca8e8a88222543c451795ff0646833ce032e87a2bc186c4d3e42d2d8248",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        2,
+        2
+      ],
+      "sha256": "0c1b002bc09895a515ef0397356170d9c3e378f73e2008651294cb1570bc772a",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        2,
+        3
+      ],
+      "sha256": "5dcdc5587d883d5b3278d1bf266706c5d1a0fce8155962d31d73e8df2162e98c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        3,
+        0
+      ],
+      "sha256": "46e0876178516073c5ae0fb62d07c070fe57249cbad44068272a7ad9373143ab",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        3,
+        1
+      ],
+      "sha256": "e51169608e8e7c43e00e5f519296618a4139d94e22140105667ffa273692e3dc",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        3,
+        2
+      ],
+      "sha256": "36b8145990b059238f4c4a3236d1a2c7a02ab5573ec1993c05bd01bdc2f3a5a9",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        3,
+        3
+      ],
+      "sha256": "0f7ec04b21a77f7c2855025ed189341fb36fa2bf771f718a893f59cc52da19d3",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        4,
+        0
+      ],
+      "sha256": "adf0e0999386dae758e1d6ae48e7a28a1acfb26dd73dbc91ad134cec70ca7aa0",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        4,
+        1
+      ],
+      "sha256": "fd015ca8e8a88222543c451795ff0646833ce032e87a2bc186c4d3e42d2d8248",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        4,
+        2
+      ],
+      "sha256": "b40670ea9b96a53a23b0474b52a4626f900ad0717124984685ae968b5009efdc",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        4,
+        3
+      ],
+      "sha256": "0cb5c507b61b31a5d3e5b29de798cb0271c981c7d3880b11531e416d97b1002a",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        5,
+        0
+      ],
+      "sha256": "008231aaf99956982ffbb132c5fe9d79272f6f109abdefb723afe455a4213765",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        5,
+        1
+      ],
+      "sha256": "bc09700ddc3536f13538608f0f97393cec61e13874eeb16524d6cd5993431d70",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        5,
+        2
+      ],
+      "sha256": "3426b1018dea92ee9e61edbac7b65eaaffb3fe924b500f0a496ac3003c016609",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        5,
+        3
+      ],
+      "sha256": "7c9063392c25d4f6276594fc1d52795d0c1934ffeccf36345d952b467ada2d20",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        6,
+        0
+      ],
+      "sha256": "167d4b09d014f218c42abf5ebb397a2fc819401fe709223fbd729f1f8e9e790e",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        6,
+        1
+      ],
+      "sha256": "fd015ca8e8a88222543c451795ff0646833ce032e87a2bc186c4d3e42d2d8248",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        6,
+        2
+      ],
+      "sha256": "46299bdcd3a8f4aed0b63c2b534210d9ec53928567bfe617ce41b8bac1e08776",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        6,
+        3
+      ],
+      "sha256": "580668a4bb14f254f09236c3d0ea766c1c55426ff57341d701b14216ba0233f4",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        7,
+        0
+      ],
+      "sha256": "e862b51d7419ba6f589572cd4032419c790b93c181a1334f46e1b9ab2f51169b",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        7,
+        1
+      ],
+      "sha256": "fd015ca8e8a88222543c451795ff0646833ce032e87a2bc186c4d3e42d2d8248",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        7,
+        2
+      ],
+      "sha256": "7c235b0fe10e844348a810027e45b9be2f287ecd6a4d9971aef7d9be61fb6604",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        7,
+        3
+      ],
+      "sha256": "f14f51f989ef11021090955413d4ffc81124a24ae2fcdaf9bf45faad1f078cea",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        8,
+        0
+      ],
+      "sha256": "e1721557ff52f415e5b50941a6fd5480b3661831cad9b0fd3d983e7141280502",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        8,
+        1
+      ],
+      "sha256": "bc09700ddc3536f13538608f0f97393cec61e13874eeb16524d6cd5993431d70",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        8,
+        2
+      ],
+      "sha256": "8406ddc876cb036dce6bb5439a7c85ea406a724e9f45b6749eb0ac4e93f4eece",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        8,
+        3
+      ],
+      "sha256": "fbe6d5f28cc9e7b759a099023421a30782f38d1a82a0ec2bb59bbd525b391d27",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        9,
+        0
+      ],
+      "sha256": "ce8a390a4a5b7c85047f7be5915b4025e920d5b9c5df7d6597c38cbeadf63c68",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        9,
+        1
+      ],
+      "sha256": "bc09700ddc3536f13538608f0f97393cec61e13874eeb16524d6cd5993431d70",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        9,
+        2
+      ],
+      "sha256": "40cfd061b7d957e94cc617a2871e53d6a9798ec88e8859f69cdd6efdf19c0ba8",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        9,
+        3
+      ],
+      "sha256": "9192b7d3953729b0f9476e31dee38fd4acc4826ab47c5d8ebe0adb6aff641f42",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        10,
+        0
+      ],
+      "sha256": "ab530a13e45914982b79f9b7e3fba994cfd1f3fb22f71cea1afbf02b460c6d1d",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        10,
+        1
+      ],
+      "sha256": "fd015ca8e8a88222543c451795ff0646833ce032e87a2bc186c4d3e42d2d8248",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        10,
+        2
+      ],
+      "sha256": "d5db3652edf628315a0c80ddcf8b0a3cbccd1d6dfdbb0c95e0793408b8ab9391",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        2,
+        "rows",
+        10,
+        3
+      ],
+      "sha256": "dfb7a9c1191eb98f0637b09072212d3a5a28ea7c6745ac790a99ac00909e2e31",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        3,
+        "text"
+      ],
+      "sha256": "24331120489949da2f3035bc2f8a7468d014561b65cd3323d7f7e4068d7e5e9b",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        4,
+        "text"
+      ],
+      "sha256": "1833b9f9725de3848dd32c611ef602c79665cf4ba9f77089672e2f178dc2bfe8",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        5,
+        "text"
+      ],
+      "sha256": "6cde4e2af02cba71fe48c314e400d534528a8ba477c212c30f5c36174dd58b5d",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        6,
+        "text"
+      ],
+      "sha256": "b5c2113dfc28921c582a0f42c5121ab9694e3c782073b1a0f3e25ba32a5028a0",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        7,
+        "text"
+      ],
+      "sha256": "9acd0093b63a728bd83235b2df5fa0c70e042e4c347236b64385d3139a750941",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        8,
+        "text"
+      ],
+      "sha256": "4e055b9606b2df263815539faa269a499c4772753c8c7d25cef0f8553cc83e83",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        9,
+        "text"
+      ],
+      "sha256": "87b3a4552c07fa668b30ec12f26c75e0bcf5ed9f083b12c862168ebeabdb371d",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        10,
+        "text"
+      ],
+      "sha256": "61d5b849997d96c6ac0f5f653adf8d010b2485544fec9d9b8134b7558b7e58d0",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        11,
+        "text"
+      ],
+      "sha256": "83faec54247b244075015ce6c475aafa241ad43621cf709eeeb76d915ef56069",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        12,
+        "text"
+      ],
+      "sha256": "be0f2a2448d12a465be47fee511955e827624d9be779395994bc2d4115c76939",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        13,
+        "text"
+      ],
+      "sha256": "ef0c76a5f329aad623f9986f98d3bc72bf5a8a3a5ca68bf512e3d385c48e4574",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        14,
+        "text"
+      ],
+      "sha256": "ce914d56df9580ae4bf631f49954148b201c8e7e934aee00039a317102f61ab3",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        15,
+        "text"
+      ],
+      "sha256": "1d539c3bdcf4f7e9b722cc82e749b237d64f4dd4396f6832688fb1c22e7a82f1",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        16,
+        "text"
+      ],
+      "sha256": "93a258f70db12f01a13e519b7ed24ad4f8ecde74c19176304c18ee079dcadb4e",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        17,
+        "text"
+      ],
+      "sha256": "d37e48d3791f05f0eb0bd712c46ea85cd3ca6dd78ad8faa0a5b88127a40be127",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        18,
+        "text"
+      ],
+      "sha256": "168365a8092b5adfef054a83ec4674558f6fe740a326f8788866b4e612031010",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        19,
+        "text"
+      ],
+      "sha256": "49755dbf77a9997875ebb83e6f0d930628a9c2da256ad8b42ebd5f679fa1cb5b",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        20,
+        "text"
+      ],
+      "sha256": "4e6fab1ead7d1e25271d3b6b7182ef6ada61057ade98e884aab2c7de4b31fda9",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        21,
+        "text"
+      ],
+      "sha256": "99c3ab4ae40299dc3c7daf20cd7f79726dd4310c00e925aa97f536d7aeec3381",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        22,
+        "text"
+      ],
+      "sha256": "723dee993706616ba99a6d419f5c2347d29cd33926caead06ef274f53385e453",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        23,
+        "text"
+      ],
+      "sha256": "70f44516fd98ab8d53c3dda46d3a562abefbd6d57ad5b0ccb68b6899ad7caaf9",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        24,
+        "text"
+      ],
+      "sha256": "73ebe10f5dd1bcdab27fc20da7145058dcc1a09f50fece143bb3955ce50492be",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        25,
+        "text"
+      ],
+      "sha256": "69fea08f9a7b1bc7b23d3fb7c20c4d9503129423587905c138443f6555faacb4",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        26,
+        "text"
+      ],
+      "sha256": "a336c0ddb516e703f54708552cea788ac621f6c527ced5baef3f2c87e41e7deb",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        27,
+        "text"
+      ],
+      "sha256": "27755c7879b54f8898bff75b4f200a6431998721f818a24afd9918925413d359",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        28,
+        "text"
+      ],
+      "sha256": "0d629bf9e1e5f6f739f2031e9c5daf8c59a0c6497b724ef972d9b97565deebc9",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        29,
+        "text"
+      ],
+      "sha256": "046014eab636b5b6b67564fda49827c79796bb62de2d3fa51cc88bc3bea79ab0",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        30,
+        "text"
+      ],
+      "sha256": "d58468f6c8a3659318f30cc0c4f63c2f832bf759a40cbc2f8c3f28325f5e17af",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        31,
+        "text"
+      ],
+      "sha256": "089e11ce3295bd34b071b364e835c240186bc2ad7cd9b176b63cc681d43e8d5a",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        32,
+        "text"
+      ],
+      "sha256": "8469795c3eab63b4d7d9ff0bbdaea4f0a7114d562004db4fa50061342628050f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        33,
+        "text"
+      ],
+      "sha256": "85b3176f200c06bbc2aa57783cae762e5e5f0b7c7d38244c3106ba98c03e6e73",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        34,
+        "text"
+      ],
+      "sha256": "7c29c03f240dd00e06b79a4e75a6a8ca06b929a21eea636102699dddae254ffd",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        35,
+        "text"
+      ],
+      "sha256": "22e4c30d02f0dbb6b07d97018d94f894af54bad5208f8d92c60b601a88e8bd35",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        36,
+        "text"
+      ],
+      "sha256": "85ca68e0a8e001890a15ed384be929f5e909dc3dbcea6991dd96b031919230e9",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        37,
+        "text"
+      ],
+      "sha256": "30fda7ec09afa7d233bc85717901077037218f0c431b1dcd3c07829a6186edbf",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        38,
+        "text"
+      ],
+      "sha256": "0099ce4a978b304203311b8b0ce9b5ec448271ca24f1e41c7f26b8515b070599",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        39,
+        "text"
+      ],
+      "sha256": "6ef59d5a5ab56368299bd0fe3cf47c043c7097a3f73c4eba76e7fc817016ccbf",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        40,
+        "text"
+      ],
+      "sha256": "2ae425c0c67fcdbc57d1e1453266124c1cd7b37bb2cfec1cb9e9b5e107df0dd8",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        41,
+        "text"
+      ],
+      "sha256": "b3f983e0db8b34ae34b6a002a91a1a3d93d8274fa49a6df229474f81e54c36db",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        42,
+        "text"
+      ],
+      "sha256": "59609cb881cad9425def689e222c473f1f887ffb4f32e2c3036857a109f2c26f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        43,
+        "text"
+      ],
+      "sha256": "fa9e12fad785aaed1339df64b1a7794ea40127f4fd1b8871c000872ce0a67efe",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        44,
+        "text"
+      ],
+      "sha256": "614b0417c02a03cb44739efad2f099c728ef870bd16bf3bb732ba436d8a47ecf",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        45,
+        "text"
+      ],
+      "sha256": "925cdcb81244103c20cbef107e34740c816570d411dbca11a2d5d1ab85f92f07",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        46,
+        "text"
+      ],
+      "sha256": "c84d3008f1d2059af146b7975fc40de5fe9ea36f409e530f2b351a97b8facdcf",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        47,
+        "text"
+      ],
+      "sha256": "c71667ef652c8d2dce6b02320b697dd95546077343df620436d0eced851965df",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        48,
+        "text"
+      ],
+      "sha256": "f4e20b54992538607ab99ce3a4cb928e0b79d9d5111f44621bc0e8f9b193d083",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        49,
+        "text"
+      ],
+      "sha256": "31c6b3a0422e63af36825a3d3961890c1a5261a2982fbaf0caaf53223a11e97e",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        50,
+        "text"
+      ],
+      "sha256": "790cb34e3119d6148327d6bb715e810e3258bf6bb1c303d5f769a44319a42ccf",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        51,
+        "text"
+      ],
+      "sha256": "de3966368b66d6303a0f6e8e38c1caa45abb9ef31b96e9305a49e8fe0a7f64dd",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        52,
+        "rows",
+        0,
+        0
+      ],
+      "sha256": "411eab5453c056f37a7f56f1d280631baa987ccf9f69a58f54323b356206f57f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        52,
+        "rows",
+        1,
+        0
+      ],
+      "sha256": "74a98f41a25c59f32ab2feae920984c0eb5ca47d68d4a675b437e8627d25b633",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        52,
+        "rows",
+        2,
+        0
+      ],
+      "sha256": "817a068af19aade5643bb3814b9168e77646215feb13ff67e0e6a1f6be03f780",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        52,
+        "rows",
+        3,
+        0
+      ],
+      "sha256": "ca068db61f610806e8417b8ec0d795ea17d9e0c3080c634e8b825626db14d153",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        52,
+        "rows",
+        4,
+        0
+      ],
+      "sha256": "f77eb37632a42c4506ffa658df1ad45ba1e65f5bec4dfabc0f1b33d224b5044b",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        53,
+        "text"
+      ],
+      "sha256": "d0b1fa4ec4b94b9a54f1c1ac698e80468b90ccded6c185f847a3fe59a8fa465e",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        54,
+        "text"
+      ],
+      "sha256": "e06743f080159b3408e2930082c716a0aabd5746ba8a39fbb74b7f3e5cc77ac3",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        55,
+        "text"
+      ],
+      "sha256": "0d9cf49894dfeedbf51016a45cb3725eb7146f501823fc7ce0f68b373673d0e5",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        56,
+        "text"
+      ],
+      "sha256": "861d4eee1f903ea5794607097b99216e1832cbe052cc95e957e9e858bea74d42",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        57,
+        "text"
+      ],
+      "sha256": "f1f8a9ec740b64a9f8b3cd41f15328a2c976a0ddc3367e830a9e3edc2dcc4d6c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        58,
+        "text"
+      ],
+      "sha256": "a7803e44eaa2b991f3af373d4387e2de84fe75c4f1927005d309b70da83afb0c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        59,
+        "text"
+      ],
+      "sha256": "c8aefc6f647ec4ee3132bae34fd81ea5bdaab7c71c4f89dcde12c672c0504970",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        60,
+        "text"
+      ],
+      "sha256": "8f1cbc9edcf4915e7d3ea296fb6465db318c4e07ba44b792b55813d8db9b9a3f",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        61,
+        "text"
+      ],
+      "sha256": "ebe8f8e053ac09376e94c7f8f9a20b096e5325cc2da99b0d009015cc592320f5",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        62,
+        "text"
+      ],
+      "sha256": "a79c5e9492c1a9510478a68ad31a2d4c6ae2d54dfaed9b66674364e8e079be7f",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        63,
+        "text"
+      ],
+      "sha256": "229feb202a4c6ac85ee91ee822aff37f8c2c48992b1ea534a48579dde778108e",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        64,
+        "text"
+      ],
+      "sha256": "ae77ec9d5e609e5a81b23e0adfc8f81753a6af88bfa1ca915f92f4a77abe4523",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        65,
+        "text"
+      ],
+      "sha256": "a29bfbe3dbd11040b80ffca7ad57713a2e8ba2662030e1ebe331d8ac01bc8d9c",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        66,
+        "text"
+      ],
+      "sha256": "fb6b76b67ca500730c87c476bc0dcdab16dd81aa5450dd72a4543e9d71350002",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        67,
+        "text"
+      ],
+      "sha256": "176e1fb51b3e818df50a139e2af8fbed61cb80abf32b4e1ed591c04dd8d957cd",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        68,
+        "text"
+      ],
+      "sha256": "24e807791b01dbd52b217fd467036da0c2e2571b63ebf5023b497f89d52a7c40",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        69,
+        "text"
+      ],
+      "sha256": "65f21c6a8108c0eb831ab113af740a343e7cf18aefd883447c8d90056e191ef2",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        70,
+        "text"
+      ],
+      "sha256": "16006ee4b01414dc40cc84688fdd2bce53a4b05e3a3d34a5fc3c09c2e0f9146b",
+      "decision": "revised"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        71,
+        "text"
+      ],
+      "sha256": "9860939888d5e485a842ca482e6727c1fa980189ef7380680dff12b1b5471f81",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        72,
+        "text"
+      ],
+      "sha256": "b79e2792be943a8348639ebbce34d9b6113f9bfe64079093ed9f6e56baf89f83",
+      "decision": "retained after review"
+    },
+    {
+      "path": [
+        "units",
+        0,
+        "chapters",
+        0,
+        "blocks",
+        73,
+        "text"
+      ],
+      "sha256": "f601f196a4a2bae029605bdb50aee801954af9d7e0b7cb1f8696dd39219dc251",
+      "decision": "retained after review"
+    }
+  ],
+  "readable_physical_pages_inspected": [
+    3,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "other_front_matter": "Pending full rewrite review; previous targeted corrections retained.",
+  "all_chapters_field_fingerprinted": false,
+  "chapters_without_field_level_fingerprints": 31,
+  "record_scope": "First-section detailed field-level record only. Whole-book revision coverage is tracked separately by qa_whole_revision."
+}

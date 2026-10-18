@@ -1,0 +1,502 @@
+# -*- coding: utf-8 -*-
+"""Lessons 5-8 — Part Three: Think Beyond the Present; Part Four: Compare and Persuade."""
+from lesson_template import render_lesson
+
+L5 = {
+    'n': 5, 'part_no': 3, 'part_title': 'Think Beyond the Present',
+    'title': 'Conditionals for Decisions and Possibilities',
+    'goal': 'talk about consequences, alternatives and hypothetical situations accurately',
+    'intro': "Conditionals are the grammar of thinking ahead — and of imagining other worlds.",
+    'hook': [
+        "Quick answers with a partner:",
+        "•  What will you do if you pass your exam?",
+        "•  What would you do if you had one free year?",
+        "•  What would you have done differently last year if you could?",
+    ],
+    'rules': [
+        {'label': 'Rule 1 — Zero and first conditional: real situations',
+         'formula': ["Zero:  If + present simple, present simple   (facts)",
+                     "First:  If + present simple, will + base verb   (real future possibility)"],
+         'text': ["The zero conditional is for facts and automatic results. The first is for real "
+                  "future possibilities and their consequences."],
+         'examples': ["If you heat ice, it melts.  (zero — always true)",
+                      "If it rains, we'll stay home.  (first — real possibility)"],
+         'remember': ["Never use 'will' in the if-clause: 'If it will rain' is wrong."]},
+        {'label': 'Rule 2 — Second conditional: unreal or unlikely present',
+         'formula': ["If + past simple, would + base verb",
+                     "Use it for: imaginary situations · unlikely futures · advice"],
+         'text': ["The second conditional imagines a different present — or a future that is unlikely."],
+         'examples': ["If I were you, I'd accept the offer.  (advice)",
+                      "If I had more time, I would learn the piano."],
+         'remember': ["'If I were you…' (were, not was) is the standard form in advice."]},
+        {'label': 'Rule 3 — Third and mixed conditionals: unreal past',
+         'formula': ["Third:  If + past perfect, would have + participle   (unreal past)",
+                     "Mixed:  If + past perfect, would + base verb   (past cause → present result)",
+                     "Mixed:  If + past simple, would have + participle   (present cause → past result)"],
+         'text': ["The third conditional looks back at a past that never happened. Mixed conditionals "
+                  "connect a past cause to a present result (or the reverse)."],
+         'examples': ["If I had left earlier, I wouldn't have missed the flight.  (third)",
+                      "If I had studied medicine, I would be a doctor now.  (mixed)",
+                      "If I were more careful, I wouldn't have lost my phone.  (mixed)"],
+         'remember': ["In speech, native speakers often shorten: 'If I'd known…' · '…we'd have left.'"]},
+        {'label': 'Rule 4 — Variations worth knowing',
+         'formula': ["Unless = if not  ·  As long as / provided (that) = only if",
+                     "Should + subject + verb = very formal first conditional",
+                     "Were + subject + …  = formal second conditional"],
+         'text': ["'Unless you hurry, you'll miss the bus.' = 'If you don't hurry…'",
+                  "'Should you need help, call this number.' (formal)"],
+         'examples': ["You won't pass unless you practise.",
+                      "I'll come as long as you wait for me."],
+         'remember': ["'unless' already contains 'not' — don't add another negative."]},
+    ],
+    'differences': [
+        {'title': 'Second vs third conditional',
+         'rows': [
+             ["If I had time, I would help you.", "If I had had time, I would have helped you.", "Now/unreal vs past/unreal. The helping didn't happen in the third."],
+             ["If I were rich, I would travel.", "If I had been rich, I would have travelled.", "Imagined present vs imagined past."],
+         ], 'headers': ['Second — unreal present', 'Third — unreal past', 'The difference']},
+        {'title': 'Type 3 vs mixed',
+         'rows': [
+             ["If I had slept earlier, I would have arrived on time. (both past)", "If I had slept earlier, I would be fresh now. (past → present)", "Mixed conditionals are simply cause and result in different times."],
+         ], 'headers': ['Third conditional', 'Mixed (past → present)', 'The difference']},
+    ],
+    'practice_a': [
+        "If you __________ (heat) water to 100°C, it __________ (boil).",
+        "If it __________ (rain) tomorrow, we __________ (cancel) the trip.",
+        "If I __________ (be) you, I __________ (apologise).",
+        "If she __________ (leave) earlier, she __________ (not/miss) the train yesterday.",
+        "If I __________ (know) his number, I __________ (call) him now.",
+        "We __________ (go) for a walk as long as the weather __________ (stay) fine.",
+    ],
+    'practice_b': [
+        "Rewrite with unless: 'If you don't register, you can't attend.'",
+        "Rewrite as a third conditional: 'He didn't study, so he failed.'",
+        "Rewrite as a mixed conditional (past → present): 'She didn't save money, so she can't buy the car now.'",
+        "Correct: 'If I will have time, I will help you.'",
+        "Give advice (2nd conditional): a friend wants to quit their job tomorrow without a plan.",
+        "Answer naturally: What would you do if you won a large prize?",
+    ],
+    'pair': {
+        'intro': "Build one story together, sentence by sentence, using conditionals. Each person adds one "
+                 "sentence and passes the story on.",
+        'task': ["Start: 'If I had woken up early this morning…'",
+                 "Continue for at least six sentences, mixing 2nd, 3rd and mixed conditionals.",
+                 "Then invent a second chain starting 'If the internet stopped working tomorrow…'"],
+        'criteria': ["conditional forms are accurate",
+                     "at least one third and one mixed conditional appear",
+                     "the story makes logical sense",
+                     "both partners contribute equally"],
+    },
+    'advanced': {
+        'base': ["Memorise one living example per type: 'If you heat ice, it melts.' / 'If it rains, we'll cancel.' / 'If I were you, I'd wait.' / 'If I'd known, I'd have come.'",
+                 "Drill the short forms in speech: If I'd… · I'd have… · we wouldn't have…"],
+        'upgrade': ["Use inverted conditionals for formal emphasis: 'Had I known…' · 'Were I in your position…' · 'Should you require assistance…'",
+                    "Use 'but for + noun' instead of a full if-clause: 'But for your help, I would have failed.'",
+                    "Use 'suppose / supposing (that)…' for playful hypotheses: 'Suppose you had to leave tomorrow — what would you take?'"],
+    },
+    'realtalk': {
+        'task': "Decision talk (one minute): imagine your organisation has extra money. Choose between "
+                "three options (training, new equipment, a trip). Explain what will happen if you choose "
+                "each one — and what you would have done differently last year with this money.",
+        'feedback': ["first conditional for real consequences",
+                     "second conditional for unlikely options",
+                     "third or mixed conditional for the past reflection",
+                     "clear, logical reasoning"],
+    },
+    'review': {
+        'points': ["Zero = facts; first = real future; second = unreal present; third = unreal past; mixed = two times.",
+                   "'If I were you…' is the standard advice frame.",
+                   "Never use 'will' in the if-clause."],
+        'retrieval': ["Say one example of each conditional type (5 sentences).",
+                      "Turn one past regret into a third conditional sentence."],
+        'watch': ["'If it will rain…' → 'If it rains…'",
+                  "'unless you don't hurry' → 'unless you hurry'"],
+        'selfcheck': ["I can tell an unreal past situation (3rd) and a past→present link (mixed).",
+                      "My if-clauses never contain 'will'."],
+        'answers': {
+            'A': ["heat / boils", "rains / will cancel (or: 'll cancel)", "were / would apologise",
+                  "had left / wouldn't have missed", "knew / would call", "will go / stays"],
+            'B': ["Unless you register, you can't attend.",
+                  "If he had studied, he wouldn't have failed.",
+                  "If she had saved money, she could buy the car now. / …would be able to buy…",
+                  "If I have time, I will help you.",
+                  "answers vary", "answers vary"],
+        },
+    },
+}
+
+L6 = {
+    'n': 6, 'part_no': 3, 'part_title': 'Think Beyond the Present',
+    'title': 'Wishes, Regrets, and Hypothetical Situations',
+    'goal': 'express preferences, dissatisfaction, regrets and imagined alternatives naturally',
+    'intro': "English has special grammar for the world as you wish it were. This lesson gives it to you.",
+    'hook': [
+        "Complete honestly and tell your partner:",
+        "•  I wish I had more time for…",
+        "•  I wish I could…",
+        "•  I regret not…",
+    ],
+    'rules': [
+        {'label': 'Rule 1 — wish about the present',
+         'formula': ["wish + past simple   →  I wish I knew.  (but I don't)",
+                     "wish + could / would + base verb   →  ability or change"],
+         'text': ["Use the past form for a present situation you want different. The time is now; "
+                  "the grammar steps back one level."],
+         'examples': ["I wish I spoke French fluently.  (I don't)",
+                      "I wish I were taller.  (were is common in formal use)",
+                      "I wish I could help you.  (but I can't)"],
+         'remember': ["wish + would = complaint about someone else's behaviour: "
+                      "'I wish you would stop interrupting.'"]},
+        {'label': 'Rule 2 — wish about the past (regret)',
+         'formula': ["wish + past perfect   →  I wish I had studied.  (but I didn't)"],
+         'text': ["For regrets about the past, use 'had + participle'. This is the grammar of "
+                  "'if only I had known…'"],
+         'examples': ["I wish I had taken that job.",
+                      "If only we had left earlier!"],
+         'remember': ["'If only…!' is more emotional than 'I wish…'."]},
+        {'label': 'Rule 3 — would rather and it is time',
+         'formula': ["would rather + base verb   →  my own preference",
+                     "would rather + past simple   →  someone else's action (polite pressure)",
+                     "It is (high) time + past simple   →  it should already be happening",
+                     "It is time + subject + past simple  ·  It is time to + base verb"],
+         'text': ["'I'd rather stay home.' (my choice) · 'I'd rather you stayed home.' (your choice — notice past form).",
+                  "'It's time we left.' (= we are late leaving)."],
+         'examples': ["I'd rather cook than order food.",
+                      "I'd rather you didn't smoke here.",
+                      "It's high time we started the meeting."],
+         'remember': ["'had better' = strong advice about the near future: 'You'd better hurry.' "
+                      "It is not the past of 'better'."]},
+        {'label': 'Rule 4 — prefer, as if / as though',
+         'formula': ["prefer A to B  ·  would prefer to X rather than Y",
+                     "as if / as though + past simple (unreal now) or past perfect (unreal past)"],
+         'text': ["'as if' introduces how something seems — often not real: "
+                  "'He talks as if he knew everything.' (he probably doesn't)."],
+         'examples': ["I prefer tea to coffee.",
+                      "She looked as if she had seen a ghost."],
+         'remember': ["If the comparison is real, keep the tense normal: "
+                      "'It looks as if it is going to rain.' (probably true)"]},
+    ],
+    'differences': [
+        {'title': 'wish + past vs wish + past perfect',
+         'rows': [
+             ["I wish I had a car.", "I wish I had bought that car.", "Present wish vs past regret. The grammar tells you which world you are in."],
+             ["I wish I knew the answer.", "I wish I had known the answer.", "Now vs then."],
+         ], 'headers': ['wish + past — now', 'wish + past perfect — then', 'The difference']},
+        {'title': 'wish + would vs wish + could',
+         'rows': [
+             ["I wish I could come.", "I wish you would come.", "could = ability (about me). would = willingness or change (often about you — complaint or request)."],
+         ], 'headers': ['wish + could (ability)', 'wish + would (willingness)', 'The difference']},
+        {'title': "it's time: three shapes",
+         'text': ["'It's time to go.' (general) · 'It's time we went.' (we are late) · "
+                  "'It's high time he apologised.' (strong: this should already have happened)"]},
+    ],
+    'practice_a': [
+        "I wish I __________ (know) her phone number.",
+        "I wish I __________ (not/say) that yesterday.",
+        "She acts as if she __________ (own) the place.",
+        "It's high time we __________ (make) a decision.",
+        "I'd rather you __________ (not/tell) anyone.",
+        "If only I __________ (be) more patient!",
+    ],
+    'practice_b': [
+        "Rewrite as a regret (3rd conditional feel): 'I didn't study harder. Now I regret it.'  (use wish)",
+        "Rewrite politely: 'Stop smoking here.'  (use would rather)",
+        "Correct: 'I wish I have more time.'",
+        "Correct: 'It's time we will go.'",
+        "Choose: I prefer (reading / to read) novels rather than (watch / watching) films.",
+        "Describe something unreal with 'as if': your friend arrived late and covered in mud.",
+    ],
+    'pair': {
+        'intro': "The complaint-and-fix game. One partner describes things they are unhappy about "
+                 "(using wish). The other offers solutions (using should / could / it's time). Swap after two minutes.",
+        'task': ["Choose three areas: studies · work · health · free time · family life.",
+                 "Each complaint must use wish; each solution must use a modal or 'it's time'."],
+        'criteria': ["wish forms are accurate (present vs past)",
+                     "solutions use should / could / it's time naturally",
+                     "the conversation sounds genuine, not read",
+                     "both roles complete their turns"],
+    },
+    'advanced': {
+        'base': ["Sort your own regrets into present-wishes and past-wishes; say each one aloud.",
+                 "Drill: I wish I knew… · I wish I had known… · I wish you would… — one of each, about real life."],
+        'upgrade': ["Use 'If only…!' for emotion: 'If only he had listened!'",
+                    "Use 'wish + would' to complain diplomatically in professional English: 'We were hoping the report would be ready by Friday.'",
+                    "Use 'as though nothing had happened' style narrative: 'She greeted me as though we had argued yesterday.'"],
+    },
+    'realtalk': {
+        'task': "Speak for one minute: 'My biggest regret — and what it taught me.' Include one wish "
+                "(past) and one wish (present), then one sentence of advice for a younger learner.",
+        'feedback': ["wish + past perfect for the regret",
+                     "wish + past simple (or could) for the present",
+                     "advice given with an appropriate modal",
+                     "honest, natural delivery"],
+    },
+    'review': {
+        'points': ["wish + past simple = present wish; wish + past perfect = past regret.",
+                   "wish + would = complaint or request about someone else.",
+                   "would rather + subject + past = preference about someone else; it's time + past = already late."],
+        'retrieval': ["Say one present wish and one past regret.",
+                      "Say a preference about yourself and one about someone else."],
+        'watch': ["'I wish I have' → 'I wish I had'.",
+                  "'I'd rather you don't' → 'I'd rather you didn't'."],
+        'selfcheck': ["I can express a regret and a present wish accurately.",
+                      "I can use would rather and it's time in real sentences."],
+        'answers': {
+            'A': ["knew", "hadn't said", "owned", "made", "didn't tell", "were"],
+            'B': ["I wish I had studied harder.",
+                  "I'd rather you didn't smoke here. / I'd rather you didn't smoke.",
+                  "I wish I had more time.",
+                  "It's time we went.", "reading / watching", "answers vary"],
+        },
+    },
+}
+
+L7 = {
+    'n': 7, 'part_no': 4, 'part_title': 'Compare and Persuade',
+    'title': 'Comparisons Beyond the Basics',
+    'goal': 'compare clearly and support comparisons with reasons',
+    'intro': "Comparison is the engine of persuasion: every opinion is a hidden comparison.",
+    'hook': [
+        "With a partner, complete the comparison and give one reason:",
+        "•  Online learning is better than… because…",
+        "•  The most useful skill I have learned is… because…",
+    ],
+    'rules': [
+        {'label': 'Rule 1 — Comparatives and superlatives',
+         'formula': ["short adj: -er / -est  (big → bigger → the biggest)",
+                     "long adj: more / the most  (more interesting → the most interesting)",
+                     "irregular: good → better → the best  ·  bad → worse → the worst  ·  far → further → the furthest"],
+         'text': ["Use the comparative for two things; the superlative for three or more."],
+         'examples': ["This route is shorter than the other one.",
+                      "This was the most difficult exam I've ever taken."],
+         'remember': ["Double comparatives are wrong: 'more better' → 'better'. "
+                      "Use 'than', not 'then': 'better than'."]},
+        {'label': 'Rule 2 — as … as and patterns of degree',
+         'formula': ["as + adj + as  ·  not as + adj + as",
+                     "twice / three times as + adj + as",
+                     "the + comparative …, the + comparative …",
+                     "comparative + and + comparative  (getting stronger over time)"],
+         'text': ["'as … as' expresses equality; 'the more …, the more …' expresses linked change."],
+         'examples': ["She's as experienced as her manager.",
+                      "The more you practise, the more confident you become.",
+                      "Prices are rising higher and higher."],
+         'remember': ["'the more … the more …' uses the same comparative structure twice: "
+                      "'The harder you work, the luckier you get.'"]},
+        {'label': 'Rule 3 — Comparing with nuance',
+         'formula': ["far / much / slightly / a little + comparative",
+                     "by far + superlative  ·  almost as … as  ·  not nearly as … as",
+                     "compared to / in contrast to + noun"],
+         'text': ["Degree words make comparisons precise — and precision persuades."],
+         'examples': ["This one is far more reliable.",
+                      "The results were slightly better than expected.",
+                      "In contrast to last year, sales have grown."],
+         'remember': ["When you compare opinions, compare like with like: price with price, "
+                      "quality with quality — then give a reason."]},
+    ],
+    'differences': [
+        {'title': 'comparative + than vs superlative',
+         'rows': [
+             ["This book is better than that one.", "This book is the best in the series.", "Two things vs three or more."],
+             ["It is more expensive than mine.", "It is the most expensive option.", "Comparison vs top rank."],
+         ], 'headers': ['Comparative (two)', 'Superlative (three+)', 'Why']},
+        {'title': 'subtle patterns',
+         'rows': [
+             ["The sooner, the better.", "Sooner or later…", "Linked change vs 'eventually'."],
+             ["He is as tall as his father.", "He is almost as tall as his father.", "Equality vs near equality — small words, big difference."],
+         ], 'headers': ['Pattern', 'Look-alike', 'The difference']},
+        {'title': 'weak vs strong persuasion',
+         'text': ["Weak: 'X is better than Y.'  Strong: 'X is far more reliable than Y because it has been "
+                  "tested for ten years.'  A comparison without a reason is an opinion; with a reason it is an argument."]},
+    ],
+    'practice_a': [
+        "This route is __________ (short) than the motorway.",
+        "It was __________ (bad) experience of my life.",
+        "The __________ (much) you read, the __________ (fast) you learn.",
+        "She sings __________ (beautiful) than her sister.",
+        "This phone is not __________ expensive __________ the other one.",
+        "He is by far the __________ (talented) player in the team.",
+    ],
+    'practice_b': [
+        "Rewrite with twice as … as: 'The new laptop costs 2× the old one.'",
+        "Correct: 'She is more taller than me.'",
+        "Upgrade the sentence with a degree word: 'This method is better than that one.'  (use far + reason)",
+        "Build a 'the more … the more' sentence about learning English.",
+        "Correct: 'This is better then that.'",
+        "Compare two cities you know — two sentences, one comparative, one superlative.",
+    ],
+    'pair': {
+        'intro': "The recommendation game. Each partner prepares a 30-second recommendation (a city, a book, "
+                 "a way to study). Then each defends theirs — comparisons must come with reasons.",
+        'task': ["Use at least: one comparative with a degree word, one superlative, one 'as … as' or "
+                 "'the more … the more'.",
+                 "After both presentations, agree together on ONE choice."],
+        'criteria': ["comparative and superlative forms are accurate",
+                     "each comparison has a reason",
+                     "at least two degree words used (far, slightly, much…)",
+                     "a joint decision is reached politely"],
+    },
+    'advanced': {
+        'base': ["Drill the irregulars: good/better/best, bad/worse/worst, far/further/furthest.",
+                 "Practise degree words: far / much / slightly / not nearly — with real comparisons from your life."],
+        'upgrade': ["Use 'by far', 'the single most…', 'the least likely to…' for confident evaluation.",
+                    "Use concessive comparison: 'Although X is cheaper, Y is far better value in the long run.'",
+                    "Use 'compared with / in contrast to' to frame data like an academic: 'Compared with 2020, participation has doubled.'"],
+    },
+    'realtalk': {
+        'task': "Persuasion talk (one minute): argue for ONE of these — 'The best age to learn a language' / "
+                "'The best way to prepare for the TOEFL' / 'The best investment of one hour a day'. "
+                "Use at least three comparisons.",
+        'feedback': ["accurate comparative and superlative forms",
+                     "reasons support the comparisons",
+                     "degree words add precision (far, slightly, by far…)",
+                     "the conclusion states a clear choice"],
+    },
+    'review': {
+        'points': ["Comparative for two; superlative for three or more; 'as … as' for equality.",
+                   "'the + comparative, the + comparative' shows linked change.",
+                   "Persuasive comparisons come with reasons and precise degree words."],
+        'retrieval': ["Say one comparison with 'far', one with 'the more…the more'.",
+                      "Rank three things in your life with superlatives and explain why."],
+        'watch': ["'more better' → 'better'; 'then' → 'than'.",
+                  "Don't compare unlike things: price with price, quality with quality."],
+        'selfcheck': ["I can compare with precise forms and degree words.",
+                      "My comparisons are supported by reasons."],
+        'answers': {
+            'A': ["shorter", "the worst", "more / faster", "more beautifully", "as / as", "most talented"],
+            'B': ["The new laptop is twice as expensive as the old one.",
+                  "She is taller than me.",
+                  "This method is far better than that one because it saves time. (answers vary)",
+                  "answers vary", "This is better than that.", "answers vary"],
+        },
+    },
+}
+
+L8 = {
+    'n': 8, 'part_no': 4, 'part_title': 'Compare and Persuade',
+    'title': 'Linking Ideas and Building Arguments',
+    'goal': 'organise opinions into coherent, well-linked spoken arguments',
+    'intro': "Grammar connects sentences; linkers connect thoughts. This lesson is about being easy to follow.",
+    'hook': [
+        "Speak for 30 seconds about: 'Why people learn English.' Then listen to your partner. "
+        "How many different linking words did you each use?",
+    ],
+    'rules': [
+        {'label': 'Rule 1 — Contrast and concession',
+         'formula': ["although / even though + subject + verb   (full clause)",
+                     "despite / in spite of + noun or -ing   (no subject + verb!)",
+                     "however / nevertheless / on the other hand   (start a new sentence)"],
+         'text': ["'although' joins two clauses; 'despite' joins a noun phrase. Mixing them is the most "
+                  "common error in this area."],
+         'examples': ["Although it was raining, we went out.",
+                      "Despite the rain, we went out.",
+                      "The plan was risky. Nevertheless, we agreed to it."],
+         'remember': ["'despite of' does not exist. → 'despite' or 'in spite of'."]},
+        {'label': 'Rule 2 — Cause, result and purpose',
+         'formula': ["because / since / as + clause",
+                     "because of / due to / owing to + noun",
+                     "therefore / consequently / as a result   (result)",
+                     "so that / in order to + base verb   (purpose)"],
+         'text': ["Notice the two families: + clause (because) vs + noun (because of)."],
+         'examples': ["We cancelled because of the storm.",
+                      "The storm was severe; therefore, we cancelled.",
+                      "She left early so that she could catch the train."],
+         'remember': ["'due to' is best with a noun: 'due to the delay'."]},
+        {'label': 'Rule 3 — Building an argument you can say out loud',
+         'formula': ["POINT  →  REASON  →  EXAMPLE  →  LINK to the listener",
+                     "Opinion: I believe that … · Reason: This is because … · Example: For instance …",
+                     "Addition: moreover / what is more / another point is that …"],
+         'text': ["A spoken argument needs a skeleton. Use the same shape every time until it becomes automatic."],
+         'examples': ["I believe online learning is effective. This is because it allows flexible scheduling. "
+                      "For instance, last year I studied at night after work. Moreover, it is often more affordable."],
+         'remember': ["Spoken arguments are short. Three well-linked points beat eight unlinked ones."]},
+        {'label': 'Rule 4 — Ordering and summarising',
+         'formula': ["Firstly … · Secondly … · Finally …",
+                     "In short · To sum up · All in all · In conclusion"],
+         'text': ["Signposting tells the listener where you are going — it reduces effort and increases influence."],
+         'examples': ["To sum up, the advantages clearly outweigh the costs.",
+                      "All in all, I would recommend the second option."],
+         'remember': ["End an argument with a summary sentence — listeners remember the end."]},
+    ],
+    'differences': [
+        {'title': 'although / despite / however',
+         'rows': [
+             ["Although it was late, we continued.", "Despite the late hour, we continued.", "It was late; however, we continued.", "One idea, three packages: + clause / + noun / separate sentence."],
+         ], 'headers': ['although + clause', 'despite + noun/-ing', 'however = new sentence', 'The rule']},
+        {'title': 'because vs because of',
+         'rows': [
+             ["Because I was tired, I stopped.", "Because of my tiredness, I stopped.", "because + clause · because of + noun. A small word changes the whole grammar."],
+         ], 'headers': ['because + clause', 'because of + noun', 'Why']},
+        {'title': 'while / whereas / although',
+         'text': ["'while' and 'whereas' contrast two equal facts: 'I like tea, whereas she prefers coffee.' "
+                  "'although' concedes one point against another: 'Although I like tea, I ordered coffee.'"]},
+    ],
+    'practice_a': [
+        "__________ the heavy traffic, we arrived on time.  (Despite / Although)",
+        "Although __________ (be) very tired, she finished the report.",
+        "He failed the exam; __________, he did not give up.  (however / despite)",
+        "We left early __________ we could avoid the traffic.  (so that / because of)",
+        "The flight was cancelled. __________, all hotels were full.  (As a result / Although)",
+        "I enjoy city life, __________ my wife prefers the countryside.  (whereas / despite)",
+    ],
+    'practice_b': [
+        "Combine with although: 'The task was difficult. Everyone finished.'",
+        "Combine with despite + -ing: 'She was not selected. She applied again.'",
+        "Correct: 'Despite of the cost, we decided to proceed.'",
+        "Build an argument skeleton (point → reason → example) for: 'Reading improves speaking.'",
+        "Correct: 'Although the cost, we bought it.'",
+        "Add a summary opener to close: give two opinions about technology in education.",
+    ],
+    'pair': {
+        'intro': "Mini-debate. Choose a position together by arguing against each other — politely — then swap "
+                 "positions and argue the other side.",
+        'task': ["Topic: 'Homework should be replaced by daily speaking practice.'",
+                 "Each person must use at least: one although/despite, one cause linker, one result linker, "
+                 "and one summary opener."],
+        'criteria': ["linkers are accurate (especially despite + noun)",
+                     "argument has point → reason → example",
+                     "the other side is answered (counterargument)",
+                     "the closing summary is clear"],
+    },
+    'advanced': {
+        'base': ["Sort linkers by job: contrast (although, despite, however) · cause (because, due to) · result (therefore, as a result) · addition (moreover).",
+                 "Drill the pairs: although + clause / despite + noun — five real situations."],
+        'upgrade': ["Use 'Not only … but also …' with inversion in formal speech: 'Not only did she apologise, but she also offered a refund.'",
+                    "Use concessive balance: 'It is true that …; nevertheless, …' · 'Admittedly, …; even so, …'",
+                    "Use 'which' to comment on a whole clause: 'She apologised publicly, which changed the whole mood.'"],
+    },
+    'realtalk': {
+        'task': "Opinion talk (90 seconds): 'What makes a good teacher?' Structure: opinion → two reasons "
+                "with examples → one concession → summary. Speak without notes.",
+        'feedback': ["point → reason → example structure is visible",
+                     "contrast and concession used accurately (although / despite)",
+                     "cause and result linkers present",
+                     "summary closes the talk clearly"],
+    },
+    'review': {
+        'points': ["although + clause; despite + noun/-ing; however starts a new sentence.",
+                   "because + clause; because of + noun; therefore / as a result show consequence.",
+                   "Spoken arguments follow: point → reason → example → summary."],
+        'retrieval': ["Give a 20-second argument using exactly three linkers.",
+                      "Say the same contrast idea with although, despite and however."],
+        'watch': ["'despite of' → 'despite' / 'in spite of'.",
+                  "'Although the cost…' → 'Despite the cost…' or 'Although it was costly…'"],
+        'selfcheck': ["I can link ideas with the right linker family.",
+                      "My argument has a clear skeleton and a summary."],
+        'answers': {
+            'A': ["Despite", "being", "however", "so that", "As a result", "whereas"],
+            'B': ["Although the task was difficult, everyone finished.",
+                  "Despite not being selected, she applied again. / Despite the rejection, she applied again.",
+                  "Despite the cost, we decided to proceed.",
+                  "answers vary — must include point, reason, example",
+                  "Despite the cost, we bought it. / Although it was costly, we bought it.",
+                  "answers vary — must open with To sum up / All in all / In conclusion"],
+        },
+    },
+}
+
+LESSONS_5_8 = [L5, L6, L7, L8]
+
+
+def render_all(doc, keys_registry):
+    for L in LESSONS_5_8:
+        render_lesson(doc, L, keys_registry)

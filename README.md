@@ -1,86 +1,40 @@
-# Master-Speaking
+# Grammar for Special Speaking — TOEFL HOUSE
 
-Course books by **The TOEFL House** (Kabul).
+**Authoritative manuscript:** `Grammar for Special Speaking (TOEFL House).docx`  
+**Build system:** `build_spec/` (regenerates the manuscript: `python build_spec/build.py`)
 
-## Books in this repository
+A practical grammar course that turns grammatical knowledge into active speaking skill.
 
-### 1. Master Grammar C1-C2 (TOEFL House).docx
-**The complete English grammar book (C1–C2)** — a standalone, original grammar course
-written from zero for the special Speaking class, following the **Destination C1 & C2
-grammar syllabus**.
+> **Learn the grammar. Use it in conversation. Make it part of your speech.**
 
-**Course design: 2 months · 8 weeks · 2 days per week = 16 teaching days**
+## Book structure
 
-| Month | Weeks | Days | Focus |
-|-------|-------|------|-------|
-| Month 1 | 1–4 | Days 1–8 | Building the Grammar Core |
-| Month 2 | 5–8 | Days 9–16 | Mastering Style & Precision |
+- **Front matter** — title, introduction & objectives, how to use (students & teachers,
+  two learning pathways, suggested lesson timing), contents, diagnostic test (25 items)
+- **16 lessons** in 8 thematic parts, each with the standard 8-part framework:
+  1. The Speaking Hook  2. The Simple Rule  3. See the Difference  4. Practice the Pattern
+  5. Pair Speaking  6. The Advanced Upgrade  7. Real Talk Challenge  8. Review and Self-Check
+- **Two pathways in one classroom** — Intermediate (Build Accuracy) and Advanced (Build Flexibility)
+- **3 cumulative review tests** (after Lessons 4, 8, 12) + **Final Assessment**
+  (30-item grammar test + independent speaking task with rubric + error analysis & improvement plan)
+- **5 appendices** — Formula Book (16 cards) · Common Errors & Corrections Guide ·
+  Essential Sentence Patterns · Speaking Self-Assessment & Can-Do Tracker · Complete Answer Key
 
-| Week | Grammar Area | Days |
-|------|--------------|------|
-| 1 | Tenses & Time | 1–2 |
-| 2 | Future & Modals | 3–4 |
-| 3 | Conditionals & Emotion | 5–6 |
-| 4 | Deduction & Comparison | 7–8 |
-| 5 | Passive & Hypotheticals | 9–10 |
-| 6 | Reported Speech & Verb Patterns | 11–12 |
-| 7 | Clauses & Connectors | 13–14 |
-| 8 | Style & Precision | 15–16 |
+## Level
 
-Every teaching day contains 10 sections: Speak First → Grammar Focus → How We Really
-Say It → Common Mistakes → Practice → Pronunciation Clinic → Speak! → TOEFL-Speaking
-Task → Homework & Self-Check → **Grammar at a Glance** (golden recap + one golden
-sentence pattern).
+Intermediate and Advanced learners studying the same core lessons, with differentiated
+challenge (core accuracy work + Advanced Upgrade boxes in every lesson).
 
-**THE MASTER METHOD — the unique learning system of the book** (Grammar is Math,
-Story, Music, Habit & Garden):
-1. **Formula Cards** — every structure as a math formula (code-style, one per day; all 16 collected in "The Formula Book", Appendix D)
-2. **Memory Hooks** — one unforgettable mnemonic image/story per day (The Open Door, The Magic IF-BOX, The Three Clocks, The Rooftop…)
-3. **The Say-It Engine** — every example in 3 passes: Clear → Contracted → Fast
-4. **The 15-Minute Daily Loop** — Learn (5) → Lock (5) → Live (5)
-5. **The Review Calendar** — spaced repetition on days +1, +3, +7, +16
-Plus the **Mistake Killer Protocol** and 16 **Golden Patterns** (one sentence frame per day that contains the whole book).
+## Note on verification
 
-**Built-in assessment system:**
-- **Diagnostic Test** before Day 1 (25 items + score guide)
-- **Progress Tests 1–3** after Days 4, 8 and 12 (15 items each)
-- **Final Written Test** after Day 16 (30 items covering the whole C1–C2 system)
-- Full answer keys for every exercise and every test in the appendices,
-  plus a Grammar Toolkit (connectors, hedges, reporting verbs) and a Can-Do Checklist
+Structure, answer keys and content counts are verified programmatically at build time.
+Full review by qualified English teachers and piloting with real learners (spec §12) are
+outside what can be done in this repository and remain recommended before publication.
 
-| Day | Grammar Focus |
-|-----|---------------|
-| 1 | Present Perfect & Past Simple |
-| 2 | Past Tense Contrast |
-| 3 | The Future in Spoken English |
-| 4 | Modals — Advice, Obligation & Necessity |
-| 5 | Zero, First & Second Conditionals |
-| 6 | Wish, If Only, It's Time, Would Rather & As If |
-| 7 | Modals of Deduction, Regret & Criticism |
-| 8 | Comparison & Contrast |
-| 9 | The Passive Voice & the Causative |
-| 10 | Third & Mixed Conditionals + Hypothetical Alternatives |
-| 11 | Reported Speech & Reporting Verbs |
-| 12 | Gerunds & Infinitives |
-| 13 | Relative Clauses |
-| 14 | Participle Clauses & Complex Connectors |
-| 15 | Emphasis, Focus & Inversion |
-| 16 | Hedging, Diplomacy & Precision (+ Articles & Quantifiers Clinic) |
+## Repository contents
 
-### 2. Master Speaking.docx
-The Speaking skills course book (8 thematic units with Reading, Listening, Discussion
-and Research & Presentation chapters).
-
-## Building the grammar book
-
-The `.docx` is generated from the Python sources in `build/`:
-
-```bash
-python3 -m venv .venv-docx
-.venv-docx/bin/pip install python-docx
-.venv-docx/bin/python build/build_book.py
-```
-
----
-
-© 2026 The TOEFL House — English Department. Classroom use only.
+- `Grammar for Special Speaking (TOEFL House).docx` — the book (single authoritative manuscript)
+- `build_spec/` — source code that generates the book
+- `archive/` — superseded earlier edition (kept for reference)
+- `Master Speaking.docx` — separate product, style reference only; the grammar book is fully independent
+- `tools/` — earlier one-off editing utilities

@@ -1,0 +1,44 @@
+[
+  {
+    "source_block": 200,
+    "original": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
+    "correction": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner.",
+    "reason": "Add the missing final full stop; reading wording unchanged."
+  },
+  {
+    "source_block": 281,
+    "original": "Here is a list of most useful expressions to learn. ",
+    "correction": "Here is a list of the most useful expressions to learn.",
+    "reason": "Supply the missing article in an instruction."
+  },
+  {
+    "source_block": 1518,
+    "original": "ducation, employment, healthcare, communication, entertainment ",
+    "correction": "Education, employment, healthcare, communication, entertainment",
+    "reason": "Restore the missing initial E."
+  },
+  {
+    "source_block": 1582,
+    "original": "magine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power? ",
+    "correction": "Imagine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
+    "reason": "Restore the missing initial I; do not expand or replace the original challenge question."
+  },
+  {
+    "source_block": 2593,
+    "original": "Write T or F. Correct the false statements.",
+    "correction": "Answer the questions.",
+    "reason": "Replace an inapplicable true/false direction; all eight following open questions are unchanged."
+  },
+  {
+    "source_block": 2650,
+    "original": "Choose one and explain their choice.",
+    "correction": "Choose one and explain your choice.",
+    "reason": "Align the pronoun with the direct imperative."
+  },
+  {
+    "source_block": 2763,
+    "original": "see how the unstressed vowel becomes weak:",
+    "correction": "See how the unstressed vowel becomes weak:",
+    "reason": "Capitalize the start of the sentence."
+  }
+]

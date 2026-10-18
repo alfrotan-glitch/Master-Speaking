@@ -1,0 +1,436 @@
+[
+  {
+    "area": "Front matter · How to Use This Book",
+    "original": "CHAPTER 4 — Speaking through Research & Present (truncated in source)",
+    "correction": "CHAPTER 4 — Speaking through Research Presentation",
+    "reason": "front-matter label aligned with the actual chapter title used throughout the book",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U1 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U1 text",
+    "original": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner",
+    "correction": "The next time you hesitate to speak English, remember one important idea: people are usually more interested in your message than your mistakes. Speak confidently, listen carefully, and continue learning from every conversation. Every great communicator was once a beginner.",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U1 item 238",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U1 text",
+    "original": "Here is a list of most useful expressions to learn.",
+    "correction": "Here is a list of the most useful expressions to learn.",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U1 Ch2",
+    "original": "heading-styled instruction “Discuss the following questions in groups.”",
+    "correction": "section heading “Group Discussion” + instruction line below",
+    "reason": "defect B (content misclassified as heading); parallel structure with Units 2–8; original words preserved as instruction",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U1 Ch2",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U1 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U2 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U2 item 534",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U2 Ch1",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U2 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U2 item 691",
+    "original": "Team AAgree",
+    "correction": "Team A: Agree",
+    "reason": "jammed words; restored as debate team labels",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U2 item 692",
+    "original": "Team BDisagree",
+    "correction": "Team B: Disagree",
+    "reason": "jammed words; restored as debate team labels",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U3 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U3 Ch1 Vocabulary Check",
+    "original": "sentence merged into the Before You Read paragraph: “Learning another language allows you to ____________________________ from different backgrounds.”",
+    "correction": "sentence re-attached to the Vocabulary Check exercise",
+    "reason": "copy-paste contamination; sentence is a fill-in item continuing the Vocabulary Check list",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U3 Ch1 Speaking through Reading",
+    "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 1: Critical Thinking",
+    "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+    "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U3 Ch1",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U4 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U4 Ch1 Speaking through Reading",
+    "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+    "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+    "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U4 Ch1",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U4 Ch3 Mini Debate",
+    "original": "first debate statement had no speaker label (second was labeled “Student B”)",
+    "correction": "“Student A” label added before the first statement",
+    "reason": "structural repair of an obviously missing label; statements unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U5 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U5 Ch1",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U5 text",
+    "original": "ducation, employment, healthcare, communication, entertainment",
+    "correction": "Education, employment, healthcare, communication, entertainment",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U5 text",
+    "original": "magine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
+    "correction": "Imagine that scientists develop an AI system that can solve major problems such as climate change, disease, and poverty. Should we give it significant decision-making power?",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U5 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U5 item 1676",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U5 item 1692",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 item 1842",
+    "original": "multiple-choice question and options merged into one paragraph",
+    "correction": "split into question + option lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 item 1843",
+    "original": "multiple-choice question and options merged into one paragraph",
+    "correction": "split into question + option lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 item 1844",
+    "original": "multiple-choice question and options merged into one paragraph",
+    "correction": "split into question + option lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 item 1845",
+    "original": "multiple-choice question and options merged into one paragraph",
+    "correction": "split into question + option lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 item 1846",
+    "original": "multiple-choice question and options merged into one paragraph",
+    "correction": "split into question + option lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 Ch1 Speaking through Reading",
+    "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+    "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+    "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 Ch1",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U6 Ch2 Before Listening",
+    "original": "Can Money Buy Happiness?",
+    "correction": "The Science of a Lasting Relationship",
+    "reason": "Repeated title aligned with the original Unit 6 lesson title; not an identification of the external recording.",
+    "confidence": "Internal title consistency only; recording not verified"
+  },
+  {
+    "area": "U6 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U6 Ch3",
+    "original": "Speaking Challenge",
+    "correction": "Speaking Challenge 1",
+    "reason": "locked decision: distinguish Unit 6’s two distinct Speaking Challenge activities",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U6 Ch4 Pronunciation Clinic",
+    "original": "unlabelled \"Speaking Challenge\" paragraph",
+    "correction": "Speaking Challenge 2 (subsection heading)",
+    "reason": "locked decision: Unit 6 contains two distinct Speaking Challenge activities; numbered for clarity, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U7 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U7 Ch1 Vocabulary Check",
+    "original": "sentence merged into the Before You Read paragraph: “Studying abroad can create __________ for young people.”",
+    "correction": "sentence re-attached to the Vocabulary Check exercise",
+    "reason": "copy-paste contamination; sentence is a fill-in item continuing the Vocabulary Check list",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U7 Ch1 Speaking through Reading",
+    "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+    "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+    "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U7 Ch2",
+    "original": "“True or False”",
+    "correction": "“A. True or False”",
+    "reason": "lettered comprehension subsection sequence repaired (A/B/C)",
+    "confidence": "high"
+  },
+  {
+    "area": "U7 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U7 item 2451",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U7 item 2459",
+    "original": "words/items merged into one line by copy-paste",
+    "correction": "split into separate lines",
+    "reason": "copy-paste contamination; structural repair",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U8 Ch1",
+    "original": "doubled \"Before You Read / Discuss. / questions\" block (verbatim duplicate)",
+    "correction": "single Before You Read block retained",
+    "reason": "confirmed duplicate content removed (defect D)",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U8 text",
+    "original": "Write T or F. Correct the false statements.",
+    "correction": "Answer the questions.",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch1 Speaking through Reading",
+    "original": "Activity 1: One-Minute Summary / Activity 1 / Activity 2: Critical Thinking",
+    "correction": "Activity 1: One-Minute Summary / Activity 2 / Activity 3: Critical Thinking",
+    "reason": "source numbered two or three activities as “Activity 1”; renumbered sequentially, content unchanged",
+    "confidence": "high (verified)"
+  },
+  {
+    "area": "U8 text",
+    "original": "Choose one and explain their choice.",
+    "correction": "Choose one and explain your choice.",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch3 activation direction",
+    "original": "Work in pairs. Chooses 10 expressions and create a short conversation using all ten.",
+    "correction": "Work in pairs. Choose 10 expressions and create a short conversation using all ten.",
+    "reason": "Correct the imperative verb before applying the guarded rewrite.",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 text",
+    "original": "see how the unstressed vowel becomes weak:",
+    "correction": "See how the unstressed vowel becomes weak:",
+    "reason": "unambiguous proofreading fix (truncated word / grammar / diction)",
+    "confidence": "high"
+  },
+  {
+    "area": "U6 Ch3 heading role",
+    "original": "What Makes Relationships Work?",
+    "correction": "What Makes Relationships Work?",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch3 heading role",
+    "original": "WHO OWNS ENGLISH?",
+    "correction": "WHO OWNS ENGLISH?",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U2 Ch2 heading role",
+    "original": "Challenge Question",
+    "correction": "Challenge Question",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U7 Ch4 heading role",
+    "original": "/θ/ — voiceless TH",
+    "correction": "/θ/ — voiceless TH",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U7 Ch4 heading role",
+    "original": "/ð/ — voiced TH",
+    "correction": "/ð/ — voiced TH",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch4 heading role",
+    "original": "The Schwa in Common Words",
+    "correction": "The Schwa in Common Words",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch4 heading role",
+    "original": "The Schwa in Academic Vocabulary",
+    "correction": "The Schwa in Academic Vocabulary",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  },
+  {
+    "area": "U8 Ch4 heading role",
+    "original": "The Schwa in Function Words",
+    "correction": "The Schwa in Function Words",
+    "reason": "Formatting only: existing topic/clinic label restored as a heading, not a numbered question.",
+    "confidence": "high"
+  }
+]

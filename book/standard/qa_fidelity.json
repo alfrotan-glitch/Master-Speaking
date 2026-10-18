@@ -1,0 +1,24 @@
+{
+ "method": "Complete normalized blocks plus minimum occurrence counts; no sampled-fragment acceptance",
+ "regression_probes": "prefix-only and missing-middle rejected",
+ "occurrence_issues": {
+  "pdf": [],
+  "epub": [],
+  "docx": []
+ },
+ "master_blocks": 3422,
+ "pdf": {
+  "covered": 3422,
+  "missing": []
+ },
+ "epub": {
+  "covered": 3422,
+  "missing": []
+ },
+ "docx": {
+  "covered": 3422,
+  "missing": []
+ },
+ "pdf_word_split_matches": 0,
+ "ok": true
+}

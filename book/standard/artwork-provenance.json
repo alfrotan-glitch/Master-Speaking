@@ -1,0 +1,242 @@
+[
+  {
+    "file": "image1.png",
+    "sha256": "158a6ff52481468d5960d4d2229b3f5af86d7e25f0c67fe60fdc5a0896c65a64",
+    "pixels": [
+      1000,
+      562
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image10.jpeg",
+    "sha256": "3ba8c891a4bdab9aad6a5832f77d5d4d429d5ee7db30dce4248151fdca8a31e4",
+    "pixels": [
+      1024,
+      576
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image11.jpeg",
+    "sha256": "67de9b1d9f9bcd897ffc5084243ceefc428f6fbe35ac68c232da0198ae2426c3",
+    "pixels": [
+      959,
+      639
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image12.jpeg",
+    "sha256": "365848762ca13b37c5cfad9436db079517f537681a895bad54d981c3aa7f3534",
+    "pixels": [
+      640,
+      480
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image13.png",
+    "sha256": "568655f3de93d3fdbf75d7b9402158ae2b6e1e704813a49a5db0e15259f7b867",
+    "pixels": [
+      1260,
+      720
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image14.jpeg",
+    "sha256": "4736b377a13a9ec91772670297dded2603a4a37c38fe0c9b925da41a9e2aa509",
+    "pixels": [
+      973,
+      715
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image15.jpeg",
+    "sha256": "253e98894a71ef7bc7b2c2a28abfa076b9dd53be5a07a0b1a13af36bea35de6a",
+    "pixels": [
+      640,
+      480
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image16.png",
+    "sha256": "b0c7ae9d2812b177c967a358580ab7ba6be2978e64357086f05b0a1403a08496",
+    "pixels": [
+      2880,
+      1920
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image17.jpeg",
+    "sha256": "1c6e3027afcdc28452ebbd20d60817ca716a8328dd1278e8e268c32cb3431ba2",
+    "pixels": [
+      1028,
+      578
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image18.jpeg",
+    "sha256": "33bd7cf42720eeac5c32d14a1f4f84d0d6d826bfbf84ec5df69810fdafc3ba0e",
+    "pixels": [
+      1135,
+      835
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image19.png",
+    "sha256": "3876726f8f36fb7bb6ad24ea5f68e1ef6d7cacb5f3db1f852620c2dd0d522c1d",
+    "pixels": [
+      1000,
+      600
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image2.png",
+    "sha256": "7df3498510e80e5aafec74d48066cadfd740c188b996ef5c59efbc3f1c13ad27",
+    "pixels": [
+      1920,
+      1080
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image20.jpeg",
+    "sha256": "24911915585303097164f1e0b9652d5167db7bc6481e0cfe17d1e955bb348243",
+    "pixels": [
+      869,
+      587
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image21.jpeg",
+    "sha256": "9d2e13934ea0e6561766b1fd8313bbc4e09eb8f2bee65f5960f8126d6577705d",
+    "pixels": [
+      800,
+      550
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image22.jpeg",
+    "sha256": "e960e10d9f20faac1bd72c68f9b4f7011c5e5ef163b3914334910e0d668b3bac",
+    "pixels": [
+      1000,
+      667
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image23.jpeg",
+    "sha256": "0d5dad5b7abdfb572b26b83cb632b9641cf3822b2a5cf092d402721f4dfb5bf2",
+    "pixels": [
+      640,
+      448
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image24.jpeg",
+    "sha256": "a21aa7d6bd20d2f539401ba9919f2356feb212b59ec6813a9b41670654822707",
+    "pixels": [
+      640,
+      427
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image3.jpeg",
+    "sha256": "6e7cb682aa27bd394ad58357a203eb0854753388888012da4a85b850f3721063",
+    "pixels": [
+      640,
+      480
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image4.gif",
+    "sha256": "91ef8e8cd83b4b0cf0fc242b97cd37cad0833a74d387ccf1e78ba57553b41c30",
+    "pixels": [
+      600,
+      400
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image5.jpeg",
+    "sha256": "bd95064c908506f2849cc2d814a78c4f3d8ab7b3bdc747df32aa40ebf35827f4",
+    "pixels": [
+      600,
+      420
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image6.jpeg",
+    "sha256": "4e372bbb3b5461509f531fed7c6cdffd99130962af8b5e2fe0f23b5177d3d15d",
+    "pixels": [
+      1280,
+      720
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image7.jpeg",
+    "sha256": "75eea2858978d5c0948992bceca342345a6bcb6184da66fb7b5ef515605478fe",
+    "pixels": [
+      2560,
+      1440
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image8.jpeg",
+    "sha256": "3311294f340bf1d56178a5970fb3996cab81cdb699c83d2c2529014b5b4f4c49",
+    "pixels": [
+      836,
+      557
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  },
+  {
+    "file": "image9.jpeg",
+    "sha256": "06eb73a64ebfe9f18d95c50f43319f057807c934a0ec7977784d00a7e2b11597",
+    "pixels": [
+      1280,
+      720
+    ],
+    "origin": "Exact embedded image from the original manuscript",
+    "permission_status": "Unverified; supplied artwork is not a permission grant"
+  }
+]

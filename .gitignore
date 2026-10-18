@@ -4,3 +4,7 @@ __pycache__/
 
 # Download bundle; individual published editions are tracked.
 Master-Speaking-All-Books.zip
+
+# Reproducible isolated original-manuscript build workspace.
+/book/standard/work/
+/Master-Speaking-Standard-Edition.zip

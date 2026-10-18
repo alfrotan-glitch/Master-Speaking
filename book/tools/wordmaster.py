@@ -737,6 +737,15 @@ for unit in body.findall('x:section[@class="unit"]', NS):
         for override in LAYOUT:
             if (int(unum),int(cnum)) != (override['unit'],override['chapter']):continue
             paragraphs=doc.paragraphs[chapter_paragraph_start:]
+            if 'question_space_after_pt' in override:
+                # Local spacing repair, without reducing type size or content.
+                spacing = override['question_space_after_pt']
+                if not 2 <= spacing <= 8:
+                    raise ValueError('Question spacing override must be 2–8 pt')
+                for paragraph in paragraphs:
+                    if paragraph.style.name == 'MS Question':
+                        paragraph.paragraph_format.space_after = Pt(spacing)
+                continue
             first=next(i for i,p in enumerate(paragraphs) if p.text==override['keep_from'])
             end=next(i for i,p in enumerate(paragraphs[first+1:],first+1) if p.text==override['keep_until_before'])
             for paragraph in paragraphs[first:end-1]:

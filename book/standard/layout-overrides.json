@@ -1,0 +1,8 @@
+[
+  {
+    "unit": 7,
+    "chapter": 1,
+    "question_space_after_pt": 3,
+    "reason": "Use 3 pt rather than 5 pt after this chapter's questions so the final homework direction is not stranded on a page by itself. Fonts, line spacing and all original text stay unchanged."
+  }
+]

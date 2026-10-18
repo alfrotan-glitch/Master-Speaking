@@ -1,0 +1,70 @@
+{
+  "source_external_hyperlink_relationships": 0,
+  "videos_embedded": false,
+  "lessons": [
+    {
+      "unit": 1,
+      "original_lesson_title": "Are You a Good Listener?",
+      "source_video_image": "image3.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+    },
+    {
+      "unit": 2,
+      "original_lesson_title": "The Art of Goal Setting",
+      "source_video_image": "image6.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Lesson heading differs from the original prediction-section/thumbnail title Why You Should Stop Setting Goals (Yes, Really)."
+    },
+    {
+      "unit": 3,
+      "original_lesson_title": "The Power of Emotional Intelligence",
+      "source_video_image": "image9.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Thumbnail reads Are You Emotionally Mature?; match the full question set to the intended recording."
+    },
+    {
+      "unit": 4,
+      "original_lesson_title": "Can Money Buy Happiness?",
+      "source_video_image": "image12.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+    },
+    {
+      "unit": 5,
+      "original_lesson_title": "How Will AI Change the World?",
+      "source_video_image": "image15.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Thumbnail reads Things Are Going to Get Weird; match the full question set to the intended recording."
+    },
+    {
+      "unit": 6,
+      "original_lesson_title": "The Science of a Lasting Relationship",
+      "source_video_image": "image18.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+    },
+    {
+      "unit": 7,
+      "original_lesson_title": "Navigating Our Global Future",
+      "source_video_image": "image21.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+    },
+    {
+      "unit": 8,
+      "original_lesson_title": "English Without Borders",
+      "source_video_image": "image24.jpeg",
+      "identity_availability_exercise_alignment_permissions": "NOT VERIFIED",
+      "url": null,
+      "note": "Source still/title does not establish verified recording identity or exercise alignment."
+    }
+  ]
+}

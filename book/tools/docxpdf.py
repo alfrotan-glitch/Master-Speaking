@@ -158,6 +158,11 @@ def para_flows(p, doc, ctx=None):
                 out.append(Spacer(1, pf.space_before.pt))
             if pf.space_after is not None:
                 style.spaceAfter = pf.space_after.pt
+        if name == 'MS Question' and p.paragraph_format.space_after is not None:
+            # Honor the chapter-local question spacing stored in the Word master.
+            from copy import copy
+            style = copy(style)
+            style.spaceAfter = p.paragraph_format.space_after.pt
         if p.paragraph_format.keep_with_next is not None:
             from copy import copy
             style = copy(style)

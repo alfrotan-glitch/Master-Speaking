@@ -1,0 +1,141 @@
+{
+  "source_sha256": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184",
+  "method": "Normalized presence checked within original unit/chapter, with explicit dispositions for structural/copyedit differences. Reading paragraphs additionally checked in original order. This is not a character-for-character facsimile or independent editorial review.",
+  "nonempty_source_paragraphs_and_cells": 3203,
+  "differences_with_explicit_dispositions": 83,
+  "unexplained_differences": 0,
+  "original_illustrations": 24,
+  "reading_passages": [
+    {
+      "unit": 1,
+      "original_paragraphs_in_order": [
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200
+      ],
+      "paragraphs": 8,
+      "replacement_reading": false
+    },
+    {
+      "unit": 2,
+      "original_paragraphs_in_order": [
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485
+      ],
+      "paragraphs": 8,
+      "replacement_reading": false
+    },
+    {
+      "unit": 3,
+      "original_paragraphs_in_order": [
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801
+      ],
+      "paragraphs": 7,
+      "replacement_reading": false
+    },
+    {
+      "unit": 4,
+      "original_paragraphs_in_order": [
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123
+      ],
+      "paragraphs": 7,
+      "replacement_reading": false
+    },
+    {
+      "unit": 5,
+      "original_paragraphs_in_order": [
+        1432,
+        1433,
+        1434,
+        1435,
+        1436
+      ],
+      "paragraphs": 5,
+      "replacement_reading": false
+    },
+    {
+      "unit": 6,
+      "original_paragraphs_in_order": [
+        1829,
+        1830,
+        1831,
+        1832,
+        1833,
+        1834,
+        1835,
+        1836,
+        1837,
+        1838,
+        1839
+      ],
+      "paragraphs": 11,
+      "replacement_reading": false
+    },
+    {
+      "unit": 7,
+      "original_paragraphs_in_order": [
+        2201,
+        2202,
+        2203,
+        2204,
+        2205,
+        2206,
+        2207,
+        2208,
+        2209,
+        2210,
+        2211,
+        2212
+      ],
+      "paragraphs": 12,
+      "replacement_reading": false
+    },
+    {
+      "unit": 8,
+      "original_paragraphs_in_order": [
+        2564,
+        2565,
+        2566,
+        2567,
+        2568,
+        2569,
+        2570,
+        2571,
+        2572,
+        2573,
+        2574,
+        2575,
+        2576,
+        2577,
+        2578,
+        2579,
+        2580
+      ],
+      "paragraphs": 17,
+      "replacement_reading": false
+    }
+  ]
+}

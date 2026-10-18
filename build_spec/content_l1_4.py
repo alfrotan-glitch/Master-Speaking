@@ -225,7 +225,7 @@ L2 = {
                   "By the time we reached the station, the train had left.",
                   "When I arrived, he had already left.", "answers vary",
                   "while",
-                  "It was raining and I had forgotten my umbrella, so I got wet. (answers vary)"],
+                  "It was raining and I forgot my umbrella, so I got wet. (answers vary)"],
         },
     },
 }

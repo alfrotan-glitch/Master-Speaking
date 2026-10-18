@@ -126,7 +126,7 @@ L13 = {
         'selfcheck': ["I can report statements, questions and commands accurately.",
                       "I use reporting verbs beyond 'say'."],
         'answers': {
-            'A': ["was working", "had finished", "had parked", "not to", "to help", "taking"],
+            'A': ["was working", "had finished", "had parked (or: parked)", "not to", "to help", "taking"],
             'B': ["He said (that) he never lied. / He said (that) he never lies.",
                   "They asked when the results would be announced.",
                   "He told me that he was tired.",
@@ -386,7 +386,7 @@ L15 = {
         'selfcheck': ["I can control how strong my claims sound.",
                       "I can emphasise with clefts and inversion — accurately and sparingly."],
         'answers': {
-            'A': ["Never", "did she pass", "did I understand", "suggests", "the deadline", "tends"],
+            'A': ["Never", "did she pass", "did I understand", "suggests (or: suggest)", "the deadline", "tends"],
             'B': ["This policy may well reduce costs. / This policy is likely to reduce costs.",
                   "It was the price that changed my mind.",
                   "Rarely had I felt so confident.",

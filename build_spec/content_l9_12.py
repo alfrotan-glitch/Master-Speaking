@@ -113,7 +113,7 @@ L9 = {
                   "has just been introduced", "be sent"],
             'B': ["My bicycle has been stolen.", "The board made the decision.",
                   "It is said that he is the best candidate. / He is said to be the best candidate.",
-                  "The house was built in 1990.", "I lost my phone. / I broke my phone. (answers vary)",
+                  "The house was built in 1990.", "I lost my phone. / I had my phone stolen. (answers vary)",
                   "The road will be closed tomorrow."],
         },
     },

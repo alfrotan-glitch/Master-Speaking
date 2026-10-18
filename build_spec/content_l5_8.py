@@ -432,7 +432,7 @@ L8 = {
     ],
     'practice_a': [
         "__________ the heavy traffic, we arrived on time.  (Despite / Although)",
-        "Although __________ (be) very tired, she finished the report.",
+        "__________ being very tired, she finished the report.  (Despite / Although)",
         "He failed the exam; __________, he did not give up.  (however / despite)",
         "We left early __________ we could avoid the traffic.  (so that / because of)",
         "The flight was cancelled. __________, all hotels were full.  (As a result / Although)",
@@ -483,7 +483,8 @@ L8 = {
         'selfcheck': ["I can link ideas with the right linker family.",
                       "My argument has a clear skeleton and a summary."],
         'answers': {
-            'A': ["Despite", "being", "however", "so that", "As a result", "whereas"],
+            'A': ["Despite", "Despite (not 'although' — it needs a clause: Although she was very tired)",
+                  "however", "so that", "As a result", "whereas"],
             'B': ["Although the task was difficult, everyone finished.",
                   "Despite not being selected, she applied again. / Despite the rejection, she applied again.",
                   "Despite the cost, we decided to proceed.",

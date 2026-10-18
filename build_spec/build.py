@@ -11,7 +11,8 @@ import content_l1_4, content_l5_8, content_l9_12, content_l13_16
 import content_tests as tests
 import content_appendix as appendix
 
-OUT = '/home/user/Master-Speaking/Grammar for Special Speaking (TOEFL House).docx'
+OUT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                   'Grammar for Special Speaking (TOEFL House).docx')
 
 
 def main():

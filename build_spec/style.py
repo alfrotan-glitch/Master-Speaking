@@ -53,6 +53,13 @@ def set_repeat_header(row):
     trPr.append(e)
 
 
+def _no_split(row):
+    """Keep table rows intact across page breaks."""
+    trPr = row._tr.get_or_add_trPr()
+    e = OxmlElement('w:cantSplit'); e.set(qn('w:val'), 'true')
+    trPr.append(e)
+
+
 def run(p, text, size=11, bold=False, italic=False, color=INK,
         font=BODY_FONT, caps=False):
     r = p.add_run(text)
@@ -68,6 +75,8 @@ def para(doc_or_cell, text="", size=11, bold=False, italic=False, color=INK,
     p = doc_or_cell.add_paragraph()
     p.paragraph_format.space_before = Pt(space_before)
     p.paragraph_format.space_after = Pt(space_after)
+    if bold and len(text) < 80:
+        p.paragraph_format.keep_with_next = True
     if indent:
         p.paragraph_format.left_indent = Inches(indent)
     if align == 'c':
@@ -149,6 +158,7 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
     t.alignment = WD_TABLE_ALIGNMENT.CENTER
     hdr = t.rows[0]
     set_repeat_header(hdr)
+    _no_split(hdr)
     for i, h in enumerate(headers):
         c = hdr.cells[i]
         shade(c, header_fill); cell_margins(c, 40, 40, 90, 90)
@@ -156,7 +166,9 @@ def table(doc, headers, rows, widths=None, header_fill=FILL_NAVY,
         run(p, h, size=font_size, bold=True, color=WHITE, font=HEAD_FONT)
     for ri, r in enumerate(rows):
         r = list(r) + [""] * (width - len(r))
-        cells = t.add_row().cells
+        row = t.add_row()
+        _no_split(row)
+        cells = row.cells
         for i, val in enumerate(r):
             c = cells[i]
             if zebra and ri % 2 == 1:
@@ -194,6 +206,7 @@ def page_break(doc):
 
 def setup_doc():
     from docx import Document
+    from docx.shared import Inches as _In
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = BODY_FONT
@@ -203,13 +216,30 @@ def setup_doc():
     st.paragraph_format.space_before = Pt(2)
     st.paragraph_format.line_spacing = 1.08
     for s in doc.sections:
+        # A4 page size (python-docx defaults to US Letter)
+        s.page_width = _In(8.27)
+        s.page_height = _In(11.69)
         s.left_margin = Inches(0.9)
         s.right_margin = Inches(0.9)
         s.top_margin = Inches(0.8)
         s.bottom_margin = Inches(0.8)
-        # footer
+        # footer: brand + page number
         fp = s.footer.paragraphs[0]
         fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        run(fp, "TOEFL HOUSE  |  Grammar for Special Speaking",
+        run(fp, "TOEFL HOUSE  |  Grammar for Special Speaking  |  ",
             size=8.5, color=GREY)
+        _add_page_field(fp)
     return doc
+
+
+def _add_page_field(par):
+    """Insert a live PAGE field so printed copies are navigable."""
+    r = par.add_run()
+    r.font.name = BODY_FONT
+    r.font.size = Pt(8.5)
+    r.font.color.rgb = GREY
+    fld_begin = OxmlElement('w:fldChar'); fld_begin.set(qn('w:fldCharType'), 'begin')
+    instr = OxmlElement('w:instrText'); instr.set(qn('xml:space'), 'preserve')
+    instr.text = ' PAGE '
+    fld_end = OxmlElement('w:fldChar'); fld_end.set(qn('w:fldCharType'), 'end')
+    r._r.append(fld_begin); r._r.append(instr); r._r.append(fld_end)

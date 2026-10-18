@@ -34,14 +34,14 @@
  "tables": 60,
  "images": 24,
  "unit_headings": [
-  "Unit 1 · The Power of Communication",
-  "Unit 2 · The Art of Goal Setting",
-  "Unit 3 · Emotional Intelligence",
-  "Unit 4 · Money and Happiness",
-  "Unit 5 · Living with AI",
-  "Unit 6 · Is Love Enough?",
-  "Unit 7 · Globalization",
-  "Unit 8 · Lingua Franca"
+  "Unit 1 ·\nThe Power of Communication",
+  "Unit 2 ·\nThe Art of Goal Setting",
+  "Unit 3 ·\nEmotional Intelligence",
+  "Unit 4 ·\nMoney and Happiness",
+  "Unit 5 ·\nLiving with AI",
+  "Unit 6 ·\nIs Love Enough?",
+  "Unit 7 ·\nGlobalization",
+  "Unit 8 ·\nLingua Franca"
  ],
  "issues": [],
  "ok": true

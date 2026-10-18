@@ -26,7 +26,7 @@ for i in range(d.page_count):
     txt = d[i].get_text('text')
     if 'THINK' not in txt:
         continue
-    for m in re.finditer(r'^Unit ([1-8]) \u00b7 ', txt, re.M):
+    for m in re.finditer(r'^Unit ([1-8]) \u00b7\s+', txt, re.M):
         unit_pages[int(m.group(1))] = i + 1
         break
 

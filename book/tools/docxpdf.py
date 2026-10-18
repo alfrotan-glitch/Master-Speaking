@@ -23,6 +23,7 @@ from pdf import (S, register_fonts, build_styles, folio_for, fallback, esc,
                  GUTTER_SHIFT, TEXT_W, SERIF, SANS, BookDoc, State,
                  on_page_fm, on_page_opener)
 from reportlab.lib.colors import HexColor
+from design import BAND as BAND_HEX, BANNER as BANNER_HEX, COPPER
 
 MS_FIXED = [None]        # pinned first decimal-folio page (fixpoint)
 
@@ -96,11 +97,31 @@ STYMAP = {
 _img_cache = {}
 
 
+class SectionHeading(Paragraph):
+    """Quiet editorial divider; text and pagination stay standard Paragraphs."""
+    def draw(self):
+        super().draw()
+        self.canv.saveState()
+        self.canv.setStrokeColor(RULE)
+        self.canv.setLineWidth(.4)
+        self.canv.line(0, -1.5, self.width, -1.5)
+        self.canv.setStrokeColor(ACCENT)
+        self.canv.setLineWidth(1.4)
+        self.canv.line(0, -1.5, 24, -1.5)
+        self.canv.restoreState()
+
+
 def para_flows(p, doc, ctx=None):
     """One docx paragraph -> list of flowables (markup + images + breaks)."""
     out = []
     name = p.style.name if p.style is not None else 'MS Body'
-    skey = STYMAP.get(name, 'body')
+    skey = 'tabhead' if ctx == 'table-header' else STYMAP.get(name, 'body')
+    if name in ('MS Chapter Title', 'MS Unit Title'):
+        label, title = ' '.join(p.text.split()).split(' · ', 1)
+        size = 9.5 if name == 'MS Chapter Title' else 10
+        markup = (f'<font name="{SANS}-SB" size="{size}">{fallback(label)} ·</font>'
+                  f'<br/>{fallback(title, SERIF)}')
+        return [Paragraph(markup, S[skey])]
     segs = []            # (text, bold, italic) fragments
     def flush():
         if not segs:
@@ -141,7 +162,7 @@ def para_flows(p, doc, ctx=None):
             from copy import copy
             style = copy(style)
             style.keepWithNext = int(p.paragraph_format.keep_with_next)
-        out.append(Paragraph(mk, style))
+        out.append(SectionHeading(mk, style) if name == 'MS Section' else Paragraph(mk, style))
         segs.clear()
     for r in p.runs:
         rpr = r._r.find(qn('w:rPr'))
@@ -239,12 +260,12 @@ def table_flow(t, doc):
     header = t.rows and is_header_row(t.rows[0])
 
     data = []
-    for row in t.rows:
+    for ri, row in enumerate(t.rows):
         cells = []
         for cell in row.cells:
             flows = []
             for p in cell.paragraphs:
-                fl = para_flows(p, doc)
+                fl = para_flows(p, doc, ctx='table-header' if header and ri == 0 else None)
                 fl = [f for f in fl if not isinstance(f, tuple)]
                 if not fl:
                     continue
@@ -255,30 +276,26 @@ def table_flow(t, doc):
         data.append(cells)
 
     style = [
-        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
-        ('LEFTPADDING', (0, 0), (-1, -1), 5),
-        ('RIGHTPADDING', (0, 0), (-1, -1), 5),
-        ('TOPPADDING', (0, 0), (-1, -1), 3.5),
-        ('BOTTOMPADDING', (0, 0), (-1, -1), 3.5),
-        ('GRID', (0, 0), (-1, -1), 0.5, RULE),
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 7),
+        ('RIGHTPADDING', (0,0), (-1,-1), 7),
+        ('TOPPADDING', (0,0), (-1,-1), 5),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+        ('LINEBELOW', (0,0), (-1,-1), .35, RULE),
     ]
-    if tbl_fill in ('B9E9B5', 'BFDDAB'):
-        fc = BOX_GREEN if tbl_fill == 'B9E9B5' else BOX_OLIVE
-        style += [('BACKGROUND', (0, 0), (-1, -1), fc),
-                  ('GRID', (0, 0), (-1, -1), 1.0, colors.white),
-                  ('LEFTPADDING', (0, 0), (-1, -1), 9),
-                  ('RIGHTPADDING', (0, 0), (-1, -1), 9),
-                  ('TOPPADDING', (0, 0), (-1, -1), 6),
-                  ('BOTTOMPADDING', (0, 0), (-1, -1), 6)]
-    elif header:
-        style.append(('BACKGROUND', (0, 0), (-1, 0), BAND))
+    if header:
+        style.append(('BACKGROUND', (0,0), (-1,0), BANNER))
         for ri in range(1, len(data)):
-            if ri % 2 == 0:
-                style.append(('BACKGROUND', (0, ri), (-1, ri), ZEBRA))
+            style.append(('BACKGROUND', (0,ri), (-1,ri), ZEBRA if ri % 2 == 0 else colors.white))
+    elif ncol == 1 and tbl_fill == BAND_HEX:
+        style += [('BACKGROUND', (0,0), (-1,-1), BAND),
+                  ('LINEBEFORE', (0,0), (0,-1), 2, ACCENT),
+                  ('LEFTPADDING', (0,0), (-1,-1), 12),
+                  ('TOPPADDING', (0,0), (-1,-1), 10),
+                  ('BOTTOMPADDING', (0,0), (-1,-1), 10)]
     else:
         for ri in range(len(data)):
-            if ri % 2 == 1:
-                style.append(('BACKGROUND', (0, ri), (-1, ri), ZEBRA))
+            style.append(('BACKGROUND', (0,ri), (-1,ri), ZEBRA if ri % 2 else colors.white))
 
     tab = Table(data, colWidths=widths, hAlign='LEFT', repeatRows=1 if header else 0)
     tab.setStyle(TableStyle(style))
@@ -376,7 +393,7 @@ def main():
                         story.append(PageBreak())
                     if cur_unit in extra_breaks:
                         story.append(PageBreak())
-                    txt = ''.join(r.text for r in el.runs)
+                    txt = ' '.join(el.text.split())
                     for f in flows:
                         if isinstance(f, Paragraph):
                             f._toc = (0, txt)
@@ -389,7 +406,7 @@ def main():
                         story.append(PageBreak())
                     if not unit_seen:
                         unit_seen = unit_seen
-                    txt = ''.join(r.text for r in el.runs)
+                    txt = ' '.join(el.text.split())
                     for f in flows:
                         if isinstance(f, Paragraph):
                             f._toc = (1, txt)
@@ -408,7 +425,7 @@ def main():
                     continue
                 # warm-up box ends the opener page pattern
                 fills = [cell_fill(c) for row in el.rows for c in row.cells]
-                if fills and fills[0] == 'B9E9B5' and cur_unit:
+                if fills and fills[0] == BAND_HEX and len(el.columns) == 1 and cur_unit:
                     story.append(NextPageTemplate('main'))
         doc.multiBuild(story)
         bad = sorted((pg, int(k.split('-')[1])) for k, pg in

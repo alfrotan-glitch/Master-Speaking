@@ -1,7 +1,7 @@
 {
   "pdf": "Master-Speaking-print-7x10.pdf",
-  "sha256": "992d1105196c38597d4eaa8e4f5a86c24fa5b8cf34f63c79b138ab690ed60d39",
-  "pages": 165,
+  "sha256": "45e545fda9a323758b2ea8a80b91bc7c702f33fd8b0292d19053cc8fc05a2ade",
+  "pages": 167,
   "all_pages_rendered_as_thumbnails": true,
   "full_size_pages": [
     1,
@@ -40,17 +40,17 @@
     120,
     124,
     126,
-    132,
-    137,
-    140,
-    144,
-    146,
-    150,
+    133,
+    138,
+    141,
+    145,
+    148,
     152,
-    157,
-    160,
-    161,
-    165
+    154,
+    159,
+    162,
+    163,
+    167
   ],
   "limitation": "Layout overview only; not a signed human line-by-line proof."
 }

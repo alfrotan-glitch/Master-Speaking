@@ -7,6 +7,7 @@ landmarks), NCX for legacy reading systems, all 24 images (gif -> png).
 """
 import os, re, shutil, zipfile, uuid, datetime, html
 from lxml import etree
+from design import BAND, BANNER, ACCENT, INK, MUTED, RULE, ZEBRA
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MASTER = os.path.join(ROOT, 'book', 'master', 'master.xhtml')
@@ -21,17 +22,17 @@ EP = 'http://www.idpf.org/2007/ops'
 CSS = '''/* Master Speaking — reflowable EPUB stylesheet */
 html { font-size: 100%; }
 body { line-height: 1.45; margin: 0 0.2em; padding: 0 0.4em;
-       font-family: "Source Serif 4", Georgia, serif; color: #14181A; }
+       font-family: "Source Serif 4", Georgia, serif; color: #182B30; }
 h1, h2, h3, h4, h5 { font-family: "Source Sans 3", Helvetica, sans-serif;
-                     color: #14181A; font-weight: 600; line-height: 1.25; }
+                     color: #182B30; font-weight: 600; line-height: 1.25; }
 .stress-contrast { break-inside: avoid; page-break-inside: avoid; }
 p { margin: 0 0 0.65em 0; text-align: justify; hyphens: auto; }
 /* unit opener */
 section.unit { margin-top: 1em; }
 h1.unit-title { font-size: 1.7em; margin: 0.2em 0 0.4em 0;
-                background-color: #7BE1D0; padding: 0.2em 0.45em; }
+                background-color: #EDF3F2; padding: 0.2em 0.45em; }
 .unit-kicker { display: block; font-size: 0.85em; letter-spacing: 0.12em;
-               text-transform: uppercase; color: #00B050; font-weight: 600; }
+               text-transform: uppercase; color: #205F67; font-weight: 600; }
 .unit-name { display: block; }
 figure.unit-figure { margin: 1em 0; text-align: center; }
 img { max-width: 100%; height: auto; }
@@ -40,32 +41,32 @@ h2.chapter-title { font-size: 1.35em; margin: 0 0 0.35em 0;
                    break-before: page; page-break-before: always; }
 p.chapter-focus { font-family: sans-serif; font-size: 0.9em; text-align: left;
                   color: #42554F; margin: 0 0 1em 0; break-after: avoid; }
-.chapter-name { color: #92D050; }
+.chapter-name { color: #205F67; }
 .chapter-kicker { display: block; font-size: 0.8em; letter-spacing: 0.1em;
-                  text-transform: uppercase; color: #00B050; }
+                  text-transform: uppercase; color: #205F67; }
 .chapter-name { display: block; }
 /* sections */
-h3.sec { font-size: 1.12em; margin: 1.2em 0 0.35em 0; color: #14181A;
-         background-color: #7BE1D0; padding: 0.15em 0.4em; }
+h3.sec { font-size: 1.12em; margin: 1.2em 0 0.35em 0; color: #182B30;
+         background-color: #EDF3F2; padding: 0.15em 0.4em; }
 h4.sub, h4.reading-title { font-size: 1.0em; margin: 0.9em 0 0.3em 0;
-                           color: #00B050; }
-h4.reading-title { color: #14181A; font-size: 1.15em; font-family: inherit; }
+                           color: #205F67; }
+h4.reading-title { color: #182B30; font-size: 1.15em; font-family: inherit; }
 h5.runin { font-size: 0.9em; margin: 0.8em 0 0.2em 0; }
 /* content types */
 p.instr { font-family: "Source Sans 3", Helvetica, sans-serif; font-style: italic;
-          font-size: 0.92em; color: #5A6B66; text-align: left; }
+          font-size: 0.92em; color: #52656A; text-align: left; }
 p.label { font-family: "Source Sans 3", Helvetica, sans-serif; font-weight: 600;
           font-size: 0.95em; text-align: left; }
 p.topic { font-family: "Source Sans 3", Helvetica, sans-serif; font-weight: 600;
-          color: #0F1115; background-color: #7BE1D0; text-align: left;
+          color: #0F1115; background-color: #EDF3F2; text-align: left;
           padding: 0.15em 0.4em; }
 p.titleline { font-style: italic; text-align: left; }
 p.media-title { font-family: "Source Sans 3", Helvetica, sans-serif;
                 font-weight: 600; font-size: 1.05em; text-align: left; }
-div.reading-block { border-left: 3px solid #00B050; padding-left: 0.7em;
+div.reading-block { border-left: 3px solid #205F67; padding-left: 0.7em;
                     margin: 0.5em 0 0.8em 0; }
 p.reading { text-align: justify; }
-div.note { background-color: #F0F8EC; border-left: 3px solid #00B050;
+div.note { background-color: #F5F8F7; border-left: 3px solid #205F67;
            padding: 0.5em 0.7em; margin: 0.6em 0; }
 div.note p { font-style: italic; color: #44544F; text-align: left; }
 /* lists */
@@ -81,25 +82,25 @@ ul.pairs li, ul.choices li, ul.items li { margin-bottom: 0.25em; }
 /* tables */
 table { border-collapse: collapse; width: 100%; margin: 0.5em 0 0.9em 0;
         font-size: 0.88em; }
-th { background-color: #7BE1D0; color: #0F1115; text-align: left; padding: 0.35em 0.5em;
+th { background-color: #EDF3F2; color: #0F1115; text-align: left; padding: 0.35em 0.5em;
      font-family: "Source Sans 3", Helvetica, sans-serif; }
-td { border: 1px solid #A9D8A0; padding: 0.35em 0.5em; vertical-align: top; }
-tbody tr:nth-child(even) td { background-color: #F0F8EC; }
-table.questions td { border: none; border-bottom: 1px solid #A9D8A0; }
+td { border: 1px solid #CBD9D9; padding: 0.35em 0.5em; vertical-align: top; }
+tbody tr:nth-child(even) td { background-color: #F5F8F7; }
+table.questions td { border: none; border-bottom: 1px solid #CBD9D9; }
 table[data-fill="B9E9B5"] td, table[data-fill="B9E9B5"] th {
-  background-color: #B9E9B5; border: 1px solid #fff; }
+  background-color: #EDF3F2; border: 1px solid #fff; }
 table[data-fill="BFDDAB"] td, table[data-fill="BFDDAB"] th {
-  background-color: #BFDDAB; border: 1px solid #fff; }
+  background-color: #EDF3F2; border: 1px solid #fff; }
 table.questions td:empty { min-height: 1.6em; }
 /* warm-up box */
-div.warmup { background-color: #B9E9B5; border-left: 4px solid #92D050;
+div.warmup { background-color: #EDF3F2; border-left: 4px solid #205F67;
              padding: 0.6em 0.8em; margin: 0.8em 0; }
 h2.warmup-head { font-size: 1.0em; letter-spacing: 0.08em; text-transform: uppercase;
-                 color: #00B050; margin: 0 0 0.3em 0; }
+                 color: #205F67; margin: 0 0 0.3em 0; }
 /* front matter */
 h1.fm-head { font-size: 1.5em; margin: 0.2em 0 0.7em 0; color: #fff;
-             background-color: #92D050; padding: 0.25em 0.5em; }
-h2.fm-sub { font-size: 1.1em; color: #00B050; margin: 1em 0 0.3em 0; }
+             background-color: #205F67; padding: 0.25em 0.5em; }
+h2.fm-sub { font-size: 1.1em; color: #205F67; margin: 1em 0 0.3em 0; }
 h3.fm-sub2 { font-size: 1.0em; margin: 0.8em 0 0.2em 0; }
 blockquote { margin: 2em 2.5em; font-style: italic; text-align: center; }
 p.signature { font-family: "Source Sans 3", Helvetica, sans-serif; font-weight: 600;
@@ -109,6 +110,26 @@ nav#toc ol { list-style: none; margin-left: 0.6em; }
 nav#toc ol ol { list-style: none; }
 nav#toc li { margin: 0.2em 0; }
 '''
+
+# Shared modern editorial skin; source fill attributes remain archival metadata.
+CSS += f"""
+body {{ color: #{INK}; }}
+p, p.reading {{ text-align: left; }}
+h1.unit-title, h1.fm-head {{ color: #{BANNER}; background: transparent; padding: 0; }}
+h1.unit-title {{ font-family: 'Source Serif 4', Georgia, serif; font-size: 2em; }}
+h2.chapter-title {{ font-family: 'Source Serif 4', Georgia, serif; font-size: 1.65em; }}
+.chapter-name {{ color: #{BANNER}; }}
+.chapter-kicker, .unit-kicker {{ font-family: sans-serif; color: #{ACCENT}; font-size: .62em; margin-bottom: .65em; }}
+h3.sec {{ color: #{ACCENT}; background: transparent; padding: 0 0 .25em; border-bottom: 1px solid #{RULE}; }}
+p.instr {{ font-style: normal; color: #{MUTED}; }}
+p.chapter-focus {{ color: #{MUTED}; }}
+div.reading-block {{ border: none; padding-left: 0; }}
+div.warmup {{ background: #{BAND}; border-left-color: #{ACCENT}; }}
+table th, table[data-fill] th {{ background: #{BANNER}; color: white; border: none; }}
+table td, table[data-fill] td {{ background: white; border: none; border-bottom: 1px solid #{RULE}; padding: .5em .6em; }}
+table tbody tr:nth-child(even) td, table[data-fill] tbody tr:nth-child(even) td {{ background: #{ZEBRA}; }}
+p.topic {{ color: #{INK}; background: #{BAND}; }}
+"""
 
 def q(el, p):
     return el.xpath(p, namespaces=NS)
@@ -157,7 +178,7 @@ def strip_ids(el):
 
 # Apply the same accessible default palette used by Word and print.
 from design import BAND, BANNER, ACCENT
-CSS = CSS.replace('#7BE1D0', '#' + BAND).replace('#92D050', '#' + BANNER).replace('#00B050', '#' + ACCENT)
+CSS = CSS.replace('#EDF3F2', '#' + BAND).replace('#205F67', '#' + BANNER).replace('#205F67', '#' + ACCENT)
 
 def main():
     if os.path.exists(WORK):

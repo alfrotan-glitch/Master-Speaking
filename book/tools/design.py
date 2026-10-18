@@ -1,12 +1,17 @@
-"""Shared edition palette: dark type, pale bands, high-contrast teal accents.
+"""Modern editorial edition: restrained forest/teal, white tables, quiet rules.
 
-Original content images/table fills are retained; this is not a claim that
-all imagery or all EPUB themes meet an accessibility standard.
+Shared across Word, PDF, EPUB and cover. Copper is decorative, not body text.
+Contrast checks cover default colors, not whole-book accessibility certification.
 """
-BAND = 'E2F2EC'
-BANNER = '145C4D'
-ACCENT = '176653'
-INK = '14181A'
+BAND = 'EDF3F2'
+BANNER = '183D44'
+ACCENT = '205F67'
+INK = '182B30'
+MUTED = '52656A'
+RULE = 'CBD9D9'
+ZEBRA = 'F5F8F7'
+COPPER = 'B77948'
+PAPER = 'F6F3EC'
 
 
 def contrast(fg, bg):

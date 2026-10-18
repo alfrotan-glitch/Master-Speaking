@@ -1,10 +1,10 @@
 # Current language, teaching and design review
 
-17 October 2026 • Master Speaking
+18 October 2026 • Master Speaking
 
 ## Status
 
-**Revised editorial proof, not a commercially cleared or error-free publication.** Current interior: **165 pages**; reader edition with front cover: **166 pages**. All **14** release gates pass, including official EPUBCheck 5.3.0 with zero errors/warnings. The original manuscript is unchanged.
+**Revised editorial proof, not a commercially cleared or error-free publication.** Current interior: **167 pages**; reader edition with front cover: **168 pages**. All **14** release gates pass, including official EPUBCheck 5.3.0 with zero errors/warnings. The original manuscript is unchanged.
 
 The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It supersedes older block/page/check counts and records both corrected defects and outstanding release conditions. Editorial work is AI-assisted; a signed independent human proof has not been supplied.
 
@@ -30,7 +30,7 @@ The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It su
 | Reading openings | Heading, image and beginning of the passage kept together; eight actual openings checked |
 | Navigation | Recomputed PDF contents folios/links, bookmarks/labels and reader offsets; matching Word/EPUB titles |
 | Fonts | Pinned official Adobe static fonts with hashes and OFL licenses |
-| Palette | Default contrast ratios 6.86:1, 7.87:1 and 15.44:1; not whole-book accessibility certification |
+| Palette | Default contrast ratios 7.26:1, 11.73:1 and 13.11:1; not whole-book accessibility certification |
 | EPUB | Official EPUBCheck 5.3.0 pass; reader/device and accessibility tests still required |
 | Print cover | Original front-only concept, not a printer-approved full wrap |
 
@@ -38,7 +38,7 @@ The complete current review is [WHOLE-BOOK-AUDIT.md](WHOLE-BOOK-AUDIT.md). It su
 
 - Lesson logic checks: 32 chapters; 88 multiple-choice groups for organization/lettering; 36 vocabulary sentences across seven exercises; eight reading openings; ten stress models; eight unit-review tasks.
 - Cross-format coverage: **3,482 complete normalized semantic text blocks** plus minimum occurrence counts, with separate defined stress/IPA regression cases. Text normalization is not a universal semantic-order, typographic or factual proof.
-- All **165 pages** rendered as thumbnails in **9** overviews; **47** selected full-size proof pages. Exact coverage and the PDF fingerprint are in `book/qa/edition-review/index.json`. Selected revised pages were inspected; no signed full human page proof is claimed.
+- All **167 pages** rendered as thumbnails in **9** overviews; **47** selected full-size proof pages. Exact coverage and the PDF fingerprint are in `book/qa/edition-review/index.json`. Selected revised pages were inspected; no signed full human page proof is claimed.
 - Separate classroom and companion checks pass; these materials remain outside the main book and do not validate original recordings.
 - Open conditions: original recording alignment, image/quotation permissions, factual and specialist review, native Word contents/pagination, accessible outputs and device testing, print assets/physical proof, publisher metadata and a learner pilot.
 

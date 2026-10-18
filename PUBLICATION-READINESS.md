@@ -1,6 +1,6 @@
 # Master Speaking — Editorial & Publication Review
 
-October 17, 2026 • Revised classroom edition in development
+October 18, 2026 • Revised classroom edition in development
 
 ## Edition status
 
@@ -20,8 +20,8 @@ Author and existing publisher attribution remain Abdul Raziq Nazari / The TOEFL 
 
 ### Design and production
 
-- Created an original front-cover concept using vector typography and paired speech shapes. Teal, warm ivory, and mint connect the cover to the interior without introducing stock imagery.
-- Replaced bright-green text/banner defaults with a shared dark-teal palette. Default text contrast ratios: accent/white 6.86:1, white/banner 7.87:1, ink/pale band 15.44:1. This is not a claim of whole-book accessibility compliance.
+- Created an original front-cover concept using vector typography and eight interwoven conversation paths. Dark teal, warm ivory, and a decorative copper accent connect the cover to the interior without introducing stock imagery.
+- Replaced bright-green text/banner defaults with a shared dark-teal palette. Default text contrast ratios: accent/white 7.26:1, white/banner 11.73:1, ink/pale band 13.11:1. This is not a claim of whole-book accessibility compliance.
 - Fixed a duplicated chapter heading in the Word/PDF rendering path: one navigable heading now appears per chapter, not an extra fused “Chapter1Speaking…” line beneath it.
 - Fixed table grid/cell width disagreement. Column widths now reserve space for complete words and distribute remaining space by content. Table text is smaller, left-aligned, and header rows repeat when PDF tables continue across pages.
 - Connected instructions to the following content to reduce stranded directions at page bottoms.

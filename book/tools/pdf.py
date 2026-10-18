@@ -45,7 +45,7 @@ M_IN, M_OUT = 0.82 * IN, 0.72 * IN
 TEXT_W = PAGE_W - M_IN - M_OUT
 GUTTER_SHIFT = M_IN - M_OUT          # mirrored-margin offset applied to verso pages
 
-INK = colors.HexColor('#14181A')
+INK = colors.HexColor('#182B30')
 # ---- original manuscript visual identity (audited from Master Speaking.docx)
 from design import BAND as BAND_HEX, BANNER as BANNER_HEX, ACCENT as TEAL_HEX
 BAND = colors.HexColor('#' + BAND_HEX)
@@ -54,10 +54,10 @@ ACCENT_HEX = '#' + TEAL_HEX
 ACCENT = colors.HexColor(ACCENT_HEX)
 BOX_GREEN = colors.HexColor('#B9E9B5')  # light-green box fill (U1-5 vocab, warm-ups)
 BOX_OLIVE = colors.HexColor('#BFDDAB')  # pale-olive box fill (U6-8 vocab)
-RULE = colors.HexColor('#A9D8A0')
-ZEBRA = colors.HexColor('#F0F8EC')
+RULE = colors.HexColor('#CBD9D9')
+ZEBRA = colors.HexColor('#F5F8F7')
 FILL_MAP = {'B9E9B5': BOX_GREEN, 'BFDDAB': BOX_OLIVE}
-SOFT = colors.HexColor('#5A6B66')
+SOFT = colors.HexColor('#52656A')
 
 SERIF, SANS, FALLBACK = 'SourceSerif', 'SourceSans', 'DejaVuSans'
 NS = {'x': 'http://www.w3.org/1999/xhtml'}
@@ -137,11 +137,11 @@ S = {}
 def build_styles():
     P = ParagraphStyle
     S['body'] = P('body', fontName=SERIF, fontSize=11, leading=15.6,
-                  alignment=TA_JUSTIFY, textColor=INK, spaceAfter=6.5,
+                  alignment=TA_LEFT, textColor=INK, spaceAfter=6.5,
                   hyphenationLang='en_US', allowWidows=0, allowOrphans=0,
                   embeddedHyphenation=1)
     S['reading'] = P('reading', parent=S['body'], leading=15.6)
-    S['instr'] = P('instr', fontName=SANS+'-I', fontSize=10, leading=13.6,
+    S['instr'] = P('instr', fontName=SANS, fontSize=10, leading=13.6,
                    textColor=SOFT, alignment=TA_LEFT, spaceBefore=2, spaceAfter=5,
                    hyphenationLang='en_US', allowWidows=0, allowOrphans=0, keepWithNext=1)
     S['label'] = P('label', fontName=SANS+'-SB', fontSize=9.6, leading=13.5,
@@ -169,8 +169,7 @@ def build_styles():
     S['note'] = P('note', fontName=SERIF+'-I', fontSize=9.8, leading=14,
                   textColor=SOFT, leftIndent=2, rightIndent=4, alignment=TA_LEFT)
     S['sec'] = P('sec', fontName=SANS+'-SB', fontSize=13, leading=16,
-                 textColor=INK, backColor=BAND,
-                 borderPadding=(2.5, 5, 3.5, 5),
+                 textColor=ACCENT,
                  spaceBefore=16, spaceAfter=6, keepWithNext=1)
     S['sub'] = P('sub', fontName=SANS+'-SB', fontSize=10.8, leading=14,
                  textColor=ACCENT, spaceBefore=11, spaceAfter=3.5, keepWithNext=1)
@@ -180,20 +179,18 @@ def build_styles():
                           leading=18.5, spaceBefore=6, spaceAfter=7, keepWithNext=1)
     S['unitkicker'] = P('unitkicker', fontName=SANS+'-SB', fontSize=12.5, leading=15,
                         textColor=ACCENT, spaceAfter=8)
-    S['unittitle'] = P('unittitle', fontName=SERIF+'-B', fontSize=27, leading=31,
-                       textColor=INK, backColor=BAND,
-                       borderPadding=(3, 6, 5, 6), spaceAfter=8)
+    S['unittitle'] = P('unittitle', fontName=SERIF+'-B', fontSize=29, leading=33,
+                       textColor=INK, spaceAfter=8)
     S['chapkicker'] = P('chapkicker', fontName=SANS+'-SB', fontSize=10.5, leading=13,
                         textColor=ACCENT, spaceAfter=5)
-    S['chaptitle'] = P('chaptitle', fontName=SERIF+'-B', fontSize=17.5, leading=21.5,
-                       textColor=BANNER, spaceAfter=6)
+    S['chaptitle'] = P('chaptitle', fontName=SERIF+'-B', fontSize=22, leading=26,
+                       textColor=BANNER, spaceAfter=10)
     S['chapterfocus'] = P('chapterfocus', fontName=SANS, fontSize=10, leading=13.5,
                            textColor=SOFT, spaceAfter=9, keepWithNext=1)
     S['warmhead'] = P('warmhead', fontName=SANS+'-SB', fontSize=11, leading=14,
                       textColor=ACCENT, spaceAfter=4)
-    S['fmhead'] = P('fmhead', fontName=SERIF+'-B', fontSize=19, leading=24,
-                    textColor=colors.white, backColor=BANNER,
-                    borderPadding=(3, 6, 4, 6), spaceAfter=14, alignment=TA_LEFT)
+    S['fmhead'] = P('fmhead', fontName=SERIF+'-B', fontSize=25, leading=30,
+                    textColor=BANNER, spaceAfter=14, alignment=TA_LEFT)
     S['fmsub'] = P('fmsub', fontName=SANS+'-SB', fontSize=11.5, leading=15,
                    textColor=ACCENT, spaceBefore=10, spaceAfter=5, keepWithNext=1)
     S['fmsub2'] = P('fmsub2', fontName=SANS+'-SB', fontSize=10.5, leading=14,
@@ -214,11 +211,10 @@ def build_styles():
                       textColor=SOFT)
     S['toc0'] = P('toc0', fontName=SANS+'-SB', fontSize=10.5, leading=14, spaceBefore=3)
     S['toc1'] = P('toc1', fontName=SERIF, fontSize=9.7, leading=12.2, leftIndent=18)
-    S['tochead'] = P('tochead', fontName=SERIF+'-B', fontSize=19, leading=24,
-                     textColor=colors.white, backColor=BANNER,
-                     borderPadding=(3, 6, 4, 6), spaceAfter=16)
+    S['tochead'] = P('tochead', fontName=SERIF+'-B', fontSize=26, leading=32,
+                     textColor=BANNER, spaceAfter=16)
     S['tabhead'] = P('tabhead', fontName=SANS+'-SB', fontSize=8.8, leading=11.5,
-                     textColor=INK, alignment=TA_LEFT)
+                     textColor=colors.white, alignment=TA_LEFT)
     S['tabcell'] = P('tabcell', fontName=SERIF, fontSize=9.2, leading=12.2,
                      textColor=INK, alignment=TA_LEFT)
     S['guidebullet'] = P('guidebullet', fontName=SANS, fontSize=10, leading=13,

@@ -21,7 +21,7 @@
   },
   "word": {
     "exit_code": 0,
-    "stdout_tail": "sections 2 | styles used 29 | tables 60 | images 24\nunit headings: ['Unit 1 \u00b7 The Power of Comm', 'Unit 2 \u00b7 The Art of Goal S', 'Unit 3 \u00b7 Emotional Intelli'] ...\nOK\n",
+    "stdout_tail": "sections 2 | styles used 29 | tables 60 | images 24\nunit headings: ['Unit 1 \u00b7\\nThe Power of Comm', 'Unit 2 \u00b7\\nThe Art of Goal S', 'Unit 3 \u00b7\\nEmotional Intelli'] ...\nOK\n",
     "stderr_tail": ""
   },
   "fidelity": {
@@ -31,17 +31,17 @@
   },
   "print": {
     "exit_code": 0,
-    "stdout_tail": "pages: 165   units at: {1: 9, 2: 27, 3: 45, 4: 65, 5: 85, 6: 105, 7: 125, 8: 145}   main_start: 9\nimages placed: 24  (effective dpi min-max: 122-588)\nimages below 150 dpi effective: 2 -> [(27, 122), (29, 143)]\n--- 0 issues ---\n",
+    "stdout_tail": "pages: 167   units at: {1: 9, 2: 27, 3: 45, 4: 65, 5: 85, 6: 105, 7: 125, 8: 147}   main_start: 9\nimages placed: 24  (effective dpi min-max: 122-588)\nimages below 150 dpi effective: 2 -> [(27, 122), (29, 143)]\n--- 0 issues ---\n",
     "stderr_tail": ""
   },
   "proof": {
     "exit_code": 0,
-    "stdout_tail": "165 pages proofed, 0 issues\nOK\n",
+    "stdout_tail": "167 pages proofed, 0 issues\nOK\n",
     "stderr_tail": ""
   },
   "preflight": {
     "exit_code": 0,
-    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 165\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (9):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 122.4\u2013587.8\n- Annotations: none\n\n## Issues (0)\nissues: 0\n",
+    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 167\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (8):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 122.4\u2013587.8\n- Annotations: none\n\n## Issues (0)\n- none \u2014 PASS\nissues: 0\n",
     "stderr_tail": ""
   },
   "epub": {
@@ -51,12 +51,12 @@
   },
   "epubcheck": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-17-2026 16:06:07\",\n    \"elapsedTime\": 4245,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
+    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 03:18:39\",\n    \"elapsedTime\": 5866,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
     "stderr_tail": ""
   },
   "visual": {
     "exit_code": 0,
-    "stdout_tail": "165 pages, 79 spreads, flags: 0\nOK\n",
+    "stdout_tail": "167 pages, 80 spreads, flags: 0\nOK\n",
     "stderr_tail": ""
   },
   "publication": {

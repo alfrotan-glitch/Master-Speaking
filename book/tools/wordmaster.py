@@ -38,10 +38,10 @@ XH = 'http://www.w3.org/1999/xhtml'
 SERIF = 'Source Serif 4'
 SANS = 'Source Sans 3'
 # ---- original manuscript visual identity (audited from Master Speaking.docx)
-from design import BAND, BANNER, ACCENT as ACCENT_HEX
+from design import BAND, BANNER, RULE, ZEBRA, INK as INK_HEX, MUTED, ACCENT as ACCENT_HEX
 ACCENT = RGBColor.from_string(ACCENT_HEX)
-INK = RGBColor(0x14, 0x18, 0x1A)
-GRAY = RGBColor(0x5A, 0x6B, 0x66)
+INK = RGBColor.from_string(INK_HEX)
+GRAY = RGBColor.from_string(MUTED)
 WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 BOX_GREEN = 'B9E9B5'  # light-green box fill
 BOX_OLIVE = 'BFDDAB'  # pale-olive box fill (U6-8)
@@ -144,29 +144,29 @@ fmt(pstyle('MS Guide Heading'), SANS, 10.5, bold=True, color=ACCENT,
     before=9, after=4, keep_next=True)
 
 # front matter display styles
-fmt(pstyle('MS Book Title'), SERIF, 30, bold=True, color=INK,
-    align=WD_ALIGN_PARAGRAPH.CENTER, before=120, after=18, line=1.05)
-fmt(pstyle('MS Author'), SANS, 15, color=GRAY,
-    align=WD_ALIGN_PARAGRAPH.CENTER, before=6, after=6)
+fmt(pstyle('MS Book Title'), SERIF, 46, bold=True, color=INK,
+    align=WD_ALIGN_PARAGRAPH.LEFT, before=110, after=18, line=1.05)
+fmt(pstyle('MS Author'), SANS, 12, color=GRAY,
+    align=WD_ALIGN_PARAGRAPH.LEFT, before=6, after=6)
 fmt(pstyle('MS Copyright Line'), SERIF, 9.5, color=INK,
     align=WD_ALIGN_PARAGRAPH.CENTER, after=5, line=1.25)
-fmt(pstyle('MS FM Head', base='Heading 1'), SANS, 19, bold=True, color=WHITE,
+fmt(pstyle('MS FM Head', base='Heading 1'), SERIF, 25, bold=True, color=RGBColor.from_string(BANNER),
     before=18, after=10, page_break=True, keep_next=True)
 fmt(pstyle('MS FM Sub', base='Heading 2'), SANS, 12.5, bold=True, color=ACCENT,
     before=12, after=5, page_break=False, keep_next=True)
 fmt(pstyle('MS Epigraph'), SERIF, 12.5, italic=True, color=INK,
     align=WD_ALIGN_PARAGRAPH.CENTER, before=90, after=6, line=1.3,
     page_break=True)
-fmt(pstyle('MS TOC Heading'), SANS, 19, bold=True, color=WHITE, after=12)
+fmt(pstyle('MS TOC Heading'), SERIF, 25, bold=True, color=RGBColor.from_string(BANNER), after=12)
 
 # unit + chapter (structural H1 / H2)
-fmt(pstyle('MS Unit Title', base='Heading 1'), SANS, 25, bold=True, color=INK,
+fmt(pstyle('MS Unit Title', base='Heading 1'), SERIF, 29, bold=True, color=INK,
     before=36, after=10, page_break=True, keep_next=True, line=1.05)
-fmt(pstyle('MS Chapter Title', base='Heading 2'), SANS, 16, bold=True,
+fmt(pstyle('MS Chapter Title', base='Heading 2'), SERIF, 22, bold=True,
     color=RGBColor.from_string(BANNER), before=6, after=10, page_break=True,
     keep_next=True)
 fmt(pstyle('MS Chapter Focus'), SANS, 10, color=GRAY, after=9, keep_next=True)
-fmt(pstyle('MS Section', base='Heading 3'), SANS, 12, bold=True, color=INK,
+fmt(pstyle('MS Section', base='Heading 3'), SANS, 13, bold=True, color=ACCENT,
     before=15, after=4, keep_next=True)
 fmt(pstyle('MS Subsection', base='Heading 4'), SANS, 10.5, bold=True,
     color=INK, before=11, after=3, keep_next=True)
@@ -174,9 +174,9 @@ fmt(pstyle('MS Reading Title', base='Heading 4'), SERIF, 12.5, bold=True,
     italic=False, color=INK, before=12, after=5, keep_next=True)
 
 # body
-fmt(pstyle('MS Body'), SERIF, 11, align=WD_ALIGN_PARAGRAPH.JUSTIFY,
+fmt(pstyle('MS Body'), SERIF, 11, align=WD_ALIGN_PARAGRAPH.LEFT,
     after=6, line=1.4)
-fmt(pstyle('MS Instruction'), SANS, 10, italic=True, color=GRAY,
+fmt(pstyle('MS Instruction'), SANS, 10, italic=False, color=GRAY,
     after=5, line=1.15, keep_next=True)
 fmt(pstyle('MS Label'), SANS, 10.5, bold=True, color=INK, after=4, keep_next=True)
 fmt(pstyle('MS Topic'), SANS, 10.5, bold=True, color=INK, after=5)
@@ -217,14 +217,18 @@ def style_left_border(name, color='0E6E5C', sz=16):
     pbdr.append(left)
     ppr.append(pbdr)
 
-style_left_border('MS Reading', color='B9E9B5')
-style_left_border('MS Note', color='B9E9B5')
+# Passages use clear whitespace rather than a continuous vertical rail.
+style_left_border('MS Note', color=ACCENT_HEX, sz=12)
 # original green identity: banner + band shading
-style_shading('MS FM Head', BANNER)
 style_shading('MS Topic', BAND)
-style_shading('MS TOC Heading', BANNER)
-style_shading('MS Section', BAND)
-style_shading('MS Unit Title', BAND)
+# A quiet rule, not a filled band, separates exercise sections.
+section_border = OxmlElement('w:pBdr')
+bottom = OxmlElement('w:bottom')
+for key, value in [('val','single'), ('sz','4'), ('space','4'), ('color',RULE)]:
+    bottom.set(qn('w:'+key), value)
+section_border.append(bottom)
+S['MS Section'].element.get_or_add_pPr().append(section_border)
+
 
 # bullets: restyle the built-in List Bullet
 lb = S['List Bullet']
@@ -246,7 +250,7 @@ for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
     b = OxmlElement(f'w:{edge}')
     b.set(qn('w:val'), 'single')
     b.set(qn('w:sz'), '4')
-    b.set(qn('w:color'), 'A9D8A0')
+    b.set(qn('w:color'), RULE)
     borders.append(b)
 tblpr.append(borders)
 cellmar = OxmlElement('w:tblCellMar')
@@ -263,7 +267,7 @@ rpr = OxmlElement('w:rPr')
 rb = OxmlElement('w:b')
 rpr.append(rb)
 rc = OxmlElement('w:color')
-rc.set(qn('w:val'), '0F1115')
+rc.set(qn('w:val'), 'FFFFFF')
 rpr.append(rc)
 rf = OxmlElement('w:rFonts')
 for a in ('w:ascii', 'w:hAnsi'):
@@ -275,7 +279,7 @@ csp.append(cpr)
 tcpr = OxmlElement('w:tcPr')
 shd = OxmlElement('w:shd')
 shd.set(qn('w:val'), 'clear')
-shd.set(qn('w:fill'), '7BE1D0')
+shd.set(qn('w:fill'), BANNER)
 tcpr.append(shd)
 csp.append(tcpr)
 tstyle.element.append(csp)
@@ -436,16 +440,14 @@ def render_table(tbl_el):
             par.paragraph_format.space_after = Pt(2)
             par.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.LEFT
             par.add_run(txt)
-            if tbl_fill in (BOX_GREEN, BOX_OLIVE):
-                # original identity: solid pastel box, white separators,
-                # dark bold header row (direct shading overrides the band)
-                set_cell_fill(cell, tbl_fill)
-                if row_index < len(header):
-                    for r in par.runs:
-                        r.font.bold = True
-                        r.font.name = SANS
-    if tbl_fill in (BOX_GREEN, BOX_OLIVE):
-        set_table_white_borders(t)
+            # Modern, low-ink tables: dark header, white/zebra rows.
+            is_head = row_index < len(header)
+            set_cell_fill(cell, BANNER if is_head else (ZEBRA if row_index % 2 == 0 else 'FFFFFF'))
+            if is_head:
+                for run in par.runs:
+                    run.font.bold = True
+                    run.font.name = SANS
+                    run.font.color.rgb = WHITE
     add_par('', 'MS Body').paragraph_format.space_after = Pt(2)
 
 def render_blocks(el, ctx=None):
@@ -660,7 +662,12 @@ for f in (sec2.footer, sec2.even_page_footer):
 for unit in body.findall('x:section[@class="unit"]', NS):
     unum = unit.get('data-unit')
     uname = text_of(unit.find('.//x:span[@class="unit-name"]', NS))
-    add_par(f'Unit {unum} · {uname}', 'MS Unit Title')
+    display = add_par(style='MS Unit Title')
+    kicker = display.add_run(f'Unit {unum} ·\n')
+    kicker.font.name = SANS
+    kicker.font.size = Pt(10)
+    kicker.font.color.rgb = ACCENT
+    display.add_run(uname)
     fig = unit.find('x:figure', NS)
     if fig is not None:
         for im in fig.findall('.//x:img', NS):
@@ -671,7 +678,7 @@ for unit in body.findall('x:section[@class="unit"]', NS):
         wt.autofit = False
         wcell = wt.cell(0, 0)
         wcell.width = Inches(TEXT_W_IN)
-        set_cell_fill(wcell, BOX_GREEN)
+        set_cell_fill(wcell, BAND)
         set_table_white_borders(wt)
         first = wcell.paragraphs[0]
         first.style = S['MS Topic']
@@ -698,7 +705,12 @@ for unit in body.findall('x:section[@class="unit"]', NS):
     for ch in unit.findall('x:section[@class="chapter"]', NS):
         cnum = ch.get('data-chapter')
         cname = text_of(ch.find('.//x:span[@class="chapter-name"]', NS))
-        add_par(f'Chapter {cnum} · {cname}', 'MS Chapter Title')
+        display = add_par(style='MS Chapter Title')
+        kicker = display.add_run(f'Chapter {cnum} ·\n')
+        kicker.font.name = SANS
+        kicker.font.size = Pt(9.5)
+        kicker.font.color.rgb = ACCENT
+        display.add_run(cname)
         render_blocks(ch)
 
 doc.save(OUT)

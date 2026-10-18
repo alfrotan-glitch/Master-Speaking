@@ -1,14 +1,13 @@
 # Print Preflight Report — Master Speaking (7×10 in)
 
 - PDF version: PDF 1.4
-- Pages: 165
+- Pages: 167
 - Page size: 504 × 720 pt (7 × 10 in) — all pages uniform
 - Encrypted: False
 - Metadata: title='Master Speaking', author='Abdul Raziq Nazari'
-- Fonts (9):
+- Fonts (8):
     - AAAAAA+DejaVuSans — TrueType, embedded ext=ttf
     - AAAAAA+SourceSans3-Bold — TrueType, embedded ext=ttf
-    - AAAAAA+SourceSans3-It — TrueType, embedded ext=ttf
     - AAAAAA+SourceSans3-Regular — TrueType, embedded ext=ttf
     - AAAAAA+SourceSans3-Semibold — TrueType, embedded ext=ttf
     - AAAAAA+SourceSerif4-Bold — TrueType, embedded ext=ttf

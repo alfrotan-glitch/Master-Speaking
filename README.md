@@ -13,6 +13,7 @@ English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB e
 - [Editorial and publication review](PUBLICATION-READINESS.md)
 - [Final language and typography review](FINAL-EDITORIAL-REVIEW.md)
 - [Whole-book critical audit and remediation](WHOLE-BOOK-AUDIT.md)
+- [Modern redesign and visual review](DESIGN-REVIEW.md)
 - [Current QA results](QA-REPORT.md) and [text change log](CHANGELOG.md)
 
 This revision restores a previously truncated AI question, applies reviewed learner-facing copyedits, adds practical learning/research guidance without production commentary, improves default text contrast, and repairs chapter/table/title-page rendering. **It is an editorial proof, not a commercially cleared release.** Exact listening inputs, image permissions, factual substantiation, and final printer/device proofs remain open.

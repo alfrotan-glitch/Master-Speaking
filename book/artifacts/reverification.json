@@ -98,5 +98,6 @@
   "original_manuscript_unchanged": true,
   "ok": true,
   "limit": "Passing defined checks is not commercial clearance, a complete human proof, or verification of all answers, recordings, claims, rights, native Word pagination or accessibility.",
-  "environment_note": "Missing session dependencies were restored with bootstrap.sh before this successful rerun."
+  "environment_note": "Missing session dependencies were restored with bootstrap.sh before this successful rerun.",
+  "status": "Historical pre-redesign recheck; superseded for current export fingerprints by redesign-review.json and qa_october_run.json"
 }

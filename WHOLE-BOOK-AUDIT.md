@@ -1,6 +1,6 @@
 # Whole-book critical audit and remediation
 
-17 October 2026 • Master Speaking
+18 October 2026 • Master Speaking
 
 ## Decision
 
@@ -12,11 +12,11 @@ The reader-facing book contains the course, not this audit or the production dis
 
 ## Current edition and measured evidence
 
-- Print interior: **165 pages**, 7 × 10 inches; reader edition: **166 pages**, including the separate front cover.
+- Print interior: **167 pages**, 7 × 10 inches; reader edition: **168 pages**, including the separate front cover.
 - **14 release gates pass**, including official EPUBCheck **5.3.0**, with zero errors and zero warnings.
 - Lesson checks cover **32 chapters**, **88 multiple-choice groups** for stem/option organization, **36 source vocabulary sentences** across seven exercises, **eight reading openings**, **ten primary-stress models**, and **eight unit-review tasks**. Unit 8 retains its different vocabulary-discussion activity; a new fill-in exercise was not fabricated to make it uniform.
 - Full normalized export coverage checks **3,482 semantic text blocks**, with minimum occurrence counts. Defined case-sensitive stress and Unicode IPA examples are checked separately in Word, PDF and EPUB. This is not proof of every punctuation mark, semantic order, answer, or phonetic symbol.
-- All 165 pages have thumbnail renders; 47 selected full-size proof pages include all 32 chapter openings and the corrected comparison, stress table, weak-form examples, short-answer boundary and unit-review pages. A thumbnail is not a line-by-line proof. Selected revised pages were inspected at readable size.
+- All 167 pages have thumbnail renders; 47 selected full-size proof pages include all 32 chapter openings and the corrected comparison, stress table, weak-form examples, short-answer boundary and unit-review pages. A thumbnail is not a line-by-line proof. Selected revised pages were inspected at readable size.
 - The separate classroom and companion export checks also pass. They remain separate materials; their passing status does not authenticate the original video lessons.
 
 ## Work completed in this pass
@@ -99,11 +99,13 @@ The comparison verifies the intended primary-stress syllable in that US English 
 | High | Factual and specialist review | Remaining money/psychology/relationship/technology/language claims need appropriate substantiation; pronunciation, language and full exercise answerability require independent review. No complete eight-unit main-book answer key is certified. |
 | High | Word contents and native output | Cached Word contents have labels, not verified native page numbers. Refresh/save/export in native Word with the intended fonts and compare. Do not insert PDF folios as if they were native Word results. |
 | High | Accessibility and devices | PDF structural tagging is absent; meaningful instructional alt text, keyboard/screen-reader order and reader/device behavior need specialist testing. EPUBCheck is format validation, not accessibility certification. |
-| High | Print manufacturing | Two images remain at roughly 122/143 effective dpi. The 165-page interior needs the printer’s signature/page-count decision, possibly a final blank. Confirm wrap, bleed, stock, spine and color requirements, and approve a physical proof. No upscaling has been represented as recovered detail. |
+| High | Print manufacturing | Two images remain at roughly 122/143 effective dpi. The 167-page interior needs the printer’s signature/page-count decision, possibly a final blank. Confirm wrap, bleed, stock, spine and color requirements, and approve a physical proof. No upscaling has been represented as recovered detail. |
 | High | Human proof and pilot | A signed full editorial proof and representative learner trial remain outstanding. Plans and automated checks do not establish teaching effectiveness or a certified proficiency level. |
 | Publishing | Authority and metadata | Verify imprint authority, quotation attribution, edition/distribution details and ISBN ownership if needed. |
 
 The current release-condition register is `UNRESOLVED-ISSUES.md`. All historical “no problems” or world-best interpretations are rejected: the proper outcome is evidence-backed improvement with clear closure conditions.
+
+The defect descriptions above retain the editorial-pass folio references; current pagination after the design pass is listed below.
 
 ## Current unit opener pagination
 
@@ -116,15 +118,15 @@ The current release-condition register is `UNRESOLVED-ISSUES.md`. All historical
 | Unit 5 · Living with AI | 77 | 85 |
 | Unit 6 · Is Love Enough? | 97 | 105 |
 | Unit 7 · Globalization | 117 | 125 |
-| Unit 8 · Lingua Franca | 137 | 145 |
+| Unit 8 · Lingua Franca | 139 | 147 |
 
-## Audited export fingerprints
+## Audited export fingerprints — modern redesign, 18 October 2026
 
 These hashes identify the rebuilt exports reviewed here, not the older snapshot in `STRICT-AUDIT.md`.
 
 | File | SHA-256 |
 |---|---|
-| `Master-Speaking.pdf` | `247428c3ca5672c868bbf8ecf810f03db98a2c3a2c9c4b20e3161ae6cf8dd0a2` |
-| `Master-Speaking-print-7x10.pdf` | `992d1105196c38597d4eaa8e4f5a86c24fa5b8cf34f63c79b138ab690ed60d39` |
-| `Master-Speaking-7x10.docx` | `60c5428184c2adab30daa1e8312da704c6fb029ee5c5f9131adff5c2a0f1e0ae` |
-| `Master-Speaking.epub` | `cc4b96117b0baef60cd829d76470488e07e4d2bf76f9034039d80ea7f2c93276` |
+| `Master-Speaking.pdf` | `2021246090e72a06ab6fca8b51390fb32259b35f3f46b6e63dedfa1c48e93543` |
+| `Master-Speaking-print-7x10.pdf` | `45e545fda9a323758b2ea8a80b91bc7c702f33fd8b0292d19053cc8fc05a2ade` |
+| `Master-Speaking-7x10.docx` | `976f2de001d6cbbe4d25e9835da4958ca56c381d935ce9413470ebf7e4c44330` |
+| `Master-Speaking.epub` | `9aec13ee09a295c8233e15e8736086e082bde9a6678a5e36ec33f66f8541d994` |

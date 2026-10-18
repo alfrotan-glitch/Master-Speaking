@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-18",
+  "interior_pages": 167,
+  "reader_pages": 168,
+  "semantic_content_sha256": "c31b0b0ec48f81275bfb229b692f26161e535aa8b7a749b4e8616a157b4899c5",
+  "semantic_content_unchanged": true,
+  "release_checks": {
+    "revision": 0,
+    "lessons": 0,
+    "content": 0,
+    "editorial": 0,
+    "word": 0,
+    "fidelity": 0,
+    "print": 0,
+    "proof": 0,
+    "preflight": 0,
+    "epub": 0,
+    "epubcheck": 0,
+    "visual": 0,
+    "publication": 0,
+    "chapters": 0
+  },
+  "all_page_overviews_inspected": true,
+  "readable_pages_inspected": [
+    10,
+    22,
+    80,
+    167
+  ],
+  "cover_inspected": true,
+  "render_manifest": "book/qa/edition-review/index.json",
+  "limitations": "Not a signed independent human line-by-line proof, native Word pagination proof, device test, or commercial clearance.",
+  "sha256": {
+    "Master-Speaking.pdf": "2021246090e72a06ab6fca8b51390fb32259b35f3f46b6e63dedfa1c48e93543",
+    "Master-Speaking-Reading-Edition.pdf": "2021246090e72a06ab6fca8b51390fb32259b35f3f46b6e63dedfa1c48e93543",
+    "Master-Speaking-print-7x10.pdf": "45e545fda9a323758b2ea8a80b91bc7c702f33fd8b0292d19053cc8fc05a2ade",
+    "Master-Speaking-7x10.docx": "976f2de001d6cbbe4d25e9835da4958ca56c381d935ce9413470ebf7e4c44330",
+    "Master-Speaking.epub": "9aec13ee09a295c8233e15e8736086e082bde9a6678a5e36ec33f66f8541d994",
+    "Master-Speaking-Front-Cover.pdf": "43b25f08e4e0881094d563b632662bb262c6f629b4f8431f9adef6a95578a80d",
+    "Master Speaking.docx": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184"
+  }
+}

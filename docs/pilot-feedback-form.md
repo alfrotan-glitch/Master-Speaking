@@ -15,6 +15,7 @@ Class / group: __________  Date: __________  Lessons covered: __________
 | The practice exercises prepared me for the speaking tasks | | | | | |
 | I spoke English most of the time in pair/group work | | | | | |
 | I can now use the target grammar in free conversation | | | | | |
+| I feel more confident speaking English than before this lesson/course | | | | | |
 | The self-check helped me see what I still need to work on | | | | | |
 
 1. Which lesson helped you most? Why? ______________________________

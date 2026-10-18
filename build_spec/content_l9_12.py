@@ -27,8 +27,7 @@ L9 = {
         {'label': 'Rule 2 — When to use the passive',
          'formula': ["Use the passive when: the result matters more · the doer is unknown, obvious, "
                      "or general ('people', 'they') · you want objective or formal tone"],
-         'text': ["News, reports, science and professional English use the passive constantly — "
-                  "because they describe events and processes, not people."],
+         'text': ["News, reports, research and professional communication often use the passive to focus on events or processes. The agent may be left out when it is unknown or unimportant, or included in a by-phrase when it matters."],
          'examples': ["Mistakes were made in the report.  (polite — no blame)",
                       "The vaccine is being tested in several countries.",
                       "The meeting has been postponed until Monday."],
@@ -46,7 +45,7 @@ L9 = {
     'differences': [
         {'title': 'active vs passive: what changes?',
          'rows': [
-             ["Someone attacked the man.", "The man was attacked.", "The passive hides the attacker — the event and its result take focus."],
+             ["Someone attacked the man.", "The man was attacked.", "The passive can omit the agent — the event or result takes focus. Add a by-phrase if the agent matters."],
              ["The committee approved the plan.", "The plan was approved.", "Formal and objective: the decision matters, not the committee."],
          ], 'headers': ['Active', 'Passive', 'Why']},
         {'title': 'get-passive vs be-passive',
@@ -257,7 +256,7 @@ L11 = {
          'examples': ["I enjoy reading before bed.",
                       "He avoided making eye contact.",
                       "Would you mind opening the window?"],
-         'remember': ["'mind' always takes -ing: 'Do you mind waiting?'"]},
+         'remember': ["When a verb follows mind directly, use -ing: 'Do you mind waiting?' Other patterns exist, such as 'Would you mind if I opened the window?'" ]},
         {'label': 'Rule 2 — Verbs that take the infinitive (to + verb)',
          'formula': ["agree · decide · hope · intend · learn · manage · offer · plan · promise · "
                      "refuse · seem · tend · want · would like  +  to + base verb"],

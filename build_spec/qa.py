@@ -6,6 +6,7 @@ import sys, os, re
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from docx import Document
 from docx.oxml.ns import qn
+import content_l1_4, content_l5_8, content_l9_12, content_l13_16
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOCX = os.path.join(ROOT, 'Grammar for Special Speaking (TOEFL House).docx')
@@ -51,6 +52,22 @@ def main():
               sum(1 for t in texts if t.strip() == f"Part {i}  ·  {lab}") == 16)
     check("16 lesson titles match spec",
           all(f"LESSON {i}  ·  {t.upper()}" in blob for i, t in SPEC_TITLES.items()))
+    lessons = (content_l1_4.LESSONS_1_4 + content_l5_8.LESSONS_5_8 +
+               content_l9_12.LESSONS_9_12 + content_l13_16.LESSONS_13_16)
+    completeness = all(
+        L.get("hook") and L.get("rules") and L.get("differences") and
+        L.get("practice_a") and L.get("practice_b") and
+        L.get("pair", {}).get("task") and L.get("pair", {}).get("criteria") and
+        L.get("advanced", {}).get("base") and L.get("advanced", {}).get("upgrade") and
+        L.get("realtalk", {}).get("task") and L.get("realtalk", {}).get("feedback") and
+        L.get("review", {}).get("points") and L.get("review", {}).get("selfcheck")
+        for L in lessons)
+    check("all eight lesson functions contain usable content (source-data check)", completeness)
+    answer_alignment = all(
+        len(L["practice_a"]) == len((L.get("answers") or L["review"].get("answers", {})).get("A", [])) and
+        len(L["practice_b"]) == len((L.get("answers") or L["review"].get("answers", {})).get("B", []))
+        for L in lessons)
+    check("lesson controlled-practice items align with answer-key counts", answer_alignment)
     # document order
     order = []
     for t in texts:
@@ -121,13 +138,56 @@ def main():
     for name, scope, banned in leak:
         hits = [w for w in banned if w.lower() in scope.lower()]
         check(f"{name} scope clean (no untaught grammar) {hits if hits else ''}", not hits)
+    check("Review Test 1 excludes Lesson 5 conditionals and Lesson 8 concession linkers",
+          not re.search(r"\b(despite|although|second conditional|if I were you)\b", t1, re.I))
+    check("diagnostic, review-test, and final-test keys are kept separate from test items",
+          all("Answer key" not in scope for scope in (walk_between("DIAGNOSTIC TEST", "LESSON 1"), t1, t2, t3,
+                                                       walk_between("FINAL ASSESSMENT", "FINAL ASSESSMENT — PART 2"))))
     # banned language
     check("no scheduling words", not re.search(r"\b(Day \d|Week \d|MONTH \d|teaching days)\b", blob))
     check("no Master Speaking references", not re.search(r"Master Speaking", blob, re.I))
     check("no unearned claims", not re.search(r"expert-verified|publication-ready|pedagogically validated", blob, re.I))
     check("zero decorative emojis", sum(1 for ch in blob if ord(ch) >= 0x1F300) == 0)
+    # comparable assessment and item-level coverage blueprint
+    check("diagnostic and final clearly reject raw-total gain claims",
+          "do not interpret the difference between their raw totals" in blob.lower() and
+          "do not compare the raw grammar totals as a measure of gain" in blob.lower())
+    check("baseline and final include matched speaking interaction",
+          blob.count("two follow-up questions") >= 2 and "relevant follow-up exchange" in blob)
+    matrix_path = os.path.join(ROOT, "docs", "final-assessment-coverage.md")
+    matrix = open(matrix_path, encoding="utf-8").read() if os.path.exists(matrix_path) else ""
+    check("item-level coverage matrix maps all 16 lessons",
+          all(re.search(rf"\|\s*{i}\.\s", matrix) for i in range(1, 17)) and
+          "Speaking task" in matrix and all(str(n) in matrix for n in range(1, 31)))
+    # DOCX navigation and page geometry
+    all_paras = list(doc.paragraphs)
+    for tbl in doc.tables:
+        for row in tbl.rows:
+            for cell in row.cells:
+                all_paras.extend(cell.paragraphs)
+    h1_count = sum(p.style.name.startswith("Heading 1") for p in all_paras)
+    h2_count = sum(p.style.name.startswith("Heading 2") for p in all_paras)
+    check("DOCX uses semantic heading levels for navigation", h1_count >= 20 and h2_count >= 128)
+    a4 = all(abs(s.page_width.inches - 8.27) < 0.03 and abs(s.page_height.inches - 11.69) < 0.03 for s in doc.sections)
+    check("DOCX pages use A4 dimensions", a4)
+    check("DOCX publication metadata identifies title and house", doc.core_properties.title == "Grammar for Special Speaking" and doc.core_properties.author == "TOEFL HOUSE")
+    check("DOCX contains an updateable page-numbered Word TOC field",
+          'TOC \\o "1-1"' in doc.element.xml and "updateFields" in doc.settings.element.xml)
     # known-defect regressions
     check("no 'Although being' error pattern", "Although being" not in blob)
+    check("Review Test 2 concession key avoids a dangling modifier",
+          "Despite the exam being hard" in blob and "Despite being hard, everyone passed" not in blob)
+    check("Diagnostic key accepts valid alternatives", all(x in blob for x in
+          ("has been working", "who / that", "may / might / could", "had / got")))
+    check("present-perfect guidance qualifies open time and recently", all(x in blob for x in
+          ("'Recently' can take either tense", "either tense can be natural")))
+    check("ordinary future if-clauses are qualified (not an absolute ban)",
+          "Will can occur in if-clauses" in blob and
+          "My if-clauses never contain 'will'." not in blob)
+    check("comparative/superlative guidance is not reduced to a rigid item count",
+          "Comparative for two; superlative for three or more" not in blob and
+          "comparatives compare two choices" in blob.lower())
+    check("question auxiliary rule allows non-subject exceptions", "Most direct English questions" in blob)
     check("guiding principle present", "Learn the grammar. Use it in conversation." in blob)
 
     print()

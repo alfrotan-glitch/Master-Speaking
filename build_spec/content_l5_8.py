@@ -16,19 +16,19 @@ L5 = {
     'rules': [
         {'label': 'Rule 1 — Zero and first conditional: real situations',
          'formula': ["Zero:  If + present simple, present simple   (facts)",
-                     "First:  If + present simple, will + base verb   (real future possibility)"],
+                     "First:  If + present simple, will + base verb   (ordinary real future possibility)"],
          'text': ["The zero conditional is for facts and automatic results. The first is for real "
                   "future possibilities and their consequences."],
-         'examples': ["If you heat ice, it melts.  (zero — always true)",
+         'examples': ["If you heat ice, it melts.  (zero — under ordinary conditions)",
                       "If it rains, we'll stay home.  (first — real possibility)"],
-         'remember': ["Never use 'will' in the if-clause: 'If it will rain' is wrong."]},
+         'remember': ["In an ordinary future condition, use present simple in the if-clause: 'If it rains, we'll stay home.' Do not use will just because the event is future. Will can occur in if-clauses with a meaning such as willingness, but that is a different pattern."]},
         {'label': 'Rule 2 — Second conditional: unreal or unlikely present',
          'formula': ["If + past simple, would + base verb",
                      "Use it for: imaginary situations · unlikely futures · advice"],
          'text': ["The second conditional imagines a different present — or a future that is unlikely."],
          'examples': ["If I were you, I'd accept the offer.  (advice)",
                       "If I had more time, I would learn the piano."],
-         'remember': ["'If I were you…' (were, not was) is the standard form in advice."]},
+         'remember': ["'If I were you…' is the conventional standard form in advice. Was also occurs in informal English: 'If I was you…'."]},
         {'label': 'Rule 3 — Third and mixed conditionals: unreal past',
          'formula': ["Third:  If + past perfect, would have + participle   (unreal past)",
                      "Mixed:  If + past perfect, would + base verb   (past cause → present result)",
@@ -61,7 +61,7 @@ L5 = {
          ], 'headers': ['Third conditional', 'Mixed (past → present)', 'The difference']},
     ],
     'practice_a': [
-        "If you __________ (heat) water to 100°C, it __________ (boil).",
+        "If you __________ (heat) pure water at sea level to 100°C, it __________ (boil).",
         "If it __________ (rain) tomorrow, we __________ (cancel) the trip.",
         "If I __________ (be) you, I __________ (apologise).",
         "If she __________ (leave) earlier, she __________ (not/miss) the train yesterday.",
@@ -106,13 +106,13 @@ L5 = {
     'review': {
         'points': ["Zero = facts; first = real future; second = unreal present; third = unreal past; mixed = two times.",
                    "'If I were you…' is the standard advice frame.",
-                   "Never use 'will' in the if-clause."],
+                   "In an ordinary future condition, use present simple in the if-clause."],
         'retrieval': ["Say one example of each conditional type (5 sentences).",
                       "Turn one past regret into a third conditional sentence."],
         'watch': ["'If it will rain…' → 'If it rains…'",
                   "'unless you don't hurry' → 'unless you hurry'"],
         'selfcheck': ["I can tell an unreal past situation (3rd) and a past→present link (mixed).",
-                      "My if-clauses never contain 'will'."],
+                      "I use present simple after if for ordinary future conditions."],
         'answers': {
             'A': ["heat / boils", "rains / will cancel (or: 'll cancel)", "were / would apologise",
                   "had left / wouldn't have missed", "knew / would call", "will go / stays"],
@@ -143,10 +143,10 @@ L6 = {
          'text': ["Use the past form for a present situation you want different. The time is now; "
                   "the grammar steps back one level."],
          'examples': ["I wish I spoke French fluently.  (I don't)",
-                      "I wish I were taller.  (were is common in formal use)",
+                      "I wish I were taller.  (were is the traditional subjunctive and common in careful English; was is also widespread informally: I wish I was taller.)",
                       "I wish I could help you.  (but I can't)"],
-         'remember': ["wish + would = complaint about someone else's behaviour: "
-                      "'I wish you would stop interrupting.'"]},
+         'remember': ["Use wish + would for a desired change in behaviour or situation, often one outside your control; it can sound like a complaint: "
+                      "'I wish you would stop interrupting.' For ability, use could: 'I wish I could help.'"]},
         {'label': 'Rule 2 — wish about the past (regret)',
          'formula': ["wish + past perfect   →  I wish I had studied.  (but I didn't)"],
          'text': ["For regrets about the past, use 'had + participle'. This is the grammar of "
@@ -266,7 +266,7 @@ L7 = {
          'formula': ["short adj: -er / -est  (big → bigger → the biggest)",
                      "long adj: more / the most  (more interesting → the most interesting)",
                      "irregular: good → better → the best  ·  bad → worse → the worst  ·  far → further → the furthest"],
-         'text': ["Use the comparative for two things; the superlative for three or more."],
+         'text': ["Use a comparative to compare two people, things or sets. Use a superlative to identify an extreme within a group, which often contains three or more. The exact number is a guide, not a grammatical rule: context and meaning decide."],
          'examples': ["This route is shorter than the other one.",
                       "This was the most difficult exam I've ever taken."],
          'remember': ["Double comparatives are wrong: 'more better' → 'better'. "
@@ -296,9 +296,9 @@ L7 = {
     'differences': [
         {'title': 'comparative + than vs superlative',
          'rows': [
-             ["This book is better than that one.", "This book is the best in the series.", "Two things vs three or more."],
+             ["This book is better than that one.", "This book is the best in the series.", "A comparative relates two choices; a superlative identifies an extreme in a group."],
              ["It is more expensive than mine.", "It is the most expensive option.", "Comparison vs top rank."],
-         ], 'headers': ['Comparative (two)', 'Superlative (three+)', 'Why']},
+         ], 'headers': ['Comparative', 'Superlative', 'How the meanings differ']},
         {'title': 'subtle patterns',
          'rows': [
              ["The sooner, the better.", "Sooner or later…", "Linked change vs 'eventually'."],
@@ -322,7 +322,7 @@ L7 = {
         "Upgrade the sentence with a degree word: 'This method is better than that one.'  (use far + reason)",
         "Build a 'the more … the more' sentence about learning English.",
         "Correct: 'This is better then that.'",
-        "Compare two cities you know — two sentences, one comparative, one superlative.",
+        "Compare three cities you know. Use a comparative to compare two and a superlative to identify your overall favourite.",
     ],
     'pair': {
         'intro': "The recommendation game. Each partner prepares a 30-second recommendation (a city, a book, "
@@ -352,7 +352,7 @@ L7 = {
                      "the conclusion states a clear choice"],
     },
     'review': {
-        'points': ["Comparative for two; superlative for three or more; 'as … as' for equality.",
+        'points': ["Comparatives compare two choices; superlatives identify an extreme within a group; 'as … as' shows equality.",
                    "'the + comparative, the + comparative' shows linked change.",
                    "Persuasive comparisons come with reasons and precise degree words."],
         'retrieval': ["Say one comparison with 'far', one with 'the more…the more'.",

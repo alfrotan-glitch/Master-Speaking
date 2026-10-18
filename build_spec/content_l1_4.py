@@ -33,14 +33,14 @@ L1 = {
         {'label': 'Rule 3 — Past simple vs present perfect',
          'formula': ["Past simple: verb-ed / irregular  →  a finished time",
                      "Subject + have/has + past participle  →  connected to now"],
-         'text': ["Use the past simple when the time is finished (yesterday, last year, in 2020, when I was a child).",
-                  "Use the present perfect when the time is unfinished (today, this week, recently, since 2021, for ten years) "
-                  "or when the exact time does not matter — the experience or the result matters."],
+         'text': ["Use the past simple for a finished time (yesterday, last year, in 2020, when I was a child).",
+                  "Use the present perfect for a time period that is still open (today, this week), for an experience or result connected to now, "
+                  "or for a situation that continues to now (often with since or for). 'Recently' can take either tense, depending on the time focus and variety of English."],
          'examples': ["I visited Bamyan last summer.  (finished)",
                       "I have visited Bamyan twice.  (experience — no finished time)",
                       "She has lived here since 2021.  (still true)"],
-         'remember': ["Never put a finished-time word with the present perfect: "
-                      "not 'I have seen him yesterday' → 'I saw him yesterday'."]},
+         'remember': ["In standard use, a finished-time expression normally takes the past simple: "
+                      "'I saw him yesterday.' Avoid 'I have seen him yesterday.' With 'recently', either tense can be natural: 'I've seen her recently' / 'I saw her recently'."]},
         {'label': 'Rule 4 — Talking about changes and the future',
          'formula': ["going to + base verb  →  plans and intentions",
                      "will + base verb  →  instant decisions, predictions, promises",
@@ -92,7 +92,7 @@ L1 = {
                      "asks one natural follow-up question"],
     },
     'advanced': {
-        'base': ["Drill the time words: yesterday / ago / in 2020 → past simple; since / for / recently / this week → present perfect.",
+        'base': ["Drill the time cues: yesterday / ago / in 2020 → past simple; since / for → present perfect when the situation continues to now; this week → often present perfect while the period is open.",
                  "Make three true sentences about yourself: one habit, one current project, one recent experience."],
         'upgrade': ["Use the present perfect continuous for the activity itself: 'I've been revising all morning.' (and I'm tired)",
                     "Use past simple + present perfect in one sentence: 'I failed twice, but I've learned from both failures.'",
@@ -117,7 +117,7 @@ L1 = {
         'selfcheck': ["I can talk about a habit, a current project and a past experience in one answer.",
                       "I chose past simple vs present perfect correctly in the practice."],
         'answers': {
-            'A': ["saw", "has worked", "are meeting", "has / been", "is snowing", "believes"],
+            'A': ["saw", "has worked / has been working", "are meeting", "has / been", "is snowing", "believes"],
             'B': ["I finished my homework last night.", "She knows the answer.",
                   "saw", "have you known", "I'm going to study medicine.", "answers vary"],
         },
@@ -244,8 +244,8 @@ L3 = {
          'formula': ["Yes/No question:  Auxiliary + subject + verb …?",
                      "Wh- question:  Wh- word + auxiliary + subject + verb …?",
                      "Auxiliaries: be · have · do · will · can · should · would …"],
-         'text': ["Every English question needs an auxiliary verb before the subject — "
-                  "except when the question word IS the subject."],
+         'text': ["Most direct English questions put an auxiliary verb before the subject. A subject question "
+                  "is a key exception: 'Who called you?' (who is the subject, so there is no inversion)."],
          'examples': ["Do you live here?  ·  Are you ready?  ·  Have you finished?",
                       "Where do you live?  ·  What happened?  (What = subject — no auxiliary inversion)",
                       "Who called you?  (Who = subject)"],
@@ -427,7 +427,7 @@ L4 = {
                      "a decision is reached and explained"],
     },
     'advanced': {
-        'base': ["Sort the modals by strength: must > have to > should > could > might.",
+        'base': ["Sort modals by job, not on one fixed scale: must be = strong deduction; should be = expectation; may/might/could be = possibilities. Compare the meaning in context.",
                  "Practise the three deductions: must be / might be / can't be — about people in the room."],
         'upgrade': ["Use 'must have + participle' for past deduction: 'You must have been exhausted.'",
                     "Use 'would' for polite preference: 'I'd suggest waiting.' · 'Would you prefer tea or coffee?'",

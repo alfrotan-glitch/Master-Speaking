@@ -1,71 +1,59 @@
 # Grammar for Special Speaking — TOEFL HOUSE
 
-**Authoritative manuscript:** `Grammar for Special Speaking (TOEFL House).docx` (editable master)  
-**Distribution edition:** `dist/Grammar for Special Speaking (TOEFL House).html` (print/digital-friendly)  
-**Build system:** `build_spec/` — regenerates both the manuscript and its QA gates.
-
 > **Learn the grammar. Use it in conversation. Make it part of your speech.**
 
-## Reproduce the deliverables (tested commands)
+A practical, independent grammar course for Intermediate and Advanced English learners. The maintained lesson and assessment data in `build_spec/` generate the editable DOCX, print PDF, and reflowable EPUB.
+
+## Final book files
+
+- [PDF — print and digital reading](dist/Grammar%20for%20Special%20Speaking%20%28TOEFL%20House%29.pdf)
+- [EPUB — reflowable ebook](dist/Grammar%20for%20Special%20Speaking%20%28TOEFL%20House%29.epub)
+- [DOCX — editable Word manuscript](dist/Grammar%20for%20Special%20Speaking%20%28TOEFL%20House%29.docx)
+- [HTML — browser/print fallback with in-page navigation](dist/Grammar%20for%20Special%20Speaking%20%28TOEFL%20House%29.html)
+
+The root-level `Grammar for Special Speaking (TOEFL House).docx` remains the generated working manuscript. The copy in `dist/` is the distribution file.
+
+## Rebuild from a clean checkout
+
+Requirements: Python 3.10 or newer, pip, and the system DejaVu Sans fonts (the `fonts-dejavu-core` package on Debian/Ubuntu). Install the font dependency with `sudo apt install fonts-dejavu-core`; the PDF embeds these Unicode-capable fonts. No Word installation is required to build the files.
 
 ```bash
 python3 -m venv .venv
-.venv/bin/pip install -r build_spec/requirements.txt
-.venv/bin/python build_spec/build.py      # rebuilds the .docx manuscript
-.venv/bin/python build_spec/qa.py         # 42 automated QA gates (exit 0 = pass)
-.venv/bin/pip install mammoth             # for the HTML distribution edition
-.venv/bin/python tools/build_html.py      # rebuilds dist/*.html
+.venv/bin/python -m pip install --upgrade pip
+.venv/bin/python -m pip install -r build_spec/requirements.txt
+.venv/bin/python tools/build_publication.py --all
 ```
 
-Verified on Python 3.11 with the requirements above. A clean checkout plus these
-commands rebuilds the manuscript from `build_spec/` sources (content-identical; the
-.docx container itself embeds build timestamps).
+`--all` rebuilds the root DOCX from `build_spec/`, copies it into `dist/`, creates the HTML edition, then generates the PDF and EPUB. Direct build commands are also available:
+
+```bash
+.venv/bin/python build_spec/build.py
+.venv/bin/python tools/build_html.py
+.venv/bin/python tools/build_publication.py
+```
+
+## Quality checks
+
+```bash
+.venv/bin/python build_spec/qa.py
+.venv/bin/python tools/validate_publication.py
+```
+
+The source QA checks syllabus titles, all 16 lesson frameworks, pathways, practice/answer-key counts, assessment order and scope, the final-assessment matrix, known grammar regressions, DOCX headings, and A4 layout. The publication validator checks editable DOCX structure, searchable A4 PDF text and bookmarks, EPUB XML/package/navigation/local links, and required-section consistency across formats.
+
+The DOCX has a native, updateable Word contents field and live page-number fields; compatible Word processors are asked to refresh fields on open. If the contents has not refreshed, select it and choose **Update Field / Update entire table**. The EPUB was checked with the project's XML/package/link validator and EbookLib's parser. **EPUBCheck was not available in this environment**, so no EPUBCheck result is claimed. The PDF was structurally checked and rendered for visual inspection at the beginning, contents, diagnostic/baseline, a lesson, a review test, the final assessment/rubric, and the answer-key/end pages. DOCX structure was checked, but rendered DOCX pages still need inspection in Word or LibreOffice.
 
 ## Book structure
 
-- **Front matter** — title, introduction & objectives, how to use (students & teachers,
-  two learning pathways, suggested lesson pacing), contents, diagnostic test (25 items)
-- **16 lessons** in 8 thematic parts — each with the standard framework:
-  1. The Speaking Hook · 2. The Simple Rule · 3. See the Difference · 4. Practice the Pattern
-  5. Pair Speaking · 6. The Advanced Upgrade · 7. Real Talk Challenge · 8. Review and Self-Check
-- **Two pathways in one classroom** — Intermediate (Build Accuracy) + Advanced (Build Flexibility)
-- **3 cumulative review tests** (after Lessons 4, 8, 12) + **Final Assessment**
-  (30-item grammar test + independent speaking task, rubric, error analysis & improvement plan)
-- **5 appendices** — Formula Book · Common Errors & Corrections Guide · Essential Sentence
-  Patterns · Speaking Self-Assessment & Can-Do Tracker · Complete Answer Key
+- Front matter, use guidance, baseline diagnostic and matched speaking sample
+- **16 lessons** in eight thematic Parts, each retaining the functional eight-part lesson framework
+- Intermediate accuracy pathway and Advanced flexibility pathway
+- Three cumulative review tests (Lessons 1–4, 1–8, and 1–12)
+- Final assessment: 30 written items, an item-level coverage matrix, and a matched speaking interaction/rubric
+- Five appendices, including the complete answer key
 
-## Automated QA (`build_spec/qa.py`)
+See [the assessment coverage matrix](docs/final-assessment-coverage.md) and [editorial audit and issue log](docs/editorial-audit.md).
 
-Gates include: 16 lessons × 8-part framework; lesson titles match the specification exactly;
-document order and review-test placement; review-test scope (no untaught grammar leaks);
-final-assessment coverage of all 16 lessons; answer-key completeness; banned-language checks
-(no scheduling words, no Master Speaking references, no unearned claims); design restraint.
+## Editorial and external-validation status
 
-Answer keys are generated from the same source data as the exercises, so keys cannot drift.
-
-## Rendering and inspection status (honest)
-
-| Format | Status |
-|---|---|
-| `.docx` master | Structurally inspected: A4, margins, footer page numbers, font consistency (Calibri/Consolas), table widths within text area, page breaks |
-| `.html` edition | Generated with Mammoth; content integrity verified (16 lessons, tests, appendices present); **not** visually pixel-rendered |
-| `.pdf` | **Not produced** — no Word/LibreOffice/pandoc in this environment. Export from the .docx in Word (File → Save as PDF) for final print QA |
-
-## External validation still required
-
-Per the specification (§12), the following require people outside this repository and have
-**not** been completed:
-
-- Review by qualified English teachers → use `docs/teacher-review-checklist.md`
-- Piloting with actual learners → use `docs/pilot-feedback-form.md`
-- Visual print QA of the Word/PDF output on paper
-
-## Repository contents
-
-- `Grammar for Special Speaking (TOEFL House).docx` — the book (single authoritative manuscript)
-- `dist/` — HTML distribution edition
-- `build_spec/` — build system + automated QA
-- `docs/` — teacher review checklist and pilot feedback form (blank instruments)
-- `archive/` — superseded earlier edition (reference only)
-- `Master Speaking.docx` — separate product; the grammar book is fully independent of it
-- `tools/` — one-off utilities from earlier development stages
+The source was revised and checked with automated regression gates and a documented editorial audit. This is **not** a claim of independent expert approval, classroom testing, EPUBCheck certification, proven learning gains, or final print approval. Qualified teacher review and a real learner pilot remain pending; blank instruments are provided at [`docs/teacher-review-checklist.md`](docs/teacher-review-checklist.md) and [`docs/pilot-feedback-form.md`](docs/pilot-feedback-form.md).

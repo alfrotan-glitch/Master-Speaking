@@ -24,7 +24,7 @@ def review_test(doc, num, after, keys_registry):
             "By the time we arrived, the guests __________ (eat) everything.",
             "Look at the sky — it __________ (rain).",
             "How long __________ you __________ (know) Nadia?",
-            "He said he __________ (be) busy that day.",
+            "Before the meeting __________ (start), we had already discussed the plan.",
         ]
         B = [
             "If I __________ (be) you, I would apply for the visa.",
@@ -34,48 +34,49 @@ def review_test(doc, num, after, keys_registry):
         ]
         C = [
             "Rewrite as a second conditional: 'I don't have time, so I can't help.'",
-            "Report: 'Where did you park?' She asked me __________.",
+            "Make it polite: 'Where did you park?'  (Could you tell me…)",
             "Give a deduction: You see a colleague carrying a tennis racket. 'You __________ (be) on your way to a game.'",
         ]
         key = {
             'A': ["haven't seen", "were waiting", "freezes", "is studying", "had eaten",
-                  "is going to rain / will rain", "have / known", "was"],
+                  "is going to rain / will rain", "have / known", "started"],
             'B': ["were", "Would / closing", "is", "being"],
             'C': ["If I had time, I would help. / If I had more time, I could help.",
-                  "where I had parked", "must be"],
+                  "Could you tell me where you parked?",
+                  "must be"],
         }
     elif num == 2:
         A = [
             "If I __________ (know) his number, I would call him now.",
             "I wish I __________ (take) that opportunity last year.",
             "This method is __________ (effective) than the old one.",
-            "Not until midnight __________ (the team / finish).",
-            "The letter __________ (write) by the manager yesterday.",
-            "He avoided __________ (answer) the direct question.",
-            "The results, __________ were published today, surprised everyone.  (which / that)",
-            "She promised __________ (call) back before noon.",
+            "While I __________ (read), the lights went out.",
+            "When we arrived, the guests __________ (already / leave).",
+            "It's high time we __________ (make) a decision.",
+            "This option is by far the __________ (good) for our budget.",
+            "Unless you __________ (hurry), you'll miss the bus.",
         ]
         B = [
             "Combine with despite: 'The exam was hard. Everyone passed.'",
-            "Rewrite with causative: 'A professional painted my flat last week.'",
-            "Hedge the claim: 'This plan will solve the problem.'",
-            "Report the order: 'Don't be late,' the teacher said.  (The teacher warned…)",
+            "Rewrite as a second conditional: 'I don't have a car, so I can't drive you.'",
+            "Give polite advice to a friend who wants to quit their job without a plan.  (2 modals)",
+            "Make it polite: 'Where is the bank?'",
         ]
         C = [
-            "Make a cleft sentence (focus the price): 'The price changed my mind.'",
+            "Rewrite as a mixed conditional (past → present): 'She didn't save money, so she can't buy the car now.'",
             "Compare with a reason: 'This course is better than that one.'  (use far + reason)",
-            "Correct and explain: 'I look forward to hear from you.'",
+            "Correct: 'Despite of the cost, we decided to proceed.'",
         ]
         key = {
-            'A': ["knew", "had taken", "more effective", "did the team finish", "was written",
-                  "answering", "which", "to call"],
+            'A': ["knew", "had taken", "more effective", "was reading", "had already left",
+                  "made", "best", "hurry"],
             'B': ["Despite being hard, everyone passed the exam. / Despite the difficulty, everyone passed.",
-                  "I had my flat painted last week.",
-                  "This plan may well solve the problem. / This plan will probably solve the problem. (answers vary)",
-                  "The teacher warned us not to be late."],
-            'C': ["It was the price that changed my mind.",
+                  "If I had a car, I would drive you. / If I had a car, I could drive you.",
+                  "answers vary — advice with should/could/might",
+                  "Could you tell me where the bank is?"],
+            'C': ["If she had saved money, she could buy the car now. / …would be able to buy…",
                   "answers vary — far + comparative + reason",
-                  "I look forward to hearing from you. ('to' here is a preposition)"],
+                  "Despite the cost, we decided to proceed."],
         }
     else:
         A = [
@@ -84,33 +85,33 @@ def review_test(doc, num, after, keys_registry):
             "She is said __________ (speak) five languages.",
             "He avoided __________ (make) the same mistake twice.",
             "This is the café __________ we first met.",
-            "__________ (finish) the report, she sent it to the board.",
+            "She is the teacher __________ class inspired me.  (who / whose)",
             "I'd rather you __________ (not/mention) this to anyone.",
-            "It's high time we __________ (make) a decision.",
+            "He talks as if he __________ (know) everything.",
         ]
         B = [
-            "Report: 'I never lie.'  (He denied…)  — use deny + -ing.",
-            "Rewrite with inversion: 'I have never heard such a strange story.'",
-            "Combine with a participle: 'Because she had not been warned, she was surprised.'",
+            "Rewrite with need: 'The room must be cleaned.'",
+            "Rewrite as a deduction (past): 'Perhaps he missed the train.'",
+            "Reduce: 'Students who are interested in the course should apply.'",
             "Make it formal and passive: 'People believe that the economy is improving.'",
         ]
         C = [
-            "Hedge formally: 'This is the only solution.'  (use 'it could be argued')",
-            "Report a question in correct order: 'When will the office close?'  (She asked me…)",
-            "Use 'the more…the more' about practice and confidence.",
-            "Fix: 'Never I have seen such a mess.'",
+            "Complete: The __________ (much) you practise, the __________ (confident) you become.",
+            "Correct the indirect question: 'Do you know where is the bank?'",
+            "Complete the causative: I __________ my hair cut yesterday.",
+            "Correct: 'I enjoy to read novels.'",
         ]
         key = {
-            'A': ["was built", "repaired", "to speak", "making", "where", "Having finished",
-                  "didn't mention", "made"],
-            'B': ["He denied making the same mistake… / He denied ever lying. (per item)",
-                  "Never have I heard such a strange story.",
-                  "Not having been warned, she was surprised.",
+            'A': ["was built", "repaired", "to speak", "making", "where", "whose",
+                  "didn't mention", "knew"],
+            'B': ["The room needs cleaning. / The room needs to be cleaned.",
+                  "He must have missed the train.",
+                  "Students interested in the course should apply.",
                   "It is believed that the economy is improving. / The economy is believed to be improving."],
-            'C': ["It could be argued that this is the only solution. (answers vary)",
-                  "She asked me when the office would close.",
-                  "The more you practise, the more confident you become. (answers vary)",
-                  "Never have I seen such a mess."],
+            'C': ["more / more confident",
+                  "Do you know where the bank is?",
+                  "had",
+                  "I enjoy reading novels."],
         }
 
     _qblock(doc, "Part A — Complete the sentences.", A)
@@ -167,7 +168,7 @@ def final_assessment(doc, keys_registry):
         "Complete with a linker: __________ being expensive, the course is worth it.",
         "Hedge the claim: 'This method is the best.'  (may well / probably)",
         "Compare with nuance: 'Option A is better than Option B.'  (use far + give a reason frame)",
-        "Correct: 'Despite of the delay, we left on time.'",
+        "Correct: 'The book what I read was amazing.'",
         "Complete: The more you practise, the __________ (confident) you become.",
         "Report advice: 'You should apply early,' she said.  (She advised…)",
         "Complete with the right pattern: I look forward to __________ (meet) you.",
@@ -190,7 +191,7 @@ def final_assessment(doc, keys_registry):
               "Having studied hard, he passed easily."],
         'C': ["can't", "Despite", "This method may well be the best. / This method is probably the best. (answers vary)",
               "Option A is far better than Option B because… (answers vary)",
-              "Despite the delay, we left on time.",
+              "The book (that) I read was amazing.",
               "more confident", "She advised me to apply early.", "meeting"],
     }
     box(doc, "Answer key — Final Assessment", [

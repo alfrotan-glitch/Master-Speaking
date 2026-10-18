@@ -93,6 +93,43 @@ def introduction(doc):
     page_break(doc)
 
 
+def publication_info(doc):
+    h_banner(doc, "COPYRIGHT AND PUBLICATION INFORMATION",
+             sub="Grammar for Special Speaking — TOEFL HOUSE")
+    para(doc, "© TOEFL HOUSE, 2026. All rights reserved.", size=11, bold=True, color=NAVY)
+    para(doc, "Grammar for Special Speaking — a practical grammar course for accurate, natural, "
+              "confident speech. Author and publisher: TOEFL HOUSE. Publication year: 2026.")
+    para(doc, "No part of this publication may be reproduced, stored or transmitted in any form "
+              "without prior written permission from the publisher, except for brief quotations "
+              "used in teaching, review and private study.")
+    para(doc, "", space_after=4)
+    table(doc, ["Publication detail", "Information"], [
+        ["Title", "Grammar for Special Speaking"],
+        ["Author / creator", "TOEFL HOUSE"],
+        ["Edition", "[Edition information to be confirmed before print release]"],
+        ["ISBN", "[ISBN to be assigned]"],
+        ["Place of publication", "[To be confirmed]"],
+        ["Companion volume", "Grammar for Special Speaking — Teacher's Book (TOEFL HOUSE)"],
+        ["Language", "English"],
+    ], widths=[2.0, 4.3], font_size=10)
+    para(doc, "", space_after=4)
+    para(doc, "Disclaimer", size=11, bold=True, color=NAVY)
+    para(doc, "TOEFL® is a registered trademark of Educational Testing Service (ETS). This book is "
+              "an independent teaching resource prepared by TOEFL HOUSE; it is not affiliated with, "
+              "authorised or endorsed by ETS. Any mention of tests or exams in this book is for "
+              "general language-teaching purposes only.")
+    para(doc, "Statement of limits", size=11, bold=True, color=NAVY)
+    para(doc, "This manuscript has been produced and checked with automated structural and "
+              "editorial quality gates. Qualified teacher review, classroom piloting, EPUBCheck "
+              "certification and a commercial print proof are separate steps recorded in the "
+              "project documentation; none of them is claimed here.")
+    para(doc, "The answer key for learners appears in Appendix 5. Teachers should use the "
+              "companion Teacher's Book, which contains lesson procedures, full answers with "
+              "notes, model speaking responses, timing and differentiation guidance.",
+         size=10.5, italic=True, color=GREY)
+    page_break(doc)
+
+
 def how_to_use(doc):
     h_banner(doc, "HOW TO USE THIS BOOK", sub="For students and teachers")
     para(doc, "For students", size=12, bold=True, color=NAVY)
@@ -132,6 +169,10 @@ def how_to_use(doc):
     para(doc, "Review earlier structures in the review tests and in retrieval practice. Evaluate "
               "speaking with the success criteria and the rubric in the Final Assessment — not with "
               "rigid model answers. Accept alternative answers where an exercise allows them.")
+    para(doc, "The companion Teacher's Book follows the same sixteen lessons and gives teachers "
+              "step-by-step procedures for all eight lesson functions, complete answers with "
+              "explanations, model speaking responses, realistic timings, differentiation and "
+              "remediation guidance, and common-error notes.", space_before=6)
     page_break(doc)
 
 

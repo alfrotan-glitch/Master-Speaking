@@ -61,7 +61,10 @@ def render_lesson(doc, L, keys_registry):
     # ---- Part 5: Pair Speaking ----
     section_label(doc, "Part 5  ·  Pair Speaking")
     pair = L['pair']
-    box(doc, "Work with a partner", [pair['intro']] + [f"•  {b}" for b in pair['task']],
+    pair_lines = [pair['intro']] + [f"•  {b}" for b in pair['task']]
+    if pair.get('output'):
+        pair_lines.append((f"Expected output: {pair['output']}", False))
+    box(doc, "Work with a partner", pair_lines,
         fill=FILL_BOX_TEAL, label_color=TEAL)
     box(doc, "Success criteria",
         [f"✓  {c}" for c in pair['criteria']], fill="FFFFFF", label_color=TEAL)
@@ -77,8 +80,13 @@ def render_lesson(doc, L, keys_registry):
     # ---- Part 7: Real Talk Challenge ----
     section_label(doc, "Part 7  ·  Real Talk Challenge")
     rt = L['realtalk']
+    if rt.get('plan'):
+        box(doc, "Plan first", [rt['plan']], fill=FILL_BOX_GREY, label_color=GOLD)
     box(doc, "Speak now — without reading",
         [rt['task']], fill=FILL_BOX_TEAL, label_color=TEAL)
+    if rt.get('model'):
+        box(doc, "Model response — speak first, then compare; one strong example, not the only answer",
+            [rt['model']], fill=FILL_BOX_GOLD, label_color=GOLD)
     box(doc, "Partner feedback — listen for",
         [f"✓  {c}" for c in rt['feedback']], fill="FFFFFF", label_color=TEAL)
 
@@ -97,6 +105,9 @@ def render_lesson(doc, L, keys_registry):
         para(doc, "Self-check — can you do this now?", size=11, bold=True, color=NAVY)
         for s in rv['selfcheck']:
             para(doc, f"☐  {s}", size=11, indent=0.12)
+        para(doc, f"If a box is unticked: return to Part 2 · The Simple Rule for this lesson, redo the "
+                  f"matching practice item, and check Formula Book card {n} in Appendix 1 before you move on.",
+             size=10.5, italic=True, color=GREY, space_before=3)
     # quick answers
     ans = L.get('answers') or rv.get('answers', {})
     if ans:

@@ -15,22 +15,19 @@ L1 = {
         "•  What has changed in your life since last year? (present perfect)",
     ],
     'rules': [
-        {'label': 'Rule 1 — Present simple: facts, habits and routines',
-         'formula': ["Subject + base verb (+ s/es for he/she/it)",
-                     "Use it for: habits · facts · fixed timetables · states"],
-         'text': ["Use the present simple when something is generally true or repeated."],
+        {'label': 'Rule 1 — Present tenses: habits, facts and what is happening now',
+         'formula': ["Present simple:  Subject + base verb (+ s/es for he/she/it)  →  habits · facts · fixed timetables · states",
+                     "Present continuous:  Subject + am/is/are + verb-ing  →  happening now · current projects · temporary situations · changing trends"],
+         'text': ["Use the present simple when something is generally true or repeated.",
+                  "Use the present continuous for what is true around this period of your life."],
          'examples': ["I work in a clinic.", "She studies every evening.",
-                      "The course starts at eight.  (fixed timetable)"],
-         'remember': ["Add -s/-es with he/she/it: he works, she studies, it rains."]},
-        {'label': 'Rule 2 — Present continuous: happening around now',
-         'formula': ["Subject + am/is/are + verb-ing",
-                     "Use it for: happening now · current projects · temporary situations · changing trends"],
-         'text': ["Use the present continuous for what is true around this period of your life."],
-         'examples': ["I'm working on my pronunciation this month.",
+                      "The course starts at eight.  (fixed timetable)",
+                      "I'm working on my pronunciation this month.",
                       "More students are learning English online every year.  (a change)"],
-         'remember': ["Stative verbs usually stay simple: know, believe, own, seem. "
+         'remember': ["Add -s/-es with he/she/it: he works, she studies, it rains.",
+                      "Stative verbs usually stay simple: know, believe, own, seem. "
                       "→ 'I know the answer' (not 'I am knowing')."]},
-        {'label': 'Rule 3 — Past simple vs present perfect',
+        {'label': 'Rule 2 — Past simple vs present perfect',
          'formula': ["Past simple: verb-ed / irregular  →  a finished time",
                      "Subject + have/has + past participle  →  connected to now"],
          'text': ["Use the past simple for a finished time (yesterday, last year, in 2020, when I was a child).",
@@ -41,7 +38,7 @@ L1 = {
                       "She has lived here since 2021.  (still true)"],
          'remember': ["In standard use, a finished-time expression normally takes the past simple: "
                       "'I saw him yesterday.' Avoid 'I have seen him yesterday.' With 'recently', either tense can be natural: 'I've seen her recently' / 'I saw her recently'."]},
-        {'label': 'Rule 4 — Talking about changes and the future',
+        {'label': 'Rule 3 — Talking about changes and the future',
          'formula': ["going to + base verb  →  plans and intentions",
                      "will + base verb  →  instant decisions, predictions, promises",
                      "present continuous + time word  →  fixed arrangements"],
@@ -68,17 +65,14 @@ L1 = {
         "I __________ (see) that film last week.",
         "Nadia __________ (work) at the hospital since 2022.",
         "We __________ (meet) the new teacher tomorrow at ten.  (arrangement)",
-        "He __________ never __________ (be) to London.",
         "Look! It __________ (snow)!",
         "My brother __________ (believe) in hard work.",
     ],
     'practice_b': [
         "Correct the mistake: 'I have finished my homework last night.'",
         "Correct the mistake: 'She is knowing the answer.'",
-        "Choose: I (have seen / saw) him yesterday.",
         "Choose: How long (do you know / have you known) Sara?",
         "Rewrite with going to: 'I intend to study medicine.'",
-        "Answer naturally: What have you done today so far?",
     ],
     'pair': {
         'intro': "Interview your partner. Listen carefully and ask one follow-up question each time.",
@@ -86,6 +80,8 @@ L1 = {
                  "What are you doing these days that is new?",
                  "What did you do last night?",
                  "What has changed in your life since last year?"],
+        'output': "Both partners answer all four questions, exchange at least four follow-up questions in "
+                  "total, and can report one interesting answer about the other person to the class.",
         'criteria': ["uses present simple for habits",
                      "uses present continuous for current situations",
                      "uses past simple and present perfect with correct time words",
@@ -99,8 +95,16 @@ L1 = {
                     "Use 'It's the first time I've…' and 'This is the most … I've ever …' for emphasis."],
     },
     'realtalk': {
+        'plan': "Planning (30 seconds): choose three time anchors — one habit (present simple), one "
+                "change up to now (present perfect), one activity of these days (present continuous). "
+                "Write keywords only, not sentences.",
         'task': "Speak for one minute: how has your English improved? Name one specific past event, "
                 "explain what you learned from it, and say what you are still working on now.",
+        'model': "I've been studying English seriously for about two years. Last year I joined a "
+                 "speaking club, and that was the moment things changed — I learned to think in "
+                 "English instead of translating every sentence. These days I listen to a short "
+                 "podcast every morning, and I'm still working on my pronunciation. My grammar is "
+                 "much better than it was, but speaking fluently is what I'm focusing on now.",
         'feedback': ["past simple for the specific event",
                      "present perfect for the change up to now",
                      "present continuous for what is happening these days",
@@ -117,9 +121,9 @@ L1 = {
         'selfcheck': ["I can talk about a habit, a current project and a past experience in one answer.",
                       "I chose past simple vs present perfect correctly in the practice."],
         'answers': {
-            'A': ["saw", "has worked / has been working", "are meeting", "has / been", "is snowing", "believes"],
+            'A': ["saw", "has worked / has been working", "are meeting", "is snowing", "believes"],
             'B': ["I finished my homework last night.", "She knows the answer.",
-                  "saw", "have you known", "I'm going to study medicine.", "answers vary"],
+                  "have you known", "I'm going to study medicine."],
         },
     },
 }
@@ -188,6 +192,8 @@ L2 = {
         'intro': "Tell a two-minute story from your life. Your partner listens, then asks two follow-up questions.",
         'task': ["Choose: a journey you remember · a day everything went wrong · an important decision you made quickly.",
                  "Include one background scene (past continuous), one earlier action (past perfect), and one final reflection."],
+        'output': "Each partner tells a two-minute story that the other can retell in three sentences, "
+                  "and asks two genuine follow-up questions about it.",
         'criteria': ["background scene is clear",
                      "events follow a logical order with sequence words",
                      "past perfect marks the earlier action",
@@ -201,8 +207,17 @@ L2 = {
                     "End a story with a present reflection: 'It taught me a lesson I've never forgotten.'"],
     },
     'realtalk': {
+        'plan': "Plan (ten seconds only — nothing written): fix the shape of the story — background "
+                "scene, two main events, one earlier action, one ending that explains why the day mattered.",
         'task': "Tell a two-minute story: a memorable day in your life. Plan it for ten seconds only — "
                 "do not write anything. Tell it again to a second partner, better.",
+        'model': "It was a Friday in May. I was walking home from the market when I realised I had "
+                 "left my phone at home — I had only been walking for ten minutes, so I turned back "
+                 "at once. First I checked the path behind me; then I hurried home. By the time I "
+                 "reached the flat, my sister had already answered a call from my cousin: he had won "
+                 "two tickets to the final and needed my answer straight away. I called him back "
+                 "immediately, and we went that night. I've checked my pockets before leaving the "
+                 "house ever since.",
         'feedback': ["background + main events + ending (clear story shape)",
                      "sequence words (first, then, suddenly, finally)",
                      "past continuous and past perfect used accurately",
@@ -302,6 +317,9 @@ L3 = {
                  "a follow-up question back to A. Then swap.",
         'task': ["Choose 3 topics: learning English · a proud moment · a difficult decision · future plans.",
                  "Use at least one indirect question and three follow-up questions per person."],
+        'output': "A three-minute exchange per pair in each role: three answers, at least three "
+                  "content-based follow-ups, one indirect question — then a one-sentence summary of "
+                  "what you learned about your partner.",
         'criteria': ["question word order is correct (direct and indirect)",
                      "follow-ups react to the content of the answers",
                      "the conversation flows — no long silences",
@@ -315,9 +333,20 @@ L3 = {
                     "Question tags keep a conversation shared: 'It's getting late, isn't it?' · 'You've met her, haven't you?'"],
     },
     'realtalk': {
+        'plan': "Plan (30 seconds): ready two one-sentence stories of your own, one indirect question "
+                "you can ask whatever the topic is, and three reactions: Really? · What happened next? · "
+                "How about you?",
         'task': "Two-minute conversation challenge: your partner will say only one sentence to start "
                 "(for example: 'I almost missed my flight last week.'). Keep the conversation alive "
                 "for two full minutes using only questions and short reactions.",
+        'model': "A: I almost missed my flight last week.\n"
+                 "B: Really? What happened next?\n"
+                 "A: The traffic was terrible — I reached the gate twenty minutes before take-off. "
+                 "Do you often fly, or was this a one-off?\n"
+                 "B: I fly for work sometimes. What's the worst journey you've ever had?\n"
+                 "A: A train was cancelled once, so I waited six hours at the station. Have you ever "
+                 "missed a connection?\n"
+                 "B: No, but I came close in Dubai. How did you get through the wait in the end?",
         'feedback': ["asks real follow-up questions (about content, not only topic)",
                      "uses at least one indirect question",
                      "correct question word order",
@@ -421,6 +450,8 @@ L4 = {
         'task': ["Scenario: your team must choose ONE: a weekend trip, a new project, a training course. "
                  "There is a budget and a time limit.",
                  "Use modals to negotiate: suggest (should), offer (could), insist (must), accept possibility (might), refuse softly."],
+        'output': "One agreed decision per pair, justified with at least three different modals, plus "
+                  "two polite request forms used naturally during the negotiation.",
         'criteria': ["modals show the right strength (advice vs obligation)",
                      "polite forms used at least twice (Would you mind… / Could I…)",
                      "certainty language used correctly (must be / might be)",
@@ -434,9 +465,20 @@ L4 = {
                     "Use hedged obligation for diplomacy: 'We really ought to consider…' · 'It might be worth revisiting…'"],
     },
     'realtalk': {
+        'plan': "Planning (one minute): decide your role, your goal or main complaint, two polite "
+                "request forms you will use, and one deduction you can make from visible evidence. "
+                "Swap roles after one minute.",
         'task': "Role-play: a client calls with a problem (a delayed order, a bad hotel room, a missed class). "
                 "One of you is the client (complain with modals); one is the professional (advise, apologise, "
                 "negotiate with modals). Swap roles after one minute.",
+        'model': "Client: Good morning — I was wondering if I could talk about my order. It was due on "
+                 "Tuesday, and it still hasn't arrived.\n"
+                 "Professional: I'm sorry about that. You must be frustrated. Let me check… It looks "
+                 "like the parcel was sent to the wrong depot.\n"
+                 "Client: In that case, could I have it redelivered tomorrow? I have to be at work, so "
+                 "it might need to come after five.\n"
+                 "Professional: That should be possible. We could offer an evening slot, or I could ask "
+                 "the depot to hold it for collection. Which would you prefer?",
         'feedback': ["modals match the intended strength",
                      "polite professional language",
                      "at least one deduction (must be / can't be)",

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build print PDF and reflowable EPUB from the generated, authoritative DOCX.
 Run after build_spec/build.py and tools/build_html.py, or use --all to rebuild all outputs.
+Builds both the Student Book and the Teacher's Book.
 """
 from __future__ import annotations
 
@@ -29,11 +30,17 @@ from reportlab.platypus import (
 
 ROOT = Path(__file__).resolve().parents[1]
 TITLE = "Grammar for Special Speaking (TOEFL House)"
+TEACHER_TITLE = "Grammar for Special Speaking — Teacher's Book (TOEFL House)"
+TITLES = [TITLE, TEACHER_TITLE]
 SOURCE_DOCX = ROOT / f"{TITLE}.docx"
+TEACHER_DOCX = ROOT / f"{TEACHER_TITLE}.docx"
 DIST = ROOT / "dist"
 PDF_OUT = DIST / f"{TITLE}.pdf"
 EPUB_OUT = DIST / f"{TITLE}.epub"
 HTML_IN = DIST / f"{TITLE}.html"
+TEACHER_PDF = DIST / f"{TEACHER_TITLE}.pdf"
+TEACHER_EPUB = DIST / f"{TEACHER_TITLE}.epub"
+TEACHER_HTML = DIST / f"{TEACHER_TITLE}.html"
 NAVY = colors.HexColor("#1F3A5F")
 TEAL = colors.HexColor("#0E6B6B")
 INK = colors.HexColor("#1A1A1A")
@@ -93,11 +100,11 @@ class TaggedParagraph(Paragraph):
 
 
 class BookDocTemplate(BaseDocTemplate):
-    def __init__(self, filename):
+    def __init__(self, filename, title):
         super().__init__(str(filename), pagesize=A4,
                          leftMargin=18*mm, rightMargin=18*mm,
                          topMargin=17*mm, bottomMargin=17*mm,
-                         title=TITLE, author="TOEFL HOUSE")
+                         title=title, author="TOEFL HOUSE")
         frame = Frame(self.leftMargin, self.bottomMargin, self.width, self.height,
                       id="normal", leftPadding=0, rightPadding=0,
                       topPadding=0, bottomPadding=0)
@@ -122,8 +129,6 @@ def pdf_styles():
     fontdir = Path("/usr/share/fonts/truetype/dejavu")
     regular = fontdir / "DejaVuSans.ttf"
     bold = fontdir / "DejaVuSans-Bold.ttf"
-    # Some slim container images ship only regular/bold DejaVu Sans. Alias those
-    # faces for italic runs rather than failing or falling back to non-Unicode fonts.
     italic = fontdir / "DejaVuSans-Oblique.ttf"
     bolditalic = fontdir / "DejaVuSans-BoldOblique.ttf"
     mono = fontdir / "DejaVuSansMono.ttf"
@@ -168,9 +173,7 @@ def _is_major_heading(p):
     text = p.text.strip()
     if p.style.name.startswith("Heading 1"):
         return text
-    # DOCX heading style is retained in a banner table; these checks also protect
-    # navigation if opened by a non-Word converter that discards paragraph styles.
-    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST)", text, re.I):
+    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", text, re.I):
         return text
     return None
 
@@ -215,8 +218,6 @@ def _table_flowable(table, styles, doc_width):
         widths = [doc_width / cols] * cols
     scale = doc_width / sum(widths)
     widths = [w * scale for w in widths]
-    # Wrapper tables (boxes and banners) are single-column. Preserve fills and
-    # keep their contents readable without forcing the row to one page.
     if cols == 1:
         data = [[rows[0][0]] ]
         flow = LongTable(data, colWidths=widths, splitByRow=1, splitInRow=1, hAlign="LEFT")
@@ -253,17 +254,15 @@ def _table_flowable(table, styles, doc_width):
     return flow
 
 
-def build_pdf():
-    if not SOURCE_DOCX.exists():
-        raise FileNotFoundError(SOURCE_DOCX)
+def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
+    if not source_docx.exists():
+        raise FileNotFoundError(source_docx)
     styles = pdf_styles()
-    doc = Document(SOURCE_DOCX)
+    doc = Document(source_docx)
     story = []
-    # Build a clickable TOC in place of the source's unpaginated contents grid.
     toc_active = False
     toc_inserted = False
     contents_tables_skipped = False
-    heading_count = 0
     doc_width = A4[0] - 36*mm
     body = doc.element.body
     for child in body:
@@ -279,7 +278,6 @@ def build_pdf():
             text = paragraph_html(p)
             raw = p.text.strip()
             if toc_active and raw:
-                # The DOCX's native Word TOC field is replaced here by the live PDF TOC.
                 continue
             if not raw:
                 story.append(Spacer(1, 2))
@@ -309,33 +307,39 @@ def build_pdf():
                 toc_inserted = True
                 continue
             if toc_active and not contents_tables_skipped:
-                # Both static contents grids are redundant once the live PDF TOC is present.
                 contents_tables_skipped = True
                 continue
             if toc_active and contents_tables_skipped:
-                # Keep skipping until the explicit page break after the contents.
                 continue
             flow = _table_flowable(tbl, styles, doc_width)
             if flow is not None:
                 story.append(flow)
                 story.append(Spacer(1, 2))
     if not toc_inserted:
-        raise RuntimeError("Could not locate the source contents banner for the PDF TOC")
+        raise RuntimeError(f"Could not locate the source contents banner for the PDF TOC in {source_docx.name}")
     DIST.mkdir(exist_ok=True)
-    template = BookDocTemplate(PDF_OUT)
+    template = BookDocTemplate(pdf_out, title)
     template.multiBuild(story, maxPasses=5)
-    return PDF_OUT
+    return pdf_out
+
+
+def build_pdf():
+    return _build_pdf_for(SOURCE_DOCX, PDF_OUT, TITLE)
+
+
+def build_teacher_pdf():
+    return _build_pdf_for(TEACHER_DOCX, TEACHER_PDF, TEACHER_TITLE)
 
 
 def _plain_text(node):
     return " ".join(" ".join(node.itertext()).split())
 
 
-def build_epub():
-    if not HTML_IN.exists():
-        raise FileNotFoundError(HTML_IN)
+def _build_epub_for(html_path: Path, epub_path: Path, title: str, uuid: str):
+    if not html_path.exists():
+        raise FileNotFoundError(html_path)
     parser = lxml_html.HTMLParser(encoding="utf-8", recover=True)
-    tree = lxml_html.parse(str(HTML_IN), parser)
+    tree = lxml_html.parse(str(html_path), parser)
     body = tree.find(".//body")
     if body is None:
         raise RuntimeError("HTML source has no body")
@@ -348,8 +352,6 @@ def build_epub():
         text = _plain_text(element)
         if not text:
             continue
-        # Recover the banner title from the first non-empty paragraph: Mammoth can
-        # keep Word's semantic heading inside a one-cell visual banner table.
         candidates = element.xpath("self::h1|self::h2|self::h3|.//h1|.//h2|.//h3|self::p|.//p")
         heading_node = next((n for n in candidates if _plain_text(n)), None)
         heading_text = _plain_text(heading_node) if heading_node is not None else ""
@@ -357,7 +359,7 @@ def build_epub():
             continue
         if heading_text.upper() == "DIAGNOSTIC TEST":
             in_static_contents = False
-        match = re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST)$", heading_text, re.I)
+        match = re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", heading_text, re.I)
         if match and heading_text.casefold() not in seen_titles:
             seen_titles.add(heading_text.casefold())
             hid = "nav-" + re.sub(r"[^a-z0-9]+", "-", heading_text.lower()).strip("-")
@@ -372,12 +374,9 @@ def build_epub():
             else:
                 element.insert(0, h)
             entries.append((heading_text, hid))
-        # The nav lists book-level destinations only; smaller semantic headings remain
-        # in the XHTML reading order without overwhelming the ebook reader's TOC.
         content_root.append(element)
         if heading_text.upper() == "CONTENTS":
             in_static_contents = True
-    # Ensure navigation points to all 16 lessons, reviews, final assessment and appendices.
     css = """
     body { font-family: serif; line-height: 1.5; margin: 5%; color: #1a1a1a; }
     h1,h2,h3 { font-family: sans-serif; color: #1f3a5f; break-before: page; }
@@ -388,8 +387,8 @@ def build_epub():
     a { color: #0e6b6b; }
     """
     book = epub.EpubBook()
-    book.set_identifier("urn:uuid:3c0c1cc0-4920-4e6a-9302-16eac22f77b6")
-    book.set_title(TITLE)
+    book.set_identifier(uuid)
+    book.set_title(title)
     book.set_language("en")
     book.add_author("TOEFL HOUSE")
     book.add_metadata("DC", "publisher", "TOEFL HOUSE")
@@ -397,7 +396,7 @@ def build_epub():
     chapter = epub.EpubHtml(title="Complete book", file_name="book.xhtml", lang="en")
     chapter.content = (
         '<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">'
-        '<head><title>' + escape(TITLE) + '</title><link rel="stylesheet" type="text/css" href="style/book.css"/></head>'
+        '<head><title>' + escape(title) + '</title><link rel="stylesheet" type="text/css" href="style/book.css"/></head>'
         '<body>' + etree.tostring(content_root, encoding="unicode", method="html") + '</body></html>'
     )
     style = epub.EpubItem(uid="book-css", file_name="style/book.css", media_type="text/css", content=css.encode("utf-8"))
@@ -408,8 +407,16 @@ def build_epub():
     book.add_item(epub.EpubNcx())
     book.add_item(epub.EpubNav())
     DIST.mkdir(exist_ok=True)
-    epub.write_epub(str(EPUB_OUT), book, {})
-    return EPUB_OUT
+    epub.write_epub(str(epub_path), book, {})
+    return epub_path
+
+
+def build_epub():
+    return _build_epub_for(HTML_IN, EPUB_OUT, TITLE, "urn:uuid:3c0c1cc0-4920-4e6a-9302-16eac22f77b6")
+
+
+def build_teacher_epub():
+    return _build_epub_for(TEACHER_HTML, TEACHER_EPUB, TEACHER_TITLE, "urn:uuid:9e1a2c3d-7b1f-4e6a-9302-teacher-book-01")
 
 
 def verify_epub(path):
@@ -428,11 +435,17 @@ def verify_epub(path):
             if name.endswith((".xhtml", ".opf", ".ncx", ".xml")):
                 etree.fromstring(z.read(name), parser)
         xhtml = z.read("EPUB/book.xhtml").decode("utf-8")
-        for token in ("LESSON 16", "FINAL ASSESSMENT", "APPENDIX 5", "REVIEW TEST 3"):
-            if token not in xhtml:
-                raise RuntimeError(f"EPUB content check failed: {token}")
-        if xhtml.count("LESSON ") < 16:
-            raise RuntimeError("EPUB has fewer than 16 lessons")
+        # Student book vs teacher book: check appropriate tokens
+        if "Teacher" in str(path):
+            for token in ("LESSON 16", "TEACHER GUIDE", "ASSESSMENT GUIDANCE"):
+                if token not in xhtml:
+                    raise RuntimeError(f"EPUB content check failed: {token} missing in {path.name}")
+        else:
+            for token in ("LESSON 16", "FINAL ASSESSMENT", "APPENDIX 5", "REVIEW TEST 3"):
+                if token not in xhtml:
+                    raise RuntimeError(f"EPUB content check failed: {token}")
+            if xhtml.count("LESSON ") < 16:
+                raise RuntimeError("EPUB has fewer than 16 lessons")
     return True
 
 
@@ -443,14 +456,25 @@ def main():
     if args.all:
         import subprocess
         subprocess.run([sys.executable, str(ROOT / "build_spec" / "build.py")], check=True)
+        subprocess.run([sys.executable, str(ROOT / "build_spec" / "build_teacher.py")], check=True)
         DIST.mkdir(exist_ok=True)
         shutil.copy2(SOURCE_DOCX, DIST / SOURCE_DOCX.name)
+        shutil.copy2(TEACHER_DOCX, DIST / TEACHER_DOCX.name)
         subprocess.run([sys.executable, str(ROOT / "tools" / "build_html.py")], check=True)
     pdf = build_pdf()
     epub_path = build_epub()
     verify_epub(epub_path)
     print(f"PDF:   {pdf.relative_to(ROOT)} ({pdf.stat().st_size:,} bytes)")
     print(f"EPUB:  {epub_path.relative_to(ROOT)} ({epub_path.stat().st_size:,} bytes; package/XML checks passed)")
+    # Teacher book — only if DOCX exists
+    if TEACHER_DOCX.exists() and TEACHER_HTML.exists():
+        tpdf = build_teacher_pdf()
+        tepub = build_teacher_epub()
+        verify_epub(tepub)
+        print(f"Teacher PDF:  {tpdf.relative_to(ROOT)} ({tpdf.stat().st_size:,} bytes)")
+        print(f"Teacher EPUB: {tepub.relative_to(ROOT)} ({tepub.stat().st_size:,} bytes; package/XML checks passed)")
+    elif TEACHER_DOCX.exists():
+        print(f"NOTE: Teacher HTML not found at {TEACHER_HTML.name} — skipping teacher EPUB (run build_html first)")
 
 if __name__ == "__main__":
     main()

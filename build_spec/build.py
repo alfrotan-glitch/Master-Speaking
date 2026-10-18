@@ -28,6 +28,7 @@ def main():
 
     # front matter
     front.title_page(doc)
+    front.publication_info(doc)
     front.introduction(doc)
     front.how_to_use(doc)
     front.contents(doc)

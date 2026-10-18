@@ -137,7 +137,9 @@ def main():
         assert "LESSON 16" in pdftext and "FINAL ASSESSMENT" in pdftext and "APPENDIX 5" in pdftext
         assert all(len(page.get_text().strip()) > 30 for page in p), "PDF has an empty/near-empty page"
         assert len(p.get_toc()) >= 24, f"PDF bookmarks/navigation missing: {len(p.get_toc())} entries"
-        assert len(p[3].get_links()) >= 20, "page-numbered contents has too few internal links"
+        # Contents page may have shifted with new front matter; find the page that holds the TOC links
+        max_links = max(len(page.get_links()) for page in p)
+        assert max_links >= 20, f"page-numbered contents has too few internal links (max {max_links} on any page)"
         embedded = [font for font in p.get_page_fonts(0, full=True) if "DejaVuSans" in font[3] and font[1] == "ttf"]
         assert embedded and all(p.extract_font(font[0])[3] for font in embedded), "Unicode font is not embedded"
         assert "\ufffd" not in pdftext, "replacement glyph present in extracted PDF text"

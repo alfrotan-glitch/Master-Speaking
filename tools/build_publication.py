@@ -26,6 +26,7 @@ from reportlab.lib.units import mm
 from reportlab.platypus import (
     BaseDocTemplate, Frame, PageTemplate, PageBreak, Paragraph, Spacer,
     Table, LongTable, TableStyle, PageTemplate, NextPageTemplate,
+    KeepTogether, CondPageBreak,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -48,6 +49,19 @@ GREY = colors.HexColor("#555555")
 PALE = colors.HexColor("#F3F4F6")
 PALE_TEAL = colors.HexColor("#EAF4F4")
 PALE_GOLD = colors.HexColor("#FBF3E2")
+
+
+def _apply_orphan_fix(story):
+    """Insert CondPageBreak before every section heading so the heading moves
+    to the next page when the remaining space would leave it stranded."""
+    fixed = []
+    for item in story:
+        if getattr(item, "_is_section_heading", False):
+            # 160pt covers heading (18pt) + spacer (2pt) + first box/table row,
+            # enough to keep the heading with at least one line of real content.
+            fixed.append(CondPageBreak(160))
+        fixed.append(item)
+    story[:] = fixed
 
 
 def paragraph_html(p):
@@ -283,9 +297,13 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
                 story.append(Spacer(1, 2))
                 continue
             if p.style.name.startswith("Heading 2"):
-                story.append(Paragraph(text, styles["h2"]))
+                para = Paragraph(text, styles["h2"])
+                para._is_section_heading = True  # type: ignore[attr-defined]
+                story.append(para)
             elif p.style.name.startswith("Heading 1"):
-                story.append(Paragraph(text, styles["h1"]))
+                para = Paragraph(text, styles["h1"])
+                para._is_section_heading = True  # type: ignore[attr-defined]
+                story.append(para)
             else:
                 story.append(Paragraph(text, styles["body"]))
         elif tag == "tbl":
@@ -313,10 +331,21 @@ def _build_pdf_for(source_docx: Path, pdf_out: Path, title: str):
                 continue
             flow = _table_flowable(tbl, styles, doc_width)
             if flow is not None:
+                # Keep section headings with the content that follows them so a heading
+                # is never stranded as the last line on a page.
+                is_heading = raw.startswith("Part ") and "·" in raw
+                if is_heading:
+                    # Mark the heading for KeepTogether; wrap with the next element later.
+                    # Use CondPageBreak if remaining space is too small, otherwise KeepTogether.
+                    flow._is_section_heading = True  # type: ignore[attr-defined]
                 story.append(flow)
                 story.append(Spacer(1, 2))
     if not toc_inserted:
         raise RuntimeError(f"Could not locate the source contents banner for the PDF TOC in {source_docx.name}")
+    # Genuine PDF fix: keep each Part heading with the following block so the
+    # heading is never left as the last line on a page.  Apply to both DOCX-
+    # paragraph headings (H1/H2) and table-banner headings (Part X ·).
+    _apply_orphan_fix(story)
     DIST.mkdir(exist_ok=True)
     template = BookDocTemplate(pdf_out, title)
     template.multiBuild(story, maxPasses=5)

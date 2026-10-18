@@ -1,15 +1,15 @@
-# PDF Visual QA Report — *Master Speaking* (7×10 in, 163 pages)
+# PDF Visual QA Report — *Master Speaking* (7×10 in, 166 pages)
 
 ## Method
 
 - Every page measured: word count, used text depth (fraction of the type area filled), image presence.
 - Two-page spreads evaluated for density balance (verso+recto word ratio).
 - Chapter-end whitespace measured and graded against the next chapter start.
-- Full-page renders for the human eye pass: `book/artifacts/proof_png/` (p001.png … p163.png).
+- Full-page renders for the human eye pass: `book/artifacts/proof_png/` (p001.png … p166.png).
 
 ## Spread balance
 
-- 78 body spreads measured; median words/spread 348.
+- 79 body spreads measured; median words/spread 346.
 - Imbalance tolerance: ratio > 3.2 is flagged **unless** the spread contains a chapter or unit opening (intentional white space by design — §22).
 - Flags: **0**
 
@@ -22,7 +22,7 @@
 
 ## Page-by-page findings (§28 checklist)
 
-- Text clipping / overflow: none (qa_proof bounds checks, 161/161 pages).
+- Text clipping / overflow: none in qa_proof bounds checks (166/166 pages).
 - Widow/orphan lines: none beyond style controls (qa_print gating).
 - Stranded headings: none (keep-with-next + qa_print head checks).
 - Accidental blank pages: none (qa_proof).
@@ -32,4 +32,4 @@
 
 ## Human eye pass
 
-- Automated geometric/typographic evidence is above; page renders are provided for the reviewing editor’s visual pass. This report certifies the measurable page qualities; final aesthetic sign-off belongs to the human reviewer.
+- Automated geometric/typographic evidence is above; page renders are provided for the reviewing editor’s visual pass. This report records the measurable page qualities; final aesthetic sign-off belongs to the human reviewer.

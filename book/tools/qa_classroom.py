@@ -69,12 +69,13 @@ def main():
         assert all(goal.startswith('I can ') for goals in module['goals'] for goal in goals)
         assert len(module['dialogue']) == 6 and len(module['frames']) == 3
         script = module['listening']['script']
-        assert 100 <= len(script.split()) <= 180
+        assert 200 <= len(script.split()) <= 300
         assert script not in scripts and norm(script) not in norm(student), 'Teacher script exposed in student pack'
         scripts.append(script)
         questions = module['listening']['questions']
         assert len(questions) == 5 and len(set(q['prompt'] for q in questions)) == 5
-        for question in questions:
+        assert len(module['listening']['interpretation']) == 2
+        for question in questions + module['listening']['interpretation']:
             assert question['answer'].strip() and norm(question['evidence']) in norm(script), question
     assert 'Answer / acceptable content:' not in student and 'Text evidence:' not in student
     chapter = book['units'][0]['chapters'][0]['blocks']
@@ -115,7 +116,7 @@ def main():
         exports[stem] = export_check(path, stem)
     report = {'ok': True, 'units': 8, 'chapter_checklists': 32, 'can_do_statements': 64,
               'speaking_dialogues': 8, 'short_responses': 8, 'new_listening_scripts': 8,
-              'new_listening_detail_questions': 40, 'unit1_reading_key_items': 15,
+              'new_listening_detail_questions': 40, 'interpretation_questions': 16, 'unit1_reading_key_items': 15,
               'pilot_lessons_minutes': [75, 75, 75, 75], 'exports': exports,
               'listening_route': 'CORE_AUTHORED_TEACHER_READ', 'original_video_inputs_required': False, 'live_pilot_conducted': False}
     (ROOT / 'book/artifacts/qa_classroom.json').write_text(json.dumps(report, indent=2) + '\n')

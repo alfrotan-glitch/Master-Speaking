@@ -18,6 +18,7 @@ Design points (locked spec):
     non-splitting rows) and inline editable images with alt text
 """
 import os
+import json
 from lxml import etree
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
@@ -31,6 +32,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 MASTER = os.path.join(ROOT, 'book', 'master', 'master.xhtml')
 ASSETS = os.path.join(ROOT, 'book', 'assets', 'images')
 OUT = os.path.join(ROOT, 'Master-Speaking-7x10.docx')
+LAYOUT = json.load(open(os.path.join(ROOT, 'book/master/layout-overrides.json')))
 
 NS = {'x': 'http://www.w3.org/1999/xhtml'}
 XH = 'http://www.w3.org/1999/xhtml'
@@ -488,6 +490,10 @@ def render_blocks(el, ctx=None):
                     # This direction closes the preceding task; it must not
                     # drag itself onto the next activity's opening page.
                     paragraph.paragraph_format.keep_with_next = False
+            elif 'listening-script' in cls:
+                paragraph = add_par(text_of(c), 'MS Body')
+                paragraph.paragraph_format.keep_with_next = True
+                paragraph.paragraph_format.keep_together = True
             elif 'label' in cls:
                 add_par(text_of(c), 'MS Label')
             elif 'topic' in cls:
@@ -726,7 +732,16 @@ for unit in body.findall('x:section[@class="unit"]', NS):
         kicker.font.size = Pt(9.5)
         kicker.font.color.rgb = ACCENT
         display.add_run(cname)
+        chapter_paragraph_start = len(doc.paragraphs)
         render_blocks(ch)
+        for override in LAYOUT:
+            if (int(unum),int(cnum)) != (override['unit'],override['chapter']):continue
+            paragraphs=doc.paragraphs[chapter_paragraph_start:]
+            first=next(i for i,p in enumerate(paragraphs) if p.text==override['keep_from'])
+            end=next(i for i,p in enumerate(paragraphs[first+1:],first+1) if p.text==override['keep_until_before'])
+            for paragraph in paragraphs[first:end-1]:
+                paragraph.paragraph_format.keep_with_next = True
+            paragraphs[end-1].paragraph_format.keep_with_next = False
 
 doc.save(OUT)
 print(f'DOCX written: {OUT} ({os.path.getsize(OUT):,} bytes)')

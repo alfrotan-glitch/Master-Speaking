@@ -6,8 +6,8 @@
   "chapters_without_recorded_revisions": 0,
   "independent_every_word_proof_complete": false,
   "commercial_release_cleared": false,
-  "interior_pages": 163,
-  "reader_pages": 164,
+  "interior_pages": 166,
+  "reader_pages": 167,
   "guarded_chapter_edits": 377,
   "guarded_front_edits": 21,
   "initial_detailed_field_record": {
@@ -56,6 +56,7 @@
     "original_diagrams": 24,
     "included_listening_scripts": 8,
     "matching_detail_keys": 40,
+    "interpretation_questions_with_evidence": 16,
     "embedded_image_files_checked": 49,
     "missing_script_mutation_rejected": true,
     "legacy_image_mutation_rejected": true,
@@ -63,13 +64,13 @@
     "recorded_audio_supplied": false,
     "single_page_script_locations": [
       19,
-      37,
-      55,
-      74,
-      94,
-      114,
-      134,
-      154
+      38,
+      56,
+      77,
+      96,
+      116,
+      136,
+      157
     ],
     "issues": [],
     "scope": "Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation."
@@ -113,11 +114,11 @@
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 38
+      "physical_page": 39
     },
     {
       "label": "Chapter 4 \u00b7 Goals or Systems: Which Leads to Greater Success?",
-      "physical_page": 41
+      "physical_page": 42
     },
     {
       "label": "Chapter 1 \u00b7 The Power of Emotional Intelligence",
@@ -129,166 +130,146 @@
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 56
+      "physical_page": 57
     },
     {
       "label": "Chapter 4 \u00b7 Can Emotional Intelligence Be Improved?",
-      "physical_page": 59
+      "physical_page": 60
     },
     {
       "label": "Chapter 1 \u00b7 Can Money Buy Happiness?",
-      "physical_page": 64
+      "physical_page": 66
     },
     {
       "label": "Chapter 2 \u00b7 Can Money Buy Happiness?",
-      "physical_page": 71
+      "physical_page": 73
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 75
-    },
-    {
-      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
       "physical_page": 78
     },
     {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
+      "physical_page": 81
+    },
+    {
       "label": "Chapter 1 \u00b7 Living with AI: Friend or Foe?",
-      "physical_page": 84
+      "physical_page": 86
     },
     {
       "label": "Chapter 2 \u00b7 How Will AI Change the World?",
-      "physical_page": 90
+      "physical_page": 92
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 95
+      "physical_page": 97
     },
     {
       "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 98
+      "physical_page": 100
     },
     {
       "label": "Chapter 1 \u00b7 Is Love Enough?",
-      "physical_page": 104
+      "physical_page": 106
     },
     {
       "label": "Chapter 2 \u00b7 The Science of a Lasting Relationship",
-      "physical_page": 111
+      "physical_page": 113
     },
     {
       "label": "Chapter 3 \u00b7 What Makes Relationships Work?",
-      "physical_page": 115
+      "physical_page": 117
     },
     {
       "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 118
+      "physical_page": 120
     },
     {
       "label": "Chapter 1 \u00b7 The World Is Getting Smaller",
-      "physical_page": 124
+      "physical_page": 126
     },
     {
       "label": "Chapter 2 \u00b7 Navigating Our Global Future",
-      "physical_page": 131
+      "physical_page": 133
     },
     {
       "label": "Chapter 3 \u00b7 Globalization: Opportunity or Threat?",
-      "physical_page": 135
+      "physical_page": 137
     },
     {
       "label": "Chapter 4 \u00b7 Globalization: Opportunity or Threat?",
-      "physical_page": 138
+      "physical_page": 140
     },
     {
       "label": "Chapter 1 \u00b7 English: From a Local Language to a Global Lingua Franca",
-      "physical_page": 144
+      "physical_page": 146
     },
     {
       "label": "Chapter 2 \u00b7 English Without Borders",
-      "physical_page": 151
+      "physical_page": 153
     },
     {
       "label": "Chapter 3 \u00b7 WHO OWNS ENGLISH?",
-      "physical_page": 155
+      "physical_page": 158
     },
     {
       "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 158
+      "physical_page": 161
     }
   ],
   "unit_physical_pages": {
     "1": 9,
     "2": 27,
     "3": 45,
-    "4": 63,
-    "5": 83,
-    "6": 103,
-    "7": 123,
-    "8": 143
+    "4": 65,
+    "5": 85,
+    "6": 105,
+    "7": 125,
+    "8": 145
   },
   "sha256": {
-    "Master-Speaking-Back-Cover.pdf": "30fbf7c2d8c9840dd71cfeac633fd3b2efc90084e153501694755bb341917ca7",
-    "Master-Speaking-Class-Companion.pdf": "d56f3eed907b45d4bc27c04b990026b3edecb7ff9508b86ba9101bb32994591a",
-    "Master-Speaking-Front-Cover.pdf": "34102caabe1ee4088fa344d42fe4d5596fa050514b173c3603a0f59b89f83869",
-    "Master-Speaking-Reading-Edition.pdf": "38b66087800ba815760d5d5bc536552ef181e4394f68bfc6e8659bf7787c1d4c",
-    "Master-Speaking-Student-Practice-Pack.pdf": "d25a6ddbb127bf5f9dbf2de47ecddc0238974b86047a762581285fc53faae30c",
-    "Master-Speaking-Teacher-Implementation-Pack.pdf": "1c90b90d9fdf4c679ddc57181df1146d10ecfef8af6c83d288c4a7739c30fe37",
-    "Master-Speaking-print-7x10.pdf": "f17193b493aeccffc3c7426de6ba9e855612cfd1c69be9d57201287c657a1890",
-    "Master-Speaking.pdf": "38b66087800ba815760d5d5bc536552ef181e4394f68bfc6e8659bf7787c1d4c",
-    "Master-Speaking-7x10.docx": "68a040228e137198a175f829d0eb70c86f37a3e0b0c058e74ac2cc5daac97879",
-    "Master-Speaking-Class-Companion.docx": "4bc66e1005ffc85453ce2ca4601f456b0640c3bdc9372d37dd07e72d58debd36",
-    "Master-Speaking-Student-Practice-Pack.docx": "723eb27967380cde42fdeea6d2e2830f3030ca0bd1151d3d26292a7bb1e92412",
-    "Master-Speaking-Teacher-Implementation-Pack.docx": "e153847a7df0a7bc55c43523cf7927d0cd5de84a34be7f5392634300167c0c51",
-    "Master-Speaking.epub": "299203a6488e7267ae3e2491659d7dcc753d32183ee097c6b385451844c7c16a",
+    "Master-Speaking-Back-Cover.pdf": "0d628490f024166905e7f594e512771845129f2faeb2f302b58b70c7dcc60f61",
+    "Master-Speaking-Class-Companion.pdf": "b498a3cf82c8b2a2ba116bc76626bdebea79d21246a95f6e85500233bab1b927",
+    "Master-Speaking-Front-Cover.pdf": "75ea9949b074356ce9678845fd0b18bb26126e6b9321e2edc4bf7a2f0d53c42a",
+    "Master-Speaking-Reading-Edition.pdf": "e36cb8ca377caebf802c6188cd057def19560d31fd1e63c972e81841c4200aab",
+    "Master-Speaking-Student-Practice-Pack.pdf": "b1fd72a14283b1a2830c8cb79a80cc2e699c3028ad6684028a01336cddfff42e",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "23c58640d22805003dcfdc39b3e2f9fec3dc62e0a87f6bbde63353600e7b83c3",
+    "Master-Speaking-print-7x10.pdf": "45314e9e4c2a937806e7d68c0344b45f664438b1f3fa82756dcad5541e3734c7",
+    "Master-Speaking.pdf": "e36cb8ca377caebf802c6188cd057def19560d31fd1e63c972e81841c4200aab",
+    "Master-Speaking-7x10.docx": "aa148ceae9585cbcbd0d70bb1b3093ab11869becf58562e1f4bfc1908ccafa05",
+    "Master-Speaking-Class-Companion.docx": "4352f6e9e44e6b423ffe09665a2bfc05300b65ff3d073b03e41897102629283b",
+    "Master-Speaking-Student-Practice-Pack.docx": "f1aa021848fbab4970e3951aa0530462a366c3c54740f83fdf619cf1f8d0ccf7",
+    "Master-Speaking-Teacher-Implementation-Pack.docx": "feaed574f54caebfed1e09fb67b92cb1a1dbd81f81b38a9acd3e6cdeee434005",
+    "Master-Speaking.epub": "112ce7b4b2268123795086bf31e2efe797a9a038b6199cf7c7050db88a12e314",
     "Master Speaking.docx": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184"
   },
-  "semantic_content_sha256": "5fd010896fda21f646db16f7ab4f1b659f4e5e4719a669d2ab554d6489eb8f8c",
+  "semantic_content_sha256": "fcc207be60de9fc5ced88cd67018c660fb6a8dc58010f050da04d8109c6db160",
   "visual_proof": {
     "all_interior_page_overviews_inspected": true,
     "support_page_overviews_inspected": true,
     "selected_main_readable_pages": [
-      4,
-      5,
-      6,
       9,
       11,
-      16,
       18,
       19,
-      34,
       36,
       37,
-      52,
-      54,
-      55,
-      70,
-      71,
-      73,
-      74,
-      89,
-      90,
-      92,
+      38,
+      56,
+      77,
       94,
-      111,
-      112,
-      114,
-      131,
-      133,
-      134,
-      143,
-      151,
-      153,
-      154,
-      163
+      96,
+      116,
+      135,
+      136,
+      155,
+      157
     ],
     "selected_teacher_readable_pages": [
-      1,
-      3,
       10,
-      30,
-      31,
-      32,
-      33
+      11,
+      38,
+      41
     ],
     "every_page_read_at_full_size": false
   },

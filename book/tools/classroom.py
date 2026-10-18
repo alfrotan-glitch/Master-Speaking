@@ -51,6 +51,8 @@ def compose():
             student.append(f"{number}. {question['prompt']}")
             student.append('Answer: ________________________________________________________')
             student.append('_______________________________________________________________')
+        student.append('### Listen more closely — discuss after checking the details')
+        student.extend(q['prompt'] for q in module['listening']['interpretation'])
         student.append('Partner check: Which answer are you least certain about? Say what you need to hear again.')
         student.append('After checking: tell the story’s main problem and response in your own words. You may now use the script if the teacher provides it.')
         student.append('Input/support record: teacher read / other: __________  Replays: ___  Transcript before listening? yes / no')
@@ -79,13 +81,16 @@ def compose():
         teacher.extend([module['title'] + ' — ' + listening['title'],
                         'Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.',
                         f"Delivery: read the following {len(listening['script'].split())}-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.",
-                        '### Read-aloud script', listening['script'],
+                        '### Read-aloud script', '\n\n'.join(listening['paragraphs']),
                         'Gist — suggested answer: ' + listening['gist'],
                         '### Detail key — one point each; accept accurate paraphrases.'])
         for number, question in enumerate(listening['questions'], 1):
             teacher.extend([f"{number}. {question['prompt']}",
                             'Answer: ' + question['answer'],
                             'Evidence: “' + question['evidence'] + '”'])
+        teacher.append('### Interpretation — suggested reasoning, not a required opinion')
+        for question in listening['interpretation']:
+            teacher.extend([question['prompt'], 'Suggested reasoning: '+question['answer'], 'Supporting detail: “'+question['evidence']+'”'])
         teacher.append('Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.')
     teacher.extend(['## 15. Pilot observation and revision record',
                     'A plan is supplied; a live pilot and its findings are not. Complete this record after teaching rather than claiming improvement in advance.',

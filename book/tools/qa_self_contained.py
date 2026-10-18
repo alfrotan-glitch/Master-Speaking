@@ -27,7 +27,7 @@ def inspect(book,base,plan,modules):
         if digest(base['units'][n-1]['chapters'][1]['blocks'])!=row['expected_old_chapter_sha256']:
             issues.append(f'U{n}: historical replacement guard does not match')
         if chapter.get('listening_source')!=f'U{n}-ORIGINAL':issues.append(f'U{n}: original script identity missing')
-        if sum(b.get('text')==story['script'] and b['k']=='p' for b in blocks)!=1:
+        if [b['text'] for b in blocks if b.get('role')=='listening-script']!=story['paragraphs'] or ' '.join(story['paragraphs'])!=story['script']:
             issues.append(f'U{n}: supplied script missing/duplicated/changed')
         try:
             start=next(i for i,b in enumerate(blocks) if b.get('text')=='Listening Comprehension')
@@ -35,7 +35,9 @@ def inspect(book,base,plan,modules):
             questions=[b['text'] for b in blocks[start:end] if b['k']=='q']
         except StopIteration:questions=[]
         if questions!=[q['prompt'] for q in story['questions']]:issues.append(f'U{n}: detail questions do not match supplied keys')
-        for q in story['questions']:
+        for q in story['interpretation']:
+            if sum(b.get('text')==q['prompt'] for b in blocks)!=1:issues.append(f'U{n}: interpretation task missing or duplicated')
+        for q in story['questions'] + story['interpretation']:
             if not q['answer'].strip() or q['evidence'] not in story['script']:
                 issues.append(f'U{n}: unsupported listening-key evidence')
         old_vocab=next(b for b in base['units'][n-1]['chapters'][1]['blocks'] if b.get('role')=='vocab')
@@ -93,7 +95,7 @@ def main():
         if len(back)!=1 or tuple(back[0].rect)!=(0.0,0.0,504.0,720.0):issues.append('Back panel geometry mismatch')
     import copy
     bad=copy.deepcopy(book)
-    bad['units'][0]['chapters'][1]['blocks']=[b for b in bad['units'][0]['chapters'][1]['blocks'] if b.get('text')!=modules[0]['listening']['script']]
+    bad['units'][0]['chapters'][1]['blocks']=[b for b in bad['units'][0]['chapters'][1]['blocks'] if b.get('role')!='listening-script']
     missing_script=bool(inspect(bad,base,plan,modules))
     bad=copy.deepcopy(book);bad['units'][0]['image']='image1.png'
     legacy_image=bool(inspect(bad,base,plan,modules))
@@ -102,7 +104,7 @@ def main():
     bad['units'][0]['chapters'][1]['blocks'].insert(idx,{'k':'q','text':'According to the speaker, what did the absent research show?'})
     absent_source=bool(inspect(bad,base,plan,modules))
     if not missing_script or not legacy_image or not absent_source:issues.append('Self-contained negative-control detection failed')
-    report={'ok':not issues,'original_diagrams':len(artwork),'included_listening_scripts':8,'matching_detail_keys':40,
+    report={'ok':not issues,'original_diagrams':len(artwork),'included_listening_scripts':8,'matching_detail_keys':40,'interpretation_questions_with_evidence':16,
             'embedded_image_files_checked':image_files,'missing_script_mutation_rejected':missing_script,
             'legacy_image_mutation_rejected':legacy_image,'absent_source_discussion_mutation_rejected':absent_source,'recorded_audio_supplied':False,'single_page_script_locations':script_pages,'issues':issues,
             'scope':'Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation.'}

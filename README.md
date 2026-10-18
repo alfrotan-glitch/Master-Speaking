@@ -6,13 +6,15 @@ An English speaking course by Abdul Raziq Nazari, The TOEFL House.
 
 The author approved replacing the source-dependent listening lessons, existing imagery and uncleared quotation prompts with authored course material. **All 8 units and 32 exact chapter titles are preserved.**
 
-- **24 original course graphics**, with no stock images, screenshots or third-party logos in the current editions.
+- **24 original course graphics using eight topic-specific motifs**, with no stock images, screenshots or third-party logos in the current editions.
 - **8 original fictional listening stories** included at the end of the matching listening chapters, with the same scripts and keys in the teacher pack. A teacher or partner reads them aloud; no external video or subscription is required. No recorded audio is supplied.
-- Teacher keys cover **36 vocabulary completions, 74 closed-reading items and 40 listening-detail questions**. Appropriate alternatives are accepted; these are not independently certified assessment instruments.
+- Teacher keys cover **36 vocabulary completions, 74 closed-reading items and 40 listening-detail questions, plus suggested reasoning for 16 interpretation tasks**. Appropriate alternatives are accepted; these are not independently certified assessment instruments.
 - **24 release checks pass**, including source fidelity, original-script/question alignment, exclusion of legacy media, vocabulary-key coverage, accessibility structure, print preflight and official EPUBCheck.
-- Main book: **163-page 7×10 interior / 164-page reading PDF including front cover**. Supporting packs: student 18 pages, teacher 33 pages, companion 17 pages.
+- Main book: **166-page 7×10 interior / 167-page reading PDF including front cover**. Supporting packs: student 18 pages, teacher 41 pages, companion 17 pages.
 
 **Ready for teacher-led use with the supplied scripts. Prepared as a publication candidate, not commercially cleared or “fully verified.”** Independent complete review, publisher metadata approval, device/accessibility testing and printer-specific cover-wrap/physical approval remain distinct tasks. See [publication status](PUBLICATION-READINESS.md) and the [current conditions](UNRESOLVED-ISSUES.md).
+
+See [what changed in the improvement pass](IMPROVEMENT-REVIEW.md) for the protected content and actual review scope.
 
 ## Books and cover panels
 

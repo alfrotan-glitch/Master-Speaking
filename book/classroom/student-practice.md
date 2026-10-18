@@ -122,6 +122,12 @@ Answer: ________________________________________________________
 
 _______________________________________________________________
 
+### Listen more closely — discuss after checking the details
+
+Why might the member’s complaint be reasonable, even though clarification helped?
+
+What is the difference between clarifying information and agreeing on an action in this account?
+
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
 After checking: tell the story’s main problem and response in your own words. You may now use the script if the teacher provides it.
@@ -239,6 +245,12 @@ _______________________________________________________________
 Answer: ________________________________________________________
 
 _______________________________________________________________
+
+### Listen more closely — discuss after checking the details
+
+Why does the speaker reject word count as the only measure of progress?
+
+What can the two attempts show, and what can they not establish?
 
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
@@ -358,6 +370,12 @@ Answer: ________________________________________________________
 
 _______________________________________________________________
 
+### Listen more closely — discuss after checking the details
+
+What was the weakness in the narrator’s first judgment about Kareem?
+
+How does the later disagreement distinguish understanding from agreement?
+
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
 After checking: tell the story’s main problem and response in your own words. You may now use the script if the teacher provides it.
@@ -475,6 +493,12 @@ _______________________________________________________________
 Answer: ________________________________________________________
 
 _______________________________________________________________
+
+### Listen more closely — discuss after checking the details
+
+Why is the final choice not evidence that one kind of spending always brings more happiness?
+
+What concern does inviting new members to help plan the conversation address?
 
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
@@ -594,6 +618,12 @@ Answer: ________________________________________________________
 
 _______________________________________________________________
 
+### Listen more closely — discuss after checking the details
+
+What useful contribution did the tool make, and what did that contribution not establish?
+
+Why might an apparently polished answer require particular care?
+
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
 After checking: tell the story’s main problem and response in your own words. You may now use the script if the teacher provides it.
@@ -711,6 +741,12 @@ _______________________________________________________________
 Answer: ________________________________________________________
 
 _______________________________________________________________
+
+### Listen more closely — discuss after checking the details
+
+Why did the same monthly schedule initially have different meanings for the two friends?
+
+What change in their conversation helped them move beyond blame?
 
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
@@ -830,6 +866,12 @@ Answer: ________________________________________________________
 
 _______________________________________________________________
 
+### Listen more closely — discuss after checking the details
+
+Why would counting orders alone give an incomplete picture of the trial?
+
+What would make consultation meaningful rather than merely symbolic?
+
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 
 After checking: tell the story’s main problem and response in your own words. You may now use the script if the teacher provides it.
@@ -947,6 +989,12 @@ _______________________________________________________________
 Answer: ________________________________________________________
 
 _______________________________________________________________
+
+### Listen more closely — discuss after checking the details
+
+Why was knowing the individual words insufficient in the misunderstanding?
+
+What distinction does the ending make between shared communication and uniformity?
 
 Partner check: Which answer are you least certain about? Say what you need to hear again.
 

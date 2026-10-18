@@ -148,7 +148,7 @@ md += [
     '',
     '## Page-by-page findings (§28 checklist)',
     '',
-    '- Text clipping / overflow: none (qa_proof bounds checks, 161/161 pages).',
+    f'- Text clipping / overflow: none in qa_proof bounds checks ({len(rows)}/{len(rows)} pages).',
     '- Widow/orphan lines: none beyond style controls (qa_print gating).',
     '- Stranded headings: none (keep-with-next + qa_print head checks).',
     '- Accidental blank pages: none (qa_proof).',
@@ -160,7 +160,7 @@ md += [
     '## Human eye pass',
     '',
     '- Automated geometric/typographic evidence is above; page renders are '
-    'provided for the reviewing editor’s visual pass. This report certifies '
+    'provided for the reviewing editor’s visual pass. This report records '
     'the measurable page qualities; final aesthetic sign-off belongs to the '
     'human reviewer.']
 open(OUT_MD, 'w', encoding='utf-8').write('\n'.join(md))

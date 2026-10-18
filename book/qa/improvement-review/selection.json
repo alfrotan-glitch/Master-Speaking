@@ -1,0 +1,59 @@
+{
+  "script_pages": [
+    19,
+    38,
+    56,
+    77,
+    96,
+    116,
+    136,
+    157
+  ],
+  "interpretation_pages": [
+    18,
+    36,
+    54,
+    75,
+    94,
+    115,
+    135,
+    155
+  ],
+  "candidate_main_pages": [
+    9,
+    11,
+    18,
+    19,
+    27,
+    36,
+    37,
+    38,
+    45,
+    54,
+    56,
+    65,
+    75,
+    77,
+    85,
+    94,
+    96,
+    105,
+    115,
+    116,
+    125,
+    135,
+    136,
+    145,
+    155,
+    157
+  ],
+  "candidate_teacher_pages": [
+    10,
+    11,
+    20,
+    21,
+    38,
+    41
+  ],
+  "scope": "Rendering candidates is not evidence of visual inspection; actual inspected pages are in book/qa/full-revision-proof/index.json."
+}

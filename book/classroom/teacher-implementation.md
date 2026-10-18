@@ -238,11 +238,13 @@ The Power of Communication — The meeting that almost went wrong
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 122-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 226-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read.
+
+Afterward, one member said that asking so many questions had slowed everything down. I understood her point: nobody wanted a long exchange about a simple meeting. But the original message had left two different gaps. The room number needed a precise answer; the books needed someone to accept a responsibility. Simply agreeing that the plan sounded fine would not have settled either problem. Next time, I would ask the organizer to put the place, time, and responsibilities in one message. I would also check that everyone had seen the correction. A clear message is useful only if it reaches the people who need it.
 
 Gist — suggested answer: A club member clarifies an unclear plan and helps the meeting run smoothly.
 
@@ -278,6 +280,20 @@ Answer: Bringing the books.
 
 Evidence: “nobody had agreed to bring them, so I offered”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+Why might the member’s complaint be reasonable, even though clarification helped?
+
+Suggested reasoning: Repeated questions can take time; the listener should explain which gaps actually need checking.
+
+Supporting detail: “nobody wanted a long exchange about a simple meeting”
+
+What is the difference between clarifying information and agreeing on an action in this account?
+
+Suggested reasoning: Clarifying establishes the room and time; agreeing on action establishes who will bring the books.
+
+Supporting detail: “the books needed someone to accept a responsibility”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 8. Unit 2 • Original listening story and key
@@ -286,11 +302,13 @@ The Art of Goal Setting — A smaller plan that lasted
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 133-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 248-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve.
+
+At our review, my friend asked whether I had lowered my ambition. I said the ambition was still to join a discussion, not to finish a word list. We compared two attempts on the same topic. In the first, I used more new words but could not explain my reason. In the second, I used simpler language and answered a follow-up question. That was useful evidence, although it did not prove that every part of my English had improved. For the next fortnight, I kept the short routine and added one conversation with a willing partner. If that was difficult to arrange, I would practise explaining the same idea from a different point of view.
 
 Gist — suggested answer: A learner replaces an ambitious word target with a smaller plan connected to speaking.
 
@@ -326,6 +344,20 @@ Answer: After two weeks.
 
 Evidence: “After two weeks, I would check”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+Why does the speaker reject word count as the only measure of progress?
+
+Suggested reasoning: The aim is to participate in discussion; explaining a reason and answering a question show something a word total does not.
+
+Supporting detail: “the ambition was still to join a discussion, not to finish a word list”
+
+What can the two attempts show, and what can they not establish?
+
+Suggested reasoning: They illustrate a difference on one task, not improvement in every aspect of English.
+
+Supporting detail: “it did not prove that every part of my English had improved”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 9. Unit 3 • Original listening story and key
@@ -334,11 +366,13 @@ Emotional Intelligence — Before making an assumption
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 120-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 227-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed.
+
+The change did not solve every disagreement. Later, I wanted a dramatic opening, while Kareem preferred a quiet explanation. This time, I could feel myself becoming impatient. I asked for a minute to write down what each opening would help the audience understand. We then tried both versions with another group. Their questions helped us choose, although Kareem and I still preferred different styles. I had first treated his silence as evidence of his attitude. It was really a reason to ask a question. Listening to him did not mean agreeing with every suggestion; it meant giving his ideas a fair hearing before we made a decision.
 
 Gist — suggested answer: A question reveals why a quiet group member has not been speaking.
 
@@ -374,6 +408,20 @@ Answer: A simpler way to organize the presentation.
 
 Evidence: “a simpler way to organize our presentation”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+What was the weakness in the narrator’s first judgment about Kareem?
+
+Suggested reasoning: The narrator inferred an attitude from silence without checking the reason.
+
+Supporting detail: “I had first treated his silence as evidence of his attitude”
+
+How does the later disagreement distinguish understanding from agreement?
+
+Suggested reasoning: They listen and test both openings, but do not have to share the same preference.
+
+Supporting detail: “Kareem and I still preferred different styles”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 10. Unit 4 • Original listening story and key
@@ -382,11 +430,13 @@ Money and Happiness — One hundred credits
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 127-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 236-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room.
+
+At our next meeting, someone asked whether the larger group had simply outvoted the newcomers. That question changed our discussion. Saving credits was easy to count; feeling welcome was not. We asked two new members to help plan the conversation instead of assuming that a free event would meet their needs. We also agreed to ask whether the room had become easier to use after the changes. The decision was not proof that books create more happiness than celebrations. It was a choice about this group, this room, and a limited budget. Another group might reasonably choose differently, especially if its members already had a comfortable place to read.
 
 Gist — suggested answer: Club members explain different priorities and agree on a budget compromise.
 
@@ -422,6 +472,20 @@ Answer: A free conversation afternoon.
 
 Evidence: “a free conversation afternoon instead of the paid event”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+Why is the final choice not evidence that one kind of spending always brings more happiness?
+
+Suggested reasoning: It responds to one group’s needs and budget; another group could have different priorities.
+
+Supporting detail: “It was a choice about this group, this room, and a limited budget”
+
+What concern does inviting new members to help plan the conversation address?
+
+Suggested reasoning: It gives newcomers a role instead of assuming that the majority knows what would welcome them.
+
+Supporting detail: “instead of assuming that a free event would meet their needs”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 11. Unit 5 • Original listening story and key
@@ -430,11 +494,13 @@ Living with AI — A confident answer was not enough
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 124-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 239-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information.
+
+A classmate asked why I had used the tool at all if I needed to check its work. I showed her my rough notes and the clearer order in the draft. That help was real, but it was different from knowing when our meeting would happen. The confident tone had made the invented details easy to overlook. We agreed on a simple rule for our next announcement: keep a record of the facts we supply, mark anything the tool adds, and check those additions before sharing. If we could not verify a detail, we would leave it out or say that it was unconfirmed. A polished paragraph should make our responsibility clearer, not hide it.
 
 Gist — suggested answer: A learner keeps useful drafting help but verifies invented details before sharing a message.
 
@@ -470,6 +536,20 @@ Answer: Classmates’ phone numbers.
 
 Evidence: “I also left classmates’ phone numbers out of the tool.”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+What useful contribution did the tool make, and what did that contribution not establish?
+
+Suggested reasoning: It improved the order of information; that did not make its added meeting details reliable.
+
+Supporting detail: “That help was real, but it was different from knowing when our meeting would happen”
+
+Why might an apparently polished answer require particular care?
+
+Suggested reasoning: A confident presentation can conceal invented or unchecked details.
+
+Supporting detail: “The confident tone had made the invented details easy to overlook”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 12. Unit 6 • Original listening story and key
@@ -478,11 +558,13 @@ Is Love Enough? — Friends with different plans
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 125-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 235-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation.
+
+Mariam later said that accepting a monthly meeting had felt like caring less about the project. Salim had understood the same agreement differently: he thought it made a promise he could actually keep. Neither meaning had been obvious during their first conversation. They agreed to review the arrangement after three meetings and to explain early if a responsibility became difficult. They also left room to disagree about the project without treating every disagreement as a judgment about their friendship. The schedule was a practical result, but the more important change was how they reached it. They stopped asking who cared more and started asking what each person could reliably contribute.
 
 Gist — suggested answer: Two friends discover an unstated difference in expectations and agree on a trial plan.
 
@@ -518,6 +600,20 @@ Answer: How to pay for printing.
 
 Evidence: “They still needed to decide how to pay for printing”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+Why did the same monthly schedule initially have different meanings for the two friends?
+
+Suggested reasoning: Mariam associated frequency with commitment; Salim associated a realistic promise with commitment.
+
+Supporting detail: “he thought it made a promise he could actually keep”
+
+What change in their conversation helped them move beyond blame?
+
+Suggested reasoning: They discussed reliable contributions rather than trying to decide who cared more.
+
+Supporting detail: “They stopped asking who cared more and started asking what each person could reliably contribute”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 13. Unit 7 • Original listening story and key
@@ -526,11 +622,13 @@ Globalization — Testing an online market
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 123-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 249-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand.
+
+One organizer wanted to announce success as soon as the first orders arrived. Another asked whose costs would appear in that announcement. A volunteer might spend an hour preparing a listing, while a seller might wait all afternoon for a collection. They decided that the review should include those experiences, not just sales. They would also ask whether the trial had brought in new customers or merely moved existing orders online. The smaller trial postponed the possibility of wider trade, but it made a mistake less expensive to correct. At the review, sellers would be able to recommend changing the plan, continuing it, or stopping. An invitation to participate would not count as a voice in the decision unless their views could affect what happened next.
 
 Gist — suggested answer: A community plans a limited market trial and decides what evidence to collect before expanding.
 
@@ -566,6 +664,20 @@ Answer: No; they would review the information before deciding.
 
 Evidence: “review the information together before deciding whether to expand”
 
+### Interpretation — suggested reasoning, not a required opinion
+
+Why would counting orders alone give an incomplete picture of the trial?
+
+Suggested reasoning: It would overlook unpaid time, collection difficulties and whether orders were genuinely new.
+
+Supporting detail: “the review should include those experiences, not just sales”
+
+What would make consultation meaningful rather than merely symbolic?
+
+Suggested reasoning: Sellers’ views must be able to change whether and how the market continues.
+
+Supporting detail: “their views could affect what happened next”
+
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
 ## 14. Unit 8 • Original listening story and key
@@ -574,11 +686,13 @@ Lingua Franca — Making the welcome clear
 
 Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
-Delivery: read the following 128-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
+Delivery: read the following 243-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
 ### Read-aloud script
 
 Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use.
+
+Later, a member worried that explaining every expression would make our conversation dull. Another pointed out that she had understood every individual word but had still imagined the wrong activity. We did not decide to remove all idioms or make everyone sound alike. We decided to explain expressions when the practical meaning mattered, and to make it easy to ask without embarrassment. At the welcome event, partners could introduce a useful phrase from another language as well as explain something about themselves. English helped people take part in one conversation; it did not tell us how much they knew in other languages. A successful exchange would leave room for more than one way of speaking.
 
 Gist — suggested answer: A group makes an idiom and event instructions clear for a multilingual audience.
 
@@ -613,6 +727,20 @@ Evidence: “at ten on Saturday morning”
 Answer: By asking two volunteers to explain it in their own words.
 
 Evidence: “asked two volunteers to explain the first activity in their own words”
+
+### Interpretation — suggested reasoning, not a required opinion
+
+Why was knowing the individual words insufficient in the misunderstanding?
+
+Suggested reasoning: The phrase had an idiomatic meaning different from the literal activity imagined by the listener.
+
+Supporting detail: “she had understood every individual word but had still imagined the wrong activity”
+
+What distinction does the ending make between shared communication and uniformity?
+
+Suggested reasoning: People can clarify practical meanings while retaining different expressions, languages and voices.
+
+Supporting detail: “We did not decide to remove all idioms or make everyone sound alike”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 

@@ -1,8 +1,8 @@
 {
- "blocks": 3203,
+ "blocks": 3243,
  "unknown_words": {},
  "hyphenated_compounds_accepted": {
-  "follow-up": 20,
+  "follow-up": 21,
   "one-minute": 19,
   "long-term": 11,
   "one-sentence": 8,

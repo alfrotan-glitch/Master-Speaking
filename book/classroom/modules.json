@@ -3,10 +3,22 @@
     "unit": 1,
     "title": "The Power of Communication",
     "goals": [
-      ["I can summarize the reading’s main point in my own words.", "I can point to two details that support my summary."],
-      ["I can identify a problem and its solution in a short spoken account.", "I can check a detail by asking for clarification."],
-      ["I can give an opinion with two reasons and an example.", "I can ask a follow-up question that responds to my partner’s idea."],
-      ["I can organize a presentation into an opening, three points, and a conclusion.", "I can make important words stand out without stressing every word."]
+      [
+        "I can summarize the reading’s main point in my own words.",
+        "I can point to two details that support my summary."
+      ],
+      [
+        "I can identify a problem and its solution in a short spoken account.",
+        "I can check a detail by asking for clarification."
+      ],
+      [
+        "I can give an opinion with two reasons and an example.",
+        "I can ask a follow-up question that responds to my partner’s idea."
+      ],
+      [
+        "I can organize a presentation into an opening, three points, and a conclusion.",
+        "I can make important words stand out without stressing every word."
+      ]
     ],
     "dialogue": [
       "Mina: I think good listeners should ask more questions.",
@@ -18,29 +30,81 @@
     ],
     "notice": "Omar does more than agree: he checks Mina’s meaning and then asks about a possible limit to her idea.",
     "response": "For me, listening is the most important communication skill. First, taking turns gives everyone a chance to make their point. Second, careful listening helps us clear up a misunderstanding before it becomes an argument. Last week, a classmate thought I had rejected his idea. I asked him to explain, then repeated what I had understood. We realized we were talking about different parts of the task. That taught me not to jump to conclusions. Listening also helps me support my opinion: I can answer the point someone actually made, rather than the point I expected to hear.",
-    "frames": ["My main point is…", "One reason is… A second reason is…", "Could you explain what you mean by…?"],
+    "frames": [
+      "My main point is…",
+      "One reason is… A second reason is…",
+      "Could you explain what you mean by…?"
+    ],
     "transfer": "Discuss the most useful skill for a new club member. Give your own example and ask your partner one question about theirs.",
     "listening": {
       "title": "The meeting that almost went wrong",
-      "script": "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read.",
+      "script": "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read. Afterward, one member said that asking so many questions had slowed everything down. I understood her point: nobody wanted a long exchange about a simple meeting. But the original message had left two different gaps. The room number needed a precise answer; the books needed someone to accept a responsibility. Simply agreeing that the plan sounded fine would not have settled either problem. Next time, I would ask the organizer to put the place, time, and responsibilities in one message. I would also check that everyone had seen the correction. A clear message is useful only if it reaches the people who need it.",
       "questions": [
-        {"prompt": "What caused the uncertainty?", "answer": "The message said new room without giving a room number.", "evidence": "I did not know which room was new."},
-        {"prompt": "Which room did the club use?", "answer": "Room Five.", "evidence": "we should use Room Five"},
-        {"prompt": "Why was the usual room unavailable?", "answer": "It needed repairs.", "evidence": "Room Two needed repairs"},
-        {"prompt": "How did the speaker check the meeting plan?", "answer": "By repeating the room, time, and day back and receiving confirmation.", "evidence": "I repeated the plan back: Room Five, four o’clock, Monday."},
-        {"prompt": "What responsibility did the speaker take on?", "answer": "Bringing the books.", "evidence": "nobody had agreed to bring them, so I offered"}
+        {
+          "prompt": "What caused the uncertainty?",
+          "answer": "The message said new room without giving a room number.",
+          "evidence": "I did not know which room was new."
+        },
+        {
+          "prompt": "Which room did the club use?",
+          "answer": "Room Five.",
+          "evidence": "we should use Room Five"
+        },
+        {
+          "prompt": "Why was the usual room unavailable?",
+          "answer": "It needed repairs.",
+          "evidence": "Room Two needed repairs"
+        },
+        {
+          "prompt": "How did the speaker check the meeting plan?",
+          "answer": "By repeating the room, time, and day back and receiving confirmation.",
+          "evidence": "I repeated the plan back: Room Five, four o’clock, Monday."
+        },
+        {
+          "prompt": "What responsibility did the speaker take on?",
+          "answer": "Bringing the books.",
+          "evidence": "nobody had agreed to bring them, so I offered"
+        }
       ],
-      "gist": "A club member clarifies an unclear plan and helps the meeting run smoothly."
+      "gist": "A club member clarifies an unclear plan and helps the meeting run smoothly.",
+      "interpretation": [
+        {
+          "prompt": "Why might the member’s complaint be reasonable, even though clarification helped?",
+          "answer": "Repeated questions can take time; the listener should explain which gaps actually need checking.",
+          "evidence": "nobody wanted a long exchange about a simple meeting"
+        },
+        {
+          "prompt": "What is the difference between clarifying information and agreeing on an action in this account?",
+          "answer": "Clarifying establishes the room and time; agreeing on action establishes who will bring the books.",
+          "evidence": "the books needed someone to accept a responsibility"
+        }
+      ],
+      "paragraphs": [
+        "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read.",
+        "Afterward, one member said that asking so many questions had slowed everything down. I understood her point: nobody wanted a long exchange about a simple meeting. But the original message had left two different gaps. The room number needed a precise answer; the books needed someone to accept a responsibility. Simply agreeing that the plan sounded fine would not have settled either problem. Next time, I would ask the organizer to put the place, time, and responsibilities in one message. I would also check that everyone had seen the correction. A clear message is useful only if it reaches the people who need it."
+      ]
     }
   },
   {
     "unit": 2,
     "title": "The Art of Goal Setting",
     "goals": [
-      ["I can explain the difference between a wish and an action plan.", "I can support my explanation with an example from the reading."],
-      ["I can identify a goal, an obstacle, and a revised plan in a spoken account.", "I can distinguish what was planned from what actually happened."],
-      ["I can explain a realistic goal and ask about a partner’s constraints.", "I can negotiate a smaller next step when a plan is difficult."],
-      ["I can present a goal with actions and a way to check progress.", "I can pause between ideas so listeners can follow my plan."]
+      [
+        "I can explain the difference between a wish and an action plan.",
+        "I can support my explanation with an example from the reading."
+      ],
+      [
+        "I can identify a goal, an obstacle, and a revised plan in a spoken account.",
+        "I can distinguish what was planned from what actually happened."
+      ],
+      [
+        "I can explain a realistic goal and ask about a partner’s constraints.",
+        "I can negotiate a smaller next step when a plan is difficult."
+      ],
+      [
+        "I can present a goal with actions and a way to check progress.",
+        "I can pause between ideas so listeners can follow my plan."
+      ]
     ],
     "dialogue": [
       "Farid: I want to become a confident speaker this month.",
@@ -52,29 +116,81 @@
     ],
     "notice": "Leila asks what the goal means and what time is available before suggesting a solution.",
     "response": "My goal is to explain an idea for two minutes using only keyword notes. I can set aside ten minutes on Monday, Wednesday, and Friday. First, I’ll choose a familiar topic and make a short plan. Then I’ll speak, note where I got stuck, and try again. After two weeks, I’ll ask a willing partner to summarize my main point. If they cannot follow it, I’ll work on my organization rather than simply trying to speak faster. When an evening is busy, my fallback is a one-minute attempt, not giving up for the whole week.",
-    "frames": ["By…, I want to be able to…", "The main obstacle might be…", "If that happens, my next step will be…"],
+    "frames": [
+      "By…, I want to be able to…",
+      "The main obstacle might be…",
+      "If that happens, my next step will be…"
+    ],
     "transfer": "Plan a small learning goal for a fictional student who has limited time. Explain how you would tell whether the plan is working.",
     "listening": {
       "title": "A smaller plan that lasted",
-      "script": "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve.",
+      "script": "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve. At our review, my friend asked whether I had lowered my ambition. I said the ambition was still to join a discussion, not to finish a word list. We compared two attempts on the same topic. In the first, I used more new words but could not explain my reason. In the second, I used simpler language and answered a follow-up question. That was useful evidence, although it did not prove that every part of my English had improved. For the next fortnight, I kept the short routine and added one conversation with a willing partner. If that was difficult to arrange, I would practise explaining the same idea from a different point of view.",
       "questions": [
-        {"prompt": "What was the original daily target?", "answer": "Twenty new English words every evening.", "evidence": "twenty new English words every evening"},
-        {"prompt": "What did the speaker actually want to do?", "answer": "Take part in class discussions.", "evidence": "I wanted to take part in class discussions"},
-        {"prompt": "On which three days would the new practice happen?", "answer": "Monday, Wednesday, and Friday.", "evidence": "on Monday, Wednesday, and Friday"},
-        {"prompt": "How long would each practice take?", "answer": "Ten minutes.", "evidence": "Each practice would take ten minutes."},
-        {"prompt": "When would the speaker review the plan?", "answer": "After two weeks.", "evidence": "After two weeks, I would check"}
+        {
+          "prompt": "What was the original daily target?",
+          "answer": "Twenty new English words every evening.",
+          "evidence": "twenty new English words every evening"
+        },
+        {
+          "prompt": "What did the speaker actually want to do?",
+          "answer": "Take part in class discussions.",
+          "evidence": "I wanted to take part in class discussions"
+        },
+        {
+          "prompt": "On which three days would the new practice happen?",
+          "answer": "Monday, Wednesday, and Friday.",
+          "evidence": "on Monday, Wednesday, and Friday"
+        },
+        {
+          "prompt": "How long would each practice take?",
+          "answer": "Ten minutes.",
+          "evidence": "Each practice would take ten minutes."
+        },
+        {
+          "prompt": "When would the speaker review the plan?",
+          "answer": "After two weeks.",
+          "evidence": "After two weeks, I would check"
+        }
       ],
-      "gist": "A learner replaces an ambitious word target with a smaller plan connected to speaking."
+      "gist": "A learner replaces an ambitious word target with a smaller plan connected to speaking.",
+      "interpretation": [
+        {
+          "prompt": "Why does the speaker reject word count as the only measure of progress?",
+          "answer": "The aim is to participate in discussion; explaining a reason and answering a question show something a word total does not.",
+          "evidence": "the ambition was still to join a discussion, not to finish a word list"
+        },
+        {
+          "prompt": "What can the two attempts show, and what can they not establish?",
+          "answer": "They illustrate a difference on one task, not improvement in every aspect of English.",
+          "evidence": "it did not prove that every part of my English had improved"
+        }
+      ],
+      "paragraphs": [
+        "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve.",
+        "At our review, my friend asked whether I had lowered my ambition. I said the ambition was still to join a discussion, not to finish a word list. We compared two attempts on the same topic. In the first, I used more new words but could not explain my reason. In the second, I used simpler language and answered a follow-up question. That was useful evidence, although it did not prove that every part of my English had improved. For the next fortnight, I kept the short routine and added one conversation with a willing partner. If that was difficult to arrange, I would practise explaining the same idea from a different point of view."
+      ]
     }
   },
   {
     "unit": 3,
     "title": "Emotional Intelligence",
     "goals": [
-      ["I can explain an emotional skill using an everyday example.", "I can distinguish what the reading says from my own interpretation."],
-      ["I can identify a speaker’s first assumption and the information that changes it.", "I can support my interpretation with a detail I heard."],
-      ["I can acknowledge a concern and check that I understood it.", "I can suggest a respectful response without diagnosing another person’s feelings."],
-      ["I can organize a presentation about a communication strategy.", "I can use pace and intonation to make my intention easier to understand."]
+      [
+        "I can explain an emotional skill using an everyday example.",
+        "I can distinguish what the reading says from my own interpretation."
+      ],
+      [
+        "I can identify a speaker’s first assumption and the information that changes it.",
+        "I can support my interpretation with a detail I heard."
+      ],
+      [
+        "I can acknowledge a concern and check that I understood it.",
+        "I can suggest a respectful response without diagnosing another person’s feelings."
+      ],
+      [
+        "I can organize a presentation about a communication strategy.",
+        "I can use pace and intonation to make my intention easier to understand."
+      ]
     ],
     "dialogue": [
       "Nadia: My partner changed our slides without asking me. I felt ignored.",
@@ -86,29 +202,81 @@
     ],
     "notice": "Samir checks which part of the situation matters instead of immediately taking sides.",
     "response": "I think pausing before responding can help when a conversation becomes tense. It gives me time to separate what happened from what I assume it means. If a classmate changes my work, I might assume they do not respect me. But they may think they are helping. I would explain the effect on me and ask what they intended. That does not mean I must accept every change. It means I can discuss a boundary without beginning with an accusation. I can then suggest that we agree on changes together next time.",
-    "frames": ["It sounds as though your concern is…", "Have I understood that correctly?", "What would make the next step fair to both people?"],
+    "frames": [
+      "It sounds as though your concern is…",
+      "Have I understood that correctly?",
+      "What would make the next step fair to both people?"
+    ],
     "transfer": "Use a fictional group-project disagreement. Explain two possible interpretations before proposing a response. Do not disclose private conflict.",
     "listening": {
       "title": "Before making an assumption",
-      "script": "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed.",
+      "script": "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed. The change did not solve every disagreement. Later, I wanted a dramatic opening, while Kareem preferred a quiet explanation. This time, I could feel myself becoming impatient. I asked for a minute to write down what each opening would help the audience understand. We then tried both versions with another group. Their questions helped us choose, although Kareem and I still preferred different styles. I had first treated his silence as evidence of his attitude. It was really a reason to ask a question. Listening to him did not mean agreeing with every suggestion; it meant giving his ideas a fair hearing before we made a decision.",
       "questions": [
-        {"prompt": "What did the speaker first assume about Kareem?", "answer": "That he was not interested.", "evidence": "I thought he was not interested"},
-        {"prompt": "Did Kareem understand the task?", "answer": "Yes.", "evidence": "He said he understood it"},
-        {"prompt": "What made it difficult for him to contribute?", "answer": "The group moved too quickly for him to find a turn.", "evidence": "the group moved so quickly that he could not find a moment to speak"},
-        {"prompt": "What change did the group make?", "answer": "Everyone received a minute to explain an idea without interruption.", "evidence": "we gave everyone a minute to explain one idea without interruption"},
-        {"prompt": "What did Kareem contribute?", "answer": "A simpler way to organize the presentation.", "evidence": "a simpler way to organize our presentation"}
+        {
+          "prompt": "What did the speaker first assume about Kareem?",
+          "answer": "That he was not interested.",
+          "evidence": "I thought he was not interested"
+        },
+        {
+          "prompt": "Did Kareem understand the task?",
+          "answer": "Yes.",
+          "evidence": "He said he understood it"
+        },
+        {
+          "prompt": "What made it difficult for him to contribute?",
+          "answer": "The group moved too quickly for him to find a turn.",
+          "evidence": "the group moved so quickly that he could not find a moment to speak"
+        },
+        {
+          "prompt": "What change did the group make?",
+          "answer": "Everyone received a minute to explain an idea without interruption.",
+          "evidence": "we gave everyone a minute to explain one idea without interruption"
+        },
+        {
+          "prompt": "What did Kareem contribute?",
+          "answer": "A simpler way to organize the presentation.",
+          "evidence": "a simpler way to organize our presentation"
+        }
       ],
-      "gist": "A question reveals why a quiet group member has not been speaking."
+      "gist": "A question reveals why a quiet group member has not been speaking.",
+      "interpretation": [
+        {
+          "prompt": "What was the weakness in the narrator’s first judgment about Kareem?",
+          "answer": "The narrator inferred an attitude from silence without checking the reason.",
+          "evidence": "I had first treated his silence as evidence of his attitude"
+        },
+        {
+          "prompt": "How does the later disagreement distinguish understanding from agreement?",
+          "answer": "They listen and test both openings, but do not have to share the same preference.",
+          "evidence": "Kareem and I still preferred different styles"
+        }
+      ],
+      "paragraphs": [
+        "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed.",
+        "The change did not solve every disagreement. Later, I wanted a dramatic opening, while Kareem preferred a quiet explanation. This time, I could feel myself becoming impatient. I asked for a minute to write down what each opening would help the audience understand. We then tried both versions with another group. Their questions helped us choose, although Kareem and I still preferred different styles. I had first treated his silence as evidence of his attitude. It was really a reason to ask a question. Listening to him did not mean agreeing with every suggestion; it meant giving his ideas a fair hearing before we made a decision."
+      ]
     }
   },
   {
     "unit": 4,
     "title": "Money and Happiness",
     "goals": [
-      ["I can summarize two ways money may affect people’s choices.", "I can explain a trade-off without assuming everyone has the same priorities."],
-      ["I can identify a spoken budget decision and the reasons for it.", "I can check the numbers I hear."],
-      ["I can compare spending options and negotiate a shared decision.", "I can explain one benefit and one cost of our choice."],
-      ["I can present a balanced position on money and well-being.", "I can identify which claims need evidence and which are personal opinions."]
+      [
+        "I can summarize two ways money may affect people’s choices.",
+        "I can explain a trade-off without assuming everyone has the same priorities."
+      ],
+      [
+        "I can identify a spoken budget decision and the reasons for it.",
+        "I can check the numbers I hear."
+      ],
+      [
+        "I can compare spending options and negotiate a shared decision.",
+        "I can explain one benefit and one cost of our choice."
+      ],
+      [
+        "I can present a balanced position on money and well-being.",
+        "I can identify which claims need evidence and which are personal opinions."
+      ]
     ],
     "dialogue": [
       "Amina: I’d spend the club’s money on a social event.",
@@ -120,29 +288,81 @@
     ],
     "notice": "The speakers discuss the effect of each choice and look for a compromise rather than judging each other’s priorities.",
     "response": "If our learning club had a small budget, I would first ask what stops members from taking part. A celebration might be enjoyable, but better lighting could help people use the room every week. I would compare those benefits before deciding. The drawback is that practical improvements may not meet the need for friendship and relaxation. We could improve the room and arrange a free activity together. That is not the right choice for every club; it depends on what members need. My main point is that the price of an activity does not tell us its value.",
-    "frames": ["Our priority could be… because…", "The benefit is…, but the trade-off is…", "Could we agree on…?"],
+    "frames": [
+      "Our priority could be… because…",
+      "The benefit is…, but the trade-off is…",
+      "Could we agree on…?"
+    ],
     "transfer": "Allocate 100 imaginary credits among two or three options you invent. Check the total and explain a rejected option. Personal income is not part of the task.",
     "listening": {
       "title": "One hundred credits",
-      "script": "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room.",
+      "script": "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room. At our next meeting, someone asked whether the larger group had simply outvoted the newcomers. That question changed our discussion. Saving credits was easy to count; feeling welcome was not. We asked two new members to help plan the conversation instead of assuming that a free event would meet their needs. We also agreed to ask whether the room had become easier to use after the changes. The decision was not proof that books create more happiness than celebrations. It was a choice about this group, this room, and a limited budget. Another group might reasonably choose differently, especially if its members already had a comfortable place to read.",
       "questions": [
-        {"prompt": "How many credits did the club have?", "answer": "One hundred.", "evidence": "one hundred imaginary credits"},
-        {"prompt": "What did the books cost?", "answer": "Forty credits.", "evidence": "buy books for forty credits"},
-        {"prompt": "Which two paid options did the club choose?", "answer": "Books and improved lighting.", "evidence": "buy the books and improve the lighting"},
-        {"prompt": "How many credits remained?", "answer": "Twenty-five.", "evidence": "leaving twenty-five credits unspent"},
-        {"prompt": "What replaced the paid event?", "answer": "A free conversation afternoon.", "evidence": "a free conversation afternoon instead of the paid event"}
+        {
+          "prompt": "How many credits did the club have?",
+          "answer": "One hundred.",
+          "evidence": "one hundred imaginary credits"
+        },
+        {
+          "prompt": "What did the books cost?",
+          "answer": "Forty credits.",
+          "evidence": "buy books for forty credits"
+        },
+        {
+          "prompt": "Which two paid options did the club choose?",
+          "answer": "Books and improved lighting.",
+          "evidence": "buy the books and improve the lighting"
+        },
+        {
+          "prompt": "How many credits remained?",
+          "answer": "Twenty-five.",
+          "evidence": "leaving twenty-five credits unspent"
+        },
+        {
+          "prompt": "What replaced the paid event?",
+          "answer": "A free conversation afternoon.",
+          "evidence": "a free conversation afternoon instead of the paid event"
+        }
       ],
-      "gist": "Club members explain different priorities and agree on a budget compromise."
+      "gist": "Club members explain different priorities and agree on a budget compromise.",
+      "interpretation": [
+        {
+          "prompt": "Why is the final choice not evidence that one kind of spending always brings more happiness?",
+          "answer": "It responds to one group’s needs and budget; another group could have different priorities.",
+          "evidence": "It was a choice about this group, this room, and a limited budget"
+        },
+        {
+          "prompt": "What concern does inviting new members to help plan the conversation address?",
+          "answer": "It gives newcomers a role instead of assuming that the majority knows what would welcome them.",
+          "evidence": "instead of assuming that a free event would meet their needs"
+        }
+      ],
+      "paragraphs": [
+        "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room.",
+        "At our next meeting, someone asked whether the larger group had simply outvoted the newcomers. That question changed our discussion. Saving credits was easy to count; feeling welcome was not. We asked two new members to help plan the conversation instead of assuming that a free event would meet their needs. We also agreed to ask whether the room had become easier to use after the changes. The decision was not proof that books create more happiness than celebrations. It was a choice about this group, this room, and a limited budget. Another group might reasonably choose differently, especially if its members already had a comfortable place to read."
+      ]
     }
   },
   {
     "unit": 5,
     "title": "Living with AI",
     "goals": [
-      ["I can explain a possible AI use and a limitation.", "I can distinguish a possibility from a claim supported by evidence."],
-      ["I can identify an error and the steps used to check it.", "I can explain which details in the account were verified."],
-      ["I can propose a responsible classroom AI rule and consider an exception.", "I can respond to a counterargument without dismissing it."],
-      ["I can present an AI-related proposal with a drawback and checking process.", "I can identify my sources and say when I am uncertain."]
+      [
+        "I can explain a possible AI use and a limitation.",
+        "I can distinguish a possibility from a claim supported by evidence."
+      ],
+      [
+        "I can identify an error and the steps used to check it.",
+        "I can explain which details in the account were verified."
+      ],
+      [
+        "I can propose a responsible classroom AI rule and consider an exception.",
+        "I can respond to a counterargument without dismissing it."
+      ],
+      [
+        "I can present an AI-related proposal with a drawback and checking process.",
+        "I can identify my sources and say when I am uncertain."
+      ]
     ],
     "dialogue": [
       "Zara: I used a tool to suggest an outline, but one of its examples looks wrong.",
@@ -154,29 +374,81 @@
     ],
     "notice": "The speakers describe the specific evidence problem; they do not assume that confidence or precision makes an answer reliable.",
     "response": "I would allow AI tools for brainstorming, but not as a substitute for checking facts or doing our own speaking. A suggested outline can help me get started. The risk is that I might repeat a convincing claim without understanding it. My rule would be to check factual claims against identifiable sources and explain what assistance I used. I would not upload classmates’ private information. If a tool is unavailable, the task should still be possible with paper and a partner. That keeps access fair and makes the speaking practice, rather than the technology, the main purpose.",
-    "frames": ["The tool may help with…, provided that…", "The claim needs checking because…", "I cannot verify that yet, so…"],
+    "frames": [
+      "The tool may help with…, provided that…",
+      "The claim needs checking because…",
+      "I cannot verify that yet, so…"
+    ],
     "transfer": "Write two proposed AI-use rules for a fictional speaking class. Explain how each protects learning or privacy. No AI account is needed.",
     "listening": {
       "title": "A confident answer was not enough",
-      "script": "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information.",
+      "script": "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information. A classmate asked why I had used the tool at all if I needed to check its work. I showed her my rough notes and the clearer order in the draft. That help was real, but it was different from knowing when our meeting would happen. The confident tone had made the invented details easy to overlook. We agreed on a simple rule for our next announcement: keep a record of the facts we supply, mark anything the tool adds, and check those additions before sharing. If we could not verify a detail, we would leave it out or say that it was unconfirmed. A polished paragraph should make our responsibility clearer, not hide it.",
       "questions": [
-        {"prompt": "Which day did the tool invent?", "answer": "Thursday.", "evidence": "meet on Thursday in Room Three"},
-        {"prompt": "What were the verified day and room?", "answer": "Wednesday, Room Five.", "evidence": "on Wednesday in Room Five"},
-        {"prompt": "Where did the speaker first check the meeting details?", "answer": "On the noticeboard.", "evidence": "I checked the noticeboard"},
-        {"prompt": "What part of the draft did the speaker keep?", "answer": "The suggested order of information.", "evidence": "I kept the tool’s suggested order of information"},
-        {"prompt": "What private information was kept out of the tool?", "answer": "Classmates’ phone numbers.", "evidence": "I also left classmates’ phone numbers out of the tool."}
+        {
+          "prompt": "Which day did the tool invent?",
+          "answer": "Thursday.",
+          "evidence": "meet on Thursday in Room Three"
+        },
+        {
+          "prompt": "What were the verified day and room?",
+          "answer": "Wednesday, Room Five.",
+          "evidence": "on Wednesday in Room Five"
+        },
+        {
+          "prompt": "Where did the speaker first check the meeting details?",
+          "answer": "On the noticeboard.",
+          "evidence": "I checked the noticeboard"
+        },
+        {
+          "prompt": "What part of the draft did the speaker keep?",
+          "answer": "The suggested order of information.",
+          "evidence": "I kept the tool’s suggested order of information"
+        },
+        {
+          "prompt": "What private information was kept out of the tool?",
+          "answer": "Classmates’ phone numbers.",
+          "evidence": "I also left classmates’ phone numbers out of the tool."
+        }
       ],
-      "gist": "A learner keeps useful drafting help but verifies invented details before sharing a message."
+      "gist": "A learner keeps useful drafting help but verifies invented details before sharing a message.",
+      "interpretation": [
+        {
+          "prompt": "What useful contribution did the tool make, and what did that contribution not establish?",
+          "answer": "It improved the order of information; that did not make its added meeting details reliable.",
+          "evidence": "That help was real, but it was different from knowing when our meeting would happen"
+        },
+        {
+          "prompt": "Why might an apparently polished answer require particular care?",
+          "answer": "A confident presentation can conceal invented or unchecked details.",
+          "evidence": "The confident tone had made the invented details easy to overlook"
+        }
+      ],
+      "paragraphs": [
+        "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information.",
+        "A classmate asked why I had used the tool at all if I needed to check its work. I showed her my rough notes and the clearer order in the draft. That help was real, but it was different from knowing when our meeting would happen. The confident tone had made the invented details easy to overlook. We agreed on a simple rule for our next announcement: keep a record of the facts we supply, mark anything the tool adds, and check those additions before sharing. If we could not verify a detail, we would leave it out or say that it was unconfirmed. A polished paragraph should make our responsibility clearer, not hide it."
+      ]
     }
   },
   {
     "unit": 6,
     "title": "Is Love Enough?",
     "goals": [
-      ["I can explain why a long-term partnership may need more than goodwill.", "I can use a fictional relationship or a neutral team example without personal disclosure."],
-      ["I can identify differing expectations and an agreed next step in a spoken account.", "I can distinguish agreement from an unresolved question."],
-      ["I can discuss expectations respectfully and acknowledge another viewpoint.", "I can negotiate a concrete responsibility without judging another person’s beliefs."],
-      ["I can present a balanced answer with reasons and an example.", "I can use regular past-tense endings intelligibly when describing an experience."]
+      [
+        "I can explain why a long-term partnership may need more than goodwill.",
+        "I can use a fictional relationship or a neutral team example without personal disclosure."
+      ],
+      [
+        "I can identify differing expectations and an agreed next step in a spoken account.",
+        "I can distinguish agreement from an unresolved question."
+      ],
+      [
+        "I can discuss expectations respectfully and acknowledge another viewpoint.",
+        "I can negotiate a concrete responsibility without judging another person’s beliefs."
+      ],
+      [
+        "I can present a balanced answer with reasons and an example.",
+        "I can use regular past-tense endings intelligibly when describing an experience."
+      ]
     ],
     "dialogue": [
       "Lina: Do you think liking someone is enough to make a partnership work?",
@@ -188,29 +460,81 @@
     ],
     "notice": "The speakers use a neutral club example to discuss a broader partnership question. Learners may choose this route instead of personal relationship discussion.",
     "response": "Goodwill matters in a partnership, but I do not think it is enough on its own. People can care about one another and still expect different things. In a fictional reading club, one organizer might expect weekly meetings while the other can help only once a month. Without discussing that difference, each could feel let down. I would suggest agreeing on responsibilities and reviewing the plan after a few meetings. An agreement cannot prevent every problem, but it gives people something clear to discuss. For me, respect includes being honest about what we can and cannot promise.",
-    "frames": ["One expectation worth discussing is…", "I understand that view; my concern is…", "A fair agreement could include…"],
+    "frames": [
+      "One expectation worth discussing is…",
+      "I understand that view; my concern is…",
+      "A fair agreement could include…"
+    ],
     "transfer": "Choose a fictional club, project partnership, or adult relationship. Explain one shared expectation and one point that needs negotiation. Assessment concerns communication, not your beliefs.",
     "listening": {
       "title": "Friends with different plans",
-      "script": "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation.",
+      "script": "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation. Mariam later said that accepting a monthly meeting had felt like caring less about the project. Salim had understood the same agreement differently: he thought it made a promise he could actually keep. Neither meaning had been obvious during their first conversation. They agreed to review the arrangement after three meetings and to explain early if a responsibility became difficult. They also left room to disagree about the project without treating every disagreement as a judgment about their friendship. The schedule was a practical result, but the more important change was how they reached it. They stopped asking who cared more and started asking what each person could reliably contribute.",
       "questions": [
-        {"prompt": "How often did Mariam first expect to meet?", "answer": "Every week.", "evidence": "Mariam expected to meet every week."},
-        {"prompt": "Why could Salim help only monthly?", "answer": "Because of his work schedule.", "evidence": "because of his work schedule"},
-        {"prompt": "What schedule did they agree to try?", "answer": "One meeting a month for the first three months.", "evidence": "one meeting a month for the first three months"},
-        {"prompt": "Who would arrange the room?", "answer": "Salim.", "evidence": "Salim would arrange the room"},
-        {"prompt": "Which question remained unresolved?", "answer": "How to pay for printing.", "evidence": "They still needed to decide how to pay for printing"}
+        {
+          "prompt": "How often did Mariam first expect to meet?",
+          "answer": "Every week.",
+          "evidence": "Mariam expected to meet every week."
+        },
+        {
+          "prompt": "Why could Salim help only monthly?",
+          "answer": "Because of his work schedule.",
+          "evidence": "because of his work schedule"
+        },
+        {
+          "prompt": "What schedule did they agree to try?",
+          "answer": "One meeting a month for the first three months.",
+          "evidence": "one meeting a month for the first three months"
+        },
+        {
+          "prompt": "Who would arrange the room?",
+          "answer": "Salim.",
+          "evidence": "Salim would arrange the room"
+        },
+        {
+          "prompt": "Which question remained unresolved?",
+          "answer": "How to pay for printing.",
+          "evidence": "They still needed to decide how to pay for printing"
+        }
       ],
-      "gist": "Two friends discover an unstated difference in expectations and agree on a trial plan."
+      "gist": "Two friends discover an unstated difference in expectations and agree on a trial plan.",
+      "interpretation": [
+        {
+          "prompt": "Why did the same monthly schedule initially have different meanings for the two friends?",
+          "answer": "Mariam associated frequency with commitment; Salim associated a realistic promise with commitment.",
+          "evidence": "he thought it made a promise he could actually keep"
+        },
+        {
+          "prompt": "What change in their conversation helped them move beyond blame?",
+          "answer": "They discussed reliable contributions rather than trying to decide who cared more.",
+          "evidence": "They stopped asking who cared more and started asking what each person could reliably contribute"
+        }
+      ],
+      "paragraphs": [
+        "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation.",
+        "Mariam later said that accepting a monthly meeting had felt like caring less about the project. Salim had understood the same agreement differently: he thought it made a promise he could actually keep. Neither meaning had been obvious during their first conversation. They agreed to review the arrangement after three meetings and to explain early if a responsibility became difficult. They also left room to disagree about the project without treating every disagreement as a judgment about their friendship. The schedule was a practical result, but the more important change was how they reached it. They stopped asking who cared more and started asking what each person could reliably contribute."
+      ]
     }
   },
   {
     "unit": 7,
     "title": "Globalization",
     "goals": [
-      ["I can explain a local–global connection using a concrete example.", "I can describe a possible benefit and a possible cost."],
-      ["I can identify a proposal, a concern, and a trial arrangement in a spoken account.", "I can separate a prediction from a reported result."],
-      ["I can compare how a proposal may affect different groups.", "I can help a group reach a decision while acknowledging uncertainty."],
-      ["I can present a recommendation with evidence and a limitation.", "I can make key topic words clear enough for listeners to follow my argument."]
+      [
+        "I can explain a local–global connection using a concrete example.",
+        "I can describe a possible benefit and a possible cost."
+      ],
+      [
+        "I can identify a proposal, a concern, and a trial arrangement in a spoken account.",
+        "I can separate a prediction from a reported result."
+      ],
+      [
+        "I can compare how a proposal may affect different groups.",
+        "I can help a group reach a decision while acknowledging uncertainty."
+      ],
+      [
+        "I can present a recommendation with evidence and a limitation.",
+        "I can make key topic words clear enough for listeners to follow my argument."
+      ]
     ],
     "dialogue": [
       "Roya: An online market could help our craft sellers reach more customers.",
@@ -222,29 +546,81 @@
     ],
     "notice": "Each proposed benefit is tested against an access or cost question. The speakers do not treat a prediction as an established result.",
     "response": "I would support a small trial of an online craft market rather than assuming it will benefit everyone. It might help sellers find customers, but shipping costs and internet access could limit participation. A local collection option would reduce one problem. A shared support session could help with another, provided sellers control what is posted. After a month, we could compare costs, orders, and participants’ feedback. We would also ask who could not take part. The trial might show that the idea needs changing. That would be useful evidence, not a reason to hide the difficulties.",
-    "frames": ["This may benefit…, while…", "A possible cost or barrier is…", "Before extending the trial, we should check…"],
+    "frames": [
+      "This may benefit…, while…",
+      "A possible cost or barrier is…",
+      "Before extending the trial, we should check…"
+    ],
     "transfer": "Propose a small local–global project. Consider two groups affected by it and identify one result that would change your recommendation.",
     "listening": {
       "title": "Testing an online market",
-      "script": "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand.",
+      "script": "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand. One organizer wanted to announce success as soon as the first orders arrived. Another asked whose costs would appear in that announcement. A volunteer might spend an hour preparing a listing, while a seller might wait all afternoon for a collection. They decided that the review should include those experiences, not just sales. They would also ask whether the trial had brought in new customers or merely moved existing orders online. The smaller trial postponed the possibility of wider trade, but it made a mistake less expensive to correct. At the review, sellers would be able to recommend changing the plan, continuing it, or stopping. An invitation to participate would not count as a voice in the decision unless their views could affect what happened next.",
       "questions": [
-        {"prompt": "How many sellers were invited?", "answer": "Six.", "evidence": "invited six craft sellers"},
-        {"prompt": "What cost worried the organizers?", "answer": "Shipping costs.", "evidence": "worried about shipping costs"},
-        {"prompt": "How long would the local collection trial last?", "answer": "One month.", "evidence": "local collection for one month"},
-        {"prompt": "How could sellers without reliable internet get help?", "answer": "Bring descriptions to the center for a volunteer to help prepare listings, with permission.", "evidence": "a volunteer would help prepare listings with their permission"},
-        {"prompt": "Had they already decided to expand the market?", "answer": "No; they would review the information before deciding.", "evidence": "review the information together before deciding whether to expand"}
+        {
+          "prompt": "How many sellers were invited?",
+          "answer": "Six.",
+          "evidence": "invited six craft sellers"
+        },
+        {
+          "prompt": "What cost worried the organizers?",
+          "answer": "Shipping costs.",
+          "evidence": "worried about shipping costs"
+        },
+        {
+          "prompt": "How long would the local collection trial last?",
+          "answer": "One month.",
+          "evidence": "local collection for one month"
+        },
+        {
+          "prompt": "How could sellers without reliable internet get help?",
+          "answer": "Bring descriptions to the center for a volunteer to help prepare listings, with permission.",
+          "evidence": "a volunteer would help prepare listings with their permission"
+        },
+        {
+          "prompt": "Had they already decided to expand the market?",
+          "answer": "No; they would review the information before deciding.",
+          "evidence": "review the information together before deciding whether to expand"
+        }
       ],
-      "gist": "A community plans a limited market trial and decides what evidence to collect before expanding."
+      "gist": "A community plans a limited market trial and decides what evidence to collect before expanding.",
+      "interpretation": [
+        {
+          "prompt": "Why would counting orders alone give an incomplete picture of the trial?",
+          "answer": "It would overlook unpaid time, collection difficulties and whether orders were genuinely new.",
+          "evidence": "the review should include those experiences, not just sales"
+        },
+        {
+          "prompt": "What would make consultation meaningful rather than merely symbolic?",
+          "answer": "Sellers’ views must be able to change whether and how the market continues.",
+          "evidence": "their views could affect what happened next"
+        }
+      ],
+      "paragraphs": [
+        "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand.",
+        "One organizer wanted to announce success as soon as the first orders arrived. Another asked whose costs would appear in that announcement. A volunteer might spend an hour preparing a listing, while a seller might wait all afternoon for a collection. They decided that the review should include those experiences, not just sales. They would also ask whether the trial had brought in new customers or merely moved existing orders online. The smaller trial postponed the possibility of wider trade, but it made a mistake less expensive to correct. At the review, sellers would be able to recommend changing the plan, continuing it, or stopping. An invitation to participate would not count as a voice in the decision unless their views could affect what happened next."
+      ]
     }
   },
   {
     "unit": 8,
     "title": "Lingua Franca",
     "goals": [
-      ["I can explain why people use a shared language across language backgrounds.", "I can discuss a benefit and a challenge without ranking accents as superior."],
-      ["I can identify an expression that causes confusion and its clarification.", "I can explain the practical instructions I heard."],
-      ["I can replace an unclear expression with plain language.", "I can check understanding without making a listener feel embarrassed."],
-      ["I can adapt a short presentation for a multilingual audience.", "I can use clear pacing, phrasing, and repair when a listener needs help."]
+      [
+        "I can explain why people use a shared language across language backgrounds.",
+        "I can discuss a benefit and a challenge without ranking accents as superior."
+      ],
+      [
+        "I can identify an expression that causes confusion and its clarification.",
+        "I can explain the practical instructions I heard."
+      ],
+      [
+        "I can replace an unclear expression with plain language.",
+        "I can check understanding without making a listener feel embarrassed."
+      ],
+      [
+        "I can adapt a short presentation for a multilingual audience.",
+        "I can use clear pacing, phrasing, and repair when a listener needs help."
+      ]
     ],
     "dialogue": [
       "Tariq: At the start, we’ll break the ice.",
@@ -256,19 +632,59 @@
     ],
     "notice": "Tariq explains the expression without blaming Elena for asking, then gives the practical steps she needs.",
     "response": "For a multilingual audience, I would choose clear words and explain unfamiliar expressions. That does not mean removing every interesting phrase. It means noticing when a phrase gets in the way. If I say we will break the ice, I should also explain what participants will do. I can pause after each instruction and invite questions. Instead of only asking whether everyone understands, I can ask a partner to explain the first step in their own words. If the meaning is unclear, I can repair my message. Communication is a shared responsibility, not a test of whose accent sounds most familiar.",
-    "frames": ["Let me put that another way.", "By that expression, I mean…", "Could you tell me what you’ll do first?"],
+    "frames": [
+      "Let me put that another way.",
+      "By that expression, I mean…",
+      "Could you tell me what you’ll do first?"
+    ],
     "transfer": "Explain a welcome activity without relying on unexplained idioms or abbreviations. Ask a partner to tell you the first two steps, then improve your explanation.",
     "listening": {
       "title": "Making the welcome clear",
-      "script": "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use.",
+      "script": "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use. Later, a member worried that explaining every expression would make our conversation dull. Another pointed out that she had understood every individual word but had still imagined the wrong activity. We did not decide to remove all idioms or make everyone sound alike. We decided to explain expressions when the practical meaning mattered, and to make it easy to ask without embarrassment. At the welcome event, partners could introduce a useful phrase from another language as well as explain something about themselves. English helped people take part in one conversation; it did not tell us how much they knew in other languages. A successful exchange would leave room for more than one way of speaking.",
       "questions": [
-        {"prompt": "Where would the welcome event take place?", "answer": "At the library.", "evidence": "a welcome event at the library"},
-        {"prompt": "What did one member first think break the ice might mean?", "answer": "An outdoor activity.", "evidence": "whether that meant an outdoor activity"},
-        {"prompt": "What would partners share after introducing themselves?", "answer": "One interest.", "evidence": "share one interest"},
-        {"prompt": "What time and day were confirmed?", "answer": "Ten on Saturday morning.", "evidence": "at ten on Saturday morning"},
-        {"prompt": "How did the organizer check that the first activity was clear?", "answer": "By asking two volunteers to explain it in their own words.", "evidence": "asked two volunteers to explain the first activity in their own words"}
+        {
+          "prompt": "Where would the welcome event take place?",
+          "answer": "At the library.",
+          "evidence": "a welcome event at the library"
+        },
+        {
+          "prompt": "What did one member first think break the ice might mean?",
+          "answer": "An outdoor activity.",
+          "evidence": "whether that meant an outdoor activity"
+        },
+        {
+          "prompt": "What would partners share after introducing themselves?",
+          "answer": "One interest.",
+          "evidence": "share one interest"
+        },
+        {
+          "prompt": "What time and day were confirmed?",
+          "answer": "Ten on Saturday morning.",
+          "evidence": "at ten on Saturday morning"
+        },
+        {
+          "prompt": "How did the organizer check that the first activity was clear?",
+          "answer": "By asking two volunteers to explain it in their own words.",
+          "evidence": "asked two volunteers to explain the first activity in their own words"
+        }
       ],
-      "gist": "A group makes an idiom and event instructions clear for a multilingual audience."
+      "gist": "A group makes an idiom and event instructions clear for a multilingual audience.",
+      "interpretation": [
+        {
+          "prompt": "Why was knowing the individual words insufficient in the misunderstanding?",
+          "answer": "The phrase had an idiomatic meaning different from the literal activity imagined by the listener.",
+          "evidence": "she had understood every individual word but had still imagined the wrong activity"
+        },
+        {
+          "prompt": "What distinction does the ending make between shared communication and uniformity?",
+          "answer": "People can clarify practical meanings while retaining different expressions, languages and voices.",
+          "evidence": "We did not decide to remove all idioms or make everyone sound alike"
+        }
+      ],
+      "paragraphs": [
+        "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use.",
+        "Later, a member worried that explaining every expression would make our conversation dull. Another pointed out that she had understood every individual word but had still imagined the wrong activity. We did not decide to remove all idioms or make everyone sound alike. We decided to explain expressions when the practical meaning mattered, and to make it easy to ask without embarrassment. At the welcome event, partners could introduce a useful phrase from another language as well as explain something about themselves. English helped people take part in one conversation; it did not tell us how much they knew in other languages. A successful exchange would leave room for more than one way of speaking."
+      ]
     }
   }
 ]

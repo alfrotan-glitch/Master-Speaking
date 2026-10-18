@@ -41,7 +41,7 @@
   },
   "self_contained": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"ok\": true,\n  \"original_diagrams\": 24,\n  \"included_listening_scripts\": 8,\n  \"matching_detail_keys\": 40,\n  \"embedded_image_files_checked\": 49,\n  \"missing_script_mutation_rejected\": true,\n  \"legacy_image_mutation_rejected\": true,\n  \"absent_source_discussion_mutation_rejected\": true,\n  \"recorded_audio_supplied\": false,\n  \"single_page_script_locations\": [\n    19,\n    37,\n    55,\n    74,\n    94,\n    114,\n    134,\n    154\n  ],\n  \"issues\": [],\n  \"scope\": \"Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation.\"\n}\n",
+    "stdout_tail": "{\n  \"ok\": true,\n  \"original_diagrams\": 24,\n  \"included_listening_scripts\": 8,\n  \"matching_detail_keys\": 40,\n  \"interpretation_questions_with_evidence\": 16,\n  \"embedded_image_files_checked\": 49,\n  \"missing_script_mutation_rejected\": true,\n  \"legacy_image_mutation_rejected\": true,\n  \"absent_source_discussion_mutation_rejected\": true,\n  \"recorded_audio_supplied\": false,\n  \"single_page_script_locations\": [\n    19,\n    38,\n    56,\n    77,\n    96,\n    116,\n    136,\n    157\n  ],\n  \"issues\": [],\n  \"scope\": \"Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation.\"\n}\n",
     "stderr_tail": ""
   },
   "vocabulary_keys": {
@@ -56,7 +56,7 @@
   },
   "editorial": {
     "exit_code": 0,
-    "stdout_tail": "blocks: 3203   pronunciation lines skipped: 138\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (48 types) ---\nfollow-up\u00d720, one-minute\u00d719, long-term\u00d711, one-sentence\u00d78, four-\u00d77, five-minute\u00d77, non-native\u00d77, text-based\u00d76, two-minute\u00d75, well-being\u00d75, trade-off\u00d74, open-ended\u00d73, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, pro-social\u00d73, general-purpose\u00d73, self-fulfilling\u00d73, machine-dependent\u00d72, past-tense\u00d72, english-speaking\u00d72, english-language\u00d72, topic-related\u00d71, two-way\u00d71, self-discipline\u00d71, five-component\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, high-paying\u00d71, lower-paying\u00d71, thirty-five\u00d71, twenty-five\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, teacher-provided\u00d71, supply-chain\u00d71, first-language\u00d71, short-answer\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
+    "stdout_tail": "blocks: 3243   pronunciation lines skipped: 138\n--- unknown words (0) ---\n--- hyphenated compounds auto-accepted (48 types) ---\nfollow-up\u00d721, one-minute\u00d719, long-term\u00d711, one-sentence\u00d78, four-\u00d77, five-minute\u00d77, non-native\u00d77, text-based\u00d76, two-minute\u00d75, well-being\u00d75, trade-off\u00d74, open-ended\u00d73, open-minded\u00d73, real-life\u00d73, self-awareness\u00d73, self-regulation\u00d73, pro-social\u00d73, general-purpose\u00d73, self-fulfilling\u00d73, machine-dependent\u00d72, past-tense\u00d72, english-speaking\u00d72, english-language\u00d72, topic-related\u00d71, two-way\u00d71, self-discipline\u00d71, five-component\u00d71, re-evaluate\u00d71, re-evaluated\u00d71, wh-questions\u00d71, key-word\u00d71, high-paying\u00d71, lower-paying\u00d71, thirty-five\u00d71, twenty-five\u00d71, multi-syllable\u00d71, ai-powered\u00d71, human-compatible\u00d71, decision-making\u00d71, ai-generated\u00d71, human-ai\u00d71, real-world\u00d71, six-ingredient\u00d71, teacher-provided\u00d71, supply-chain\u00d71, first-language\u00d71, short-answer\u00d71, far-reaching\u00d71\n--- duplicated words: {}\ndouble spaces: 0  straight quotes: 0  straight apostrophes: 0  space-before-punct: 0\nOK\n",
     "stderr_tail": ""
   },
   "word": {
@@ -66,22 +66,22 @@
   },
   "fidelity": {
     "exit_code": 0,
-    "stdout_tail": "master blocks checked: 3225\n  PDF : covered 3225, missing 0\n  EPUB: covered 3225, missing 0\n  DOCX: covered 3225, missing 0\nOK\n",
+    "stdout_tail": "master blocks checked: 3265\n  PDF : covered 3265, missing 0\n  EPUB: covered 3265, missing 0\n  DOCX: covered 3265, missing 0\nOK\n",
     "stderr_tail": ""
   },
   "print": {
     "exit_code": 0,
-    "stdout_tail": "pages: 163   units at: {1: 9, 2: 27, 3: 45, 4: 63, 5: 83, 6: 103, 7: 123, 8: 143}   main_start: 9\nimages placed: 24  (effective dpi min-max: 429-429)\n--- 0 issues ---\n",
+    "stdout_tail": "pages: 166   units at: {1: 9, 2: 27, 3: 45, 4: 65, 5: 85, 6: 105, 7: 125, 8: 145}   main_start: 9\nimages placed: 24  (effective dpi min-max: 429-429)\n--- 0 issues ---\n",
     "stderr_tail": ""
   },
   "proof": {
     "exit_code": 0,
-    "stdout_tail": "163 pages proofed, 0 issues\nOK\n",
+    "stdout_tail": "166 pages proofed, 0 issues\nOK\n",
     "stderr_tail": ""
   },
   "preflight": {
     "exit_code": 0,
-    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 163\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (8):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 428.6\u2013428.6\n- Annotations: none\n\n## Issues (0)\n- none \u2014 PASS\nissues: 0\n",
+    "stdout_tail": "# Print Preflight Report \u2014 Master Speaking (7\u00d710 in)\n\n- PDF version: PDF 1.4\n- Pages: 166\n- Page size: 504 \u00d7 720 pt (7 \u00d7 10 in) \u2014 all pages uniform\n- Encrypted: False\n- Metadata: title='Master Speaking', author='Abdul Raziq Nazari'\n- Fonts (8):\n    - AAAAAA+DejaVuSans \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Regular \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSans3-Semibold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Bold \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-It \u2014 TrueType, embedded ext=ttf\n    - AAAAAA+SourceSerif4-Regular \u2014 TrueType, embedded ext=ttf\n    - Helvetica \u2014 Type1, embedded ext=n/a\n- Images: 24 unique, effective dpi 428.6\u2013428.6\n- Annotations: none\n\n## Issues (0)\n- none \u2014 PASS\nissues: 0\n",
     "stderr_tail": ""
   },
   "epub": {
@@ -91,12 +91,12 @@
   },
   "epubcheck": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 06:46:33\",\n    \"elapsedTime\": 5463,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
+    "stdout_tail": "{\n  \"valid\": true,\n  \"checker\": {\n    \"path\": \"././Master-Speaking.epub\",\n    \"filename\": \"Master-Speaking.epub\",\n    \"checkerVersion\": \"5.3.0\",\n    \"checkDate\": \"10-18-2026 07:20:34\",\n    \"elapsedTime\": 5930,\n    \"nFatal\": 0,\n    \"nError\": 0,\n    \"nWarning\": 0,\n    \"nUsage\": 0\n  },\n  \"messages\": []\n}\n",
     "stderr_tail": ""
   },
   "visual": {
     "exit_code": 0,
-    "stdout_tail": "163 pages, 78 spreads, flags: 0\nOK\n",
+    "stdout_tail": "166 pages, 79 spreads, flags: 0\nOK\n",
     "stderr_tail": ""
   },
   "publication": {
@@ -111,7 +111,7 @@
   },
   "classroom": {
     "exit_code": 0,
-    "stdout_tail": "{\n  \"ok\": true,\n  \"units\": 8,\n  \"chapter_checklists\": 32,\n  \"can_do_statements\": 64,\n  \"speaking_dialogues\": 8,\n  \"short_responses\": 8,\n  \"new_listening_scripts\": 8,\n  \"new_listening_detail_questions\": 40,\n  \"unit1_reading_key_items\": 15,\n  \"pilot_lessons_minutes\": [\n    75,\n    75,\n    75,\n    75\n  ],\n  \"exports\": {\n    \"Master-Speaking-Student-Practice-Pack\": {\n      \"pages\": 18,\n      \"source_blocks\": 489,\n      \"ok\": true\n    },\n    \"Master-Speaking-Teacher-Implementation-Pack\": {\n      \"pages\": 33,\n      \"source_blocks\": 695,\n      \"ok\": true\n    }\n  },\n  \"listening_route\": \"CORE_AUTHORED_TEACHER_READ\",\n  \"original_video_inputs_required\": false,\n  \"live_pilot_conducted\": false\n}\n",
+    "stdout_tail": "{\n  \"ok\": true,\n  \"units\": 8,\n  \"chapter_checklists\": 32,\n  \"can_do_statements\": 64,\n  \"speaking_dialogues\": 8,\n  \"short_responses\": 8,\n  \"new_listening_scripts\": 8,\n  \"new_listening_detail_questions\": 40,\n  \"interpretation_questions\": 16,\n  \"unit1_reading_key_items\": 15,\n  \"pilot_lessons_minutes\": [\n    75,\n    75,\n    75,\n    75\n  ],\n  \"exports\": {\n    \"Master-Speaking-Student-Practice-Pack\": {\n      \"pages\": 18,\n      \"source_blocks\": 513,\n      \"ok\": true\n    },\n    \"Master-Speaking-Teacher-Implementation-Pack\": {\n      \"pages\": 41,\n      \"source_blocks\": 759,\n      \"ok\": true\n    }\n  },\n  \"listening_route\": \"CORE_AUTHORED_TEACHER_READ\",\n  \"original_video_inputs_required\": false,\n  \"live_pilot_conducted\": false\n}\n",
     "stderr_tail": ""
   },
   "companion": {

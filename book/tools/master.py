@@ -140,7 +140,8 @@ def render_blocks(blocks, ctx):
         elif kind == 'p':
             img = (f'<img class="inline-img" src="assets/images/{payload["img"]}" '
                    f'alt="{E(description_for(payload["img"]), quote=True)}"/>') if payload.get('img') else ''
-            h.append(f'<p>{img}{esc(payload["text"])}</p>')
+            role_class = ' class="listening-script"' if payload.get('role') == 'listening-script' else ''
+            h.append(f'<p{role_class}>{img}{esc(payload["text"])}</p>')
         elif kind == 'topic':
             h.append(f'<p class="topic">{esc(payload["text"])}</p>')
         elif kind == 'titleline':

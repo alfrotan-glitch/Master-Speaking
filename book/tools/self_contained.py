@@ -47,12 +47,14 @@ def listening_blocks(chapter, module):
         b('sec','Listening Comprehension'),b('instr','Answer in short phrases. Use details you heard, not guesses about what usually happens.')]
     result.extend(b('q',question['prompt']) for question in story['questions'])
     result.extend([b('sub','Compare and Clarify'),b('instr','Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding.')])
+    result.extend([b('sec','Listen More Closely'), b('instr','Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading.')])
+    result.extend(b('q',q['prompt']) for q in story['interpretation'])
     result.extend(discussion[:1])
     result.append(b('instr','Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions.'))
     result.extend(discussion[1:])
     result.extend([b('sec','Try It Again'),b('instr','Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer.'),
         b('sec','Listening Script'),b('sub',story['title']),
-        b('label','Fictional story • read aloud by a teacher or partner'),b('p',story['script']),
+        b('label','Fictional story • read aloud by a teacher or partner'),*[b('p',paragraph,role='listening-script') for paragraph in story['paragraphs']],
         b('instr','For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person.')])
     return result
 

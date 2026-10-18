@@ -743,6 +743,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why might the member’s complaint be reasonable, even though clarification helped?"
+      },
+      {
+       "k": "q",
+       "text": "What is the difference between clarifying information and agreeing on an action in this account?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 331
       },
@@ -796,7 +812,13 @@
       },
       {
        "k": "p",
-       "text": "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read."
+       "text": "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "Afterward, one member said that asking so many questions had slowed everything down. I understood her point: nobody wanted a long exchange about a simple meeting. But the original message had left two different gaps. The room number needed a precise answer; the books needed someone to accept a responsibility. Simply agreeing that the plan sounded fine would not have settled either problem. Next time, I would ask the organizer to put the place, time, and responsibilities in one message. I would also check that everyone had seen the correction. A clear message is useful only if it reaches the people who need it.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -2090,6 +2112,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why does the speaker reject word count as the only measure of progress?"
+      },
+      {
+       "k": "q",
+       "text": "What can the two attempts show, and what can they not establish?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 638
       },
@@ -2172,7 +2210,13 @@
       },
       {
        "k": "p",
-       "text": "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve."
+       "text": "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "At our review, my friend asked whether I had lowered my ambition. I said the ambition was still to join a discussion, not to finish a word list. We compared two attempts on the same topic. In the first, I used more new words but could not explain my reason. In the second, I used simpler language and answered a follow-up question. That was useful evidence, although it did not prove that every part of my English had improved. For the next fortnight, I kept the short routine and added one conversation with a willing partner. If that was difficult to arrange, I would practise explaining the same idea from a different point of view.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -3320,6 +3364,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "What was the weakness in the narrator’s first judgment about Kareem?"
+      },
+      {
+       "k": "q",
+       "text": "How does the later disagreement distinguish understanding from agreement?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 953
       },
@@ -3409,7 +3469,13 @@
       },
       {
        "k": "p",
-       "text": "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed."
+       "text": "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "The change did not solve every disagreement. Later, I wanted a dramatic opening, while Kareem preferred a quiet explanation. This time, I could feel myself becoming impatient. I asked for a minute to write down what each opening would help the audience understand. We then tried both versions with another group. Their questions helped us choose, although Kareem and I still preferred different styles. I had first treated his silence as evidence of his attitude. It was really a reason to ask a question. Listening to him did not mean agreeing with every suggestion; it meant giving his ideas a fair hearing before we made a decision.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -4637,6 +4703,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why is the final choice not evidence that one kind of spending always brings more happiness?"
+      },
+      {
+       "k": "q",
+       "text": "What concern does inviting new members to help plan the conversation address?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 1279
       },
@@ -4732,7 +4814,13 @@
       },
       {
        "k": "p",
-       "text": "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room."
+       "text": "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "At our next meeting, someone asked whether the larger group had simply outvoted the newcomers. That question changed our discussion. Saving credits was easy to count; feeling welcome was not. We asked two new members to help plan the conversation instead of assuming that a free event would meet their needs. We also agreed to ask whether the room had become easier to use after the changes. The decision was not proof that books create more happiness than celebrations. It was a choice about this group, this room, and a limited budget. Another group might reasonably choose differently, especially if its members already had a comfortable place to read.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -6031,6 +6119,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "What useful contribution did the tool make, and what did that contribution not establish?"
+      },
+      {
+       "k": "q",
+       "text": "Why might an apparently polished answer require particular care?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 1569
       },
@@ -6139,7 +6243,13 @@
       },
       {
        "k": "p",
-       "text": "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information."
+       "text": "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "A classmate asked why I had used the tool at all if I needed to check its work. I showed her my rough notes and the clearer order in the draft. That help was real, but it was different from knowing when our meeting would happen. The confident tone had made the invented details easy to overlook. We agreed on a simple rule for our next announcement: keep a record of the facts we supply, mark anything the tool adds, and check those additions before sharing. If we could not verify a detail, we would leave it out or say that it was unconfirmed. A polished paragraph should make our responsibility clearer, not hide it.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -7688,6 +7798,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why did the same monthly schedule initially have different meanings for the two friends?"
+      },
+      {
+       "k": "q",
+       "text": "What change in their conversation helped them move beyond blame?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 1982
       },
@@ -7766,7 +7892,13 @@
       },
       {
        "k": "p",
-       "text": "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation."
+       "text": "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "Mariam later said that accepting a monthly meeting had felt like caring less about the project. Salim had understood the same agreement differently: he thought it made a promise he could actually keep. Neither meaning had been obvious during their first conversation. They agreed to review the arrangement after three meetings and to explain early if a responsibility became difficult. They also left room to disagree about the project without treating every disagreement as a judgment about their friendship. The schedule was a practical result, but the more important change was how they reached it. They stopped asking who cared more and started asking what each person could reliably contribute.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -9251,6 +9383,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why would counting orders alone give an incomplete picture of the trial?"
+      },
+      {
+       "k": "q",
+       "text": "What would make consultation meaningful rather than merely symbolic?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 2351
       },
@@ -9321,7 +9469,13 @@
       },
       {
        "k": "p",
-       "text": "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand."
+       "text": "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "One organizer wanted to announce success as soon as the first orders arrived. Another asked whose costs would appear in that announcement. A volunteer might spend an hour preparing a listing, while a seller might wait all afternoon for a collection. They decided that the review should include those experiences, not just sales. They would also ask whether the trial had brought in new customers or merely moved existing orders online. The smaller trial postponed the possibility of wider trade, but it made a mistake less expensive to correct. At the review, sellers would be able to recommend changing the plan, continuing it, or stopping. An invitation to participate would not count as a voice in the decision unless their views could affect what happened next.",
+       "role": "listening-script"
       },
       {
        "k": "instr",
@@ -10838,6 +10992,22 @@
       },
       {
        "k": "sec",
+       "text": "Listen More Closely"
+      },
+      {
+       "k": "instr",
+       "text": "Separate what the account states from what you infer. Support an interpretation with a detail; consider another reasonable reading."
+      },
+      {
+       "k": "q",
+       "text": "Why was knowing the individual words insufficient in the misunderstanding?"
+      },
+      {
+       "k": "q",
+       "text": "What distinction does the ending make between shared communication and uniformity?"
+      },
+      {
+       "k": "sec",
        "text": "Group Discussion",
        "src": 2692
       },
@@ -10958,7 +11128,13 @@
       },
       {
        "k": "p",
-       "text": "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use."
+       "text": "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use.",
+       "role": "listening-script"
+      },
+      {
+       "k": "p",
+       "text": "Later, a member worried that explaining every expression would make our conversation dull. Another pointed out that she had understood every individual word but had still imagined the wrong activity. We did not decide to remove all idioms or make everyone sound alike. We decided to explain expressions when the practical meaning mattered, and to make it easy to ask without embarrassment. At the welcome event, partners could introduce a useful phrase from another language as well as explain something about themselves. English helped people take part in one conversation; it did not tell us how much they knew in other languages. A successful exchange would leave room for more than one way of speaking.",
+       "role": "listening-script"
       },
       {
        "k": "instr",

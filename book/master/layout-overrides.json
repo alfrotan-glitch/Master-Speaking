@@ -1,0 +1,9 @@
+[
+  {
+    "unit": 2,
+    "chapter": 2,
+    "keep_from": "Group Discussion",
+    "keep_until_before": "Challenge Question",
+    "reason": "Keep the nine-question discussion together instead of leaving two questions on an otherwise sparse facing page; keep the complete listening script on its own page. No text is removed or reduced in size."
+  }
+]

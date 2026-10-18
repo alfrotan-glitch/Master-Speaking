@@ -13,7 +13,7 @@
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">tableOfContents</meta>
     <meta property="schema:accessibilitySummary">Reflowable text with image descriptions, headings and linked contents. Listening exercises use included fictional scripts read aloud by a teacher or partner; no recorded audio is supplied. Accessibility conformance has not been evaluated.</meta>
-    <meta property="dcterms:modified">2026-10-18T06:44:14Z</meta>
+    <meta property="dcterms:modified">2026-10-18T07:17:45Z</meta>
   </metadata>
   <manifest>
     <item id="cover-image" href="images/cover.png" media-type="image/png" properties="cover-image"/>

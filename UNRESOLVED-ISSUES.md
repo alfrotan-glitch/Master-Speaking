@@ -1,45 +1,37 @@
 # Current release-condition register — Master Speaking
 
-> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **22 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+18 October 2026 · Self-contained print/digital edition
 
-Updated 18 October 2026 after the whole-book critical audit. This register supersedes conflicting historical statements in earlier reports. **Commercial release remains on hold.** Production validation is not rights clearance, factual approval, or classroom validation.
+The author approved original graphics and supplied fictional listening scripts rather than continued reliance on unidentified videos and unverified manuscript imagery. **24 release gates pass. Teacher-led use is supported; final commercial clearance is not claimed.** This register supersedes the earlier source-dependent edition’s open-condition list.
 
-## Open conditions
+## Dependencies resolved by replacement, not by invented clearance
 
-| ID | Priority / scope | Evidence and closure condition | Responsible review |
-|---|---|---|---|
-| R01 | Blocking — original listening lessons | All eight entries in `book/publishing/media-register.csv` remain UNVERIFIED. Identify exact recordings, creators, stable links, access and permission basis; verify every vocabulary/comprehension item against the recording. Unit 2's two media labels need reconciliation against the actual source, not a guessed rename. | Author and media editor |
-| R02 | Blocking — existing image rights | 24 existing manuscript assets are UNVERIFIED in the asset-rights register. Supply provenance/permission evidence and attribution, or approve replacements/removals. Missing evidence is not proof of infringement. Official font licenses do not clear images. | Author/publisher and rights reviewer |
-| R03 | High — claims and language/pedagogy | Verify research assertions in readings, quotations, pronunciation models, instructional answerability and language accuracy. Add source-specific references or approve carefully qualified wording. The Unit 3 rule and five incorrect Unit 4 stress models are repaired; ten stress positions have a pinned CMU dictionary reference. This is not a whole-book specialist sign-off. | Subject, language and pronunciation reviewers |
-| R04 | High — native Word pagination | Word has explicit chapter breaks and correct cached contents labels, but the cached TOC lacks page numbers. Install intended fonts, refresh fields in native Word, save/export and compare final folios, page starts and tables. Do not populate native Word with unverified PDF page numbers. | Word production editor |
-| R05 | High — accessibility/device testing | Reader PDF lacks structural tagging. Word and EPUB now have source-hashed descriptions for every interior illustration; EPUB has standalone chapter heading outlines, language attributes and labeled linked navigation, with a mandatory regression gate. EPUB passes official EPUBCheck but device, resizing, dark-mode, keyboard, screen-reader and instructional alt-text testing remain outstanding. Supply appropriate tagged PDF and accessible-reader proof before making compliance claims. | Accessibility specialist and production editor |
-| R06 | High — print approval | Interior image placements at 122.4 and 142.9 effective dpi require better originals, viable smaller placements, or printer approval. Front cover is a concept, not a wrap. Confirm stock, binding, required signature/page-count multiple, bleed, spine, color and barcode requirements; approve a physical proof. | Publisher/printer |
-| R07 | High — final proof and classroom pilot | No signed complete page/exercise proof or representative learner pilot. Test level, timings, cultural suitability, sensitive-topic alternatives, answerability and assessment consistency. Separate support packs/pilot plans are not completed trials. | Lead editor and pilot teachers |
-| R08 | Publishing metadata | Confirm imprint authority, publication/edition details, distribution territories, quotation attribution and ISBN ownership if applicable. None is certified by retaining manuscript attribution. | Author/publisher |
+| ID | Current state | Evidence |
+|---|---|---|
+| R01 — original listening input | **Replaced in this edition.** Eight original fictional scripts are supplied in the listening chapters and teacher pack, with 40 matching detail questions/keys. A teacher or partner reads them aloud; no audio files are supplied or required. | `self-contained-edition.json`, `modules.json`, `current-media-register.csv`, `qa_self_contained.json`. Historical videos remain unverified but are not an input dependency of this edition. |
+| R02 — manuscript artwork/quotation dependencies | **Excluded/replaced.** The current 24 interior graphics are original code-drawn course diagrams. Old manuscript images/screenshots are not embedded in Word/EPUB. The external epigraph and selected quotation prompts are replaced with authored wording. | `current-artwork-provenance.json`, `image-descriptions.json`, embedded-byte checks and guarded text replacements. This is not a legal certification of ownership or permission for historical materials. |
+| R06a — low-resolution interior images | **Removed from current use.** All 24 current interior placements are approximately 429 effective dpi, without upscaling the old images. | Current `qa_preflight.json` and `qa_print.json`. |
 
-## Resolved or corrected in the current revision
+## Remaining conditions
 
-- All 32 chapter headings use exact existing content titles or original chapter headings, with no invented aliases or redundant identical subtitles, and have separate PDF opening pages; unit openers remain recto. Chapter contents folios/links, bookmarks, reader offsets and EPUB unit-before-chapter order are checked.
-- The complete Unit 5 AI decision-making prompt is restored from source. Unit 6's pronunciation heading matches regular past-tense endings. Unit 8's copied marriage heading now matches its English/academic-opportunity questions.
-- Unit 3's formerly identical pronunciation examples now visibly contrast flat delivery with capitalized stress targets. The broad rising-question rule now gives context and acknowledges common falling wh-question intonation. All-format, case-sensitive regression checks protect the contrast.
-- Export fidelity now requires full normalized blocks and minimum occurrence counts; deliberate prefix-only and missing-middle regression cases fail. This is not universal semantic or typographic verification.
-- Official EPUBCheck 5.3.0 found and helped repair RSC-011 in the contents landmark. Validation now passes with zero errors and warnings; it is a mandatory release gate, not a skipped optional test.
-- Reader-facing publication files contain ordinary learner material, not discussion/revision commentary. Verification limitations remain in separate reports.
-- Current guide: three learner-guidance paragraphs. Current exact-match chapter/front-matter edit count is reported by `qa_revision.py`; do not reuse older fixed counts.
+| ID | Scope and closure evidence | Responsible approval |
+|---|---|---|
+| R03 | Independent complete copyedit, factual/pronunciation and key review. Check every page, including retained text and authored models; record actual findings/corrections. Automated alignment and spelling checks do not prove all meanings or claims correct. | Lead editor and suitable independent reviewers |
+| R04 | Native Word comparison **if Word will determine final pagination**. Install intended fonts, refresh fields, export and compare folios, tables and headings. The supplied print PDF has its own checked contents/links and is the current fixed-layout reference. | Word production editor, where applicable |
+| R05 | Reader/accessibility testing: resizing, dark mode, keyboard, screen readers and representative EPUB devices. The PDF remains untagged; supply appropriate accessible remediation for the intended market before claiming compliance. | Accessibility/production reviewer |
+| R06b | Printer-specific manufacture: confirm stock, binding, page-count/signature multiple, bleed and spine width; impose the front/back panels on its template and approve a physical proof. A 163-page interior and separate 7×10 panels are not a certified wrap or universal printer approval. | Publisher and selected printer |
+| R07 | Actual classroom pilot evidence for timing, level, answerability and cultural/access suitability before claiming validation or improved outcomes. Existing teaching plans and blank observation forms are not completed trials. | Lead teacher and editor |
+| R08 | Confirm imprint authority, edition/distribution details, any ISBN ownership and the publisher’s authored-content/provenance review. Do not invent metadata, endorsements or approvals. | Author/publisher |
 
-## Closed allegation / scope clarification
+Do not label the book “fully verified,” authorize a commercial print run or release it for sale on the strength of automated checks alone. Obtain explicit author/publisher release approval after reviewing the relevant closures. The earlier controlled-pilot permission remains available under [PILOT-USE-POLICY.md](PILOT-USE-POLICY.md).
 
-- **Missing Unit 5 vocabulary-activation items:** not substantiated for Chapter 3. Its toolbox has ten expressions and its source-backed task asks learners to use all ten in a conversation. No replacement questions should be invented for that task. Reopen only with an exact different location and evidence.
-- **Video Scripts section:** not supplied by the original source. This is a dependency if transcripts are to be published, not proof that a promised section was dropped from this edition. Obtain recording identity and any required transcript permission before adding scripts. Do not fabricate source transcripts.
-- **Supplementary listening:** separate student/teacher packs contain eight original teacher-read alternatives and their own keys. These do not authenticate the original videos or supply their answer keys. The separate reading-key register does cover all eight units’ closed reading items.
+## Supplied production evidence
 
-- The whole-book pass adds 24 guarded structural repairs, corrects lesson cross-references and copied instructions, completes missing presentation conclusions, and provides eight unit-specific learner review/transfer tasks. Seven vocabulary exercises retain all 36 source sentences; none was deleted to force a uniform item count.
-- The new lesson gate checks 88 multiple-choice groups for organization and option lettering, not answer correctness. Exact stress capitals and selected IPA models are tested in the exports. The current release has 22 gates, including the separate reading-key, MCQ-layout and accessibility checks.
+- `QA-REPORT.md`: 24 current gate results and export fingerprints.
+- `book/artifacts/qa_self_contained.json`: supplied inputs, matching questions/evidence and excluded legacy media, with negative controls.
+- `book/artifacts/qa_vocabulary_keys.json`: all 36 vocabulary completion stems/examples; suitable alternatives are permitted.
+- `book/artifacts/qa_reading_keys.json`: 74 reading judgments and source-paragraph evidence, not independent semantic approval.
+- `book/artifacts/qa_accessibility.json`: image/description identity, language, outline, table scope and navigation checks, not certification.
+- `REWRITE-PROGRESS.md`: exact review scope and limitations.
 
-## Current evidence
-
-`QA-REPORT.md` and `book/artifacts/qa_october_run.json` record current release checks; `book/artifacts/epubcheck-official.json` records the validator version and export fingerprint. `STRICT-AUDIT.md` preserves the original audit snapshot and a remediation update. Rebuild and rerun gates after any further edit. A passing suite does not close R01–R08.
-
-## Latest ten-lens improvement pass
-
-See [TEN-LENS-REVIEW.md](TEN-LENS-REVIEW.md) for the AI-assisted specialist-perspective review, not a ten-person human endorsement. The rebuilt book now has eight stronger learner-evidence tasks, a deduplicated epigraph, a more inclusive listening passage and a qualified English-ownership discussion. The Unit 1 teacher-key evidence was synchronized and its supporting exports rebuilt. All 15 release gates and both supporting-pack checks pass. Current export fingerprints are in `book/artifacts/specialist-review.json`; the earlier design-only evidence is historical. Rights, recordings, independent proof, device/accessibility testing and printer approval remain open.
+Earlier audit, design and specialist-lens reports are historical evidence. No ten-person human review, live classroom result, verified historical recording, legal clearance or printer approval has been fabricated.

@@ -35,12 +35,12 @@ def main():
     parser.add_argument('--skip-build', action='store_true')
     args = parser.parse_args()
     if not args.skip_build:
-        for name in ['parse', 'master', 'cover', 'wordmaster', 'docxpdf', 'epub', 'classroom', 'companion']:
+        for name in ['edition_graphics', 'parse', 'master', 'cover', 'wordmaster', 'docxpdf', 'epub', 'classroom', 'companion']:
             if run(name)['exit_code']:
                 raise SystemExit(f'Build stopped at {name}; no success report written.')
     if run('review_pages')['exit_code']:
         raise SystemExit('Could not render current proof pages.')
-    names = ['revision', 'lessons', 'learning_transfer', 'rewrite_review', 'whole_revision', 'reading_keys', 'mcq_layout', 'accessibility', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
+    names = ['revision', 'lessons', 'learning_transfer', 'rewrite_review', 'whole_revision', 'reading_keys', 'mcq_layout', 'accessibility', 'self_contained', 'vocabulary_keys', 'content', 'editorial', 'word', 'fidelity', 'print', 'proof', 'preflight', 'epub', 'epubcheck', 'visual']
     results = {name: run('qa_' + name) for name in names}
     palette = {'accent on white': contrast(ACCENT, 'FFFFFF'),
                'white on banner': contrast('FFFFFF', BANNER),
@@ -89,18 +89,18 @@ def main():
     md.extend(['', '## Palette contrast (default colors only)', ''])
     md.extend(f'- {name}: {ratio:.2f}:1' for name, ratio in palette.items())
     md.extend(['', '## Scope and limitations', '',
-               '- Content checks trace source text into the semantic master; fidelity checks require complete normalized blocks and minimum occurrence counts in PDF, Word, and EPUB. Lesson checks cover defined organizational, stress-capitalization, and IPA regression cases. These are not universal semantic-order checks, verified answer keys, factual approval, or classroom validation.',
+               '- Content checks trace source text into the semantic master; fidelity checks require complete normalized blocks and minimum occurrence counts in PDF, Word, and EPUB. Lesson checks cover defined organizational, stress-capitalization, and IPA regression cases. These are not universal semantic-order checks, independent semantic validation of answer keys, factual approval, or classroom validation.',
                '- Proof/visual checks are automated measurements, not a substitute for a complete human page-by-page proof. Current all-page thumbnail overviews and selected full-size pages are in `book/qa/edition-review/`, linked to the PDF checksum by `index.json`. A thumbnail scan cannot verify every word.',
-               '- Two existing image placements remain below 150 effective dpi (about 122 and 143 dpi); no artificial upscaling was used. Obtain higher-resolution originals for a printer requiring 300 dpi.',
+               '- Current interior artwork is original code-drawn course graphics at approximately 429 effective dpi. The legacy low-resolution images are excluded; current inventory and exact values are in qa_preflight.json.',
                '- EPUB structural checks pass/fail as reported above; official EPUBCheck results are included above; reader/device and assistive-technology tests remain outstanding. Palette ratios are not an accessibility certification.',
                '- Accessibility gate: reviewed image descriptions match actual Word/EPUB image bytes; standalone EPUB heading levels, language, navigation, table-header scope and discovery metadata are checked. This is not accessibility certification, screen-reader/device testing or a tagged PDF. See ACCESSIBILITY-REVIEW.md.',
                '- PDF uses the existing DOCX-based custom renderer, not Microsoft Word. A native Word export and printer proof still need comparison.',
                '- The reader PDF is a convenience edition. Submit the separate interior and a printer-specified cover wrap for manufacturing, not the combined reading PDF.',
-               '- Listening sources, third-party image/quotation permissions, cover-wrap specifications, and release metadata require publisher review. See PUBLICATION-READINESS.md.', '',
+               '- Historical video lessons, manuscript images and uncleared quotation prompts have been replaced in this edition. Included original scripts have matching questions/keys; no audio files are supplied. Independent proof, publisher metadata, reader/accessibility testing and printer-specific cover-wrap/physical approval remain open. See PUBLICATION-READINESS.md.', '',
                f'Editorial log: {len(changes)} entries. Machine results: `book/artifacts/qa_october_run.json`.', '',
                '## Export checksums (SHA-256)', ''])
     for file in ['Master-Speaking-print-7x10.pdf', 'Master-Speaking-7x10.docx', 'Master-Speaking.epub',
-                 'Master-Speaking-Front-Cover.pdf', 'Master-Speaking-Reading-Edition.pdf', 'Master-Speaking.pdf',
+                 'Master-Speaking-Front-Cover.pdf', 'Master-Speaking-Back-Cover.pdf', 'Master-Speaking-Reading-Edition.pdf', 'Master-Speaking.pdf',
                  'Master-Speaking-Class-Companion.pdf', 'Master-Speaking-Class-Companion.docx',
                  'Master-Speaking-Student-Practice-Pack.pdf', 'Master-Speaking-Student-Practice-Pack.docx',
                  'Master-Speaking-Teacher-Implementation-Pack.pdf', 'Master-Speaking-Teacher-Implementation-Pack.docx']:

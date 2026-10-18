@@ -1,34 +1,24 @@
-# Word and EPUB accessibility improvements
+# Current Word/EPUB accessibility work
 
-18 October 2026 · Master Speaking · AI-assisted production review
+18 October 2026 · Self-contained edition
 
-## Implemented and checked
+## Implemented
 
-- Visually inspected the 24 interior illustrations and the front cover. Replaced generic image alternatives with descriptions of visible content. The goal-setting mind map, relationship diagram and cover also received individual image inspection. In particular, the relationship diagram reads **Compassion**, not Communication; the alternative text preserves that distinction.
-- The descriptions live in `book/master/image-descriptions.json`, with image SHA-256 fingerprints. Missing descriptions, changed assets or duplicate filename mappings stop reconstruction until the descriptions are reviewed. The single-frame GIF and its PNG replacement have identical decoded pixels.
-- The same interior descriptions now reach both Word and EPUB through the semantic master. Word checks bind each description to the actual embedded image bytes, not merely to a drawing count. EPUB checks also compare image bytes with the reviewed originals. Every interior image appears once in each format; EPUB additionally includes the described cover.
-- Each of the **32 standalone EPUB chapters now begins with an h1**, and the outline avoids skipped levels. The combined semantic master and Word hierarchy remain unit/chapter/section based. Class-based EPUB styling preserves the chapter-title design when the heading tag changes.
-- Added matching English `lang` and `xml:lang` attributes, labels for the contents and landmarks navigation regions, and accessibility metadata describing implemented alternative text, headings and linked contents. The accessibility summary explains that listening needs external recordings and that accessibility conformance has not been evaluated. No certification or conformance claim has been added.
-- The new check verifies table-column header scope and resolves contents/landmark links, including fragment identifiers.
+- All 24 interior graphics are original teaching diagrams. Their alternative text includes the full title, explanatory subtitle and card text, rather than generic “illustration” labels. The original front cover also has a description.
+- Descriptions in `book/master/image-descriptions.json` are bound to source-image hashes. Word checks match each description to the actual embedded drawing bytes. EPUB checks require the same descriptions and reviewed bytes, exactly once per expected image, including the cover.
+- Old manuscript photographs, video screenshots and logos are excluded from the current Word/EPUB packages, including unused embedded files. Original diagrams are drawn by `edition_graphics.py` from the edition plan; font provenance/licenses are recorded separately.
+- Each standalone EPUB chapter starts at h1 with no skipped levels. The combined semantic master and Word retain the unit/chapter/section hierarchy. Class-based EPUB styling preserves the design when heading levels change.
+- English `lang` and `xml:lang`, labeled contents/landmark navigation, valid target documents/fragments, and table-column header scope are checked.
+- Discovery metadata describes implemented features and the supplied read-aloud route. No recorded audio is supplied. The accessibility summary explicitly states that accessibility conformance has not been evaluated.
 
-## Results
+## Evidence
 
-**22 release gates pass**, including `qa_accessibility.py`. Official EPUBCheck 5.3.0 reports **zero errors and warnings**.
+**24 release gates pass.** Official EPUBCheck 5.3.0 reports zero errors and warnings. The accessibility gate rejects seven isolated mutations: generic alt text, a missing target document, missing language, chapter h2 regression, missing header scope, missing target fragment and swapped image bytes. Separate self-contained checks reject a missing script and reintroduced legacy image.
 
-Seven isolated negative controls are rejected without changing the publication files:
+Graphics are visually reviewed; all PDF pages receive automated geometry/content checks and overview review, with selected readable-page proof recorded separately. The earlier 235-page pixel-identity comparison is historical: this edition deliberately changes artwork, lesson content and pagination.
 
-1. Generic image description substituted for a reviewed description.
-2. Link to a missing document.
-3. Missing language attribute.
-4. Standalone chapter title changed back to h2.
-5. Missing column-header scope.
-6. Link to a missing fragment.
-7. Different image bytes substituted under an existing filename.
+## Not yet established
 
-The print and three support PDFs retain the same page counts. SHA-256 comparisons of rendered RGB pixels confirm that **all 235 interior/support pages are visually unchanged** from the preceding edition. The prior selected readable-page review therefore remains applicable; this is not a new complete manual proof. See `book/qa/accessibility/render-identity.json` and the linked final-proof index.
+Screen-reader, keyboard, resizing, dark-mode and representative device testing remain outstanding. The custom PDF remains structurally untagged; Word headings do not automatically make the PDF accessible. No WCAG, EPUB accessibility or PDF/UA certification is claimed. Independent review of descriptions and retained text is still appropriate. See [UNRESOLVED-ISSUES.md](UNRESOLVED-ISSUES.md).
 
-## Still open
-
-This is a defined structural and content-description improvement, **not an accessibility certification**. Screen-reader, keyboard, resizing, dark-mode and representative EPUB-device testing remain outstanding. The reader PDF remains untagged; Word structure does not automatically make the custom PDF export accessible. Alternative-text descriptions are AI-assisted and still benefit from independent specialist review. Existing image rights, original recording identification/permissions, full independent copyediting and printer approval remain separate open conditions.
-
-Current machine results: `book/artifacts/qa_accessibility.json`, `book/artifacts/epubcheck-official.json`, and `QA-REPORT.md`. The original manuscript and exact chapter titles remain unchanged; production commentary stays outside the reader-facing main text.
+Machine evidence: `qa_accessibility.json`, `qa_self_contained.json`, `epubcheck-official.json` and [QA-REPORT.md](QA-REPORT.md).

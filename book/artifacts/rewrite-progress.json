@@ -6,8 +6,8 @@
   "chapters_without_recorded_revisions": 0,
   "independent_every_word_proof_complete": false,
   "commercial_release_cleared": false,
-  "interior_pages": 171,
-  "reader_pages": 172,
+  "interior_pages": 163,
+  "reader_pages": 164,
   "guarded_chapter_edits": 377,
   "guarded_front_edits": 21,
   "initial_detailed_field_record": {
@@ -23,6 +23,8 @@
     "reading_keys": 0,
     "mcq_layout": 0,
     "accessibility": 0,
+    "self_contained": 0,
+    "vocabulary_keys": 0,
     "content": 0,
     "editorial": 0,
     "word": 0,
@@ -49,6 +51,41 @@
     "issues": [],
     "scope": "Authored reading judgments with structural and source-evidence checks; not automatic semantic correctness, listening keys or independent expert approval."
   },
+  "self_contained_edition": {
+    "ok": true,
+    "original_diagrams": 24,
+    "included_listening_scripts": 8,
+    "matching_detail_keys": 40,
+    "embedded_image_files_checked": 49,
+    "missing_script_mutation_rejected": true,
+    "legacy_image_mutation_rejected": true,
+    "absent_source_discussion_mutation_rejected": true,
+    "recorded_audio_supplied": false,
+    "single_page_script_locations": [
+      19,
+      37,
+      55,
+      74,
+      94,
+      114,
+      134,
+      154
+    ],
+    "issues": [],
+    "scope": "Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation."
+  },
+  "vocabulary_completion_keys": {
+    "ok": true,
+    "items": 36,
+    "units": 7,
+    "complete_key_items_kept_on_one_page": true,
+    "stale_stem_mutation_rejected": true,
+    "missing_key_mutation_rejected": true,
+    "issues": [],
+    "scope": "All 36 vocabulary-completion stems, source-expression identities and completed-sentence examples. Suggested answers may admit suitable alternatives. Not automatic semantic proof, open personal reflections or independent specialist approval."
+  },
+  "recorded_audio_supplied": false,
+  "publication_files_built": true,
   "chapter_starts": [
     {
       "label": "Chapter 1 \u00b7 The Power of Communication",
@@ -88,154 +125,178 @@
     },
     {
       "label": "Chapter 2 \u00b7 The Power of Emotional Intelligence",
-      "physical_page": 53
+      "physical_page": 52
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 58
+      "physical_page": 56
     },
     {
       "label": "Chapter 4 \u00b7 Can Emotional Intelligence Be Improved?",
-      "physical_page": 61
+      "physical_page": 59
     },
     {
       "label": "Chapter 1 \u00b7 Can Money Buy Happiness?",
-      "physical_page": 66
+      "physical_page": 64
     },
     {
       "label": "Chapter 2 \u00b7 Can Money Buy Happiness?",
-      "physical_page": 73
+      "physical_page": 71
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
+      "physical_page": 75
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
       "physical_page": 78
     },
     {
-      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 81
-    },
-    {
       "label": "Chapter 1 \u00b7 Living with AI: Friend or Foe?",
-      "physical_page": 86
+      "physical_page": 84
     },
     {
       "label": "Chapter 2 \u00b7 How Will AI Change the World?",
-      "physical_page": 92
+      "physical_page": 90
     },
     {
       "label": "Chapter 3 \u00b7 Speaking through Discussion",
-      "physical_page": 97
+      "physical_page": 95
     },
     {
       "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 100
+      "physical_page": 98
     },
     {
       "label": "Chapter 1 \u00b7 Is Love Enough?",
-      "physical_page": 106
+      "physical_page": 104
     },
     {
       "label": "Chapter 2 \u00b7 The Science of a Lasting Relationship",
-      "physical_page": 113
+      "physical_page": 111
     },
     {
       "label": "Chapter 3 \u00b7 What Makes Relationships Work?",
+      "physical_page": 115
+    },
+    {
+      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
       "physical_page": 118
     },
     {
-      "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 121
-    },
-    {
       "label": "Chapter 1 \u00b7 The World Is Getting Smaller",
-      "physical_page": 128
+      "physical_page": 124
     },
     {
       "label": "Chapter 2 \u00b7 Navigating Our Global Future",
-      "physical_page": 135
+      "physical_page": 131
     },
     {
       "label": "Chapter 3 \u00b7 Globalization: Opportunity or Threat?",
-      "physical_page": 140
+      "physical_page": 135
     },
     {
       "label": "Chapter 4 \u00b7 Globalization: Opportunity or Threat?",
-      "physical_page": 143
+      "physical_page": 138
     },
     {
       "label": "Chapter 1 \u00b7 English: From a Local Language to a Global Lingua Franca",
-      "physical_page": 150
+      "physical_page": 144
     },
     {
       "label": "Chapter 2 \u00b7 English Without Borders",
-      "physical_page": 157
+      "physical_page": 151
     },
     {
       "label": "Chapter 3 \u00b7 WHO OWNS ENGLISH?",
-      "physical_page": 163
+      "physical_page": 155
     },
     {
       "label": "Chapter 4 \u00b7 Speaking through Research Presentation",
-      "physical_page": 166
+      "physical_page": 158
     }
   ],
   "unit_physical_pages": {
     "1": 9,
     "2": 27,
     "3": 45,
-    "4": 65,
-    "5": 85,
-    "6": 105,
-    "7": 127,
-    "8": 149
+    "4": 63,
+    "5": 83,
+    "6": 103,
+    "7": 123,
+    "8": 143
   },
   "sha256": {
-    "Master-Speaking-Class-Companion.pdf": "b7996bb8b2db5f5aa340ec1cfdbdf68b36dd12e8a969667040ec7f3362c9f541",
-    "Master-Speaking-Front-Cover.pdf": "277feff52e827ab4eb924ddeffb7f5cde1fd91120116b0dd9ae5b328aa5e23b6",
-    "Master-Speaking-Reading-Edition.pdf": "99c43ef6a982a7958acf215d5fd4d319103cf3c582c5620cb9261449aaf39ceb",
-    "Master-Speaking-Student-Practice-Pack.pdf": "3ddfcc4fc670a87c8ef048bde87b8ecfbde4a69c1c2174b5b64e8a0f4bceaaef",
-    "Master-Speaking-Teacher-Implementation-Pack.pdf": "74b40b39323da94115f7b8926ce793880118a0c7c49ba8a980b6ac94b4dba373",
-    "Master-Speaking-print-7x10.pdf": "8115209274d9627d6b0f488f6d078448196822c95a96540cca9cb8260a9fc533",
-    "Master-Speaking.pdf": "99c43ef6a982a7958acf215d5fd4d319103cf3c582c5620cb9261449aaf39ceb",
-    "Master-Speaking-7x10.docx": "0af9d04439b864b62ef21fcdec76601c70f313793ae5822caf28abd97b30f4fc",
-    "Master-Speaking-Class-Companion.docx": "e6cbf31bf62c9d7976fad57a10a4f8865c83d0feee183549d1f4145e5ae37f3e",
-    "Master-Speaking-Student-Practice-Pack.docx": "d9d0bf4c2583839d41a1df28b91c09cefe18cece2a1356f319b3daaf39b6d652",
-    "Master-Speaking-Teacher-Implementation-Pack.docx": "70e4cff4e8da3283e2272bc7165ca90e51ef9e1877c99fb2378fda8b083a533e",
-    "Master-Speaking.epub": "b454c914b412ab75d08cd6389f35a0728dd71bccbecb8e4ac7dc54a1ecd7974a",
+    "Master-Speaking-Back-Cover.pdf": "30fbf7c2d8c9840dd71cfeac633fd3b2efc90084e153501694755bb341917ca7",
+    "Master-Speaking-Class-Companion.pdf": "d56f3eed907b45d4bc27c04b990026b3edecb7ff9508b86ba9101bb32994591a",
+    "Master-Speaking-Front-Cover.pdf": "34102caabe1ee4088fa344d42fe4d5596fa050514b173c3603a0f59b89f83869",
+    "Master-Speaking-Reading-Edition.pdf": "38b66087800ba815760d5d5bc536552ef181e4394f68bfc6e8659bf7787c1d4c",
+    "Master-Speaking-Student-Practice-Pack.pdf": "d25a6ddbb127bf5f9dbf2de47ecddc0238974b86047a762581285fc53faae30c",
+    "Master-Speaking-Teacher-Implementation-Pack.pdf": "1c90b90d9fdf4c679ddc57181df1146d10ecfef8af6c83d288c4a7739c30fe37",
+    "Master-Speaking-print-7x10.pdf": "f17193b493aeccffc3c7426de6ba9e855612cfd1c69be9d57201287c657a1890",
+    "Master-Speaking.pdf": "38b66087800ba815760d5d5bc536552ef181e4394f68bfc6e8659bf7787c1d4c",
+    "Master-Speaking-7x10.docx": "68a040228e137198a175f829d0eb70c86f37a3e0b0c058e74ac2cc5daac97879",
+    "Master-Speaking-Class-Companion.docx": "4bc66e1005ffc85453ce2ca4601f456b0640c3bdc9372d37dd07e72d58debd36",
+    "Master-Speaking-Student-Practice-Pack.docx": "723eb27967380cde42fdeea6d2e2830f3030ca0bd1151d3d26292a7bb1e92412",
+    "Master-Speaking-Teacher-Implementation-Pack.docx": "e153847a7df0a7bc55c43523cf7927d0cd5de84a34be7f5392634300167c0c51",
+    "Master-Speaking.epub": "299203a6488e7267ae3e2491659d7dcc753d32183ee097c6b385451844c7c16a",
     "Master Speaking.docx": "4a083c85e970b83c4c599f5efeaf18399276f153c33c1fb9e60b7d8fc1421184"
   },
-  "semantic_content_sha256": "13e3fb1080aee6ca22861c1f29503457f11c12aee4b64eb66f74ac01c1af6044",
+  "semantic_content_sha256": "5fd010896fda21f646db16f7ab4f1b659f4e5e4719a669d2ab554d6489eb8f8c",
   "visual_proof": {
     "all_interior_page_overviews_inspected": true,
     "support_page_overviews_inspected": true,
     "selected_main_readable_pages": [
       4,
-      12,
-      30,
-      49,
-      69,
+      5,
+      6,
+      9,
+      11,
+      16,
+      18,
+      19,
+      34,
+      36,
+      37,
+      52,
+      54,
+      55,
+      70,
+      71,
+      73,
+      74,
       89,
-      109,
-      121,
+      90,
+      92,
+      94,
+      111,
+      112,
+      114,
       131,
+      133,
+      134,
+      143,
+      151,
       153,
-      171
+      154,
+      163
     ],
     "selected_teacher_readable_pages": [
-      7,
-      8,
-      9,
-      19,
-      20,
-      29
+      1,
+      3,
+      10,
+      30,
+      31,
+      32,
+      33
     ],
     "every_page_read_at_full_size": false
   },
   "remaining_external_work": [
     "Independent complete copyedit and factual/pronunciation/key review",
-    "Identify and clear eight original recordings and transcripts; no fabricated recording answers",
-    "Third-party image and quotation permissions; higher-resolution originals where needed",
-    "Native Word, EPUB-device and accessibility testing",
-    "Classroom pilot and printer-specific cover wrap/physical proof"
+    "Publisher approval of edition metadata, imprint and any ISBN; review authored-content provenance",
+    "EPUB-device/accessibility testing and appropriate PDF accessibility remediation",
+    "Native Word comparison if using Word rather than the supplied PDF for final pagination",
+    "Actual classroom pilot evidence; printer-specific cover wrap, spine/bleed and physical proof"
   ]
 }

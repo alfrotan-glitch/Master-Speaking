@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "original_diagrams": 24,
+  "included_listening_scripts": 8,
+  "matching_detail_keys": 40,
+  "embedded_image_files_checked": 49,
+  "missing_script_mutation_rejected": true,
+  "legacy_image_mutation_rejected": true,
+  "absent_source_discussion_mutation_rejected": true,
+  "recorded_audio_supplied": false,
+  "single_page_script_locations": [
+    19,
+    37,
+    55,
+    74,
+    94,
+    114,
+    134,
+    154
+  ],
+  "issues": [],
+  "scope": "Guarded replacement, supplied scripts/questions/key evidence, retained topic language, excluded legacy media/quotation wording and embedded image inventory. Not legal certification, independent factual proof or classroom validation."
+}

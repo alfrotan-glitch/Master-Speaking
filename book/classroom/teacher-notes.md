@@ -1,9 +1,9 @@
 # Master Speaking
 ## Teacher Implementation Pack
 
-New supplementary classroom material • October 2026
+Teacher resources for the self-contained course • October 2026
 
-Read alongside the book and the separate Class Companion. This pack is not a replacement edition of the manuscript. It provides original teacher-read listening alternatives for eight themes, their own questions and keys, a Unit 1 reading key, and a four-lesson pilot plan. It does not supply verified original video recordings or their answer keys.
+Read alongside the book and the separate Class Companion. This pack provides the eight original fictional listening stories used in the book, matching questions and keys, reading keys, and a four-lesson teaching plan. The listening tasks are designed for a teacher or partner to read aloud; no external video or recorded audio is required.
 
 The Unit 1 pilot deliberately uses four 75-minute meetings, one per chapter. It is a slower diagnostic trial than the Class Companion’s two-meeting unit plan. Do not promise both schedules cover the same work in the same time; use observed timings to choose whether to extend the course or reduce task coverage.
 
@@ -11,7 +11,7 @@ All listening accounts and speaking models in this pack are newly authored ficti
 
 ## 1. Delivery, preparation, and assessment
 
-Choose the matching unit in the Student Practice Pack. For Chapter 2, choose either a verified recording that genuinely matches the book’s exercises, or the new teacher-read alternative in this pack with its own student worksheet. Do not combine one input with the other input’s questions. Record which route you taught. The alternatives do not resolve the original media register.
+Choose the matching unit in the Student Practice Pack. For Chapter 2, use the matching original story in this pack and its five detail questions. The same script appears at the end of the listening chapter for checking after the task. Keep that section covered until after the second listening unless an access arrangement requires earlier text support.
 
 Before each class: preview the topic for suitability; read the script aloud once; check the question key; print only the student pages needed; prepare a timer and grouping plan; identify one success criterion to observe. An internet connection, AI account, slide deck, or recording device is not required.
 
@@ -50,12 +50,12 @@ Monitor: note whether a learner gives the overall message or only lists details;
 
 ## 3. Unit 1 pilot • Lesson 2: listening and clarification
 
-Length: 75 minutes. Use the original alternative “The meeting that almost went wrong,” not the book’s unverified video questions. Print only the Unit 1 alternative worksheet at first. Once completed, label the course record “new teacher-read alternative,” not “original video lesson completed.”
+Length: 75 minutes. Use the original story “The meeting that almost went wrong” and the matching questions in Unit 1, Chapter 2 or the Student Practice Pack. Keep the script and keys separate until after listening. Record the input and any access support actually used.
 
 Success evidence: identify the central problem, recover key details, and clarify a new plan in an exchange. Students should not be assessed on information the input does not provide.
 
 - 0–8: retrieve three expressions from Lesson 1; each student asks a clarification question about a fictional meeting plan.
-- 8–23: run the 15-minute listening protocol from Section 1 using the Unit 1 alternative.
+- 8–23: run the 15-minute listening protocol from Section 1 using the Unit 1 story.
 - 23–33: reveal the script and examine the checking sequence: unclear message, specific question, repeated plan, confirmation. Have learners point to evidence.
 - 33–43: teach “When you say…, do you mean…?”, “Let me check…”, and “Which…?” Practise with short exchanges rather than a chorus alone.
 - 43–58: role-play. A privately chooses a room, time, materials, and contact person for a new club meeting. B must find those details by asking questions. Switch roles with a different plan; then change one detail and check the revision.
@@ -98,7 +98,7 @@ If a learner needs an alternative to eye contact, accept other signs of audience
 
 ## 6. Unit 1 reading key • scope and use
 
-This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. Original video exercises still require the intended recordings and verified keys; open questions allow supported alternatives.
+This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. The original listening stories have their own detail keys in Sections 7–14; open questions allow supported alternatives.
 
 Answers are grounded in the revised passage or vocabulary table, not independently validated claims about the real world. Each quoted evidence phrase is checked against the current semantic book during QA. Use question stems rather than page numbers, since pagination can change. Accept accurate paraphrases for the five open questions. Critical Thinking, personal connections, and discussions have no single correct opinion.
 

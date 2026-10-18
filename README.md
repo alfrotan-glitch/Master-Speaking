@@ -1,83 +1,57 @@
 # Master Speaking
 
-English speaking course book by Abdul Raziq Nazari, with print, Word, and EPUB editions.
+An English speaking course by Abdul Raziq Nazari, The TOEFL House.
 
-## Revised book — October 2026
+## Current self-contained edition
 
-**All-chapter revision pass complete:** all eight units and 32 chapters now have recorded substantive revisions, preserving their exact titles. Current book: **171 interior / 172 reader pages; 22 release gates pass**. All editions and supporting packs are synchronized. See [revision and proof scope](REWRITE-PROGRESS.md): this is not independent every-word or every-page full-size human proof.
+The author approved replacing the source-dependent listening lessons, existing imagery and uncleared quotation prompts with authored course material. **All 8 units and 32 exact chapter titles are preserved.**
 
-**Start with [the clean book PDF](Master-Speaking.pdf)**: cover plus the reader-facing book, with navigation bookmarks. Discussion notes, production reports, and teaching packs are not included. The older `Master-Speaking-Reading-Edition.pdf` link remains an identical compatibility copy.
+- **24 original course graphics**, with no stock images, screenshots or third-party logos in the current editions.
+- **8 original fictional listening stories** included at the end of the matching listening chapters, with the same scripts and keys in the teacher pack. A teacher or partner reads them aloud; no external video or subscription is required. No recorded audio is supplied.
+- Teacher keys cover **36 vocabulary completions, 74 closed-reading items and 40 listening-detail questions**. Appropriate alternatives are accepted; these are not independently certified assessment instruments.
+- **24 release checks pass**, including source fidelity, original-script/question alignment, exclusion of legacy media, vocabulary-key coverage, accessibility structure, print preflight and official EPUBCheck.
+- Main book: **163-page 7×10 interior / 164-page reading PDF including front cover**. Supporting packs: student 18 pages, teacher 33 pages, companion 17 pages.
 
-- [Editable Word book](Master-Speaking-7x10.docx)
-- [Reflowable ebook with cover](Master-Speaking.epub)
-- [Print interior, 7×10](Master-Speaking-print-7x10.pdf)
-- [Front-cover concept](Master-Speaking-Front-Cover.pdf) — front only, not a printer cover wrap
-- [Editorial and publication review](PUBLICATION-READINESS.md)
-- [Final language and typography review](FINAL-EDITORIAL-REVIEW.md)
-- [Whole-book critical audit and remediation](WHOLE-BOOK-AUDIT.md)
-- [Ten-specialist-lens improvement review](TEN-LENS-REVIEW.md) — AI-assisted, not ten independent human endorsements
-- [Modern redesign and visual review](DESIGN-REVIEW.md)
-- [Word/EPUB accessibility improvements](ACCESSIBILITY-REVIEW.md) — image descriptions and structural checks, not certification
-- [Current QA results](QA-REPORT.md) and [text change log](CHANGELOG.md)
+**Ready for teacher-led use with the supplied scripts. Prepared as a publication candidate, not commercially cleared or “fully verified.”** Independent complete review, publisher metadata approval, device/accessibility testing and printer-specific cover-wrap/physical approval remain distinct tasks. See [publication status](PUBLICATION-READINESS.md) and the [current conditions](UNRESOLVED-ISSUES.md).
 
-This revision restores a previously truncated AI question, applies reviewed learner-facing copyedits, adds practical learning/research guidance without production commentary, improves default text contrast, and repairs chapter/table/title-page rendering. **It is an editorial proof, not a commercially cleared release.** Exact listening inputs, image permissions, factual substantiation, and final printer/device proofs remain open.
+## Books and cover panels
 
-### Rebuild the revised book
+- **[Main reading PDF](Master-Speaking.pdf)** — clean learner-facing book with cover, linked contents and bookmarks.
+- [Editable main book](Master-Speaking-7x10.docx) · [EPUB](Master-Speaking.epub) · [7×10 print interior](Master-Speaking-print-7x10.pdf).
+- [Front cover](Master-Speaking-Front-Cover.pdf) · [matching back cover](Master-Speaking-Back-Cover.pdf) — separate 7×10 panels, not an imposed printer-specific wrap.
+- [Student Practice Pack PDF](Master-Speaking-Student-Practice-Pack.pdf) · [Word](Master-Speaking-Student-Practice-Pack.docx).
+- [Teacher Implementation Pack PDF](Master-Speaking-Teacher-Implementation-Pack.pdf) · [Word](Master-Speaking-Teacher-Implementation-Pack.docx).
+- [Class Companion PDF](Master-Speaking-Class-Companion.pdf) · [Word](Master-Speaking-Class-Companion.docx).
+
+`Master-Speaking-Reading-Edition.pdf` is an identical compatibility copy of the main reading PDF.
+
+## Start teaching
+
+Use the Teacher Pack’s four 75-minute Unit 1 lessons and the matching student pages. For listening, keep the script at the end of Chapter 2 covered until after the second listening. Read the matching teacher script aloud twice and use the five matching detail questions. Do not substitute a historical video or unrelated audio and reuse these keys.
+
+For independent reading practice, a learner can read a script, cover it and answer from memory. That is reading recall, not evidence of listening performance. Provide transcripts earlier when an access arrangement requires them and record the support actually used.
+
+The companion offers a different 16-meeting course plan; its timings are not interchangeable with the slower diagnostic Unit 1 plan. Preview topics, permit fictional/neutral alternatives, give feedback and repeat a short task. No live pilot or improvement results are claimed. See [pilot safeguards](PILOT-USE-POLICY.md).
+
+## Rebuild, check and package
 
 ```sh
 bash book/tools/bootstrap.sh
 python book/tools/release.py
+python book/tools/package_books.py
 ```
 
-The release command rebuilds the semantic book, cover, Word, PDF, EPUB, and reading edition, and all three supporting packs, then runs 22 regression, revision-coverage, reading-key, lesson-structure, and production checks, including official EPUBCheck 5.3.0. `--skip-build` rechecks existing exports. The original manuscript is retained. Reviewed edits and added guidance live in `book/master/*.json`; do not edit generated exports expecting those edits to survive a rebuild. Use this release workflow rather than the historical `reports.py`, whose report templates predate the revision. After a successful release, run `python book/tools/package_books.py` to create the all-books download ZIP from checksum-verified exports. The bundle is intentionally excluded from Git because its individual editions are already tracked.
+The release command draws the original course graphics, reconstructs the guarded editorial base, applies the authorized self-contained replacements, rebuilds all books and runs 24 gates. `--skip-build` checks existing exports. Packaging verifies the recorded export hashes before creating `Master-Speaking-All-Books.zip`; the duplicate download ZIP is intentionally excluded from Git.
 
-## Classroom implementation packs
+Authored sources include `book/master/self-contained-edition.json`, `book/classroom/modules.json`, `vocabulary-keys.json`, `reading-closed-keys.json`, `unit1-reading-key.json`, `teacher-notes.md` and `book/companion/speaking-class.md`. Edit sources, not generated editions. The historical `Master Speaking.docx` remains unchanged; old manuscript media is retained only for audit and is excluded from current Word/EPUB exports.
 
-The recommendations from the student/teacher review are now supported by two separate printable and editable packs:
+## Evidence and limitations
 
-- **[Student Practice Pack (PDF)](Master-Speaking-Student-Practice-Pack.pdf)** / [Word](Master-Speaking-Student-Practice-Pack.docx): chapter checklists for all eight units, eight model exchanges, eight short model responses, listening worksheets, and a practice record.
-- **[Teacher Implementation Pack (PDF)](Master-Speaking-Teacher-Implementation-Pack.pdf)** / [Word](Master-Speaking-Teacher-Implementation-Pack.docx): eight newly authored teacher-read listening stories with their own questions and keys, the Unit 1 reading key, closed-reading keys with passage evidence for Units 2–8, and four 75-minute pilot lessons.
+- [Current QA results and hashes](QA-REPORT.md)
+- [Revision and visual-proof scope](REWRITE-PROGRESS.md)
+- [Word/EPUB accessibility work](ACCESSIBILITY-REVIEW.md)
+- [Editorial change log](CHANGELOG.md)
+- Current artwork provenance: `book/publishing/current-artwork-provenance.json`
+- Current read-aloud input register: `book/publishing/current-media-register.csv`
 
-**Start:** teach Unit 1 using the Teacher Pack’s pilot plan; give students the matching Student Pack pages. Keep teacher scripts and answers separate during listening. The pilot is intentionally slower than the companion’s two-meeting-per-unit course plan.
-
-The teacher-read stories are fictional **alternatives**, not the original video transcripts, and no recorded audio is supplied. Use their own worksheets, not the book’s video questions. The original recordings remain unverified. Closed-reading keys now cover **all eight units: 40 multiple-choice answers and 34 true/false judgments**. Open questions accept supported responses; these are not original-video answer keys. No live pilot results are claimed.
-
-```sh
-python book/tools/classroom.py
-python book/tools/qa_classroom.py
-```
-
-Authored sources: `book/classroom/modules.json`, `unit1-reading-key.json`, `reading-closed-keys.json`, and `teacher-notes.md`. The two Markdown pack files are generated; edit the authored sources before rebuilding. See [CLASSROOM-QA-REPORT.md](CLASSROOM-QA-REPORT.md) and `book/publishing/listening-alternatives.csv` for scope and checks.
-
-## Special Speaking Class companion
-
-New supplementary materials for teachers and students, separate from the original manuscript:
-
-- **[Printable class companion (PDF)](Master-Speaking-Class-Companion.pdf)** — A4, 17 pages, numbered sections start on fresh sheets.
-- **[Editable class companion (Word)](Master-Speaking-Class-Companion.docx)** — adapt prompts, timings, and student sheets.
-- [Editable source (Markdown)](book/companion/speaking-class.md).
-
-Includes a 16-meeting course plan (75 minutes each), eight unit-aligned task sequences, role plays, useful language, intelligibility practice, mixed-level support, offline alternatives, student planning and feedback sheets, a final showcase, and a five-dimension classroom rubric. Intended approximately for B1–B2 learners; use the entry task to adapt to the actual class. It is not a standardized proficiency test.
-
-Start with Sections 1–3, teach the matching unit in Sections 4–11, and copy the reusable sheets in Section 13. Section 14 contains assessment descriptors. Sensitive topics have neutral fictional alternatives; recording and internet access are optional.
-
-### Rebuild and verify the companion
-
-```sh
-bash book/tools/bootstrap.sh
-python book/tools/companion.py
-python book/tools/qa_companion.py
-```
-
-Requires Python and the dependencies installed by the existing bootstrap. These commands only build the companion, not the original book. Edit the Markdown source rather than editing generated exports if you intend to rebuild. The exporter supports title/section headings, paragraphs, and bullet lists. Word may substitute fonts if Source Sans 3 is not installed; the PDF embeds its typefaces.
-
-See [COMPANION-QA-REPORT.md](COMPANION-QA-REPORT.md) for verification and limitations.
-
-## Manuscript and production files
-
-- `Master Speaking.docx` — original manuscript.
-- `Master-Speaking-7x10.docx` — formatted Word edition.
-- `Master-Speaking-print-7x10.pdf` — print edition.
-- `Master-Speaking.epub` — ebook edition.
-
-Existing production scripts are under `book/tools/`; editorial and production reports remain in the repository root. The companion remains separate from the book. Current edition limitations are tracked in `UNRESOLVED-ISSUES.md` and `PUBLICATION-READINESS.md`; earlier production report snapshots are marked historical.
+Earlier design, audit and ten-lens reports are historical records. They are not independent human endorsements or the current release-condition register. Passing tests does not establish universal factual accuracy, legal ownership, learning efficacy, accessibility certification or printer approval. Production discussion stays outside the learner-facing book.

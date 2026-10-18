@@ -33,6 +33,10 @@ def write_status():
         'initial_detailed_field_record': {'fields': 138, 'scope': 'Foreword and Unit 1 Chapter 1 only; not every retained word across all chapters.'},
         'release_checks': {name: result['exit_code'] for name, result in checks.items()},
         'reading_closed_key_check': keys,
+        'self_contained_edition': load('book/artifacts/qa_self_contained.json'),
+        'vocabulary_completion_keys': load('book/artifacts/qa_vocabulary_keys.json'),
+        'recorded_audio_supplied': False,
+        'publication_files_built': all(row['exit_code'] == 0 for row in checks.values()),
         'chapter_starts': chapters,
         'unit_physical_pages': load('book/artifacts/qa_print.json')['unit_pages'],
         'sha256': {file.name: hashlib.sha256(file.read_bytes()).hexdigest() for file in files},
@@ -43,9 +47,10 @@ def write_status():
                          'selected_teacher_readable_pages': proof['selected_teacher_pages'] if hashlib.sha256((ROOT / 'Master-Speaking-Teacher-Implementation-Pack.pdf').read_bytes()).hexdigest() == proof['support_sha256']['Master-Speaking-Teacher-Implementation-Pack.pdf'] else [],
                          'every_page_read_at_full_size': False},
         'remaining_external_work': ['Independent complete copyedit and factual/pronunciation/key review',
-            'Identify and clear eight original recordings and transcripts; no fabricated recording answers',
-            'Third-party image and quotation permissions; higher-resolution originals where needed',
-            'Native Word, EPUB-device and accessibility testing', 'Classroom pilot and printer-specific cover wrap/physical proof']
+            'Publisher approval of edition metadata, imprint and any ISBN; review authored-content provenance',
+            'EPUB-device/accessibility testing and appropriate PDF accessibility remediation',
+            'Native Word comparison if using Word rather than the supplied PDF for final pagination',
+            'Actual classroom pilot evidence; printer-specific cover wrap, spine/bleed and physical proof']
     }
     (ROOT / 'book/artifacts/rewrite-progress.json').write_text(json.dumps(progress, indent=2)+'\n')
     return progress

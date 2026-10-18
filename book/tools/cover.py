@@ -55,7 +55,39 @@ def build():
     c.save()
     with pymupdf.open(PDF) as doc:
         doc[0].get_pixmap(matrix=pymupdf.Matrix(3, 3)).save(PNG)
-    print(f'Built {PDF.name} and {PNG.relative_to(ROOT)}')
+    # Matching original back panel; the printer must still impose the two
+    # panels on a template with its confirmed spine and bleed dimensions.
+    from reportlab.platypus import Paragraph
+    from reportlab.lib.styles import ParagraphStyle
+    back = ROOT / 'Master-Speaking-Back-Cover.pdf'
+    c = canvas.Canvas(str(back), pagesize=(504, 720))
+    c.setTitle('Master Speaking — Back Cover'); c.setAuthor('Abdul Raziq Nazari')
+    c.setFillColor(HexColor('#'+PAPER)); c.rect(0, 0, 504, 720, fill=1, stroke=0)
+    c.setFillColor(HexColor('#'+BANNER)); c.rect(0, 560, 504, 160, fill=1, stroke=0)
+    c.setFillColor(HexColor('#FFFFFF')); c.setFont('CoverSerif', 27)
+    c.drawString(42, 656, 'Make your meaning clear.')
+    c.drawString(42, 616, 'Give another voice room.')
+    style = ParagraphStyle('back', fontName='CoverSans', fontSize=12, leading=18,
+                           textColor=HexColor('#'+BANNER))
+    sections = [
+        'Master Speaking brings reading, listening, discussion and short research presentations together across eight themes. Build a clear point, support it with an example, and use feedback to make your next attempt stronger.',
+        '<b>READ</b> to explore an idea and explain what a passage supports.<br/>'
+        '<b>LISTEN</b> to an original story, recover details and clarify meaning.<br/>'
+        '<b>DISCUSS</b> a question from more than one perspective.<br/>'
+        '<b>PRESENT</b> a focused answer using identifiable sources.',
+        'Eight units. Thirty-two chapters. Topic language, pronunciation practice, reflection and repeatable speaking tasks.',
+        'Fictional listening scripts are included for a teacher or partner to read aloud. No external video or subscription is required.'
+    ]
+    y=520
+    for text in sections:
+        paragraph=Paragraph(text,style); _,height=paragraph.wrap(420,600)
+        paragraph.drawOn(c,42,y-height);y-=height+26
+    c.setStrokeColor(HexColor('#'+COPPER));c.setLineWidth(2);c.line(42,132,462,132)
+    c.setFillColor(HexColor('#'+ACCENT));c.setFont('CoverBold',11)
+    c.drawString(42,100,'ABDUL RAZIQ NAZARI')
+    c.setFont('CoverSans',10);c.drawString(42,76,'THE TOEFL HOUSE')
+    c.save()
+    print(f'Built {PDF.name}, {back.name} and {PNG.relative_to(ROOT)}')
 
 
 if __name__ == '__main__':

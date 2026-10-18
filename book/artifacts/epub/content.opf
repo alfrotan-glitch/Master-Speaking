@@ -6,14 +6,14 @@
     <dc:creator>Abdul Raziq Nazari</dc:creator>
     <dc:language>en</dc:language>
     <dc:date>2026-10-18</dc:date>
-    <dc:description>A speaking course for advanced English learners: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.</dc:description>
+    <dc:description>An English speaking course: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.</dc:description>
     <meta property="schema:accessMode">textual</meta>
     <meta property="schema:accessMode">visual</meta>
     <meta property="schema:accessibilityFeature">alternativeText</meta>
     <meta property="schema:accessibilityFeature">structuralNavigation</meta>
     <meta property="schema:accessibilityFeature">tableOfContents</meta>
-    <meta property="schema:accessibilitySummary">Reflowable text with image descriptions, headings and linked contents. Listening exercises require external recordings. Accessibility conformance has not been evaluated.</meta>
-    <meta property="dcterms:modified">2026-10-18T05:50:55Z</meta>
+    <meta property="schema:accessibilitySummary">Reflowable text with image descriptions, headings and linked contents. Listening exercises use included fictional scripts read aloud by a teacher or partner; no recorded audio is supplied. Accessibility conformance has not been evaluated.</meta>
+    <meta property="dcterms:modified">2026-10-18T06:44:14Z</meta>
   </metadata>
   <manifest>
     <item id="cover-image" href="images/cover.png" media-type="image/png" properties="cover-image"/>
@@ -65,30 +65,30 @@
     <item id="unit8-ch4" href="unit8-ch4.xhtml" media-type="application/xhtml+xml"/>
     <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
     <item id="css" href="style.css" media-type="text/css"/>
-    <item id="img-image1" href="images/image1.png" media-type="image/png"/>
-    <item id="img-image10" href="images/image10.jpeg" media-type="image/jpeg"/>
-    <item id="img-image11" href="images/image11.jpeg" media-type="image/jpeg"/>
-    <item id="img-image12" href="images/image12.jpeg" media-type="image/jpeg"/>
-    <item id="img-image13" href="images/image13.png" media-type="image/png"/>
-    <item id="img-image14" href="images/image14.jpeg" media-type="image/jpeg"/>
-    <item id="img-image15" href="images/image15.jpeg" media-type="image/jpeg"/>
-    <item id="img-image16" href="images/image16.png" media-type="image/png"/>
-    <item id="img-image17" href="images/image17.jpeg" media-type="image/jpeg"/>
-    <item id="img-image18" href="images/image18.jpeg" media-type="image/jpeg"/>
-    <item id="img-image19" href="images/image19.png" media-type="image/png"/>
-    <item id="img-image2" href="images/image2.png" media-type="image/png"/>
-    <item id="img-image20" href="images/image20.jpeg" media-type="image/jpeg"/>
-    <item id="img-image21" href="images/image21.jpeg" media-type="image/jpeg"/>
-    <item id="img-image22" href="images/image22.jpeg" media-type="image/jpeg"/>
-    <item id="img-image23" href="images/image23.jpeg" media-type="image/jpeg"/>
-    <item id="img-image24" href="images/image24.jpeg" media-type="image/jpeg"/>
-    <item id="img-image3" href="images/image3.jpeg" media-type="image/jpeg"/>
-    <item id="img-image4" href="images/image4.png" media-type="image/png"/>
-    <item id="img-image5" href="images/image5.jpeg" media-type="image/jpeg"/>
-    <item id="img-image6" href="images/image6.jpeg" media-type="image/jpeg"/>
-    <item id="img-image7" href="images/image7.jpeg" media-type="image/jpeg"/>
-    <item id="img-image8" href="images/image8.jpeg" media-type="image/jpeg"/>
-    <item id="img-image9" href="images/image9.jpeg" media-type="image/jpeg"/>
+    <item id="img-edition-unit-1-listening" href="images/edition-unit-1-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-1-opener" href="images/edition-unit-1-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-1-reading" href="images/edition-unit-1-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-2-listening" href="images/edition-unit-2-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-2-opener" href="images/edition-unit-2-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-2-reading" href="images/edition-unit-2-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-3-listening" href="images/edition-unit-3-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-3-opener" href="images/edition-unit-3-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-3-reading" href="images/edition-unit-3-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-4-listening" href="images/edition-unit-4-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-4-opener" href="images/edition-unit-4-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-4-reading" href="images/edition-unit-4-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-5-listening" href="images/edition-unit-5-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-5-opener" href="images/edition-unit-5-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-5-reading" href="images/edition-unit-5-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-6-listening" href="images/edition-unit-6-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-6-opener" href="images/edition-unit-6-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-6-reading" href="images/edition-unit-6-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-7-listening" href="images/edition-unit-7-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-7-opener" href="images/edition-unit-7-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-7-reading" href="images/edition-unit-7-reading.png" media-type="image/png"/>
+    <item id="img-edition-unit-8-listening" href="images/edition-unit-8-listening.png" media-type="image/png"/>
+    <item id="img-edition-unit-8-opener" href="images/edition-unit-8-opener.png" media-type="image/png"/>
+    <item id="img-edition-unit-8-reading" href="images/edition-unit-8-reading.png" media-type="image/png"/>
     <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
   </manifest>
   <spine toc="ncx">

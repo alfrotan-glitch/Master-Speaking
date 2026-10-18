@@ -32,6 +32,10 @@ def main():
             found = any(row['correction'] in cells for b in blocks for cells in b.get('rows', []))
         if found:
             covered.add((row['unit'], row['chapter']))
+    # The new guarded original listening lessons supersede the old stage.
+    for unit in book['units']:
+        if unit['chapters'][1].get('listening_source') == f"U{unit['number']}-ORIGINAL":
+            covered.add((unit['number'], 2))
     expected = {(u, c) for u in range(1, 9) for c in range(1, 5)}
     if covered != expected:
         issues.append('Chapters without a recorded substantive revision: '+str(sorted(expected-covered)))

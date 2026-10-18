@@ -1,0 +1,10 @@
+{
+  "ok": true,
+  "items": 36,
+  "units": 7,
+  "complete_key_items_kept_on_one_page": true,
+  "stale_stem_mutation_rejected": true,
+  "missing_key_mutation_rejected": true,
+  "issues": [],
+  "scope": "All 36 vocabulary-completion stems, source-expression identities and completed-sentence examples. Suggested answers may admit suitable alternatives. Not automatic semantic proof, open personal reflections or independent specialist approval."
+}

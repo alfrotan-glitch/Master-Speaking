@@ -1,6 +1,6 @@
 {
  "checked": 3181,
- "covered": 2847,
+ "covered": 2491,
  "classified_transforms": [
   [
    "Forward -> Foreword (locked decision)",
@@ -84,6 +84,31 @@
   ],
   [
    "logged-correction",
+   86,
+   "watch and listen for meaning"
+  ],
+  [
+   "logged-correction",
+   87,
+   "learn vocabulary from authentic english"
+  ],
+  [
+   "logged-correction",
+   88,
+   "complete comprehension activities"
+  ],
+  [
+   "logged-correction",
+   89,
+   "analyze the speaker's ideas"
+  ],
+  [
+   "logged-correction",
+   90,
+   "discuss controversial or thought-provoking questio"
+  ],
+  [
+   "logged-correction",
    92,
    "this is your main communication day."
   ],
@@ -116,6 +141,11 @@
    "logged-correction",
    111,
    "by the end of the unit, you should be able to spea"
+  ],
+  [
+   "logged-correction",
+   121,
+   "\"listen with curiosity. speak with honesty. act wi"
   ],
   [
    "dedup-by-design",
@@ -204,8 +234,58 @@
   ],
   [
    "logged-correction",
+   253,
+   "present your answers to the class."
+  ],
+  [
+   "logged-correction",
+   269,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    270,
    "discuss the questions with your partner."
+  ],
+  [
+   "logged-correction",
+   271,
+   "what makes someone a good listener?"
+  ],
+  [
+   "logged-correction",
+   272,
+   "have you ever felt that someone was not listening "
+  ],
+  [
+   "logged-correction",
+   273,
+   "which is more difficult-speaking or listening? why"
+  ],
+  [
+   "logged-correction",
+   275,
+   "today's listening focuses on active listening, one"
+  ],
+  [
+   "logged-correction",
+   276,
+   "before watching, predict the answers."
+  ],
+  [
+   "logged-correction",
+   277,
+   "what habits do good listeners have?"
+  ],
+  [
+   "logged-correction",
+   278,
+   "why do people interrupt others?"
+  ],
+  [
+   "logged-correction",
+   279,
+   "how does listening improve communication?"
   ],
   [
    "logged-correction",
@@ -214,8 +294,148 @@
   ],
   [
    "logged-correction",
+   284,
+   "first viewing: listen only."
+  ],
+  [
+   "logged-correction",
+   285,
+   "do not write anything."
+  ],
+  [
+   "logged-correction",
+   286,
+   "try to understand the main message."
+  ],
+  [
+   "logged-correction",
+   295,
+   "second viewing. take notes."
+  ],
+  [
+   "logged-correction",
+   302,
+   "1. according to the speaker, what is the main purp"
+  ],
+  [
+   "logged-correction",
+   303,
+   "a. to win every conversation."
+  ],
+  [
+   "logged-correction",
+   304,
+   "b. to make the other person feel understood."
+  ],
+  [
+   "logged-correction",
+   305,
+   "c. to give advice as quickly as possible."
+  ],
+  [
+   "logged-correction",
+   306,
+   "2. what should you do before an important conversa"
+  ],
+  [
+   "logged-correction",
+   308,
+   "b. prepare a long speech."
+  ],
+  [
+   "logged-correction",
+   309,
+   "c. check your phone often."
+  ],
+  [
+   "logged-correction",
+   310,
+   "3. what type of questions should good listeners as"
+  ],
+  [
+   "logged-correction",
+   311,
+   "a. difficult questions."
+  ],
+  [
+   "logged-correction",
+   314,
+   "4. what should you do if you lose focus during a c"
+  ],
+  [
+   "logged-correction",
+   315,
+   "a. change the topic."
+  ],
+  [
+   "logged-correction",
+   316,
+   "b. ask the speaker to repeat what you missed."
+  ],
+  [
+   "logged-correction",
+   317,
+   "c. pretend you understood everything."
+  ],
+  [
+   "logged-correction",
+   318,
+   "5. according to the video, good listening helps bu"
+  ],
+  [
+   "logged-correction",
+   319,
+   "a. competition and confidence."
+  ],
+  [
+   "logged-correction",
+   320,
+   "b. trust and stronger relationships."
+  ],
+  [
+   "logged-correction",
+   321,
+   "c. money and success."
+  ],
+  [
+   "logged-correction",
+   326,
+   "_____ interrupting people often shows that you are"
+  ],
+  [
+   "logged-correction",
+   327,
+   "_____ asking for clarification shows that you are "
+  ],
+  [
+   "logged-correction",
+   328,
+   "_____ good listening always means agreeing with th"
+  ],
+  [
+   "logged-correction",
+   329,
+   "_____ high-quality listening can create a psycholo"
+  ],
+  [
+   "logged-correction",
    331,
    "discuss the following questions in groups."
+  ],
+  [
+   "logged-correction",
+   335,
+   "3. why are open-ended questions more effective tha"
+  ],
+  [
+   "logged-correction",
+   336,
+   "4. according to the speaker, why shouldn't you pla"
+  ],
+  [
+   "logged-correction",
+   339,
+   "listening practice. watch the video again. without"
   ],
   [
    "logged-correction",
@@ -359,8 +579,53 @@
   ],
   [
    "logged-correction",
+   575,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    576,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   577,
+   "have you ever achieved a difficult goal? what was "
+  ],
+  [
+   "logged-correction",
+   578,
+   "what usually stops people from reaching their goal"
+  ],
+  [
+   "logged-correction",
+   579,
+   "which is more important for success: talent or har"
+  ],
+  [
+   "logged-correction",
+   581,
+   "look at the title."
+  ],
+  [
+   "logged-correction",
+   582,
+   "why you should stop setting goals (yes, really)"
+  ],
+  [
+   "logged-correction",
+   584,
+   "do you agree with this title?"
+  ],
+  [
+   "logged-correction",
+   585,
+   "why might someone say goals are not enough?"
+  ],
+  [
+   "logged-correction",
+   586,
+   "what is the difference between a goal and a daily "
   ],
   [
    "logged-correction",
@@ -369,13 +634,183 @@
   ],
   [
    "logged-correction",
+   591,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   592,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   593,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   594,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   595,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   601,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   602,
+   "take notes."
+  ],
+  [
+   "logged-correction",
    603,
    "focus on key ideas, examples, reasons. do not try "
   ],
   [
    "logged-correction",
+   606,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   608,
+   "1. what was emmanuel acho's main goal in college?"
+  ],
+  [
+   "logged-correction",
+   609,
+   "a. to become a sports psychologist"
+  ],
+  [
+   "logged-correction",
+   610,
+   "b. to be drafted in the first three rounds of the "
+  ],
+  [
+   "logged-correction",
+   611,
+   "c. to become a football coach"
+  ],
+  [
+   "logged-correction",
+   612,
+   "2. what happened during the nfl combine?"
+  ],
+  [
+   "logged-correction",
+   613,
+   "a. he tore his quad while running."
+  ],
+  [
+   "logged-correction",
+   614,
+   "b. he won the competition."
+  ],
+  [
+   "logged-correction",
+   615,
+   "c. he received a scholarship."
+  ],
+  [
+   "logged-correction",
+   616,
+   "3. according to the speaker, why do many people se"
+  ],
+  [
+   "logged-correction",
+   617,
+   "a. because they have been taught that goals are ne"
+  ],
+  [
+   "logged-correction",
+   618,
+   "b. because goals are always easy to achieve."
+  ],
+  [
+   "logged-correction",
+   619,
+   "c. because goals eliminate failure."
+  ],
+  [
+   "logged-correction",
+   620,
+   "4. what does emmanuel suggest instead of setting g"
+  ],
+  [
+   "logged-correction",
+   621,
+   "a. avoid making plans."
+  ],
+  [
+   "logged-correction",
+   622,
+   "b. have an objective without limitations."
+  ],
+  [
+   "logged-correction",
+   623,
+   "c. change your goals every month."
+  ],
+  [
+   "logged-correction",
+   624,
+   "5. what is the speaker's final message?"
+  ],
+  [
+   "logged-correction",
+   625,
+   "a. goals create limitless opportunities."
+  ],
+  [
+   "logged-correction",
+   626,
+   "b. believe in possibility rather than being limite"
+  ],
+  [
+   "logged-correction",
+   627,
+   "c. success depends only on talent."
+  ],
+  [
+   "logged-correction",
+   631,
+   "_____ emmanuel wanted to leave college early and e"
+  ],
+  [
+   "logged-correction",
+   632,
+   "_____ emmanuel achieved his goal of being drafted "
+  ],
+  [
+   "logged-correction",
+   633,
+   "_____ the speaker believes writing goals down auto"
+  ],
+  [
+   "logged-correction",
+   634,
+   "_____ emmanuel says people often set goals because"
+  ],
+  [
+   "logged-correction",
+   635,
+   "_____ the speaker believes possibilities are great"
+  ],
+  [
+   "logged-correction",
    639,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   650,
+   "the speaker says we should believe in possibility "
   ],
   [
    "logged-correction",
@@ -554,8 +989,33 @@
   ],
   [
    "logged-correction",
+   890,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    891,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   892,
+   "have you ever made a decision based on your emotio"
+  ],
+  [
+   "logged-correction",
+   893,
+   "why do some people stay calm under pressure while "
+  ],
+  [
+   "logged-correction",
+   894,
+   "do you think emotions help us make better decision"
+  ],
+  [
+   "logged-correction",
+   896,
+   "look at the title."
   ],
   [
    "logged-correction",
@@ -564,8 +1024,68 @@
   ],
   [
    "logged-correction",
+   899,
+   "what does emotional intelligence mean to you?"
+  ],
+  [
+   "logged-correction",
+   900,
+   "how is emotional intelligence different from iq?"
+  ],
+  [
+   "logged-correction",
+   901,
+   "can emotional intelligence be developed throughout"
+  ],
+  [
+   "logged-correction",
+   902,
+   "why do employers value emotional intelligence in t"
+  ],
+  [
+   "logged-correction",
+   903,
+   "what qualities would you expect an emotionally int"
+  ],
+  [
+   "logged-correction",
    905,
    "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
+   908,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   909,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   910,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   911,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   912,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   917,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   918,
+   "take notes."
   ],
   [
    "logged-correction",
@@ -574,8 +1094,158 @@
   ],
   [
    "logged-correction",
+   922,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   924,
+   "1. why are the two students disappointed at the be"
+  ],
+  [
+   "logged-correction",
+   925,
+   "a. they forgot to take the exam."
+  ],
+  [
+   "logged-correction",
+   926,
+   "b. they received lower grades than they expected."
+  ],
+  [
+   "logged-correction",
+   927,
+   "c. they had to attend summer classes."
+  ],
+  [
+   "logged-correction",
+   928,
+   "2. according to the process model, what happens im"
+  ],
+  [
+   "logged-correction",
+   929,
+   "a. we change our behavior."
+  ],
+  [
+   "logged-correction",
+   930,
+   "b. the situation draws our attention."
+  ],
+  [
+   "logged-correction",
+   931,
+   "c. we experience an emotional response."
+  ],
+  [
+   "logged-correction",
+   932,
+   "3. which strategy does the speaker suggest if you "
+  ],
+  [
+   "logged-correction",
+   933,
+   "a. argue with your ex."
+  ],
+  [
+   "logged-correction",
+   934,
+   "b. leave immediately."
+  ],
+  [
+   "logged-correction",
+   935,
+   "c. avoid interacting with your ex."
+  ],
+  [
+   "logged-correction",
+   936,
+   "4. which of the following is considered a healthy "
+  ],
+  [
+   "logged-correction",
+   937,
+   "a. hiding your emotions."
+  ],
+  [
+   "logged-correction",
+   938,
+   "b. taking recreational drugs."
+  ],
+  [
+   "logged-correction",
+   939,
+   "c. talking to someone you trust."
+  ],
+  [
+   "logged-correction",
+   940,
+   "5. what is the speaker's main message?"
+  ],
+  [
+   "logged-correction",
+   941,
+   "a. people should always try to stay happy."
+  ],
+  [
+   "logged-correction",
+   942,
+   "b. every emotion can be useful depending on the si"
+  ],
+  [
+   "logged-correction",
+   943,
+   "c. negative emotions should always be avoided."
+  ],
+  [
+   "logged-correction",
+   947,
+   "_____ the process model explains five steps in the"
+  ],
+  [
+   "logged-correction",
+   948,
+   "_____ reappraisal means changing the way you think"
+  ],
+  [
+   "logged-correction",
+   949,
+   "_____ the speaker recommends hiding your emotions "
+  ],
+  [
+   "logged-correction",
+   950,
+   "_____ feeling sad can sometimes help us support ot"
+  ],
+  [
+   "logged-correction",
+   951,
+   "_____ research suggests that constantly chasing ha"
+  ],
+  [
+   "logged-correction",
    954,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   955,
+   "what is the process model?"
+  ],
+  [
+   "logged-correction",
+   956,
+   "according to the speaker, why is learning to notic"
+  ],
+  [
+   "logged-correction",
+   959,
+   "in your opinion, which strategy from the video wou"
+  ],
+  [
+   "logged-correction",
+   966,
+   "the speaker says that people who are fixated on ha"
   ],
   [
    "logged-correction",
@@ -724,8 +1394,23 @@
   ],
   [
    "logged-correction",
+   1178,
+   "\"money changes people.\" do you agree or disagree? "
+  ],
+  [
+   "logged-correction",
+   1185,
+   "\"money is a wonderful servant, but a terrible mast"
+  ],
+  [
+   "logged-correction",
    1186,
    "use at least six expressions from the reading tool"
+  ],
+  [
+   "logged-correction",
+   1208,
+   "think - pair - share"
   ],
   [
    "logged-correction",
@@ -734,8 +1419,43 @@
   ],
   [
    "logged-correction",
+   1210,
+   "if someone offered you $1 million, but you could n"
+  ],
+  [
+   "logged-correction",
+   1211,
+   "which do you think has a greater impact on happine"
+  ],
+  [
+   "logged-correction",
+   1212,
+   "do you think there should be a limit to how much m"
+  ],
+  [
+   "logged-correction",
+   1214,
+   "look at the title."
+  ],
+  [
+   "logged-correction",
    1217,
    "discuss the following questions."
+  ],
+  [
+   "logged-correction",
+   1218,
+   "what do you think the speaker's answer will be?"
+  ],
+  [
+   "logged-correction",
+   1219,
+   "what factors besides money might influence happine"
+  ],
+  [
+   "logged-correction",
+   1220,
+   "do you think wealthy people are happier than other"
   ],
   [
    "logged-correction",
@@ -749,8 +1469,173 @@
   ],
   [
    "logged-correction",
+   1225,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   1226,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   1227,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   1228,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   1229,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   1236,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   1237,
+   "take notes."
+  ],
+  [
+   "logged-correction",
    1238,
    "focus on key ideas, examples, reasons. do not try "
+  ],
+  [
+   "logged-correction",
+   1241,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   1243,
+   "what is the speaker's main argument?"
+  ],
+  [
+   "logged-correction",
+   1244,
+   "a. money cannot improve happiness under any circum"
+  ],
+  [
+   "logged-correction",
+   1245,
+   "b. people become happier when they earn more money"
+  ],
+  [
+   "logged-correction",
+   1246,
+   "c. people can increase their happiness by spending"
+  ],
+  [
+   "logged-correction",
+   1247,
+   "2. according to the speaker, what often happens to"
+  ],
+  [
+   "logged-correction",
+   1248,
+   "a. they become happier and build stronger friendsh"
+  ],
+  [
+   "logged-correction",
+   1249,
+   "b. they often go into debt and experience damaged "
+  ],
+  [
+   "logged-correction",
+   1250,
+   "c. they donate most of their money to charity."
+  ],
+  [
+   "logged-correction",
+   1251,
+   "3. in the university of british columbia experimen"
+  ],
+  [
+   "logged-correction",
+   1252,
+   "a. save all of their money."
+  ],
+  [
+   "logged-correction",
+   1253,
+   "b. spend money either on themselves or on someone "
+  ],
+  [
+   "logged-correction",
+   1254,
+   "c. invest their money in a business."
+  ],
+  [
+   "logged-correction",
+   1255,
+   "4. what did the researchers discover about the amo"
+  ],
+  [
+   "logged-correction",
+   1256,
+   "a. spending larger amounts always created greater "
+  ],
+  [
+   "logged-correction",
+   1257,
+   "b. five dollars created more happiness than twenty"
+  ],
+  [
+   "logged-correction",
+   1258,
+   "c. how the money was spent mattered more than how "
+  ],
+  [
+   "logged-correction",
+   1259,
+   "5. according to the gallup survey, people who dona"
+  ],
+  [
+   "logged-correction",
+   1260,
+   "a. reported higher levels of happiness."
+  ],
+  [
+   "logged-correction",
+   1261,
+   "b. earned higher salaries."
+  ],
+  [
+   "logged-correction",
+   1262,
+   "c. spent less money on themselves."
+  ],
+  [
+   "logged-correction",
+   1266,
+   "_____ the speaker believes the saying \"money can't"
+  ],
+  [
+   "logged-correction",
+   1267,
+   "_____ lottery winners often experience financial a"
+  ],
+  [
+   "logged-correction",
+   1268,
+   "_____ participants who spent money on themselves b"
+  ],
+  [
+   "logged-correction",
+   1269,
+   "_____ the research in uganda produced results simi"
+  ],
+  [
+   "logged-correction",
+   1270,
+   "_____ the speaker concludes that generosity can im"
   ],
   [
    "logged-correction",
@@ -759,8 +1644,58 @@
   ],
   [
    "logged-correction",
+   1273,
+   "why does the speaker believe many people fail to u"
+  ],
+  [
+   "logged-correction",
+   1274,
+   "what happened when participants spent money on oth"
+  ],
+  [
+   "logged-correction",
+   1275,
+   "why did the researchers conduct a similar experime"
+  ],
+  [
+   "logged-correction",
+   1276,
+   "what did the gallup organization's international d"
+  ],
+  [
+   "logged-correction",
+   1277,
+   "according to the speaker, what is the most effecti"
+  ],
+  [
+   "logged-correction",
    1280,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   1281,
+   "do you agree with the speaker that money can buy h"
+  ],
+  [
+   "logged-correction",
+   1283,
+   "the speaker says many lottery winners go into debt"
+  ],
+  [
+   "logged-correction",
+   1285,
+   "the speaker suggests that pro-social behavior incr"
+  ],
+  [
+   "logged-correction",
+   1286,
+   "the research found that the amount of money doesn'"
+  ],
+  [
+   "logged-correction",
+   1288,
+   "do you think the speaker's findings hold true in y"
   ],
   [
    "logged-correction",
@@ -864,6 +1799,11 @@
   ],
   [
    "logged-correction",
+   1436,
+   "ultimately, the future of ai depends on how people"
+  ],
+  [
+   "logged-correction",
    1453,
    "3. why are some experts concerned about ai?"
   ],
@@ -899,8 +1839,73 @@
   ],
   [
    "logged-correction",
+   1497,
+   "\"the most successful people in the future may not "
+  ],
+  [
+   "logged-correction",
+   1498,
+   "present your answers to the class."
+  ],
+  [
+   "logged-correction",
+   1504,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    1505,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   1506,
+   "what do you think ai will be able to do five years"
+  ],
+  [
+   "logged-correction",
+   1507,
+   "what is one thing you think ai will never be able "
+  ],
+  [
+   "logged-correction",
+   1508,
+   "do you think ai will make people's lives easier or"
+  ],
+  [
+   "logged-correction",
+   1509,
+   "what could happen if ai becomes much more powerful"
+  ],
+  [
+   "logged-correction",
+   1510,
+   "should humans control how ai is developed? why or "
+  ],
+  [
+   "logged-correction",
+   1513,
+   "look at the title"
+  ],
+  [
+   "logged-correction",
+   1516,
+   "what changes do you expect the video to talk about"
+  ],
+  [
+   "logged-correction",
+   1517,
+   "which areas of life could ai change the most?"
+  ],
+  [
+   "logged-correction",
+   1518,
+   "ducation, employment, healthcare, communication, e"
+  ],
+  [
+   "logged-correction",
+   1519,
+   "do you expect the speaker to present ai as mostly "
   ],
   [
    "logged-correction",
@@ -909,13 +1914,183 @@
   ],
   [
    "logged-correction",
+   1523,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   1524,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   1525,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   1526,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   1527,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   1532,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   1533,
+   "take notes."
+  ],
+  [
+   "logged-correction",
    1534,
    "focus on key ideas, examples, reasons. do not try "
   ],
   [
    "logged-correction",
+   1537,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   1539,
+   "1. what is the main problem with giving an ai syst"
+  ],
+  [
+   "logged-correction",
+   1540,
+   "a. the ai may be unable to complete the task."
+  ],
+  [
+   "logged-correction",
+   1541,
+   "b. the ai may pursue the objective without conside"
+  ],
+  [
+   "logged-correction",
+   1542,
+   "c. the ai may refuse to follow instructions."
+  ],
+  [
+   "logged-correction",
+   1543,
+   "2. what example does stuart russell use to explain"
+  ],
+  [
+   "logged-correction",
+   1544,
+   "a. an ai system trying to make coffee."
+  ],
+  [
+   "logged-correction",
+   1545,
+   "b. an ai system trying to fix ocean acidification "
+  ],
+  [
+   "logged-correction",
+   1546,
+   "c. an ai system trying to teach people about clima"
+  ],
+  [
+   "logged-correction",
+   1547,
+   "3. why can humans deal with objectives differently"
+  ],
+  [
+   "logged-correction",
+   1548,
+   "a. humans understand that they may not know everyt"
+  ],
+  [
+   "logged-correction",
+   1549,
+   "b. humans always make better decisions than machin"
+  ],
+  [
+   "logged-correction",
+   1550,
+   "c. humans have more information than ai systems."
+  ],
+  [
+   "logged-correction",
+   1551,
+   "4. what does the speaker mean by technological une"
+  ],
+  [
+   "logged-correction",
+   1552,
+   "a. people refusing to use modern technology."
+  ],
+  [
+   "logged-correction",
+   1553,
+   "b. unemployment caused by machines performing work"
+  ],
+  [
+   "logged-correction",
+   1554,
+   "c. companies losing money because of technology."
+  ],
+  [
+   "logged-correction",
+   1555,
+   "5. what concern does the speaker raise about a mac"
+  ],
+  [
+   "logged-correction",
+   1556,
+   "a. people may lose the incentive to understand and"
+  ],
+  [
+   "logged-correction",
+   1557,
+   "b. machines may become too expensive to maintain."
+  ],
+  [
+   "logged-correction",
+   1558,
+   "c. people may stop communicating with one another."
+  ],
+  [
+   "logged-correction",
+   1562,
+   "_____ the speaker believes that humans can always "
+  ],
+  [
+   "logged-correction",
+   1563,
+   "_____ ai systems may need to recognize that they d"
+  ],
+  [
+   "logged-correction",
+   1564,
+   "_____ the speaker suggests that automation has the"
+  ],
+  [
+   "logged-correction",
+   1565,
+   "_____ according to the speaker, general-purpose ai"
+  ],
+  [
+   "logged-correction",
+   1566,
+   "_____ the speaker believes that the development of"
+  ],
+  [
+   "logged-correction",
    1570,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   1571,
+   "which idea from the video did you find most intere"
   ],
   [
    "logged-correction",
@@ -1134,8 +2309,43 @@
   ],
   [
    "logged-correction",
+   1916,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    1917,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   1918,
+   "what do you think is the biggest reason marriages "
+  ],
+  [
+   "logged-correction",
+   1919,
+   "can couples have a strong relationship even if the"
+  ],
+  [
+   "logged-correction",
+   1920,
+   "how important is friendship between married partne"
+  ],
+  [
+   "logged-correction",
+   1921,
+   "do you think couples should spend most of their fr"
+  ],
+  [
+   "logged-correction",
+   1922,
+   "what does a healthy relationship look like?"
+  ],
+  [
+   "logged-correction",
+   1924,
+   "look at the title."
   ],
   [
    "logged-correction",
@@ -1144,8 +2354,58 @@
   ],
   [
    "logged-correction",
+   1928,
+   "do you think small everyday actions can affect a m"
+  ],
+  [
+   "logged-correction",
+   1929,
+   "why might communication be more important than rom"
+  ],
+  [
+   "logged-correction",
+   1930,
+   "what do you think researchers can learn by observi"
+  ],
+  [
+   "logged-correction",
    1931,
    "focus on these useful expressions based on the ted"
+  ],
+  [
+   "logged-correction",
+   1934,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   1935,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   1936,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   1937,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   1938,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   1945,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   1946,
+   "take notes."
   ],
   [
    "logged-correction",
@@ -1154,13 +2414,128 @@
   ],
   [
    "logged-correction",
+   1950,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   1952,
+   "1. what is the speaker's main purpose?"
+  ],
+  [
+   "logged-correction",
+   1953,
+   "a. to explain why people should avoid marriageb. t"
+  ],
+  [
+   "logged-correction",
+   1954,
+   "2. how does the speaker distinguish attraction fro"
+  ],
+  [
+   "logged-correction",
+   1955,
+   "a. attraction lasts longer and involves wanting to"
+  ],
+  [
+   "logged-correction",
+   1956,
+   "3. according to the speaker, what helps build trus"
+  ],
+  [
+   "logged-correction",
+   1957,
+   "a. grand and expensive apologiesb. small promises "
+  ],
+  [
+   "logged-correction",
+   1958,
+   "4. what does compassion mean in the speaker's expl"
+  ],
+  [
+   "logged-correction",
+   1959,
+   "a. experiencing exactly the same emotions as your "
+  ],
+  [
+   "logged-correction",
+   1960,
+   "5. what does a shared vision help couples do?"
+  ],
+  [
+   "logged-correction",
+   1961,
+   "a. avoid making compromises completelyb. decide wh"
+  ],
+  [
+   "logged-correction",
+   1964,
+   "the speaker's research involved 450 couples."
+  ],
+  [
+   "logged-correction",
+   1965,
+   "_____ the couples in the study had all been togeth"
+  ],
+  [
+   "logged-correction",
+   1966,
+   "_____ the speaker believes attraction is limited t"
+  ],
+  [
+   "logged-correction",
+   1967,
+   "_____ respect involves not taking your partner for"
+  ],
+  [
+   "logged-correction",
+   1968,
+   "_____ trust is built through consistent and reliab"
+  ],
+  [
+   "logged-correction",
+   1969,
+   "_____ the speaker says couples should always sacri"
+  ],
+  [
+   "logged-correction",
+   1970,
+   "_____ a shared vision involves knowing where you w"
+  ],
+  [
+   "logged-correction",
+   1971,
+   "_____ the speaker argues that loving behaviors are"
+  ],
+  [
+   "logged-correction",
    1977,
    "answer the questions in complete sentences."
   ],
   [
    "logged-correction",
+   1978,
+   "can respect exist without love?"
+  ],
+  [
+   "logged-correction",
+   1979,
+   "is it possible to lose attraction to someone but s"
+  ],
+  [
+   "logged-correction",
+   1980,
+   "what everyday behaviors show that someone respects"
+  ],
+  [
+   "logged-correction",
    1983,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   1994,
+   "challenge question:the speaker says, \"you don't fa"
   ],
   [
    "logged-correction",
@@ -1339,8 +2714,53 @@
   ],
   [
    "logged-correction",
+   2286,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    2287,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   2288,
+   "when you think about the future, what makes you fe"
+  ],
+  [
+   "logged-correction",
+   2289,
+   "what makes you feel worried about the future?"
+  ],
+  [
+   "logged-correction",
+   2290,
+   "do you think technological progress always makes p"
+  ],
+  [
+   "logged-correction",
+   2291,
+   "what could happen if the world's countries become "
+  ],
+  [
+   "logged-correction",
+   2292,
+   "do you think people will live and work differently"
+  ],
+  [
+   "logged-correction",
+   2295,
+   "look at these words before watching:"
+  ],
+  [
+   "logged-correction",
+   2296,
+   "inequality - technology - resilience - migration -"
+  ],
+  [
+   "logged-correction",
+   2297,
+   "what do you think the speaker will say about each "
   ],
   [
    "logged-correction",
@@ -1349,8 +2769,173 @@
   ],
   [
    "logged-correction",
+   2301,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   2302,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   2303,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   2304,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   2305,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   2310,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   2311,
+   "take notes."
+  ],
+  [
+   "logged-correction",
    2312,
    "focus on key ideas, examples, reasons. do not try "
+  ],
+  [
+   "logged-correction",
+   2315,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   2317,
+   "1. why does goldin say the future is unpredictable"
+  ],
+  [
+   "logged-correction",
+   2318,
+   "a. people are not interested in the future.b. even"
+  ],
+  [
+   "logged-correction",
+   2319,
+   "2. what does goldin identify as two \"achilles heel"
+  ],
+  [
+   "logged-correction",
+   2320,
+   "a. technology and migrationb. growing inequality a"
+  ],
+  [
+   "logged-correction",
+   2321,
+   "3. what does goldin mean by \"systemic risk\"?"
+  ],
+  [
+   "logged-correction",
+   2322,
+   "a. a problem that affects only one individualb. a "
+  ],
+  [
+   "logged-correction",
+   2323,
+   "4. what does goldin predict about computing by 203"
+  ],
+  [
+   "logged-correction",
+   2324,
+   "a. computers will become less powerful.b. computin"
+  ],
+  [
+   "logged-correction",
+   2325,
+   "5. what concern does goldin raise about genetic te"
+  ],
+  [
+   "logged-correction",
+   2326,
+   "a. it may become available only to wealthy people."
+  ],
+  [
+   "logged-correction",
+   2327,
+   "6. why does goldin believe migration may become in"
+  ],
+  [
+   "logged-correction",
+   2328,
+   "a. countries will need people to support their eco"
+  ],
+  [
+   "logged-correction",
+   2329,
+   "7. which of the following does goldin mention as a"
+  ],
+  [
+   "logged-correction",
+   2330,
+   "a. fashionb. climate changec. tourism"
+  ],
+  [
+   "logged-correction",
+   2331,
+   "8. what does goldin believe humanity needs to do?"
+  ],
+  [
+   "logged-correction",
+   2332,
+   "a. stop technological development.b. allow only we"
+  ],
+  [
+   "logged-correction",
+   2336,
+   "_____ goldin believes globalization is becoming le"
+  ],
+  [
+   "logged-correction",
+   2337,
+   "_____ life expectancy has increased significantly "
+  ],
+  [
+   "logged-correction",
+   2338,
+   "_____ goldin believes globalization has benefited "
+  ],
+  [
+   "logged-correction",
+   2339,
+   "_____ technology could create enormous opportuniti"
+  ],
+  [
+   "logged-correction",
+   2340,
+   "_____ goldin is concerned that advanced genetic te"
+  ],
+  [
+   "logged-correction",
+   2342,
+   "_____ climate change and pandemics are examples of"
+  ],
+  [
+   "logged-correction",
+   2343,
+   "_____ goldin believes existing global governance s"
+  ],
+  [
+   "logged-correction",
+   2344,
+   "_____ he believes collective action can produce ex"
+  ],
+  [
+   "logged-correction",
+   2345,
+   "_____ goldin ends with a completely pessimistic vi"
   ],
   [
    "logged-correction",
@@ -1359,8 +2944,33 @@
   ],
   [
    "logged-correction",
+   2348,
+   "which prediction in the video surprised you the mo"
+  ],
+  [
+   "logged-correction",
+   2349,
+   "do you agree that globalization's greatest strengt"
+  ],
+  [
+   "logged-correction",
+   2350,
+   "goldin says that globalization has not been inclus"
+  ],
+  [
+   "logged-correction",
    2352,
    "work in groups of 3-4 students. discuss the follow"
+  ],
+  [
+   "logged-correction",
+   2357,
+   "which systemic risk mentioned in the video worries"
+  ],
+  [
+   "logged-correction",
+   2359,
+   "goldin says that humanity needs \"collective wisdom"
   ],
   [
    "logged-correction",
@@ -1539,8 +3149,43 @@
   ],
   [
    "logged-correction",
+   2641,
+   "think - pair - share"
+  ],
+  [
+   "logged-correction",
    2642,
    "discuss the following questions with your partner."
+  ],
+  [
+   "logged-correction",
+   2643,
+   "how important is english in your education?"
+  ],
+  [
+   "logged-correction",
+   2644,
+   "has english ever opened a door for you?"
+  ],
+  [
+   "logged-correction",
+   2645,
+   "has lack of english ever prevented someone from ge"
+  ],
+  [
+   "logged-correction",
+   2646,
+   "do you think your english represents your identity"
+  ],
+  [
+   "logged-correction",
+   2648,
+   "what makes someone's english good?"
+  ],
+  [
+   "logged-correction",
+   2649,
+   "a. native-like pronunciationb. perfect grammarc. a"
   ],
   [
    "logged-correction",
@@ -1554,8 +3199,143 @@
   ],
   [
    "logged-correction",
+   2654,
+   "first viewing"
+  ],
+  [
+   "logged-correction",
+   2655,
+   "do not write."
+  ],
+  [
+   "logged-correction",
+   2656,
+   "listen for the main idea."
+  ],
+  [
+   "logged-correction",
+   2657,
+   "ask yourself:"
+  ],
+  [
+   "logged-correction",
+   2658,
+   "what is the speaker trying to convince us to do?"
+  ],
+  [
+   "logged-correction",
+   2664,
+   "second viewing"
+  ],
+  [
+   "logged-correction",
+   2665,
+   "take notes."
+  ],
+  [
+   "logged-correction",
    2666,
    "focus on key ideas, examples, reasons. do not try "
+  ],
+  [
+   "logged-correction",
+   2669,
+   "a. multiple choice"
+  ],
+  [
+   "logged-correction",
+   2671,
+   "1. what did ryan's friend's students teach her in "
+  ],
+  [
+   "logged-correction",
+   2672,
+   "a. how to grow vegetablesb. arabic words for local"
+  ],
+  [
+   "logged-correction",
+   2673,
+   "2. where did the students get their knowledge abou"
+  ],
+  [
+   "logged-correction",
+   2674,
+   "a. from their teachersb. from booksc. from their g"
+  ],
+  [
+   "logged-correction",
+   2675,
+   "3. according to ryan, what has english teaching be"
+  ],
+  [
+   "logged-correction",
+   2676,
+   "a. a small school subjectb. a declining profession"
+  ],
+  [
+   "logged-correction",
+   2677,
+   "4. why do many people want an english education?"
+  ],
+  [
+   "logged-correction",
+   2678,
+   "a. they believe it gives them access to better edu"
+  ],
+  [
+   "logged-correction",
+   2680,
+   "a. they are too easy.b. they can prevent talented "
+  ],
+  [
+   "logged-correction",
+   2681,
+   "6. what does ryan mean when she calls english teac"
+  ],
+  [
+   "logged-correction",
+   2682,
+   "a. they protect english from other languages.b. th"
+  ],
+  [
+   "logged-correction",
+   2683,
+   "7. why does ryan mention the islamic golden age?"
+  ],
+  [
+   "logged-correction",
+   2684,
+   "a. to show the historical importance of translatio"
+  ],
+  [
+   "logged-correction",
+   2685,
+   "8. why does ryan mention einstein?"
+  ],
+  [
+   "logged-correction",
+   2686,
+   "a. to show that einstein was fluent in englishb. t"
+  ],
+  [
+   "logged-correction",
+   2687,
+   "9. what problem does ryan identify with english te"
+  ],
+  [
+   "logged-correction",
+   2688,
+   "a. they are too short.b. they are difficult for na"
+  ],
+  [
+   "logged-correction",
+   2689,
+   "10. what is ryan's overall attitude toward english"
+  ],
+  [
+   "logged-correction",
+   2690,
+   "a. she believes english should disappear.b. she is"
   ],
   [
    "logged-correction",

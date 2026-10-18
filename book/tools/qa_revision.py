@@ -10,9 +10,10 @@ from design import contrast, BAND, BANNER, ACCENT, INK
 
 ROOT = Path(__file__).resolve().parents[2]
 book = json.loads((ROOT / 'book/artifacts/book.json').read_text())
+editorial_base = json.loads((ROOT / 'book/artifacts/editorial-base.json').read_text())
 edits = json.loads((ROOT / 'book/master/reviewed-edits.json').read_text())
 for edit in edits:
-    blocks = book['units'][edit['unit'] - 1]['chapters'][edit['chapter'] - 1]['blocks']
+    blocks = editorial_base['units'][edit['unit'] - 1]['chapters'][edit['chapter'] - 1]['blocks']
     if 'table_column' in edit:
         column = edit['table_column']
         values = [row[column] for block in blocks if block.get('k') == 'table'
@@ -32,7 +33,7 @@ for edit in edits:
         assert sum(b.get('text') == edit['original'] for b in blocks) == remaining, edit
 front_edits = json.loads((ROOT / 'book/master/reviewed-front-edits.json').read_text())
 for edit in front_edits:
-    parent = book['front']
+    parent = editorial_base['front']
     for key in edit['path'][:-1]:
         parent = parent[key]
     key = edit['path'][-1]

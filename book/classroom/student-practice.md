@@ -2,9 +2,9 @@
 
 ## Student Practice Pack
 
-New supplementary practice • October 2026
+Practice for the self-contained course • October 2026
 
-Use this pack with the book and Class Companion. It adds chapter success checklists, short speaking models, and questions for eight new teacher-read listening alternatives. These alternatives do not use the book’s original video questions.
+Use this pack with the book and Class Companion. It adds chapter success checklists, short speaking models, and worksheets for the eight original read-aloud listening stories used in Chapter 2 of each unit.
 
 The models and listening stories are newly authored fictional teaching examples. A model shows one possible way to communicate; it is not a script to memorize or the only acceptable opinion. These short responses do not meet every full-length presentation requirement in the book.
 
@@ -80,11 +80,11 @@ Your turn: Discuss the most useful skill for a new club member. Give your own ex
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 2. Unit 1 • New listening worksheet
+## 2. Unit 1 • Listening worksheet
 
 The meeting that almost went wrong
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -198,11 +198,11 @@ Your turn: Plan a small learning goal for a fictional student who has limited ti
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 4. Unit 2 • New listening worksheet
+## 4. Unit 2 • Listening worksheet
 
 A smaller plan that lasted
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -316,11 +316,11 @@ Your turn: Use a fictional group-project disagreement. Explain two possible inte
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 6. Unit 3 • New listening worksheet
+## 6. Unit 3 • Listening worksheet
 
 Before making an assumption
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -434,11 +434,11 @@ Your turn: Allocate 100 imaginary credits among two or three options you invent.
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 8. Unit 4 • New listening worksheet
+## 8. Unit 4 • Listening worksheet
 
 One hundred credits
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -552,11 +552,11 @@ Your turn: Write two proposed AI-use rules for a fictional speaking class. Expla
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 10. Unit 5 • New listening worksheet
+## 10. Unit 5 • Listening worksheet
 
 A confident answer was not enough
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -670,11 +670,11 @@ Your turn: Choose a fictional club, project partnership, or adult relationship. 
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 12. Unit 6 • New listening worksheet
+## 12. Unit 6 • Listening worksheet
 
 Friends with different plans
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -788,11 +788,11 @@ Your turn: Propose a small local–global project. Consider two groups affected 
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 14. Unit 7 • New listening worksheet
+## 14. Unit 7 • Listening worksheet
 
 Testing an online market
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 
@@ -906,11 +906,11 @@ Your turn: Explain a welcome activity without relying on unexplained idioms or a
 
 First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.
 
-## 16. Unit 8 • New listening worksheet
+## 16. Unit 8 • Listening worksheet
 
 Making the welcome clear
 
-Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.
+Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.
 
 First listening — gist: What is the main problem or decision? Give a one-sentence answer.
 

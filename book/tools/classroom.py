@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build separate student/teacher packs from authored classroom sources.
 
-Original videos remain unverified. Never map the new listening keys to them.
+This edition uses the authored listening stories as its core input; never map their keys to historical videos.
 Run: python book/tools/classroom.py && python book/tools/qa_classroom.py
 """
 import json
@@ -20,8 +20,8 @@ def compose():
     modules = json.loads((SOURCE / 'modules.json').read_text())
     key = json.loads((SOURCE / 'unit1-reading-key.json').read_text())
     student = ['# Master Speaking', '## Student Practice Pack',
-               'New supplementary practice • October 2026',
-               'Use this pack with the book and Class Companion. It adds chapter success checklists, short speaking models, and questions for eight new teacher-read listening alternatives. These alternatives do not use the book’s original video questions.',
+               'Practice for the self-contained course • October 2026',
+               'Use this pack with the book and Class Companion. It adds chapter success checklists, short speaking models, and worksheets for the eight original read-aloud listening stories used in Chapter 2 of each unit.',
                'The models and listening stories are newly authored fictional teaching examples. A model shows one possible way to communicate; it is not a script to memorize or the only acceptable opinion. These short responses do not meet every full-length presentation requirement in the book.',
                'Start by trying a task in your own words. Study the model, notice one useful move, then try again with a different example. Use keywords rather than copying whole sentences.',
                'For each checklist, mark N = not yet, S = with support, or I = independently. Add a specific example of what you said or understood. These are local practice goals, not certified proficiency descriptors. Personal disclosure and recording are optional.']
@@ -41,9 +41,9 @@ def compose():
         student.extend('- ' + phrase for phrase in module['frames'])
         student.append('Your turn: ' + module['transfer'])
         student.append('First attempt → feedback → second attempt: change one thing, then explain whether it helped your listener.')
-        student.append(f"## {2 * index + 2}. Unit {module['unit']} • New listening worksheet")
+        student.append(f"## {2 * index + 2}. Unit {module['unit']} • Listening worksheet")
         student.append(module['listening']['title'])
-        student.append('Input: a new fictional teacher-read story, not the original book video. Listen before you see the script. Use this worksheet only with the matching story in the Teacher Implementation Pack.')
+        student.append('Input: the matching fictional story in Chapter 2 and the Teacher Implementation Pack. Listen before you see the script; the detail questions here match the book.')
         student.append('First listening — gist: What is the main problem or decision? Give a one-sentence answer.')
         student.append('My gist note: ___________________________________________________')
         student.append('Second listening — details: read the questions, listen again, and answer in short phrases.')
@@ -75,9 +75,9 @@ def compose():
                         f"Reason: {item['why']}", f"Text evidence: “{item['evidence']}”"])
     for index, module in enumerate(modules):
         listening = module['listening']
-        teacher.append(f"## {7 + index}. Unit {module['unit']} • Original teacher-read alternative")
+        teacher.append(f"## {7 + index}. Unit {module['unit']} • Original listening story and key")
         teacher.extend([module['title'] + ' — ' + listening['title'],
-                        'Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.',
+                        'Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.',
                         f"Delivery: read the following {len(listening['script'].split())}-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.",
                         '### Read-aloud script', listening['script'],
                         'Gist — suggested answer: ' + listening['gist'],
@@ -90,7 +90,7 @@ def compose():
     teacher.extend(['## 15. Pilot observation and revision record',
                     'A plan is supplied; a live pilot and its findings are not. Complete this record after teaching rather than claiming improvement in advance.',
                     'Class/date: __________  Unit/lesson: __________  Number of learners: ___',
-                    'Selected input: verified original recording / new teacher-read alternative / other: __________',
+                    'Selected input: course story read aloud / access adaptation / other: __________',
                     'Actual timings and unfinished work: ________________________________',
                     'Observed learner strength, with an example: ________________________',
                     'Observed difficulty, with an example: ______________________________',
@@ -100,9 +100,9 @@ def compose():
                     'What the students’ feedback suggests: ______________________________',
                     'One revision to try, and when: _____________________________________',
                     'If comparing attempts, record the prompt, preparation time, speaking time, support, and evidence. Improvement on a repeated task does not by itself prove general proficiency growth or a causal effect of this book.',
-                    'Remaining development: source verification and keys for the original listening lessons; wider open-response and exercise-key review; independent human review; and actual classroom trial evidence. Reading closed-response keys are supplied separately below; the fictional listening alternatives do not answer the original video exercises.'])
+                    'Record actual observations before drawing conclusions about learning. The original listening stories and their detail keys are supplied here and match Chapter 2. Open-response activities accept supported alternatives; independent review and actual classroom evidence remain distinct from a supplied teaching plan.'])
     teacher.extend(['## 16. Reading closed-response keys — Units 2–8',
-                    'These keys refer only to the revised book’s readings, not to its original videos. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.'])
+                    'These keys refer to the readings in the self-contained course. The listening stories have their own detail keys above. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.'])
     closed_keys = json.loads((SOURCE / 'reading-closed-keys.json').read_text())
     for unit_number in range(2, 9):
         teacher.append(f'### Unit {unit_number} — reading')
@@ -115,19 +115,30 @@ def compose():
             if item['correction']:
                 teacher.append('Possible correction: ' + item['correction'])
             teacher.append(f"Reading paragraph {item['reading_paragraph']}: “{item['evidence']}”")
+    teacher.extend(['## 17. Vocabulary completion keys — Units 1–7',
+                    'These suggested completions cover all 36 vocabulary blanks in the book. Unit 8 uses vocabulary discussion rather than a completion exercise. Accept other grammatically and contextually suitable answers; some items admit more than one expression. Change number or pronouns where the sentence requires it. Unit 1 also appears in the broader key above.'])
+    vocabulary_keys = json.loads((SOURCE / 'vocabulary-keys.json').read_text())
+    for number in range(1, 8):
+        teacher.append(f'### Unit {number} — vocabulary')
+        for item in vocabulary_keys:
+            if item['unit'] != number:continue
+            teacher.extend([f"### {item['item']}. {item['stem']}", 'Suggested answer: ' + item['answer'],
+                            'Completed sentence: ' + item['completed_sentence']])
+            if item['alternatives']:
+                teacher.append('Other acceptable completions: ' + '; '.join(item['alternatives']) + '.')
     student_path, teacher_path = SOURCE / 'student-practice.md', SOURCE / 'teacher-implementation.md'
     student_path.write_text('\n\n'.join(student) + '\n')
     teacher_path.write_text('\n\n'.join(teacher) + '\n')
-    register = ROOT / 'book/publishing/listening-alternatives.csv'
+    register = ROOT / 'book/publishing/current-media-register.csv'
     register.parent.mkdir(parents=True, exist_ok=True)
     with register.open('w', newline='') as stream:
-        writer = csv.writer(stream)
-        writer.writerow(['unit', 'alternative_id', 'title', 'script_source', 'detail_questions',
+        writer = csv.writer(stream, lineterminator="\n")
+        writer.writerow(['unit', 'script_id', 'title', 'script_source', 'detail_questions',
                          'delivery', 'recorded_audio_supplied', 'original_video_status', 'live_pilot_conducted'])
         for module in modules:
-            writer.writerow([module['unit'], f"U{module['unit']}-ALT", module['listening']['title'],
+            writer.writerow([module['unit'], f"U{module['unit']}-ORIGINAL", module['listening']['title'],
                              f"book/classroom/modules.json — unit {module['unit']}, listening.script",
-                             5, 'TEACHER_READ', 'NO', 'UNVERIFIED', 'NO'])
+                             5, 'TEACHER_READ', 'NO', 'REPLACED_IN_CURRENT_EDITION', 'NO'])
     return student_path, teacher_path
 
 

@@ -3,7 +3,7 @@
 
 New supplementary teaching material • October 2026
 
-Companion to the eight units of Master Speaking by Abdul Raziq Nazari. These newly authored activities are not passages, transcripts, or answer keys from the original manuscript. The original book and its production files remain unchanged.
+Companion to the eight units of Master Speaking by Abdul Raziq Nazari. These newly authored activities are not passages, transcripts, or answer keys from the original manuscript. Use this companion with the self-contained course and its original read-aloud listening stories.
 
 Designed for approximately B1–B2 learners, with support and extension options. This is a classroom planning estimate, not a certified CEFR alignment or a TOEFL test-preparation claim. Use the entry task to adjust the level.
 
@@ -15,7 +15,7 @@ By the end, students will practise explaining an opinion with reasons and exampl
 
 Class agreement: listen to understand; challenge an idea, not a person; share speaking time; ask before recording; never publish another learner’s voice without permission. Students may pass on personal questions, use a fictional example, or choose an equivalent neutral topic without penalty. Do not require disclosure of income, relationships, family conflict, or political beliefs.
 
-Teacher preparation: choose a short reading or listening section from the matching unit. Check its suitability and accessibility before class. The companion tasks work without the original videos: use the short fictional scenarios supplied here instead. Do not present these scenarios as video transcripts or research findings.
+Teacher preparation: choose a short reading or listening section from the matching unit. Check its suitability and accessibility before class. Use the original story in the matching listening chapter, or the short fictional scenario supplied here for speaking practice. These scenarios are teaching examples, not research findings.
 
 Grouping: use pairs first, then groups of four. In a trio, rotate speaker, listener, and coach. In larger classes, run simultaneous groups rather than a sequence of whole-class performances. Offer seated pair work instead of compulsory movement. Supply written instructions and extra planning time where helpful.
 
@@ -315,6 +315,6 @@ When levels differ: supported learners use visual prompts and shorter turns with
 
 When learners use another language: allow brief planning or meaning checks when useful, then ask for the final exchange in English. Teach the missing repair phrase instead of punishing uncertainty.
 
-When no video or internet is available: use the unit’s fictional scenario and the information-exchange task. This provides speaking practice but does not replace assessment of listening to an authentic recording. Never mark the original listening exercise as completed without its input.
+No internet or video is required: read the matching course story aloud for listening, or use the unit’s fictional scenario for speaking practice. A silent reading task is not evidence of listening performance; record the actual task and support used.
 
 End-of-course teacher reflection: Which learners gained speaking time? Which tasks produced genuine questions? Which rubric dimensions improved, and what evidence supports that judgment? Revise the next course using these observations, not confidence alone.

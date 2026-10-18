@@ -339,6 +339,8 @@ def add_image(el, width_in, keep_next=False):
     src = el.get('src') or ''
     fname = gif_to_png(os.path.basename(src))
     path = os.path.join(ASSETS, fname)
+    if fname.startswith('edition-unit-'):
+        width_in = 4.9  # Original diagrams: preserve readable labels in print.
     if not os.path.exists(path):
         return
     alt = (el.get('alt') or '').strip() or 'Illustration'

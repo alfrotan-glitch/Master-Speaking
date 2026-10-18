@@ -1,0 +1,194 @@
+[
+  {
+    "asset": "book/assets/images/edition-unit-1-opener.png",
+    "sha256": "25d676e21fa215eb1e1394d6c8395adeea9d0268c0eb184e43fcf8c62b27d3ee",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-1-reading.png",
+    "sha256": "3e350f226c50c04e1c7638cb5efc5ecc097bb8ac67ab19e9f01691bc01e5c832",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-1-listening.png",
+    "sha256": "fe88a46b7d790078c4294cc4e6bfb2ff16664d176e7b8907f877e177ebff0250",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-2-opener.png",
+    "sha256": "d6f8aeaca1bd5826534562eb694b8bbf0d90a648421ee6432b0ca010ddbce354",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-2-reading.png",
+    "sha256": "33c243b69706a3a86b39891d34c086d9df5abf6ebe04be95ab09fc28d1f1e730",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-2-listening.png",
+    "sha256": "7c40a7c33f742b72d551e43670ce89d05611b50e2bc2e7643699631411182744",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-3-opener.png",
+    "sha256": "acf14a218a55c6934a13dce5090c47c42dcb1b6c1916cd60a709b7fa0590416b",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-3-reading.png",
+    "sha256": "903df2e8a27aaf61dede306b64eb2ae2a1c8cda940179dc39db0e14b6e8d3966",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-3-listening.png",
+    "sha256": "6e97d9a50e15703268d5971497d0229adeb7df2cdc4fbb0b3e3f9d3a5b55d609",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-4-opener.png",
+    "sha256": "7322f8ef002376e662d7a9dcd160560852dba8440eae5c01426d0f307477511e",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-4-reading.png",
+    "sha256": "cfddb3eb6f737a939fb836be92054d398ffe4231a2b1d4a76366f193f44cd8bb",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-4-listening.png",
+    "sha256": "b8489709e3b88d96fbc08b260d8863bad21a8996a43b6d8c489bcfea31b7f974",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-5-opener.png",
+    "sha256": "fa2f9c38db01299d46c1c24f6ec2cbad630434e94cc40de7c887d038d6614195",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-5-reading.png",
+    "sha256": "c6141f3c082035b269b0ba7a97cbf7c3cacfc9b741dcaf4b7b921e1002ede7c3",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-5-listening.png",
+    "sha256": "11f74512cd179dfac1dce299b06ed0b3468ff0a15590eb2198ec58474fe7ae25",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-6-opener.png",
+    "sha256": "5891ee036cd86827faf23333c1c46031d8c55dd35fd69bb765df43ee7cd1f9b5",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-6-reading.png",
+    "sha256": "2aff69182fa4812a0fbaa9c7dc0c81fcfec03f2ca13dad84d5e8a1ab15999c26",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-6-listening.png",
+    "sha256": "cb5db3b7c2d74f2acc2a4c9b9552a0e1934cc9a61c9897648a018aca7ec15857",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-7-opener.png",
+    "sha256": "66dd58aa1c27f9d6a1746fef415af67bec126e60830241f0b6b73e5687bba86c",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-7-reading.png",
+    "sha256": "46536dfa0a0ecfd2aa40c3e3ad2b3c237867c46cdcb6e5038e26e7b7fa7b5fae",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-7-listening.png",
+    "sha256": "b6245d0b4919d75e2fa5b8b0266535761155b60b93df400eb3af8d8fc4b53c07",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-8-opener.png",
+    "sha256": "3d90b0bc78984b02ac1dbec22c36e07c9f70cd9a3a018b9b4ebac3141ee20979",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-8-reading.png",
+    "sha256": "85f0020128e52a080921fbd753a943b8ce7c89de70a89d77364806663dfacc8a",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  },
+  {
+    "asset": "book/assets/images/edition-unit-8-listening.png",
+    "sha256": "02504791224f0264f179abae2adf0fadb7a12bfd367d93813505fbc1e81eea3c",
+    "origin": "Original geometric teaching diagram drawn by book/tools/edition_graphics.py from self-contained-edition.json",
+    "third_party_artwork": false,
+    "font_license": "SIL Open Font License; see book/assets/fonts/provenance.json",
+    "permission_status": "No external artwork used; AI-assisted authored design, not a legal certification"
+  }
+]

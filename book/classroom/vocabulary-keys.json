@@ -1,0 +1,346 @@
+[
+  {
+    "unit": 1,
+    "item": 1,
+    "stem": "Good communication helps us __________ ideas clearly.",
+    "answer": "express",
+    "alternatives": [
+      "communicate"
+    ],
+    "source_expression": "express",
+    "completed_sentence": "Good communication helps us express ideas clearly."
+  },
+  {
+    "unit": 1,
+    "item": 2,
+    "stem": "Never __________ to ask for help.",
+    "answer": "hesitate",
+    "alternatives": [],
+    "source_expression": "hesitate",
+    "completed_sentence": "Never hesitate to ask for help."
+  },
+  {
+    "unit": 1,
+    "item": 3,
+    "stem": "Teachers should encourage classroom __________.",
+    "answer": "interaction",
+    "alternatives": [],
+    "source_expression": "interaction",
+    "completed_sentence": "Teachers should encourage classroom interaction."
+  },
+  {
+    "unit": 1,
+    "item": 4,
+    "stem": "Speaking regularly builds __________.",
+    "answer": "confidence",
+    "alternatives": [],
+    "source_expression": "confidence",
+    "completed_sentence": "Speaking regularly builds confidence."
+  },
+  {
+    "unit": 1,
+    "item": 5,
+    "stem": "Every presentation has an important __________.",
+    "answer": "message",
+    "alternatives": [],
+    "source_expression": "message",
+    "completed_sentence": "Every presentation has an important message."
+  },
+  {
+    "unit": 2,
+    "item": 1,
+    "stem": "Hard work helps people __________ their goals.",
+    "answer": "achieve",
+    "alternatives": [],
+    "source_expression": "achieve",
+    "completed_sentence": "Hard work helps people achieve their goals."
+  },
+  {
+    "unit": 2,
+    "item": 2,
+    "stem": "Every student should have a clear __________ for studying.",
+    "answer": "goal",
+    "alternatives": [
+      "strategy"
+    ],
+    "source_expression": "goal",
+    "completed_sentence": "Every student should have a clear goal for studying."
+  },
+  {
+    "unit": 2,
+    "item": 3,
+    "stem": "Practice leads to __________.",
+    "answer": "progress",
+    "alternatives": [],
+    "source_expression": "progress",
+    "completed_sentence": "Practice leads to progress."
+  },
+  {
+    "unit": 2,
+    "item": 4,
+    "stem": "Never lose your __________ when life becomes difficult.",
+    "answer": "determination",
+    "alternatives": [
+      "commitment"
+    ],
+    "source_expression": "determination",
+    "completed_sentence": "Never lose your determination when life becomes difficult."
+  },
+  {
+    "unit": 2,
+    "item": 5,
+    "stem": "Time management is an effective __________.",
+    "answer": "strategy",
+    "alternatives": [],
+    "source_expression": "strategy",
+    "completed_sentence": "Time management is an effective strategy."
+  },
+  {
+    "unit": 3,
+    "item": 1,
+    "stem": "Speaking English with a clear goal and focused feedback is a form of ____________________________.",
+    "answer": "conscious practice",
+    "alternatives": [],
+    "source_expression": "conscious practice",
+    "completed_sentence": "Speaking English with a clear goal and focused feedback is a form of conscious practice."
+  },
+  {
+    "unit": 3,
+    "item": 2,
+    "stem": "Team leaders should know how to ____________________________ before problems become serious.",
+    "answer": "resolve conflicts",
+    "alternatives": [],
+    "source_expression": "resolve conflicts",
+    "completed_sentence": "Team leaders should know how to resolve conflicts before problems become serious."
+  },
+  {
+    "unit": 3,
+    "item": 3,
+    "stem": "Receiving ____________________________ helps students improve their writing.",
+    "answer": "constructive feedback",
+    "alternatives": [],
+    "source_expression": "constructive feedback",
+    "completed_sentence": "Receiving constructive feedback helps students improve their writing."
+  },
+  {
+    "unit": 3,
+    "item": 4,
+    "stem": "People who stay calm ____________________________ usually make better decisions.",
+    "answer": "under pressure",
+    "alternatives": [],
+    "source_expression": "under pressure",
+    "completed_sentence": "People who stay calm under pressure usually make better decisions."
+  },
+  {
+    "unit": 3,
+    "item": 5,
+    "stem": "Learning another language allows you to ____________________________ from different backgrounds.",
+    "answer": "interact with others",
+    "alternatives": [],
+    "source_expression": "interact with others",
+    "completed_sentence": "Learning another language allows you to interact with others from different backgrounds."
+  },
+  {
+    "unit": 4,
+    "item": 1,
+    "stem": "Many people work two jobs simply to ________________________.",
+    "answer": "make ends meet",
+    "alternatives": [],
+    "source_expression": "make ends meet",
+    "completed_sentence": "Many people work two jobs simply to make ends meet."
+  },
+  {
+    "unit": 4,
+    "item": 2,
+    "stem": "Spending time with family improves my ________________________.",
+    "answer": "quality of life",
+    "alternatives": [
+      "life satisfaction"
+    ],
+    "source_expression": "quality of life",
+    "completed_sentence": "Spending time with family improves my quality of life."
+  },
+  {
+    "unit": 4,
+    "item": 3,
+    "stem": "Buying a new phone cannot replace ________________________ shared with friends.",
+    "answer": "meaningful experiences",
+    "alternatives": [],
+    "source_expression": "meaningful experiences",
+    "completed_sentence": "Buying a new phone cannot replace meaningful experiences shared with friends."
+  },
+  {
+    "unit": 4,
+    "item": 4,
+    "stem": "Success should never ________________________ your health.",
+    "answer": "come at the expense of",
+    "alternatives": [],
+    "source_expression": "come at the expense of",
+    "completed_sentence": "Success should never come at the expense of your health."
+  },
+  {
+    "unit": 4,
+    "item": 5,
+    "stem": "To live a happy life, people should ________________________ work and personal life.",
+    "answer": "strike a balance between",
+    "alternatives": [],
+    "source_expression": "strike a balance between",
+    "completed_sentence": "To live a happy life, people should strike a balance between work and personal life."
+  },
+  {
+    "unit": 5,
+    "item": 1,
+    "stem": "Hospitals often use __________________________ to help analyze medical images.",
+    "answer": "AI-powered tools",
+    "alternatives": [
+      "an AI-powered tool"
+    ],
+    "source_expression": "AI-powered tool",
+    "completed_sentence": "Hospitals often use AI-powered tools to help analyze medical images."
+  },
+  {
+    "unit": 5,
+    "item": 2,
+    "stem": "AI can __________________________ much faster than people.",
+    "answer": "process enormous amounts of information",
+    "alternatives": [
+      "recognize patterns"
+    ],
+    "source_expression": "process enormous amounts of information",
+    "completed_sentence": "AI can process enormous amounts of information much faster than people."
+  },
+  {
+    "unit": 5,
+    "item": 3,
+    "stem": "Teachers want students to develop __________________________ instead of copying answers.",
+    "answer": "independent thinking",
+    "alternatives": [],
+    "source_expression": "independent thinking",
+    "completed_sentence": "Teachers want students to develop independent thinking instead of copying answers."
+  },
+  {
+    "unit": 5,
+    "item": 4,
+    "stem": "Many experts __________________________ data privacy.",
+    "answer": "raise concerns about",
+    "alternatives": [],
+    "source_expression": "raise concerns about",
+    "completed_sentence": "Many experts raise concerns about data privacy."
+  },
+  {
+    "unit": 5,
+    "item": 5,
+    "stem": "In the future, people may __________________________ AI instead of competing against it.",
+    "answer": "work alongside",
+    "alternatives": [],
+    "source_expression": "work alongside",
+    "completed_sentence": "In the future, people may work alongside AI instead of competing against it."
+  },
+  {
+    "unit": 6,
+    "item": 1,
+    "stem": "Healthy couples should be able to __________ without attacking each other.",
+    "answer": "express concerns",
+    "alternatives": [
+      "navigate conflict"
+    ],
+    "source_expression": "express concerns",
+    "completed_sentence": "Healthy couples should be able to express concerns without attacking each other."
+  },
+  {
+    "unit": 6,
+    "item": 2,
+    "stem": "Financial problems can make it difficult to __________.",
+    "answer": "manage responsibilities",
+    "alternatives": [
+      "meet someone’s needs"
+    ],
+    "source_expression": "manage responsibilities",
+    "completed_sentence": "Financial problems can make it difficult to manage responsibilities."
+  },
+  {
+    "unit": 6,
+    "item": 3,
+    "stem": "People sometimes enter relationships with __________ about their partners.",
+    "answer": "unrealistic expectations",
+    "alternatives": [],
+    "source_expression": "unrealistic expectations",
+    "completed_sentence": "People sometimes enter relationships with unrealistic expectations about their partners."
+  },
+  {
+    "unit": 6,
+    "item": 4,
+    "stem": "Honesty and consistency are important when you want to __________.",
+    "answer": "build trust",
+    "alternatives": [],
+    "source_expression": "build trust",
+    "completed_sentence": "Honesty and consistency are important when you want to build trust."
+  },
+  {
+    "unit": 6,
+    "item": 5,
+    "stem": "Marriage requires __________ from both partners.",
+    "answer": "ongoing effort",
+    "alternatives": [],
+    "source_expression": "ongoing effort",
+    "completed_sentence": "Marriage requires ongoing effort from both partners."
+  },
+  {
+    "unit": 6,
+    "item": 6,
+    "stem": "Support from a partner or friend can __________ a difficult period.",
+    "answer": "carry you through",
+    "alternatives": [
+      "carry someone through",
+      "carry us through",
+      "carry them through"
+    ],
+    "source_expression": "carry someone through",
+    "completed_sentence": "Support from a partner or friend can carry you through a difficult period."
+  },
+  {
+    "unit": 7,
+    "item": 1,
+    "stem": "The internet allows people to communicate __________ almost instantly.",
+    "answer": "across borders",
+    "alternatives": [],
+    "source_expression": "across borders",
+    "completed_sentence": "The internet allows people to communicate across borders almost instantly."
+  },
+  {
+    "unit": 7,
+    "item": 2,
+    "stem": "Universities can __________ with researchers from other countries.",
+    "answer": "collaborate across borders",
+    "alternatives": [],
+    "source_expression": "collaborate across borders",
+    "completed_sentence": "Universities can collaborate across borders with researchers from other countries."
+  },
+  {
+    "unit": 7,
+    "item": 3,
+    "stem": "__________ has become an important part of the modern global economy.",
+    "answer": "International trade",
+    "alternatives": [],
+    "source_expression": "international trade",
+    "completed_sentence": "International trade has become an important part of the modern global economy."
+  },
+  {
+    "unit": 7,
+    "item": 4,
+    "stem": "Social media helps small businesses __________ that they could not access before.",
+    "answer": "reach a market",
+    "alternatives": [],
+    "source_expression": "reach a market",
+    "completed_sentence": "Social media helps small businesses reach a market that they could not access before."
+  },
+  {
+    "unit": 7,
+    "item": 5,
+    "stem": "Studying abroad can create __________ for young people.",
+    "answer": "enormous opportunities",
+    "alternatives": [],
+    "source_expression": "enormous opportunities",
+    "completed_sentence": "Studying abroad can create enormous opportunities for young people."
+  }
+]

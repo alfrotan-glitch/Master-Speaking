@@ -1,47 +1,38 @@
-# Whole-book revision and proof status
+# Self-contained edition — revision and proof scope
 
 18 October 2026 · Master Speaking
 
-## Completed revision pass
+## Current revision
 
-The substantive editorial revision now covers **all eight units and all 32 chapters**, not only the earlier first section. All exact source-backed chapter titles are preserved, including intentional repeated titles. The original `Master Speaking.docx` is unchanged.
+The all-chapter substantive revision covers **8 units and all 32 chapters**, preserving every exact source-backed chapter title. The author then approved a self-contained print/digital route rather than reliance on unverified third-party media.
 
-- Rewrote the eight main readings, the foreword, eight unit openers and student guidance. The readings now use concrete examples, more natural transitions and appropriately qualified claims rather than vague appeals to research.
-- Revised wording, examples, activity directions, presentation scaffolds and pronunciation instructions across the remaining chapters. The remaining-chapter plan records 238 initial changes; later reading-question alignment corrections and opener changes are recorded separately.
-- Retained the core teaching sequence: reading, listening, discussion and research presentation. Added explicit practice/retry and transfer guidance without presenting supplementary authored material as recovered source text.
-- Updated closed-reading questions and synchronized the teacher pack. The reading-key register covers **74 items: 40 multiple-choice answers and 34 true/false judgments**, with exact current reading-paragraph evidence and corrections for false statements. Unit 1's broader reading key remains in its earlier teacher section; the new section covers Units 2–8.
-- Corrected the Unit 6 third multiple-choice answer to **B**, not C. Its five-answer sequence is **B A B C B**. Also revised the Unit 2 fifth correct option to state the passage's actual review benefit, and made the Unit 3 second question's alternatives grammatically parallel.
-- Rebuilt the reading/print PDF, Word and EPUB, Student Practice Pack, Teacher Implementation Pack and Class Companion. Supporting packs share the current design palette and retain clearly identified original teacher-read alternatives rather than invented answers to unidentified recordings.
+- **24 original teaching graphics** replace the manuscript imagery. The graphics use the shared teal/forest typography system, readable labels and source-bound text alternatives. All current interior placements are approximately 429 effective dpi. Old artwork remains in the source audit, not the current exports.
+- All eight Chapter 2 lessons now use **original fictional listening stories** from the authored course resources. Every script appears at the end of its chapter and in the teacher pack. Each full script and its heading fit on one production PDF page. Learners listen to a teacher/partner before seeing the text; silent recall is identified as reading, not listening practice.
+- The **40 detail questions and teacher keys** match those scripts. Existing topic-language tables, chapter titles and wider discussion goals are retained; source-dependent comprehension is deliberately replaced, not silently dropped or presented as a recovered video transcript.
+- The externally attributed opening quotation and selected quotation/video discussion references are replaced by original learner-facing wording. The full original AI decision-making scenario remains as a wider discussion prompt.
+- Teacher coverage now includes **36 vocabulary completion items**, with suitable alternatives and completed examples kept together on one teacher-pack page per item, **74 closed-reading items**, and **40 listening-detail answers**. Open discussions/reflections permit supported alternatives; these are not independently certified assessment instruments.
+- Source reconstruction keeps `editorial-base.json` before the authorized replacements. Guarded historical copyedits are checked at that stage; final fidelity, self-contained lesson coverage and source exclusions are checked separately. The historical manuscript is unchanged.
 
-## Current exports
+## Current editions and tests
 
-| Edition | Pages / formats |
+| Edition | Current output |
 |---|---|
-| Main interior | 171 pages, 7 × 10 inches |
-| Main reading edition | 172 pages including front cover |
-| Editable main / ebook | DOCX / EPUB |
+| Main print interior | 163 pages, 7×10 inches |
+| Main reading PDF | 164 pages including front cover |
+| Main editable/ebook | DOCX / EPUB |
 | Student Practice Pack | 18 pages, PDF / DOCX |
-| Teacher Implementation Pack | 29 pages, PDF / DOCX |
+| Teacher Implementation Pack | 33 pages, PDF / DOCX |
 | Class Companion | 17 pages, PDF / DOCX |
+| Cover panels | Matching original front/back PDFs; not a printer-imposed spine/bleed wrap |
 
-The guarded edit registers contain **377 chapter entries and 21 front-matter entries**. The reconstructed audit logs 563 changes; these counts describe different records, not the number of independently proofread words.
+**24 release gates pass**, including two new self-contained/vocabulary gates, complete normalized export fidelity, chapter/contents navigation, script/question/key evidence, embedded image identity, layout/preflight and official EPUBCheck with zero errors and warnings. Every one of the 40 current structured multiple-choice blocks stays on one PDF page. Original-video questions have been replaced, so the earlier 89-block count is historical, not a current expectation.
 
-## Layout corrections and checks
+## What the review record establishes
 
-- All 32 chapters begin on fresh pages; eight unit openers begin on recto pages. Contents, bookmarks and links have been rebuilt for the current pagination.
-- Reserved room for section headings and their first actual table content row; prevented title-only chapter starts and corrected closing-instruction grouping.
-- Readable visual proof found multiple-choice stems separated from their options. Word now keeps each stem and its alternatives together; EPUB requests equivalent break avoidance. The production-PDF gate verifies **all 89 structured question-plus-options blocks** are intact on a single page. This count includes structured blocks beyond the lesson gate's 88-item subset.
-- **22 release gates pass**, including whole-chapter revision coverage, 74 reading-key source/evidence checks, MCQ pagination, all three support packs, source fidelity and official EPUBCheck. Two deliberate key-corruption mutations are rejected by the key check. These tests do not independently establish semantic correctness of every answer or factual claim.
-- Final all-page main overviews and supporting-pack overviews were visually inspected. Eleven selected main pages and six teacher-key pages were inspected at readable size in the final proof set. See `book/qa/full-revision-proof/index.json` for the exact PDF hashes and selected pages.
+All current main/support pages are rendered and automatically checked. All 24 new graphics receive visual inspection. All-page overviews and selected readable pages are reviewed for the current edition; 33 main-book pages and 7 teacher-pack pages are checked at readable size, alongside both cover panels. Exact pages, proof assets and hashes are recorded in `book/qa/full-revision-proof/index.json`. This is not every-page full-size manual proof or independent every-word review.
 
-## Continued accessibility pass
+The earlier 138-field fingerprint record covers only the foreword and Unit 1 Chapter 1. It remains a detailed limited record, not proof of every retained word across all chapters. Earlier page counts, photograph descriptions, source-dependent listening status and the 235-page pixel-identity comparison apply to the preceding edition only and are superseded for current use.
 
-All 24 interior images and the cover now have source-hashed, visually authored descriptions. Word/EPUB descriptions are matched to actual embedded image bytes. EPUB chapter outlines, English language attributes, navigation labels/targets, table-header scope and discovery metadata are checked by the new accessibility gate, with seven rejected negative controls. All 235 main/support PDF page renderings remain pixel-identical; no fresh complete manual proof or accessibility certification is claimed. See [ACCESSIBILITY-REVIEW.md](ACCESSIBILITY-REVIEW.md).
+## Final publication conditions
 
-## What “complete” does and does not mean
-
-**The all-chapter editorial revision and synchronized edition build are complete. This is not a claim that every retained word or every page has received independent full-size human proof.** The detailed 138-field fingerprint record still covers only the foreword and Unit 1 Chapter 1. It is separate from the all-32-chapter revision-coverage record. Thumbnail review is not a substitute for reading every page at full size.
-
-Commercial clearance remains on hold pending identification/rights/transcripts for eight original recordings; third-party image and quotation permissions; independent complete copyedit, factual/pronunciation/key review; native Word, accessibility and reader-device testing; a classroom pilot; and printer-specific cover-wrap and physical-proof approval. Two existing image placements remain below 150 effective dpi. None of these approvals or recording answers has been fabricated.
-
-Production discussion and this status report remain outside the reader-facing main book. Current test results and export hashes are in `QA-REPORT.md` and `book/artifacts/rewrite-progress.json`. The current status supersedes the historical first-section-only progress report.
+The current course can be taught using its supplied stories and worksheets. It is a **self-contained publication candidate**, not a claim of independent complete copyediting, legal certification, accessibility conformance, classroom validation or printer approval. Remaining conditions and responsible sign-offs are in [UNRESOLVED-ISSUES.md](UNRESOLVED-ISSUES.md). Production reports stay outside the learner-facing main book.

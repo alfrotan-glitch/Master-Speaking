@@ -1075,6 +1075,10 @@ def build():
                     original_heading, title,
                     'Use the exact existing principal lesson title; retain the learning strand as a subtitle. No new title wording.',
                     'exact existing content title')
+    # Preserve the guarded historical editorial stage for source audit.
+    json.dump(book, open(os.path.join(BUILD, 'editorial-base.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    from self_contained import apply as apply_self_contained
+    apply_self_contained(book, log)
     json.dump(book, open(os.path.join(BUILD, 'book.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
     json.dump(CHANGES, open(os.path.join(BUILD, 'changelog.json'), 'w', encoding='utf-8'),

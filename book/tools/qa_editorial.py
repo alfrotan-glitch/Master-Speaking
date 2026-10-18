@@ -48,7 +48,7 @@ for el in tree.getroot().iter():
         if t:
             texts.append(t)
 
-WHITELIST = set('''TOEFL TED-Ed TED Goldin Acho Goleman Ali Sara Kabul Afghan Afghans
+WHITELIST = set('''Kareem Mariam Salim noticeboard o’clock TOEFL TED-Ed TED Goldin Acho Goleman Ali Sara Kabul Afghan Afghans
 Afghanistan Nazari Abdul Raziq lingua franca ESL B2 NFL Combine quad IPA Khan
 UBC Gallup aka et al etc vs per se CD AI GPA IQ OK podcast webinar
 reappraisal reappraising systemic gatekeepers gatekeeper

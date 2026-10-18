@@ -19,7 +19,7 @@ def main():
     if progress['semantic_content_sha256'] != digest(ROOT / 'book/artifacts/book.json'):
         raise SystemExit('Bundle refused: revision summary does not match the semantic source.')
     files = ['Master-Speaking.pdf', 'Master-Speaking-print-7x10.pdf',
-             'Master-Speaking-7x10.docx', 'Master-Speaking.epub', 'Master-Speaking-Front-Cover.pdf']
+             'Master-Speaking-7x10.docx', 'Master-Speaking.epub', 'Master-Speaking-Front-Cover.pdf', 'Master-Speaking-Back-Cover.pdf']
     for pack in ['Student-Practice-Pack', 'Teacher-Implementation-Pack', 'Class-Companion']:
         files.extend(f'Master-Speaking-{pack}.{ext}' for ext in ['pdf', 'docx'])
     for name in files:
@@ -29,7 +29,7 @@ def main():
 
 Start with Master-Speaking.pdf ({progress['reader_pages']} pages including cover).
 The separate print interior has {progress['interior_pages']} pages, 7 x 10 inches.
-The front-cover file is a concept, not a complete printer-specific cover wrap.
+Separate front and back panels are supplied; a printer-confirmed spine/bleed wrap is still required.
 Main editable book: Master-Speaking-7x10.docx. Reflowable ebook: Master-Speaking.epub.
 The three supporting books each include PDF and editable Word editions.
 Keep teacher scripts and answers separate from learners during listening.
@@ -37,8 +37,10 @@ The Reading-Edition PDF alias is identical to Master-Speaking.pdf and is not dup
 
 All {len(checks)} release checks pass. This does not certify commercial clearance,
 independent every-word/every-page proof, accessibility conformance or printer approval.
-Original recordings and third-party permissions still require verification.
-Teacher-read alternatives are newly authored, not original recording transcripts.
+The course uses original diagrams and included fictional listening stories with matching keys.
+A teacher or partner reads the stories aloud; no recorded audio is supplied.
+Historical videos, manuscript imagery and uncleared external quotation prompts are excluded.
+Final publisher approval, independent review, accessibility/device testing and printer acceptance remain separate.
 
 SHA-256 checksums
 '''

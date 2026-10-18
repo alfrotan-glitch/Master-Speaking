@@ -1,0 +1,9 @@
+unit,script_id,title,script_source,detail_questions,delivery,recorded_audio_supplied,original_video_status,live_pilot_conducted
+1,U1-ORIGINAL,The meeting that almost went wrong,"book/classroom/modules.json — unit 1, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+2,U2-ORIGINAL,A smaller plan that lasted,"book/classroom/modules.json — unit 2, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+3,U3-ORIGINAL,Before making an assumption,"book/classroom/modules.json — unit 3, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+4,U4-ORIGINAL,One hundred credits,"book/classroom/modules.json — unit 4, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+5,U5-ORIGINAL,A confident answer was not enough,"book/classroom/modules.json — unit 5, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+6,U6-ORIGINAL,Friends with different plans,"book/classroom/modules.json — unit 6, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+7,U7-ORIGINAL,Testing an online market,"book/classroom/modules.json — unit 7, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO
+8,U8-ORIGINAL,Making the welcome clear,"book/classroom/modules.json — unit 8, listening.script",5,TEACHER_READ,NO,REPLACED_IN_CURRENT_EDITION,NO

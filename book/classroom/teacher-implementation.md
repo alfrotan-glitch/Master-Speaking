@@ -1,9 +1,9 @@
 # Master Speaking
 ## Teacher Implementation Pack
 
-New supplementary classroom material • October 2026
+Teacher resources for the self-contained course • October 2026
 
-Read alongside the book and the separate Class Companion. This pack is not a replacement edition of the manuscript. It provides original teacher-read listening alternatives for eight themes, their own questions and keys, a Unit 1 reading key, and a four-lesson pilot plan. It does not supply verified original video recordings or their answer keys.
+Read alongside the book and the separate Class Companion. This pack provides the eight original fictional listening stories used in the book, matching questions and keys, reading keys, and a four-lesson teaching plan. The listening tasks are designed for a teacher or partner to read aloud; no external video or recorded audio is required.
 
 The Unit 1 pilot deliberately uses four 75-minute meetings, one per chapter. It is a slower diagnostic trial than the Class Companion’s two-meeting unit plan. Do not promise both schedules cover the same work in the same time; use observed timings to choose whether to extend the course or reduce task coverage.
 
@@ -11,7 +11,7 @@ All listening accounts and speaking models in this pack are newly authored ficti
 
 ## 1. Delivery, preparation, and assessment
 
-Choose the matching unit in the Student Practice Pack. For Chapter 2, choose either a verified recording that genuinely matches the book’s exercises, or the new teacher-read alternative in this pack with its own student worksheet. Do not combine one input with the other input’s questions. Record which route you taught. The alternatives do not resolve the original media register.
+Choose the matching unit in the Student Practice Pack. For Chapter 2, use the matching original story in this pack and its five detail questions. The same script appears at the end of the listening chapter for checking after the task. Keep that section covered until after the second listening unless an access arrangement requires earlier text support.
 
 Before each class: preview the topic for suitability; read the script aloud once; check the question key; print only the student pages needed; prepare a timer and grouping plan; identify one success criterion to observe. An internet connection, AI account, slide deck, or recording device is not required.
 
@@ -50,12 +50,12 @@ Monitor: note whether a learner gives the overall message or only lists details;
 
 ## 3. Unit 1 pilot • Lesson 2: listening and clarification
 
-Length: 75 minutes. Use the original alternative “The meeting that almost went wrong,” not the book’s unverified video questions. Print only the Unit 1 alternative worksheet at first. Once completed, label the course record “new teacher-read alternative,” not “original video lesson completed.”
+Length: 75 minutes. Use the original story “The meeting that almost went wrong” and the matching questions in Unit 1, Chapter 2 or the Student Practice Pack. Keep the script and keys separate until after listening. Record the input and any access support actually used.
 
 Success evidence: identify the central problem, recover key details, and clarify a new plan in an exchange. Students should not be assessed on information the input does not provide.
 
 - 0–8: retrieve three expressions from Lesson 1; each student asks a clarification question about a fictional meeting plan.
-- 8–23: run the 15-minute listening protocol from Section 1 using the Unit 1 alternative.
+- 8–23: run the 15-minute listening protocol from Section 1 using the Unit 1 story.
 - 23–33: reveal the script and examine the checking sequence: unclear message, specific question, repeated plan, confirmation. Have learners point to evidence.
 - 33–43: teach “When you say…, do you mean…?”, “Let me check…”, and “Which…?” Practise with short exchanges rather than a chorus alone.
 - 43–58: role-play. A privately chooses a room, time, materials, and contact person for a new club meeting. B must find those details by asking questions. Switch roles with a different plan; then change one detail and check the revision.
@@ -98,7 +98,7 @@ If a learner needs an alternative to eye contact, accept other signs of audience
 
 ## 6. Unit 1 reading key • scope and use
 
-This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. Original video exercises still require the intended recordings and verified keys; open questions allow supported alternatives.
+This key covers Unit 1, Chapter 1 only: five vocabulary completions, five multiple-choice questions, and five open reading questions. No True/False exercise is present in that chapter. Closed-reading keys for Units 2–8 appear in Section 16. The original listening stories have their own detail keys in Sections 7–14; open questions allow supported alternatives.
 
 Answers are grounded in the revised passage or vocabulary table, not independently validated claims about the real world. Each quoted evidence phrase is checked against the current semantic book during QA. Use question stems rather than page numbers, since pagination can change. Accept accurate paraphrases for the five open questions. Critical Thinking, personal connections, and discussions have no single correct opinion.
 
@@ -232,11 +232,11 @@ Reason: Accept paraphrases of the closing advice.
 
 Text evidence: “Use the words you know, listen carefully, and ask for clarification when you need it.”
 
-## 7. Unit 1 • Original teacher-read alternative
+## 7. Unit 1 • Original listening story and key
 
 The Power of Communication — The meeting that almost went wrong
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 122-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -280,11 +280,11 @@ Evidence: “nobody had agreed to bring them, so I offered”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 8. Unit 2 • Original teacher-read alternative
+## 8. Unit 2 • Original listening story and key
 
 The Art of Goal Setting — A smaller plan that lasted
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 133-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -328,11 +328,11 @@ Evidence: “After two weeks, I would check”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 9. Unit 3 • Original teacher-read alternative
+## 9. Unit 3 • Original listening story and key
 
 Emotional Intelligence — Before making an assumption
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 120-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -376,11 +376,11 @@ Evidence: “a simpler way to organize our presentation”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 10. Unit 4 • Original teacher-read alternative
+## 10. Unit 4 • Original listening story and key
 
 Money and Happiness — One hundred credits
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 127-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -424,11 +424,11 @@ Evidence: “a free conversation afternoon instead of the paid event”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 11. Unit 5 • Original teacher-read alternative
+## 11. Unit 5 • Original listening story and key
 
 Living with AI — A confident answer was not enough
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 124-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -472,11 +472,11 @@ Evidence: “I also left classmates’ phone numbers out of the tool.”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 12. Unit 6 • Original teacher-read alternative
+## 12. Unit 6 • Original listening story and key
 
 Is Love Enough? — Friends with different plans
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 125-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -520,11 +520,11 @@ Evidence: “They still needed to decide how to pay for printing”
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 13. Unit 7 • Original teacher-read alternative
+## 13. Unit 7 • Original listening story and key
 
 Globalization — Testing an online market
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 123-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -568,11 +568,11 @@ Evidence: “review the information together before deciding whether to expand�
 
 Transfer: use the matching Your turn activity in the Student Practice Pack. Assess the new exchange, not whether a learner reproduces the script’s wording or opinion.
 
-## 14. Unit 8 • Original teacher-read alternative
+## 14. Unit 8 • Original listening story and key
 
 Lingua Franca — Making the welcome clear
 
-Fictional teaching script, newly authored for this pack. It is not the original video transcript and does not answer the original book’s listening exercise.
+Original fictional teaching script for the matching Chapter 2. Use the five detail questions in the main book or the identical Student Practice Pack worksheet. No external recording is required.
 
 Delivery: read the following 128-word script twice using Section 1. Do not give students the script or key before the first listening unless an access arrangement requires it.
 
@@ -622,7 +622,7 @@ A plan is supplied; a live pilot and its findings are not. Complete this record 
 
 Class/date: __________  Unit/lesson: __________  Number of learners: ___
 
-Selected input: verified original recording / new teacher-read alternative / other: __________
+Selected input: course story read aloud / access adaptation / other: __________
 
 Actual timings and unfinished work: ________________________________
 
@@ -642,11 +642,11 @@ One revision to try, and when: _____________________________________
 
 If comparing attempts, record the prompt, preparation time, speaking time, support, and evidence. Improvement on a repeated task does not by itself prove general proficiency growth or a causal effect of this book.
 
-Remaining development: source verification and keys for the original listening lessons; wider open-response and exercise-key review; independent human review; and actual classroom trial evidence. Reading closed-response keys are supplied separately below; the fictional listening alternatives do not answer the original video exercises.
+Record actual observations before drawing conclusions about learning. The original listening stories and their detail keys are supplied here and match Chapter 2. Open-response activities accept supported alternatives; independent review and actual classroom evidence remain distinct from a supplied teaching plan.
 
 ## 16. Reading closed-response keys — Units 2–8
 
-These keys refer only to the revised book’s readings, not to its original videos. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.
+These keys refer to the readings in the self-contained course. The listening stories have their own detail keys above. The Unit 1 reading key appears earlier. Each quotation identifies the paragraph supporting the answer; it verifies passage alignment, not the factual accuracy of every real-world claim. Accept equivalent corrections of false statements. Open discussions have no single required opinion.
 
 ### Unit 2 — reading
 
@@ -1103,3 +1103,255 @@ Reading paragraph 4: “Technology created further opportunities to use English 
 Answer: B — Because millions of non-native speakers use and shape the language
 
 Reading paragraph 6: “English is not used only by people who learned it as a first language. Millions use it as an additional language and adapt it to local needs. English in India, Nigeria, and Singapore has developed in different contexts and has different characteristics. These varieties remind us that international use does not mean everyone speaks in exactly the same way.”
+
+## 17. Vocabulary completion keys — Units 1–7
+
+These suggested completions cover all 36 vocabulary blanks in the book. Unit 8 uses vocabulary discussion rather than a completion exercise. Accept other grammatically and contextually suitable answers; some items admit more than one expression. Change number or pronouns where the sentence requires it. Unit 1 also appears in the broader key above.
+
+### Unit 1 — vocabulary
+
+### 1. Good communication helps us __________ ideas clearly.
+
+Suggested answer: express
+
+Completed sentence: Good communication helps us express ideas clearly.
+
+Other acceptable completions: communicate.
+
+### 2. Never __________ to ask for help.
+
+Suggested answer: hesitate
+
+Completed sentence: Never hesitate to ask for help.
+
+### 3. Teachers should encourage classroom __________.
+
+Suggested answer: interaction
+
+Completed sentence: Teachers should encourage classroom interaction.
+
+### 4. Speaking regularly builds __________.
+
+Suggested answer: confidence
+
+Completed sentence: Speaking regularly builds confidence.
+
+### 5. Every presentation has an important __________.
+
+Suggested answer: message
+
+Completed sentence: Every presentation has an important message.
+
+### Unit 2 — vocabulary
+
+### 1. Hard work helps people __________ their goals.
+
+Suggested answer: achieve
+
+Completed sentence: Hard work helps people achieve their goals.
+
+### 2. Every student should have a clear __________ for studying.
+
+Suggested answer: goal
+
+Completed sentence: Every student should have a clear goal for studying.
+
+Other acceptable completions: strategy.
+
+### 3. Practice leads to __________.
+
+Suggested answer: progress
+
+Completed sentence: Practice leads to progress.
+
+### 4. Never lose your __________ when life becomes difficult.
+
+Suggested answer: determination
+
+Completed sentence: Never lose your determination when life becomes difficult.
+
+Other acceptable completions: commitment.
+
+### 5. Time management is an effective __________.
+
+Suggested answer: strategy
+
+Completed sentence: Time management is an effective strategy.
+
+### Unit 3 — vocabulary
+
+### 1. Speaking English with a clear goal and focused feedback is a form of ____________________________.
+
+Suggested answer: conscious practice
+
+Completed sentence: Speaking English with a clear goal and focused feedback is a form of conscious practice.
+
+### 2. Team leaders should know how to ____________________________ before problems become serious.
+
+Suggested answer: resolve conflicts
+
+Completed sentence: Team leaders should know how to resolve conflicts before problems become serious.
+
+### 3. Receiving ____________________________ helps students improve their writing.
+
+Suggested answer: constructive feedback
+
+Completed sentence: Receiving constructive feedback helps students improve their writing.
+
+### 4. People who stay calm ____________________________ usually make better decisions.
+
+Suggested answer: under pressure
+
+Completed sentence: People who stay calm under pressure usually make better decisions.
+
+### 5. Learning another language allows you to ____________________________ from different backgrounds.
+
+Suggested answer: interact with others
+
+Completed sentence: Learning another language allows you to interact with others from different backgrounds.
+
+### Unit 4 — vocabulary
+
+### 1. Many people work two jobs simply to ________________________.
+
+Suggested answer: make ends meet
+
+Completed sentence: Many people work two jobs simply to make ends meet.
+
+### 2. Spending time with family improves my ________________________.
+
+Suggested answer: quality of life
+
+Completed sentence: Spending time with family improves my quality of life.
+
+Other acceptable completions: life satisfaction.
+
+### 3. Buying a new phone cannot replace ________________________ shared with friends.
+
+Suggested answer: meaningful experiences
+
+Completed sentence: Buying a new phone cannot replace meaningful experiences shared with friends.
+
+### 4. Success should never ________________________ your health.
+
+Suggested answer: come at the expense of
+
+Completed sentence: Success should never come at the expense of your health.
+
+### 5. To live a happy life, people should ________________________ work and personal life.
+
+Suggested answer: strike a balance between
+
+Completed sentence: To live a happy life, people should strike a balance between work and personal life.
+
+### Unit 5 — vocabulary
+
+### 1. Hospitals often use __________________________ to help analyze medical images.
+
+Suggested answer: AI-powered tools
+
+Completed sentence: Hospitals often use AI-powered tools to help analyze medical images.
+
+Other acceptable completions: an AI-powered tool.
+
+### 2. AI can __________________________ much faster than people.
+
+Suggested answer: process enormous amounts of information
+
+Completed sentence: AI can process enormous amounts of information much faster than people.
+
+Other acceptable completions: recognize patterns.
+
+### 3. Teachers want students to develop __________________________ instead of copying answers.
+
+Suggested answer: independent thinking
+
+Completed sentence: Teachers want students to develop independent thinking instead of copying answers.
+
+### 4. Many experts __________________________ data privacy.
+
+Suggested answer: raise concerns about
+
+Completed sentence: Many experts raise concerns about data privacy.
+
+### 5. In the future, people may __________________________ AI instead of competing against it.
+
+Suggested answer: work alongside
+
+Completed sentence: In the future, people may work alongside AI instead of competing against it.
+
+### Unit 6 — vocabulary
+
+### 1. Healthy couples should be able to __________ without attacking each other.
+
+Suggested answer: express concerns
+
+Completed sentence: Healthy couples should be able to express concerns without attacking each other.
+
+Other acceptable completions: navigate conflict.
+
+### 2. Financial problems can make it difficult to __________.
+
+Suggested answer: manage responsibilities
+
+Completed sentence: Financial problems can make it difficult to manage responsibilities.
+
+Other acceptable completions: meet someone’s needs.
+
+### 3. People sometimes enter relationships with __________ about their partners.
+
+Suggested answer: unrealistic expectations
+
+Completed sentence: People sometimes enter relationships with unrealistic expectations about their partners.
+
+### 4. Honesty and consistency are important when you want to __________.
+
+Suggested answer: build trust
+
+Completed sentence: Honesty and consistency are important when you want to build trust.
+
+### 5. Marriage requires __________ from both partners.
+
+Suggested answer: ongoing effort
+
+Completed sentence: Marriage requires ongoing effort from both partners.
+
+### 6. Support from a partner or friend can __________ a difficult period.
+
+Suggested answer: carry you through
+
+Completed sentence: Support from a partner or friend can carry you through a difficult period.
+
+Other acceptable completions: carry someone through; carry us through; carry them through.
+
+### Unit 7 — vocabulary
+
+### 1. The internet allows people to communicate __________ almost instantly.
+
+Suggested answer: across borders
+
+Completed sentence: The internet allows people to communicate across borders almost instantly.
+
+### 2. Universities can __________ with researchers from other countries.
+
+Suggested answer: collaborate across borders
+
+Completed sentence: Universities can collaborate across borders with researchers from other countries.
+
+### 3. __________ has become an important part of the modern global economy.
+
+Suggested answer: International trade
+
+Completed sentence: International trade has become an important part of the modern global economy.
+
+### 4. Social media helps small businesses __________ that they could not access before.
+
+Suggested answer: reach a market
+
+Completed sentence: Social media helps small businesses reach a market that they could not access before.
+
+### 5. Studying abroad can create __________ for young people.
+
+Suggested answer: enormous opportunities
+
+Completed sentence: Studying abroad can create enormous opportunities for young people.

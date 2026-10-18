@@ -1,153 +1,150 @@
 {
   "date": "2026-10-18",
-  "review_basis": "AI-assisted visual description of all 24 existing interior images and the cover; the relationship diagram and goal mind map were also inspected individually. Descriptions identify visible content, not verified recording identities, scientific evidence, or permission status. The static GIF and PNG twin have identical decoded pixels.",
+  "review_basis": "Original code-drawn teaching diagrams; labels and alternative text share the reviewed edition plan. No external artwork, stock imagery, screenshots or video logos. Font sources/licenses are recorded separately.",
   "images": [
     {
-      "file": "image1.png",
-      "path": "book/assets/images/image1.png",
-      "sha256": "158a6ff52481468d5960d4d2229b3f5af86d7e25f0c67fe60fdc5a0896c65a64",
-      "alt": "Two figures with a mouth and an ear for heads exchange colorful speech bubbles, illustrating speaking and listening."
+      "file": "edition-unit-1-opener.png",
+      "path": "book/assets/images/edition-unit-1-opener.png",
+      "sha256": "25d676e21fa215eb1e1394d6c8395adeea9d0268c0eb184e43fcf8c62b27d3ee",
+      "alt": "Communication. Make meaning together. 1. Explain: State one clear idea. 2. Listen: Attend to the other person’s point. 3. Clarify: Check what you understood."
     },
     {
-      "file": "image2.png",
-      "path": "book/assets/images/image2.png",
-      "sha256": "7df3498510e80e5aafec74d48066cadfd740c188b996ef5c59efbc3f1c13ad27",
-      "alt": "Two people face one another and gesture, with speech bubbles between them."
+      "file": "edition-unit-1-reading.png",
+      "path": "book/assets/images/edition-unit-1-reading.png",
+      "sha256": "3e350f226c50c04e1c7638cb5efc5ecc097bb8ac67ab19e9f01691bc01e5c832",
+      "alt": "From words to understanding. A conversation needs more than a fluent sentence. 1. Your idea: Explain it with an example. 2. Their meaning: Listen and ask a follow-up question. 3. Shared understanding: Restate the point and check it."
     },
     {
-      "file": "image3.jpeg",
-      "path": "book/assets/images/image3.jpeg",
-      "sha256": "6e7cb682aa27bd394ad58357a203eb0854753388888012da4a85b850f3721063",
-      "alt": "A cartoon thumbnail asks, “Are you a good listener?” Two people sit across a table; one is speaking and the other looks away. A TED-Ed logo is visible."
+      "file": "edition-unit-1-listening.png",
+      "path": "book/assets/images/edition-unit-1-listening.png",
+      "sha256": "fe88a46b7d790078c4294cc4e6bfb2ff16664d176e7b8907f877e177ebff0250",
+      "alt": "When a message is unclear. Predict how a group could check a plan. 1. A message: Notice what information is missing. 2. A question: Ask for the detail you need. 3. A shared plan: Check that everyone understands."
     },
     {
-      "file": "image4.png",
-      "path": "book/assets/images/image4.png",
-      "sha256": "e77efc88f40696971101b2a1d61f9ae0dad328e817accc4a2754af5af9c7103a",
-      "alt": "A goal-setting mind map surrounds a target, with branches for motivation, process, rules, benefits, development, encouragement, excuses and limits.",
-      "aliases": {
-        "image4.gif": "91ef8e8cd83b4b0cf0fc242b97cd37cad0833a74d387ccf1e78ba57553b41c30"
-      }
+      "file": "edition-unit-2-opener.png",
+      "path": "book/assets/images/edition-unit-2-opener.png",
+      "sha256": "d6f8aeaca1bd5826534562eb694b8bbf0d90a648421ee6432b0ca010ddbce354",
+      "alt": "Goals and action. Turn a direction into a workable next step. 1. Choose: Name a goal that matters to you. 2. Practise: Try one action you can repeat. 3. Review: Use evidence to adjust your plan."
     },
     {
-      "file": "image5.jpeg",
-      "path": "book/assets/images/image5.jpeg",
-      "sha256": "bd95064c908506f2849cc2d814a78c4f3d8ab7b3bdc747df32aa40ebf35827f4",
-      "alt": "A person climbs a staircase toward a target at the top."
+      "file": "edition-unit-2-reading.png",
+      "path": "book/assets/images/edition-unit-2-reading.png",
+      "sha256": "33c243b69706a3a86b39891d34c086d9df5abf6ebe04be95ab09fc28d1f1e730",
+      "alt": "A goal becomes a practice. Direction matters; repeated action gives you something to review. 1. Direction: Choose a useful learning aim. 2. Action: Make the next step manageable. 3. Feedback: Notice progress and revise the plan."
     },
     {
-      "file": "image6.jpeg",
-      "path": "book/assets/images/image6.jpeg",
-      "sha256": "4e372bbb3b5461509f531fed7c6cdffd99130962af8b5e2fe0f23b5177d3d15d",
-      "alt": "A speaker in a yellow suit stands with open arms beside the words “Why you should stop setting goals (yes, really)” and a TED logo."
+      "file": "edition-unit-2-listening.png",
+      "path": "book/assets/images/edition-unit-2-listening.png",
+      "sha256": "7c40a7c33f742b72d551e43670ce89d05611b50e2bc2e7643699631411182744",
+      "alt": "When a plan does not last. Predict what a learner might change. 1. An ambitious start: Listen for the intended outcome. 2. A difficulty: Notice why the routine is difficult. 3. A revised approach: Listen for a more workable next step."
     },
     {
-      "file": "image7.jpeg",
-      "path": "book/assets/images/image7.jpeg",
-      "sha256": "75eea2858978d5c0948992bceca342345a6bcb6184da66fb7b5ef515605478fe",
-      "alt": "A glowing brain is surrounded by faces expressing happiness, affection, sadness, anger and surprise."
+      "file": "edition-unit-3-opener.png",
+      "path": "book/assets/images/edition-unit-3-opener.png",
+      "sha256": "acf14a218a55c6934a13dce5090c47c42dcb1b6c1916cd60a709b7fa0590416b",
+      "alt": "Emotional intelligence. Notice a feeling before choosing a response. 1. Notice: Identify your first reaction. 2. Consider: Ask what else could explain it. 3. Respond: Choose a respectful next move."
     },
     {
-      "file": "image8.jpeg",
-      "path": "book/assets/images/image8.jpeg",
-      "sha256": "3311294f340bf1d56178a5970fb3996cab81cdb699c83d2c2529014b5b4f4c49",
-      "alt": "Two hands support brain outlines labeled IQ and EQ, each viewed through a magnifying glass."
+      "file": "edition-unit-3-reading.png",
+      "path": "book/assets/images/edition-unit-3-reading.png",
+      "sha256": "903df2e8a27aaf61dede306b64eb2ae2a1c8cda940179dc39db0e14b6e8d3966",
+      "alt": "Knowledge and emotional skills. Use this contrast to explain the reading, not to rank people. 1. Understanding ideas: Reason through a question. 2. Understanding responses: Notice feelings and intentions. 3. Working together: Listen, clarify and choose a response."
     },
     {
-      "file": "image9.jpeg",
-      "path": "book/assets/images/image9.jpeg",
-      "sha256": "06eb73a64ebfe9f18d95c50f43319f057807c934a0ec7977784d00a7e2b11597",
-      "alt": "A cartoon character sheds a tear beside the question “Are you emotionally mature?” A TED-Ed logo is visible."
+      "file": "edition-unit-3-listening.png",
+      "path": "book/assets/images/edition-unit-3-listening.png",
+      "sha256": "6e97d9a50e15703268d5971497d0229adeb7df2cdc4fbb0b3e3f9d3a5b55d609",
+      "alt": "Before you assume. Predict how new information could change a response. 1. An event: Notice what happened. 2. A first interpretation: Distinguish an observation from a guess. 3. Another possibility: Listen for the information that changes it."
     },
     {
-      "file": "image10.jpeg",
-      "path": "book/assets/images/image10.jpeg",
-      "sha256": "3ba8c891a4bdab9aad6a5832f77d5d4d429d5ee7db30dce4248151fdca8a31e4",
-      "alt": "A person raises both arms as banknotes fall around them."
+      "file": "edition-unit-4-opener.png",
+      "path": "book/assets/images/edition-unit-4-opener.png",
+      "sha256": "7322f8ef002376e662d7a9dcd160560852dba8440eae5c01426d0f307477511e",
+      "alt": "Money and happiness. Explore choices, needs and trade-offs. 1. Needs: What matters in this situation? 2. Choices: What could the money make possible? 3. Trade-offs: What might the choice cost?"
     },
     {
-      "file": "image11.jpeg",
-      "path": "book/assets/images/image11.jpeg",
-      "sha256": "67de9b1d9f9bcd897ffc5084243ceefc428f6fbe35ac68c232da0198ae2426c3",
-      "alt": "One hand offers a banknote while another holds a yellow smiling face, suggesting an exchange of money for happiness."
+      "file": "edition-unit-4-reading.png",
+      "path": "book/assets/images/edition-unit-4-reading.png",
+      "sha256": "cfddb3eb6f737a939fb836be92054d398ffe4231a2b1d4a76366f193f44cd8bb",
+      "alt": "What could money change?. Discuss a situation rather than a universal price for happiness. 1. Security: Consider needs and obligations. 2. Opportunity: Consider what a choice could enable. 3. Balance: Compare benefits with time and other costs."
     },
     {
-      "file": "image12.jpeg",
-      "path": "book/assets/images/image12.jpeg",
-      "sha256": "365848762ca13b37c5cfad9436db079517f537681a895bad54d981c3aa7f3534",
-      "alt": "A speaker holds a presentation remote on a stage with part of a TED sign behind him."
+      "file": "edition-unit-4-listening.png",
+      "path": "book/assets/images/edition-unit-4-listening.png",
+      "sha256": "b8489709e3b88d96fbc08b260d8863bad21a8996a43b6d8c489bcfea31b7f974",
+      "alt": "Choosing how to spend. Predict how a group could compare options. 1. An offer: Listen for what is available. 2. Different priorities: Identify the needs being considered. 3. A decision: Notice the reason for the final choice."
     },
     {
-      "file": "image13.png",
-      "path": "book/assets/images/image13.png",
-      "sha256": "568655f3de93d3fdbf75d7b9402158ae2b6e1e704813a49a5db0e15259f7b867",
-      "alt": "A futuristic living room contains robots, a robotic vacuum and wall-sized digital displays; drones are visible through the windows."
+      "file": "edition-unit-5-opener.png",
+      "path": "book/assets/images/edition-unit-5-opener.png",
+      "sha256": "fa2f9c38db01299d46c1c24f6ec2cbad630434e94cc40de7c887d038d6614195",
+      "alt": "Living with AI. Use a tool without giving up your judgment. 1. Ask: Set a clear purpose for the tool. 2. Check: Compare its answer with evidence. 3. Decide: Keep responsibility for the result."
     },
     {
-      "file": "image14.jpeg",
-      "path": "book/assets/images/image14.jpeg",
-      "sha256": "4736b377a13a9ec91772670297dded2603a4a37c38fe0c9b925da41a9e2aa509",
-      "alt": "Two back-to-back artificial faces contrast exposed circuitry with a smooth white robotic exterior."
+      "file": "edition-unit-5-reading.png",
+      "path": "book/assets/images/edition-unit-5-reading.png",
+      "sha256": "c6141f3c082035b269b0ba7a97cbf7c3cacfc9b741dcaf4b7b921e1002ede7c3",
+      "alt": "AI as a learning assistant. An answer is a starting point for checking, not automatic evidence. 1. Generate: Ask for a suggestion or explanation. 2. Verify: Check the source and missing context. 3. Take responsibility: Decide what is appropriate to use."
     },
     {
-      "file": "image15.jpeg",
-      "path": "book/assets/images/image15.jpeg",
-      "sha256": "253e98894a71ef7bc7b2c2a28abfa076b9dd53be5a07a0b1a13af36bea35de6a",
-      "alt": "A thumbnail reads “Things are going to get weird.” A small human figure stands beside a large stylized eye; a TED-Ed logo is visible."
+      "file": "edition-unit-5-listening.png",
+      "path": "book/assets/images/edition-unit-5-listening.png",
+      "sha256": "11f74512cd179dfac1dce299b06ed0b3468ff0a15590eb2198ec58474fe7ae25",
+      "alt": "Checking a helpful answer. Predict why a useful-looking answer might still need checking. 1. A suggestion: Listen for what the tool proposes. 2. A check: Notice the evidence used to test it. 3. A human decision: Listen for what the person finally does."
     },
     {
-      "file": "image16.png",
-      "path": "book/assets/images/image16.png",
-      "sha256": "b0c7ae9d2812b177c967a358580ab7ba6be2978e64357086f05b0a1403a08496",
-      "alt": "A heart and a human head are connected by a tangled line, linking emotion and thought."
+      "file": "edition-unit-6-opener.png",
+      "path": "book/assets/images/edition-unit-6-opener.png",
+      "sha256": "5891ee036cd86827faf23333c1c46031d8c55dd35fd69bb765df43ee7cd1f9b5",
+      "alt": "Relationships. Look beyond a feeling to everyday choices. 1. Expectations: Explain what you each need. 2. Communication: Listen and discuss differences. 3. Boundaries: Respect consent and personal limits."
     },
     {
-      "file": "image17.jpeg",
-      "path": "book/assets/images/image17.jpeg",
-      "sha256": "1c6e3027afcdc28452ebbd20d60817ca716a8328dd1278e8e268c32cb3431ba2",
-      "alt": "Two people reach toward one another beneath a red heart."
+      "file": "edition-unit-6-reading.png",
+      "path": "book/assets/images/edition-unit-6-reading.png",
+      "sha256": "2aff69182fa4812a0fbaa9c7dc0c81fcfec03f2ca13dad84d5e8a1ab15999c26",
+      "alt": "Everyday relationship choices. Use a fictional situation if you prefer. 1. Trust: Act consistently and discuss concerns. 2. Mutual effort: Share responsibilities by agreement. 3. Respect: Maintain safety, consent and boundaries."
     },
     {
-      "file": "image18.jpeg",
-      "path": "book/assets/images/image18.jpeg",
-      "sha256": "33bd7cf42720eeac5c32d14a1f4f84d0d6d826bfbf84ec5df69810fdafc3ba0e",
-      "alt": "A speaker stands beside six petals labeled Shared Vision, Compassion, Trust, Respect, Attraction and Loving Behavior."
+      "file": "edition-unit-6-listening.png",
+      "path": "book/assets/images/edition-unit-6-listening.png",
+      "sha256": "cb5db3b7c2d74f2acc2a4c9b9552a0e1934cc9a61c9897648a018aca7ec15857",
+      "alt": "Talking about small choices. Predict how people could discuss a disagreement. 1. Different expectations: Listen without assuming the cause. 2. A conversation: Identify what each person needs. 3. An agreement: Notice how the next step is agreed."
     },
     {
-      "file": "image19.png",
-      "path": "book/assets/images/image19.png",
-      "sha256": "3876726f8f36fb7bb6ad24ea5f68e1ef6d7cacb5f3db1f852620c2dd0d522c1d",
-      "alt": "Travelers with bags look toward a world map filled with city skylines and landmarks."
+      "file": "edition-unit-7-opener.png",
+      "path": "book/assets/images/edition-unit-7-opener.png",
+      "sha256": "66dd58aa1c27f9d6a1746fef415af67bec126e60830241f0b6b73e5687bba86c",
+      "alt": "Global connections. Consider connections and their consequences. 1. Connect: Identify a link across communities. 2. Compare: Ask who benefits and who bears costs. 3. Cooperate: Look for a workable shared response."
     },
     {
-      "file": "image20.jpeg",
-      "path": "book/assets/images/image20.jpeg",
-      "sha256": "24911915585303097164f1e0b9652d5167db7bc6481e0cfe17d1e955bb348243",
-      "alt": "Landmarks encircle a globe, accompanied by an airplane, a sailboat and a train."
+      "file": "edition-unit-7-reading.png",
+      "path": "book/assets/images/edition-unit-7-reading.png",
+      "sha256": "46536dfa0a0ecfd2aa40c3e3ad2b3c237867c46cdcb6e5038e26e7b7fa7b5fae",
+      "alt": "Connections have consequences. Consider more than one perspective. 1. Exchange: Trace goods, ideas or information. 2. Unequal effects: Ask whose costs are less visible. 3. Shared decisions: Compare ways to protect people and places."
     },
     {
-      "file": "image21.jpeg",
-      "path": "book/assets/images/image21.jpeg",
-      "sha256": "9d2e13934ea0e6561766b1fd8313bbc4e09eb8f2bee65f5960f8126d6577705d",
-      "alt": "A speaker gestures in front of projected line graphs, with the years 2040 and 2050 visible."
+      "file": "edition-unit-7-listening.png",
+      "path": "book/assets/images/edition-unit-7-listening.png",
+      "sha256": "b6245d0b4919d75e2fa5b8b0266535761155b60b93df400eb3af8d8fc4b53c07",
+      "alt": "Testing a connection. Predict how a group might try a new market. 1. An opportunity: Listen for the people the project hopes to reach. 2. A barrier: Notice what could limit participation. 3. A trial: Listen for how the group will review its results."
     },
     {
-      "file": "image22.jpeg",
-      "path": "book/assets/images/image22.jpeg",
-      "sha256": "e960e10d9f20faac1bd72c68f9b4f7011c5e5ef163b3914334910e0d668b3bac",
-      "alt": "A signpost points toward English, French, Chinese, Dutch, Japanese, Italian, Korean, Spanish, Thai, German and Russian, with national flags beside the language names."
+      "file": "edition-unit-8-opener.png",
+      "path": "book/assets/images/edition-unit-8-opener.png",
+      "sha256": "3d90b0bc78984b02ac1dbec22c36e07c9f70cd9a3a018b9b4ebac3141ee20979",
+      "alt": "English across communities. A shared language need not mean identical voices. 1. Communicate: Focus on a meaning others can follow. 2. Adapt: Explain an unfamiliar expression. 3. Include: Value other languages and experiences."
     },
     {
-      "file": "image23.jpeg",
-      "path": "book/assets/images/image23.jpeg",
-      "sha256": "0d5dad5b7abdfb572b26b83cb632b9641cf3822b2a5cf092d402721f4dfb5bf2",
-      "alt": "A globe is encircled by red arrows above the word “English?”"
+      "file": "edition-unit-8-reading.png",
+      "path": "book/assets/images/edition-unit-8-reading.png",
+      "sha256": "85f0020128e52a080921fbd753a943b8ce7c89de70a89d77364806663dfacc8a",
+      "alt": "A global language, many voices. Explore access without treating other languages as obstacles. 1. Access: Ask which opportunities English opens. 2. Power: Ask whose knowledge is recognized. 3. Language diversity: Consider how other languages can thrive."
     },
     {
-      "file": "image24.jpeg",
-      "path": "book/assets/images/image24.jpeg",
-      "sha256": "a21aa7d6bd20d2f539401ba9919f2356feb212b59ec6813a9b41670654822707",
-      "alt": "A speaker with glasses gestures with both arms on a stage with a TEDx sign."
+      "file": "edition-unit-8-listening.png",
+      "path": "book/assets/images/edition-unit-8-listening.png",
+      "sha256": "02504791224f0264f179abae2adf0fadb7a12bfd367d93813505fbc1e81eea3c",
+      "alt": "Making yourself understood. Predict how speakers could repair a misunderstanding. 1. An unfamiliar phrase: Listen for what is not understood. 2. A clarification: Notice the question that helps. 3. A clearer exchange: Identify what makes the meaning clearer."
     },
     {
       "file": "cover.png",

@@ -78,7 +78,7 @@ def inspect_epub(files, expected, digests):
     if not needed <= set(properties.get('schema:accessibilityFeature', [])):
         issues.append('Missing implemented accessibility features in metadata')
     summary = ' '.join(properties.get('schema:accessibilitySummary', []))
-    if 'not been evaluated' not in summary or 'external recordings' not in summary:
+    if 'not been evaluated' not in summary or 'no recorded audio is supplied' not in summary:
         issues.append('Accessibility summary must explain evaluation and listening limitations')
     if properties.get('dcterms:conformsTo') or properties.get('a11y:certifiedBy'):
         issues.append('Conformance/certification claim requires independent supporting evidence')
@@ -158,7 +158,9 @@ def main():
         variant[name] = etree.tostring(doc)
         mutations[label] = bool(inspect_epub(variant, epub_expected, digests))
     swapped = deepcopy(files)
-    swapped['images/image1.png'], swapped['images/image2.png'] = files['images/image2.png'], files['images/image1.png']
+    a = parse(files['unit1.xhtml']).find('.//x:img', NS).get('src')
+    b = parse(files['unit1-ch1.xhtml']).find('.//x:img', NS).get('src')
+    swapped[a], swapped[b] = files[b], files[a]
     mutations['wrong_image_bytes_rejected'] = bool(inspect_epub(swapped, epub_expected, digests))
     if not all(mutations.values()):
         issues.append('A negative-control mutation was not detected')

@@ -20,10 +20,9 @@ def inspect(book, reviews, criteria):
             if phrase.casefold() not in task.casefold():
                 issues.append(f'U{n}: missing observable evidence cue {phrase!r}')
     epigraph = book['front']['epigraph']
-    if epigraph.count('Listen with curiosity.') != 1 or epigraph.count('Roy T. Bennett') != 1:
-        issues.append('Epigraph quotation or attribution duplicated/missing')
-    if '” — Roy T. Bennett' not in epigraph:
-        issues.append('Epigraph attribution separation missing')
+    plan = json.loads((ROOT / 'book/master/self-contained-edition.json').read_text())
+    if epigraph != plan['epigraph']:
+        issues.append('Original opening reflection changed, duplicated or missing')
     return issues
 
 
@@ -33,7 +32,7 @@ def main():
     reviews = json.loads((ROOT / 'book/master/unit-review.json').read_text())
     criteria = json.loads((ROOT / 'book/master/transfer-evidence.json').read_text())
     issues = inspect(book, reviews, criteria)
-    # Prove detection of a lost evidence cue, a lost task and a doubled quotation.
+    # Prove detection of a lost evidence cue, a lost task and a doubled opening reflection.
     probes = []
     bad = copy.deepcopy(reviews)
     bad[0]['transfer'] = bad[0]['transfer'].replace('Keep a progress note:', '')
@@ -47,7 +46,7 @@ def main():
     if not all(probes):
         issues.append('Mutation regressions failed to detect broken content')
     report = {'ok': not issues, 'units_checked': len(criteria), 'mutation_probes_detected': probes,
-              'issues': issues, 'scope': 'Task presence, defined evidence cues and epigraph deduplication; not learning efficacy, verified answers or quotation clearance.'}
+              'issues': issues, 'scope': 'Task presence, defined evidence cues and authored opening-reflection fidelity; not learning efficacy, verified answers or quotation clearance.'}
     (ROOT / 'book/artifacts/qa_learning_transfer.json').write_text(json.dumps(report, indent=2)+'\n')
     print(json.dumps(report, indent=2))
     raise SystemExit(bool(issues))

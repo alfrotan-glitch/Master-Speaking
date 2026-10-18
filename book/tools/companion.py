@@ -102,12 +102,19 @@ def build(source=SOURCE, pdf_path=PDF, docx_path=DOCX,
     doc.core_properties.subject = 'New supplementary teacher and student materials'
     doc.core_properties.author = ''
     section.footer.paragraphs[0].text = footer_label
-    for kind, text in content:
+    for index, (kind, text) in enumerate(content):
         # Each numbered section starts on a fresh sheet for classroom copying.
         if kind == 'heading' and re.match(r'^\d+\.', text):
             story.append(PageBreak())
             doc.add_page_break()
         style = {'title': title, 'heading': heading, 'body': body, 'bullet': bullet, 'subheading': subheading}[kind]
+        # Keep each vocabulary key's stem, answer, example and alternatives together.
+        keep_key = source.name == 'teacher-implementation.md' and (
+            text.startswith('Suggested answer: ') or
+            (text.startswith('Completed sentence: ') and index + 1 < len(content)
+             and content[index + 1][1].startswith('Other acceptable completions: ')))
+        if keep_key:
+            style = ParagraphStyle('VocabularyKeyContinuation', parent=style, keepWithNext=True)
         story.append(Paragraph(('• ' if kind == 'bullet' else '') + escape(text), style))
         if kind == 'title':
             doc.add_heading(text, 0)
@@ -119,6 +126,8 @@ def build(source=SOURCE, pdf_path=PDF, docx_path=DOCX,
             doc.add_paragraph(text, style='List Bullet')
         else:
             doc.add_paragraph(text)
+        if keep_key:
+            doc.paragraphs[-1].paragraph_format.keep_with_next = True
     PackDocTemplate(str(pdf_path), pagesize=A4, rightMargin=42, leftMargin=42,
                       topMargin=40, bottomMargin=49,
                       title=title_text,

@@ -117,7 +117,7 @@ def main():
               'speaking_dialogues': 8, 'short_responses': 8, 'new_listening_scripts': 8,
               'new_listening_detail_questions': 40, 'unit1_reading_key_items': 15,
               'pilot_lessons_minutes': [75, 75, 75, 75], 'exports': exports,
-              'original_video_inputs_verified': False, 'live_pilot_conducted': False}
+              'listening_route': 'CORE_AUTHORED_TEACHER_READ', 'original_video_inputs_required': False, 'live_pilot_conducted': False}
     (ROOT / 'book/artifacts/qa_classroom.json').write_text(json.dumps(report, indent=2) + '\n')
     print(json.dumps(report, indent=2))
 

@@ -21,11 +21,12 @@
       "ok": true
     },
     "Master-Speaking-Teacher-Implementation-Pack": {
-      "pages": 29,
-      "source_blocks": 569,
+      "pages": 33,
+      "source_blocks": 695,
       "ok": true
     }
   },
-  "original_video_inputs_verified": false,
+  "listening_route": "CORE_AUTHORED_TEACHER_READ",
+  "original_video_inputs_required": false,
   "live_pilot_conducted": false
 }

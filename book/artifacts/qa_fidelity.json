@@ -6,17 +6,17 @@
   "epub": [],
   "docx": []
  },
- "master_blocks": 3477,
+ "master_blocks": 3225,
  "pdf": {
-  "covered": 3477,
+  "covered": 3225,
   "missing": []
  },
  "epub": {
-  "covered": 3477,
+  "covered": 3225,
   "missing": []
  },
  "docx": {
-  "covered": 3477,
+  "covered": 3225,
   "missing": []
  },
  "pdf_word_split_matches": 0,

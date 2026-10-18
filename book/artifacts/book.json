@@ -98,13 +98,13 @@
     {
      "n": 2,
      "title": "Speaking through Listening",
-     "desc": "Use the assigned talk or video to practise listening for a main message, supporting details, and the speaker’s position.",
+     "desc": "Listen to a fictional story read aloud by a teacher or partner. Practise identifying its main point and details, then discuss the wider topic. The script is at the end of each listening chapter for checking after the task.",
      "you_will": [
-      "watch and listen for meaning",
-      "learn vocabulary from authentic English",
-      "complete comprehension activities",
-      "analyze the speaker’s ideas",
-      "discuss controversial or thought-provoking questions"
+      "listen for a main point and supporting details",
+      "check your understanding against the story",
+      "use topic vocabulary in a discussion",
+      "ask for clarification and compare interpretations",
+      "retell a situation in your own words"
      ]
     },
     {
@@ -138,13 +138,13 @@
    ],
    "closing": "At the end of a unit, return to its main question. Explain your position, support it with reasons or evidence, and notice one thing you can now communicate more clearly."
   },
-  "epigraph": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.” — Roy T. Bennett"
+  "epigraph": "Make your meaning clear. Give another voice room. Ask a question that helps you understand. Then try again with something you have learned."
  },
  "units": [
   {
    "number": 1,
    "title": "The Power of Communication",
-   "image": "image1.png",
+   "image": "edition-unit-1-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -291,7 +291,7 @@
       {
        "k": "reading",
        "text": "Imagine a day without communication. You cannot ask for directions, explain an idea, tell someone how you feel, or understand what they need. Buying food, attending a class, making a friend, or working with colleagues would be difficult. Communication is not just a subject to study. It is part of how we take part in everyday life.",
-       "img": "image2.png"
+       "img": "edition-unit-1-reading.png"
       },
       {
        "k": "reading",
@@ -577,61 +577,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "Are You a Good Listener?",
-       "unit": 1
+       "text": "Are You a Good Listener?"
       },
       {
        "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 269
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Discuss the questions with a partner. Take turns giving a reason and asking a follow-up question."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "The meeting that almost went wrong"
       },
       {
        "k": "q",
-       "text": "What makes someone a good listener?"
+       "text": "From the story title, what situation do you expect?"
       },
       {
        "k": "q",
-       "text": "Have you ever felt that someone was not listening to you?"
-      },
-      {
-       "k": "q",
-       "text": "Which is more difficult—speaking or listening? Why?"
+       "text": "What information would you listen for to understand the problem and the response?"
       },
       {
        "k": "sec",
-       "text": "Before Listening",
-       "src": 274
+       "text": "Topic Language"
       },
       {
-       "k": "p",
-       "text": "Today’s listening focuses on active listening, one of the most important communication skills.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Before watching, predict the answers.",
-       "img": null
-      },
-      {
-       "k": "q",
-       "text": "What habits do good listeners have?"
-      },
-      {
-       "k": "q",
-       "text": "Why do people interrupt others?"
-      },
-      {
-       "k": "q",
-       "text": "How does listening improve communication?"
-      },
-      {
-       "k": "p",
-       "text": "Here are some useful expressions to learn.",
-       "img": null
+       "k": "instr",
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -698,191 +672,83 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 283
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 284,
-       "img": "image3.jpeg"
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-1-listening.png"
       },
       {
-       "k": "p",
-       "text": "Listen only."
+       "k": "instr",
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
       },
       {
-       "k": "p",
-       "text": "Do not write anything.",
-       "img": null
+       "k": "sub",
+       "text": "Second Listening"
       },
       {
-       "k": "p",
-       "text": "Try to understand the main message.",
-       "img": null
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing"
-      },
-      {
-       "k": "p",
-       "text": "Take notes."
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
-        ],
-        [
-         "",
-         ""
-        ],
-        [
-         "",
-         ""
-        ],
-        [
-         "",
-         ""
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 296
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 301
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice"
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "According to the speaker, what is the main purpose of good listening?"
-      },
-      {
-       "k": "opt",
-       "text": "a. To win every conversation."
-      },
-      {
-       "k": "opt",
-       "text": "b. To make the other person feel understood."
-      },
-      {
-       "k": "opt",
-       "text": "c. To give advice as quickly as possible."
+       "text": "What caused the uncertainty?"
       },
       {
        "k": "q",
-       "text": "What should you do before an important conversation?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Remove distractions."
-      },
-      {
-       "k": "opt",
-       "text": "b. Prepare a long speech."
-      },
-      {
-       "k": "opt",
-       "text": "c. Check your phone often."
+       "text": "Which room did the club use?"
       },
       {
        "k": "q",
-       "text": "What type of questions should good listeners ask?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Difficult questions."
-      },
-      {
-       "k": "opt",
-       "text": "b. Open-ended questions."
-      },
-      {
-       "k": "opt",
-       "text": "c. Personal questions."
+       "text": "Why was the usual room unavailable?"
       },
       {
        "k": "q",
-       "text": "What should you do if you lose focus during a conversation?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Change the topic."
-      },
-      {
-       "k": "opt",
-       "text": "b. Ask the speaker to repeat what you missed."
-      },
-      {
-       "k": "opt",
-       "text": "c. Pretend you understood everything."
+       "text": "How did the speaker check the meeting plan?"
       },
       {
        "k": "q",
-       "text": "According to the video, good listening helps build"
-      },
-      {
-       "k": "opt",
-       "text": "a. competition and confidence."
-      },
-      {
-       "k": "opt",
-       "text": "b. trust and stronger relationships."
-      },
-      {
-       "k": "opt",
-       "text": "c. money and success."
+       "text": "What responsibility did the speaker take on?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 323,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Good listeners should remove distractions before a conversation."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Interrupting people often shows that you are interested."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Asking for clarification shows that you are committed to understanding."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Good listening always means agreeing with the speaker."
-      },
-      {
-       "k": "tf",
-       "text": "_____ High-quality listening can create a psychologically safe environment."
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
        "text": "Group Discussion",
        "src": 331
+      },
+      {
+       "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
       },
       {
        "k": "instr",
@@ -898,32 +764,48 @@
       },
       {
        "k": "q",
-       "text": "Why are open-ended questions more effective than simple yes/no questions?"
+       "text": "When might an open-ended question be more useful than a yes/no question? Give an example."
       },
       {
        "k": "q",
-       "text": "According to the speaker, why shouldn’t you plan your response while the other person is talking?"
+       "text": "What might you miss if you plan your response while another person is still talking?"
       },
       {
        "k": "q",
-       "text": "What is one listening habit you would like to improve after watching this video? Explain your answer."
+       "text": "What is one listening habit you would like to improve after hearing this story? Explain your answer."
       },
       {
        "k": "sec",
-       "text": "Homework",
-       "src": 338
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
       },
       {
        "k": "sub",
-       "text": "Listening Practice"
+       "text": "The meeting that almost went wrong"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
       },
       {
        "k": "p",
-       "text": "Watch the video again. Without looking at your notes, record yourself giving a 90-second summary."
+       "text": "Our study club usually meets in Room Two at four in the afternoon. Last Monday, the organizer sent a short message: Meet in the new room at the usual time. I knew the time, but I did not know which room was new. Instead of guessing, I asked for the room number. The organizer replied that we should use Room Five because Room Two needed repairs. I repeated the plan back: Room Five, four o’clock, Monday. She confirmed it and sent a clearer message to the whole group. Before the meeting, I also asked who was bringing the books. It turned out that nobody had agreed to bring them, so I offered. We started on time, and everyone had something to read."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U1-ORIGINAL"
     },
     {
      "number": 3,
@@ -1531,7 +1413,7 @@
   {
    "number": 2,
    "title": "The Art of Goal Setting",
-   "image": "image4.gif",
+   "image": "edition-unit-2-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -1663,7 +1545,7 @@
       {
        "k": "reading",
        "text": "A dream gives you something to imagine: becoming a doctor, starting a business, travelling, or speaking another language with confidence. A goal begins to turn that possibility into a plan. It names something you want to do and gives you a reason to take the next step. Neither a dream nor a written goal can do the work for you.",
-       "img": "image5.jpeg"
+       "img": "edition-unit-2-reading.png"
       },
       {
        "k": "reading",
@@ -2042,64 +1924,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "The Art of Goal Setting",
-       "unit": 2
+       "text": "The Art of Goal Setting"
       },
       {
        "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 575
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "Have you ever achieved a difficult goal? What was it?"
-      },
-      {
-       "k": "q",
-       "text": "What usually stops people from reaching their goals?"
-      },
-      {
-       "k": "q",
-       "text": "Which is more important for success: talent or hard work? Why?"
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 580
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
       },
       {
        "k": "sub",
-       "text": "Look at the Title",
-       "src": 581,
-       "img": null
+       "text": "A smaller plan that lasted"
       },
       {
-       "k": "titleline",
-       "text": "Why You Should Stop Setting Goals (Yes, Really)"
+       "k": "q",
+       "text": "From the story title, what situation do you expect?"
       },
       {
-       "k": "instr",
-       "text": "Discuss the questions with a partner. Give a reason or an example for each answer."
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
       },
       {
-       "k": "titleline",
-       "text": "Do you agree with this title?"
-      },
-      {
-       "k": "titleline",
-       "text": "Why might someone say goals are not enough?"
-      },
-      {
-       "k": "titleline",
-       "text": "What is the difference between a goal and a daily habit?"
+       "k": "sec",
+       "text": "Topic Language"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -2166,204 +2019,83 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 590
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 591,
-       "img": "image6.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 601,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-2-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
-        ],
-        [
-         "",
-         ""
-        ],
-        [
-         "",
-         ""
-        ],
-        [
-         "",
-         ""
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 604
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 605
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 606,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "What was Emmanuel Acho’s main goal in college?"
-      },
-      {
-       "k": "opt",
-       "text": "a. To become a sports psychologist"
-      },
-      {
-       "k": "opt",
-       "text": "b. To be drafted in the first three rounds of the NFL Draft"
-      },
-      {
-       "k": "opt",
-       "text": "c. To become a football coach"
+       "text": "What was the original daily target?"
       },
       {
        "k": "q",
-       "text": "What happened during the NFL Combine?"
-      },
-      {
-       "k": "opt",
-       "text": "a. He tore his quad while running."
-      },
-      {
-       "k": "opt",
-       "text": "b. He won the competition."
-      },
-      {
-       "k": "opt",
-       "text": "c. He received a scholarship."
+       "text": "What did the speaker actually want to do?"
       },
       {
        "k": "q",
-       "text": "According to the speaker, why do many people set goals?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Because they have been taught that goals are necessary for success."
-      },
-      {
-       "k": "opt",
-       "text": "b. Because goals are always easy to achieve."
-      },
-      {
-       "k": "opt",
-       "text": "c. Because goals eliminate failure."
+       "text": "On which three days would the new practice happen?"
       },
       {
        "k": "q",
-       "text": "What does Emmanuel suggest instead of setting goals?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Avoid making plans."
-      },
-      {
-       "k": "opt",
-       "text": "b. Have an objective without limitations."
-      },
-      {
-       "k": "opt",
-       "text": "c. Change your goals every month."
+       "text": "How long would each practice take?"
       },
       {
        "k": "q",
-       "text": "What is the speaker’s final message?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Goals create limitless opportunities."
-      },
-      {
-       "k": "opt",
-       "text": "b. Believe in possibility rather than being limited by goals."
-      },
-      {
-       "k": "opt",
-       "text": "c. Success depends only on talent."
+       "text": "When would the speaker review the plan?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 629,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Emmanuel wanted to leave college early and enter the NFL Draft."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Emmanuel achieved his goal of being drafted in the first three rounds."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes writing goals down automatically guarantees success."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Emmanuel says people often set goals because they want feedback."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes possibilities are greater than goals."
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
        "text": "Group Discussion",
        "src": 638
+      },
+      {
+       "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
       },
       {
        "k": "instr",
@@ -2411,16 +2143,45 @@
       },
       {
        "k": "p",
-       "text": "The speaker says we should believe in possibility instead of limiting ourselves with goals.",
+       "text": "Consider this view: a goal should guide your practice without ruling out other possibilities.",
        "img": null
       },
       {
        "k": "q",
        "text": "Do you agree or disagree? Explain your opinion with reasons and examples."
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "A smaller plan that lasted"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "At the beginning of the month, I planned to learn twenty new English words every evening. On the first day I did it, but by Thursday I was tired and had stopped. My friend asked what I actually wanted to do with the words. I said I wanted to take part in class discussions. We made a smaller plan: on Monday, Wednesday, and Friday, I would choose two useful expressions and use them in a short spoken response. Each practice would take ten minutes. After two weeks, I would check whether I could explain a point without writing every sentence first. I missed one evening, but I returned to the plan on Friday. I had learned fewer new words than I originally intended, yet I was practising the skill I wanted to improve."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U2-ORIGINAL"
     },
     {
      "number": 3,
@@ -2937,7 +2698,7 @@
   {
    "number": 3,
    "title": "Emotional Intelligence",
-   "image": "image7.jpeg",
+   "image": "edition-unit-3-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -3064,7 +2825,7 @@
        "k": "readingtitle",
        "text": "The Power of Emotional Intelligence",
        "unit": 3,
-       "img": "image8.jpeg"
+       "img": "edition-unit-3-reading.png"
       },
       {
        "k": "reading",
@@ -3393,72 +3154,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "The Power of Emotional Intelligence",
-       "unit": 3
-      },
-      {
-       "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 890
-      },
-      {
-       "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "Have you ever made a decision based on your emotions? What happened?"
-      },
-      {
-       "k": "q",
-       "text": "Why do some people stay calm under pressure while others lose control?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think emotions help us make better decisions, or do they sometimes prevent us from thinking clearly? Explain your answer."
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 895
-      },
-      {
-       "k": "sub",
-       "text": "Look at the Title",
-       "src": 896,
-       "img": null
-      },
-      {
-       "k": "titleline",
        "text": "The Power of Emotional Intelligence"
       },
       {
-       "k": "instr",
-       "text": "Discuss the questions. Support your answers with reasons or examples, and make room for a different view."
-      },
-      {
-       "k": "titleline",
-       "text": "What does emotional intelligence mean to you?"
-      },
-      {
-       "k": "titleline",
-       "text": "How is emotional intelligence different from IQ?"
-      },
-      {
-       "k": "titleline",
-       "text": "Can emotional intelligence be developed throughout life, or is it something people are born with?"
-      },
-      {
-       "k": "titleline",
-       "text": "Why do employers value emotional intelligence in the workplace?"
-      },
-      {
-       "k": "titleline",
-       "text": "What qualities would you expect an emotionally intelligent person to have?"
+       "k": "sec",
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "Before making an assumption"
+      },
+      {
+       "k": "q",
+       "text": "From the story title, what situation do you expect?"
+      },
+      {
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
+      },
+      {
+       "k": "sec",
+       "text": "Topic Language"
+      },
+      {
+       "k": "instr",
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -3525,187 +3249,74 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 907
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 908,
-       "img": "image9.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 917,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-3-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 920
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 921
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 922,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "Why are the two students disappointed at the beginning of the video?"
-      },
-      {
-       "k": "opt",
-       "text": "a. They forgot to take the exam."
-      },
-      {
-       "k": "opt",
-       "text": "b. They received lower grades than they expected."
-      },
-      {
-       "k": "opt",
-       "text": "c. They had to attend summer classes."
+       "text": "What did the speaker first assume about Kareem?"
       },
       {
        "k": "q",
-       "text": "According to the Process Model, what happens immediately after we enter a situation?"
-      },
-      {
-       "k": "opt",
-       "text": "a. We change our behavior."
-      },
-      {
-       "k": "opt",
-       "text": "b. The situation draws our attention."
-      },
-      {
-       "k": "opt",
-       "text": "c. We experience an emotional response."
+       "text": "Did Kareem understand the task?"
       },
       {
        "k": "q",
-       "text": "Which strategy does the speaker suggest if you attend a party where your ex is present?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Argue with your ex."
-      },
-      {
-       "k": "opt",
-       "text": "b. Leave immediately."
-      },
-      {
-       "k": "opt",
-       "text": "c. Avoid interacting with your ex."
+       "text": "What made it difficult for him to contribute?"
       },
       {
        "k": "q",
-       "text": "Which of the following is considered a healthy way to regulate emotions?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Hiding your emotions."
-      },
-      {
-       "k": "opt",
-       "text": "b. Taking recreational drugs."
-      },
-      {
-       "k": "opt",
-       "text": "c. Talking to someone you trust."
+       "text": "What change did the group make?"
       },
       {
        "k": "q",
-       "text": "What is the speaker’s main message?"
-      },
-      {
-       "k": "opt",
-       "text": "a. People should always try to stay happy."
-      },
-      {
-       "k": "opt",
-       "text": "b. Every emotion can be useful depending on the situation."
-      },
-      {
-       "k": "opt",
-       "text": "c. Negative emotions should always be avoided."
+       "text": "What did Kareem contribute?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 945,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The Process Model explains five steps in the formation of emotions."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Reappraisal means changing the way you think about a situation."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker recommends hiding your emotions whenever possible."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Feeling sad can sometimes help us support other people."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Research suggests that constantly chasing happiness may create additional negative emotions."
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
@@ -3714,15 +3325,19 @@
       },
       {
        "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
+      },
+      {
+       "k": "instr",
        "text": "Discuss the questions in groups of three or four. Give everyone a turn and ask for clarification when a point is unclear."
       },
       {
        "k": "q",
-       "text": "What is the Process Model?"
+       "text": "What could the narrator do before speaking if they felt frustrated with Kareem?"
       },
       {
        "k": "q",
-       "text": "According to the speaker, why is learning to notice your emotions important?"
+       "text": "How might noticing your emotions help you respond to a disagreement? Give an example."
       },
       {
        "k": "q",
@@ -3734,7 +3349,7 @@
       },
       {
        "k": "q",
-       "text": "In your opinion, which strategy from the video would be most useful in your daily life? Why?"
+       "text": "Which response in the story would be useful in a group you know? Explain why."
       },
       {
        "k": "subsub",
@@ -3765,16 +3380,45 @@
       },
       {
        "k": "p",
-       "text": "The speaker says that people who are fixated on happiness often experience disappointment and frustration.",
+       "text": "Consider this view: trying to feel happy all the time can make ordinary disappointments harder to accept.",
        "img": null
       },
       {
        "k": "q",
        "text": "Do you agree or disagree? Support your opinion with examples from your own experience or from people you know."
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "Before making an assumption"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "During our group project, Kareem spoke very little. At first, I thought he was not interested. I nearly told the teacher that he was not helping. Instead, I asked him privately whether the task was clear. He said he understood it, but the group moved so quickly that he could not find a moment to speak. He had already written several useful suggestions in his notebook. At the next meeting, we gave everyone a minute to explain one idea without interruption. Kareem suggested a simpler way to organize our presentation, and we used it. I learned that silence did not tell me enough about his effort or interest. Asking a question gave me information that my first assumption had missed."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U3-ORIGINAL"
     },
     {
      "number": 3,
@@ -4382,7 +4026,7 @@
   {
    "number": 4,
    "title": "Money and Happiness",
-   "image": "image10.jpeg",
+   "image": "edition-unit-4-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -4514,7 +4158,7 @@
       {
        "k": "reading",
        "text": "Does more money mean a happier life? The question sounds simple until you ask what the money is needed for. Paying for food or housing is different from buying another luxury item. People also value different things: security, health, relationships, meaningful work, or time to themselves. To discuss money and happiness, we need to consider those differences rather than search for one answer that fits everyone.",
-       "img": "image11.jpeg"
+       "img": "edition-unit-4-reading.png"
       },
       {
        "k": "reading",
@@ -4771,8 +4415,8 @@
        "text": "Should governments focus on increasing citizens’ income or improving their quality of life? Explain."
       },
       {
-       "k": "p",
-       "text": "“Money changes people.” Do you agree or disagree? Give reasons and examples.",
+       "k": "q",
+       "text": "Can having more money change how a person behaves? Explain your view with reasons and examples.",
        "img": null
       },
       {
@@ -4811,11 +4455,11 @@
       },
       {
        "k": "topic",
-       "text": "“Money is a wonderful servant, but a terrible master.”"
+       "text": "How can someone use money to support a good life without making wealth their only goal?"
       },
       {
        "k": "instr",
-       "text": "Use at least six words or phrases from Vocabulary Preview to explain the quotation. Distinguish its message from your own judgment."
+       "text": "Use at least six words or phrases from Vocabulary Preview. Explain your position, give an example, and consider a different view."
       }
      ],
      "focus": "Speaking through Reading",
@@ -4827,64 +4471,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "Can Money Buy Happiness?",
-       "unit": 4
-      },
-      {
-       "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 1208
-      },
-      {
-       "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "If someone offered you $1 million, but you could never see your family again, would you accept? Why or why not?"
-      },
-      {
-       "k": "q",
-       "text": "Which do you think has a greater impact on happiness: earning more money or having meaningful relationships?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think there should be a limit to how much money people try to earn? Explain your answer."
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 1213
-      },
-      {
-       "k": "sub",
-       "text": "Look at the Title",
-       "src": 1214,
-       "img": null
-      },
-      {
-       "k": "titleline",
        "text": "Can Money Buy Happiness?"
       },
       {
-       "k": "instr",
-       "text": "Discuss the questions. Support your answers with reasons or examples, and make room for a different view."
-      },
-      {
-       "k": "titleline",
-       "text": "What do you think the speaker’s answer will be?"
-      },
-      {
-       "k": "titleline",
-       "text": "What factors besides money might influence happiness?"
-      },
-      {
-       "k": "titleline",
-       "text": "Do you think wealthy people are happier than others? Why or why not?"
+       "k": "sec",
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "One hundred credits"
+      },
+      {
+       "k": "q",
+       "text": "From the story title, what situation do you expect?"
+      },
+      {
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
+      },
+      {
+       "k": "sec",
+       "text": "Topic Language"
+      },
+      {
+       "k": "instr",
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -4951,217 +4566,74 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 1224
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 1225,
-       "img": "image12.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 1236,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-4-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 1239
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 1240
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 1241,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "What is the speaker’s main argument?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Money cannot improve happiness under any circumstances."
-      },
-      {
-       "k": "opt",
-       "text": "b. People become happier when they earn more money."
-      },
-      {
-       "k": "opt",
-       "text": "c. People can increase their happiness by spending money on others."
+       "text": "How many credits did the club have?"
       },
       {
        "k": "q",
-       "text": "According to the speaker, what often happens to lottery winners?"
-      },
-      {
-       "k": "opt",
-       "text": "a. They become happier and build stronger friendships."
-      },
-      {
-       "k": "opt",
-       "text": "b. They often go into debt and experience damaged relationships."
-      },
-      {
-       "k": "opt",
-       "text": "c. They donate most of their money to charity."
+       "text": "What did the books cost?"
       },
       {
        "k": "q",
-       "text": "In the University of British Columbia experiment, participants were asked to"
-      },
-      {
-       "k": "opt",
-       "text": "a. save all of their money."
-      },
-      {
-       "k": "opt",
-       "text": "b. spend money either on themselves or on someone else."
-      },
-      {
-       "k": "opt",
-       "text": "c. invest their money in a business."
+       "text": "Which two paid options did the club choose?"
       },
       {
        "k": "q",
-       "text": "What did the researchers discover about the amount of money?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Spending larger amounts always created greater happiness."
-      },
-      {
-       "k": "opt",
-       "text": "b. Five dollars created more happiness than twenty dollars."
-      },
-      {
-       "k": "opt",
-       "text": "c. How the money was spent mattered more than how much was spent."
+       "text": "How many credits remained?"
       },
       {
        "k": "q",
-       "text": "According to the Gallup survey, people who donated money to charity generally"
-      },
-      {
-       "k": "opt",
-       "text": "a. reported higher levels of happiness."
-      },
-      {
-       "k": "opt",
-       "text": "b. earned higher salaries."
-      },
-      {
-       "k": "opt",
-       "text": "c. spent less money on themselves."
+       "text": "What replaced the paid event?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 1264,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes the saying “Money can’t buy happiness” is completely correct."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Lottery winners often experience financial and social problems."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Participants who spent money on themselves became much happier than those who spent it on others."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The research in Uganda produced results similar to those in Canada."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker concludes that generosity can improve both happiness and teamwork."
-      },
-      {
-       "k": "sub",
-       "text": "C. Short Answer",
-       "src": 1271,
-       "img": null
-      },
-      {
-       "k": "instr",
-       "text": "Answer in complete sentences. Distinguish what the speaker says from your own interpretation."
-      },
-      {
-       "k": "q",
-       "text": "Why does the speaker believe many people fail to use money in a way that increases happiness?"
-      },
-      {
-       "k": "q",
-       "text": "What happened when participants spent money on other people instead of themselves?"
-      },
-      {
-       "k": "q",
-       "text": "Why did the researchers conduct a similar experiment in Uganda?"
-      },
-      {
-       "k": "q",
-       "text": "What did the Gallup Organization’s international data reveal about charitable giving and happiness?"
-      },
-      {
-       "k": "q",
-       "text": "According to the speaker, what is the most effective way to use money if you want to become happier?"
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
@@ -5170,11 +4642,15 @@
       },
       {
        "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
+      },
+      {
+       "k": "instr",
        "text": "Discuss the questions in groups of three or four. Give everyone a turn and ask for clarification when a point is unclear."
       },
       {
        "k": "q",
-       "text": "Do you agree with the speaker that money can buy happiness if it is spent on other people? Why or why not?"
+       "text": "In the story, the group chooses books and better lighting. What might make this a useful choice? Would another choice be better?"
       },
       {
        "k": "q",
@@ -5182,7 +4658,7 @@
       },
       {
        "k": "q",
-       "text": "The speaker says many lottery winners go into debt and damage their relationships. Why do you think this happens?"
+       "text": "How might a sudden increase in income create pressure in someone’s relationships? Give an example."
       },
       {
        "k": "q",
@@ -5190,11 +4666,11 @@
       },
       {
        "k": "q",
-       "text": "The speaker suggests that pro-social behavior increases happiness. Besides giving money, what other pro-social actions can people take?"
+       "text": "Besides giving money, what other pro-social actions could help a group or community? Give an example."
       },
       {
-       "k": "p",
-       "text": "The research found that the amount of money doesn’t matter as much as how it is spent. Do you agree? Give reasons and examples.",
+       "k": "q",
+       "text": "Which matters more in the situation you discuss: how much someone spends or what the money makes possible? Give reasons and examples.",
        "img": null
       },
       {
@@ -5203,7 +4679,7 @@
       },
       {
        "k": "q",
-       "text": "Do you think the speaker’s findings hold true in your country? Why or why not?"
+       "text": "Could pooling money solve a practical problem in a community you know? What might make it difficult?"
       },
       {
        "k": "p",
@@ -5233,10 +4709,39 @@
       {
        "k": "q",
        "text": "Which option would you choose, and why? Do you think your choice would make you happier? Support your answer with examples."
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "One hundred credits"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "Our learning club had one hundred imaginary credits for a planning exercise. We could buy books for forty credits, improve the lighting for thirty-five, or hold an event for thirty. Buying all three would cost more than we had. Some members wanted the event because new students had not met one another. Others said the room was too dark for reading. We agreed to buy the books and improve the lighting, leaving twenty-five credits unspent. For the new students, we planned a free conversation afternoon instead of the paid event. Not everyone preferred that choice, but each person had a chance to explain their reasons. Before ending the meeting, we wrote down the total and agreed to ask members whether the changes helped them use the room."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U4-ORIGINAL"
     },
     {
      "number": 3,
@@ -5958,7 +5463,7 @@
   {
    "number": 5,
    "title": "Living with AI",
-   "image": "image13.png",
+   "image": "edition-unit-5-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -6094,7 +5599,7 @@
       {
        "k": "reading",
        "text": "Artificial intelligence, or AI, already appears in ordinary activities. A tool may help translate a message, suggest a film, generate an image, or draft an email. People also use AI to look for information, including health information. Using a tool does not make its answer reliable: a confident response still needs to be checked, especially when a decision could affect someone’s health, rights, or finances.",
-       "img": "image14.jpeg"
+       "img": "edition-unit-5-reading.png"
       },
       {
        "k": "reading",
@@ -6338,17 +5843,17 @@
       },
       {
        "k": "p",
-       "text": "Share your ideas about the quote:",
+       "text": "Examine this claim:",
        "img": null
       },
       {
        "k": "p",
-       "text": "“The most successful people in the future may not be those who compete with AI, but those who learn how to work alongside it.”",
+       "text": "Learning to use an AI tool can be useful, but it does not remove the need for human judgment.",
        "img": null
       },
       {
        "k": "instr",
-       "text": "Present your answers to the class."
+       "text": "Find two details in the passage that support or qualify the claim. Explain one limit or uncertainty, then share your reasoning with the class."
       }
      ],
      "focus": "Speaking through Reading",
@@ -6360,76 +5865,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "How Will AI Change the World?",
-       "unit": 5
-      },
-      {
-       "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 1504
-      },
-      {
-       "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "What do you think AI will be able to do five years from now?"
-      },
-      {
-       "k": "q",
-       "text": "What is one thing you think AI will never be able to do as well as humans?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think AI will make people’s lives easier or more complicated?"
-      },
-      {
-       "k": "q",
-       "text": "What could happen if AI becomes much more powerful than it is today?"
-      },
-      {
-       "k": "q",
-       "text": "Should humans control how AI is developed? Why or why not?"
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 1511
-      },
-      {
-       "k": "sub",
-       "text": "Look at the Title",
-       "src": 1513,
-       "img": null
-      },
-      {
-       "k": "titleline",
        "text": "How Will AI Change the World?"
       },
       {
-       "k": "instr",
-       "text": "Discuss the question. Explain your view and ask about a different perspective."
-      },
-      {
-       "k": "titleline",
-       "text": "What changes do you expect the video to talk about?"
-      },
-      {
-       "k": "titleline",
-       "text": "Which areas of life could AI change the most?"
-      },
-      {
-       "k": "titleline",
-       "text": "Education, employment, healthcare, communication, entertainment"
-      },
-      {
-       "k": "titleline",
-       "text": "Do you expect the speaker to present AI as mostly an opportunity, a threat, or both?"
+       "k": "sec",
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "A confident answer was not enough"
+      },
+      {
+       "k": "q",
+       "text": "From the story title, what situation do you expect?"
+      },
+      {
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
+      },
+      {
+       "k": "sec",
+       "text": "Topic Language"
+      },
+      {
+       "k": "instr",
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -6496,187 +5960,74 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 1522
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 1523,
-       "img": "image15.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 1532,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-5-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 1535
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 1536
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 1537,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "What is the main problem with giving an AI system a fixed objective?"
-      },
-      {
-       "k": "opt",
-       "text": "a. The AI may be unable to complete the task."
-      },
-      {
-       "k": "opt",
-       "text": "b. The AI may pursue the objective without considering other things humans care about."
-      },
-      {
-       "k": "opt",
-       "text": "c. The AI may refuse to follow instructions."
+       "text": "Which day did the tool invent?"
       },
       {
        "k": "q",
-       "text": "What example does Stuart Russell use to explain the problem with fixed objectives?"
-      },
-      {
-       "k": "opt",
-       "text": "a. An AI system trying to make coffee."
-      },
-      {
-       "k": "opt",
-       "text": "b. An AI system trying to fix ocean acidification but causing other environmental problems."
-      },
-      {
-       "k": "opt",
-       "text": "c. An AI system trying to teach people about climate change."
+       "text": "What were the verified day and room?"
       },
       {
        "k": "q",
-       "text": "Why can humans deal with objectives differently from current AI systems?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Humans understand that they may not know everything that matters."
-      },
-      {
-       "k": "opt",
-       "text": "b. Humans always make better decisions than machines."
-      },
-      {
-       "k": "opt",
-       "text": "c. Humans have more information than AI systems."
+       "text": "Where did the speaker first check the meeting details?"
       },
       {
        "k": "q",
-       "text": "What does the speaker mean by technological unemployment?"
-      },
-      {
-       "k": "opt",
-       "text": "a. People refusing to use modern technology."
-      },
-      {
-       "k": "opt",
-       "text": "b. Unemployment caused by machines performing work previously done by humans."
-      },
-      {
-       "k": "opt",
-       "text": "c. Companies losing money because of technology."
+       "text": "What part of the draft did the speaker keep?"
       },
       {
        "k": "q",
-       "text": "What concern does the speaker raise about a machine-dependent civilization?"
-      },
-      {
-       "k": "opt",
-       "text": "a. People may lose the incentive to understand and manage their own civilization."
-      },
-      {
-       "k": "opt",
-       "text": "b. Machines may become too expensive to maintain."
-      },
-      {
-       "k": "opt",
-       "text": "c. People may stop communicating with one another."
+       "text": "What private information was kept out of the tool?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 1560,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes that humans can always predict every possible consequence of an AI objective."
-      },
-      {
-       "k": "tf",
-       "text": "_____ AI systems may need to recognize that they do not fully understand the objectives humans have in mind."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker suggests that automation has the potential to eliminate millions of jobs."
-      },
-      {
-       "k": "tf",
-       "text": "_____ According to the speaker, general-purpose AI will arrive suddenly on one specific date."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes that the development of general-purpose AI is difficult to predict precisely."
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
@@ -6685,11 +6036,15 @@
       },
       {
        "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
+      },
+      {
+       "k": "instr",
        "text": "Discuss the questions in groups of three or four. Give everyone a turn and ask for clarification when a point is unclear."
       },
       {
        "k": "q",
-       "text": "Which idea from the video did you find most interesting? Why?"
+       "text": "Which decision in the story did you find most useful to discuss? Why?"
       },
       {
        "k": "q",
@@ -6761,10 +6116,39 @@
       {
        "k": "instr",
        "text": "Choose a position and support it with at least three arguments. Explain the assumptions behind any prediction."
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "A confident answer was not enough"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "I asked an AI tool to help me draft an announcement for our club meeting. It produced a clear paragraph and said we would meet on Thursday in Room Three. I had not given it those details. Before sharing the announcement, I checked the noticeboard. The actual meeting was on Wednesday in Room Five. I corrected the day and room, then asked the organizer to check the whole message. I kept the tool’s suggested order of information because it was useful, but I did not trust the invented details. I also left classmates’ phone numbers out of the tool. When I shared the final announcement, I explained that a tool had helped with the draft and that the organizer had confirmed the meeting information."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U5-ORIGINAL"
     },
     {
      "number": 3,
@@ -7667,7 +7051,7 @@
   {
    "number": 6,
    "title": "Is Love Enough?",
-   "image": "image16.png",
+   "image": "edition-unit-6-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -7803,7 +7187,7 @@
       {
        "k": "reading",
        "text": "Love is often described as the foundation of a successful marriage. Two people may care deeply about each other and imagine a future together. Yet sharing a life involves more than strong feelings. The question ‘Is love enough?’ invites us to consider what else a respectful, lasting relationship may need. You can explore that question through fictional people rather than private experiences.",
-       "img": "image17.jpeg"
+       "img": "edition-unit-6-reading.png"
       },
       {
        "k": "reading",
@@ -8148,72 +7532,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "The Science of a Lasting Relationship",
-       "unit": 6
-      },
-      {
-       "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 1916
-      },
-      {
-       "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "What do you think is the biggest reason marriages fail?"
-      },
-      {
-       "k": "q",
-       "text": "Can couples have a strong relationship even if they argue frequently?"
-      },
-      {
-       "k": "q",
-       "text": "How important is friendship between married partners?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think couples should spend most of their free time together?"
-      },
-      {
-       "k": "q",
-       "text": "What does a healthy relationship look like?"
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 1923
-      },
-      {
-       "k": "sub",
-       "text": "Look at the Title",
-       "src": 1924,
-       "img": null
-      },
-      {
-       "k": "titleline",
        "text": "The Science of a Lasting Relationship"
       },
       {
-       "k": "instr",
-       "text": "Discuss the questions. Support your answers with reasons or examples, and make room for a different view."
-      },
-      {
-       "k": "titleline",
-       "text": "Do you think small everyday actions can affect a marriage?"
-      },
-      {
-       "k": "titleline",
-       "text": "Why might communication be more important than romantic feelings?"
-      },
-      {
-       "k": "titleline",
-       "text": "What do you think researchers can learn by observing couples?"
+       "k": "sec",
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "Friends with different plans"
+      },
+      {
+       "k": "q",
+       "text": "From the story title, what situation do you expect?"
+      },
+      {
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
+      },
+      {
+       "k": "sec",
+       "text": "Topic Language"
+      },
+      {
+       "k": "instr",
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -8270,227 +7617,83 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 1933
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 1934,
-       "img": "image18.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 1945,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-6-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 1948
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 1949
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 1950,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "What is the speaker’s main purpose?"
-      },
-      {
-       "k": "opt",
-       "text": "a. To explain why people should avoid marriage"
-      },
-      {
-       "k": "opt",
-       "text": "b. To present six ingredients that can help relationships thrive"
-      },
-      {
-       "k": "opt",
-       "text": "c. To argue that sexual chemistry is the most important part of love"
+       "text": "How often did Mariam first expect to meet?"
       },
       {
        "k": "q",
-       "text": "How does the speaker distinguish attraction from sexual chemistry?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Attraction lasts longer and involves wanting to continue discovering the other person."
-      },
-      {
-       "k": "opt",
-       "text": "b. Attraction is completely biological, while sexual chemistry is emotional."
-      },
-      {
-       "k": "opt",
-       "text": "c. They are essentially the same thing."
+       "text": "Why could Salim help only monthly?"
       },
       {
        "k": "q",
-       "text": "According to the speaker, what helps build trust?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Grand and expensive apologies"
-      },
-      {
-       "k": "opt",
-       "text": "b. Small promises that are consistently kept"
-      },
-      {
-       "k": "opt",
-       "text": "c. Avoiding difficult conversations"
+       "text": "What schedule did they agree to try?"
       },
       {
        "k": "q",
-       "text": "What does compassion mean in the speaker’s explanation?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Experiencing exactly the same emotions as your partner"
-      },
-      {
-       "k": "opt",
-       "text": "b. Feeling for your partner while maintaining your own emotional stability"
-      },
-      {
-       "k": "opt",
-       "text": "c. Ignoring your partner’s emotions to protect yourself"
+       "text": "Who would arrange the room?"
       },
       {
        "k": "q",
-       "text": "What does a shared vision help couples do?"
-      },
-      {
-       "k": "opt",
-       "text": "a. Avoid making compromises completely"
-      },
-      {
-       "k": "opt",
-       "text": "b. Decide where they want to go and prioritize their resources accordingly"
-      },
-      {
-       "k": "opt",
-       "text": "c. Make sure they have identical personalities"
+       "text": "Which question remained unresolved?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 1962,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T (True) or F (False). Correct the false statements."
-      },
-      {
-       "k": "p",
-       "text": "The speaker’s research involved 450 couples.",
-       "img": null
-      },
-      {
-       "k": "tf",
-       "text": "_____ The couples in the study had all been together for approximately the same amount of time."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker believes attraction is limited to sexual chemistry."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Respect involves not taking your partner for granted."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Trust is built through consistent and reliable behavior."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker says couples should always sacrifice for each other."
-      },
-      {
-       "k": "tf",
-       "text": "_____ A shared vision involves knowing where you want to go as individuals and as a couple."
-      },
-      {
-       "k": "tf",
-       "text": "_____ The speaker argues that loving behaviors are simply automatic once people fall in love."
-      },
-      {
-       "k": "sub",
-       "text": "C. Short Answer",
-       "src": 1976,
-       "img": null
-      },
-      {
-       "k": "instr",
-       "text": "Answer in complete sentences. Distinguish what the speaker says from your own interpretation."
-      },
-      {
-       "k": "q",
-       "text": "Can respect exist without love?"
-      },
-      {
-       "k": "q",
-       "text": "Is it possible to lose attraction to someone but still have a strong relationship?"
-      },
-      {
-       "k": "q",
-       "text": "What everyday behaviors show that someone respects their partner?"
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
        "text": "Group Discussion",
        "src": 1982
+      },
+      {
+       "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
       },
       {
        "k": "instr",
@@ -8539,11 +7742,40 @@
       },
       {
        "k": "q",
-       "text": "The speaker says, “You don’t fall out of love. You fall out of loving.” Do you agree or disagree? Explain your answer with examples."
+       "text": "Can everyday actions matter more than a declaration of love? Explain your view with examples, and consider a different view."
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "Friends with different plans"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "Two friends, Mariam and Salim, offered to run a community reading club. They both liked the idea, but they had not discussed the work involved. Mariam expected to meet every week. Salim could help only once a month because of his work schedule. Their first conversation became tense because each thought the other had changed the plan. When they compared their notes, they realized they had never agreed on a schedule. They decided to hold one meeting a month for the first three months. Mariam would choose a short reading, and Salim would arrange the room. They would share the task of welcoming new members. They still needed to decide how to pay for printing, so they wrote that question down for their next conversation."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U6-ORIGINAL"
     },
     {
      "number": 3,
@@ -9381,7 +8613,7 @@
   {
    "number": 7,
    "title": "Globalization",
-   "image": "image19.png",
+   "image": "edition-unit-7-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -9518,7 +8750,7 @@
       {
        "k": "reading",
        "text": "Imagine waking up in Kabul, reading a message from Australia, drinking coffee produced abroad, and joining an online class with people in other countries. Each activity connects a local day with places far away. Not everyone has the same access to these connections, but the example shows how ordinary choices can be part of international networks.",
-       "img": "image20.jpeg"
+       "img": "edition-unit-7-reading.png"
       },
       {
        "k": "reading",
@@ -9863,66 +9095,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "Navigating Our Global Future",
-       "unit": 7
+       "text": "Navigating Our Global Future"
       },
       {
        "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 2286
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
-      },
-      {
-       "k": "q",
-       "text": "When you think about the future, what makes you feel optimistic?"
-      },
-      {
-       "k": "q",
-       "text": "What makes you feel worried about the future?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think technological progress always makes people’s lives better?"
-      },
-      {
-       "k": "q",
-       "text": "What could happen if the world’s countries become increasingly interconnected?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think people will live and work differently in 2030 than they do today?"
-      },
-      {
-       "k": "sec",
-       "text": "Before Listening",
-       "src": 2293
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
       },
       {
        "k": "sub",
-       "text": "Prediction",
-       "src": 2294,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Look at these words before watching:",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "inequality — technology — resilience — migration — genetics — globalization",
-       "img": null
+       "text": "Testing an online market"
       },
       {
        "k": "q",
-       "text": "What do you think the speaker will say about each one?"
+       "text": "From the story title, what situation do you expect?"
+      },
+      {
+       "k": "q",
+       "text": "What information would you listen for to understand the problem and the response?"
+      },
+      {
+       "k": "sec",
+       "text": "Topic Language"
       },
       {
        "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -9979,282 +9180,83 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 2300
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 2301,
-       "img": "image21.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 2310,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-7-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 2313
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 2314
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 2315,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "Why does Goldin say the future is unpredictable?"
-      },
-      {
-       "k": "opt",
-       "text": "A. People are not interested in the future."
-      },
-      {
-       "k": "opt",
-       "text": "B. Even experts and major institutions frequently make incorrect predictions."
-      },
-      {
-       "k": "opt",
-       "text": "C. Technology has stopped developing."
+       "text": "How many sellers were invited?"
       },
       {
        "k": "q",
-       "text": "What does Goldin identify as two “Achilles heels” of globalization?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Technology and migration"
-      },
-      {
-       "k": "opt",
-       "text": "B. Growing inequality and complexity"
-      },
-      {
-       "k": "opt",
-       "text": "C. Poverty and unemployment"
+       "text": "What cost worried the organizers?"
       },
       {
        "k": "q",
-       "text": "What does Goldin mean by “systemic risk”?"
-      },
-      {
-       "k": "opt",
-       "text": "A. A problem that affects only one individual"
-      },
-      {
-       "k": "opt",
-       "text": "B. A problem that can spread through interconnected systems"
-      },
-      {
-       "k": "opt",
-       "text": "C. A risk caused only by technology"
+       "text": "How long would the local collection trial last?"
       },
       {
        "k": "q",
-       "text": "What does Goldin predict about computing by 2030?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Computers will become less powerful."
-      },
-      {
-       "k": "opt",
-       "text": "B. Computing power will improve enormously for the same price."
-      },
-      {
-       "k": "opt",
-       "text": "C. Computers will disappear."
+       "text": "How could sellers without reliable internet get help?"
       },
       {
        "k": "q",
-       "text": "What concern does Goldin raise about genetic technology?"
-      },
-      {
-       "k": "opt",
-       "text": "A. It may become available only to wealthy people."
-      },
-      {
-       "k": "opt",
-       "text": "B. It will completely stop medical development."
-      },
-      {
-       "k": "opt",
-       "text": "C. It will make people live shorter lives."
-      },
-      {
-       "k": "q",
-       "text": "Why does Goldin believe migration may become increasingly important?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Countries will need people to support their economies and aging populations."
-      },
-      {
-       "k": "opt",
-       "text": "B. People will no longer want to live in their own countries."
-      },
-      {
-       "k": "opt",
-       "text": "C. Technology will eliminate all national borders."
-      },
-      {
-       "k": "q",
-       "text": "Which of the following does Goldin mention as a systemic risk?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Fashion"
-      },
-      {
-       "k": "opt",
-       "text": "B. Climate change"
-      },
-      {
-       "k": "opt",
-       "text": "C. Tourism"
-      },
-      {
-       "k": "q",
-       "text": "What does Goldin believe humanity needs to do?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Stop technological development."
-      },
-      {
-       "k": "opt",
-       "text": "B. Allow only wealthy countries to develop technology."
-      },
-      {
-       "k": "opt",
-       "text": "C. Develop new ways of collectively managing global challenges."
+       "text": "Had they already decided to expand the market?"
       },
       {
        "k": "sub",
-       "text": "B. True or False",
-       "src": 2334,
-       "img": null
+       "text": "Compare and Clarify"
       },
       {
        "k": "instr",
-       "text": "Write T or F. Correct the false statements."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Goldin believes globalization is becoming less complex."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Life expectancy has increased significantly over the previous 40 years."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Goldin believes globalization has benefited everyone equally."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Technology could create enormous opportunities in medicine."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Goldin is concerned that advanced genetic technologies could increase inequality."
-      },
-      {
-       "k": "tf",
-       "text": "_____ He believes migration may become more important in the future."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Climate change and pandemics are examples of systemic risks."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Goldin believes existing global governance structures are fully prepared for future challenges."
-      },
-      {
-       "k": "tf",
-       "text": "_____ He believes collective action can produce extraordinary results."
-      },
-      {
-       "k": "tf",
-       "text": "_____ Goldin ends with a completely pessimistic view of the future."
-      },
-      {
-       "k": "sub",
-       "text": "C. Short Answer",
-       "src": 2346,
-       "img": null
-      },
-      {
-       "k": "instr",
-       "text": "Answer in complete sentences. Distinguish what the speaker says from your own interpretation."
-      },
-      {
-       "k": "q",
-       "text": "Which prediction in the video surprised you the most?"
-      },
-      {
-       "k": "q",
-       "text": "Do you agree that globalization’s greatest strength could also become its greatest weakness? Why?"
-      },
-      {
-       "k": "q",
-       "text": "Goldin says that globalization has not been inclusive. What does this mean?"
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
        "text": "Group Discussion",
        "src": 2351
+      },
+      {
+       "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
       },
       {
        "k": "instr",
@@ -10278,7 +9280,7 @@
       },
       {
        "k": "q",
-       "text": "Which systemic risk mentioned in the video worries you the most?"
+       "text": "Which risk associated with an online market would you examine before expanding it?"
       },
       {
        "k": "q",
@@ -10286,7 +9288,7 @@
       },
       {
        "k": "q",
-       "text": "Goldin says that humanity needs “collective wisdom.” What do you think he means?"
+       "text": "Why might a group make a better decision after hearing from people who could not take part?"
       },
       {
        "k": "subsub",
@@ -10296,10 +9298,39 @@
       {
        "k": "q",
        "text": "If you could give one piece of advice to the world’s leaders about the future, what would it be?"
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "Testing an online market"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "A community center invited six craft sellers to try an online market. Some sellers hoped to reach customers in other countries, but the organizers were worried about shipping costs. They decided to begin with local collection for one month. Sellers without reliable internet could bring product descriptions to the center, where a volunteer would help prepare listings with their permission. The group agreed to record the number of orders, the costs, and the time each seller spent on the trial. They also planned to ask people who could not take part what had stopped them. No one knew yet whether the market would be worth continuing. At the end of the month, they would review the information together before deciding whether to expand."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U7-ORIGINAL"
     },
     {
      "number": 3,
@@ -11139,7 +10170,7 @@
   {
    "number": 8,
    "title": "Lingua Franca",
-   "image": "image22.jpeg",
+   "image": "edition-unit-8-opener.png",
    "chapters": [
     {
      "number": 1,
@@ -11261,7 +10292,7 @@
       {
        "k": "reading",
        "text": "English is used in international business, science, aviation, education, entertainment, and online communication. In many settings it serves as a lingua franca: a language people use to communicate when they do not share a first language. How did a language once associated mainly with England and parts of the British Isles become so widely used, and what does that mean for its users?",
-       "img": "image23.jpeg"
+       "img": "edition-unit-8-reading.png"
       },
       {
        "k": "reading",
@@ -11651,66 +10682,35 @@
      "blocks": [
       {
        "k": "mediatitle",
-       "text": "English Without Borders",
-       "unit": 8
+       "text": "English Without Borders"
       },
       {
        "k": "sec",
-       "text": "Think – Pair – Share",
-       "src": 2641
+       "text": "Before Listening"
       },
       {
        "k": "instr",
-       "text": "Take turns discussing the questions. Give a reason for your view, then ask your partner to explain theirs."
+       "text": "Work with a teacher or partner. Keep the script at the end of this chapter covered until after the second listening."
+      },
+      {
+       "k": "sub",
+       "text": "Making the welcome clear"
       },
       {
        "k": "q",
-       "text": "How important is English in your education?"
+       "text": "From the story title, what situation do you expect?"
       },
       {
        "k": "q",
-       "text": "Has English ever opened a door for you?"
-      },
-      {
-       "k": "q",
-       "text": "Has lack of English ever prevented someone from getting an opportunity?"
-      },
-      {
-       "k": "q",
-       "text": "Do you think your English represents your identity?"
+       "text": "What information would you listen for to understand the problem and the response?"
       },
       {
        "k": "sec",
-       "text": "Before Listening",
-       "src": 2647
-      },
-      {
-       "k": "q",
-       "text": "What makes someone’s English good?"
-      },
-      {
-       "k": "opt",
-       "text": "A. Native-like pronunciation"
-      },
-      {
-       "k": "opt",
-       "text": "B. Perfect grammar"
-      },
-      {
-       "k": "opt",
-       "text": "C. A large vocabulary"
-      },
-      {
-       "k": "opt",
-       "text": "D. Clear and effective communication"
+       "text": "Topic Language"
       },
       {
        "k": "instr",
-       "text": "Choose a response and explain your reasoning. Consider one possible objection before deciding."
-      },
-      {
-       "k": "instr",
-       "text": "Read the expressions and examples before listening. Predict which might connect with the topic; check your prediction afterwards."
+       "text": "Use this language when discussing the story and the wider topic. You are not expected to hear every expression in the story."
       },
       {
        "k": "table",
@@ -11767,282 +10767,83 @@
       },
       {
        "k": "sec",
-       "text": "Listening Strategy",
-       "src": 2653
+       "text": "Listening Strategy"
       },
       {
-       "k": "subsub",
-       "text": "First Viewing",
-       "src": 2654,
-       "img": "image24.jpeg"
-      },
-      {
-       "k": "p",
-       "text": "✔ Do not write.",
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "✔ Listen for the main idea.",
-       "img": null
-      },
-      {
-       "k": "label",
-       "text": "Ask yourself:"
-      },
-      {
-       "k": "q",
-       "text": "What is the speaker trying to convince us to do?"
-      },
-      {
-       "k": "subsub",
-       "text": "Second Viewing",
-       "src": 2664,
-       "img": null
-      },
-      {
-       "k": "p",
-       "text": "Take notes.",
-       "img": null
+       "k": "sub",
+       "text": "First Listening",
+       "img": "edition-unit-8-listening.png"
       },
       {
        "k": "instr",
-       "text": "Note the main ideas, reasons, and examples. Use short phrases rather than trying to copy every word."
+       "text": "Listen to the whole story without reading the script. What is the main problem or decision? Give a one-sentence answer."
+      },
+      {
+       "k": "sub",
+       "text": "Second Listening"
+      },
+      {
+       "k": "instr",
+       "text": "Read the detail questions, listen again, and take short notes in a notebook under the two headings below. Ask to hear a part again if you need it."
       },
       {
        "k": "table",
        "role": "notes",
        "rows": [
         [
-         "Main Idea",
-         "Supporting Details"
+         "Main Point",
+         "Details I Heard"
         ],
         [
          "",
          ""
         ]
-       ],
-       "src": 2667
+       ]
       },
       {
        "k": "sec",
-       "text": "Listening Comprehension",
-       "src": 2668
-      },
-      {
-       "k": "sub",
-       "text": "A. Multiple Choice",
-       "src": 2669,
-       "img": null
+       "text": "Listening Comprehension"
       },
       {
        "k": "instr",
-       "text": "Choose the best answer."
+       "text": "Answer in short phrases. Use details you heard, not guesses about what usually happens."
       },
       {
        "k": "q",
-       "text": "What did Ryan’s friend’s students teach her in the garden?"
-      },
-      {
-       "k": "opt",
-       "text": "A. How to grow vegetables"
-      },
-      {
-       "k": "opt",
-       "text": "B. Arabic words for local plants and their uses"
-      },
-      {
-       "k": "opt",
-       "text": "C. How to teach English vocabulary"
-      },
-      {
-       "k": "opt",
-       "text": "D. Traditional English medicine"
+       "text": "Where would the welcome event take place?"
       },
       {
        "k": "q",
-       "text": "Where did the students get their knowledge about the plants?"
-      },
-      {
-       "k": "opt",
-       "text": "A. From their teachers"
-      },
-      {
-       "k": "opt",
-       "text": "B. From books"
-      },
-      {
-       "k": "opt",
-       "text": "C. From their grandparents and great-grandparents"
-      },
-      {
-       "k": "opt",
-       "text": "D. From the Internet"
+       "text": "What did one member first think break the ice might mean?"
       },
       {
        "k": "q",
-       "text": "According to Ryan, what has English teaching become?"
-      },
-      {
-       "k": "opt",
-       "text": "A. A small school subject"
-      },
-      {
-       "k": "opt",
-       "text": "B. A declining profession"
-      },
-      {
-       "k": "opt",
-       "text": "C. A massive international business"
-      },
-      {
-       "k": "opt",
-       "text": "D. A completely unnecessary subject"
+       "text": "What would partners share after introducing themselves?"
       },
       {
        "k": "q",
-       "text": "Why do many people want an English education?"
-      },
-      {
-       "k": "opt",
-       "text": "A. They believe it gives them access to better educational and professional opportunities."
-      },
-      {
-       "k": "opt",
-       "text": "B. They want to travel to Britain."
-      },
-      {
-       "k": "opt",
-       "text": "C. They want to become English teachers."
-      },
-      {
-       "k": "opt",
-       "text": "D. They want to replace their native languages."
+       "text": "What time and day were confirmed?"
       },
       {
        "k": "q",
-       "text": "Why does Ryan criticize some English-language requirements?"
+       "text": "How did the organizer check that the first activity was clear?"
       },
       {
-       "k": "opt",
-       "text": "A. They are too easy."
+       "k": "sub",
+       "text": "Compare and Clarify"
       },
       {
-       "k": "opt",
-       "text": "B. They can prevent talented people from pursuing their dreams."
-      },
-      {
-       "k": "opt",
-       "text": "C. They are only used in the UK."
-      },
-      {
-       "k": "opt",
-       "text": "D. They do not test grammar."
-      },
-      {
-       "k": "q",
-       "text": "What does Ryan mean when she calls English teachers “gatekeepers”?"
-      },
-      {
-       "k": "opt",
-       "text": "A. They protect English from other languages."
-      },
-      {
-       "k": "opt",
-       "text": "B. They decide whether students meet the language requirements for certain opportunities."
-      },
-      {
-       "k": "opt",
-       "text": "C. They control international universities."
-      },
-      {
-       "k": "opt",
-       "text": "D. They teach students how to pass through airports."
-      },
-      {
-       "k": "q",
-       "text": "Why does Ryan mention the Islamic Golden Age?"
-      },
-      {
-       "k": "opt",
-       "text": "A. To show the historical importance of translation"
-      },
-      {
-       "k": "opt",
-       "text": "B. To explain where English originated"
-      },
-      {
-       "k": "opt",
-       "text": "C. To criticize Arabic education"
-      },
-      {
-       "k": "opt",
-       "text": "D. To discuss the history of universities"
-      },
-      {
-       "k": "q",
-       "text": "Why does Ryan mention Einstein?"
-      },
-      {
-       "k": "opt",
-       "text": "A. To show that Einstein was fluent in English"
-      },
-      {
-       "k": "opt",
-       "text": "B. To show that brilliant people did not always need to pass English tests to contribute to knowledge"
-      },
-      {
-       "k": "opt",
-       "text": "C. To explain how TOEFL was created"
-      },
-      {
-       "k": "opt",
-       "text": "D. To demonstrate the importance of English pronunciation"
-      },
-      {
-       "k": "q",
-       "text": "What problem does Ryan identify with English tests?"
-      },
-      {
-       "k": "opt",
-       "text": "A. They are too short."
-      },
-      {
-       "k": "opt",
-       "text": "B. They are difficult for native speakers."
-      },
-      {
-       "k": "opt",
-       "text": "C. Their fees can be prohibitive for poor people."
-      },
-      {
-       "k": "opt",
-       "text": "D. They test too many languages."
-      },
-      {
-       "k": "q",
-       "text": "What is Ryan’s overall attitude toward English?"
-      },
-      {
-       "k": "opt",
-       "text": "A. She believes English should disappear."
-      },
-      {
-       "k": "opt",
-       "text": "B. She is completely against teaching English."
-      },
-      {
-       "k": "opt",
-       "text": "C. She supports English as a global language but opposes using it as a barrier."
-      },
-      {
-       "k": "opt",
-       "text": "D. She believes everyone should speak only English."
+       "k": "instr",
+       "text": "Compare answers with a partner. Explain which detail supports an answer. Check the script only after the listening task, then correct any misunderstanding."
       },
       {
        "k": "sec",
        "text": "Group Discussion",
        "src": 2692
+      },
+      {
+       "k": "instr",
+       "text": "Use the story as a starting point for the wider questions below. Distinguish what the narrator describes from your own opinions and predictions."
       },
       {
        "k": "instr",
@@ -12134,10 +10935,39 @@
        "k": "p",
        "text": "far-reaching consequences — effects felt in many areas or over a long time",
        "img": null
+      },
+      {
+       "k": "sec",
+       "text": "Try It Again"
+      },
+      {
+       "k": "instr",
+       "text": "Retell the main problem and response in your own words. Ask a partner one follow-up question, then make your retelling clearer."
+      },
+      {
+       "k": "sec",
+       "text": "Listening Script"
+      },
+      {
+       "k": "sub",
+       "text": "Making the welcome clear"
+      },
+      {
+       "k": "label",
+       "text": "Fictional story • read aloud by a teacher or partner"
+      },
+      {
+       "k": "p",
+       "text": "Our international student group was planning a welcome event at the library. The organizer said we would break the ice at ten on Saturday morning. One new member asked whether that meant an outdoor activity. The organizer thanked her for asking and explained that break the ice meant helping people feel comfortable talking. The first activity would be indoors: introduce yourself to a partner and share one interest. A second person asked whether ten meant morning or evening, so the organizer wrote ten in the morning on the agenda. Before moving on, she asked two volunteers to explain the first activity in their own words. Their explanations showed that the instructions were now clear. The group kept the friendly expression, but added plain instructions that everyone could use."
+      },
+      {
+       "k": "instr",
+       "text": "For independent reading practice, read the story once, cover it, and answer from memory. This is reading recall; it does not replace listening to another person."
       }
      ],
      "focus": "Speaking through Listening",
-     "title_source": "mediatitle"
+     "title_source": "mediatitle",
+     "listening_source": "U8-ORIGINAL"
     },
     {
      "number": 3,
@@ -12995,5 +11825,11 @@
     }
    }
   }
- ]
+ ],
+ "edition": {
+  "id": "self-contained-2026",
+  "self_contained_listening": true,
+  "original_interior_graphics": 24,
+  "recorded_audio_supplied": false
+ }
 }

@@ -1,0 +1,672 @@
+{
+  "edition_id": "self-contained-2026",
+  "date": "2026-10-18",
+  "authorization": "Author selected original designed graphics and original listening scripts with matching exercises/keys, preserving exact chapter titles and core learning goals; print and digital.",
+  "epigraph": "Make your meaning clear. Give another voice room. Ask a question that helps you understand. Then try again with something you have learned.",
+  "expected_old_epigraph": "“Listen with curiosity. Speak with honesty. Act with integrity. The greatest problem with communication is we don’t listen to understand. We listen to reply. When we listen with curiosity, we don’t listen with the intent to reply. We listen for what’s behind the words.” — Roy T. Bennett",
+  "units": [
+    {
+      "unit": 1,
+      "expected_old_chapter_sha256": "4ad398f9b0f680b8d920f05904378c99da4ad7a92f127da712de721b10cb2a4a",
+      "script_id": "U1-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Communication",
+          "subtitle": "Make meaning together.",
+          "cards": [
+            [
+              "Explain",
+              "State one clear idea."
+            ],
+            [
+              "Listen",
+              "Attend to the other person’s point."
+            ],
+            [
+              "Clarify",
+              "Check what you understood."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "From words to understanding",
+          "subtitle": "A conversation needs more than a fluent sentence.",
+          "cards": [
+            [
+              "Your idea",
+              "Explain it with an example."
+            ],
+            [
+              "Their meaning",
+              "Listen and ask a follow-up question."
+            ],
+            [
+              "Shared understanding",
+              "Restate the point and check it."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "When a message is unclear",
+          "subtitle": "Predict how a group could check a plan.",
+          "cards": [
+            [
+              "A message",
+              "Notice what information is missing."
+            ],
+            [
+              "A question",
+              "Ask for the detail you need."
+            ],
+            [
+              "A shared plan",
+              "Check that everyone understands."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 2,
+      "expected_old_chapter_sha256": "c9c1852aa566a0bd2ee34109a0f56cd1abdb71e27b5a13ace2d242c0c9820b7c",
+      "script_id": "U2-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Goals and action",
+          "subtitle": "Turn a direction into a workable next step.",
+          "cards": [
+            [
+              "Choose",
+              "Name a goal that matters to you."
+            ],
+            [
+              "Practise",
+              "Try one action you can repeat."
+            ],
+            [
+              "Review",
+              "Use evidence to adjust your plan."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "A goal becomes a practice",
+          "subtitle": "Direction matters; repeated action gives you something to review.",
+          "cards": [
+            [
+              "Direction",
+              "Choose a useful learning aim."
+            ],
+            [
+              "Action",
+              "Make the next step manageable."
+            ],
+            [
+              "Feedback",
+              "Notice progress and revise the plan."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "When a plan does not last",
+          "subtitle": "Predict what a learner might change.",
+          "cards": [
+            [
+              "An ambitious start",
+              "Listen for the intended outcome."
+            ],
+            [
+              "A difficulty",
+              "Notice why the routine is difficult."
+            ],
+            [
+              "A revised approach",
+              "Listen for a more workable next step."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 3,
+      "expected_old_chapter_sha256": "cf181aa9e1c6c3aca40f885d986228af8a25df9de082af64907eb89aac57d1db",
+      "script_id": "U3-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Emotional intelligence",
+          "subtitle": "Notice a feeling before choosing a response.",
+          "cards": [
+            [
+              "Notice",
+              "Identify your first reaction."
+            ],
+            [
+              "Consider",
+              "Ask what else could explain it."
+            ],
+            [
+              "Respond",
+              "Choose a respectful next move."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "Knowledge and emotional skills",
+          "subtitle": "Use this contrast to explain the reading, not to rank people.",
+          "cards": [
+            [
+              "Understanding ideas",
+              "Reason through a question."
+            ],
+            [
+              "Understanding responses",
+              "Notice feelings and intentions."
+            ],
+            [
+              "Working together",
+              "Listen, clarify and choose a response."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Before you assume",
+          "subtitle": "Predict how new information could change a response.",
+          "cards": [
+            [
+              "An event",
+              "Notice what happened."
+            ],
+            [
+              "A first interpretation",
+              "Distinguish an observation from a guess."
+            ],
+            [
+              "Another possibility",
+              "Listen for the information that changes it."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 4,
+      "expected_old_chapter_sha256": "4d63a8569e1d0fe5f80dc823620838034b01383f4601d48f6e9381d57714fc4b",
+      "script_id": "U4-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Money and happiness",
+          "subtitle": "Explore choices, needs and trade-offs.",
+          "cards": [
+            [
+              "Needs",
+              "What matters in this situation?"
+            ],
+            [
+              "Choices",
+              "What could the money make possible?"
+            ],
+            [
+              "Trade-offs",
+              "What might the choice cost?"
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "What could money change?",
+          "subtitle": "Discuss a situation rather than a universal price for happiness.",
+          "cards": [
+            [
+              "Security",
+              "Consider needs and obligations."
+            ],
+            [
+              "Opportunity",
+              "Consider what a choice could enable."
+            ],
+            [
+              "Balance",
+              "Compare benefits with time and other costs."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Choosing how to spend",
+          "subtitle": "Predict how a group could compare options.",
+          "cards": [
+            [
+              "An offer",
+              "Listen for what is available."
+            ],
+            [
+              "Different priorities",
+              "Identify the needs being considered."
+            ],
+            [
+              "A decision",
+              "Notice the reason for the final choice."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 5,
+      "expected_old_chapter_sha256": "878f48b27662213d9052dbaa83e3aa2966b4f5b11517f434411421b8831796f3",
+      "script_id": "U5-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Living with AI",
+          "subtitle": "Use a tool without giving up your judgment.",
+          "cards": [
+            [
+              "Ask",
+              "Set a clear purpose for the tool."
+            ],
+            [
+              "Check",
+              "Compare its answer with evidence."
+            ],
+            [
+              "Decide",
+              "Keep responsibility for the result."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "AI as a learning assistant",
+          "subtitle": "An answer is a starting point for checking, not automatic evidence.",
+          "cards": [
+            [
+              "Generate",
+              "Ask for a suggestion or explanation."
+            ],
+            [
+              "Verify",
+              "Check the source and missing context."
+            ],
+            [
+              "Take responsibility",
+              "Decide what is appropriate to use."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Checking a helpful answer",
+          "subtitle": "Predict why a useful-looking answer might still need checking.",
+          "cards": [
+            [
+              "A suggestion",
+              "Listen for what the tool proposes."
+            ],
+            [
+              "A check",
+              "Notice the evidence used to test it."
+            ],
+            [
+              "A human decision",
+              "Listen for what the person finally does."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 6,
+      "expected_old_chapter_sha256": "7ad290882255b4812c7a1277f51e91af44ad235932bde90f4eccb66bb4175c9c",
+      "script_id": "U6-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Relationships",
+          "subtitle": "Look beyond a feeling to everyday choices.",
+          "cards": [
+            [
+              "Expectations",
+              "Explain what you each need."
+            ],
+            [
+              "Communication",
+              "Listen and discuss differences."
+            ],
+            [
+              "Boundaries",
+              "Respect consent and personal limits."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "Everyday relationship choices",
+          "subtitle": "Use a fictional situation if you prefer.",
+          "cards": [
+            [
+              "Trust",
+              "Act consistently and discuss concerns."
+            ],
+            [
+              "Mutual effort",
+              "Share responsibilities by agreement."
+            ],
+            [
+              "Respect",
+              "Maintain safety, consent and boundaries."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Talking about small choices",
+          "subtitle": "Predict how people could discuss a disagreement.",
+          "cards": [
+            [
+              "Different expectations",
+              "Listen without assuming the cause."
+            ],
+            [
+              "A conversation",
+              "Identify what each person needs."
+            ],
+            [
+              "An agreement",
+              "Notice how the next step is agreed."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 7,
+      "expected_old_chapter_sha256": "108013951dde94a98a0fa8e87b348e0ce827a24eb49e4104d6135472fc221fc1",
+      "script_id": "U7-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "Global connections",
+          "subtitle": "Consider connections and their consequences.",
+          "cards": [
+            [
+              "Connect",
+              "Identify a link across communities."
+            ],
+            [
+              "Compare",
+              "Ask who benefits and who bears costs."
+            ],
+            [
+              "Cooperate",
+              "Look for a workable shared response."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "Connections have consequences",
+          "subtitle": "Consider more than one perspective.",
+          "cards": [
+            [
+              "Exchange",
+              "Trace goods, ideas or information."
+            ],
+            [
+              "Unequal effects",
+              "Ask whose costs are less visible."
+            ],
+            [
+              "Shared decisions",
+              "Compare ways to protect people and places."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Testing a connection",
+          "subtitle": "Predict how a group might try a new market.",
+          "cards": [
+            [
+              "An opportunity",
+              "Listen for the people the project hopes to reach."
+            ],
+            [
+              "A barrier",
+              "Notice what could limit participation."
+            ],
+            [
+              "A trial",
+              "Listen for how the group will review its results."
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "unit": 8,
+      "expected_old_chapter_sha256": "8291feb9b4e17130cd50c871a7c183c574430252f628f8c4347584bfba458ac4",
+      "script_id": "U8-ORIGINAL",
+      "graphics": {
+        "opener": {
+          "kicker": "EXPLORE THE UNIT",
+          "title": "English across communities",
+          "subtitle": "A shared language need not mean identical voices.",
+          "cards": [
+            [
+              "Communicate",
+              "Focus on a meaning others can follow."
+            ],
+            [
+              "Adapt",
+              "Explain an unfamiliar expression."
+            ],
+            [
+              "Include",
+              "Value other languages and experiences."
+            ]
+          ]
+        },
+        "reading": {
+          "kicker": "THINK THROUGH THE READING",
+          "title": "A global language, many voices",
+          "subtitle": "Explore access without treating other languages as obstacles.",
+          "cards": [
+            [
+              "Access",
+              "Ask which opportunities English opens."
+            ],
+            [
+              "Power",
+              "Ask whose knowledge is recognized."
+            ],
+            [
+              "Language diversity",
+              "Consider how other languages can thrive."
+            ]
+          ]
+        },
+        "listening": {
+          "kicker": "LISTEN FOR A CHANGE",
+          "title": "Making yourself understood",
+          "subtitle": "Predict how speakers could repair a misunderstanding.",
+          "cards": [
+            [
+              "An unfamiliar phrase",
+              "Listen for what is not understood."
+            ],
+            [
+              "A clarification",
+              "Notice the question that helps."
+            ],
+            [
+              "A clearer exchange",
+              "Identify what makes the meaning clearer."
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "listening_source": "book/classroom/modules.json",
+  "new_chapter2_description": "Listen to a fictional story read aloud by a teacher or partner. Practise identifying its main point and details, then discuss the wider topic. The script is at the end of each listening chapter for checking after the task.",
+  "new_chapter2_goals": [
+    "listen for a main point and supporting details",
+    "check your understanding against the story",
+    "use topic vocabulary in a discussion",
+    "ask for clarification and compare interpretations",
+    "retell a situation in your own words"
+  ],
+  "text_replacements": [
+    {
+      "unit": 1,
+      "chapter": 2,
+      "original": "What is one listening habit you would like to improve after watching this video? Explain your answer.",
+      "correction": "What is one listening habit you would like to improve after hearing this story? Explain your answer."
+    },
+    {
+      "unit": 3,
+      "chapter": 2,
+      "original": "In your opinion, which strategy from the video would be most useful in your daily life? Why?",
+      "correction": "Which response in the story would be useful in a group you know? Explain why."
+    },
+    {
+      "unit": 5,
+      "chapter": 2,
+      "original": "Which idea from the video did you find most interesting? Why?",
+      "correction": "Which decision in the story did you find most useful to discuss? Why?"
+    },
+    {
+      "unit": 7,
+      "chapter": 2,
+      "original": "Which systemic risk mentioned in the video worries you the most?",
+      "correction": "Which risk associated with an online market would you examine before expanding it?"
+    },
+    {
+      "unit": 7,
+      "chapter": 2,
+      "original": "Goldin says that humanity needs “collective wisdom.” What do you think he means?",
+      "correction": "Why might a group make a better decision after hearing from people who could not take part?"
+    },
+    {
+      "unit": 4,
+      "chapter": 1,
+      "original": "“Money changes people.” Do you agree or disagree? Give reasons and examples.",
+      "correction": "Can having more money change how a person behaves? Explain your view with reasons and examples.",
+      "kind": "q"
+    },
+    {
+      "unit": 4,
+      "chapter": 1,
+      "original": "“Money is a wonderful servant, but a terrible master.”",
+      "correction": "How can someone use money to support a good life without making wealth their only goal?"
+    },
+    {
+      "unit": 4,
+      "chapter": 1,
+      "original": "Use at least six words or phrases from Vocabulary Preview to explain the quotation. Distinguish its message from your own judgment.",
+      "correction": "Use at least six words or phrases from Vocabulary Preview. Explain your position, give an example, and consider a different view."
+    },
+    {
+      "unit": 5,
+      "chapter": 1,
+      "original": "Share your ideas about the quote:",
+      "correction": "Examine this claim:"
+    },
+    {
+      "unit": 5,
+      "chapter": 1,
+      "original": "“The most successful people in the future may not be those who compete with AI, but those who learn how to work alongside it.”",
+      "correction": "Learning to use an AI tool can be useful, but it does not remove the need for human judgment."
+    },
+    {
+      "unit": 5,
+      "chapter": 1,
+      "original": "Present your answers to the class.",
+      "correction": "Find two details in the passage that support or qualify the claim. Explain one limit or uncertainty, then share your reasoning with the class."
+    },
+    {
+      "unit": 1,
+      "chapter": 2,
+      "original": "Why are open-ended questions more effective than simple yes/no questions?",
+      "correction": "When might an open-ended question be more useful than a yes/no question? Give an example."
+    },
+    {
+      "unit": 1,
+      "chapter": 2,
+      "original": "According to the speaker, why shouldn’t you plan your response while the other person is talking?",
+      "correction": "What might you miss if you plan your response while another person is still talking?"
+    },
+    {
+      "unit": 2,
+      "chapter": 2,
+      "original": "The speaker says we should believe in possibility instead of limiting ourselves with goals.",
+      "correction": "Consider this view: a goal should guide your practice without ruling out other possibilities."
+    },
+    {
+      "unit": 3,
+      "chapter": 2,
+      "original": "What is the Process Model?",
+      "correction": "What could the narrator do before speaking if they felt frustrated with Kareem?"
+    },
+    {
+      "unit": 3,
+      "chapter": 2,
+      "original": "According to the speaker, why is learning to notice your emotions important?",
+      "correction": "How might noticing your emotions help you respond to a disagreement? Give an example."
+    },
+    {
+      "unit": 3,
+      "chapter": 2,
+      "original": "The speaker says that people who are fixated on happiness often experience disappointment and frustration.",
+      "correction": "Consider this view: trying to feel happy all the time can make ordinary disappointments harder to accept."
+    },
+    {
+      "unit": 4,
+      "chapter": 2,
+      "original": "Do you agree with the speaker that money can buy happiness if it is spent on other people? Why or why not?",
+      "correction": "In the story, the group chooses books and better lighting. What might make this a useful choice? Would another choice be better?"
+    },
+    {
+      "unit": 4,
+      "chapter": 2,
+      "original": "The speaker says many lottery winners go into debt and damage their relationships. Why do you think this happens?",
+      "correction": "How might a sudden increase in income create pressure in someone’s relationships? Give an example."
+    },
+    {
+      "unit": 4,
+      "chapter": 2,
+      "original": "The speaker suggests that pro-social behavior increases happiness. Besides giving money, what other pro-social actions can people take?",
+      "correction": "Besides giving money, what other pro-social actions could help a group or community? Give an example."
+    },
+    {
+      "unit": 4,
+      "chapter": 2,
+      "original": "The research found that the amount of money doesn’t matter as much as how it is spent. Do you agree? Give reasons and examples.",
+      "correction": "Which matters more in the situation you discuss: how much someone spends or what the money makes possible? Give reasons and examples.",
+      "kind": "q"
+    },
+    {
+      "unit": 4,
+      "chapter": 2,
+      "original": "Do you think the speaker’s findings hold true in your country? Why or why not?",
+      "correction": "Could pooling money solve a practical problem in a community you know? What might make it difficult?"
+    },
+    {
+      "unit": 6,
+      "chapter": 2,
+      "original": "The speaker says, “You don’t fall out of love. You fall out of loving.” Do you agree or disagree? Explain your answer with examples.",
+      "correction": "Can everyday actions matter more than a declaration of love? Explain your view with examples, and consider a different view."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Modern editorial design review
 
-> **Current revision status — 18 October 2026:** the substantive revision now covers all 32 chapters and eight unit readings/openers. Current exports: **171 interior / 172 reader pages**; **22 release gates pass**. The teacher pack includes 74 closed-reading answers/judgments across all eight units. Exact titles remain unchanged. All-page overviews and selected readable pages were reviewed, not every page at full size or every retained word independently. Commercial clearance remains on hold. This status supersedes historical counts and fingerprints below. See [REWRITE-PROGRESS.md](REWRITE-PROGRESS.md) and `book/artifacts/rewrite-progress.json`.
+> **Current edition update — 18 October 2026:** the author-approved self-contained edition replaces historical video lessons, manuscript artwork and selected quotation prompts with original course materials. Current outputs: 163 interior / 164 reading pages; 24 gates pass; student/teacher/companion packs are 18/33/17 pages. All exact chapter titles remain. The discussion below is historical, not the current dependency or clearance register. See PUBLICATION-READINESS.md, UNRESOLVED-ISSUES.md and REWRITE-PROGRESS.md. Independent proof, publisher approval, accessibility/device testing and printer-specific approval are not claimed.
 
 18 October 2026 · Master Speaking · Abdul Raziq Nazari
 

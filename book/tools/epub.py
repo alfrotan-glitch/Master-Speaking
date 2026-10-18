@@ -331,9 +331,14 @@ def main():
     # ---- css + images -----------------------------------------------------
     open(os.path.join(WORK, 'style.css'), 'w').write(CSS)
     manifest.append(('css', 'style.css', 'text/css', None))
-    for f in sorted(os.listdir(IMAGES_SRC)):
-        if f.endswith('.gif'):
-            continue
+    # Include only referenced artwork. Historical manuscript assets stay in
+    # the repository for audit, never hidden in a self-contained publication.
+    referenced = set()
+    for fname in os.listdir(WORK):
+        if fname.endswith('.xhtml'):
+            for image in etree.parse(os.path.join(WORK, fname)).xpath('//x:img', namespaces=NS):
+                referenced.add(os.path.basename(image.get('src')))
+    for f in sorted(referenced - {'cover.png'}):
         shutil.copy(os.path.join(IMAGES_SRC, f), os.path.join(WORK, 'images', f))
         mt = 'image/png' if f.endswith('.png') else 'image/jpeg'
         manifest.append(('img-' + f.rsplit('.',1)[0], 'images/' + f, mt, None))
@@ -383,14 +388,14 @@ def main():
     dc('creator', 'Abdul Raziq Nazari')
     dc('language', 'en')
     dc('date', datetime.date.today().isoformat())
-    dc('description', 'A speaking course for advanced English learners: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.')
+    dc('description', 'An English speaking course: eight units on communication, goals, emotional intelligence, money, AI, marriage, globalization, and English as a lingua franca.')
     # Describe implemented features without claiming WCAG/EPUB conformance.
     for prop, value in [
         ('accessMode', 'textual'), ('accessMode', 'visual'),
         ('accessibilityFeature', 'alternativeText'),
         ('accessibilityFeature', 'structuralNavigation'),
         ('accessibilityFeature', 'tableOfContents'),
-        ('accessibilitySummary', 'Reflowable text with image descriptions, headings and linked contents. Listening exercises require external recordings. Accessibility conformance has not been evaluated.')]:
+        ('accessibilitySummary', 'Reflowable text with image descriptions, headings and linked contents. Listening exercises use included fictional scripts read aloud by a teacher or partner; no recorded audio is supplied. Accessibility conformance has not been evaluated.')]:
         etree.SubElement(md, f'{{{OPF}}}meta', {'property': 'schema:' + prop}).text = value
     meta = etree.SubElement(md, f'{{{OPF}}}meta', {'property': 'dcterms:modified'})
     meta.text = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')

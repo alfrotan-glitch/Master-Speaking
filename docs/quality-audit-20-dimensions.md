@@ -6,7 +6,7 @@ A PASS establishes only the specific automated invariant; it is not a score of 1
 
 | # | Lens | State | Observed evidence / outstanding test |
 |---:|---|---|---|
-| 1 | Source integrity & metadata | **PASS** | Original/proof tokens 24209/24209; publisher TOEFL HOUSE |
+| 1 | Source integrity & metadata | **PASS** | Original/proof tokens 24209/24208; publisher TOEFL HOUSE |
 | 2 | Audience and measurable learning objectives | **REVIEW** | Expert inspection and course-level learning-outcome review required |
 | 3 | Course architecture and unit consistency | **REVIEW** | 18 top-level topic headings and 150 section headings |
 | 4 | Skill progression and cognitive load | **REVIEW** | Review learning sequence and activity demand with real learners |
@@ -24,7 +24,7 @@ A PASS establishes only the specific automated invariant; it is not a score of 1
 | 16 | Typography, layout and print proof | **REVIEW** | 121/121 A4 pages; full visual and physical proof remain unverified |
 | 17 | Images, alt text and accessible contrast | **BLOCKER** | 52 graphic objects; 3 lack alt/title; image-by-image descriptions and color contrast inspection required |
 | 18 | EPUB internal navigation and links | **PASS** | 12 curated PDF bookmarks; 65 checked internal links; 0 broken |
-| 19 | Cross-format text and image fidelity | **REVIEW** | Original/proof tokens 24209/24209; compare images and tables in rendered copies |
+| 19 | Cross-format text and image fidelity | **REVIEW** | Original/proof tokens 24209/24208; compare images and tables in rendered copies |
 | 20 | Intellectual property, sources and approval | **REVIEW** | Rights for media, bibliography, ISBN, and independent publication signoff required |
 
 ## Graphics needing meaningful alt text / decorative treatment

@@ -47,6 +47,8 @@ jobs:
         run: python tools/build_master_teacher_publication.py
       - name: Enforce twenty-lens structural audit and record expert review gaps
         run: python tools/quality_audit_20.py
+      - name: Regenerate Grammar Student and Teacher books from authoritative sources
+        run: python tools/build_publication.py --all
       - name: Validate both Grammar for Special Speaking editions
         run: |
           python build_spec/qa.py
@@ -87,7 +89,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md docs/listening-lesson-review.md docs/master-unit-anchor-map.md docs/master-teacher-publication-audit.md
+          git add -- "Grammar for Special Speaking (TOEFL House).docx" "Grammar for Special Speaking — Teacher's Book (TOEFL House).docx" dist/ proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md docs/listening-lesson-review.md docs/master-unit-anchor-map.md docs/master-teacher-publication-audit.md
           if ! git diff --cached --quiet; then
             git commit -m "build: publish structurally checked Master Speaking proof editions"
             for attempt in 1 2 3; do

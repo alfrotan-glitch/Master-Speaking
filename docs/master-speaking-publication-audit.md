@@ -4,6 +4,7 @@
 
 - **source words estimate:** 24051
 - **working proof heading hierarchy:** {'topic_headings': 16, 'section_headings': 141, 'demoted_prompts': 305}
+- **text box accessibility recovery:** {'derived_from_text': 25, 'unresolved': 3, 'already_present': 24}
 - **pdf extracted words:** 25415
 - **epub extracted words:** 24130
 - **pdf pages:** 121
@@ -14,7 +15,7 @@
 - **source media files:** 25
 - **epub embedded images:** 24
 - **source graphic properties:** 52
-- **proof files:** {'Master Speaking (TOEFL House).docx': 5939141, 'Master Speaking (TOEFL House).pdf': 4149175, 'Master Speaking (TOEFL House).epub': 5618956, 'Master Speaking (TOEFL House).html': 7699503}
+- **proof files:** {'Master Speaking (TOEFL House).docx': 5939510, 'Master Speaking (TOEFL House).pdf': 4158431, 'Master Speaking (TOEFL House).epub': 5618954, 'Master Speaking (TOEFL House).html': 7699503}
 - **distinct heading 1 2 labels:** 33
 
 The original Master Speaking.docx is preserved unchanged. Review all pages, graphics, exercise keys, media links, navigation and EPUB rendition on real devices before approving a release.

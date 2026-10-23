@@ -22,44 +22,19 @@ A PASS establishes only the specific automated invariant; it is not a score of 1
 | 14 | Cultural inclusion and safe participation | **REVIEW** | Offer non-disclosure options and culturally fair topics |
 | 15 | Editable Word semantic headings | **PASS** | Topic headings=18, accidental question headings=0 |
 | 16 | Typography, layout and print proof | **REVIEW** | 121/121 A4 pages; full visual and physical proof remain unverified |
-| 17 | Images, alt text and accessible contrast | **BLOCKER** | 52 graphic objects; 28 lack alt/title; image-by-image descriptions and color contrast inspection required |
+| 17 | Images, alt text and accessible contrast | **BLOCKER** | 52 graphic objects; 3 lack alt/title; image-by-image descriptions and color contrast inspection required |
 | 18 | EPUB internal navigation and links | **PASS** | 12 curated PDF bookmarks; 65 checked internal links; 0 broken |
 | 19 | Cross-format text and image fidelity | **REVIEW** | Original/proof tokens 24209/24209; compare images and tables in rendered copies |
 | 20 | Intellectual property, sources and approval | **REVIEW** | Rights for media, bibliography, ISBN, and independent publication signoff required |
 
 ## Graphics needing meaningful alt text / decorative treatment
-28 elements without an alt/title description. No invented visual descriptions have been added.
+3 elements without an alt/title description. No invented visual descriptions have been added.
 
 | Number | Name / ID |
 |---:|---|
 | 1 | Text Box 35 |
 | 2 | Text Box 48 |
-| 3 | Text Box 51 |
 | 4 | Text Box 54 |
-| 5 | Text Box 2 |
-| 6 | Text Box 1 |
-| 8 | Text Box 7 |
-| 12 | Text Box 10 |
-| 13 | Text Box 11 |
-| 14 | Text Box 13 |
-| 18 | Text Box 6 |
-| 19 | Text Box 5 |
-| 20 | Text Box 17 |
-| 23 | Text Box 22 |
-| 24 | Text Box 21 |
-| 26 | Text Box 25 |
-| 29 | Text Box 19 |
-| 30 | Text Box 3 |
-| 32 | Text Box 27 |
-| 35 | Text Box 32 |
-| 36 | Text Box 31 |
-| 38 | Text Box 41 |
-| 41 | Text Box 46 |
-| 42 | Text Box 47 |
-| 44 | Text Box 53 |
-| 47 | Text Box 58 |
-| 48 | Text Box 59 |
-| 50 | Text Box 30 |
 
 ## Blocking automated defects
 

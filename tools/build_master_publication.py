@@ -9,6 +9,7 @@ from __future__ import annotations
 import json
 import re
 import shutil
+import sys
 import subprocess
 import zipfile
 from pathlib import Path
@@ -17,6 +18,8 @@ import pymupdf
 from docx import Document
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from listening_resources import LISTENING_SOURCES
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"build_master"))
+from integrate_studios import insert_studios
 from docx.enum.style import WD_STYLE_TYPE
 from docx.oxml import OxmlElement
 from ebooklib import epub
@@ -436,6 +439,7 @@ def main():
     alt_recovery = _recover_textbox_alternatives(original)
     copyedit_counts = _verified_copyedits(original)
     contextual_fixes = _fix_contextual_listening_errors(original)
+    inserted_studios = insert_studios(original)
     verified_external_listening_links = _append_student_listening_index(original)
     original.save(WORKING)
 
@@ -515,6 +519,7 @@ def main():
         "text_box_accessibility_recovery": alt_recovery,
         "verified_copyedit_counts": copyedit_counts,
         "contextual_listening_edits": contextual_fixes,
+        "authored_speaking_studios": inserted_studios,
         "official_listening_resource_links": verified_external_listening_links,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,

@@ -101,19 +101,22 @@ def _clean(s):
 
 
 def _anchors(doc):
-    """Only actual standalone unit titles; ignore multi-line contents paragraphs."""
+    """Chapter-1 starts are the real eight unit boundaries.
+
+    The first pages contain a misleading contents section with multi-line UNIT
+    entries; do not anchor to those text paragraphs.
+    """
     found=defaultdict(list)
+    starts=[]
     for idx,p in enumerate(doc.paragraphs):
         t=_clean(p.text)
-        match=re.match(r"(?i)^UNIT\s*([1-8])\s*[:—–.\-]\s*(.+)$",t)
-        if match and 8<len(t)<115 and "\n" not in p.text:
-            found[int(match.group(1))].append((idx,p,t))
-    # Last standalone occurrence avoids contents-page duplicates when repeated.
-    chosen={}
-    for n in range(1,9):
-        candidates=found.get(n,[])
-        if candidates:
-            chosen[n]=candidates[-1]
+        if re.match(r"(?i)^chapter\s+1\s*:\s*speaking\s+through\s+reading$",t):
+            starts.append((idx,p,t))
+    for n,item in enumerate(starts,1):
+        found[n].append(item)
+    if len(starts)!=8:
+        raise AssertionError(f"Expected 8 manuscript Chapter 1 starts, got {len(starts)}: {[x[0] for x in starts]}")
+    chosen={n:found[n][0] for n in range(1,9)}
     return chosen,found
 
 

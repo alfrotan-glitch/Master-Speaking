@@ -15,6 +15,8 @@ from pathlib import Path
 
 import pymupdf
 from docx import Document
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+from listening_resources import LISTENING_SOURCES
 from docx.enum.style import WD_STYLE_TYPE
 from docx.oxml import OxmlElement
 from ebooklib import epub
@@ -165,6 +167,92 @@ SECTION_HEADINGS = {
 }
 
 
+
+
+
+def _append_hyperlink(paragraph, label, url):
+    element=OxmlElement("w:hyperlink")
+    element.set(qn("r:id"), paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True))
+    run=OxmlElement("w:r")
+    props=OxmlElement("w:rPr")
+    colour=OxmlElement("w:color")
+    colour.set(qn("w:val"), "0E6B6B")
+    props.append(colour)
+    underline=OxmlElement("w:u")
+    underline.set(qn("w:val"), "single")
+    props.append(underline)
+    run.append(props)
+    txt=OxmlElement("w:t")
+    txt.text=label
+    run.append(txt)
+    element.append(run)
+    paragraph._p.append(element)
+
+
+def _append_student_listening_index(document):
+    """Make existing listening questions actually point to original publishers."""
+    document.add_page_break()
+    document.add_heading("LISTENING AND VIDEO RESOURCE INDEX",level=1)
+    document.add_paragraph(
+        "These original-publisher resources correspond to the listening questions "
+        "in Units 2–8. Open the official link before class and listen twice. "
+        "An internet connection may be required. The external videos are not "
+        "reproduced in this book.")
+    for number,unit,speaker,url in LISTENING_SOURCES:
+        document.add_heading(f"Unit {number} — {unit}",level=2)
+        paragraph=document.add_paragraph()
+        paragraph.add_run(speaker + ". ")
+        if url:
+            _append_hyperlink(paragraph, "Open original video", url)
+        else:
+            paragraph.add_run(
+                "A teacher-read original script and answer guide are included "
+                "in the companion Teacher Listening Guide.")
+    document.add_paragraph(
+        "Before assigning the questions, the teacher should check that each "
+        "source can be played in the classroom. If a video cannot be accessed, "
+        "use an appropriate teacher-provided alternative instead.")
+    document.add_heading("Optional research note — money and well-being",level=2)
+    source=document.add_paragraph()
+    source.add_run(
+        "Research on income and happiness is more nuanced than a fixed income "
+        "threshold; results differ across individuals and measures. "
+        "For a research-based discussion see Killingsworth, Kahneman & Mellers (2023), "
+        "Income and emotional well-being: A conflict resolved. ")
+    _append_hyperlink(source,"Read the open research abstract",
+        "https://pubmed.ncbi.nlm.nih.gov/36857342/")
+    return sum(url is not None for _,_,_,url in LISTENING_SOURCES)
+
+
+def _fix_contextual_listening_errors(document):
+    """Proof-only corrections that require unit context, not global replace."""
+    para=list(document.paragraphs)
+    corrected={"incorrect_unit6_word":0,"unit6_worked_title":0,
+               "unit6_relationship_checkbox":0,"pronoun_agreement":0,
+               "collocation_restrictions":0}
+    for p in para:
+        corrected["incorrect_unit6_word"]+=_edit_text_in_runs(
+            p,"ducation, employment, healthcare, communication, entertainment",
+            "Education, employment, healthcare, communication and entertainment")
+        corrected["unit6_relationship_checkbox"]+=_edit_text_in_runs(
+            p,"The speaker's research involved 450 couples.",
+            "_____ The speaker's research involved 450 couples.")
+        corrected["pronoun_agreement"]+=_edit_text_in_runs(
+            p,"Choose one and explain their choice.",
+            "Choose one and explain your choice.")
+        corrected["collocation_restrictions"]+=_edit_text_in_runs(
+            p,"Should governments pose restrictions on",
+            "Should governments impose restrictions on")
+    for i,p in enumerate(para):
+        if p.text.strip()=="The Science of a Lasting Relationship":
+            for q in para[i+1:i+18]:
+                if q.text.strip()=="Can Money Buy Happiness?":
+                    corrected["unit6_worked_title"]+=_edit_text_in_runs(
+                        q,"Can Money Buy Happiness?","The Science of a Lasting Relationship")
+                    break
+    if corrected["incorrect_unit6_word"]<1 or corrected["unit6_worked_title"]<1:
+        raise AssertionError(f"Known content defects not corrected: {corrected}")
+    return corrected
 
 
 def _edit_text_in_runs(paragraph, old, new):
@@ -331,6 +419,8 @@ def main():
     heading_fixes = _normalise_proof_heading_hierarchy(original)
     alt_recovery = _recover_textbox_alternatives(original)
     copyedit_counts = _verified_copyedits(original)
+    contextual_fixes = _fix_contextual_listening_errors(original)
+    verified_external_listening_links = _append_student_listening_index(original)
     original.save(WORKING)
 
     profile = "file:///tmp/libreoffice-master-speaking-proof"
@@ -408,6 +498,8 @@ def main():
         "working_proof_heading_hierarchy": heading_fixes,
         "text_box_accessibility_recovery": alt_recovery,
         "verified_copyedit_counts": copyedit_counts,
+        "contextual_listening_edits": contextual_fixes,
+        "official_listening_resource_links": verified_external_listening_links,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,
         "pdf_pages": pdf_pages,

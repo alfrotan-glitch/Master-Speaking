@@ -16,6 +16,7 @@ from docx import Document
 from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT
 from docx.enum.text import WD_ALIGN_PARAGRAPH, WD_BREAK
 from docx.oxml import OxmlElement
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.style import WD_STYLE_TYPE
@@ -49,6 +50,28 @@ def para(doc,txt="",style=None,bold=False,color=None,size=None):
     if bold: r.bold=True
     if color: r.font.color.rgb=color
     if size: r.font.size=Pt(size)
+    return p
+
+
+
+def publisher_link(doc,label,url):
+    p=doc.add_paragraph()
+    h=OxmlElement("w:hyperlink")
+    h.set(qn("r:id"),p.part.relate_to(url,RT.HYPERLINK,is_external=True))
+    r=OxmlElement("w:r")
+    props=OxmlElement("w:rPr")
+    col=OxmlElement("w:color")
+    col.set(qn("w:val"),"0D696E")
+    props.append(col)
+    under=OxmlElement("w:u")
+    under.set(qn("w:val"),"single")
+    props.append(under)
+    r.append(props)
+    txt=OxmlElement("w:t")
+    txt.text=label
+    r.append(txt)
+    h.append(r)
+    p._p.append(h)
     return p
 
 
@@ -271,7 +294,7 @@ def listening(doc):
     for n,theme,title,url in LISTENING_SOURCES[1:]:
         heading(doc,f"Unit {n}: {theme}",3)
         para(doc,title,bold=True)
-        para(doc,url,color=TEAL,size=9)
+        publisher_link(doc,"Open original video on the publisher's website",url)
         para(doc,"Before assessment: confirm every multiple-choice and True/False key against the actual playable recording. The teacher should have a legal transcript or suitable alternative available. No unverified key is asserted here.",style="Studio Note")
     heading(doc,"When the source cannot be played",2)
     para(doc,"Replace a viewing-dependent score with an original teacher-read passage and newly aligned questions. Keep the same speaking goal, but do not silently substitute unrelated media and retain the old answer key.")

@@ -129,6 +129,10 @@ def validate():
     if not all(abs(s.page_width.inches-8.27)<.03 and
                abs(s.page_height.inches-11.69)<.03 for s in doc.sections):
         raise AssertionError("Teacher DOCX is not A4")
+    teacher_urls=[str(rel.target_ref) for rel in doc.part.rels.values()
+                  if rel.is_external and "ted.com/talks/" in str(rel.target_ref)]
+    if len(teacher_urls)!=7:
+        raise AssertionError(f"Teacher Book should contain seven clickable video sources; found {len(teacher_urls)}")
     with pymupdf.open(PDF) as pdf:
         count=len(pdf)
         contents="\n".join(p.get_text() for p in pdf)

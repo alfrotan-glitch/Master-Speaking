@@ -372,6 +372,13 @@ def _build_epub_for(html_path: Path, epub_path: Path, title: str, uuid: str):
     body = tree.find(".//body")
     if body is None:
         raise RuntimeError("HTML source has no body")
+    # The standalone browser edition contains its own <nav>. EPUB creates a
+    # separate nav.xhtml; copying the browser nav into book.xhtml duplicates
+    # anchor IDs (notably nav-contents) and violates EPUB conformance.
+    for browser_nav in list(body.xpath(".//nav")):
+        parent = browser_nav.getparent()
+        if parent is not None:
+            parent.remove(browser_nav)
     content_root = etree.Element("div")
     entries = []
     seen = set()
@@ -445,7 +452,7 @@ def build_epub():
 
 
 def build_teacher_epub():
-    return _build_epub_for(TEACHER_HTML, TEACHER_EPUB, TEACHER_TITLE, "urn:uuid:9e1a2c3d-7b1f-4e6a-9302-teacher-book-01")
+    return _build_epub_for(TEACHER_HTML, TEACHER_EPUB, TEACHER_TITLE, "urn:uuid:9e1a2c3d-7b1f-4e6a-9302-005eedb00101")
 
 
 def verify_epub(path):
@@ -463,6 +470,10 @@ def verify_epub(path):
         for name in names:
             if name.endswith((".xhtml", ".opf", ".ncx", ".xml")):
                 etree.fromstring(z.read(name), parser)
+        bookxml = etree.fromstring(z.read("EPUB/book.xhtml"), parser)
+        all_ids = bookxml.xpath("//@id")
+        if len(all_ids) != len(set(all_ids)):
+            raise RuntimeError(f"EPUB contains duplicate XHTML element IDs in {path.name}")
         xhtml = z.read("EPUB/book.xhtml").decode("utf-8")
         # Student book vs teacher book: check appropriate tokens
         if "Teacher" in str(path):

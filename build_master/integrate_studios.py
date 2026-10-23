@@ -171,9 +171,12 @@ def insert_studios(document):
     results=[]
     for u in UNITS:
         n=u["unit"]
-        original_ids={id(el) for el in document.element.body}
+        # Keep strong references to existing lxml nodes; comparing their
+        # transient Python id() values can misclassify the original document.
+        before_nodes=list(document.element.body)
         _write_studio(document,u)
-        new_nodes=[el for el in document.element.body if id(el) not in original_ids and el.tag!=qn("w:sectPr")]
+        new_nodes=[el for el in document.element.body if el not in before_nodes
+                   and el.tag!=qn("w:sectPr")]
         if len(new_nodes)<14:
             raise AssertionError(f"Unit {n} studio content unexpectedly short: {len(new_nodes)} nodes")
         if n<8:

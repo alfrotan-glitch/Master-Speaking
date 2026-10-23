@@ -5,7 +5,7 @@
 - **teacher pdf bookmarks:** 13
 - **teacher docx headings:** 121
 - **teacher paragraphs:** 652
-- **teacher files:** {"Master Speaking — Teacher's Book (TOEFL House).docx": 57640, "Master Speaking — Teacher's Book (TOEFL House).pdf": 292932, "Master Speaking — Teacher's Book (TOEFL House).epub": 37621, "Master Speaking — Teacher's Book (TOEFL House).html": 72452}
+- **teacher files:** {"Master Speaking — Teacher's Book (TOEFL House).docx": 57796, "Master Speaking — Teacher's Book (TOEFL House).pdf": 297165, "Master Speaking — Teacher's Book (TOEFL House).epub": 37669, "Master Speaking — Teacher's Book (TOEFL House).html": 72956}
 - **scope:** Technical edition checks, not signed pedagogical/rights/visual approval
 
 The eight original teacher guides share the student studio data source; original Unit 1 audio is teacher-authored. Third-party media is linked, not copied. Qualitative editing and physical proof still require review.

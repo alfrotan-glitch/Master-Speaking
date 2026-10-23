@@ -15,6 +15,8 @@ from pathlib import Path
 
 import pymupdf
 from docx import Document
+from docx.enum.style import WD_STYLE_TYPE
+from docx.oxml import OxmlElement
 from ebooklib import epub
 from lxml import etree
 from docx.oxml.ns import qn
@@ -149,6 +151,67 @@ def _curate_epub_navigation():
     tmp.replace(EPUB)
     return candidates
 
+
+# Structured hierarchy for the *working proof only*. The original file stays
+# unchanged. An exercise prompt must not be marked up as a chapter heading.
+SECTION_HEADINGS = {
+    "vocabulary preview", "vocabulary check", "critical thinking",
+    "speaking through reading", "think pair share", "before listening",
+    "listening strategy", "listening comprehension", "homework",
+    "speaking toolbox", "vocabulary activation", "guided discussion",
+    "speaking challenge", "pronunciation clinic", "presentation toolbox",
+    "research task", "organizing your presentation", "group discussion",
+    "mini debate", "reading comprehension",
+}
+
+
+def _normalise_proof_heading_hierarchy(document):
+    """Retain the existing visible typography, correct semantic outline levels.
+
+    Styles derived from original headings inherit their appearance, but explicitly
+    set outlineLvl=9 so exercise questions never appear in Word's Navigation pane.
+    """
+    derived = {}
+    changes = {"topic_headings": 0, "section_headings": 0,
+               "demoted_prompts": 0}
+    paras = list(document.paragraphs)
+    for tab in document.tables:
+        for row in tab.rows:
+            for cell in row.cells:
+                paras.extend(cell.paragraphs)
+    for p in paras:
+        if not p.text.strip() or not p.style:
+            continue
+        original_style = p.style.name
+        if not re.match(r"^Heading [123]$", original_style):
+            continue
+        topic = _match_topic(p.text)
+        section = _norm_nav(p.text) in SECTION_HEADINGS
+        if topic:
+            p.style = document.styles["Heading 1"]
+            changes["topic_headings"] += 1
+        elif section:
+            p.style = document.styles["Heading 2"]
+            changes["section_headings"] += 1
+        else:
+            if original_style not in derived:
+                label = "Speaking Exercise Label " + original_style[-1]
+                st = document.styles[label] if label in document.styles else document.styles.add_style(label, WD_STYLE_TYPE.PARAGRAPH)
+                st.base_style = document.styles[original_style]
+                ppr = st.element.get_or_add_pPr()
+                outline = ppr.find(qn("w:outlineLvl"))
+                if outline is None:
+                    outline = OxmlElement("w:outlineLvl")
+                    ppr.append(outline)
+                outline.set(qn("w:val"), "9")
+                derived[original_style] = st
+            p.style = derived[original_style]
+            changes["demoted_prompts"] += 1
+    if changes["topic_headings"] < 10 or changes["demoted_prompts"] < 50:
+        raise AssertionError(f"Unexpected heading classification: {changes}")
+    return changes
+
+
 def main():
     if not SOURCE.is_file():
         raise FileNotFoundError(SOURCE)
@@ -171,6 +234,7 @@ def main():
     original.core_properties.author = "TOEFL HOUSE"
     original.core_properties.subject = "English speaking coursebook"
     original.core_properties.keywords = "speaking, communication, TOEFL HOUSE"
+    heading_fixes = _normalise_proof_heading_hierarchy(original)
     original.save(WORKING)
 
     profile = "file:///tmp/libreoffice-master-speaking-proof"
@@ -197,6 +261,18 @@ def main():
                        abs(p.rect.height - 841.89) < 3 for p in pdf)
         pdf_bookmarks = len(pdf.get_toc())
     pdf_words = words(pdf_text)
+
+    # Word's Navigation pane should show true topic/section headings,
+    # never hundreds of question and exercise text headings.
+    inspect = Document(WORKING)
+    named = [(p.style.name, p.text.strip()) for p in inspect.paragraphs
+             if p.text.strip() and p.style.name.startswith("Heading ")]
+    if sum(k == "Heading 1" for k, _ in named) < 10:
+        raise AssertionError("Working DOCX lost topical Heading 1 entries")
+    if any(k.startswith("Heading") and
+           ("multiple choice" in s.casefold() or s.startswith("_____"))
+           for k, s in named):
+        raise AssertionError("Exercise text still appears as Word navigation headings")
 
     with zipfile.ZipFile(EPUB) as archive:
         names = archive.namelist()
@@ -233,6 +309,7 @@ def main():
 
     report = {
         "source_words_estimate": source_words,
+        "working_proof_heading_hierarchy": heading_fixes,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,
         "pdf_pages": pdf_pages,

@@ -28,6 +28,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y fonts-dejavu-core
           python -m pip install -r build_spec/requirements.txt
+      - name: Audit independent Master Speaking manuscript
+        run: python tools/audit_master_speaking.py
       - name: Rebuild student and teacher editions
         run: python tools/build_publication.py --all
       - name: Verify editorial QA
@@ -42,7 +44,16 @@ jobs:
           git add -- "Grammar for Special Speaking (TOEFL House).docx" "Grammar for Special Speaking — Teacher's Book (TOEFL House).docx" dist/
           if ! git diff --cached --quiet; then
             git commit -m "build: regenerate validated speaking-book editions"
-            git push origin HEAD:editorial/unified-speaking-edition-20261023
+            for attempt in 1 2 3; do
+              if git push origin HEAD:editorial/unified-speaking-edition-20261023; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "Publishing artifacts failed after three attempts" >&2
+                exit 1
+              fi
+              sleep $((5 * attempt))
+            done
           fi
       - name: Upload proofing builds
         uses: actions/upload-artifact@v4

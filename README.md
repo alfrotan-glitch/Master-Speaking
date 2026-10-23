@@ -6,14 +6,25 @@ This repository houses **two separate but complementary English-speaking courseb
 
 ## Master Speaking — original coursebook
 
-The 24,000-word original `Master Speaking.docx` is preserved without content changes. Reproducible **proof** editions now exist for review; they are not represented as independently approved, fully edited print releases.
+The independent original `Master Speaking.docx` is preserved unchanged. The revised, classroom-focused **Student Book** now incorporates eight original, real-life Speaking Studios within their corresponding units, with partner role-plays, usable expressions, sample interactions, mini-presentations, reflection, and a final speaking performance. The eight-unit **Teacher's Book** is authored from the same lesson data, so objectives, tasks and assessment guidance stay aligned.
 
-- [A4 PDF — 123-page print proof](proof/Master%20Speaking%20%28TOEFL%20House%29.pdf)
-- [EPUB3 — ebook proof with curated topic navigation](proof/Master%20Speaking%20%28TOEFL%20House%29.epub)
-- [DOCX — editable working proof](proof/Master%20Speaking%20%28TOEFL%20House%29.docx)
-- [HTML — standalone browser proof](proof/Master%20Speaking%20%28TOEFL%20House%29.html)
+**Master Speaking — Student Book (expanded classroom proof)**
 
-The PDF and EPUB contain 12 topic-oriented navigation entries, rather than hundreds of exercise-question bookmarks. See the [Master Speaking publication audit](docs/master-speaking-publication-audit.md), [heading inventory](docs/master-speaking-heading-inventory.md), and [production instructions](build_master/README.md).
+- [A4 PDF](proof/Master%20Speaking%20%28TOEFL%20House%29.pdf)
+- [EPUB3 ebook](proof/Master%20Speaking%20%28TOEFL%20House%29.epub)
+- [Editable Word](proof/Master%20Speaking%20%28TOEFL%20House%29.docx)
+- [Browser/print HTML](proof/Master%20Speaking%20%28TOEFL%20House%29.html)
+
+**Master Speaking — Teacher's Book (new eight-unit companion)**
+
+- [A4 PDF](proof/Master%20Speaking%20%E2%80%94%20Teacher%27s%20Book%20%28TOEFL%20House%29.pdf)
+- [EPUB3 ebook](proof/Master%20Speaking%20%E2%80%94%20Teacher%27s%20Book%20%28TOEFL%20House%29.epub)
+- [Editable Word](proof/Master%20Speaking%20%E2%80%94%20Teacher%27s%20Book%20%28TOEFL%20House%29.docx)
+- [Browser HTML](proof/Master%20Speaking%20%E2%80%94%20Teacher%27s%20Book%20%28TOEFL%20House%29.html)
+
+For classes without reliable internet, Units 2–8 now contain **seven separate, original teacher-read listening options with their own student questions and teacher answer keys**, alongside the original Unit 1 listening passage. The seven existing externally hosted video resources remain optional: they are linked, not redistributed. Teacher-book tasks make an optional connection to the sixteen *Grammar for Special Speaking* lessons without dividing learners into separate labelled groups.
+
+See the [Master Speaking publication audit](docs/master-speaking-publication-audit.md), [Teacher edition audit](docs/master-teacher-publication-audit.md), [twenty-lens quality audit](docs/quality-audit-20-dimensions.md), and [production instructions](build_master/README.md). These are reproducibly built **publication proofs**, not evidence of a finished classroom trial, physical print proof, full editorial signoff, or third-party content rights clearance.
 
 ## Grammar for Special Speaking — Student and Teacher Books
 
@@ -101,3 +112,13 @@ A source-aware, reproducible [20-dimension audit](docs/quality-audit-20-dimensio
 The **Master Speaking** working edition contains an accessible *Listening and Video Resource Index*: seven original-publisher TED/TED-Ed links aligned to Units 2–8. Unit 1 instead has an original teacher-delivered [listening script and complete answer key](docs/master-speaking-teacher-listening-guide.md), because the original manuscript did not identify a verifiable video. [Read the source-matching and rights register](docs/master-speaking-listening-rights-register.md). The videos are linked, **not copied or redistributed**; their availability and reuse permissions must be checked separately.
 
 The [content-evidence inventory](docs/master-speaking-content-evidence.md) and [complete listening question review](docs/listening-lesson-review.md) make specific language edits, missing sources and dated statements auditable. Both publications are still labelled proof or unapproved where independent print, pedagogy and licensing signoffs are absent.
+
+### Building Master Speaking from the authoritative sources
+
+```bash
+python tools/build_master_publication.py
+python tools/build_master_teacher_publication.py
+python tools/quality_audit_20.py
+```
+
+The original manuscript is not overwritten. `build_master/speaking_studios.py` supplies the eight new speaking lessons to the student/teacher editions, `build_master/offline_listening.py` supplies the seven original no-internet listening passages, and the publisher saves the working copies to `proof/`. The continuous-integration workflow regenerates and checks both books before accepting rebuilt output files.

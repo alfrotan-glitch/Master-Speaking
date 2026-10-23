@@ -292,6 +292,22 @@ def _verified_copyedits(document):
             "Choose ten expressions and create a short conversation",
         "related to the week's topic":
             "related to this unit's topic",
+        "based on the TED-Ed lesson":
+            "related to this unit's video",
+        "You will work with an authentic video or speech connected to the topic.":
+            "You will practise listening using original classroom material and selected videos or speeches connected to each topic.",
+        "Before watching, predict the answers.":
+            "Before listening, predict the answers.",
+        "First Viewing: Listen only.":
+            "First listening: listen without taking notes.",
+        "Second Viewing. Take notes.":
+            "Second listening: take notes.",
+        "According to the video, good listening helps build":
+            "According to the listening text, good listening helps build",
+        "after watching this video":
+            "after hearing the listening text",
+        "Watch the video again.":
+            "Listen to the text again.",
         "collocations from Day 2 or Day 3":
             "collocations practised earlier in this unit",
     }

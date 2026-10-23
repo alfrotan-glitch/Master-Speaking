@@ -165,6 +165,42 @@ SECTION_HEADINGS = {
 }
 
 
+
+def _recover_textbox_alternatives(document):
+    """Use already-visible textbox text for drawing accessibility, never guesses.
+
+    The source contains textbox drawings with missing alt metadata. Extract
+    text from the actual drawing subtree only; leave genuinely image-only
+    drawings unresolved for an editor who can see them.
+    """
+    changes={"derived_from_text": 0, "unresolved": 0, "already_present": 0}
+    for drawing in document.element.body.iter(qn("wp:docPr")):
+        if drawing.get("descr") or drawing.get("title"):
+            changes["already_present"] += 1
+            continue
+        parent=drawing.getparent()
+        while parent is not None and parent.tag not in (
+                qn("wp:anchor"), qn("wp:inline"), qn("w:drawing")):
+            parent=parent.getparent()
+        if parent is None:
+            changes["unresolved"] += 1
+            continue
+        # w:txbxContent is the existing Word textbox, not a new description.
+        texts=[]
+        for field in parent.iter():
+            if field.tag==qn("w:t") and field.text:
+                texts.append(field.text.strip())
+        visible=" ".join(text for text in texts if text)
+        visible=re.sub(r"\s+"," ",visible).strip()
+        if visible:
+            label="Text panel: " + visible
+            drawing.set("descr", label[:220])
+            changes["derived_from_text"]+=1
+        else:
+            changes["unresolved"]+=1
+    return changes
+
+
 def _normalise_proof_heading_hierarchy(document):
     """Retain the existing visible typography, correct semantic outline levels.
 
@@ -235,6 +271,7 @@ def main():
     original.core_properties.subject = "English speaking coursebook"
     original.core_properties.keywords = "speaking, communication, TOEFL HOUSE"
     heading_fixes = _normalise_proof_heading_hierarchy(original)
+    alt_recovery = _recover_textbox_alternatives(original)
     original.save(WORKING)
 
     profile = "file:///tmp/libreoffice-master-speaking-proof"
@@ -310,6 +347,7 @@ def main():
     report = {
         "source_words_estimate": source_words,
         "working_proof_heading_hierarchy": heading_fixes,
+        "text_box_accessibility_recovery": alt_recovery,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,
         "pdf_pages": pdf_pages,

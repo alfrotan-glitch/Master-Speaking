@@ -19,7 +19,7 @@
 - **source media files:** 25
 - **epub embedded images:** 24
 - **source graphic properties:** 51
-- **proof files:** {'Master Speaking (TOEFL House).docx': 5955921, 'Master Speaking (TOEFL House).pdf': 4274653, 'Master Speaking (TOEFL House).epub': 5633234, 'Master Speaking (TOEFL House).html': 7734202}
+- **proof files:** {'Master Speaking (TOEFL House).docx': 5955921, 'Master Speaking (TOEFL House).pdf': 4274653, 'Master Speaking (TOEFL House).epub': 5633232, 'Master Speaking (TOEFL House).html': 7734202}
 - **distinct heading 1 2 labels:** 44
 
 The original Master Speaking.docx is preserved unchanged. Review all pages, graphics, exercise keys, media links, navigation and EPUB rendition on real devices before approving a release.

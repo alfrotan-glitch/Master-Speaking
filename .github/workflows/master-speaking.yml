@@ -85,7 +85,7 @@ jobs:
             docs/master-teacher-publication-audit.md
           if-no-files-found: error
       - name: Commit reproducible proof files on editorial branch
-        if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023' || github.ref == 'refs/heads/editorial/authored-speaking-edition-20261023') && github.event_name == 'push'
+        if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023' || github.ref == 'refs/heads/editorial/authored-speaking-edition-20261023' || github.ref == 'refs/heads/quality/official-epubcheck-20261023') && github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

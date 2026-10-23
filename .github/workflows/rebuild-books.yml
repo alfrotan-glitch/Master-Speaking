@@ -36,6 +36,19 @@ jobs:
         run: python build_spec/qa.py
       - name: Verify generated books and ebook packaging
         run: python tools/validate_publication.py
+      - name: Official W3C EPUBCheck 5.4.0 for both Grammar ebooks
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --location --retry 3 --retry-delay 3 \
+            https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip \
+            -o /tmp/epubcheck-5.4.0.zip
+          mkdir -p /tmp/epubcheck-release
+          unzip -q /tmp/epubcheck-5.4.0.zip -d /tmp/epubcheck-release
+          checker="$(find /tmp/epubcheck-release -name epubcheck.jar -print -quit)"
+          test -n "$checker"
+          java -jar "$checker" "dist/Grammar for Special Speaking (TOEFL House).epub"
+          java -jar "$checker" "dist/Grammar for Special Speaking — Teacher's Book (TOEFL House).epub"
       - name: Commit matching source-generated editions to editorial branch
         if: github.ref == 'refs/heads/editorial/unified-speaking-edition-20261023' && github.event_name == 'push'
         run: |

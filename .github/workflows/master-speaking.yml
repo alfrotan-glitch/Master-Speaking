@@ -5,7 +5,12 @@ on:
     branches:
       - main
       - editorial/master-speaking-publication-20261023
+      - quality/20-angle-deep-audit-20261023
   workflow_dispatch:
+
+concurrency:
+  group: master-speaking-proof-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -28,8 +33,18 @@ jobs:
           python -m pip install -r build_spec/requirements.txt
       - name: Audit original manuscript
         run: python tools/audit_master_speaking.py
+      - name: Extract full listening sections for substantive review
+        run: python tools/extract_listening_chapters.py
+      - name: Build accountable source/evidence and media inventory
+        run: python tools/audit_master_content.py
       - name: Generate DOCX, A4 PDF, EPUB3 and HTML proof builds
         run: python tools/build_master_publication.py
+      - name: Enforce twenty-lens structural audit and record expert review gaps
+        run: python tools/quality_audit_20.py
+      - name: Validate both Grammar for Special Speaking editions
+        run: |
+          python build_spec/qa.py
+          python tools/validate_publication.py
       - name: Upload publication proofs
         uses: actions/upload-artifact@v4
         with:
@@ -37,17 +52,20 @@ jobs:
           path: |
             proof/
             docs/master-speaking-publication-audit.md
+            docs/quality-audit-20-dimensions.md
+            docs/master-speaking-content-evidence.md
+            docs/listening-lesson-review.md
           if-no-files-found: error
       - name: Commit reproducible proof files on editorial branch
-        if: github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' && github.event_name == 'push'
+        if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023') && github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md
+          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md docs/listening-lesson-review.md
           if ! git diff --cached --quiet; then
             git commit -m "build: publish structurally checked Master Speaking proof editions"
             for attempt in 1 2 3; do
-              if git push origin HEAD:editorial/master-speaking-publication-20261023; then
+              if git push origin HEAD:"${GITHUB_REF_NAME}"; then
                 exit 0
               fi
               if [ "$attempt" -eq 3 ]; then exit 1; fi

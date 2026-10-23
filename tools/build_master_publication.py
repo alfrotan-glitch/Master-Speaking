@@ -15,6 +15,10 @@ from pathlib import Path
 
 import pymupdf
 from docx import Document
+from docx.opc.constants import RELATIONSHIP_TYPE as RT
+from listening_resources import LISTENING_SOURCES
+from docx.enum.style import WD_STYLE_TYPE
+from docx.oxml import OxmlElement
 from ebooklib import epub
 from lxml import etree
 from docx.oxml.ns import qn
@@ -149,6 +153,263 @@ def _curate_epub_navigation():
     tmp.replace(EPUB)
     return candidates
 
+
+# Structured hierarchy for the *working proof only*. The original file stays
+# unchanged. An exercise prompt must not be marked up as a chapter heading.
+SECTION_HEADINGS = {
+    "vocabulary preview", "vocabulary check", "critical thinking",
+    "speaking through reading", "think pair share", "before listening",
+    "listening strategy", "listening comprehension", "homework",
+    "speaking toolbox", "vocabulary activation", "guided discussion",
+    "speaking challenge", "pronunciation clinic", "presentation toolbox",
+    "research task", "organizing your presentation", "group discussion",
+    "mini debate", "reading comprehension",
+}
+
+
+
+
+
+def _append_hyperlink(paragraph, label, url):
+    element=OxmlElement("w:hyperlink")
+    element.set(qn("r:id"), paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True))
+    run=OxmlElement("w:r")
+    props=OxmlElement("w:rPr")
+    colour=OxmlElement("w:color")
+    colour.set(qn("w:val"), "0E6B6B")
+    props.append(colour)
+    underline=OxmlElement("w:u")
+    underline.set(qn("w:val"), "single")
+    props.append(underline)
+    run.append(props)
+    txt=OxmlElement("w:t")
+    txt.text=label
+    run.append(txt)
+    element.append(run)
+    paragraph._p.append(element)
+
+
+def _append_student_listening_index(document):
+    """Make existing listening questions actually point to original publishers."""
+    document.add_page_break()
+    document.add_heading("LISTENING AND VIDEO RESOURCE INDEX",level=1)
+    document.add_paragraph(
+        "These original-publisher resources correspond to the listening questions "
+        "in Units 2–8. Open the official link before class and listen twice. "
+        "An internet connection may be required. The external videos are not "
+        "reproduced in this book.")
+    for number,unit,speaker,url in LISTENING_SOURCES:
+        document.add_heading(f"Unit {number} — {unit}",level=2)
+        paragraph=document.add_paragraph()
+        paragraph.add_run(speaker + ". ")
+        if url:
+            _append_hyperlink(paragraph, "Open original video", url)
+        else:
+            paragraph.add_run(
+                "A teacher-read original script and answer guide are included "
+                "in the companion Teacher Listening Guide.")
+    document.add_paragraph(
+        "Before assigning the questions, the teacher should check that each "
+        "source can be played in the classroom. If a video cannot be accessed, "
+        "use an appropriate teacher-provided alternative instead.")
+    document.add_heading("Optional research note — money and well-being",level=2)
+    source=document.add_paragraph()
+    source.add_run(
+        "Research on income and happiness is more nuanced than a fixed income "
+        "threshold; results differ across individuals and measures. "
+        "For a research-based discussion see Killingsworth, Kahneman & Mellers (2023), "
+        "Income and emotional well-being: A conflict resolved. ")
+    _append_hyperlink(source,"Read the open research abstract",
+        "https://pubmed.ncbi.nlm.nih.gov/36857342/")
+    return sum(url is not None for _,_,_,url in LISTENING_SOURCES)
+
+
+def _fix_contextual_listening_errors(document):
+    """Proof-only corrections that require unit context, not global replace."""
+    para=list(document.paragraphs)
+    corrected={"incorrect_unit6_word":0,"unit6_worked_title":0,
+               "unit6_relationship_checkbox":0,"pronoun_agreement":0,
+               "collocation_restrictions":0}
+    for p in para:
+        corrected["incorrect_unit6_word"]+=_edit_text_in_runs(
+            p,"ducation, employment, healthcare, communication, entertainment",
+            "Education, employment, healthcare, communication and entertainment")
+        corrected["unit6_relationship_checkbox"]+=_edit_text_in_runs(
+            p,"The speaker's research involved 450 couples.",
+            "_____ The speaker's research involved 450 couples.")
+        corrected["pronoun_agreement"]+=_edit_text_in_runs(
+            p,"Choose one and explain their choice.",
+            "Choose one and explain your choice.")
+        corrected["collocation_restrictions"]+=_edit_text_in_runs(
+            p,"Should governments pose restrictions on",
+            "Should governments impose restrictions on")
+    for i,p in enumerate(para):
+        if p.text.strip()=="The Science of a Lasting Relationship":
+            for q in para[i+1:i+18]:
+                if q.text.strip()=="Can Money Buy Happiness?":
+                    corrected["unit6_worked_title"]+=_edit_text_in_runs(
+                        q,"Can Money Buy Happiness?","The Science of a Lasting Relationship")
+                    break
+    if corrected["incorrect_unit6_word"]<1 or corrected["unit6_worked_title"]<1:
+        raise AssertionError(f"Known content defects not corrected: {corrected}")
+    return corrected
+
+
+def _edit_text_in_runs(paragraph, old, new):
+    """Safely edit an exact span across styled Word runs without flattening style."""
+    runs=list(paragraph.runs)
+    joined="".join(r.text for r in runs)
+    if old not in joined:
+        if old in paragraph.text:
+            raise AssertionError(f"Unmapped edit span in complex Word paragraph: {old}")
+        return 0
+    start=joined.index(old)
+    end=start+len(old)
+    bounds=[]
+    offset=0
+    for run in runs:
+        bounds.append((offset,offset+len(run.text)))
+        offset+=len(run.text)
+    first=next(i for i,(a,b) in enumerate(bounds) if a<=start<b)
+    last=next(i for i,(a,b) in enumerate(bounds) if a<end<=b)
+    if first==last:
+        a,b=bounds[first]
+        runs[first].text=runs[first].text[:start-a]+new+runs[first].text[end-a:]
+    else:
+        a,b=bounds[first]
+        runs[first].text=runs[first].text[:start-a]+new
+        for i in range(first+1,last):
+            runs[i].text=""
+        a,b=bounds[last]
+        runs[last].text=runs[last].text[end-a:]
+    return 1
+
+
+def _verified_copyedits(document):
+    """Fix reproducible original learner typos and unintended timetable markers."""
+    targets={
+        "Chooses 10 expressions and create a short conversation":
+            "Choose ten expressions and create a short conversation",
+        "related to the week's topic":
+            "related to this unit's topic",
+        "based on the TED-Ed lesson":
+            "related to this unit's video",
+        "You will work with an authentic video or speech connected to the topic.":
+            "You will practise listening using original classroom material and selected videos or speeches connected to each topic.",
+        "Before watching, predict the answers.":
+            "Before listening, predict the answers.",
+        "First Viewing: Listen only.":
+            "First listening: listen without taking notes.",
+        "Second Viewing. Take notes.":
+            "Second listening: take notes.",
+        "According to the video, good listening helps build":
+            "According to the listening text, good listening helps build",
+        "after watching this video":
+            "after hearing the listening text",
+        "Watch the video again.":
+            "Listen to the text again.",
+        "collocations from Day 2 or Day 3":
+            "collocations practised earlier in this unit",
+    }
+    counts={old:0 for old in targets}
+    paragraphs=list(document.paragraphs)
+    for table in document.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                paragraphs.extend(cell.paragraphs)
+    for p in paragraphs:
+        for old,new in targets.items():
+            while old in p.text:
+                counts[old]+=_edit_text_in_runs(p,old,new)
+    if counts["Chooses 10 expressions and create a short conversation"]<1:
+        raise AssertionError("Known incorrect learner instruction absent")
+    if counts["related to the week's topic"]<6:
+        raise AssertionError("Expected repeated leaked schedule labels absent")
+    return counts
+
+
+def _recover_textbox_alternatives(document):
+    """Use already-visible textbox text for drawing accessibility, never guesses.
+
+    The source contains textbox drawings with missing alt metadata. Extract
+    text from the actual drawing subtree only; leave genuinely image-only
+    drawings unresolved for an editor who can see them.
+    """
+    changes={"derived_from_text": 0, "unresolved": 0, "already_present": 0}
+    for drawing in document.element.body.iter(qn("wp:docPr")):
+        if drawing.get("descr") or drawing.get("title"):
+            changes["already_present"] += 1
+            continue
+        parent=drawing.getparent()
+        while parent is not None and parent.tag not in (
+                qn("wp:anchor"), qn("wp:inline"), qn("w:drawing")):
+            parent=parent.getparent()
+        if parent is None:
+            changes["unresolved"] += 1
+            continue
+        # w:txbxContent is the existing Word textbox, not a new description.
+        texts=[]
+        for field in parent.iter():
+            if field.tag==qn("w:t") and field.text:
+                texts.append(field.text.strip())
+        visible=" ".join(text for text in texts if text)
+        visible=re.sub(r"\s+"," ",visible).strip()
+        if visible:
+            label="Text panel: " + visible
+            drawing.set("descr", label[:220])
+            changes["derived_from_text"]+=1
+        else:
+            changes["unresolved"]+=1
+    return changes
+
+
+def _normalise_proof_heading_hierarchy(document):
+    """Retain the existing visible typography, correct semantic outline levels.
+
+    Styles derived from original headings inherit their appearance, but explicitly
+    set outlineLvl=9 so exercise questions never appear in Word's Navigation pane.
+    """
+    derived = {}
+    changes = {"topic_headings": 0, "section_headings": 0,
+               "demoted_prompts": 0}
+    paras = list(document.paragraphs)
+    for tab in document.tables:
+        for row in tab.rows:
+            for cell in row.cells:
+                paras.extend(cell.paragraphs)
+    for p in paras:
+        if not p.text.strip() or not p.style:
+            continue
+        original_style = p.style.name
+        if not re.match(r"^Heading [123]$", original_style):
+            continue
+        topic = _match_topic(p.text)
+        section = _norm_nav(p.text) in SECTION_HEADINGS
+        if topic:
+            p.style = document.styles["Heading 1"]
+            changes["topic_headings"] += 1
+        elif section:
+            p.style = document.styles["Heading 2"]
+            changes["section_headings"] += 1
+        else:
+            if original_style not in derived:
+                label = "Speaking Exercise Label " + original_style[-1]
+                st = document.styles[label] if label in document.styles else document.styles.add_style(label, WD_STYLE_TYPE.PARAGRAPH)
+                st.base_style = document.styles[original_style]
+                ppr = st.element.get_or_add_pPr()
+                outline = ppr.find(qn("w:outlineLvl"))
+                if outline is None:
+                    outline = OxmlElement("w:outlineLvl")
+                    ppr.append(outline)
+                outline.set(qn("w:val"), "9")
+                derived[original_style] = st
+            p.style = derived[original_style]
+            changes["demoted_prompts"] += 1
+    if changes["topic_headings"] < 10 or changes["demoted_prompts"] < 50:
+        raise AssertionError(f"Unexpected heading classification: {changes}")
+    return changes
+
+
 def main():
     if not SOURCE.is_file():
         raise FileNotFoundError(SOURCE)
@@ -171,6 +432,11 @@ def main():
     original.core_properties.author = "TOEFL HOUSE"
     original.core_properties.subject = "English speaking coursebook"
     original.core_properties.keywords = "speaking, communication, TOEFL HOUSE"
+    heading_fixes = _normalise_proof_heading_hierarchy(original)
+    alt_recovery = _recover_textbox_alternatives(original)
+    copyedit_counts = _verified_copyedits(original)
+    contextual_fixes = _fix_contextual_listening_errors(original)
+    verified_external_listening_links = _append_student_listening_index(original)
     original.save(WORKING)
 
     profile = "file:///tmp/libreoffice-master-speaking-proof"
@@ -197,6 +463,18 @@ def main():
                        abs(p.rect.height - 841.89) < 3 for p in pdf)
         pdf_bookmarks = len(pdf.get_toc())
     pdf_words = words(pdf_text)
+
+    # Word's Navigation pane should show true topic/section headings,
+    # never hundreds of question and exercise text headings.
+    inspect = Document(WORKING)
+    named = [(p.style.name, p.text.strip()) for p in inspect.paragraphs
+             if p.text.strip() and p.style.name.startswith("Heading ")]
+    if sum(k == "Heading 1" for k, _ in named) < 10:
+        raise AssertionError("Working DOCX lost topical Heading 1 entries")
+    if any(k.startswith("Heading") and
+           ("multiple choice" in s.casefold() or s.startswith("_____"))
+           for k, s in named):
+        raise AssertionError("Exercise text still appears as Word navigation headings")
 
     with zipfile.ZipFile(EPUB) as archive:
         names = archive.namelist()
@@ -233,6 +511,11 @@ def main():
 
     report = {
         "source_words_estimate": source_words,
+        "working_proof_heading_hierarchy": heading_fixes,
+        "text_box_accessibility_recovery": alt_recovery,
+        "verified_copyedit_counts": copyedit_counts,
+        "contextual_listening_edits": contextual_fixes,
+        "official_listening_resource_links": verified_external_listening_links,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,
         "pdf_pages": pdf_pages,

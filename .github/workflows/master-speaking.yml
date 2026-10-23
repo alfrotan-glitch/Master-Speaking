@@ -8,6 +8,10 @@ on:
       - quality/20-angle-deep-audit-20261023
   workflow_dispatch:
 
+concurrency:
+  group: master-speaking-proof-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 

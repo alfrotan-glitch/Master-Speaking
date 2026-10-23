@@ -23,7 +23,7 @@ A single shared class moves from one first attempt to feedback and a second atte
 
 ## What final publication still requires
 
-The automated checks are evidence for structural correctness only. The source manuscript remains much longer than the new eight studios; a full independent line edit and proofread are still necessary. Two Word drawing objects still need visual inspection for genuinely appropriate alt-text/decorative treatment. Third-party image and recording permissions require independent verification. EPUBCheck, reader-device proofing, all-page rendered proofing, and real-classroom piloting cannot be claimed from GitHub tests alone. Do not publish or sell the books as definitively error-free until these are signed off.
+The automated checks are evidence for structural correctness only. The source manuscript remains much longer than the new eight studios; a full independent line edit and proofread are still necessary. Two Word drawing objects still need visual inspection for genuinely appropriate alt-text/decorative treatment. Third-party image and recording permissions require independent verification. Official EPUBCheck 5.4.0 checks the EPUB format in CI; actual reader-device testing, all-page rendered proofing and real-classroom piloting still require separate evidence. Do not publish or sell the books as definitively error-free until these are signed off.
 
 ## How to rebuild
 

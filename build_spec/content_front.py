@@ -289,6 +289,6 @@ def diagnostic(doc, keys_registry):
     para(doc, "Score guide: 21–25 — review the specific items you missed, then try the stretch "
               "tasks.  15–20 — revisit the patterns you found difficult and practise them aloud.  "
               "Below 15 — repeat the core practice in short sessions; accuracy first, speed later.  "
-              "These bands guide review, not learner labels or claims about proficiency.",
+              "Use this score to choose what to practise next; speaking ability involves more than one test.",
          size=10.5, italic=True, color=GREY)
     page_break(doc)

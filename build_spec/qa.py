@@ -149,7 +149,7 @@ def main():
     check("no unearned claims", not re.search(r"expert-verified|publication-ready|pedagogically validated", blob, re.I))
     check("zero decorative emojis", sum(1 for ch in blob if ord(ch) >= 0x1F300) == 0)
     check("student-facing edition has no learner-track labels",
-          not re.search(r"(?i)intermediate\\s*[—–-]|advanced\\s*[—–-]|advanced upgrade|two pathways, one classroom|for intermediate and advanced learners", blob))
+          not re.search(r"(?i)intermediate\s*[—–-]|advanced\s*[—–-]|advanced upgrade|two pathways, one classroom|for intermediate and advanced learners", blob))
     check("student-facing Part 6 uses inclusive practice stages",
           "Part 6  ·  Strengthen Your Speaking" in blob and
           "Build the pattern — say it clearly" in blob and

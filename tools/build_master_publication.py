@@ -132,6 +132,30 @@ def main():
         "source_graphic_properties": sum(1 for _ in original.element.body.iter(qn("wp:docPr"))),
         "proof_files": {p.name: p.stat().st_size for p in (WORKING, PDF, EPUB, HTML)},
     }
+    # Human-readable heading inventory makes false chapter navigation visible.
+    # Headings used for exercise labels should not become top-level ebook chapters.
+    from collections import Counter
+    heading_inventory = Counter(
+        (p.style.name, p.text.strip()) for p in original.paragraphs
+        if p.text.strip() and p.style is not None
+        and p.style.name in ("Heading 1", "Heading 2")
+    )
+    outline_report = ROOT / "docs" / "master-speaking-heading-inventory.md"
+    lines = [
+        "# Master Speaking — heading/navigation audit",
+        "",
+        "Generated from the independent original Word document; headings may be",
+        "exercise labels rather than genuine chapter titles. Do not treat each as",
+        "an EPUB chapter or PDF bookmark without editorial review.",
+        "",
+        "| Word style | Heading text | Repetitions |",
+        "|---|---|---:|",
+    ]
+    for (style_name, heading), count in heading_inventory.items():
+        display = heading.replace("|", "/").replace("\n", " ").strip()[:110]
+        lines.append(f"| {style_name} | {display} | {count} |")
+    outline_report.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    report["distinct_heading_1_2_labels"] = len(heading_inventory)
     REPORT.write_text(
         "# Master Speaking — publication proof audit\n\n"
         "> PROOF BUILDS ONLY. This report establishes structural conversion checks, "

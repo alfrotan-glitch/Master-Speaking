@@ -91,3 +91,7 @@ The Student Book and Teacher's Book were produced from shared, reproducible sour
 The editable `build_spec/` content is the source of truth for **Grammar for Special Speaking** (Student and Teacher editions); changing a source file alone does **not** update previously exported books. The editorial branch includes an automated rebuild that regenerates the distribution formats, runs source QA, and validates the generated DOCX/PDF/EPUB files before committing new exports. A pull request must not be described as publication-ready until the generated files and validation have actually passed.
 
 The separate `Master Speaking.docx` source has its **own** read-only manuscript audit and proof-publication pipeline in `tools/audit_master_speaking.py` and `tools/build_master_publication.py`. Grammar-book QA does not validate this original speaking manuscript, and successful conversion does not replace line-by-line language editing, image rights clearance, accessibility review, media verification or a physical print proof. See [scope and release gates](docs/repository-scope-and-release-gates.md).
+
+## Evidence-led quality assessment (20 lenses)
+
+A source-aware, reproducible [20-dimension audit](docs/quality-audit-20-dimensions.md) checks both book projects and distinguishes verified structural invariants from issues needing independent educational, editorial, accessibility, rights and print review. The [review protocol](docs/quality-protocol-20-dimensions.md) intentionally **does not assign perfect scores without evidence**.

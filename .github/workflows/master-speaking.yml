@@ -29,6 +29,8 @@ jobs:
           python -m pip install -r build_spec/requirements.txt
       - name: Audit original manuscript
         run: python tools/audit_master_speaking.py
+      - name: Build accountable source/evidence and media inventory
+        run: python tools/audit_master_content.py
       - name: Generate DOCX, A4 PDF, EPUB3 and HTML proof builds
         run: python tools/build_master_publication.py
       - name: Enforce twenty-lens structural audit and record expert review gaps
@@ -45,13 +47,14 @@ jobs:
             proof/
             docs/master-speaking-publication-audit.md
             docs/quality-audit-20-dimensions.md
+            docs/master-speaking-content-evidence.md
           if-no-files-found: error
       - name: Commit reproducible proof files on editorial branch
         if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023') && github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md
+          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md
           if ! git diff --cached --quiet; then
             git commit -m "build: publish structurally checked Master Speaking proof editions"
             for attempt in 1 2 3; do

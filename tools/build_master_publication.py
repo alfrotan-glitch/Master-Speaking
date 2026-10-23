@@ -166,6 +166,64 @@ SECTION_HEADINGS = {
 
 
 
+
+def _edit_text_in_runs(paragraph, old, new):
+    """Safely edit an exact span across styled Word runs without flattening style."""
+    runs=list(paragraph.runs)
+    joined="".join(r.text for r in runs)
+    if old not in joined:
+        if old in paragraph.text:
+            raise AssertionError(f"Unmapped edit span in complex Word paragraph: {old}")
+        return 0
+    start=joined.index(old)
+    end=start+len(old)
+    bounds=[]
+    offset=0
+    for run in runs:
+        bounds.append((offset,offset+len(run.text)))
+        offset+=len(run.text)
+    first=next(i for i,(a,b) in enumerate(bounds) if a<=start<b)
+    last=next(i for i,(a,b) in enumerate(bounds) if a<end<=b)
+    if first==last:
+        a,b=bounds[first]
+        runs[first].text=runs[first].text[:start-a]+new+runs[first].text[end-a:]
+    else:
+        a,b=bounds[first]
+        runs[first].text=runs[first].text[:start-a]+new
+        for i in range(first+1,last):
+            runs[i].text=""
+        a,b=bounds[last]
+        runs[last].text=runs[last].text[end-a:]
+    return 1
+
+
+def _verified_copyedits(document):
+    """Fix reproducible original learner typos and unintended timetable markers."""
+    targets={
+        "Chooses 10 expressions and create a short conversation":
+            "Choose ten expressions and create a short conversation",
+        "related to the week's topic":
+            "related to this unit's topic",
+        "collocations from Day 2 or Day 3":
+            "collocations practised earlier in this unit",
+    }
+    counts={old:0 for old in targets}
+    paragraphs=list(document.paragraphs)
+    for table in document.tables:
+        for row in table.rows:
+            for cell in row.cells:
+                paragraphs.extend(cell.paragraphs)
+    for p in paragraphs:
+        for old,new in targets.items():
+            while old in p.text:
+                counts[old]+=_edit_text_in_runs(p,old,new)
+    if counts["Chooses 10 expressions and create a short conversation"]<1:
+        raise AssertionError("Known incorrect learner instruction absent")
+    if counts["related to the week's topic"]<6:
+        raise AssertionError("Expected repeated leaked schedule labels absent")
+    return counts
+
+
 def _recover_textbox_alternatives(document):
     """Use already-visible textbox text for drawing accessibility, never guesses.
 
@@ -272,6 +330,7 @@ def main():
     original.core_properties.keywords = "speaking, communication, TOEFL HOUSE"
     heading_fixes = _normalise_proof_heading_hierarchy(original)
     alt_recovery = _recover_textbox_alternatives(original)
+    copyedit_counts = _verified_copyedits(original)
     original.save(WORKING)
 
     profile = "file:///tmp/libreoffice-master-speaking-proof"
@@ -348,6 +407,7 @@ def main():
         "source_words_estimate": source_words,
         "working_proof_heading_hierarchy": heading_fixes,
         "text_box_accessibility_recovery": alt_recovery,
+        "verified_copyedit_counts": copyedit_counts,
         "pdf_extracted_words": pdf_words,
         "epub_extracted_words": epub_words,
         "pdf_pages": pdf_pages,

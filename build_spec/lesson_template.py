@@ -69,12 +69,12 @@ def render_lesson(doc, L, keys_registry):
     box(doc, "Success criteria",
         [f"✓  {c}" for c in pair['criteria']], fill="FFFFFF", label_color=TEAL)
 
-    # ---- Part 6: The Advanced Upgrade ----
-    section_label(doc, "Part 6  ·  The Advanced Upgrade")
+    # ---- Part 6: Strengthen Your Speaking ----
+    section_label(doc, "Part 6  ·  Strengthen Your Speaking")
     adv = L['advanced']
-    box(doc, "Intermediate — build accuracy",
+    box(doc, "Build the pattern — say it clearly",
         [f"•  {b}" for b in adv['base']], fill=FILL_BOX_GREY, label_color=GOLD)
-    box(doc, "Advanced — build flexibility",
+    box(doc, "Stretch your answer — choose your words",
         [f"•  {b}" for b in adv['upgrade']], fill=FILL_BOX_GOLD, label_color=GOLD)
 
     # ---- Part 7: Real Talk Challenge ----

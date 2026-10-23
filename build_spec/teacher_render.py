@@ -10,7 +10,7 @@ from style import (para, box, table, spacer, section_label, h_banner,
                    FILL_BOX_TEAL, FILL_BOX_GOLD, FILL_BOX_GREY)
 
 PART_LABELS = ["The Speaking Hook", "The Simple Rule", "See the Difference",
-               "Practice the Pattern", "Pair Speaking", "The Advanced Upgrade",
+               "Practice the Pattern", "Pair Speaking", "Strengthen Your Speaking",
                "Real Talk Challenge", "Review and Self-Check"]
 
 PROCEDURE_KEYS = ["hook", "rule", "diff", "practice", "pair", "advanced", "realtalk", "review"]

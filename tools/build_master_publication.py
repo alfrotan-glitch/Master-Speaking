@@ -41,6 +41,114 @@ def words(s):
     return len(re.findall(r"\b[\w'-]+\b", s))
 
 
+
+# Curated *content* headings, not the reusable exercise labels that currently
+# account for hundreds of meaningless DOCX outline entries.
+NAV_TOPICS = [
+    "The Power of Communication",
+    "Are You a Good Listener?",
+    "The Importance of Communication",
+    "Dreams Become Reality through Goals",
+    "The Power of Emotional Intelligence",
+    "Can Money Buy Happiness?",
+    "Living with AI: Friend or Foe?",
+    "Job Creator or Job Destroyer?",
+    "Is Love Enough?",
+    "The World Is Getting Smaller",
+    "Globalization: Opportunity or Threat?",
+    "English: From a Local Language to a Global Lingua Franca",
+]
+
+
+def _norm_nav(text):
+    return re.sub(r"[^a-z0-9]+", " ", text.casefold()).strip()
+
+
+def _match_topic(title):
+    phrase = _norm_nav(title)
+    for topic in NAV_TOPICS:
+        if _norm_nav(topic) == phrase or (
+                _norm_nav(topic) in phrase and len(phrase) <= len(_norm_nav(topic)) + 7):
+            return topic
+    return None
+
+
+def _curate_pdf_bookmarks():
+    with pymupdf.open(PDF) as pdf:
+        selected = []
+        already = set()
+        for level, title, page, *rest in pdf.get_toc():
+            topic = _match_topic(title)
+            if topic and topic not in already:
+                selected.append([1, topic, page])
+                already.add(topic)
+        if len(selected) < 6:
+            raise AssertionError(f"Could not identify enough meaningful PDF topics: {selected}")
+        pdf.set_toc(selected)
+        newpdf = PDF.with_name(PDF.stem + ".optimized.pdf")
+        pdf.save(newpdf, garbage=4, deflate=True)
+    newpdf.replace(PDF)
+    return selected
+
+
+def _curate_epub_navigation():
+    with zipfile.ZipFile(EPUB) as zin:
+        names = zin.namelist()
+        nav_name = next((n for n in names if n.endswith("nav.xhtml")), None)
+        if not nav_name:
+            raise AssertionError("EPUB lacks a navigation XHTML file")
+        parser = etree.XMLParser(resolve_entities=False, no_network=True)
+        navtree = etree.fromstring(zin.read(nav_name), parser)
+        navs = navtree.xpath("//*[local-name()='nav']")
+        nav = next((n for n in navs if n.get("{http://www.idpf.org/2007/ops}type") == "toc"), None)
+        if nav is None and navs:
+            nav = navs[0]
+        if nav is None:
+            raise AssertionError("EPUB navigation has no toc section")
+        candidates = []
+        seen = set()
+        for anchor in nav.xpath(".//*[local-name()='a']"):
+            topic = _match_topic(" ".join(anchor.itertext()))
+            href = anchor.get("href")
+            if topic and href and topic not in seen:
+                candidates.append((topic, href))
+                seen.add(topic)
+        if len(candidates) < 6:
+            raise AssertionError(f"EPUB lacks usable topic anchors: {candidates}")
+        lists = nav.xpath(".//*[local-name()='ol']")
+        if not lists:
+            raise AssertionError("EPUB navigation has no ordered list")
+        ol = lists[0]
+        for child in list(ol):
+            ol.remove(child)
+        XHTML = "{http://www.w3.org/1999/xhtml}"
+        for topic, href in candidates:
+            li = etree.SubElement(ol, XHTML + "li")
+            a = etree.SubElement(li, XHTML + "a", href=href)
+            a.text = topic
+        modified = {nav_name: etree.tostring(navtree, encoding="utf-8", xml_declaration=True)}
+        ncx_name = next((n for n in names if n.endswith(".ncx")), None)
+        if ncx_name:
+            ncxroot = etree.fromstring(zin.read(ncx_name), parser)
+            maps = ncxroot.xpath("//*[local-name()='navMap']")
+            if maps:
+                navmap = maps[0]
+                for child in list(navmap):
+                    navmap.remove(child)
+                NCX = "{http://www.daisy.org/z3986/2005/ncx/}"
+                for i, (topic, href) in enumerate(candidates, 1):
+                    point = etree.SubElement(navmap, NCX + "navPoint", id=f"nav-{i}", playOrder=str(i))
+                    label = etree.SubElement(point, NCX + "navLabel")
+                    etree.SubElement(label, NCX + "text").text = topic
+                    etree.SubElement(point, NCX + "content", src=href)
+                modified[ncx_name] = etree.tostring(ncxroot, encoding="utf-8", xml_declaration=True)
+        tmp = EPUB.with_name(EPUB.stem + ".optimized.epub")
+        with zipfile.ZipFile(tmp, "w") as zout:
+            for info in zin.infolist():
+                zout.writestr(info, modified.get(info.filename, zin.read(info.filename)))
+    tmp.replace(EPUB)
+    return candidates
+
 def main():
     if not SOURCE.is_file():
         raise FileNotFoundError(SOURCE)
@@ -72,12 +180,15 @@ def main():
         raise RuntimeError("LibreOffice failed to produce the proof PDF")
 
     run("pandoc", WORKING, "--from=docx", "--to=epub3", "--standalone",
-        "--toc", "--toc-depth=1", "--css", CSS,
+        "--toc", "--toc-depth=3", "--css", CSS,
         "--metadata=title:Master Speaking", "--metadata=author:TOEFL HOUSE",
         "--metadata=lang:en", "-o", EPUB)
     run("pandoc", WORKING, "--from=docx", "--to=html5", "--standalone",
         "--self-contained", "--metadata=title:Master Speaking",
         "--metadata=lang:en", "-o", HTML)
+
+    curated_pdf = _curate_pdf_bookmarks()
+    curated_epub = _curate_epub_navigation()
 
     with pymupdf.open(PDF) as pdf:
         pdf_pages = pdf.page_count
@@ -127,6 +238,8 @@ def main():
         "pdf_pages": pdf_pages,
         "pdf_a4_pages": a4_pages,
         "pdf_bookmarks": pdf_bookmarks,
+        "curated_pdf_topics": [v[1] for v in curated_pdf],
+        "curated_epub_topics": [v[0] for v in curated_epub],
         "source_media_files": source_media,
         "epub_embedded_images": epub_images,
         "source_graphic_properties": sum(1 for _ in original.element.body.iter(qn("wp:docPr"))),

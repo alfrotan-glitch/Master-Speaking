@@ -24,6 +24,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"build_master"))
 sys.path.insert(0,str(ROOT/"tools"))
 from speaking_studios import UNITS, COMMON_RUBRIC  # noqa
+from offline_listening import OFFLINE
 from listening_resources import LISTENING_SOURCES  # noqa
 
 OUT=ROOT/"proof"/"Master Speaking — Teacher's Book (TOEFL House).docx"
@@ -223,6 +224,17 @@ def unit_guide(doc,U):
     heading(doc,"Short model exchange",2)
     for line in U["model"]:
         para(doc,line,style="Studio Quote")
+    if n in OFFLINE:
+        offline=OFFLINE[n]
+        heading(doc,"No-internet alternative listening",2)
+        para(doc,"Read this original passage once without interruptions, then a second time for note-taking. This is NOT the transcript of the publisher-hosted video. Students use the corresponding questions in their speaking studio.",style="Studio Note")
+        para(doc,offline["title"],bold=True,color=TEAL)
+        for paragraph in offline["script"]:
+            para(doc,paragraph)
+        heading(doc,"Answers for this original passage",3)
+        for i,(question,answer) in enumerate(offline["checks"],1):
+            para(doc,f"{i}. {question}  Answer: {answer}")
+        lead(doc,"After-listening interaction",offline["talk"])
     heading(doc,"Challenge and mini-presentation",2)
     lead(doc,"Reasoned discussion",U["challenge"])
     lead(doc,"Independent speaking",U["presentation"])

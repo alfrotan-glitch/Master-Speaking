@@ -9,8 +9,11 @@ from xml.etree import ElementTree as ET
 
 import pymupdf
 from docx import Document
+import sys
 
 ROOT=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(ROOT/"build_master"))
+from offline_listening import OFFLINE
 PROOF=ROOT/"proof"
 TITLE="Master Speaking — Teacher's Book (TOEFL House)"
 DOCX=PROOF/(TITLE+".docx")
@@ -36,6 +39,12 @@ def validate():
     for n in range(1,9):
         if not any(h.startswith(f"UNIT {n} |") for h in headings):
             raise AssertionError(f"Teacher guide missing Unit {n}")
+    for n,passage in OFFLINE.items():
+        if passage["title"] not in text:
+            raise AssertionError(f"Teacher guide missing Unit {n} offline listening passage")
+        for question,answer in passage["checks"]:
+            if question not in text or answer not in text:
+                raise AssertionError(f"Teacher guide missing listening question/answer in unit {n}")
     for marker in ["LISTENING DELIVERY AND ANSWER GUIDANCE",
                    "FINAL PERFORMANCE AND TEACHER RECORD",
                    "HOW TO TEACH WITH THIS BOOK",

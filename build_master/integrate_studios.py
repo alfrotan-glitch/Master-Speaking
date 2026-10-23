@@ -14,6 +14,7 @@ from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
 from speaking_studios import UNITS
+from offline_listening import OFFLINE
 
 NAVY=RGBColor(27,52,76)
 TEAL=RGBColor(13,105,110)
@@ -122,6 +123,14 @@ def _write_studio(doc,u):
     _add(doc,u["challenge"])
     _section(doc,"Your short talk")
     _add(doc,u["presentation"])
+    if u["unit"] in OFFLINE:
+        passage=OFFLINE[u["unit"]]
+        _section(doc,"Listening without internet")
+        _add(doc,"Your teacher may read a new passage aloud. Listen first for the main idea, then listen again and answer these questions. These are separate from the earlier video questions.")
+        _add(doc,passage["title"],"Studio Accent")
+        for i,(question,answer) in enumerate(passage["checks"],1):
+            _add(doc,f"{i}. {question}")
+        _add(doc,"Discuss: "+passage["talk"])
     _section(doc,"One possible conversation")
     for line in u["model"]:
         _add(doc,line,"Studio Dialogue")

@@ -201,7 +201,9 @@ def main():
             assert len(teacher_ptext) > 50000, "Teacher PDF text unexpectedly short"
             assert all(f"LESSON {i}" in teacher_ptext for i in range(1, 17)), "Teacher PDF missing lesson"
             assert "ASSESSMENT GUIDANCE" in teacher_ptext and "TEACHER GUIDE" in teacher_ptext
-            assert len(pdf.get_toc()) >= 18, "Teacher PDF has insufficient bookmarks"
+            bookmarks = pdf.get_toc()
+            assert len(bookmarks) >= 18, f"Teacher PDF has insufficient bookmarks: {len(bookmarks)}"
+            assert any("ASSESSMENT GUIDANCE" in entry[1].upper() for entry in bookmarks), "Teacher PDF lacks assessment-guidance bookmark"
             assert "\ufffd" not in teacher_ptext, "Teacher PDF has replacement characters"
             return f"{pdf.page_count} searchable A4 pages; {len(pdf.get_toc())} bookmarks"
     check("Teacher PDF structure and navigation", check_teacher_pdf)

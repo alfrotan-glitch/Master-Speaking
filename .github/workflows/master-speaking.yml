@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - quality/official-epubcheck-20261023
       - editorial/master-speaking-publication-20261023
       - editorial/authored-speaking-edition-20261023
       - quality/20-angle-deep-audit-20261023
@@ -50,6 +51,24 @@ jobs:
         run: |
           python build_spec/qa.py
           python tools/validate_publication.py
+      - name: Official W3C EPUBCheck 5.4.0 for all four ebooks
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --location --retry 3 --retry-delay 3 \
+            https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip \
+            -o /tmp/epubcheck-5.4.0.zip
+          mkdir -p /tmp/epubcheck-release
+          unzip -q /tmp/epubcheck-5.4.0.zip -d /tmp/epubcheck-release
+          checker="$(find /tmp/epubcheck-release -name epubcheck.jar -print -quit)"
+          test -n "$checker"
+          java -jar "$checker" --version
+          find proof dist -maxdepth 1 -name '*.epub' -print0 |
+            while IFS= read -r -d '' ebook; do
+              echo "::group::EPUBCheck: $ebook"
+              java -jar "$checker" "$ebook"
+              echo "::endgroup::"
+            done
       - name: Upload publication proofs
         uses: actions/upload-artifact@v4
         with:

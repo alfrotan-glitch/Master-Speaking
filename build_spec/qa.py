@@ -22,7 +22,7 @@ SPEC_TITLES = {
     15: "Hedging, Emphasis, and Natural Inversion", 16: "Grammar in Real Conversation",
 }
 PARTS_LABELS = ["The Speaking Hook", "The Simple Rule", "See the Difference",
-                "Practice the Pattern", "Pair Speaking", "The Advanced Upgrade",
+                "Practice the Pattern", "Pair Speaking", "Strengthen Your Speaking",
                 "Real Talk Challenge", "Review and Self-Check"]
 
 
@@ -148,6 +148,12 @@ def main():
     check("no Master Speaking references", not re.search(r"Master Speaking", blob, re.I))
     check("no unearned claims", not re.search(r"expert-verified|publication-ready|pedagogically validated", blob, re.I))
     check("zero decorative emojis", sum(1 for ch in blob if ord(ch) >= 0x1F300) == 0)
+    check("student-facing edition has no learner-track labels",
+          not re.search(r"(?i)intermediate\s*[—–-]|advanced\s*[—–-]|advanced upgrade|two pathways, one classroom|for intermediate and advanced learners", blob))
+    check("student-facing Part 6 uses inclusive practice stages",
+          "Part 6  ·  Strengthen Your Speaking" in blob and
+          "Build the pattern — say it clearly" in blob and
+          "Stretch your answer — choose your words" in blob)
     # comparable assessment and item-level coverage blueprint
     check("diagnostic and final clearly reject raw-total gain claims",
           "do not interpret the difference between their raw totals" in blob.lower() and

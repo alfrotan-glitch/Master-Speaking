@@ -38,7 +38,7 @@ def docx_text(path):
     return "\n".join(out)
 
 
-def epub_validate(path):
+def epub_validate(path, teacher=False):
     with zipfile.ZipFile(path) as z:
         names = z.namelist()
         assert names and names[0] == "mimetype", "mimetype is not the first ZIP entry"
@@ -87,7 +87,10 @@ def epub_validate(path):
         assert epub_doc, "EPUB book XHTML is missing"
         text = " ".join(docs[epub_doc].itertext())
         assert text.count("LESSON ") >= 16, "EPUB is missing lessons"
-        assert all(s in text for s in ("REVIEW TEST 1", "REVIEW TEST 2", "REVIEW TEST 3", "FINAL ASSESSMENT", "APPENDIX 5")), "EPUB missing a required section"
+        if teacher:
+            assert all(s in text for s in ("TEACHER GUIDE", "ASSESSMENT GUIDANCE")), "Teacher EPUB missing guide or assessment guidance"
+        else:
+            assert all(s in text for s in ("REVIEW TEST 1", "REVIEW TEST 2", "REVIEW TEST 3", "FINAL ASSESSMENT", "APPENDIX 5")), "Student EPUB missing a required section"
         # EbookLib's parser provides an independent package-open check.
         epub.read_epub(str(path), options={"ignore_ncx": False})
         return text, len(names)
@@ -159,12 +162,75 @@ def main():
         missing = [(term, fmt) for term in terms for fmt, blob in (("DOCX",nd),("PDF",np),("EPUB",ne)) if norm(term) not in blob]
         check("cross-format required-section consistency", lambda: f"{len(terms)} markers in all 3 editions" if not missing else (_ for _ in ()).throw(AssertionError(str(missing[:10]))))
 
+
+    # Independently verify the companion Teacher's Book; student checks cannot
+    # detect missing teaching procedures, assessments or stale teacher exports.
+    teacher_title = "Grammar for Special Speaking — Teacher's Book (TOEFL House)"
+    teacher_docx = DIST / f"{teacher_title}.docx"
+    teacher_pdf = DIST / f"{teacher_title}.pdf"
+    teacher_epub = DIST / f"{teacher_title}.epub"
+    for f in (teacher_docx, teacher_pdf, teacher_epub):
+        check(f"exists: {f.relative_to(ROOT)}",
+              lambda f=f: f"{f.stat().st_size:,} bytes" if f.is_file() and f.stat().st_size > 0
+              else (_ for _ in ()).throw(FileNotFoundError(f)))
+    teacher_dtext = ""
+    def check_teacher_docx():
+        nonlocal teacher_dtext
+        doc = Document(teacher_docx)
+        teacher_dtext = docx_text(teacher_docx)
+        assert all(f"LESSON {i}" in teacher_dtext for i in range(1, 17)), "Teacher DOCX missing lesson"
+        assert "ASSESSMENT GUIDANCE" in teacher_dtext and "TEACHER GUIDE" in teacher_dtext
+        assert all(abs(s.page_width.inches - 8.27) < 0.03 and
+                   abs(s.page_height.inches - 11.69) < 0.03 for s in doc.sections), "Teacher DOCX is not A4"
+        assert doc.core_properties.title == "Grammar for Special Speaking — Teacher's Book"
+        assert doc.core_properties.author == "TOEFL HOUSE"
+        assert sum(p.style.name.startswith("Heading 2") for t in doc.tables
+                   for r in t.rows for c in r.cells for p in c.paragraphs) >= 128, "Teacher DOCX lost section headings"
+        return "16 teacher guides; assessment guidance; A4 and navigation"
+    check("Teacher DOCX structure and metadata", check_teacher_docx)
+
+    teacher_ptext = ""
+    def check_teacher_pdf():
+        nonlocal teacher_ptext
+        with fitz.open(teacher_pdf) as pdf:
+            assert pdf.page_count > 30, "Teacher PDF suspiciously short"
+            assert all(abs(p.rect.width - 595.28) < 2 and
+                       abs(p.rect.height - 841.89) < 2 for p in pdf), "Teacher PDF is not A4"
+            assert all(len(p.get_text().strip()) > 30 for p in pdf), "Teacher PDF contains empty pages"
+            teacher_ptext = "\n".join(p.get_text() for p in pdf)
+            assert len(teacher_ptext) > 50000, "Teacher PDF text unexpectedly short"
+            assert all(f"LESSON {i}" in teacher_ptext for i in range(1, 17)), "Teacher PDF missing lesson"
+            assert "ASSESSMENT GUIDANCE" in teacher_ptext and "TEACHER GUIDE" in teacher_ptext
+            bookmarks = pdf.get_toc()
+            assert len(bookmarks) >= 18, f"Teacher PDF has insufficient bookmarks: {len(bookmarks)}"
+            assert any("ASSESSMENT GUIDANCE" in entry[1].upper() for entry in bookmarks), "Teacher PDF lacks assessment-guidance bookmark"
+            assert "\ufffd" not in teacher_ptext, "Teacher PDF has replacement characters"
+            return f"{pdf.page_count} searchable A4 pages; {len(pdf.get_toc())} bookmarks"
+    check("Teacher PDF structure and navigation", check_teacher_pdf)
+
+    teacher_etext = ""
+    def check_teacher_epub():
+        nonlocal teacher_etext
+        teacher_etext, entries = epub_validate(teacher_epub, teacher=True)
+        return f"{entries} ZIP entries; manifest, navigation and local links"
+    check("Teacher EPUB package and links", check_teacher_epub)
+
+    if teacher_dtext and teacher_ptext and teacher_etext:
+        markers = ["LESSON 1", "LESSON 8", "LESSON 16", "ASSESSMENT GUIDANCE", "TEACHER GUIDE"]
+        missing = [(term, fmt) for term in markers for fmt, data in
+                   (("DOCX", teacher_dtext), ("PDF", teacher_ptext), ("EPUB", teacher_etext))
+                   if norm(term) not in norm(data)]
+        check("Teacher cross-format consistency",
+              lambda: f"{len(markers)} markers in all 3 teacher editions" if not missing
+              else (_ for _ in ()).throw(AssertionError(str(missing))))
+
     if shutil.which("epubcheck"):
         import subprocess
-        result = subprocess.run(["epubcheck", str(EPUB)], capture_output=True, text=True)
-        print("EPUBCheck:", result.stdout.strip() or result.stderr.strip())
-        if result.returncode:
-            failures.append(("EPUBCheck", result.stdout + result.stderr))
+        for ebook in (EPUB, teacher_epub):
+            result = subprocess.run(["epubcheck", str(ebook)], capture_output=True, text=True)
+            print(f"EPUBCheck ({ebook.name}):", result.stdout.strip() or result.stderr.strip())
+            if result.returncode:
+                failures.append((f"EPUBCheck: {ebook.name}", result.stdout + result.stderr))
     else:
         print("INFO EPUBCheck not installed; package was checked for XML well-formedness, manifest/spine, navigation and local links. This is not an EPUBCheck result.")
     if failures:

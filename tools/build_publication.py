@@ -187,7 +187,7 @@ def _is_major_heading(p):
     text = p.text.strip()
     if p.style.name.startswith("Heading 1"):
         return text
-    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", text, re.I):
+    if re.match(r"^(LESSON \d+\s+·|REVIEW TEST \d+|FINAL ASSESSMENT|APPENDIX \d+|INTRODUCTION|HOW TO USE THIS (?:TEACHER'S )?BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", text, re.I):
         return text
     return None
 
@@ -212,7 +212,7 @@ def _table_flowable(table, styles, doc_width):
                     style = styles["h3"]
                 if major:
                     key = "pdf-" + re.sub(r"[^a-z0-9]+", "-", major.lower()).strip("-")
-                    if re.match(r"^(LESSON|REVIEW TEST|FINAL ASSESSMENT|APPENDIX)", major, re.I):
+                    if re.match(r"^(LESSON|REVIEW TEST|FINAL ASSESSMENT|APPENDIX|INTRODUCTION|HOW TO USE THIS|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", major, re.I):
                         ps.append(TaggedParagraph(text, style, major, key, 0))
                     else:
                         ps.append(Paragraph(text, style))

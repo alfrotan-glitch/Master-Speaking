@@ -50,7 +50,7 @@ def title_page(doc):
         ("Learn the grammar. Use it in conversation. Make it part of your speech.", True),
     ], fill=FILL_BOX_TEAL, label_color=TEAL)
     spacer(doc, 40)
-    para(doc, "For Intermediate and Advanced learners", size=12, color=INK, align='c')
+    para(doc, "Speak clearly. Connect naturally. Grow with every conversation.", size=12, color=INK, align='c')
     para(doc, "16 lessons  ·  3 review tests  ·  final assessment  ·  5 appendices",
          size=11, color=GREY, align='c')
     page_break(doc)
@@ -67,10 +67,10 @@ def introduction(doc):
               "you see how similar structures differ, you practise, and then you speak again — "
               "this time with the new grammar in your voice. Each lesson ends with a short review "
               "and a self-check, so you always know what you can already do.")
-    para(doc, "The course works for both Intermediate and Advanced learners in the same room. "
-              "Everyone studies the same core lesson. The core work builds accuracy; the Advanced "
-              "Upgrade boxes build flexibility, precision and naturalness. Advanced work rewards "
-              "appropriate, precise use — never complexity for its own sake.")
+    para(doc, "Everyone works through the same lesson and speaking goal. Begin with a clear, "
+              "accurate response, then experiment with more precise and flexible ways to express "
+              "the same idea. Optional challenges help you grow when you are ready. "
+              "Natural, appropriate language matters more than complexity for its own sake.")
     para(doc, "", space_after=6)
     para(doc, "By the end of the course, you should be able to:", size=11, bold=True, color=NAVY)
     for b in [
@@ -142,18 +142,18 @@ def how_to_use(doc):
     para(doc, "After every lesson, cover the page and try the retrieval questions. Tick the "
               "self-check honestly. Return to the Formula Book (Appendix 1) whenever you review.")
     para(doc, "", space_after=4)
-    para(doc, "Two pathways, one classroom", size=12, bold=True, color=NAVY)
-    table(doc, ["Pathway", "Focus", "What to do"], [
-        [("Intermediate — Build Accuracy", True),
-         "guided construction, error correction, short clear responses",
-         "complete all core practice; use the Intermediate box in each Advanced Upgrade"],
-        [("Advanced — Build Flexibility", True),
-         "choice between structures, subtle meaning, extended arguments",
-         "add the Advanced Upgrade work; in speaking tasks, qualify, counter and connect"],
+    para(doc, "Practise, then stretch", size=12, bold=True, color=NAVY)
+    table(doc, ["Step", "Focus", "What to do"], [
+        [("Build the pattern", True),
+         "accurate, understandable sentences and useful follow-up questions",
+         "complete the core practice and say your answers aloud"],
+        [("Stretch your answer", True),
+         "more precise meanings, natural choices and connected responses",
+         "try an optional challenge; explain why you chose that expression"],
     ], widths=[1.7, 2.2, 2.4])
-    para(doc, "Both groups can respond to the same topic at different levels: give a clear opinion "
-              "with two reasons (Intermediate), or qualify your position, address a counterargument "
-              "and connect ideas with varied structures (Advanced).")
+    para(doc, "Start with a clear opinion and reasons. Then, if you can, add a qualification, "
+              "respond to a different view, or give a specific example. "
+              "You can revisit either step whenever it helps your speaking.")
     para(doc, "", space_after=4)
     para(doc, "For teachers", size=12, bold=True, color=NAVY)
     para(doc, "Keep grammar explanation short and give learners substantial time to produce spoken "
@@ -286,8 +286,9 @@ def diagnostic(doc, keys_registry):
               "the station is", "who / that", "didn't smoke", "more intelligent", "did she finish"],
         "C": ["can't", "Despite", "where I lived / where I live (if still true)", "may / might / could", "had / got"],
     }
-    para(doc, "Score guide: 21–25 — strong base, keep the Advanced Upgrade in sight.  "
-              "15–20 — solid core; work carefully through both pathways.  "
-              "Below 15 — do the core practice twice and speak every answer aloud; "
-              "accuracy first, speed later.", size=10.5, italic=True, color=GREY)
+    para(doc, "Score guide: 21–25 — review the specific items you missed, then try the stretch "
+              "tasks.  15–20 — revisit the patterns you found difficult and practise them aloud.  "
+              "Below 15 — repeat the core practice in short sessions; accuracy first, speed later.  "
+              "Use this score to choose what to practise next; speaking ability involves more than one test.",
+         size=10.5, italic=True, color=GREY)
     page_break(doc)

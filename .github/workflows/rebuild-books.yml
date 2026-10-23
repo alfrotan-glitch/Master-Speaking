@@ -1,0 +1,63 @@
+name: Rebuild and verify speaking books
+
+on:
+  push:
+    branches:
+      - main
+      - editorial/unified-speaking-edition-20261023
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  books:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+          cache-dependency-path: build_spec/requirements.txt
+      - name: Install publication dependencies and fonts
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-dejavu-core
+          python -m pip install -r build_spec/requirements.txt
+      - name: Audit independent Master Speaking manuscript
+        run: python tools/audit_master_speaking.py
+      - name: Rebuild student and teacher editions
+        run: python tools/build_publication.py --all
+      - name: Verify editorial QA
+        run: python build_spec/qa.py
+      - name: Verify generated books and ebook packaging
+        run: python tools/validate_publication.py
+      - name: Commit matching source-generated editions to editorial branch
+        if: github.ref == 'refs/heads/editorial/unified-speaking-edition-20261023' && github.event_name == 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "Grammar for Special Speaking (TOEFL House).docx" "Grammar for Special Speaking — Teacher's Book (TOEFL House).docx" dist/
+          if ! git diff --cached --quiet; then
+            git commit -m "build: regenerate validated speaking-book editions"
+            for attempt in 1 2 3; do
+              if git push origin HEAD:editorial/unified-speaking-edition-20261023; then
+                break
+              fi
+              if [ "$attempt" -eq 3 ]; then
+                echo "Publishing artifacts failed after three attempts" >&2
+                exit 1
+              fi
+              sleep $((5 * attempt))
+            done
+          fi
+      - name: Upload proofing builds
+        uses: actions/upload-artifact@v4
+        with:
+          name: speaking-book-proofing
+          path: dist/
+          if-no-files-found: error

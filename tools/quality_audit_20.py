@@ -99,14 +99,16 @@ def main():
         "Chooses 10 expressions and create a short conversation",
         "related to the week's topic",
         "collocations from Day 2 or Day 3",
-        "ducation, employment, healthcare",
         "Before watching, predict the answers.",
-        "The speaker's research involved 450 couples.",
         "Should governments pose restrictions on",
     ]
     unresolved_copy = [term for term in forbidden_copy if term in working_text]
     if unresolved_copy:
         failures.append("Uncorrected known learner-copy defects: " + "; ".join(unresolved_copy))
+    if re.search(r"(?m)^\\s*ducation, employment", working_text):
+        failures.append("Uncorrected missing initial letter in AI listening")
+    if "_____ The speaker's research involved 450 couples." not in working_text:
+        failures.append("Unit relationship True/False item lacks its answer marker")
     if abs(dst_count-src_count)/max(1,src_count) > .02:
         failures.append(f"Word proof lost or added >2% text ({src_count} vs {dst_count} tokens)")
     if len(heads1)<10 or len(heads1)>25 or bad_heads:

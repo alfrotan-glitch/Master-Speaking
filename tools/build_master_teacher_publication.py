@@ -2,10 +2,12 @@
 """Generate, validate, and report Master Speaking's authored Teacher's Book."""
 from __future__ import annotations
 import json
+import re
 import subprocess
 import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
+from lxml import etree
 
 import pymupdf
 from docx import Document
@@ -27,6 +29,79 @@ CSS=ROOT/"build_master"/"book.css"
 def run(*args):
     print("RUN", " ".join(map(str,args)), flush=True)
     subprocess.run([str(arg) for arg in args],cwd=ROOT,timeout=900,check=True)
+
+
+
+def top_heading(label):
+    label=" ".join(label.upper().split())
+    return (label.startswith("HOW TO TEACH WITH THIS BOOK")
+            or bool(re.match(r"^UNIT [1-8]\s*[|]",label))
+            or label.startswith("LISTENING DELIVERY AND ANSWER GUIDANCE")
+            or label.startswith("FINAL PERFORMANCE AND TEACHER RECORD"))
+
+
+def curate_navigation():
+    with pymupdf.open(PDF) as pdf:
+        topics=[[1,title,page] for level,title,page in pdf.get_toc() if top_heading(title)]
+        if len(topics)<10:
+            raise AssertionError(f"Teacher PDF topic navigation incomplete: {topics}")
+        pdf.set_toc(topics)
+        temp=PDF.with_name(PDF.stem+".navfix.pdf")
+        pdf.save(temp,garbage=4,deflate=True)
+    temp.replace(PDF)
+    with zipfile.ZipFile(EPUB) as z:
+        names=z.namelist()
+        navfile=next((name for name in names if name.endswith("nav.xhtml")),None)
+        if not navfile:
+            raise AssertionError("Teacher EPUB navigation file missing")
+        parser=etree.XMLParser(resolve_entities=False,no_network=True)
+        root=etree.fromstring(z.read(navfile),parser)
+        navnodes=root.xpath("//*[local-name()='nav']")
+        nav=next((n for n in navnodes if n.get("{http://www.idpf.org/2007/ops}type")=="toc"),None)
+        if nav is None:
+            nav=navnodes[0] if navnodes else None
+        if nav is None:
+            raise AssertionError("Teacher EPUB navigation element missing")
+        links=[]
+        used=set()
+        for a in nav.xpath(".//*[local-name()='a']"):
+            title=" ".join(" ".join(a.itertext()).split())
+            href=a.get("href")
+            if top_heading(title) and href and title not in used:
+                links.append((title,href))
+                used.add(title)
+        if len(links)<10:
+            raise AssertionError(f"Teacher EPUB topic links incomplete: {links}")
+        ols=nav.xpath(".//*[local-name()='ol']")
+        if not ols:
+            raise AssertionError("Teacher EPUB navigation ordered list missing")
+        ol=ols[0]
+        for child in list(ol): ol.remove(child)
+        xh="{http://www.w3.org/1999/xhtml}"
+        for title,href in links:
+            li=etree.SubElement(ol,xh+"li")
+            etree.SubElement(li,xh+"a",href=href).text=title
+        edited={navfile:etree.tostring(root,encoding="utf-8",xml_declaration=True)}
+        ncx=next((name for name in names if name.endswith(".ncx")),None)
+        if ncx:
+            tree=etree.fromstring(z.read(ncx),parser)
+            maps=tree.xpath("//*[local-name()='navMap']")
+            if maps:
+                mp=maps[0]
+                for child in list(mp): mp.remove(child)
+                ns="{http://www.daisy.org/z3986/2005/ncx/}"
+                for i,(title,href) in enumerate(links,1):
+                    point=etree.SubElement(mp,ns+"navPoint",id=f"topic-{i}",playOrder=str(i))
+                    label=etree.SubElement(point,ns+"navLabel")
+                    etree.SubElement(label,ns+"text").text=title
+                    etree.SubElement(point,ns+"content",src=href)
+                edited[ncx]=etree.tostring(tree,encoding="utf-8",xml_declaration=True)
+        temp=EPUB.with_name(EPUB.stem+".navfix.epub")
+        with zipfile.ZipFile(temp,"w") as out:
+            for info in z.infolist():
+                out.writestr(info,edited.get(info.filename,z.read(info.filename)))
+    temp.replace(EPUB)
+    return len(topics),len(links)
 
 
 def validate():
@@ -108,6 +183,8 @@ def main():
         "--metadata=author:TOEFL HOUSE","--metadata=lang:en","-o",EPUB)
     run("pandoc",DOCX,"--from=docx","--to=html5","--standalone",
         "--self-contained","--metadata=lang:en","-o",HTML)
+    pdf_topics,epub_topics=curate_navigation()
+    print(f"TEACHER_NAVIGATION: PDF {pdf_topics}, EPUB {epub_topics}")
     validate()
     return 0
 

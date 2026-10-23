@@ -182,6 +182,22 @@ def foundation(doc):
     heading(doc,"Unit map",2)
     for U in UNITS:
         para(doc,f"Unit {U['unit']} — {U['name']}: {U['can_do']}")
+
+    heading(doc,"Optional grammar bridges across the two speaking books",2)
+    para(doc,"The companion Grammar for Special Speaking course offers useful language forms, but these connections are not a prescribed calendar or separate learner pathway. Select a brief pattern only when it helps learners complete a genuine communicative task.")
+    links=[
+        ("Unit 1 | Listening and clarification","L3 Questions and follow-up questions; L12 Relative clauses for descriptions"),
+        ("Unit 2 | Goals and contingency","L1 Tenses for real communication; L5 Conditionals for decisions"),
+        ("Unit 3 | Emotions and respectful requests","L4 Modal verbs; L6 Wishes, regrets and hypothetical situations"),
+        ("Unit 4 | Budget trade-offs","L7 Comparisons; L8 Linking ideas and building arguments"),
+        ("Unit 5 | AI and evidence","L9 Passive voice; L15 Hedging, emphasis and natural inversion"),
+        ("Unit 6 | Boundaries and agreements","L10 Causative structures; L11 Gerunds and infinitives"),
+        ("Unit 7 | Global consequences","L13 Reported speech; L14 Participle and sentence patterns"),
+        ("Unit 8 | Clear, responsive English","L2 Storytelling; L16 Grammar in real conversation"),
+    ]
+    for title,lessons in links:
+        para(doc,title,bold=True,color=TEAL)
+        para(doc,lessons)
     doc.add_page_break()
 
 

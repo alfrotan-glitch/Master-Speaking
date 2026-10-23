@@ -34,6 +34,42 @@ def _style(doc,name,base,size,bold=False,color=INK,space=5):
     return style
 
 
+
+ORIGINAL_UNIT_HEADINGS=[
+    "THE POWER OF COMMUNICATION",
+    "THE ART OF GOAL SETTING",
+    "EMOTIONAL INTELLIGENCE",
+    "MONEY AND HAPPINESS",
+    "LIVING WITH AI (ARTIFICIAL INTELLIGENCE)",
+    "MARRIAGE",
+    "GLOBALIZATION",
+    "LINGUA FRANCA",
+]
+
+
+def _refresh_contents(document):
+    """Remove hard-coded, now-incorrect page numbers from source's eight-unit TOC.
+
+    A semantic source-of-truth book must not display page numbers from the
+    pre-expansion 2026 manuscript after eight new studio sections are inserted.
+    """
+    paragraphs=document.paragraphs
+    if len(paragraphs)<10:
+        raise AssertionError("Unexpectedly short source front matter")
+    contents_style=_style(document,"Studio Contents Entry","Normal",10,False,NAVY,3)
+    for n,title in enumerate(ORIGINAL_UNIT_HEADINGS,1):
+        p=paragraphs[n+1]
+        if not re.match(rf"(?i)^UNIT\s*{n}\s*:",p.text.strip()):
+            raise AssertionError(f"Contents item {n} was not the expected UNIT {n}: {p.text[:70]}")
+        p.clear()
+        p.style=contents_style
+        first=p.add_run(f"UNIT {n}  |  {title}")
+        first.bold=True
+        first.font.color.rgb=NAVY
+        p.add_run("\nReading  ·  Listening  ·  Discussion  ·  Presentation  ·  Speaking Studio")
+    return len(ORIGINAL_UNIT_HEADINGS)
+
+
 def _setup(doc):
     _style(doc,"Studio Section","Heading 2",16,True,NAVY,14).paragraph_format.keep_with_next=True
     _style(doc,"Studio Subsection","Heading 3",11,True,TEAL,10).paragraph_format.keep_with_next=True
@@ -123,6 +159,7 @@ def _anchors(doc):
 def insert_studios(document):
     assert len(UNITS)==8 and [u["unit"] for u in UNITS]==list(range(1,9))
     _setup(document)
+    cleaned_contents=_refresh_contents(document)
     chosen,all_candidates=_anchors(document)
     if len(chosen)!=8:
         summary={n:[(i,t) for i,p,t in options] for n,options in all_candidates.items()}
@@ -144,4 +181,6 @@ def insert_studios(document):
             for element in new_nodes:
                 anchor.addprevious(element)
         results.append({"unit":n,"name":u["name"],"blocks":len(new_nodes)})
+    if cleaned_contents!=8:
+        raise AssertionError("Unit TOC rebuild incomplete")
     return results

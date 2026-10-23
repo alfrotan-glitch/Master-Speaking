@@ -125,6 +125,21 @@ def main():
     studio_count=sum(p.text.strip().startswith("SPEAKING STUDIO  |") for p in working.paragraphs)
     if studio_count!=8:
         failures.append(f"Expected 8 embedded speaking studios; found {studio_count}")
+    chapter_start=[i for i,p in enumerate(working.paragraphs)
+                   if re.match(r"(?i)^chapter\s+1\s*:\s*speaking\s+through\s+reading$",
+                               " ".join(p.text.split()))]
+    studio_start=[i for i,p in enumerate(working.paragraphs)
+                  if p.text.strip().startswith("SPEAKING STUDIO  |")]
+    if len(chapter_start)==8 and len(studio_start)==8:
+        for k in range(8):
+            if not chapter_start[k] < studio_start[k] or (
+                    k<7 and not studio_start[k]<chapter_start[k+1]):
+                failures.append(f"Studio {k+1} was not integrated into its own unit")
+    else:
+        failures.append(f"Incorrect chapter/studio count: {len(chapter_start)}/{len(studio_start)}")
+    if any(re.search(r"(?i)\bPage\s*\d+\b",p.text)
+           for p in working.paragraphs[2:10]):
+        failures.append("Contents still shows outdated hard-coded source page numbers")
     if len(heads1)<10 or len(heads1)>25 or bad_heads:
         failures.append(f"Working Word headings: H1={len(heads1)}, misplaced prompts={bad_heads[:6]}")
     if pages!=a4 or blank:

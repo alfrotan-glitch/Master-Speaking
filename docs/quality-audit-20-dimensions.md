@@ -6,9 +6,9 @@ A PASS establishes only the specific automated invariant; it is not a score of 1
 
 | # | Lens | State | Observed evidence / outstanding test |
 |---:|---|---|---|
-| 1 | Source integrity & metadata | **PASS** | Original/proof tokens 24209/24208; publisher TOEFL HOUSE |
+| 1 | Source integrity & metadata | **PASS** | Original/proof tokens 24209/24491; publisher TOEFL HOUSE |
 | 2 | Audience and measurable learning objectives | **REVIEW** | Expert inspection and course-level learning-outcome review required |
-| 3 | Course architecture and unit consistency | **REVIEW** | 18 top-level topic headings and 150 section headings |
+| 3 | Course architecture and unit consistency | **REVIEW** | 19 top-level topic headings and 159 section headings |
 | 4 | Skill progression and cognitive load | **REVIEW** | Review learning sequence and activity demand with real learners |
 | 5 | Grammatical accuracy and naturalness | **REVIEW** | Qualified full-text line-by-line language edit required |
 | 6 | Vocabulary, collocations and recycling | **REVIEW** | Check topic relevance, lexical recurrence and examples |
@@ -20,11 +20,11 @@ A PASS establishes only the specific automated invariant; it is not a score of 1
 | 12 | Assessment, rubrics, scorer reliability | **REVIEW** | Pilot repeatability, scoring anchors, trained raters |
 | 13 | Teacher guide and key completeness | **PASS** | Grammar 16 student lessons=True; teacher lessons=True; guide tags=16; quality still requires review |
 | 14 | Cultural inclusion and safe participation | **REVIEW** | Offer non-disclosure options and culturally fair topics |
-| 15 | Editable Word semantic headings | **PASS** | Topic headings=18, accidental question headings=0 |
-| 16 | Typography, layout and print proof | **REVIEW** | 121/121 A4 pages; full visual and physical proof remain unverified |
+| 15 | Editable Word semantic headings | **PASS** | Topic headings=19, accidental question headings=0 |
+| 16 | Typography, layout and print proof | **REVIEW** | 122/122 A4 pages; full visual and physical proof remain unverified |
 | 17 | Images, alt text and accessible contrast | **BLOCKER** | 52 graphic objects; 3 lack alt/title; image-by-image descriptions and color contrast inspection required |
-| 18 | EPUB internal navigation and links | **PASS** | 12 curated PDF bookmarks; 65 checked internal links; 0 broken |
-| 19 | Cross-format text and image fidelity | **REVIEW** | Original/proof tokens 24209/24208; compare images and tables in rendered copies |
+| 18 | EPUB internal navigation and links | **PASS** | 12 curated PDF bookmarks; 66 checked internal links; 0 broken |
+| 19 | Cross-format text and image fidelity | **REVIEW** | Original/proof tokens 24209/24491; compare images and tables in rendered copies |
 | 20 | Intellectual property, sources and approval | **REVIEW** | Rights for media, bibliography, ISBN, and independent publication signoff required |
 
 ## Graphics needing meaningful alt text / decorative treatment

@@ -91,6 +91,22 @@ def main():
     teacher_ok = all(f"LESSON {i}" in t_text for i in range(1,17))
     teacher_guides = t_text.count("TEACHER GUIDE")
     failures = []
+    word_external_links = [str(r.target_ref) for r in working.part.rels.values()
+                           if r.is_external and "ted.com/talks/" in str(r.target_ref)]
+    if len(word_external_links) != 7:
+        failures.append(f"Expected seven official video hyperlinks in working Word: {len(word_external_links)}")
+    forbidden_copy = [
+        "Chooses 10 expressions and create a short conversation",
+        "related to the week's topic",
+        "collocations from Day 2 or Day 3",
+        "ducation, employment, healthcare",
+        "Before watching, predict the answers.",
+        "The speaker's research involved 450 couples.",
+        "Should governments pose restrictions on",
+    ]
+    unresolved_copy = [term for term in forbidden_copy if term in working_text]
+    if unresolved_copy:
+        failures.append("Uncorrected known learner-copy defects: " + "; ".join(unresolved_copy))
     if abs(dst_count-src_count)/max(1,src_count) > .02:
         failures.append(f"Word proof lost or added >2% text ({src_count} vs {dst_count} tokens)")
     if len(heads1)<10 or len(heads1)>25 or bad_heads:

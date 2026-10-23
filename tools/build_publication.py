@@ -372,43 +372,57 @@ def _build_epub_for(html_path: Path, epub_path: Path, title: str, uuid: str):
     body = tree.find(".//body")
     if body is None:
         raise RuntimeError("HTML source has no body")
+    # The standalone browser edition contains its own <nav>. EPUB creates a
+    # separate nav.xhtml; copying the browser nav into book.xhtml duplicates
+    # anchor IDs (notably nav-contents) and violates EPUB conformance.
+    for browser_nav in list(body.xpath(".//nav")):
+        parent = browser_nav.getparent()
+        if parent is not None:
+            parent.remove(browser_nav)
+    # Keep every actual book block. The browser navigation was removed above
+    # because EPUB already has its own nav.xhtml; it must not be copied twice.
     content_root = etree.Element("div")
-    entries = []
-    seen = set()
-    seen_titles = set()
-    in_static_contents = False
     for element in list(body):
-        text = _plain_text(element)
-        if not text:
-            continue
-        candidates = element.xpath("self::h1|self::h2|self::h3|.//h1|.//h2|.//h3|self::p|.//p")
-        heading_node = next((n for n in candidates if _plain_text(n)), None)
-        heading_text = _plain_text(heading_node) if heading_node is not None else ""
-        if in_static_contents and heading_text.upper() != "DIAGNOSTIC TEST":
-            continue
-        if heading_text.upper() == "DIAGNOSTIC TEST":
-            in_static_contents = False
-        match = re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", heading_text, re.I)
-        if match and heading_text.casefold() not in seen_titles:
-            seen_titles.add(heading_text.casefold())
-            hid = "nav-" + re.sub(r"[^a-z0-9]+", "-", heading_text.lower()).strip("-")
-            base, suffix = hid, 2
-            while hid in seen:
-                hid = f"{base}-{suffix}"; suffix += 1
-            seen.add(hid)
-            h = etree.Element("h1", id=hid)
-            h.text = heading_text
-            if heading_node is not None and heading_node.getparent() is not None:
-                heading_node.getparent().replace(heading_node, h)
-            else:
-                element.insert(0, h)
-            entries.append((heading_text, hid))
         content_root.append(element)
-        if heading_text.upper() == "CONTENTS":
-            in_static_contents = True
+    entries = []
+    seen_titles = set()
+    identifiers = set()
+    for node in content_root.xpath(".//*[@id]"):
+        identifier = node.get("id")
+        if identifier in identifiers:
+            raise RuntimeError(f"Duplicate source HTML ID before EPUB export: {identifier}")
+        identifiers.add(identifier)
+    # Source heading styles (not the number of body-level wrappers) determine
+    # the EPUB table of contents; the source HTML normally wraps the whole
+    # book in one <div>. This also preserves all original lessons.
+    for node in content_root.xpath(".//h1 | .//h2 | .//h3"):
+        heading_text = _plain_text(node)
+        if not re.match(r"^(LESSON\s+\d+\s+·\s+.+|REVIEW TEST\s+\d+|FINAL ASSESSMENT(?:\s+—\s+PART\s+2)?|APPENDIX\s+\d+\s+.*|INTRODUCTION|HOW TO USE THIS (?:TEACHER'S )?BOOK|CONTENTS|DIAGNOSTIC TEST|COURSE OVERVIEW|TEACHING PRINCIPLES|PACING AND FEEDBACK|ASSESSMENT GUIDANCE|COPYRIGHT)", heading_text, re.I):
+            continue
+        if heading_text.casefold() in seen_titles:
+            continue
+        seen_titles.add(heading_text.casefold())
+        identifier = node.get("id")
+        if not identifier:
+            base = "nav-" + re.sub(r"[^a-z0-9]+", "-", heading_text.lower()).strip("-")
+            identifier, number = base, 2
+            while identifier in identifiers:
+                identifier = f"{base}-{number}"
+                number += 1
+            node.set("id", identifier)
+            identifiers.add(identifier)
+        entries.append((heading_text, identifier))
+    all_lessons = {
+        int(match.group(1))
+        for heading, ident in entries
+        if (match := re.match(r"(?i)^LESSON\s+(\d+)\s+·", heading))
+    }
+    if all_lessons != set(range(1, 17)):
+        raise RuntimeError(f"EPUB navigation incomplete: expected lesson anchors 1-16, found {sorted(all_lessons)}")
     css = """
     body { font-family: serif; line-height: 1.5; margin: 5%; color: #1a1a1a; }
-    h1,h2,h3 { font-family: sans-serif; color: #1f3a5f; break-before: page; }
+    h1,h2,h3 { font-family: sans-serif; color: #1f3a5f; break-after: avoid; }
+    h1 { break-before: page; }
     h1 { font-size: 1.45em; } h2 { font-size: 1.15em; }
     table { width: 100%; border-collapse: collapse; margin: 0.8em 0; }
     td,th { border: 1px solid #c8cdd4; padding: 0.35em; vertical-align: top; }
@@ -445,7 +459,7 @@ def build_epub():
 
 
 def build_teacher_epub():
-    return _build_epub_for(TEACHER_HTML, TEACHER_EPUB, TEACHER_TITLE, "urn:uuid:9e1a2c3d-7b1f-4e6a-9302-teacher-book-01")
+    return _build_epub_for(TEACHER_HTML, TEACHER_EPUB, TEACHER_TITLE, "urn:uuid:9e1a2c3d-7b1f-4e6a-9302-005eedb00101")
 
 
 def verify_epub(path):
@@ -463,6 +477,10 @@ def verify_epub(path):
         for name in names:
             if name.endswith((".xhtml", ".opf", ".ncx", ".xml")):
                 etree.fromstring(z.read(name), parser)
+        bookxml = etree.fromstring(z.read("EPUB/book.xhtml"), parser)
+        all_ids = bookxml.xpath("//@id")
+        if len(all_ids) != len(set(all_ids)):
+            raise RuntimeError(f"EPUB contains duplicate XHTML element IDs in {path.name}")
         xhtml = z.read("EPUB/book.xhtml").decode("utf-8")
         # Student book vs teacher book: check appropriate tokens
         if "Teacher" in str(path):

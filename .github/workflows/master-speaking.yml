@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - quality/official-epubcheck-20261023
       - editorial/master-speaking-publication-20261023
       - editorial/authored-speaking-edition-20261023
       - quality/20-angle-deep-audit-20261023
@@ -46,10 +47,30 @@ jobs:
         run: python tools/build_master_teacher_publication.py
       - name: Enforce twenty-lens structural audit and record expert review gaps
         run: python tools/quality_audit_20.py
+      - name: Regenerate Grammar Student and Teacher books from authoritative sources
+        run: python tools/build_publication.py --all
       - name: Validate both Grammar for Special Speaking editions
         run: |
           python build_spec/qa.py
           python tools/validate_publication.py
+      - name: Official W3C EPUBCheck 5.4.0 for all four ebooks
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --show-error --location --retry 3 --retry-delay 3 \
+            https://github.com/w3c/epubcheck/releases/download/v5.4.0/epubcheck-5.4.0.zip \
+            -o /tmp/epubcheck-5.4.0.zip
+          mkdir -p /tmp/epubcheck-release
+          unzip -q /tmp/epubcheck-5.4.0.zip -d /tmp/epubcheck-release
+          checker="$(find /tmp/epubcheck-release -name epubcheck.jar -print -quit)"
+          test -n "$checker"
+          java -jar "$checker" --version
+          find proof dist -maxdepth 1 -name '*.epub' -print0 |
+            while IFS= read -r -d '' ebook; do
+              echo "::group::EPUBCheck: $ebook"
+              java -jar "$checker" "$ebook"
+              echo "::endgroup::"
+            done
       - name: Upload publication proofs
         uses: actions/upload-artifact@v4
         with:
@@ -64,11 +85,11 @@ jobs:
             docs/master-teacher-publication-audit.md
           if-no-files-found: error
       - name: Commit reproducible proof files on editorial branch
-        if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023' || github.ref == 'refs/heads/editorial/authored-speaking-edition-20261023') && github.event_name == 'push'
+        if: (github.ref == 'refs/heads/editorial/master-speaking-publication-20261023' || github.ref == 'refs/heads/quality/20-angle-deep-audit-20261023' || github.ref == 'refs/heads/editorial/authored-speaking-edition-20261023' || github.ref == 'refs/heads/quality/official-epubcheck-20261023') && github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md docs/listening-lesson-review.md docs/master-unit-anchor-map.md docs/master-teacher-publication-audit.md
+          git add -- "Grammar for Special Speaking (TOEFL House).docx" "Grammar for Special Speaking — Teacher's Book (TOEFL House).docx" dist/ proof/ docs/master-speaking-publication-audit.md docs/master-speaking-heading-inventory.md docs/quality-audit-20-dimensions.md docs/master-speaking-content-evidence.md docs/listening-lesson-review.md docs/master-unit-anchor-map.md docs/master-teacher-publication-audit.md
           if ! git diff --cached --quiet; then
             git commit -m "build: publish structurally checked Master Speaking proof editions"
             for attempt in 1 2 3; do

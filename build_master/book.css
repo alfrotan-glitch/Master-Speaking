@@ -1,0 +1,9 @@
+body { font-family: sans-serif; font-size: 1em; line-height: 1.5; color: #1d2936; }
+h1, h2, h3 { color: #1f3a5f; page-break-after: avoid; break-after: avoid; line-height: 1.2; }
+h1 { margin-top: 1.5em; border-bottom: 1px solid #b6c8d0; padding-bottom: .3em; }
+h2 { margin-top: 1.2em; }
+p { orphans: 2; widows: 2; }
+table { border-collapse: collapse; max-width: 100%; margin: .8em 0; }
+th, td { border: 1px solid #d8e0e5; padding: .35em; vertical-align: top; }
+img { max-width: 100%; height: auto; }
+blockquote { padding-left: .8em; border-left: .2em solid #0e6b6b; }
